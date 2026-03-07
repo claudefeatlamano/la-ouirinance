@@ -1680,6 +1680,7 @@ const [em, setEm] = useState(null);
 const [f, setF] = useState({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false });
 const [fl, setFl] = useState("");
 const [vue, setVue] = useState("liste");
+const [picker, setPicker] = useState(null);
 
 function openAdd() { setEm(null); setF({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false }); setMo(true); }
 function openEdit(m) { setEm(m); setF({ name: m.name, role: m.role, operators: Array.isArray(m.operators) ? m.operators : [m.operator || "Free"], permis: m.permis, voiture: m.voiture }); setMo(true); }
@@ -1831,7 +1832,6 @@ return (
     );
   }
 
-  var [picker, setPicker] = useState(null);
   var assignedIds = new Set();
   groups.forEach(function(g) { g.memberIds.forEach(function(id) { assignedIds.add(id); }); });
   var unassigned = team.filter(function(m) { return !assignedIds.has(m.id); });
