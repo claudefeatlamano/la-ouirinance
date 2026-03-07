@@ -1754,100 +1754,148 @@ return (
 })}
 
 {vue === "orga" && (function() {
-  function addGroup() {
-    saveGroups([...groups, { id: Date.now(), name: "Nouvelle équipe", memberIds: [] }]);
-  }
-  function deleteGroup(gid) {
-    saveGroups(groups.filter(function(g) { return g.id !== gid; }));
-  }
-  function renameGroup(gid, name) {
-    saveGroups(groups.map(function(g) { return g.id === gid ? Object.assign({}, g, { name: name }) : g; }));
-  }
-  function removeMember(gid, mid) {
-    saveGroups(groups.map(function(g) { return g.id === gid ? Object.assign({}, g, { memberIds: g.memberIds.filter(function(id) { return id !== mid; }) }) : g; }));
-  }
+  var GROUP_PALETTE = ["#0071E3","#34C759","#FF9F0A","#AF52DE","#FF2D55","#5AC8FA","#FF6B35","#00B4D8","#06D6A0","#E63946"];
+
+  function addGroup() { saveGroups([...groups, { id: Date.now(), name: "Nouvelle équipe", memberIds: [] }]); }
+  function deleteGroup(gid) { saveGroups(groups.filter(function(g) { return g.id !== gid; })); }
+  function renameGroup(gid, name) { saveGroups(groups.map(function(g) { return g.id === gid ? Object.assign({}, g, { name: name }) : g; })); }
+  function removeMember(gid, mid) { saveGroups(groups.map(function(g) { return g.id === gid ? Object.assign({}, g, { memberIds: g.memberIds.filter(function(id) { return id !== mid; }) }) : g; })); }
   function addMember(gid, mid) {
-    // Remove from any other group first
-    var updated = groups.map(function(g) {
+    saveGroups(groups.map(function(g) {
       if (g.id === gid) return Object.assign({}, g, { memberIds: g.memberIds.indexOf(mid) >= 0 ? g.memberIds : g.memberIds.concat(mid) });
       return Object.assign({}, g, { memberIds: g.memberIds.filter(function(id) { return id !== mid; }) });
-    });
-    saveGroups(updated);
+    }));
   }
 
+  function initials(name) { var p = name.split(' '); return (p[0][0] + (p[p.length-1][0] || '')).toUpperCase(); }
+
+  function Avatar({ name, role, size }) {
+    var sz = size || 48;
+    return (
+      <div style={{ width: sz, height: sz, borderRadius: sz, background: ROLE_COLORS[role] + "22", border: "2px solid " + ROLE_COLORS[role] + "44", display: "flex", alignItems: "center", justifyContent: "center", fontSize: sz * 0.33, fontWeight: 700, color: ROLE_COLORS[role], flexShrink: 0 }}>
+        {initials(name)}
+      </div>
+    );
+  }
+
+  function MemberTile({ m, onRemove, isLeader, accent }) {
+    var ops = Array.isArray(m.operators) ? m.operators : [m.operator].filter(Boolean);
+    return (
+      <div style={{ background: "#fff", borderRadius: 14, padding: isLeader ? "14px 16px" : "10px 14px", boxShadow: "0 1px 4px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.04)", display: "flex", alignItems: "center", gap: 12, position: "relative", borderLeft: isLeader ? "3px solid " + accent : "none", minWidth: isLeader ? 200 : 170 }}>
+        <Avatar name={m.name} role={m.role} size={isLeader ? 46 : 38} />
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontSize: isLeader ? 14 : 13, fontWeight: 600, color: "#1D1D1F", letterSpacing: -0.3, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{m.name}</div>
+          <div style={{ display: "flex", gap: 4, marginTop: 4, flexWrap: "wrap" }}>
+            <span style={{ fontSize: 10, fontWeight: 600, color: ROLE_COLORS[m.role], background: ROLE_COLORS[m.role] + "15", padding: "1px 6px", borderRadius: 99 }}>{ROLE_LABELS[m.role]}</span>
+            {ops.map(function(op) { return <span key={op} style={{ fontSize: 10, fontWeight: 600, color: OP_COLORS[op], background: OP_COLORS[op] + "18", padding: "1px 6px", borderRadius: 99 }}>{op}</span>; })}
+          </div>
+        </div>
+        {onRemove && (
+          <button onClick={onRemove} style={{ position: "absolute", top: 5, right: 5, background: "none", border: "none", cursor: "pointer", color: "#C7C7CC", fontSize: 16, lineHeight: 1, padding: 2, borderRadius: 99, display: "flex", alignItems: "center" }} title="Retirer">×</button>
+        )}
+      </div>
+    );
+  }
+
+  function PickerModal({ gid, available, onClose }) {
+    var [search, setSearch] = useState("");
+    var filtered = available.filter(function(m) { return m.name.toLowerCase().indexOf(search.toLowerCase()) >= 0; });
+    return (
+      <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.3)", zIndex: 1000, display: "flex", alignItems: "center", justifyContent: "center" }} onClick={onClose}>
+        <div style={{ background: "#fff", borderRadius: 20, padding: 24, width: 360, maxHeight: "70vh", display: "flex", flexDirection: "column", gap: 14, boxShadow: "0 20px 60px rgba(0,0,0,0.2)" }} onClick={function(e) { e.stopPropagation(); }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: "#1D1D1F" }}>Ajouter un membre</div>
+          <input autoFocus value={search} onChange={function(e) { setSearch(e.target.value); }} placeholder="Rechercher..." style={{ padding: "8px 12px", borderRadius: 10, border: "1px solid #E5E5EA", fontSize: 13, outline: "none" }} />
+          <div style={{ overflowY: "auto", display: "flex", flexDirection: "column", gap: 6 }}>
+            {filtered.length === 0 && <div style={{ color: "#AEAEB2", fontSize: 13, textAlign: "center", padding: 20 }}>Aucun membre disponible</div>}
+            {filtered.map(function(m) {
+              var ops = Array.isArray(m.operators) ? m.operators : [m.operator].filter(Boolean);
+              return (
+                <div key={m.id} onClick={function() { addMember(gid, m.id); onClose(); }} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 12, cursor: "pointer", background: "#F5F5F7", transition: "background 0.1s" }}
+                  onMouseEnter={function(e) { e.currentTarget.style.background = "#E8E8ED"; }}
+                  onMouseLeave={function(e) { e.currentTarget.style.background = "#F5F5F7"; }}>
+                  <Avatar name={m.name} role={m.role} size={36} />
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontSize: 13, fontWeight: 600, color: "#1D1D1F" }}>{m.name}</div>
+                    <div style={{ display: "flex", gap: 4, marginTop: 2 }}>
+                      <span style={{ fontSize: 10, fontWeight: 600, color: ROLE_COLORS[m.role] }}>{ROLE_LABELS[m.role]}</span>
+                      {ops.map(function(op) { return <span key={op} style={{ fontSize: 10, color: OP_COLORS[op] }}>{op}</span>; })}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <Btn v="secondary" onClick={onClose}>Fermer</Btn>
+        </div>
+      </div>
+    );
+  }
+
+  var [picker, setPicker] = useState(null);
   var assignedIds = new Set();
   groups.forEach(function(g) { g.memberIds.forEach(function(id) { assignedIds.add(id); }); });
   var unassigned = team.filter(function(m) { return !assignedIds.has(m.id); });
 
   return (
     <div>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-        <span style={{ fontSize: 13, color: "#6E6E73" }}>{unassigned.length} membre{unassigned.length !== 1 ? "s" : ""} sans équipe</span>
+      {picker && <PickerModal gid={picker} available={team.filter(function(m) { return groups.find(function(g) { return g.id === picker; }).memberIds.indexOf(m.id) < 0; })} onClose={function() { setPicker(null); }} />}
+
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
+        <span style={{ fontSize: 13, color: "#6E6E73" }}>{team.length} membres · {groups.length} équipe{groups.length !== 1 ? "s" : ""}{unassigned.length > 0 ? " · " + unassigned.length + " sans équipe" : ""}</span>
         <Btn onClick={addGroup}>+ Nouvelle équipe</Btn>
       </div>
 
-      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-        {groups.map(function(g) {
+      <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+        {groups.map(function(g, gi) {
+          var accent = GROUP_PALETTE[gi % GROUP_PALETTE.length];
           var members = g.memberIds.map(function(id) { return team.find(function(m) { return m.id === id; }); }).filter(Boolean);
           var leader = members[0];
           var rest = members.slice(1);
           var available = team.filter(function(m) { return g.memberIds.indexOf(m.id) < 0; });
 
           return (
-            <div key={g.id} style={{ background: "#F5F5F7", borderRadius: 16, padding: 16 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-                <input
-                  value={g.name}
-                  onChange={function(e) { renameGroup(g.id, e.target.value); }}
-                  style={{ fontSize: 13, fontWeight: 700, color: "#1D1D1F", background: "transparent", border: "none", outline: "none", flex: 1, letterSpacing: -0.3 }}
-                />
-                <button onClick={function() { deleteGroup(g.id); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#FF3B30", fontSize: 18, lineHeight: 1, padding: "0 4px" }}>×</button>
+            <div key={g.id} style={{ background: "#FAFAFA", borderRadius: 18, border: "1px solid #E5E5EA", overflow: "hidden" }}>
+              {/* Group header */}
+              <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 18px", borderBottom: "1px solid #F0F0F0", background: accent + "08" }}>
+                <div style={{ width: 10, height: 10, borderRadius: 99, background: accent, flexShrink: 0 }} />
+                <input value={g.name} onChange={function(e) { renameGroup(g.id, e.target.value); }}
+                  style={{ flex: 1, fontSize: 14, fontWeight: 700, color: "#1D1D1F", background: "transparent", border: "none", outline: "none", letterSpacing: -0.3 }} />
+                <span style={{ fontSize: 12, color: "#AEAEB2", fontWeight: 500 }}>{members.length} membre{members.length !== 1 ? "s" : ""}</span>
+                <button onClick={function() { deleteGroup(g.id); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#C7C7CC", fontSize: 18, lineHeight: 1, padding: "0 2px" }} title="Supprimer">×</button>
               </div>
 
-              <div style={{ display: "flex", alignItems: "flex-start", gap: 0, flexWrap: "wrap" }}>
+              {/* Group body */}
+              <div style={{ padding: "16px 18px", display: "flex", alignItems: "center", gap: 0, flexWrap: "wrap" }}>
                 {/* Leader */}
-                <div style={{ minWidth: 220, maxWidth: 260 }}>
-                  <div style={{ fontSize: 10, fontWeight: 600, color: "#0071E3", letterSpacing: 0.5, textTransform: "uppercase", marginBottom: 4 }}>Référent</div>
-                  {leader ? (
-                    <div style={{ position: "relative" }}>
-                      <MemberCard m={leader} showWeek={true} />
-                      <button onClick={function() { removeMember(g.id, leader.id); }} style={{ position: "absolute", top: 6, right: 6, background: "rgba(255,59,48,0.1)", border: "none", borderRadius: 99, cursor: "pointer", color: "#FF3B30", fontSize: 14, width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>×</button>
-                    </div>
-                  ) : (
-                    <div style={{ height: 60, border: "2px dashed #D2D2D7", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", color: "#AEAEB2", fontSize: 12 }}>Aucun référent</div>
-                  )}
+                <div style={{ display: "flex", flexDirection: "column", gap: 6, alignItems: "center" }}>
+                  <span style={{ fontSize: 10, fontWeight: 700, color: accent, letterSpacing: 0.8, textTransform: "uppercase" }}>Référent</span>
+                  {leader
+                    ? <MemberTile m={leader} onRemove={function() { removeMember(g.id, leader.id); }} isLeader={true} accent={accent} />
+                    : <div style={{ width: 200, height: 68, border: "2px dashed " + accent + "44", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", color: accent + "88", fontSize: 12 }}>Aucun référent</div>
+                  }
                 </div>
 
                 {/* Connector */}
                 {rest.length > 0 && (
-                  <div style={{ display: "flex", alignItems: "center", alignSelf: "center", padding: "0 10px", marginTop: 20 }}>
-                    <div style={{ width: 20, height: 2, background: "#D2D2D7" }} />
+                  <div style={{ display: "flex", alignItems: "center", padding: "0 12px", marginTop: 22 }}>
+                    <svg width="32" height="2"><line x1="0" y1="1" x2="32" y2="1" stroke={accent} strokeWidth="2" strokeDasharray="4 3" /></svg>
                   </div>
                 )}
 
                 {/* Members */}
                 {rest.length > 0 && (
-                  <div style={{ flex: 1, minWidth: 200 }}>
-                    <div style={{ fontSize: 10, fontWeight: 600, color: "#6E6E73", letterSpacing: 0.5, textTransform: "uppercase", marginBottom: 4 }}>Commerciaux ({rest.length})</div>
+                  <div style={{ flex: 1 }}>
+                    <span style={{ fontSize: 10, fontWeight: 700, color: "#AEAEB2", letterSpacing: 0.8, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Commerciaux</span>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                      {rest.map(function(m) { return (
-                        <div key={m.id} style={{ position: "relative", minWidth: 200, flex: "1 1 200px", maxWidth: 260 }}>
-                          <MemberCard m={m} showWeek={true} />
-                          <button onClick={function() { removeMember(g.id, m.id); }} style={{ position: "absolute", top: 6, right: 6, background: "rgba(255,59,48,0.1)", border: "none", borderRadius: 99, cursor: "pointer", color: "#FF3B30", fontSize: 14, width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>×</button>
-                        </div>
-                      ); })}
+                      {rest.map(function(m) { return <MemberTile key={m.id} m={m} onRemove={function() { removeMember(g.id, m.id); }} isLeader={false} accent={accent} />; })}
                     </div>
                   </div>
                 )}
 
-                {/* Add member */}
+                {/* Add button */}
                 {available.length > 0 && (
-                  <div style={{ alignSelf: "center", marginTop: 20, marginLeft: 8 }}>
-                    <select onChange={function(e) { if (e.target.value) { addMember(g.id, Number(e.target.value)); e.target.value = ""; } }}
-                      style={{ padding: "6px 10px", borderRadius: 8, border: "1px solid #D2D2D7", fontSize: 12, color: "#0071E3", cursor: "pointer", background: "#fff" }}>
-                      <option value="">+ Ajouter</option>
-                      {available.map(function(m) { return <option key={m.id} value={m.id}>{m.name}</option>; })}
-                    </select>
+                  <div style={{ marginTop: 22, marginLeft: 12 }}>
+                    <button onClick={function() { setPicker(g.id); }} style={{ width: 38, height: 38, borderRadius: 99, border: "2px dashed " + accent + "66", background: accent + "0A", cursor: "pointer", color: accent, fontSize: 22, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 300 }}>+</button>
                   </div>
                 )}
               </div>
@@ -1855,16 +1903,16 @@ return (
           );
         })}
 
-        {/* Unassigned members */}
+        {/* Unassigned */}
         {unassigned.length > 0 && (
-          <div style={{ background: "#FFF9F0", borderRadius: 16, padding: 16, border: "1px dashed #FF9F0A" }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: "#FF9F0A", letterSpacing: 1, textTransform: "uppercase", marginBottom: 10 }}>Sans équipe ({unassigned.length})</div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-              {unassigned.map(function(m) { return (
-                <div key={m.id} style={{ minWidth: 200, flex: "1 1 200px", maxWidth: 260 }}>
-                  <MemberCard m={m} onClick={function() { openEdit(m); }} showWeek={true} />
-                </div>
-              ); })}
+          <div style={{ background: "#FAFAFA", borderRadius: 18, border: "1px dashed #D2D2D7", overflow: "hidden" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 18px", borderBottom: "1px solid #F0F0F0" }}>
+              <div style={{ width: 10, height: 10, borderRadius: 99, background: "#AEAEB2", flexShrink: 0 }} />
+              <span style={{ fontSize: 14, fontWeight: 700, color: "#AEAEB2", flex: 1 }}>Sans équipe</span>
+              <span style={{ fontSize: 12, color: "#AEAEB2" }}>{unassigned.length} membre{unassigned.length !== 1 ? "s" : ""}</span>
+            </div>
+            <div style={{ padding: "16px 18px", display: "flex", flexWrap: "wrap", gap: 8 }}>
+              {unassigned.map(function(m) { return <MemberTile key={m.id} m={m} onRemove={null} isLeader={false} accent="#AEAEB2" />; })}
             </div>
           </div>
         )}
