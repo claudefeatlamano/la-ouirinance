@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import carnetData from "./data.json";
 
-const STORAGE_KEYS = { team: "agency-team-v3", cars: "agency-cars-v3", contracts: "agency-contracts-v3", dailyPlan: "agency-daily-plan-v3", objectives: "agency-objectives-v3" };
+const STORAGE_KEYS = { team: "agency-team-v3", cars: "agency-cars-v3", contracts: "agency-contracts-v3", dailyPlan: "agency-daily-plan-v3", objectives: "agency-objectives-v3", groups: "agency-groups-v1" };
 
 // Table VTA : code -> personnes assignees (principal en premier)
 const VTA_GROUPS = {
@@ -1426,8 +1426,9 @@ const [contracts, setContracts] = useState([]);
 const [objectives, setObjectives] = useState({});
 const [dailyPlan, setDailyPlan] = useState(null);
 const [loading, setLoading] = useState(true);
-const [scraperStatus, setScraperStatus] = useState(null); // null = non connecté
+const [scraperStatus, setScraperStatus] = useState(null);
 const [lastSync, setLastSync] = useState(null);
+const [groups, setGroups] = useState([]);
 
 useEffect(function() {
 (async function() {
@@ -1448,6 +1449,7 @@ var mergedContracts = DEMO_CONTRACTS.map(function(c) {
 setContracts(mergedContracts);
 setDailyPlan(await store.get(STORAGE_KEYS.dailyPlan) || null);
 setObjectives(await store.get(STORAGE_KEYS.objectives) || {});
+setGroups(await store.get(STORAGE_KEYS.groups) || []);
 setLoading(false);
 })();
 }, []);
@@ -1514,6 +1516,7 @@ var saveContracts = function(c) {
 };
 var saveDailyPlan = function(p) { setDailyPlan(p); store.set(STORAGE_KEYS.dailyPlan, p); };
 var saveObjectives = function(o) { setObjectives(o); store.set(STORAGE_KEYS.objectives, o); };
+var saveGroups = function(g) { setGroups(g); store.set(STORAGE_KEYS.groups, g); };
 
 if (loading) return <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", background: "#F5F5F7", fontFamily: "-apple-system, sans-serif" }}><p style={{ color: "#AEAEB2", fontSize: 13, fontWeight: 400 }}>Chargement…</p></div>;
 
@@ -1579,7 +1582,7 @@ return (
 
   <main style={{ padding: "28px 32px", maxWidth: 1100, margin: "0 auto" }} className="tab-content" key={tab}>
     {tab === "dashboard" && <DashboardTab team={team} contracts={contracts} dailyPlan={dailyPlan} lastSync={lastSync} scraperStatus={scraperStatus} />}
-    {tab === "team" && <TeamTab team={team} saveTeam={saveTeam} contracts={contracts} />}
+    {tab === "team" && <TeamTab team={team} saveTeam={saveTeam} contracts={contracts} groups={groups} saveGroups={saveGroups} />}
     {tab === "cars" && <CarsTab team={team} cars={cars} saveCars={saveCars} dailyPlan={dailyPlan} saveDailyPlan={saveDailyPlan} />}
     {tab === "contracts" && <ContractsTab contracts={contracts} team={team} dailyPlan={dailyPlan} saveContracts={saveContracts} />}
     {tab === "map" && <MapTab dailyPlan={dailyPlan} team={team} cars={cars} />}
@@ -1671,7 +1674,7 @@ return (
 }
 
 // TEAM
-function TeamTab({ team, saveTeam, contracts }) {
+function TeamTab({ team, saveTeam, contracts, groups, saveGroups }) {
 const [mo, setMo] = useState(false);
 const [em, setEm] = useState(null);
 const [f, setF] = useState({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false });
@@ -1751,51 +1754,121 @@ return (
 })}
 
 {vue === "orga" && (function() {
-  var groups = Object.entries(VTA_GROUPS).map(function(entry) {
-    var vtaCode = entry[0]; var names = entry[1];
-    var members = names.map(function(name) {
-      return team.find(function(m) { return m.name === name; }) || { id: name, name: name, role: "Debutant", active: true, operators: ["Free"], permis: false, voiture: false };
-    }).sort(function(a, b) { return roleOrder[a.role] - roleOrder[b.role]; });
-    var label = vtaCode.replace("vta-", "");
-    label = label.charAt(0).toUpperCase() + label.slice(1);
-    return { vtaCode: vtaCode, label: label, leader: members[0], members: members.slice(1) };
-  });
+  function addGroup() {
+    saveGroups([...groups, { id: Date.now(), name: "Nouvelle équipe", memberIds: [] }]);
+  }
+  function deleteGroup(gid) {
+    saveGroups(groups.filter(function(g) { return g.id !== gid; }));
+  }
+  function renameGroup(gid, name) {
+    saveGroups(groups.map(function(g) { return g.id === gid ? Object.assign({}, g, { name: name }) : g; }));
+  }
+  function removeMember(gid, mid) {
+    saveGroups(groups.map(function(g) { return g.id === gid ? Object.assign({}, g, { memberIds: g.memberIds.filter(function(id) { return id !== mid; }) }) : g; }));
+  }
+  function addMember(gid, mid) {
+    // Remove from any other group first
+    var updated = groups.map(function(g) {
+      if (g.id === gid) return Object.assign({}, g, { memberIds: g.memberIds.indexOf(mid) >= 0 ? g.memberIds : g.memberIds.concat(mid) });
+      return Object.assign({}, g, { memberIds: g.memberIds.filter(function(id) { return id !== mid; }) });
+    });
+    saveGroups(updated);
+  }
+
+  var assignedIds = new Set();
+  groups.forEach(function(g) { g.memberIds.forEach(function(id) { assignedIds.add(id); }); });
+  var unassigned = team.filter(function(m) { return !assignedIds.has(m.id); });
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-      {groups.map(function(g) {
-        return (
-          <div key={g.vtaCode} style={{ background: "#F5F5F7", borderRadius: 16, padding: 16 }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: "#AEAEB2", letterSpacing: 1, textTransform: "uppercase", marginBottom: 12 }}>Équipe {g.label}</div>
-            <div style={{ display: "flex", alignItems: "flex-start", gap: 0 }}>
-              {/* Leader */}
-              <div style={{ minWidth: 240, maxWidth: 260 }}>
-                <div style={{ fontSize: 10, fontWeight: 600, color: "#0071E3", letterSpacing: 0.5, textTransform: "uppercase", marginBottom: 4 }}>Référent</div>
-                <MemberCard m={g.leader} onClick={function() { openEdit(g.leader); }} showWeek={true} />
+    <div>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+        <span style={{ fontSize: 13, color: "#6E6E73" }}>{unassigned.length} membre{unassigned.length !== 1 ? "s" : ""} sans équipe</span>
+        <Btn onClick={addGroup}>+ Nouvelle équipe</Btn>
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+        {groups.map(function(g) {
+          var members = g.memberIds.map(function(id) { return team.find(function(m) { return m.id === id; }); }).filter(Boolean);
+          var leader = members[0];
+          var rest = members.slice(1);
+          var available = team.filter(function(m) { return g.memberIds.indexOf(m.id) < 0; });
+
+          return (
+            <div key={g.id} style={{ background: "#F5F5F7", borderRadius: 16, padding: 16 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                <input
+                  value={g.name}
+                  onChange={function(e) { renameGroup(g.id, e.target.value); }}
+                  style={{ fontSize: 13, fontWeight: 700, color: "#1D1D1F", background: "transparent", border: "none", outline: "none", flex: 1, letterSpacing: -0.3 }}
+                />
+                <button onClick={function() { deleteGroup(g.id); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#FF3B30", fontSize: 18, lineHeight: 1, padding: "0 4px" }}>×</button>
               </div>
-              {/* Connector */}
-              {g.members.length > 0 && (
-                <div style={{ display: "flex", alignItems: "center", alignSelf: "stretch", padding: "0 12px" }}>
-                  <div style={{ width: 24, height: 2, background: "#D2D2D7" }} />
+
+              <div style={{ display: "flex", alignItems: "flex-start", gap: 0, flexWrap: "wrap" }}>
+                {/* Leader */}
+                <div style={{ minWidth: 220, maxWidth: 260 }}>
+                  <div style={{ fontSize: 10, fontWeight: 600, color: "#0071E3", letterSpacing: 0.5, textTransform: "uppercase", marginBottom: 4 }}>Référent</div>
+                  {leader ? (
+                    <div style={{ position: "relative" }}>
+                      <MemberCard m={leader} showWeek={true} />
+                      <button onClick={function() { removeMember(g.id, leader.id); }} style={{ position: "absolute", top: 6, right: 6, background: "rgba(255,59,48,0.1)", border: "none", borderRadius: 99, cursor: "pointer", color: "#FF3B30", fontSize: 14, width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>×</button>
+                    </div>
+                  ) : (
+                    <div style={{ height: 60, border: "2px dashed #D2D2D7", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", color: "#AEAEB2", fontSize: 12 }}>Aucun référent</div>
+                  )}
                 </div>
-              )}
-              {/* Members */}
-              {g.members.length > 0 && (
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 10, fontWeight: 600, color: "#6E6E73", letterSpacing: 0.5, textTransform: "uppercase", marginBottom: 4 }}>Commerciaux ({g.members.length})</div>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                    {g.members.map(function(m) { return (
-                      <div key={m.id || m.name} style={{ minWidth: 220, maxWidth: 260, flex: "1 1 220px" }}>
-                        <MemberCard m={m} onClick={function() { openEdit(m); }} showWeek={true} />
-                      </div>
-                    ); })}
+
+                {/* Connector */}
+                {rest.length > 0 && (
+                  <div style={{ display: "flex", alignItems: "center", alignSelf: "center", padding: "0 10px", marginTop: 20 }}>
+                    <div style={{ width: 20, height: 2, background: "#D2D2D7" }} />
                   </div>
+                )}
+
+                {/* Members */}
+                {rest.length > 0 && (
+                  <div style={{ flex: 1, minWidth: 200 }}>
+                    <div style={{ fontSize: 10, fontWeight: 600, color: "#6E6E73", letterSpacing: 0.5, textTransform: "uppercase", marginBottom: 4 }}>Commerciaux ({rest.length})</div>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                      {rest.map(function(m) { return (
+                        <div key={m.id} style={{ position: "relative", minWidth: 200, flex: "1 1 200px", maxWidth: 260 }}>
+                          <MemberCard m={m} showWeek={true} />
+                          <button onClick={function() { removeMember(g.id, m.id); }} style={{ position: "absolute", top: 6, right: 6, background: "rgba(255,59,48,0.1)", border: "none", borderRadius: 99, cursor: "pointer", color: "#FF3B30", fontSize: 14, width: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>×</button>
+                        </div>
+                      ); })}
+                    </div>
+                  </div>
+                )}
+
+                {/* Add member */}
+                {available.length > 0 && (
+                  <div style={{ alignSelf: "center", marginTop: 20, marginLeft: 8 }}>
+                    <select onChange={function(e) { if (e.target.value) { addMember(g.id, Number(e.target.value)); e.target.value = ""; } }}
+                      style={{ padding: "6px 10px", borderRadius: 8, border: "1px solid #D2D2D7", fontSize: 12, color: "#0071E3", cursor: "pointer", background: "#fff" }}>
+                      <option value="">+ Ajouter</option>
+                      {available.map(function(m) { return <option key={m.id} value={m.id}>{m.name}</option>; })}
+                    </select>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })}
+
+        {/* Unassigned members */}
+        {unassigned.length > 0 && (
+          <div style={{ background: "#FFF9F0", borderRadius: 16, padding: 16, border: "1px dashed #FF9F0A" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#FF9F0A", letterSpacing: 1, textTransform: "uppercase", marginBottom: 10 }}>Sans équipe ({unassigned.length})</div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+              {unassigned.map(function(m) { return (
+                <div key={m.id} style={{ minWidth: 200, flex: "1 1 200px", maxWidth: 260 }}>
+                  <MemberCard m={m} onClick={function() { openEdit(m); }} showWeek={true} />
                 </div>
-              )}
+              ); })}
             </div>
           </div>
-        );
-      })}
+        )}
+      </div>
     </div>
   );
 })()}
