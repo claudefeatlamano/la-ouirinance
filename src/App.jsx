@@ -99,11 +99,6 @@ const JACHERE = {
 { v: "ST GEORGES DIDONNE", p: 7988, z: "H", c: 0 }, { v: "ST PIERRE OLERON", p: 7553, z: "H", c: 0 },
 { v: "VAUX SUR MER", p: 6591, z: "H", c: 0 }, { v: "TREMBLADE", p: 5103, z: "H", c: 0 },
 ]},
-"LA ROCHELLE 17": { dept: "17", communes: [
-{ v: "LA ROCHELLE", p: 50364, z: "H", c: 118 }, { v: "AYTRE", p: 5433, z: "H", c: 38 },
-{ v: "CHATELAILLON", p: 5176, z: "H", c: 0 }, { v: "LAGORD", p: 3821, z: "H", c: 2 },
-{ v: "MARANS", p: 2440, z: "H", c: 13 },
-]},
 "BRESSUIRE 79": { dept: "79", communes: [
 { v: "BRESSUIRE", p: 9571, z: "H", c: 23 }, { v: "THOUARS", p: 7683, z: "H", c: 15 },
 { v: "MAULEON", p: 3578, z: "H", c: 1 }, { v: "NUEIL LES AUBIERS", p: 2592, z: "H", c: 12 },
@@ -116,6 +111,45 @@ const JACHERE = {
 { v: "CRECHE", p: 2768, z: "H", c: 1 },
 ]},
 };
+
+const JACHERE_TALC = {
+"ROCHEFORT 17": { dept: "17", communes: [
+{ v: "ROYAN", p: 20600, z: "H" },{ v: "ROCHEFORT", p: 15303, z: "H" },{ v: "SAINT GEORGES DE DIDONNE", p: 7988, z: "H" },{ v: "SAINT PIERRE D OLERON", p: 7553, z: "H" },{ v: "VAUX SUR MER", p: 6591, z: "H" },{ v: "SAINT PALAIS SUR MER", p: 6290, z: "H" },{ v: "SAINT GEORGES D OLERON", p: 6288, z: "H" },{ v: "TREMBLADE", p: 5103, z: "H" },{ v: "MATHES", p: 4753, z: "H" },{ v: "FOURAS", p: 4456, z: "H" },{ v: "DOLUS D OLERON", p: 4315, z: "H" },{ v: "TONNAY CHARENTE", p: 4223, z: "H" },{ v: "CHATEAU D OLERON", p: 3801, z: "H" },{ v: "SURGERES", p: 3657, z: "H" },{ v: "MARENNES HIERS BROUAGE", p: 3619, z: "H" },{ v: "MESCHERS SUR GIRONDE", p: 3479, z: "H" },{ v: "SAINT DENIS D OLERON", p: 3111, z: "H" },{ v: "ARVERT", p: 2328, z: "H" },{ v: "BOURCEFRANC LE CHAPUS", p: 2214, z: "H" },{ v: "AIGREFEUILLE D AUNIS", p: 2120, z: "S" },{ v: "SAINT TROJAN LES BAINS", p: 2064, z: "H" },{ v: "SAINT SULPICE DE ROYAN", p: 1876, z: "H" },{ v: "ECHILLAIS", p: 1841, z: "H" },{ v: "BREE LES BAINS", p: 1790, z: "H" },{ v: "BREUILLET", p: 1735, z: "H" },{ v: "ETAULES", p: 1602, z: "H" },{ v: "PORT DES BARQUES", p: 1444, z: "H" },{ v: "GRAND VILLAGE PLAGE", p: 1255, z: "H" },{ v: "GUA", p: 1206, z: "H" },{ v: "SAINT AGNANT", p: 1200, z: "H" },{ v: "SAINT LAURENT DE LA PREE", p: 1136, z: "H" },{ v: "SAINT JUST LUZAC", p: 1103, z: "H" },{ v: "SAINT AUGUSTIN", p: 1087, z: "H" },{ v: "THOU", p: 973, z: "H" },{ v: "SOUBISE", p: 954, z: "S" },{ v: "CHAILLEVETTE", p: 915, z: "H" },{ v: "SAINT GEORGES DU BOIS", p: 874, z: "H" },{ v: "CIRE D AUNIS", p: 707, z: "H" },{ v: "SAINT PIERRE LA NOUE", p: 701, z: "H" },{ v: "SAINT HIPPOLYTE", p: 622, z: "S" },{ v: "CABARIOT", p: 620, z: "H" },{ v: "NIEULLE SUR SEUDRE", p: 595, z: "H" },{ v: "MORNAC SUR SEUDRE", p: 586, z: "H" },{ v: "SAINT NAZAIRE SUR CHARENTE", p: 576, z: "H" },{ v: "FORGES", p: 565, z: "H" },{ v: "SAINT MARD", p: 550, z: "H" },{ v: "DEVISE", p: 539, z: "H" },{ v: "EGUILLE", p: 530, z: "H" },{ v: "VERGEROUX", p: 497, z: "H" },{ v: "MARSAIS", p: 428, z: "H" },{ v: "CHAMBON", p: 421, z: "H" },{ v: "ILE D AIX", p: 402, z: "H" },{ v: "ARDILLIERES", p: 398, z: "H" },{ v: "SAINT SATURNIN DU BOIS", p: 386, z: "H" },{ v: "GENOUILLE", p: 376, z: "H" },{ v: "BOUHET", p: 363, z: "H" },{ v: "LANDRAIS", p: 333, z: "H" },{ v: "BALLON", p: 325, z: "H" },{ v: "PUYRAVAULT", p: 321, z: "H" },{ v: "SAINT JEAN D ANGLE", p: 304, z: "H" },{ v: "SAINT PIERRE D AMILLY", p: 303, z: "H" },{ v: "BEAUGEAY", p: 294, z: "S" },{ v: "VIRSON", p: 289, z: "H" },{ v: "CHAMPAGNE", p: 286, z: "H" },{ v: "GRIPPERIE SAINT SYMPHORIEN", p: 284, z: "H" },{ v: "VOUHE", p: 282, z: "H" },{ v: "MOEZE", p: 261, z: "S" },{ v: "SAINT SORNIN", p: 250, z: "H" },{ v: "BREUIL LA REORTE", p: 218, z: "H" },{ v: "SAINT COUTANT LE GRAND", p: 197, z: "H" },{ v: "SAINT FROULT", p: 195, z: "S" },{ v: "SAINT CREPIN", p: 148, z: "H" },{ v: "ANAIS", p: 147, z: "H" },{ v: "LOIRE LES MARAIS", p: 142, z: "S" },
+]},
+"LA ROCHELLE 17": { dept: "17", communes: [
+{ v: "ROCHELLE", p: 50364, z: "H" },{ v: "AYTRE", p: 5433, z: "H" },{ v: "CHATELAILLON PLAGE", p: 5176, z: "H" },{ v: "PERIGNY", p: 4179, z: "S" },{ v: "LAGORD", p: 3821, z: "H" },{ v: "FLOTTE", p: 3176, z: "H" },{ v: "SAINTE MARIE DE RE", p: 3059, z: "H" },{ v: "BOIS PLAGE EN RE", p: 2989, z: "H" },{ v: "DOMPIERRE SUR MER", p: 2806, z: "H" },{ v: "MARANS", p: 2440, z: "H" },{ v: "SAINT MARTIN DE RE", p: 2416, z: "H" },{ v: "COUARDE SUR MER", p: 2292, z: "H" },{ v: "SAINTE SOULLE", p: 2029, z: "H" },{ v: "PORTES EN RE", p: 2019, z: "H" },{ v: "ARS EN RE", p: 1919, z: "H" },{ v: "RIVEDOUX PLAGE", p: 1897, z: "H" },{ v: "SAINT CLEMENT DES BALEINES", p: 1450, z: "H" },{ v: "JARRIE", p: 1341, z: "S" },{ v: "SAINT JEAN DE LIVERSAY", p: 1325, z: "H" },{ v: "LOIX", p: 1144, z: "H" },{ v: "SALLES SUR MER", p: 1097, z: "S" },{ v: "ANDILLY", p: 1041, z: "S" },{ v: "COURCON", p: 1014, z: "H" },{ v: "ESNANDES", p: 1006, z: "H" },{ v: "SAINT MEDARD D AUNIS", p: 996, z: "H" },{ v: "CHARRON", p: 971, z: "H" },{ v: "VERINES", p: 892, z: "H" },{ v: "SAINT SAUVEUR D AUNIS", p: 876, z: "H" },{ v: "YVES", p: 861, z: "H" },{ v: "THAIRE", p: 832, z: "H" },{ v: "FERRIERES", p: 703, z: "S" },{ v: "SAINT OUEN D AUNIS", p: 682, z: "S" },{ v: "SAINT CHRISTOPHE", p: 675, z: "H" },{ v: "BENON", p: 672, z: "H" },{ v: "BOURGNEUF", p: 572, z: "H" },{ v: "CROIX CHAPEAU", p: 545, z: "H" },{ v: "CLAVETTE", p: 540, z: "S" },{ v: "NUAILLE D AUNIS", p: 537, z: "H" },{ v: "RONDE", p: 499, z: "H" },{ v: "ANGLIERS", p: 470, z: "S" },{ v: "GUE D ALLERE", p: 462, z: "H" },{ v: "TAUGON", p: 416, z: "H" },{ v: "LONGEVES", p: 398, z: "S" },{ v: "MONTROY", p: 341, z: "S" },{ v: "CRAM CHABAN", p: 335, z: "H" },{ v: "SAINT CYR DU DORET", p: 319, z: "H" },{ v: "GREVE SUR MIGNON", p: 244, z: "S" },{ v: "LAIGNE", p: 232, z: "H" },
+]},
+"BRESSUIRE 79": { dept: "79", communes: [
+{ v: "BRESSUIRE", p: 9571, z: "H" },{ v: "THOUARS", p: 7683, z: "H" },{ v: "MAULEON", p: 3578, z: "H" },{ v: "NUEIL LES AUBIERS", p: 2592, z: "H" },{ v: "MONCOUTANT SUR SEVRE", p: 2409, z: "H" },{ v: "CERIZAY", p: 2242, z: "H" },{ v: "ARGENTONNAY", p: 1232, z: "H" },{ v: "LORETZ D ARGENTON", p: 1085, z: "H" },{ v: "COURLAY", p: 1068, z: "H" },{ v: "FORET SUR SEVRE", p: 1020, z: "H" },{ v: "VAL EN VIGNES", p: 920, z: "H" },{ v: "CHAPELLE SAINT LAURENT", p: 876, z: "H" },{ v: "PLAINE ET VALLEES", p: 873, z: "H" },{ v: "CHICHE", p: 637, z: "H" },{ v: "FAYE L ABBESSE", p: 575, z: "H" },{ v: "SAINT PIERRE DES ECHAUBROGNES", p: 547, z: "H" },{ v: "CLESSE", p: 516, z: "H" },{ v: "BOISME", p: 494, z: "H" },{ v: "SAINT MAURICE ETUSSON", p: 445, z: "H" },{ v: "SAINT VARENT", p: 432, z: "H" },{ v: "LARGEASSE", p: 431, z: "H" },{ v: "SAINT AMAND SUR SEVRE", p: 390, z: "H" },{ v: "LOUZY", p: 383, z: "H" },{ v: "CIRIERES", p: 359, z: "H" },{ v: "BRION PRES THOUET", p: 355, z: "H" },{ v: "VOULMENTIN", p: 304, z: "H" },{ v: "SAINT MARTIN DE SANZAY", p: 295, z: "H" },{ v: "PIN", p: 286, z: "H" },{ v: "SAINT LEGER DE MONTBRUN", p: 286, z: "H" },{ v: "ABSIE", p: 282, z: "H" },{ v: "SAINT ANDRE SUR SEVRE", p: 221, z: "H" },{ v: "COMBRAND", p: 209, z: "H" },{ v: "SAINT JACQUES DE THOUARS", p: 208, z: "H" },{ v: "SAINT PAUL EN GATINE", p: 199, z: "H" },{ v: "GENNETON", p: 182, z: "H" },{ v: "PAS DE JEU", p: 174, z: "H" },{ v: "SAINT AUBIN DU PLAIN", p: 164, z: "H" },{ v: "LUZAY", p: 159, z: "H" },{ v: "SAINT MARTIN DE MACON", p: 154, z: "H" },{ v: "MARNES", p: 146, z: "H" },{ v: "COULONGES THOUARSAIS", p: 127, z: "H" },{ v: "SAINT CYR LA LANDE", p: 113, z: "H" },{ v: "GLENAY", p: 110, z: "H" },{ v: "MONTRAVERS", p: 92, z: "H" },{ v: "TOURTENAY", p: 84, z: "H" },{ v: "PETITE BOISSIERE", p: 77, z: "H" },{ v: "SAINT GENEROUX", p: 54, z: "H" },
+]},
+"NIORT 79": { dept: "79", communes: [
+{ v: "NIORT", p: 33450, z: "H" },{ v: "CHAURAY", p: 3450, z: "H" },{ v: "SAINT MAIXENT L ECOLE", p: 3112, z: "H" },{ v: "MELLE", p: 2885, z: "H" },{ v: "CRECHE", p: 2768, z: "H" },{ v: "AIFFRES", p: 2341, z: "S" },{ v: "AIGONDIGNE", p: 1929, z: "H" },{ v: "ECHIRE", p: 1785, z: "H" },{ v: "CELLES SUR BELLE", p: 1763, z: "H" },{ v: "MAUZE SUR LE MIGNON", p: 1573, z: "H" },{ v: "VOUILLE", p: 1478, z: "H" },{ v: "MAGNE", p: 1476, z: "H" },{ v: "CHEF BOUTONNE", p: 1410, z: "H" },{ v: "SAUZE VAUSSAIS", p: 1369, z: "H" },{ v: "FRONTENAY ROHAN ROHAN", p: 1286, z: "H" },{ v: "COULON", p: 1261, z: "H" },{ v: "PRAHECQ", p: 967, z: "H" },{ v: "BEAUVOIR SUR NIORT", p: 944, z: "H" },{ v: "SAINT HILAIRE LA PALUD", p: 928, z: "H" },{ v: "BESSINES", p: 922, z: "H" },{ v: "SAINT GELAIS", p: 915, z: "H" },{ v: "LEZAY", p: 910, z: "H" },{ v: "SAINT SYMPHORIEN", p: 874, z: "H" },{ v: "BRIOUX SUR BOUTONNE", p: 819, z: "H" },{ v: "CHERVEUX", p: 803, z: "H" },{ v: "FORS", p: 766, z: "H" },{ v: "VILLIERS EN PLAINE", p: 711, z: "H" },{ v: "EXIREUIL", p: 637, z: "H" },{ v: "SAINT MAXIRE", p: 580, z: "H" },{ v: "SAIVRES", p: 562, z: "H" },{ v: "VAL DU MIGNON", p: 532, z: "H" },{ v: "GERMOND ROUVRE", p: 518, z: "H" },{ v: "PLAINE D ARGENSON", p: 506, z: "H" },{ v: "ARCAIS", p: 484, z: "H" },{ v: "AZAY LE BRULE", p: 482, z: "H" },{ v: "LIMALONGES", p: 479, z: "H" },{ v: "NANTEUIL", p: 472, z: "H" },{ v: "SAINT REMY", p: 456, z: "H" },{ v: "GRANZAY GRIPT", p: 451, z: "H" },{ v: "SAINT MARTIN DE SAINT MAIXENT", p: 450, z: "H" },{ v: "VANNEAU IRLEAU", p: 447, z: "H" },{ v: "PERIGNE", p: 428, z: "H" },{ v: "AUGE", p: 426, z: "H" },{ v: "MARIGNY", p: 426, z: "H" },{ v: "EPANNES", p: 394, z: "H" },{ v: "FOYE MONJAULT", p: 386, z: "H" },{ v: "VALLANS", p: 381, z: "H" },{ v: "MARCILLE", p: 378, z: "H" },{ v: "FONTIVILLIE", p: 358, z: "H" },{ v: "SAINTE NEOMAYE", p: 356, z: "S" },{ v: "ROM", p: 354, z: "H" },{ v: "VALDELAUME", p: 353, z: "H" },{ v: "PRAILLES LA COUARDE", p: 349, z: "H" },{ v: "SAINT MARTIN DE BERNEGOUE", p: 343, z: "H" },{ v: "PRIN DEYRANCON", p: 342, z: "H" },{ v: "SANSAIS", p: 339, z: "H" },{ v: "FRANCOIS", p: 327, z: "H" },{ v: "BRULAIN", p: 322, z: "H" },{ v: "BEAUSSAIS VITRE", p: 318, z: "H" },{ v: "FONTENILLE SAINT MARTIN D ENTRAIGUES", p: 310, z: "H" },{ v: "CHEY", p: 307, z: "H" },{ v: "COUTURE D ARGENSON", p: 280, z: "H" },{ v: "SAINT VINCENT LA CHATRE", p: 273, z: "H" },{ v: "SAINT ROMANS LES MELLE", p: 269, z: "H" },{ v: "BOURDET", p: 269, z: "H" },{ v: "MAIRE LEVESCAULT", p: 269, z: "H" },{ v: "SECONDIGNE SUR BELLE", p: 266, z: "H" },{ v: "CLUSSAIS LA POMMERAIE", p: 257, z: "H" },{ v: "SCIECQ", p: 253, z: "S" },{ v: "MOTHE SAINT HERAY", p: 239, z: "H" },{ v: "ROCHENARD", p: 226, z: "H" },{ v: "LOUBILLE", p: 224, z: "H" },{ v: "EXOUDUN", p: 219, z: "H" },{ v: "SEPVRET", p: 215, z: "H" },{ v: "AMURE", p: 204, z: "H" },{ v: "SAINT GEORGES DE REX", p: 200, z: "H" },{ v: "ENSIGNE", p: 182, z: "H" },{ v: "ALLOINAY", p: 180, z: "H" },{ v: "PAIZAY LE CHAPT", p: 172, z: "H" },{ v: "VANCAIS", p: 150, z: "H" },{ v: "SAINT COUTANT", p: 148, z: "H" },{ v: "JUSCORPS", p: 145, z: "H" },{ v: "CHIZE", p: 143, z: "H" },{ v: "AUBIGNE", p: 142, z: "H" },{ v: "SAINTE SOLINE", p: 132, z: "H" },{ v: "SALLES", p: 131, z: "H" },{ v: "MELLERAN", p: 127, z: "H" },{ v: "VILLEMAIN", p: 127, z: "H" },{ v: "ASNIERES EN POITOU", p: 124, z: "H" },{ v: "VILLEFOLLET", p: 123, z: "H" },{ v: "MESSE", p: 121, z: "H" },{ v: "VANZAY", p: 116, z: "H" },{ v: "VERNOUX SUR BOUTONNE", p: 111, z: "H" },{ v: "BOUGON", p: 108, z: "H" },{ v: "SAINTE EANNE", p: 96, z: "H" },{ v: "SAINT ROMANS DES CHAMPS", p: 92, z: "H" },{ v: "LUSSERAY", p: 88, z: "H" },{ v: "CHERIGNE", p: 80, z: "H" },{ v: "MAISONNAY", p: 80, z: "H" },{ v: "LUCHE SUR BRIOUX", p: 76, z: "H" },{ v: "SOUVIGNE", p: 74, z: "H" },{ v: "VILLIERS EN BOIS", p: 69, z: "H" },{ v: "CHENAY", p: 69, z: "H" },{ v: "JUILLE", p: 54, z: "H" },{ v: "SELIGNE", p: 46, z: "H" },{ v: "PAMPROUX", p: 36, z: "H" },{ v: "BRIEUIL SUR CHIZE", p: 33, z: "H" },
+]},
+};
+
+// Carnet auto-feed counts for TALC sectors
+var CARNET_BY_VILLE_ALL = {};
+var CARNET_BY_VILLE_MONTH = {};
+(function() {
+  var ML = ["jan","fev","mar","avr","mai","jun","jul","aou","sep","oct","nov","dec"];
+  carnetData.forEach(function(row) {
+    var v = (row.ville || "").toUpperCase().trim();
+    if (!v) return;
+    CARNET_BY_VILLE_ALL[v] = (CARNET_BY_VILLE_ALL[v] || 0) + 1;
+    var d = row.date || "";
+    var p = d.split("-");
+    if (p.length === 3) {
+      var mk = ML[parseInt(p[1])-1] + p[0].slice(2);
+      if (!CARNET_BY_VILLE_MONTH[v]) CARNET_BY_VILLE_MONTH[v] = {};
+      CARNET_BY_VILLE_MONTH[v][mk] = (CARNET_BY_VILLE_MONTH[v][mk] || 0) + 1;
+    }
+  });
+})();
+function getTalcC(commune, month) {
+  var v = commune.v;
+  if (!month) return CARNET_BY_VILLE_ALL[v] || 0;
+  return (CARNET_BY_VILLE_MONTH[v] && CARNET_BY_VILLE_MONTH[v][month]) || 0;
+}
 
 const DEPT_ZONES = {
 "44": { b: true, f: "partial", l: "Loire-Atlantique" },
@@ -2448,7 +2482,11 @@ var GPS = {
 "ROYAN|17":[45.63,-1.03],"ROCHEFORT|17":[45.94,-0.96],"ST GEORGES DIDONNE|17":[45.60,-0.99],"ST PIERRE OLERON|17":[45.94,-1.30],"VAUX SUR MER|17":[45.64,-1.06],"TREMBLADE|17":[45.77,-1.14],
 "LA ROCHELLE|17":[46.16,-1.15],"AYTRE|17":[46.13,-1.12],"CHATELAILLON|17":[46.07,-1.09],"LAGORD|17":[46.18,-1.16],"MARANS|17":[46.31,-0.99],
 "BRESSUIRE|79":[46.84,-0.49],"THOUARS|79":[46.98,-0.22],"MAULEON|79":[46.92,-0.75],"NUEIL LES AUBIERS|79":[46.94,-0.59],"MONCOUTANT|79":[46.72,-0.58],"CERIZAY|79":[46.82,-0.67],"COURLAY|79":[46.78,-0.56],
-"NIORT|79":[46.32,-0.46],"CHAURAY|79":[46.35,-0.41],"ST MAIXENT|79":[46.41,-0.21],"MELLE|79":[46.22,-0.14],"CRECHE|79":[46.37,-0.30]
+"NIORT|79":[46.32,-0.46],"CHAURAY|79":[46.35,-0.41],"ST MAIXENT|79":[46.41,-0.21],"MELLE|79":[46.22,-0.14],"CRECHE|79":[46.37,-0.30],
+"SAINT GEORGES DE DIDONNE|17":[45.60,-1.00],"SAINT PIERRE D OLERON|17":[45.95,-1.31],"SAINT PALAIS SUR MER|17":[45.64,-1.08],"SAINT GEORGES D OLERON|17":[45.98,-1.34],"FOURAS|17":[45.98,-1.09],"DOLUS D OLERON|17":[45.92,-1.28],"TONNAY CHARENTE|17":[45.88,-0.90],"CHATEAU D OLERON|17":[45.89,-1.25],"SURGERES|17":[46.10,-0.75],"MARENNES HIERS BROUAGE|17":[45.82,-1.10],"MESCHERS SUR GIRONDE|17":[45.56,-0.95],"SAINT DENIS D OLERON|17":[46.03,-1.38],"ARVERT|17":[45.72,-1.10],"BOURCEFRANC LE CHAPUS|17":[45.85,-1.16],"AIGREFEUILLE D AUNIS|17":[45.98,-0.92],"SAINT TROJAN LES BAINS|17":[45.84,-1.22],"SAINT SULPICE DE ROYAN|17":[45.65,-1.00],"ECHILLAIS|17":[45.91,-0.94],"BREE LES BAINS|17":[46.00,-1.37],"BREUILLET|17":[45.68,-1.04],"ETAULES|17":[45.70,-1.07],"PORT DES BARQUES|17":[45.94,-1.07],"GRAND VILLAGE PLAGE|17":[45.88,-1.27],"GUA|17":[45.74,-1.01],"SAINT AGNANT|17":[45.85,-0.86],"SAINT LAURENT DE LA PREE|17":[45.97,-1.03],"SAINT JUST LUZAC|17":[45.79,-1.03],"SAINT AUGUSTIN|17":[45.61,-1.06],"SOUBISE|17":[45.87,-0.92],"CHAILLEVETTE|17":[45.75,-1.05],"ILE D AIX|17":[46.01,-1.17],"SAINT JEAN D ANGLE|17":[45.82,-1.02],"MOEZE|17":[45.86,-1.07],"SAINT SORNIN|17":[45.84,-1.07],
+"ROCHELLE|17":[46.16,-1.15],"CHATELAILLON PLAGE|17":[46.07,-1.09],"PERIGNY|17":[46.13,-1.08],"FLOTTE|17":[46.19,-1.37],"SAINTE MARIE DE RE|17":[46.17,-1.32],"BOIS PLAGE EN RE|17":[46.17,-1.38],"DOMPIERRE SUR MER|17":[46.17,-1.05],"SAINT MARTIN DE RE|17":[46.20,-1.36],"COURADE SUR MER|17":[46.19,-1.39],"SAINTE SOULLE|17":[46.20,-1.07],"PORTES EN RE|17":[46.24,-1.53],"ARS EN RE|17":[46.21,-1.52],"RIVEDOUX PLAGE|17":[46.16,-1.27],"SAINT CLEMENT DES BALEINES|17":[46.23,-1.57],"JARRIE|17":[46.11,-1.09],"SAINT JEAN DE LIVERSAY|17":[46.32,-0.94],"LOIX|17":[46.22,-1.44],"SALLES SUR MER|17":[46.09,-1.07],"ANDILLY|17":[46.29,-1.02],"COURCON|17":[46.35,-0.82],"ESNANDES|17":[46.27,-1.09],"SAINT MEDARD D AUNIS|17":[46.19,-0.96],"CHARRON|17":[46.33,-1.05],"VERINES|17":[46.17,-1.01],"SAINT SAUVEUR D AUNIS|17":[46.22,-0.97],"YVES|17":[45.98,-1.02],"THAIRE|17":[46.02,-1.02],"COUARDE SUR MER|17":[46.19,-1.39],
+"MONCOUTANT SUR SEVRE|79":[46.72,-0.58],"ARGENTONNAY|79":[46.98,-0.36],"LORETZ D ARGENTON|79":[46.96,-0.38],"FORET SUR SEVRE|79":[46.96,-0.83],"VAL EN VIGNES|79":[47.02,-0.15],"CHAPELLE SAINT LAURENT|79":[46.80,-0.66],"PLAINE ET VALLEES|79":[46.80,-0.63],"CHICHE|79":[46.85,-0.62],"LARGEASSE|79":[46.95,-0.70],"SAINT AMAND SUR SEVRE|79":[46.84,-0.71],"ABSIE|79":[46.79,-0.56],"COMBRAND|79":[46.82,-0.73],"GLENAY|79":[46.86,-0.35],"MONTRAVERS|79":[46.87,-0.82],
+"SAINT MAIXENT L ECOLE|79":[46.41,-0.21],"AIFFRES|79":[46.30,-0.48],"AIGONDIGNE|79":[46.37,-0.40],"ECHIRE|79":[46.37,-0.37],"CELLES SUR BELLE|79":[46.27,-0.23],"MAUZE SUR LE MIGNON|79":[46.20,-0.67],"VOUILLE|79":[46.35,-0.17],"MAGNE|79":[46.43,-0.29],"CHEF BOUTONNE|79":[46.11,-0.07],"SAUZE VAUSSAIS|79":[46.14,-0.10],"FRONTENAY ROHAN ROHAN|79":[46.20,-0.58],"COULON|79":[46.32,-0.59],"PRAHECQ|79":[46.27,-0.42],"BEAUVOIR SUR NIORT|79":[46.18,-0.47],"SAINT HILAIRE LA PALUD|79":[46.27,-0.69],"BESSINES|79":[46.33,-0.44],"SAINT GELAIS|79":[46.39,-0.43],"LEZAY|79":[46.26,-0.01],"SAINT SYMPHORIEN|79":[46.33,-0.30],"BRIOUX SUR BOUTONNE|79":[46.14,-0.21],"CHERVEUX|79":[46.41,-0.32]
 };
 
 var MONTHS_ORDER = ["mar25","avr25","mai25","jun25","jul25","aou25","sep25","oct25","nov25","dec25","jan26","fev26"];
@@ -2457,7 +2495,7 @@ var MONTH_KEY_MAP = {mar25:"mar",avr25:"avr",mai25:"mai",jun25:"jun",jul25:"jul"
 var MONTHLY = {"VERTOU|44":{"fev":2,"jan":3,"nov":8,"sep":3,"aou":2,"jul":9,"jun":14},"VALLET|44":{"oct":12,"sep":1,"jul":12,"jun":1,"mai":3},"MACHECOUL|44":{"dec":4,"oct":6,"sep":4,"jul":5,"mai":9},"ST PHILBERT|44":{"fev":1,"nov":3,"sep":3,"jun":6},"CLISSON|44":{"nov":3,"aou":4,"jun":6,"mai":1},"LOROUX BOTTEREAU|44":{"jan":1,"nov":2,"jun":9},"ST JULIEN CONCELLES|44":{"fev":1,"nov":3,"sep":1,"jun":2},"DIVATTE SUR LOIRE|44":{"nov":4,"jun":4},"ST ETIENNE MONTLUC|44":{"nov":9,"jul":8,"jun":1},"CHEVROLIERE|44":{"nov":1,"sep":14,"aou":1,"mai":8},"STE PAZANNE|44":{"fev":1,"oct":7,"aou":2,"jul":2},"PONT ST MARTIN|44":{"jan":1,"sep":7,"jul":4},"HAUTE GOULAINE|44":{"fev":2,"nov":10,"sep":2,"jul":8},"LEGE|44":{"fev":7,"nov":2,"sep":4,"jun":5},"GORGES|44":{"dec":4,"aou":1,"jun":2},"VIEILLEVIGNE|44":{"oct":2,"jul":7},"HAIE FOUASSIERE|44":{"oct":5,"sep":1,"jul":1},"GETIGNE|44":{"jun":2,"mai":2},"SAINT AIGNAN GRANDLIEU|44":{"nov":4,"sep":5},"BIGNON|44":{"nov":2,"jun":3},"AIGREFEUILLE|44":{"nov":1,"oct":1,"sep":4},"CORDEMAIS|44":{"dec":1,"sep":2},"MONTBERT|44":{"nov":4,"oct":3,"aou":2,"jun":4},"GENESTON|44":{"jun":3},"PALLET|44":{"oct":3},"CORCOUE SUR LOGNE|44":{"fev":3,"nov":2,"sep":9,"jul":3},"LANDREAU|44":{"jan":2,"oct":2},"MOUZILLON|44":{"sep":2,"aou":3},"CHAPELLE HEULIN|44":{"fev":3,"sep":7},"SAINT COLOMBAN|44":{"oct":3},"BOUSSAY|44":{"fev":1,"sep":2,"jun":2},"CHATEAU THEBAUD|44":{"nov":3,"jul":1},"PLANCHE|44":{"oct":2,"aou":4},"MAISDON SUR SEVRE|44":{"nov":3,"sep":4},"SAINT MARS DE COUTAIS|44":{"oct":5},"SAINT LUMINE DE COUTAIS|44":{"nov":2,"oct":2,"jul":9},"LIMOUZINIERE|44":{"sep":3,"jul":4},"MONNIERES|44":{"oct":1},"ROUANS|44":{"jan":2,"oct":6},"SAINT HILAIRE DE CLISSON|44":{"jan":2,"sep":2},"SAINT LUMINE DE CLISSON|44":{"jul":2},"TOUVOIS|44":{"fev":1,"nov":6,"jul":7},"REMOUILLE|44":{"oct":2,"jul":5},"PAULX|44":{"oct":3},"SAINT ETIENNE DE MER MORTE|44":{"jul":5},"REGRIPPIERE|44":{"oct":1,"jun":1},"TEMPLE DE BRETAGNE|44":{"fev":1,"nov":3},"MARNE|44":{"oct":5},"REMAUDIERE|44":{"oct":1,"aou":6},"SAINT FIACRE SUR MAINE|44":{"nov":2,"oct":3},"BOISSIERE DU DORE|44":{"oct":1,"aou":3},"VUE|44":{"jan":1,"oct":5},"PORT SAINT PERE|44":{"oct":1},"SAINT NAZAIRE|44":{"fev":35,"jan":26,"dec":27,"nov":44,"oct":91,"sep":83,"aou":9},"BAULE ESCOUBLAC|44":{"fev":6,"oct":1,"sep":1},"PORNIC|44":{"fev":6,"nov":5,"sep":9},"PORNICHET|44":{"oct":7},"ST BREVIN|44":{"fev":7,"nov":2,"oct":3,"sep":1},"GUERANDE|44":{"jan":3,"dec":2,"nov":8,"oct":1,"sep":13},"SAINT MICHEL CHEF CHEF|44":{"fev":4,"oct":6,"aou":1},"PONTCHATEAU|44":{"fev":4,"jan":14,"oct":13,"sep":3},"POULIGUEN|44":{"nov":8,"sep":2},"CROISIC|44":{"dec":6,"oct":10},"TURBALLE|44":{"nov":7},"PLAINE SUR MER|44":{"oct":4},"SAVENAY|44":{"fev":1,"jan":3,"nov":8,"sep":8},"TRIGNAC|44":{"fev":1,"jan":1,"nov":4,"oct":9},"BERNERIE EN RETZ|44":{"nov":4,"sep":2},"DONGES|44":{"jan":4,"nov":12,"sep":4,"aou":2},"CHAUMES EN RETZ|44":{"dec":2,"oct":1,"aou":1},"HERBIGNAC|44":{"dec":3,"sep":7},"MONTOIR DE BRETAGNE|44":{"jan":1,"nov":6,"oct":1,"sep":1,"aou":2},"MESQUER|44":{"fev":4},"SAINT ANDRE DES EAUX|44":{"oct":8},"VILLENEUVE EN RETZ|44":{"jan":2,"oct":2},"SAINT PERE EN RETZ|44":{"oct":2,"aou":4},"MISSILLAC|44":{"nov":8},"PREFAILLES|44":{"oct":2},"SAINT JOACHIM|44":{"oct":23},"SAINT LYPHARD|44":{"nov":4},"CAMPBON|44":{"jan":7,"oct":3},"GUENROUET|44":{"nov":4,"oct":5,"aou":1},"MOUTIERS EN RETZ|44":{"sep":2},"FROSSAY|44":{"fev":2,"nov":1,"oct":5},"CHAUVE|44":{"jan":4,"oct":3},"PRINQUIAU|44":{"nov":1,"sep":3},"ASSERAC|44":{"nov":1,"sep":4},"MALVILLE|44":{"oct":5},"PAIMBOEUF|44":{"fev":8,"oct":6},"SAINTE ANNE SUR BRIVET|44":{"fev":1,"oct":3},"SAINT GILDAS DES BOIS|44":{"nov":3,"oct":6},"SAINT MOLF|44":{"dec":5,"sep":8},"SAINT MALO DE GUERSAC|44":{"nov":9},"SAINT VIAUD|44":{"fev":3,"oct":5},"CROSSAC|44":{"jan":7,"sep":5},"CHAPELLE LAUNAY|44":{"nov":2,"sep":1},"SAINT HILAIRE DE CHALEONS|44":{"dec":1,"oct":2,"aou":1},"CORSEPT|44":{"oct":3},"DREFFEAC|44":{"fev":3,"nov":1,"oct":4},"SAINTE REINE DE BRETAGNE|44":{"nov":4},"SEVERAC|44":{"nov":2,"oct":1},"QUILLY|44":{"jan":1,"oct":1},"BOUEE|44":{"dec":1,"nov":2,"sep":1},"LAVAU SUR LOIRE|44":{"dec":5,"sep":2},"CESSON SEVIGNE|35":{"fev":5,"nov":4,"sep":6,"aou":7,"jul":5,"jun":30},"BRUZ|35":{"jan":5,"oct":27,"aou":5,"jul":39,"jun":4},"BETTON|35":{"jul":7},"ST GREGOIRE|35":{"fev":3,"jul":5,"mai":8,"avr":15},"PACE|35":{"oct":4,"jul":1,"jun":5},"CHARTRES BRETAGNE|35":{"fev":3,"nov":3,"oct":8,"jun":16},"NOYAL CHATILLON|35":{"fev":1,"oct":8,"jul":13,"mai":39},"VERN SUR SEICHE|35":{"jul":5,"jun":1},"RHEU|35":{"aou":1,"jun":3,"avr":10},"MORDELLES|35":{"aou":1,"jun":5,"mai":7},"LIFFRE|35":{"oct":9,"jul":5,"jun":3},"CHATEAUGIRON|35":{"nov":5,"jun":12},"MELESSE|35":{"oct":5,"jul":6,"mai":13},"MONTFORT SUR MEU|35":{"jul":3},"ORGERES|35":{"fev":2,"dec":2,"aou":7,"jun":10,"avr":5},"BREAL SOUS MONTFORT|35":{"jul":13},"CHAPELLE DES FOUGERETZ|35":{"sep":8,"jun":7,"mai":5},"MEZIERE|35":{"jul":7,"mai":4},"HERMITAGE|35":{"fev":3,"oct":10,"jul":11},"BOURGBARRE|35":{"aou":9},"BOUEXIERE|35":{"aou":1,"jul":8},"PONT PEAN|35":{"fev":2,"nov":2,"oct":8,"aou":12,"jun":2},"NOUVOITOU|35":{"jul":2},"CORPS NUDS|35":{"oct":4,"jul":3,"jun":1},"MONTGERMONT|35":{"fev":2,"sep":11,"mai":4,"avr":9},"ROMILLE|35":{"nov":8,"jun":3},"DOMLOUP|35":{"jul":5},"SAINT ARMEL|35":{"oct":6,"jul":8},"GUIPEL|35":{"jun":1},"FONTENAY LE COMTE|85":{"fev":6,"nov":31,"oct":7,"sep":3,"jul":10,"jun":19,"mai":5},"LUCON|85":{"fev":7,"nov":5,"oct":10,"sep":20,"jul":9,"jun":39,"avr":8},"POUZAUGES|85":{"jan":6,"oct":1,"sep":3,"aou":3,"jul":2,"jun":2,"avr":6},"SEVREMONT|85":{"fev":1,"nov":9,"sep":7,"jun":12},"BENET|85":{"dec":5,"jun":4},"STE HERMINE|85":{"dec":7,"oct":1,"aou":7,"mai":9},"CHATAIGNERAIE|85":{"oct":8,"sep":1,"jul":5,"mai":2,"avr":12},"ST MICHEL L HERM|85":{"jan":9,"jun":8},"BOUPERE|85":{"sep":3,"jul":1,"jun":6},"MAREUIL SUR LAY DISSAIS|85":{"fev":3,"sep":10,"jun":5},"TERVAL|85":{"oct":3,"sep":4},"NALLIERS|85":{"fev":1,"sep":1,"jul":1,"jun":10},"RIVES D AUTISE|85":{"aou":2},"SAINT HILAIRE DES LOGES|85":{"oct":12},"SAINTE GEMME LA PLAINE|85":{"nov":3,"jun":4},"MOUILLERON SAINT GERMAIN|85":{"oct":1,"sep":6,"aou":2},"CHAILLE LES MARAIS|85":{"nov":2},"VIX|85":{"nov":3,"jul":6,"mai":3},"CHAMPAGNE LES MARAIS|85":{"nov":6,"jun":1},"SAINT MESMIN|85":{"jan":1,"dec":1,"sep":8},"MONTOURNAIS|85":{"dec":2,"aou":2},"ILE D ELLE|85":{"jul":5},"GRUES|85":{"nov":3,"jun":3},"SAINT PIERRE DU CHEMIN|85":{"nov":5,"oct":5},"RIVES DU FOUGERAIS|85":{"fev":1,"oct":5},"MAGNILS REIGNIERS|85":{"nov":5},"MEILLERAIE TILLAY|85":{"nov":5},"VELLUIRE SUR VENDEE|85":{"nov":4,"jun":3,"mar":1},"CHATEAU GUIBERT|85":{"sep":3},"MERVENT|85":{"sep":6},"FOUSSAIS PAYRE|85":{"dec":3,"sep":3},"TRIAIZE|85":{"nov":3,"jun":3},"BAZOGES EN PAREDS|85":{"oct":3},"VOUVANT|85":{"fev":1,"aou":6},"CAILLERE SAINT HILAIRE|85":{"oct":2},"MAILLEZAIS|85":{"dec":2,"aou":2},"PISSOTTE|85":{"nov":5},"LONGEVES|85":{"oct":1},"MOUZEUIL SAINT MARTIN|85":{"jun":3},"SERIGNE|85":{"nov":1},"CHEFFOIS|85":{"oct":4},"ANTIGNY|85":{"nov":4},"SAINT MICHEL LE CLOUCQ|85":{"jul":3},"LANGON|85":{"nov":1,"jun":4},"DAMVIX|85":{"sep":5,"jun":2},"MONSIREIGNE|85":{"sep":2},"SAINTE RADEGONDE DES NOYERS|85":{"nov":1,"jul":4},"HERMENAULT|85":{"oct":6},"CORPE|85":{"jan":1,"jul":6},"REAUMUR|85":{"aou":2},"MAILLE|85":{"sep":7},"MOUTIERS SUR LE LAY|85":{"sep":5},"VOUILLE LES MARAIS|85":{"nov":2,"jun":3},"SAINT HILAIRE DE VOUST|85":{"dec":2},"SAINT PIERRE LE VIEUX|85":{"dec":1},"CHASNAIS|85":{"nov":2},"CHAVAGNES LES REDOUX|85":{"nov":4},"LAIROUX|85":{"nov":4},"SAINT JEAN DE BEUGNE|85":{"sep":6},"MONTREUIL|85":{"sep":1},"SAINT MAURICE DES NOUES|85":{"nov":2},"SAINT MARTIN DE FRAIGNEAU|85":{"dec":1,"sep":1,"aou":1,"jul":4},"BOURNEAU|85":{"nov":8},"BRETONNIERE LA CLAYE|85":{"nov":3},"JAUDONNIERE|85":{"oct":2},"MENOMBLET|85":{"dec":1,"nov":3},"XANTON CHASSENON|85":{"jul":5},"SAINT DENIS DU PAYRE|85":{"nov":3},"PEAULT|85":{"sep":3,"jul":2},"MAZEAU|85":{"sep":1,"jun":1},"PINEAUX|85":{"sep":1},"THIRE|85":{"oct":4},"GUE DE VELLUIRE|85":{"jun":2,"mai":2},"POUILLE|85":{"oct":1},"SAINT VALERIEN|85":{"oct":2},"BOUILLE COURDAULT|85":{"jul":3},"SAINT MARTIN LARS EN SAINTE HERMINE|85":{"dec":1},"SAINT ETIENNE DE BRILLOUET|85":{"nov":4},"PETOSSE|85":{"oct":1},"TAILLEE|85":{"nov":2,"jun":3},"PUYRAVAULT|85":{"nov":1,"jul":4},"SAINT AUBIN LA PLAINE|85":{"dec":1,"jun":2},"MARSAIS SAINTE RADEGONDE|85":{"oct":2},"CHAPELLE THEMER|85":{"oct":3},"SAINT SIGISMOND|85":{"sep":5},"TALLUD SAINTE GEMME|85":{"oct":4},"BESSAY|85":{"jul":4},"MOREILLES|85":{"jul":4},"LOGE FOUGEREUSE|85":{"oct":5},"LIEZ|85":{"sep":3},"FAYMOREAU|85":{"oct":3,"sep":5},"SAINTE PEXINE|85":{"sep":4},"ROCHE SUR YON|85":{"fev":61,"jan":81,"oct":2,"sep":98,"aou":3,"jul":55,"jun":60,"mai":16,"mar":5,"dec":1},"MONTAIGU|85":{"fev":5,"jan":10,"sep":5,"jul":12,"jun":16,"avr":6},"HERBIERS|85":{"fev":1,"jan":7,"sep":1,"aou":14,"jul":14,"jun":7,"avr":2},"AIZENAY|85":{"jan":5,"jun":3,"dec":1},"CHANTONNAY|85":{"jan":8,"aou":2,"jun":7,"mai":5,"avr":1,"mar":3,"fev":1,"oct":1},"POIRE SUR VIE|85":{"jan":1,"aou":2,"jun":1},"MORTAGNE SUR SEVRE|85":{"fev":8,"sep":10,"mai":8},"ESSARTS EN BOCAGE|85":{"fev":1,"jan":7,"sep":5,"mai":5,"dec":1},"AUBIGNY LES CLOUZEAUX|85":{"jan":5,"sep":10,"jul":3,"oct":1},"CHANVERRIE|85":{"jan":4,"sep":7,"jun":1,"mai":3},"BELLEVIGNY|85":{"jan":4,"sep":2,"aou":3,"mai":5},"MOUILLERON LE CAPTIF|85":{"jan":1,"jul":1},"FERRIERE|85":{"jan":4,"sep":5,"jun":5},"CUGAND|85":{"sep":5},"RIVES DE L YON|85":{"jan":5,"jul":4,"fev":1},"DOMPIERRE SUR YON|85":{"fev":4,"sep":5,"jun":1,"nov":1},"BRUFFIERE|85":{"fev":1,"sep":6,"jul":5,"mai":3},"SAINT FULGENT|85":{"jan":2,"sep":9,"jun":3},"VENANSAULT|85":{"jan":1},"CHAIZE LE VICOMTE|85":{"jan":2,"jun":7},"BOURNEZEAU|85":{"fev":2,"aou":3,"jan":3},"CHAVAGNES EN PAILLERS|85":{"fev":3,"jul":4},"LUCS SUR BOULOGNE|85":{"fev":4,"aou":6,"jun":3},"MONTREVERD|85":{"jan":2,"aou":11},"SAINT PHILBERT DE BOUAINE|85":{"jun":3},"SAINT LAURENT SUR SEVRE|85":{"fev":4},"GAUBRETIERE|85":{"fev":3,"aou":8},"HERBERGEMENT|85":{"jan":8,"jul":1,"jun":4},"NESMY|85":{"sep":6,"jul":7,"jun":2,"mar":1},"MOUCHAMPS|85":{"fev":2,"jun":1},"TREIZE SEPTIERS|85":{"fev":2,"sep":4,"jul":2,"jun":4},"EPESSES|85":{"fev":2,"aou":4},"BROUZILS|85":{"jul":1,"avr":1},"CHAUCHE|85":{"jan":2,"jun":7},"LANDES GENUSSON|85":{"fev":3,"sep":7,"aou":1,"jun":8},"SAINT MARTIN DES NOYERS|85":{"fev":3,"aou":5,"jan":1},"SAINT DENIS LA CHEVASSE|85":{"jan":3,"oct":1},"BOISSIERE DE MONTAIGU|85":{"fev":3,"sep":7,"jun":2},"APREMONT|85":{"jul":3},"SAINT ETIENNE DU BOIS|85":{"fev":2,"jun":1},"BERNARDIERE|85":{"fev":1},"SAINT GERMAIN DE PRINCAY|85":{"jun":2},"SAINT PROUANT|85":{"sep":1,"jul":1},"TIFFAUGES|85":{"fev":3,"jan":2,"jun":1},"MACHE|85":{"jul":5},"SAINT AUBIN DES ORMEAUX|85":{"jul":4},"THORIGNY|85":{"jul":4},"MESNARD LA BAROTIERE|85":{"fev":3},"SAINT MALO DU BOIS|85":{"fev":1,"sep":3},"TREIZE VENTS|85":{"sep":9},"PALLUAU|85":{"fev":3,"jun":1},"SAINT HILAIRE LE VOUHIS|85":{"aou":10},"SAINT MARTIN DES TILLEULS|85":{"jul":9},"COPECHAGNIERE|85":{"jan":2,"jul":3},"SIGOURNAIS|85":{"jun":2},"CHAPELLE PALLUAU|85":{"jun":2},"RABATELIERE|85":{"jul":2,"jun":5},"MERLATIERE|85":{"jun":1},"SAINT MARS LA REORTHE|85":{"sep":7},"SAINT VINCENT STERLANGES|85":{"jan":5,"jun":5},"GRAND LANDES|85":{"jun":3},"TABLIER|85":{"jul":2},"MALLIEVRE|85":{"sep":3},"ROYAN|17":{"fev":34},"ROCHEFORT|17":{"jan":1,"dec":8},"VOUHE|17":{"fev":1},"LA ROCHELLE|17":{"fev":29,"jan":20,"dec":69},"AYTRE|17":{"jan":23,"dec":15},"LAGORD|17":{"fev":2},"MARANS|17":{"fev":13},"SAINTE SOULLE|17":{"jan":4},"ANDILLY|17":{"jan":2},"NUAILLE D AUNIS|17":{"jan":2},"BRESSUIRE|79":{"fev":18,"jan":5},"THOUARS|79":{"fev":4,"jan":11},"MAULEON|79":{"fev":1},"NUEIL LES AUBIERS|79":{"fev":4,"jan":8},"MONCOUTANT|79":{"fev":10},"CERIZAY|79":{"jan":18},"ARGENTONNAY|79":{"jan":4},"LORETZ D ARGENTON|79":{"fev":4},"COURLAY|79":{"fev":12},"VAL EN VIGNES|79":{"fev":1},"CHAPELLE SAINT LAURENT|79":{"fev":6},"SAINT PIERRE DES ECHAUBROGNES|79":{"jan":4},"SAINT AMAND SUR SEVRE|79":{"jan":5},"CIRIERES|79":{"fev":4},"PIN|79":{"jan":4},"SAINT JACQUES DE THOUARS|79":{"fev":4,"jan":5},"NIORT|79":{"fev":44,"jan":40},"CHAURAY|79":{"jan":1},"ST MAIXENT|79":{"fev":7},"CRECHE|79":{"fev":1},"FRONTENAY ROHAN ROHAN|79":{"fev":4},"SAINT SYMPHORIEN|79":{"fev":2},"EXIREUIL|79":{"fev":7}};
 
 function getC(commune, dept, month) {
-if (!month) return commune.c;
+if (!month) return commune.c || 0;
 var dataKey = MONTH_KEY_MAP[month] || month;
 var key = commune.v + "|" + dept;
 var m = MONTHLY[key];
@@ -2468,6 +2506,7 @@ function MapTab({ dailyPlan, team, cars }) {
 var mapRef = useRef(null);
 var mapInstance = useRef(null);
 const [sel, setSel] = useState(null);
+const [selSource, setSelSource] = useState(null);
 const [sortBy, setSortBy] = useState("c");
 const [mapReady, setMapReady] = useState(false);
 const [month, setMonth] = useState("");
@@ -2476,7 +2515,13 @@ var stats = Object.entries(JACHERE).map(function(entry) {
 var name = entry[0]; var data = entry[1];
 var tp = data.communes.reduce(function(s, c) { return s + c.p; }, 0);
 var tc = data.communes.reduce(function(s, c) { return s + getC(c, data.dept, month); }, 0);
-return { name: name, dept: data.dept, communes: data.communes, tp: tp, tc: tc, taux: tp ? (tc / tp * 100) : 0 };
+return { name: name, dept: data.dept, communes: data.communes, tp: tp, tc: tc, taux: tp ? (tc / tp * 100) : 0, source: "JACHERE" };
+});
+var statsTalc = Object.entries(JACHERE_TALC).map(function(entry) {
+var name = entry[0]; var data = entry[1];
+var tp = data.communes.reduce(function(s, c) { return s + c.p; }, 0);
+var tc = data.communes.reduce(function(s, c) { return s + getTalcC(c, month); }, 0);
+return { name: name, dept: data.dept, communes: data.communes, tp: tp, tc: tc, taux: tp ? (tc / tp * 100) : 0, source: "TALC" };
 });
 var totalC = stats.reduce(function(s, j) { return s + j.tc; }, 0);
 var totalP = stats.reduce(function(s, j) { return s + j.tp; }, 0);
@@ -2525,15 +2570,38 @@ radius: radius, fillColor: color, color: "#fff", weight: 2, opacity: 1, fillOpac
 );
 });
 });
+Object.entries(JACHERE_TALC).forEach(function(entry) {
+var jName = entry[0]; var jData = entry[1];
+jData.communes.forEach(function(commune) {
+var key = commune.v + "|" + jData.dept;
+var coords = GPS[key]; if (!coords) return;
+var c = getTalcC(commune, month);
+var taux = commune.p > 0 ? (c / commune.p * 100) : 0;
+var color = c === 0 ? "#AEAEB2" : taux > 0.8 ? "#34C759" : taux > 0.3 ? "#FF9F0A" : "#FF3B30";
+var radius = Math.max(5, Math.min(22, Math.sqrt(c) * 2.5 + 4));
+L.circleMarker([coords[0], coords[1]], {
+radius: radius, fillColor: color, color: "#FF9F0A", weight: 3, opacity: 1, fillOpacity: 0.85,
+}).addTo(map).bindPopup(
+"<div style='font-family:-apple-system,sans-serif;min-width:180px'>" +
+"<b style='font-size:14px'>" + commune.v + "</b> <span style='font-size:10px;background:#FF9F0A;color:#fff;border-radius:4px;padding:1px 5px;font-weight:700'>TALC</span><br>" +
+"<span style='font-size:11px;color:#6B7280'>" + jName + " | Zone " + commune.z + (commune.z === "H" ? " (+5€)" : " (-15€)") + "</span><hr style='margin:6px 0;border:none;border-top:1px solid #eee'>" +
+"Prises: <b>" + commune.p.toLocaleString("fr-FR") + "</b><br>" +
+"Contrats: <b style='color:" + color + "'>" + c + "</b><br>" +
+"Taux: <b style='color:" + color + "'>" + taux.toFixed(2) + "%</b></div>"
+);
+});
+});
 }, 400);
 return function() { if (mapInstance.current) { mapInstance.current.remove(); mapInstance.current = null; } };
 }, [mapReady, month]);
 
 if (sel) {
-var jData = JACHERE[sel];
-var s = stats.find(function(x) { return x.name === sel; });
+var isTalc = selSource === "TALC";
+var jData = isTalc ? JACHERE_TALC[sel] : JACHERE[sel];
+var s = (isTalc ? statsTalc : stats).find(function(x) { return x.name === sel; });
 var sorted = jData.communes.slice().sort(function(a, b) {
-var ac = getC(a, jData.dept, month), bc = getC(b, jData.dept, month);
+var ac = isTalc ? getTalcC(a, month) : getC(a, jData.dept, month);
+var bc = isTalc ? getTalcC(b, month) : getC(b, jData.dept, month);
 if (sortBy === "c") return bc - ac;
 if (sortBy === "p") return b.p - a.p;
 return (bc / (b.p || 1)) - (ac / (a.p || 1));
@@ -2542,10 +2610,10 @@ return (
 
 <div>
 <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
-<Btn v="ghost" onClick={function() { setSel(null); }}>Retour</Btn>
+<Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); }}>Retour</Btn>
 <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800 }}>{sel}</h2>
-<Badge color={OP_COLORS.Free}>Free</Badge>
-{DEPT_ZONES[jData.dept] && DEPT_ZONES[jData.dept].b && <Badge color={OP_COLORS.Bouygues}>Bouygues</Badge>}
+{isTalc ? <Badge color="#FF9F0A">TALC</Badge> : <Badge color={OP_COLORS.Free}>Free</Badge>}
+{!isTalc && DEPT_ZONES[jData.dept] && DEPT_ZONES[jData.dept].b && <Badge color={OP_COLORS.Bouygues}>Bouygues</Badge>}
 <div style={{ marginLeft: "auto" }}><Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 140 }} /></div>
 </div>
 <div style={{ display: "flex", gap: 16, marginBottom: 20, flexWrap: "wrap" }}>
@@ -2564,7 +2632,7 @@ return (
 </div>
 </div>
 {sorted.map(function(c, i) {
-var cc = getC(c, jData.dept, month);
+var cc = isTalc ? getTalcC(c, month) : getC(c, jData.dept, month);
 var t = c.p ? (cc / c.p * 100) : 0;
 var col = t > 0.8 ? "#34C759" : t > 0.3 ? "#FF9F0A" : cc === 0 ? "rgba(0,0,0,0.08)" : "#FF3B30";
 return (
@@ -2600,7 +2668,7 @@ return (
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
 <div>
 <h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "#1D1D1F" }}>Carte des jacheres</h2>
-<p style={{ margin: "4px 0 0", fontSize: 13, color: "#6E6E73" }}>{totalC} contrats - {totalP.toLocaleString("fr-FR")} prises - {(totalC / totalP * 100).toFixed(2)}%</p>
+<p style={{ margin: "4px 0 0", fontSize: 13, color: "#6E6E73" }}>{totalC} contrats Stratygo · {totalP.toLocaleString("fr-FR")} prises</p>
 </div>
 <Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 150 }} />
 </div>
@@ -2614,18 +2682,24 @@ return (
 <div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF9F0A" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>Moyen</span></div>
 <div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF3B30" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>Faible</span></div>
 <div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#AEAEB2" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>0 contrats</span></div>
+<div style={{ marginLeft: 8, display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2.5px solid #FF9F0A" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>TALC (bordure orange)</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2px solid #fff" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>Stratygo (bordure blanche)</span></div>
 </div>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-{stats.sort(function(a, b) { return b.tc - a.tc; }).map(function(j) {
+{stats.concat(statsTalc).sort(function(a, b) { return b.tc - a.tc; }).map(function(j) {
+var isTalcCard = j.source === "TALC";
 var col = j.taux > 0.5 ? "#34C759" : j.taux > 0.2 ? "#FF9F0A" : "#FF3B30";
 return (
-<Card key={j.name} onClick={function() { setSel(j.name); }} style={{ cursor: "pointer", padding: 18, border: "2px solid transparent" }}>
+<Card key={j.name} onClick={function() { setSel(j.name); setSelSource(j.source); }} style={{ cursor: "pointer", padding: 18, border: "2px solid " + (isTalcCard ? "#FF9F0A30" : "transparent") }}>
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
 <div>
 <div style={{ fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "#1D1D1F" }}>{j.name}</div>
 <div style={{ fontSize: 12, color: "#AEAEB2", marginTop: 2 }}>{j.communes.length} com. - {j.tp.toLocaleString("fr-FR")} prises</div>
 </div>
+<div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+{isTalcCard && <Badge color="#FF9F0A">TALC</Badge>}
 <Badge color={col}>{j.taux.toFixed(2)}%</Badge>
+</div>
 </div>
 <div style={{ height: 8, borderRadius: 4, background: "#F5F5F7", overflow: "hidden", marginBottom: 8 }}>
 <div style={{ width: Math.min(j.taux * 50, 100) + "%", height: "100%", borderRadius: 4, background: col }} />
@@ -2633,8 +2707,8 @@ return (
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 <span style={{ fontSize: 22, fontWeight: 800 }}>{j.tc}</span>
 <div style={{ display: "flex", gap: 4 }}>
-<Badge color={OP_COLORS.Free}>Free</Badge>
-{DEPT_ZONES[j.dept] && DEPT_ZONES[j.dept].b && <Badge color={OP_COLORS.Bouygues}>B</Badge>}
+{!isTalcCard && <Badge color={OP_COLORS.Free}>Free</Badge>}
+{!isTalcCard && DEPT_ZONES[j.dept] && DEPT_ZONES[j.dept].b && <Badge color={OP_COLORS.Bouygues}>B</Badge>}
 </div>
 </div>
 </Card>
