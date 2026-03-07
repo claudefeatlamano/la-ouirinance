@@ -2606,8 +2606,6 @@ if (sortBy === "c") return bc - ac;
 if (sortBy === "p") return b.p - a.p;
 return (bc / (b.p || 1)) - (ac / (a.p || 1));
 });
-var hideZero = sortBy !== "p" && sorted.some(function(c) { return (isTalc ? getTalcC(c, month) : getC(c, jData.dept, month)) > 0; });
-var displayed = hideZero ? sorted.filter(function(c) { return (isTalc ? getTalcC(c, month) : getC(c, jData.dept, month)) > 0; }) : sorted;
 return (
 
 <div>
@@ -2626,14 +2624,14 @@ return (
 </div>
 <Card>
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-<h3 style={{ margin: 0, fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "#1D1D1F" }}>Communes {hideZero && <span style={{ fontWeight: 400, color: "#AEAEB2", fontSize: 12 }}>({displayed.length}/{jData.communes.length} avec contrats)</span>}</h3>
+<h3 style={{ margin: 0, fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "#1D1D1F" }}>Communes</h3>
 <div style={{ display: "flex", gap: 6 }}>
 <Btn s="sm" v={sortBy === "c" ? "primary" : "secondary"} onClick={function() { setSortBy("c"); }}>Contrats</Btn>
 <Btn s="sm" v={sortBy === "p" ? "primary" : "secondary"} onClick={function() { setSortBy("p"); }}>Prises</Btn>
 <Btn s="sm" v={sortBy === "t" ? "primary" : "secondary"} onClick={function() { setSortBy("t"); }}>Taux</Btn>
 </div>
 </div>
-{displayed.map(function(c, i) {
+{sorted.map(function(c, i) {
 var cc = isTalc ? getTalcC(c, month) : getC(c, jData.dept, month);
 var t = c.p ? (cc / c.p * 100) : 0;
 var col = t > 0.8 ? "#34C759" : t > 0.3 ? "#FF9F0A" : cc === 0 ? "rgba(0,0,0,0.08)" : "#FF3B30";
