@@ -1547,19 +1547,29 @@ const [lastSync, setLastSync] = useState(null);
 const [groups, setGroups] = useState([]);
 
 useEffect(function() {
-var unsubPlan = onSnapshot(doc(db, "agency", STORAGE_KEYS.dailyPlan), function(snap) {
+var unsubPlan, unsubObj;
+(async function() {
+// Migration one-shot localStorage → Firestore pour dailyPlan et objectives
+try {
+  var dpLs = localStorage.getItem(STORAGE_KEYS.dailyPlan);
+  if (dpLs) { var dpSnap = await getDoc(doc(db, "agency", STORAGE_KEYS.dailyPlan)); if (!dpSnap.exists()) await store.set(STORAGE_KEYS.dailyPlan, JSON.parse(dpLs)); }
+  var obLs = localStorage.getItem(STORAGE_KEYS.objectives);
+  if (obLs) { var obSnap = await getDoc(doc(db, "agency", STORAGE_KEYS.objectives)); if (!obSnap.exists()) await store.set(STORAGE_KEYS.objectives, JSON.parse(obLs)); }
+} catch(e) {}
+// Listeners temps réel — s'abonner après migration pour récupérer direct la bonne donnée
+unsubPlan = onSnapshot(doc(db, "agency", STORAGE_KEYS.dailyPlan), function(snap) {
   setDailyPlan(snap.exists() ? (snap.data().data || null) : null);
 });
-var unsubObj = onSnapshot(doc(db, "agency", STORAGE_KEYS.objectives), function(snap) {
+unsubObj = onSnapshot(doc(db, "agency", STORAGE_KEYS.objectives), function(snap) {
   setObjectives(snap.exists() ? (snap.data().data || {}) : {});
 });
-(async function() {
 // Nettoyer les anciennes clés v1/v2
 var oldKeys = ["agency-team-v1","agency-cars-v1","agency-contracts-v1","agency-daily-plan-v1","agency-objectives-v1","agency-team-v2","agency-cars-v2","agency-contracts-v2","agency-daily-plan-v2","agency-objectives-v2"];
 for (var k of oldKeys) { try { await store.delete(k); } catch(e) {} }
 
-// Charger ou initialiser avec données propres
+// Charger ou initialiser avec données propres (migration localStorage → Firestore si vide)
 var teamData = await store.get(STORAGE_KEYS.team);
+if (!teamData) { try { var lsT = localStorage.getItem(STORAGE_KEYS.team); if (lsT) { teamData = JSON.parse(lsT); await store.set(STORAGE_KEYS.team, teamData); } } catch(e) {} }
 // Si v4 vide, tenter de récupérer depuis v3
 if (!teamData) { teamData = await store.get("agency-team-v3") || null; }
 // Toujours enrichir les membres avec vstCodes/lentCodes si absents ou vides
@@ -1580,9 +1590,13 @@ if (teamData) {
   if (needsSave) store.set(STORAGE_KEYS.team, teamData);
 }
 setTeam(teamData || DEMO_TEAM);
-setCars(await store.get(STORAGE_KEYS.cars) || DEMO_CARS);
+var carsData = await store.get(STORAGE_KEYS.cars);
+if (!carsData) { try { var lsC = localStorage.getItem(STORAGE_KEYS.cars); if (lsC) { carsData = JSON.parse(lsC); await store.set(STORAGE_KEYS.cars, carsData); } } catch(e) {} }
+setCars(carsData || DEMO_CARS);
 // Les contrats : partir toujours de DEMO_CONTRACTS + appliquer les résolutions VTA sauvegardées
-var savedResolutions = await store.get(STORAGE_KEYS.contracts) || {};
+var savedResolutions = await store.get(STORAGE_KEYS.contracts);
+if (!savedResolutions) { try { var lsCo = localStorage.getItem(STORAGE_KEYS.contracts); if (lsCo) { savedResolutions = JSON.parse(lsCo); await store.set(STORAGE_KEYS.contracts, savedResolutions); } } catch(e) {} }
+savedResolutions = savedResolutions || {};
 // savedResolutions est un dict {id -> {commercial, vtaResolved}} pour les contrats modifiés
 var mergedContracts = DEMO_CONTRACTS.map(function(c) {
   var saved = savedResolutions[c.id];
@@ -1590,7 +1604,9 @@ var mergedContracts = DEMO_CONTRACTS.map(function(c) {
 });
 setContracts(mergedContracts);
 var loadedTeam = await store.get(STORAGE_KEYS.team) || DEMO_TEAM;
-var loadedGroups = await store.get(STORAGE_KEYS.groups) || [];
+var loadedGroups = await store.get(STORAGE_KEYS.groups);
+if (!loadedGroups) { try { var lsG = localStorage.getItem(STORAGE_KEYS.groups); if (lsG) { loadedGroups = JSON.parse(lsG); await store.set(STORAGE_KEYS.groups, loadedGroups); } } catch(e) {} }
+loadedGroups = loadedGroups || [];
 var renamedGroups = loadedGroups.map(function(g) {
   if (g.memberIds.length > 0) {
     var leader = loadedTeam.find(function(m) { return m.id === g.memberIds[0]; });
@@ -1602,7 +1618,7 @@ store.set(STORAGE_KEYS.groups, renamedGroups);
 setGroups(renamedGroups);
 setLoading(false);
 })();
-return function() { unsubPlan(); unsubObj(); };
+return function() { if (unsubPlan) unsubPlan(); if (unsubObj) unsubObj(); };
 }, []);
 
 // ─── Poll du serveur Flask local toutes les 60s ───────────────────────────
