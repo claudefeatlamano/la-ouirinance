@@ -2441,6 +2441,8 @@ const [fO, setFO] = useState("");
 const [fS, setFS] = useState("");
 const [showAll, setShowAll] = useState(false);
 const [qCom, setQCom] = useState(null); // selected commercial in quality detail
+const [qFrom, setQFrom] = useState("");
+const [qTo, setQTo] = useState("");
 
 // ── shared helpers ──────────────────────────────────────────────────────────
 var pendingVTA = contracts.filter(function(c) { return c.vtaCode && !c.vtaResolved; });
@@ -2795,18 +2797,57 @@ if (view === "quality") {
   function isRdv(c) { return c.status && (c.status === "RDV pris" || c.status === "RDV pris J+7"); }
   function isAnnule(c) { return c.status === "Annulé" || c.status === "Résilié"; }
 
-  var totalQ = contracts.length || 1;
-  var branchesQ = contracts.filter(isBranche).length;
-  var rdvQ = contracts.filter(isRdv).length;
-  var annulesQ = contracts.filter(isAnnule).length;
+  // ── Date filtering ──────────────────────────────────────────────────────────
+  var qContracts = contracts.filter(function(c) {
+    if (qFrom && c.date < qFrom) return false;
+    if (qTo && c.date > qTo) return false;
+    return true;
+  });
+
+  var presetBtn = function(label, from, to) {
+    var active = qFrom === from && qTo === to;
+    return (
+      <button key={label} onClick={function(){ setQFrom(from); setQTo(to); }} style={{
+        padding:"5px 12px", borderRadius:20, border:"1px solid " + (active ? "#0071E3" : "#E5E5EA"),
+        background: active ? "#0071E3" : "#fff", color: active ? "#fff" : "#1D1D1F",
+        fontSize:12, fontWeight:600, cursor:"pointer", fontFamily:"inherit"
+      }}>{label}</button>
+    );
+  };
+
+  var dateInputStyle = {
+    padding:"5px 10px", borderRadius:8, border:"1px solid #E5E5EA", fontSize:12,
+    fontFamily:"inherit", color:"#1D1D1F", background:"#fff", cursor:"pointer"
+  };
+
+  var DateRangeBar = (
+    <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:16, flexWrap:"wrap" }}>
+      {presetBtn("Tout", "", "")}
+      {presetBtn("Cette semaine", wkStartStr, todayStr)}
+      {presetBtn("Ce mois", moStartStr, todayStr)}
+      <div style={{ display:"flex", alignItems:"center", gap:6, marginLeft:"auto" }}>
+        <input type="date" value={qFrom} onChange={function(e){ setQFrom(e.target.value); }} style={dateInputStyle} />
+        <span style={{ fontSize:12, color:"#AEAEB2" }}>→</span>
+        <input type="date" value={qTo} onChange={function(e){ setQTo(e.target.value); }} style={dateInputStyle} />
+      </div>
+    </div>
+  );
+
+  // ── Metrics ─────────────────────────────────────────────────────────────────
+  var totalQ = qContracts.length || 1;
+  var branchesQ = qContracts.filter(isBranche).length;
+  var rdvQ = qContracts.filter(isRdv).length;
+  var attenteQ = qContracts.filter(function(c){ return c.status === "En attente RDV"; }).length;
+  var annulesQ = qContracts.filter(isAnnule).length;
   var tauxGlobalQ = ((branchesQ + rdvQ) / totalQ * 100).toFixed(1);
   var tauxBrancheQ = (branchesQ / totalQ * 100).toFixed(1);
   var tauxRdvQ = (rdvQ / totalQ * 100).toFixed(1);
+  var tauxAttenteQ = (attenteQ / totalQ * 100).toFixed(1);
   var tauxAnnuleQ = (annulesQ / totalQ * 100).toFixed(1);
 
-  var comNamesQ = Array.from(new Set(contracts.map(function(c){ return c.commercial; }))).sort();
+  var comNamesQ = Array.from(new Set(qContracts.map(function(c){ return c.commercial; }))).sort();
   var comStatsQ = comNamesQ.map(function(name) {
-    var cc = contracts.filter(function(c){ return c.commercial === name; });
+    var cc = qContracts.filter(function(c){ return c.commercial === name; });
     var tot = cc.length || 1;
     var br = cc.filter(isBranche).length;
     var rd = cc.filter(isRdv).length;
@@ -2820,67 +2861,61 @@ if (view === "quality") {
   // ── Detail: one commercial ──────────────────────────────────────────────────
   if (qCom) {
     var cs = comStatsQ.find(function(s){ return s.name === qCom; });
-    if (cs) {
-      var qualColor = cs.tGlobal >= 60 ? "#34C759" : cs.tGlobal >= 35 ? "#FF9F0A" : "#FF3B30";
-      return (
-        <div>
-          <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:20 }}>
-            <Btn v="ghost" onClick={function(){ setQCom(null); }}>← Retour</Btn>
-            <div style={{ width:36, height:36, borderRadius:99, background:comColor(cs.name)+"20", display:"flex", alignItems:"center", justifyContent:"center" }}>
-              <span style={{ fontSize:12, fontWeight:800, color:comColor(cs.name) }}>{cs.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase()}</span>
-            </div>
-            <h2 style={{ margin:0, fontSize:20, fontWeight:800 }}>{cs.name}</h2>
-            <div style={{ marginLeft:"auto", fontSize:28, fontWeight:800, color:qualColor }}>{cs.tGlobal.toFixed(0)}%</div>
+    if (!cs) { setQCom(null); return null; }
+    var qualColor = cs.tGlobal >= 60 ? "#34C759" : cs.tGlobal >= 35 ? "#FF9F0A" : "#FF3B30";
+    return (
+      <div>
+        <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:16 }}>
+          <Btn v="ghost" onClick={function(){ setQCom(null); }}>← Retour</Btn>
+          <div style={{ width:36, height:36, borderRadius:99, background:comColor(cs.name)+"20", display:"flex", alignItems:"center", justifyContent:"center" }}>
+            <span style={{ fontSize:12, fontWeight:800, color:comColor(cs.name) }}>{cs.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase()}</span>
           </div>
-          <div style={{ display:"flex", gap:10, marginBottom:16, flexWrap:"wrap" }}>
-            <Card style={{ flex:1, minWidth:90, padding:14, textAlign:"center" }}>
-              <div style={{ fontSize:10, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Total</div>
-              <div style={{ fontSize:28, fontWeight:800, color:"#1D1D1F" }}>{cs.total}</div>
-            </Card>
-            <Card style={{ flex:1, minWidth:90, padding:14, textAlign:"center" }}>
-              <div style={{ fontSize:10, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Branchés</div>
-              <div style={{ fontSize:28, fontWeight:800, color:"#34C759" }}>{cs.br}</div>
-            </Card>
-            <Card style={{ flex:1, minWidth:90, padding:14, textAlign:"center" }}>
-              <div style={{ fontSize:10, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>RDV Pris</div>
-              <div style={{ fontSize:28, fontWeight:800, color:"#0071E3" }}>{cs.rd}</div>
-            </Card>
-            <Card style={{ flex:1, minWidth:90, padding:14, textAlign:"center" }}>
-              <div style={{ fontSize:10, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>En attente</div>
-              <div style={{ fontSize:28, fontWeight:800, color:"#FF9F0A" }}>{cs.at}</div>
-            </Card>
-            <Card style={{ flex:1, minWidth:90, padding:14, textAlign:"center" }}>
-              <div style={{ fontSize:10, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Annulés</div>
-              <div style={{ fontSize:28, fontWeight:800, color:"#FF3B30" }}>{cs.an}</div>
-            </Card>
-          </div>
-          <Card style={{ marginBottom:16, padding:20 }}>
-            {[
-              { label:"Taux branchement", sub:"qualité long terme", val:cs.tBr, col:"#34C759" },
-              { label:"Taux RDV", sub:"qualité hebdomadaire", val:cs.tRd, col:"#0071E3" },
-              { label:"En attente RDV", sub:"pipeline en cours", val:cs.tAt, col:"#FF9F0A" },
-              { label:"Taux annulation", sub:"rétractations", val:cs.tAn, col:"#FF3B30" },
-            ].map(function(item) {
-              return (
-                <div key={item.label} style={{ marginBottom:16 }}>
-                  <div style={{ display:"flex", justifyContent:"space-between", alignItems:"baseline", marginBottom:6 }}>
-                    <div>
-                      <span style={{ fontSize:13, fontWeight:700 }}>{item.label}</span>
-                      <span style={{ fontSize:11, color:"#AEAEB2", marginLeft:6 }}>{item.sub}</span>
-                    </div>
-                    <span style={{ fontSize:16, fontWeight:800, color:item.col }}>{item.val.toFixed(1)}%</span>
-                  </div>
-                  <div style={{ height:8, borderRadius:4, background:"#F5F5F7" }}>
-                    <div style={{ width:Math.min(item.val,100)+"%", height:"100%", borderRadius:4, background:item.col }} />
-                  </div>
-                </div>
-              );
-            })}
-          </Card>
-          {CList(cs.contracts.slice().sort(function(a,b){ return (b.date+(b.heure||"")).localeCompare(a.date+(a.heure||"")); }))}
+          <h2 style={{ margin:0, fontSize:20, fontWeight:800 }}>{cs.name}</h2>
+          <div style={{ marginLeft:"auto", fontSize:28, fontWeight:800, color:qualColor }}>{cs.tGlobal.toFixed(0)}%</div>
         </div>
-      );
-    }
+        {DateRangeBar}
+        <div style={{ display:"flex", gap:10, marginBottom:16, flexWrap:"wrap" }}>
+          {[
+            { label:"Total", val:cs.total, col:"#1D1D1F" },
+            { label:"Branchés", val:cs.br, col:"#34C759" },
+            { label:"RDV Pris", val:cs.rd, col:"#0071E3" },
+            { label:"En attente", val:cs.at, col:"#FF9F0A" },
+            { label:"Annulés", val:cs.an, col:"#FF3B30" },
+          ].map(function(item) {
+            return (
+              <Card key={item.label} style={{ flex:1, minWidth:80, padding:14, textAlign:"center" }}>
+                <div style={{ fontSize:10, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>{item.label}</div>
+                <div style={{ fontSize:28, fontWeight:800, color:item.col }}>{item.val}</div>
+              </Card>
+            );
+          })}
+        </div>
+        <Card style={{ marginBottom:16, padding:20 }}>
+          {[
+            { label:"Taux branchement", sub:"qualité long terme", val:cs.tBr, col:"#34C759" },
+            { label:"Taux RDV", sub:"qualité hebdomadaire", val:cs.tRd, col:"#0071E3" },
+            { label:"En attente RDV", sub:"pipeline en cours", val:cs.tAt, col:"#FF9F0A" },
+            { label:"Taux annulation", sub:"rétractations", val:cs.tAn, col:"#FF3B30" },
+          ].map(function(item) {
+            return (
+              <div key={item.label} style={{ marginBottom:16 }}>
+                <div style={{ display:"flex", justifyContent:"space-between", alignItems:"baseline", marginBottom:6 }}>
+                  <div>
+                    <span style={{ fontSize:13, fontWeight:700 }}>{item.label}</span>
+                    <span style={{ fontSize:11, color:"#AEAEB2", marginLeft:6 }}>{item.sub}</span>
+                  </div>
+                  <span style={{ fontSize:16, fontWeight:800, color:item.col }}>{item.val.toFixed(1)}%</span>
+                </div>
+                <div style={{ height:8, borderRadius:4, background:"#F5F5F7" }}>
+                  <div style={{ width:Math.min(item.val,100)+"%", height:"100%", borderRadius:4, background:item.col }} />
+                </div>
+              </div>
+            );
+          })}
+        </Card>
+        {CList(cs.contracts.slice().sort(function(a,b){ return (b.date+(b.heure||"")).localeCompare(a.date+(a.heure||"")); }))}
+      </div>
+    );
   }
 
   // ── Overview ────────────────────────────────────────────────────────────────
@@ -2888,17 +2923,19 @@ if (view === "quality") {
   var annuleCol = parseFloat(tauxAnnuleQ) > 15 ? "#FF3B30" : parseFloat(tauxAnnuleQ) > 8 ? "#FF9F0A" : "#34C759";
   return (
     <div>
-      <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:20 }}>
+      <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:16 }}>
         <Btn v="ghost" onClick={function(){ setView(null); }}>← Retour</Btn>
         <h2 style={{ margin:0, fontSize:20, fontWeight:800 }}>Qualité</h2>
+        <span style={{ fontSize:12, color:"#AEAEB2", marginLeft:4 }}>{qContracts.length} contrat{qContracts.length > 1 ? "s" : ""}</span>
       </div>
+      {DateRangeBar}
 
       {/* Global metrics */}
       <div style={{ display:"flex", gap:12, marginBottom:24, flexWrap:"wrap" }}>
         <Card style={{ flex:2, minWidth:220, padding:20 }}>
           <div style={{ fontSize:11, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Qualité globale agence</div>
           <div style={{ fontSize:48, fontWeight:800, letterSpacing:-2, color:globalQualCol, lineHeight:1, marginBottom:14 }}>{tauxGlobalQ}%</div>
-          <div style={{ display:"flex", gap:20 }}>
+          <div style={{ display:"flex", gap:16, flexWrap:"wrap" }}>
             <div>
               <div style={{ fontSize:10, color:"#AEAEB2", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>Branchement</div>
               <div style={{ fontSize:18, fontWeight:800, color:"#34C759" }}>{tauxBrancheQ}%</div>
@@ -2909,6 +2946,12 @@ if (view === "quality") {
               <div style={{ fontSize:10, color:"#AEAEB2", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>RDV pris</div>
               <div style={{ fontSize:18, fontWeight:800, color:"#0071E3" }}>{tauxRdvQ}%</div>
               <div style={{ fontSize:11, color:"#AEAEB2" }}>{rdvQ} contrats</div>
+            </div>
+            <div style={{ width:1, background:"#F0F0F0" }} />
+            <div>
+              <div style={{ fontSize:10, color:"#AEAEB2", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>En attente</div>
+              <div style={{ fontSize:18, fontWeight:800, color:"#FF9F0A" }}>{tauxAttenteQ}%</div>
+              <div style={{ fontSize:11, color:"#AEAEB2" }}>{attenteQ} contrats</div>
             </div>
           </div>
         </Card>
