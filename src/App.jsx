@@ -4546,6 +4546,12 @@ function ClocheTab({ team, contracts }) {
     var sat = new Date(today); sat.setDate(today.getDate() - 2);
     veilleDate.push(fri.toISOString().split("T")[0]);
     veilleDate.push(sat.toISOString().split("T")[0]);
+  } else if (dayOfWeek === 0) {
+    // Dimanche → vendredi + samedi (preview du lundi matin)
+    var fri = new Date(today); fri.setDate(today.getDate() - 2);
+    var sat = new Date(today); sat.setDate(today.getDate() - 1);
+    veilleDate.push(fri.toISOString().split("T")[0]);
+    veilleDate.push(sat.toISOString().split("T")[0]);
   } else {
     var yesterday = new Date(today); yesterday.setDate(today.getDate() - 1);
     veilleDate.push(yesterday.toISOString().split("T")[0]);
