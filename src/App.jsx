@@ -39,6 +39,104 @@ function resolveVTA(vtaCode, date, dailyPlan, team) {
   return group[0];
 }
 
+// Détection des contrats ambigus à partir du planning du jour
+function getPendingResolutions(contracts, team, dailyPlan, cars) {
+  var today = new Date().toISOString().split("T")[0];
+
+  // Construire la map membre → communes travaillées
+  var memberCommunes = {}; // memberId → Set<string lowercase>
+  cars.forEach(function(car) {
+    var plan = dailyPlan[car.id];
+    if (!plan) return;
+    var mc = plan.memberCommunes || {};
+    Object.keys(mc).forEach(function(mid) {
+      var commune = (mc[mid] || '').trim().toLowerCase();
+      if (!commune) return;
+      var id = parseInt(mid);
+      if (!memberCommunes[id]) memberCommunes[id] = new Set();
+      memberCommunes[id].add(commune);
+    });
+  });
+  var presentIds = new Set(Object.keys(memberCommunes).map(Number));
+
+  // Codes prêtés : lentMap[code] = { lender, borrower }
+  var lentMap = {};
+  team.forEach(function(m) {
+    (m.lentCodes || []).forEach(function(lc) {
+      var borrower = team.find(function(t) { return t.id === lc.borrowerId; });
+      if (borrower) lentMap[lc.code] = { lender: m, borrower: borrower };
+    });
+  });
+
+  var pending = [];
+  var todayC = contracts.filter(function(c) { return c.date === today; });
+
+  function communeMatch(memberId, ville) {
+    if (!ville) return false;
+    var communes = memberCommunes[memberId] || new Set();
+    var v = ville.trim().toLowerCase();
+    // Match exact ou si l'un contient l'autre (ex: "GENAS" dans "GENAS cedex")
+    for (var c of communes) { if (c === v || c.indexOf(v) >= 0 || v.indexOf(c) >= 0) return true; }
+    return false;
+  }
+
+  todayC.forEach(function(contract) {
+    var ville = (contract.ville || '').trim();
+
+    // ── VST prêté ──────────────────────────────────────────────────────────────
+    if (contract.vstLogin && lentMap[contract.vstLogin]) {
+      var lent = lentMap[contract.vstLogin];
+      var lenderP = presentIds.has(lent.lender.id);
+      var borrowerP = presentIds.has(lent.borrower.id);
+
+      if (!lenderP && !borrowerP) return; // aucun présent → skip
+
+      if (lenderP && !borrowerP) {
+        // Seul le prêteur → contrat déjà correct, trace seulement
+        pending.push({ type: 'auto', contract: contract, autoTo: lent.lender, candidates: [lent.lender, lent.borrower], reason: lent.borrower.name + ' absent' });
+        return;
+      }
+      if (!lenderP && borrowerP) {
+        // Seul l'emprunteur → auto-attribuer
+        pending.push({ type: 'auto', contract: contract, autoTo: lent.borrower, candidates: [lent.lender, lent.borrower], reason: lent.lender.name + ' absent' });
+        return;
+      }
+      // Les deux présents → comparer les communes
+      var lenderMatch = communeMatch(lent.lender.id, ville);
+      var borrowerMatch = communeMatch(lent.borrower.id, ville);
+      if (lenderMatch && !borrowerMatch) return; // clairement le prêteur
+      if (borrowerMatch && !lenderMatch) {
+        pending.push({ type: 'auto', contract: contract, autoTo: lent.borrower, candidates: [lent.lender, lent.borrower], reason: 'commune ' + ville });
+        return;
+      }
+      // Même commune ou pas de données → confirmation manuelle
+      pending.push({ type: 'manual', contract: contract, candidates: [lent.lender, lent.borrower], reason: 'même commune' });
+    }
+
+    // ── VTA non résolu ─────────────────────────────────────────────────────────
+    if (contract.vtaCode && !contract.vtaResolved) {
+      var group = VTA_GROUPS[contract.vtaCode];
+      if (!group || group.length <= 1) return;
+
+      var candidates = group.map(function(name) { return team.find(function(m) { return m.name === name; }); })
+        .filter(Boolean).filter(function(m) { return presentIds.has(m.id); });
+      if (candidates.length === 0) return;
+      if (candidates.length === 1) {
+        pending.push({ type: 'auto', contract: contract, autoTo: candidates[0], candidates: candidates, reason: 'seul présent' });
+        return;
+      }
+      var inVille = ville ? candidates.filter(function(m) { return communeMatch(m.id, ville); }) : [];
+      if (inVille.length === 1) {
+        pending.push({ type: 'auto', contract: contract, autoTo: inVille[0], candidates: candidates, reason: 'commune ' + ville });
+      } else {
+        pending.push({ type: 'manual', contract: contract, candidates: inVille.length > 1 ? inVille : candidates, reason: inVille.length > 1 ? 'même commune' : 'commune inconnue' });
+      }
+    }
+  });
+
+  return pending;
+}
+
 const store = {
 get: async (key) => { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch (e) { return null; } },
 set: async (key, val) => { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) { console.error(e); } },
@@ -127,35 +225,35 @@ const DEPT_ZONES = {
 };
 
 const DEMO_TEAM = [
-{ id: 1, name: "Djany Legrand", role: "Manager", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-dclavereuil"] },
-{ id: 2, name: "Leo Merde", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-lmertz"] },
-{ id: 3, name: "Stephane Legrand", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-slegrand"] },
-{ id: 4, name: "Sandra Pereira", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-spereira"] },
-{ id: 5, name: "William Goujon", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-eluc"] },
-{ id: 6, name: "Yannis Aboulfatah", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-yaboulfatah"] },
-{ id: 7, name: "Lyna Belkessa", role: "Confirme", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-dbelkessa"] },
-{ id: 8, name: "Ali Atf", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-aatf"] },
-{ id: 9, name: "Victor Moize", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-vmoize"] },
-{ id: 10, name: "Momed Ali", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-mali"] },
-{ id: 11, name: "Pablo Grasset", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-pgrasset"] },
-{ id: 12, name: "Hamid Atroune", role: "Debutant", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-adahmani"] },
-{ id: 13, name: "Cheick Ouedraogo", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-couedraogo"] },
-{ id: 14, name: "Mohamed Mehdi Larech", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-mlarech"] },
-{ id: 15, name: "Omar Mbengue", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-ombengue"] },
-{ id: 16, name: "Melodie Mendousse", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-mmendousse"] },
-{ id: 17, name: "Ronan Kombo", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-rkombo"] },
-{ id: 18, name: "Abdellah Cheikh", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-bouchrif"] },
-{ id: 19, name: "Paul Geriltault", role: "Debutant", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-droode"] },
-{ id: 20, name: "Abdel Nouar", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-hnouar"] },
-{ id: 21, name: "Ouissem Ouirini", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-kelahmadi"] },
-{ id: 22, name: "Titouan Salaun", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-tsalaun"] },
-{ id: 23, name: "Nora Wahid", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-dpouilly"] },
-{ id: 24, name: "Eloise Meillerais", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-emeillerais"] },
-{ id: 25, name: "Come Audonnet", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-caudonnet"] },
-{ id: 26, name: "Ilhan Kocak", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-ikocak"] },
-{ id: 27, name: "Ines Ouirini", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-iouirini"] },
-{ id: 28, name: "Shana David", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-sdavid"] },
-{ id: 29, name: "Adam El Jazouli", role: "Confirme", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-ajazouli"] },
+{ id: 1, name: "Djany Legrand", role: "Manager", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-dclavereuil"], lentCodes: [] },
+{ id: 2, name: "Leo Merde", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-lmertz"], lentCodes: [] },
+{ id: 3, name: "Stephane Legrand", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-slegrand"], lentCodes: [] },
+{ id: 4, name: "Sandra Pereira", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-spereira"], lentCodes: [] },
+{ id: 5, name: "William Goujon", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-eluc"], lentCodes: [] },
+{ id: 6, name: "Yannis Aboulfatah", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-yaboulfatah"], lentCodes: [] },
+{ id: 7, name: "Lyna Belkessa", role: "Confirme", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-dbelkessa"], lentCodes: [] },
+{ id: 8, name: "Ali Atf", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-aatf"], lentCodes: [] },
+{ id: 9, name: "Victor Moize", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-vmoize"], lentCodes: [] },
+{ id: 10, name: "Momed Ali", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-mali"], lentCodes: [] },
+{ id: 11, name: "Pablo Grasset", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-pgrasset"], lentCodes: [] },
+{ id: 12, name: "Hamid Atroune", role: "Debutant", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-adahmani"], lentCodes: [] },
+{ id: 13, name: "Cheick Ouedraogo", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-couedraogo"], lentCodes: [] },
+{ id: 14, name: "Mohamed Mehdi Larech", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-mlarech"], lentCodes: [] },
+{ id: 15, name: "Omar Mbengue", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-ombengue"], lentCodes: [] },
+{ id: 16, name: "Melodie Mendousse", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-mmendousse"], lentCodes: [] },
+{ id: 17, name: "Ronan Kombo", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-rkombo"], lentCodes: [] },
+{ id: 18, name: "Abdellah Cheikh", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-bouchrif"], lentCodes: [] },
+{ id: 19, name: "Paul Geriltault", role: "Debutant", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-droode"], lentCodes: [] },
+{ id: 20, name: "Abdel Nouar", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-hnouar"], lentCodes: [] },
+{ id: 21, name: "Ouissem Ouirini", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-kelahmadi"], lentCodes: [] },
+{ id: 22, name: "Titouan Salaun", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-tsalaun"], lentCodes: [] },
+{ id: 23, name: "Nora Wahid", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-dpouilly"], lentCodes: [] },
+{ id: 24, name: "Eloise Meillerais", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-emeillerais"], lentCodes: [] },
+{ id: 25, name: "Come Audonnet", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-caudonnet"], lentCodes: [] },
+{ id: 26, name: "Ilhan Kocak", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-ikocak"], lentCodes: [] },
+{ id: 27, name: "Ines Ouirini", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-iouirini"], lentCodes: [] },
+{ id: 28, name: "Shana David", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-sdavid"], lentCodes: [] },
+{ id: 29, name: "Adam El Jazouli", role: "Confirme", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-ajazouli"], lentCodes: [] },
 ];
 
 const DEMO_CARS = [
@@ -1293,6 +1391,7 @@ function carnetToContracts(rows) {
       return {
         id: 'f-' + r.id_abo,
         commercial: vstMap[login] || login,
+        vstLogin: login,
         date: date,
         heure: heure,
         ville: ville,
@@ -1595,7 +1694,7 @@ return (
   </nav>
 
   <main style={{ padding: "28px 32px", maxWidth: 1100, margin: "0 auto" }} className="tab-content" key={tab}>
-    {tab === "dashboard" && <DashboardTab team={team} contracts={contracts} dailyPlan={dailyPlan} lastSync={lastSync} scraperStatus={scraperStatus} />}
+    {tab === "dashboard" && <DashboardTab team={team} contracts={contracts} saveContracts={saveContracts} dailyPlan={dailyPlan} cars={cars} lastSync={lastSync} scraperStatus={scraperStatus} />}
     {tab === "team" && <TeamTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} groups={groups} saveGroups={saveGroups} />}
     {tab === "cars" && <CarsTab team={team} cars={cars} saveCars={saveCars} dailyPlan={dailyPlan} saveDailyPlan={saveDailyPlan} groups={groups} />}
     {tab === "contracts" && <ContractsTab contracts={contracts} team={team} dailyPlan={dailyPlan} cars={cars} saveContracts={saveContracts} />}
@@ -1611,7 +1710,7 @@ return (
 }
 
 // DASHBOARD
-function DashboardTab({ team, contracts, dailyPlan, lastSync, scraperStatus }) {
+function DashboardTab({ team, contracts, saveContracts, dailyPlan, cars, lastSync, scraperStatus }) {
 var today = new Date().toISOString().split("T")[0];
 var yesterday = new Date(Date.now() - 86400000).toISOString().split("T")[0];
 var todayC = contracts.filter(function(c) { return c.date === today; });
@@ -1625,8 +1724,109 @@ weekC.forEach(function(c) { wBy[c.commercial] = (wBy[c.commercial] || 0) + 1; })
 var ranking = Object.entries(wBy).sort(function(a, b) { return b[1] - a[1]; });
 var medals = ["1er", "2e", "3e"];
 
+var pending = getPendingResolutions(contracts, team, dailyPlan, cars || []);
+var manualPending = pending.filter(function(p) { return p.type === 'manual'; });
+var autoPending = pending.filter(function(p) { return p.type === 'auto' && p.autoTo && p.contract.commercial !== p.autoTo.name; });
+
+function resolveContract(contractId, memberName, isVta) {
+  saveContracts(contracts.map(function(c) {
+    if (c.id !== contractId) return c;
+    return Object.assign({}, c, { commercial: memberName, vtaResolved: isVta ? true : c.vtaResolved });
+  }));
+}
+
+function applyAutoResolutions() {
+  var updated = contracts.slice();
+  autoPending.forEach(function(p) {
+    for (var i = 0; i < updated.length; i++) {
+      if (updated[i].id === p.contract.id) {
+        updated[i] = Object.assign({}, updated[i], { commercial: p.autoTo.name, vtaResolved: p.contract.vtaCode ? true : updated[i].vtaResolved });
+        break;
+      }
+    }
+  });
+  saveContracts(updated);
+}
+
+var ResolutionWidget = (manualPending.length > 0 || autoPending.length > 0) ? (
+  <Card style={{ borderLeft: "4px solid #FF9F0A" }}>
+    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
+      <span style={{ fontSize: 18 }}>⚡</span>
+      <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#1D1D1F" }}>
+        Résolutions en attente
+      </h3>
+      {manualPending.length > 0 && <span style={{ fontSize: 11, fontWeight: 700, background: "#FF3B30", color: "#fff", borderRadius: 99, padding: "2px 7px" }}>{manualPending.length} à confirmer</span>}
+      {autoPending.length > 0 && <span style={{ fontSize: 11, fontWeight: 700, background: "#34C759", color: "#fff", borderRadius: 99, padding: "2px 7px" }}>{autoPending.length} auto</span>}
+    </div>
+
+    {manualPending.length > 0 && (
+      <div style={{ marginBottom: 14 }}>
+        <div style={{ fontSize: 11, fontWeight: 700, color: "#FF3B30", letterSpacing: 0.8, textTransform: "uppercase", marginBottom: 8 }}>À confirmer</div>
+        {manualPending.map(function(p) {
+          var c = p.contract;
+          return (
+            <div key={c.id} style={{ display: "flex", alignItems: "center", gap: 10, padding: "8px 12px", background: "#FFF8F0", borderRadius: 10, marginBottom: 6, flexWrap: "wrap" }}>
+              <div style={{ flex: 1, minWidth: 120 }}>
+                <span style={{ fontSize: 12, fontWeight: 600, color: "#1D1D1F" }}>{c.ville || '—'}</span>
+                {c.rue && <span style={{ fontSize: 11, color: "#6E6E73", marginLeft: 6 }}>{c.rue}</span>}
+                <div style={{ fontSize: 11, color: "#AEAEB2", marginTop: 2 }}>
+                  {c.heure || c.date} · {c.status} · <span style={{ color: "#FF9F0A" }}>{p.reason}</span>
+                </div>
+              </div>
+              <div style={{ display: "flex", gap: 6 }}>
+                {p.candidates.map(function(m) {
+                  return (
+                    <button key={m.id} onClick={function() { resolveContract(c.id, m.name, !!c.vtaCode); }}
+                      style={{ padding: "5px 12px", borderRadius: 8, border: "1px solid " + ROLE_COLORS[m.role], background: "#fff", color: ROLE_COLORS[m.role], fontSize: 12, fontWeight: 600, cursor: "pointer" }}>
+                      {m.name.split(' ')[0]}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    )}
+
+    {autoPending.length > 0 && (
+      <div>
+        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+          <div style={{ fontSize: 11, fontWeight: 700, color: "#34C759", letterSpacing: 0.8, textTransform: "uppercase", flex: 1 }}>Résolutions automatiques</div>
+          <button onClick={applyAutoResolutions} style={{ padding: "4px 12px", borderRadius: 8, border: "none", background: "#34C759", color: "#fff", fontSize: 11, fontWeight: 700, cursor: "pointer" }}>
+            Appliquer tout ({autoPending.length})
+          </button>
+        </div>
+        {autoPending.map(function(p) {
+          var c = p.contract;
+          return (
+            <div key={c.id} style={{ display: "flex", alignItems: "center", gap: 10, padding: "7px 12px", background: "#F0FFF4", borderRadius: 10, marginBottom: 5, flexWrap: "wrap" }}>
+              <span style={{ fontSize: 12, color: "#34C759", fontWeight: 700, minWidth: 16 }}>→</span>
+              <div style={{ flex: 1, minWidth: 100 }}>
+                <span style={{ fontSize: 12, fontWeight: 600, color: "#1D1D1F" }}>{c.ville || '—'}</span>
+                <span style={{ fontSize: 11, color: "#6E6E73", marginLeft: 6 }}>{c.status}</span>
+                <div style={{ fontSize: 11, color: "#AEAEB2", marginTop: 1 }}>{p.reason}</div>
+              </div>
+              <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+                <span style={{ fontSize: 12, color: "#6E6E73" }}>{c.commercial}</span>
+                <span style={{ fontSize: 11, color: "#AEAEB2" }}>→</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#34C759" }}>{p.autoTo.name}</span>
+              </div>
+              <button onClick={function() { resolveContract(c.id, p.autoTo.name, !!c.vtaCode); }}
+                style={{ padding: "3px 10px", borderRadius: 7, border: "1px solid #34C75950", background: "#34C75910", color: "#34C759", fontSize: 11, fontWeight: 700, cursor: "pointer" }}>
+                ✓
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    )}
+  </Card>
+) : null;
+
 return (
 <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+{ResolutionWidget}
 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
 <StatCard label="Aujourd'hui" value={todayC.length} color="#0071E3" />
 <StatCard label="Hier" value={yesterdayC.length} color="#34C759" sub={yesterdayC.filter(function(c) { return c.status === "Valide"; }).length + " valides"} />
@@ -1692,15 +1892,15 @@ return (
 function TeamTab({ team, saveTeam, contracts, saveContracts, groups, saveGroups }) {
 const [mo, setMo] = useState(false);
 const [em, setEm] = useState(null);
-const [f, setF] = useState({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false, vstCodes: [] });
+const [f, setF] = useState({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false, vstCodes: [], lentCodes: [] });
 const [fl, setFl] = useState("");
 const [vue, setVue] = useState("liste");
 const [picker, setPicker] = useState(null);
 const [vstInputs, setVstInputs] = useState({});
 const [fVstInput, setFVstInput] = useState("");
 
-function openAdd() { setEm(null); setF({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false, vstCodes: [] }); setFVstInput(""); setMo(true); }
-function openEdit(m) { setEm(m); setF({ name: m.name, role: m.role, operators: Array.isArray(m.operators) ? m.operators : [m.operator || "Free"], permis: m.permis, voiture: m.voiture, vstCodes: m.vstCodes ? m.vstCodes.slice() : [] }); setFVstInput(""); setMo(true); }
+function openAdd() { setEm(null); setF({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false, vstCodes: [], lentCodes: [] }); setFVstInput(""); setMo(true); }
+function openEdit(m) { setEm(m); setF({ name: m.name, role: m.role, operators: Array.isArray(m.operators) ? m.operators : [m.operator || "Free"], permis: m.permis, voiture: m.voiture, vstCodes: m.vstCodes ? m.vstCodes.slice() : [], lentCodes: m.lentCodes ? m.lentCodes.slice() : [] }); setFVstInput(""); setMo(true); }
 function save() {
 if (!f.name.trim()) return;
 if (em) { saveTeam(team.map(function(m) { return m.id === em.id ? Object.assign({}, m, f) : m; })); }
@@ -2137,6 +2337,52 @@ return (
     }}>Ajouter</Btn>
   </div>
 </div>
+{(f.vstCodes || []).length > 0 && (
+<div>
+  <label style={{ fontSize: 12, fontWeight: 600, color: "#6E6E73", display: "block", marginBottom: 6 }}>Codes temporaires prêtés à</label>
+  <div style={{ display: "flex", flexDirection: "column", gap: 6, marginBottom: 8 }}>
+    {(f.lentCodes || []).map(function(lc) {
+      var borrower = team.find(function(m) { return m.id === lc.borrowerId; });
+      return (
+        <div key={lc.code + lc.borrowerId} style={{ display: "flex", alignItems: "center", gap: 8, background: "#FF9F0A0D", border: "1px solid #FF9F0A30", borderRadius: 8, padding: "5px 10px" }}>
+          <code style={{ fontSize: 12, fontWeight: 700, color: "#FF9F0A" }}>{lc.code}</code>
+          <span style={{ fontSize: 12, color: "#6E6E73" }}>→</span>
+          <span style={{ fontSize: 12, fontWeight: 600, color: "#1D1D1F", flex: 1 }}>{borrower ? borrower.name : "?"}</span>
+          <button type="button" onClick={function() { setF(Object.assign({}, f, { lentCodes: (f.lentCodes || []).filter(function(x) { return !(x.code === lc.code && x.borrowerId === lc.borrowerId); }) })); }} style={{ background: "none", border: "none", cursor: "pointer", color: "#AEAEB2", fontSize: 14, padding: 0 }}>×</button>
+        </div>
+      );
+    })}
+    {(f.lentCodes || []).length === 0 && <span style={{ fontSize: 12, color: "#AEAEB2", fontStyle: "italic" }}>Aucun prêt actif</span>}
+  </div>
+  <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+    <Sel
+      value=""
+      placeholder="Code à prêter..."
+      onChange={function(code) {
+        if (!code) return;
+        setF(Object.assign({}, f, { _pendingLentCode: code }));
+      }}
+      options={(f.vstCodes || []).map(function(c) { return { value: c, label: c }; })}
+      style={{ flex: 1 }}
+    />
+    <span style={{ fontSize: 12, color: "#6E6E73" }}>→</span>
+    <Sel
+      value=""
+      placeholder="Prêter à..."
+      onChange={function(borrowerId) {
+        if (!borrowerId || !f._pendingLentCode) return;
+        var bid = parseInt(borrowerId);
+        var existing = (f.lentCodes || []).find(function(x) { return x.code === f._pendingLentCode && x.borrowerId === bid; });
+        if (!existing) {
+          setF(Object.assign({}, f, { lentCodes: (f.lentCodes || []).concat({ code: f._pendingLentCode, borrowerId: bid }), _pendingLentCode: null }));
+        }
+      }}
+      options={team.filter(function(m) { return m.active && (!em || m.id !== em.id); }).sort(function(a,b) { return a.name.localeCompare(b.name); }).map(function(m) { return { value: String(m.id), label: m.name }; })}
+      style={{ flex: 1 }}
+    />
+  </div>
+</div>
+)}
 <div style={{ display: "flex", gap: 10 }}>
 <Btn onClick={save} style={{ flex: 1 }}>{em ? "Enregistrer" : "Ajouter"}</Btn>
 {em && <Btn v="secondary" onClick={function() { saveTeam(team.map(function(m) { return m.id === em.id ? Object.assign({}, m, { active: !m.active }) : m; })); setMo(false); }}>{em.active ? "Desactiver" : "Reactiver"}</Btn>}
