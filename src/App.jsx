@@ -46,7 +46,7 @@ function getPendingResolutions(contracts, team, dailyPlan, cars) {
   // Construire la map membre → communes travaillées
   var memberCommunes = {}; // memberId → Set<string lowercase>
   cars.forEach(function(car) {
-    var plan = dailyPlan[car.id];
+    var plan = dailyPlan && dailyPlan[car.id];
     if (!plan) return;
     var mc = plan.memberCommunes || {};
     Object.keys(mc).forEach(function(mid) {
