@@ -4276,6 +4276,113 @@ return (
 );
 }
 
+function CommuneHeatmap({ communeName, rueList }) {
+var mapRef = useRef(null);
+var mapInstance = useRef(null);
+const [mapReady, setMapReady] = useState(!!window.L);
+const [geoData, setGeoData] = useState([]);
+const [loading, setLoading] = useState(true);
+
+useEffect(function() {
+  if (window.L) { setMapReady(true); return; }
+  if (!document.getElementById("leaflet-css")) {
+    var css = document.createElement("link");
+    css.id = "leaflet-css"; css.rel = "stylesheet";
+    css.href = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css";
+    document.head.appendChild(css);
+  }
+  if (document.getElementById("leaflet-js")) { if (window.L) setMapReady(true); return; }
+  var js = document.createElement("script");
+  js.id = "leaflet-js";
+  js.src = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js";
+  js.onload = function() { setMapReady(true); };
+  document.head.appendChild(js);
+}, []);
+
+useEffect(function() {
+  if (!mapReady) return;
+  var cancelled = false;
+  var cache = {};
+  try { cache = JSON.parse(localStorage.getItem("ouirinance-geocache-v1")) || {}; } catch(e) {}
+  var toProcess = rueList.slice(0, 25).filter(function(e) { return e[0] !== "(rue non renseignée)"; });
+  var results = [];
+  var toFetch = [];
+  toProcess.forEach(function(entry) {
+    var key = communeName + "|" + entry[0];
+    if (cache[key]) {
+      results.push({ rue: entry[0], count: entry[1].count, lat: cache[key].lat, lng: cache[key].lng });
+    } else {
+      toFetch.push(entry);
+    }
+  });
+  if (toFetch.length === 0) {
+    if (!cancelled) { setGeoData(results); setLoading(false); }
+    return function() { cancelled = true; };
+  }
+  var newCache = Object.assign({}, cache);
+  (async function() {
+    for (var i = 0; i < toFetch.length; i++) {
+      if (cancelled) return;
+      var entry = toFetch[i];
+      var key = communeName + "|" + entry[0];
+      try {
+        var r = await fetch("https://api-adresse.data.gouv.fr/search/?q=" + encodeURIComponent(entry[0] + " " + communeName) + "&limit=1");
+        var d = await r.json();
+        if (d.features && d.features.length > 0) {
+          var c = d.features[0].geometry.coordinates;
+          newCache[key] = { lat: c[1], lng: c[0] };
+          results.push({ rue: entry[0], count: entry[1].count, lat: c[1], lng: c[0] });
+        }
+      } catch(e) {}
+      if (i < toFetch.length - 1) await new Promise(function(res) { setTimeout(res, 80); });
+    }
+    try { localStorage.setItem("ouirinance-geocache-v1", JSON.stringify(newCache)); } catch(e) {}
+    if (!cancelled) { setGeoData(results); setLoading(false); }
+  })();
+  return function() { cancelled = true; };
+}, [mapReady, communeName]);
+
+useEffect(function() {
+  if (!mapReady || !mapRef.current || geoData.length === 0) return function() {};
+  if (mapInstance.current) { mapInstance.current.remove(); mapInstance.current = null; }
+  var L = window.L; if (!L) return function() {};
+  var lat0 = geoData.reduce(function(s, d) { return s + d.lat; }, 0) / geoData.length;
+  var lng0 = geoData.reduce(function(s, d) { return s + d.lng; }, 0) / geoData.length;
+  var map = L.map(mapRef.current, { zoomControl: true, scrollWheelZoom: true }).setView([lat0, lng0], 14);
+  mapInstance.current = map;
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "© OSM", maxZoom: 18 }).addTo(map);
+  var maxCount = Math.max.apply(null, geoData.map(function(d) { return d.count; })) || 1;
+  geoData.forEach(function(d) {
+    var ratio = d.count / maxCount;
+    var radius = Math.max(40, Math.min(140, ratio * 100 + 40));
+    var col = ratio > 0.66 ? "#FF3B30" : ratio > 0.33 ? "#FF9F0A" : "#34C759";
+    L.circle([d.lat, d.lng], { radius: radius, fillColor: col, color: "transparent", weight: 0, fillOpacity: Math.max(0.25, ratio * 0.65) })
+      .addTo(map)
+      .bindPopup("<b style='font-family:-apple-system,sans-serif'>" + d.rue + "</b><br><span style='color:" + col + ";font-weight:700;font-family:-apple-system,sans-serif'>" + d.count + " contrat" + (d.count > 1 ? "s" : "") + "</span>");
+  });
+  setTimeout(function() { map.invalidateSize(); }, 200);
+  return function() { if (mapInstance.current) { mapInstance.current.remove(); mapInstance.current = null; } };
+}, [geoData, mapReady]);
+
+return (
+<Card style={{ padding: 20, marginBottom: 16 }}>
+  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#1D1D1F" }}>Heatmap rues</h3>
+    <span style={{ fontSize: 12, color: "#AEAEB2" }}>{loading ? "Géocodage…" : geoData.length + " rue" + (geoData.length > 1 ? "s" : "") + " géocodée" + (geoData.length > 1 ? "s" : "")}</span>
+  </div>
+  <div style={{ position: "relative" }}>
+    <div ref={mapRef} style={{ height: 300, borderRadius: 12, overflow: "hidden", background: "#F5F5F7" }} />
+    {loading && <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(245,245,247,0.85)", borderRadius: 12 }}><span style={{ fontSize: 13, color: "#AEAEB2" }}>Géocodage des rues…</span></div>}
+  </div>
+  <div style={{ marginTop: 10, display: "flex", gap: 12, justifyContent: "center" }}>
+    <span style={{ fontSize: 11, color: "#34C759", fontWeight: 700 }}>● peu prospectée</span>
+    <span style={{ fontSize: 11, color: "#FF9F0A", fontWeight: 700 }}>● moyenne</span>
+    <span style={{ fontSize: 11, color: "#FF3B30", fontWeight: 700 }}>● très prospectée</span>
+  </div>
+</Card>
+);
+}
+
 function SecteursTab() {
 const [sel, setSel] = useState(null);
 const [selSource, setSelSource] = useState(null);
@@ -4283,6 +4390,8 @@ const [sortBy, setSortBy] = useState("c");
 const [month, setMonth] = useState("");
 const [communeView, setCommuneView] = useState(null); // { commune, dept, isTalc }
 const [rueSearch, setRueSearch] = useState("");
+const [rueSort, setRueSort] = useState("top"); // "top" | "recent"
+const [showMap, setShowMap] = useState(false);
 
 var last6Months = MONTHS_ORDER.slice(-6);
 
@@ -4328,7 +4437,10 @@ cvContracts.forEach(function(ct) {
   var com = ct.commercial || "?";
   rueMap[r].commerciaux[com] = (rueMap[r].commerciaux[com] || 0) + 1;
 });
-var rueList = Object.entries(rueMap).sort(function(a, b) { return b[1].count - a[1].count; });
+var rueList = Object.entries(rueMap).sort(function(a, b) {
+  if (rueSort === "recent") return b[1].lastDate > a[1].lastDate ? 1 : b[1].lastDate < a[1].lastDate ? -1 : 0;
+  return b[1].count - a[1].count;
+});
 var rueQuery = rueSearch.trim().toUpperCase();
 var rueFiltered = rueQuery ? rueList.filter(function(e) { return e[0].toUpperCase().indexOf(rueQuery) >= 0; }) : rueList;
 
@@ -4345,9 +4457,9 @@ return (
 <div>
 {/* Breadcrumb nav */}
 <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 20, flexWrap: "wrap" }}>
-  <Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); setCommuneView(null); setRueSearch(""); }}>← Secteurs</Btn>
+  <Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); setCommuneView(null); setRueSearch(""); setShowMap(false); setRueSort("top"); }}>← Secteurs</Btn>
   <span style={{ color: "#D1D1D6", fontSize: 14 }}>›</span>
-  <Btn v="ghost" onClick={function() { setCommuneView(null); setRueSearch(""); }}>{sel}</Btn>
+  <Btn v="ghost" onClick={function() { setCommuneView(null); setRueSearch(""); setShowMap(false); setRueSort("top"); }}>{sel}</Btn>
   <span style={{ color: "#D1D1D6", fontSize: 14 }}>›</span>
   <span style={{ fontSize: 14, fontWeight: 700, color: "#1D1D1F" }}>{cv.v}</span>
 </div>
@@ -4388,11 +4500,18 @@ return (
   </div>
 </Card>
 
+{showMap && <CommuneHeatmap communeName={cv.v} rueList={rueList} />}
+
 {/* Street search */}
 <Card style={{ padding: 20 }}>
-  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#1D1D1F", flex: 1 }}>Rues</h3>
-    <span style={{ fontSize: 12, color: "#AEAEB2" }}>{cvContracts.length} contrat{cvContracts.length > 1 ? "s" : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
+  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
+    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#1D1D1F" }}>Rues</h3>
+    <span style={{ fontSize: 12, color: "#AEAEB2", flex: 1 }}>{cvContracts.length} contrat{cvContracts.length > 1 ? "s" : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
+    {[["top","🏆 Top"], ["recent","🕐 Récentes"]].map(function(opt) {
+      var active = rueSort === opt[0];
+      return <button key={opt[0]} onClick={function() { setRueSort(opt[0]); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: active ? "#1D1D1F" : "transparent", color: active ? "#fff" : "#6E6E73", borderColor: active ? "#1D1D1F" : "#E5E5EA", fontFamily: "inherit" }}>{opt[1]}</button>;
+    })}
+    <button onClick={function() { setShowMap(function(v) { return !v; }); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: showMap ? "#0071E3" : "transparent", color: showMap ? "#fff" : "#6E6E73", borderColor: showMap ? "#0071E3" : "#E5E5EA", fontFamily: "inherit" }}>🗺 Carte</button>
   </div>
   <div style={{ position: "relative", marginBottom: 16 }}>
     <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", fontSize: 14, color: "#AEAEB2", pointerEvents: "none" }}>🔍</span>
