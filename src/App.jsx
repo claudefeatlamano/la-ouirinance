@@ -96,7 +96,8 @@ var CARNET_BY_VILLE_MONTH = {};
     var v = (row.ville || "").toUpperCase().trim();
     if (!v) return;
     CARNET_BY_VILLE_ALL[v] = (CARNET_BY_VILLE_ALL[v] || 0) + 1;
-    var d = row.date || "";
+    // raw carnet field is date_inscription ("2026-02-05 19:48"), not date
+    var d = (row.date_inscription || row.date || "").split(" ")[0];
     var p = d.split("-");
     if (p.length === 3) {
       var mk = ML[parseInt(p[1])-1] + p[0].slice(2);
