@@ -2810,9 +2810,10 @@ if (view === "quality") {
     var tot = cc.length || 1;
     var br = cc.filter(isBranche).length;
     var rd = cc.filter(isRdv).length;
+    var at = cc.filter(function(c){ return c.status === "En attente RDV"; }).length;
     var an = cc.filter(isAnnule).length;
-    return { name: name, total: cc.length, br: br, rd: rd, an: an,
-      tGlobal: (br + rd) / tot * 100, tBr: br / tot * 100, tRd: rd / tot * 100, tAn: an / tot * 100,
+    return { name: name, total: cc.length, br: br, rd: rd, at: at, an: an,
+      tGlobal: (br + rd) / tot * 100, tBr: br / tot * 100, tRd: rd / tot * 100, tAt: at / tot * 100, tAn: an / tot * 100,
       contracts: cc };
   }).sort(function(a,b){ return b.tGlobal - a.tGlobal; });
 
@@ -2845,6 +2846,10 @@ if (view === "quality") {
               <div style={{ fontSize:28, fontWeight:800, color:"#0071E3" }}>{cs.rd}</div>
             </Card>
             <Card style={{ flex:1, minWidth:90, padding:14, textAlign:"center" }}>
+              <div style={{ fontSize:10, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>En attente</div>
+              <div style={{ fontSize:28, fontWeight:800, color:"#FF9F0A" }}>{cs.at}</div>
+            </Card>
+            <Card style={{ flex:1, minWidth:90, padding:14, textAlign:"center" }}>
               <div style={{ fontSize:10, fontWeight:600, color:"#AEAEB2", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Annulés</div>
               <div style={{ fontSize:28, fontWeight:800, color:"#FF3B30" }}>{cs.an}</div>
             </Card>
@@ -2853,6 +2858,7 @@ if (view === "quality") {
             {[
               { label:"Taux branchement", sub:"qualité long terme", val:cs.tBr, col:"#34C759" },
               { label:"Taux RDV", sub:"qualité hebdomadaire", val:cs.tRd, col:"#0071E3" },
+              { label:"En attente RDV", sub:"pipeline en cours", val:cs.tAt, col:"#FF9F0A" },
               { label:"Taux annulation", sub:"rétractations", val:cs.tAn, col:"#FF3B30" },
             ].map(function(item) {
               return (
@@ -2946,6 +2952,7 @@ if (view === "quality") {
                 {[
                   { label:"Branché", val:cs.tBr, count:cs.br, col:"#34C759" },
                   { label:"RDV", val:cs.tRd, count:cs.rd, col:"#0071E3" },
+                  { label:"Attente", val:cs.tAt, count:cs.at, col:"#FF9F0A" },
                   { label:"Annulé", val:cs.tAn, count:cs.an, col:"#FF3B30" },
                 ].map(function(item) {
                   return (
