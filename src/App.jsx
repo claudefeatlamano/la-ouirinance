@@ -2468,7 +2468,8 @@ if (!month) return commune.c || 0;
 var dataKey = MONTH_KEY_MAP[month] || month;
 var key = commune.v + "|" + dept;
 var m = MONTHLY[key];
-return m ? (m[dataKey] || 0) : 0;
+if (m && m[dataKey] !== undefined) return m[dataKey] || 0;
+return (CARNET_BY_VILLE_MONTH[commune.v] && CARNET_BY_VILLE_MONTH[commune.v][month]) || 0;
 }
 
 function MapTab() {
