@@ -4556,11 +4556,14 @@ function ClocheTab({ team, contracts }) {
       + " & " + new Date(veilleDate[1] + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" })
     : new Date(veilleDate[0] + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
 
+  // Contrats avec RIB validé uniquement (blancs = status vide → exclus)
+  var VALID_FOR_CLOCHE = { "En attente RDV":1, "RDV pris":1, "RDV pris J+7":1, "Branché":1, "Branché VRF":1, "Valide":1 };
+
   // Compter les contrats par commercial sur les dates veille
   var counts = {};
   team.filter(function(m) { return m.active; }).forEach(function(m) { counts[m.name] = 0; });
   contracts.forEach(function(c) {
-    if (veilleDate.indexOf(c.date) >= 0 && counts[c.commercial] !== undefined) {
+    if (veilleDate.indexOf(c.date) >= 0 && counts[c.commercial] !== undefined && VALID_FOR_CLOCHE[c.status]) {
       counts[c.commercial]++;
     }
   });
