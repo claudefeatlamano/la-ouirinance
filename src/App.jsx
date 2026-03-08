@@ -2621,8 +2621,9 @@ var rueMap = {};
 cvContracts.forEach(function(ct) {
   var r = (ct.rue || "").trim();
   if (!r) r = "(rue non renseignée)";
-  if (!rueMap[r]) rueMap[r] = { count: 0, commerciaux: {} };
+  if (!rueMap[r]) rueMap[r] = { count: 0, commerciaux: {}, lastDate: "" };
   rueMap[r].count++;
+  if (ct.date && ct.date > rueMap[r].lastDate) rueMap[r].lastDate = ct.date;
   var com = ct.commercial || "?";
   rueMap[r].commerciaux[com] = (rueMap[r].commerciaux[com] || 0) + 1;
 });
@@ -2711,10 +2712,23 @@ return (
       {rueFiltered.map(function(entry, i) {
         var rue = entry[0]; var info = entry[1];
         var coms = Object.entries(info.commerciaux).sort(function(a, b) { return b[1] - a[1]; });
+        var relTime = "";
+        if (info.lastDate) {
+          var diff = Math.floor((new Date() - new Date(info.lastDate + "T12:00:00")) / 86400000);
+          if (diff === 0) relTime = "aujourd'hui";
+          else if (diff === 1) relTime = "hier";
+          else if (diff < 7) relTime = "il y a " + diff + " j";
+          else if (diff < 30) relTime = "il y a " + Math.floor(diff / 7) + " sem.";
+          else if (diff < 365) relTime = "il y a " + Math.floor(diff / 30) + " mois";
+          else relTime = "il y a " + Math.floor(diff / 365) + " an" + (diff >= 730 ? "s" : "");
+        }
         return (
           <div key={rue} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", background: i % 2 ? "#FAFAFA" : "#fff", borderRadius: 8 }}>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontSize: 13, fontWeight: 600, color: "#1D1D1F", marginBottom: 6, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{rue}</div>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 6 }}>
+                <span style={{ fontSize: 13, fontWeight: 600, color: "#1D1D1F", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{rue}</span>
+                {relTime && <span style={{ fontSize: 11, color: "#AEAEB2", whiteSpace: "nowrap", flexShrink: 0 }}>{relTime}</span>}
+              </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
                 {coms.map(function(ce) {
                   var firstName = ce[0].split(" ")[0];
