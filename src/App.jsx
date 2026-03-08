@@ -2928,6 +2928,8 @@ const [qCom, setQCom] = useState(null); // selected commercial in quality detail
 const [qFrom, setQFrom] = useState("");
 const [qTo, setQTo] = useState("");
 const [selectedCom, setSelectedCom] = useState(null); // recap commercial
+const [comFrom, setComFrom] = useState("");
+const [comTo, setComTo] = useState("");
 
 // ── shared helpers ──────────────────────────────────────────────────────────
 var pendingVTA = contracts.filter(function(c) { return c.vtaCode && !c.vtaResolved; });
@@ -3548,8 +3550,38 @@ if (view === "commercial") {
 
   // ── DETAIL ──
   if (selectedCom) {
-    var csd = comStatsRC.find(function(s){ return s.name === selectedCom; });
-    if (!csd) { setSelectedCom(null); return null; }
+    var csdBase = comStatsRC.find(function(s){ return s.name === selectedCom; });
+    if (!csdBase) { setSelectedCom(null); return null; }
+
+    // Filtered contracts for this commercial + date range
+    var ccF = contracts.filter(function(c) {
+      if (c.commercial !== selectedCom) return false;
+      if (comFrom && c.date < comFrom) return false;
+      if (comTo && c.date > comTo) return false;
+      return true;
+    });
+    var weekCCF = ccF.filter(function(c){ return c.date >= wkStartStr && c.date <= todayStr; });
+    var monthCCF = ccF.filter(function(c){ return c.date >= moStartStr && c.date <= todayStr; });
+    var totF = ccF.length || 1;
+    var brF = ccF.filter(isBrC).length;
+    var rdF = ccF.filter(isRdC).length;
+    var atF = ccF.filter(function(c){ return c.status === "En attente RDV"; }).length;
+    var anF = ccF.filter(isAnC).length;
+    var activeDatesF = Array.from(new Set(ccF.map(function(c){ return c.date; }))).sort(function(a,b){ return b.localeCompare(a); });
+    var villeCountF = {};
+    ccF.forEach(function(c){ if (c.ville) villeCountF[c.ville] = (villeCountF[c.ville]||0)+1; });
+    var topVillesF = Object.entries(villeCountF).sort(function(a,b){ return b[1]-a[1]; }).slice(0,3);
+    var boxCountF = {};
+    ccF.forEach(function(c){ if (c.box) boxCountF[c.box] = (boxCountF[c.box]||0)+1; });
+    var csd = {
+      name: selectedCom, total: ccF.length, weekTotal: weekCCF.length, monthTotal: monthCCF.length,
+      activeDays: activeDatesF.length, lastDate: activeDatesF[0] || null,
+      br: brF, rd: rdF, at: atF, an: anF,
+      tBr: brF/totF*100, tRd: rdF/totF*100, tAt: atF/totF*100, tAn: anF/totF*100,
+      tGlobal: (brF+rdF)/totF*100, topVilles: topVillesF, boxCount: boxCountF,
+      monthlyData: csdBase.monthlyData, // trend always unfiltered
+    };
+
     var colD = comColor(csd.name);
     var initialsD = csd.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase();
     var qualColD = csd.tGlobal >= 60 ? "#34C759" : csd.tGlobal >= 35 ? "#FF9F0A" : "#FF3B30";
@@ -3563,10 +3595,17 @@ if (view === "commercial") {
       if (diff < 14) return "Sem. dernière";
       return "Il y a " + Math.round(diff/7) + " sem.";
     })() : "—";
+
+    var dateInputStyleD = { padding:"5px 10px", borderRadius:8, border:"1px solid #E5E5EA", fontSize:12, fontFamily:"inherit", color:"#1D1D1F", background:"#fff" };
+    function presetBtnD(label, from, to) {
+      var active = comFrom === from && comTo === to;
+      return <button key={label} onClick={function(){ setComFrom(from); setComTo(to); }} style={{ padding:"5px 12px", borderRadius:20, border:"1px solid "+(active?"#0071E3":"#E5E5EA"), background:active?"#0071E3":"#fff", color:active?"#fff":"#1D1D1F", fontSize:12, fontWeight:600, cursor:"pointer", fontFamily:"inherit" }}>{label}</button>;
+    }
+
     return (
       <div>
-        <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:20 }}>
-          <Btn v="ghost" onClick={function(){ setSelectedCom(null); }}>← Retour</Btn>
+        <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:16 }}>
+          <Btn v="ghost" onClick={function(){ setSelectedCom(null); setComFrom(""); setComTo(""); }}>← Retour</Btn>
           <div style={{ width:42, height:42, borderRadius:99, background:colD+"20", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}>
             <span style={{ fontSize:13, fontWeight:800, color:colD }}>{initialsD}</span>
           </div>
@@ -3577,6 +3616,18 @@ if (view === "commercial") {
           <div style={{ marginLeft:"auto", textAlign:"right" }}>
             <div style={{ fontSize:28, fontWeight:800, color:qualColD, lineHeight:1 }}>{csd.tGlobal.toFixed(0)}%</div>
             <div style={{ fontSize:10, color:"#AEAEB2", fontWeight:600 }}>qualité</div>
+          </div>
+        </div>
+
+        {/* Date range bar */}
+        <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:20, flexWrap:"wrap" }}>
+          {presetBtnD("Tout", "", "")}
+          {presetBtnD("Cette semaine", wkStartStr, todayStr)}
+          {presetBtnD("Ce mois", moStartStr, todayStr)}
+          <div style={{ display:"flex", alignItems:"center", gap:6, marginLeft:"auto" }}>
+            <input type="date" value={comFrom} onChange={function(e){ setComFrom(e.target.value); }} style={dateInputStyleD} />
+            <span style={{ fontSize:12, color:"#AEAEB2" }}>→</span>
+            <input type="date" value={comTo} onChange={function(e){ setComTo(e.target.value); }} style={dateInputStyleD} />
           </div>
         </div>
 
@@ -3725,7 +3776,7 @@ if (view === "commercial") {
           var firstName = cs.name.split(" ")[0];
           var lastName = cs.name.split(" ").slice(1).join(" ");
           return (
-            <Card key={cs.name} onClick={function(){ setSelectedCom(cs.name); }} style={{ padding:16, cursor:"pointer", textAlign:"center" }}>
+            <Card key={cs.name} onClick={function(){ setSelectedCom(cs.name); setComFrom(""); setComTo(""); }} style={{ padding:16, cursor:"pointer", textAlign:"center" }}>
               <div style={{ width:46, height:46, borderRadius:99, background:col+"20", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 10px" }}>
                 <span style={{ fontSize:14, fontWeight:800, color:col }}>{initials}</span>
               </div>
