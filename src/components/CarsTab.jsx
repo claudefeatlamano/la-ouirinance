@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Badge, Card, Btn, Sel, Inp, Modal } from "./ui.jsx";
-import { ROLES, ROLE_COLORS, OPERATORS, OP_COLORS } from "../constants/roles.js";
+import { ROLES, ROLE_LABELS, ROLE_COLORS, OPERATORS, OP_COLORS } from "../constants/roles.js";
 import { VTA_GROUPS } from "../constants/vta.js";
 import { SectorAutocomplete, CommuneAutocomplete } from "./SectorAutocomplete.jsx";
 

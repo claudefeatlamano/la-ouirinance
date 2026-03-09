@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Inp } from "./ui.jsx";
 import { JACHERE, JACHERE_TALC } from "../constants/jachere.js";
 
+var ALL_SECTORS = Object.keys(JACHERE).map(function(n) { return { name: n, talc: false }; })
+  .concat(Object.keys(JACHERE_TALC).map(function(n) { return { name: n, talc: true }; }));
+
 function SectorAutocomplete({ value, onSelect }) {
   var [open, setOpen] = useState(false);
   var q = (value || "").trim().toUpperCase();
