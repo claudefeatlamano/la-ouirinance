@@ -3,7 +3,7 @@ import { Badge, Card, Btn, Sel, Inp, Modal, StatCard } from "./ui.jsx";
 import { statusColor, isCaduque } from "../helpers/status.js";
 import { resolveVTA } from "../helpers/resolution.js";
 import { VTA_GROUPS } from "../constants/vta.js";
-import { ROLE_COLORS, OP_COLORS } from "../constants/roles.js";
+import { ROLE_COLORS, OP_COLORS, OPERATORS } from "../constants/roles.js";
 import { MONTHS_ORDER, MONTHS_LABELS, _ML_KEYS, _ML_FULL } from "../helpers/carnet.js";
 
 function ContractsTab({ contracts, team, dailyPlan, cars, saveContracts }) {
