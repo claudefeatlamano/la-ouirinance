@@ -4,10 +4,11 @@ import { statusColor, isCaduque } from "../helpers/status.js";
 import { resolveVTA } from "../helpers/resolution.js";
 import { VTA_GROUPS } from "../constants/vta.js";
 import { ROLE_COLORS, OP_COLORS, OPERATORS } from "../constants/roles.js";
+import { localDateStr } from "../helpers/date.js";
 import { MONTHS_ORDER, MONTHS_LABELS, _ML_KEYS, _ML_FULL } from "../helpers/carnet.js";
 
 function ContractsTab({ contracts, team, dailyPlan, cars, saveContracts }) {
-var _dp = dailyPlan ? (dailyPlan[new Date().toISOString().split("T")[0]] || {}) : {};
+var _dp = dailyPlan ? (dailyPlan[localDateStr(new Date())] || {}) : {};
 const [view, setView] = useState(null); // null | "today" | "week" | "month" | "quality"
 const [fD, setFD] = useState("");
 const [fC, setFC] = useState("");
@@ -105,24 +106,24 @@ function CList(list) {
 
 // ── date ranges ──────────────────────────────────────────────────────────────
 var now = new Date();
-var todayStr = now.toISOString().split("T")[0];
+var todayStr = localDateStr(now);
 var yest = new Date(now); yest.setDate(now.getDate()-1);
-var yestStr = yest.toISOString().split("T")[0];
+var yestStr = localDateStr(yest);
 
 var dow = now.getDay(); var dFromMon = dow === 0 ? 6 : dow - 1;
 var wkStart = new Date(now); wkStart.setDate(now.getDate() - dFromMon);
-var wkStartStr = wkStart.toISOString().split("T")[0];
+var wkStartStr = localDateStr(wkStart);
 var lwStart = new Date(wkStart); lwStart.setDate(wkStart.getDate()-7);
 var lwSameEnd = new Date(lwStart); lwSameEnd.setDate(lwStart.getDate()+dFromMon);
-var lwStartStr = lwStart.toISOString().split("T")[0];
-var lwSameEndStr = lwSameEnd.toISOString().split("T")[0];
+var lwStartStr = localDateStr(lwStart);
+var lwSameEndStr = localDateStr(lwSameEnd);
 
 var moStart = new Date(now.getFullYear(), now.getMonth(), 1);
-var moStartStr = moStart.toISOString().split("T")[0];
+var moStartStr = localDateStr(moStart);
 var pmStart = new Date(now.getFullYear(), now.getMonth()-1, 1);
 var pmEnd = new Date(now.getFullYear(), now.getMonth(), 0);
-var pmStartStr = pmStart.toISOString().split("T")[0];
-var pmEndStr = pmEnd.toISOString().split("T")[0];
+var pmStartStr = localDateStr(pmStart);
+var pmEndStr = localDateStr(pmEnd);
 
 var todayC   = contracts.filter(function(c){ return c.date === todayStr && !isCaduque(c); });
 var yestC    = contracts.filter(function(c){ return c.date === yestStr && !isCaduque(c); });
@@ -237,7 +238,7 @@ if (view === "week") {
   var weekDays = [];
   for (var wi = 0; wi <= dFromMon; wi++) {
     var wd = new Date(wkStart); wd.setDate(wkStart.getDate()+wi);
-    var wdStr = wd.toISOString().split("T")[0];
+    var wdStr = localDateStr(wd);
     var wdCount = weekC.filter(function(c){ return c.date === wdStr; }).length;
     weekDays.push({ date: wdStr, label: wd.toLocaleDateString("fr-FR",{weekday:"short"}), count: wdCount });
   }
@@ -385,9 +386,9 @@ if (view === "month") {
 }
 
 if (view === "quality") {
-  function isBranche(c) { return c.status && (c.status === "Branché" || c.status === "Branché VRF"); }
-  function isRdv(c) { return c.status && (c.status === "RDV pris" || c.status === "RDV pris J+7"); }
-  function isAnnule(c) { return c.status === "Annulé" || c.status === "Résilié"; }
+  function isBranche(c) { return c.status === "Branché"; }
+  function isRdv(c) { return c.status === "RDV pris"; }
+  function isAnnule(c) { return c.status === "Résilié"; }
 
   // ── Date filtering ──────────────────────────────────────────────────────────
   var qContracts = contracts.filter(function(c) {
@@ -613,9 +614,9 @@ if (view === "quality") {
 
 // ── RECAP COMMERCIAL ─────────────────────────────────────────────────────────
 if (view === "commercial") {
-  function isBrC(c) { return c.status && (c.status === "Branché" || c.status === "Branché VRF"); }
-  function isRdC(c) { return c.status && (c.status === "RDV pris" || c.status === "RDV pris J+7"); }
-  function isAnC(c) { return c.status === "Annulé" || c.status === "Résilié"; }
+  function isBrC(c) { return c.status === "Branché"; }
+  function isRdC(c) { return c.status === "RDV pris"; }
+  function isAnC(c) { return c.status === "Résilié"; }
 
   var comNamesRC = Array.from(new Set(contracts.map(function(c){ return c.commercial; }))).sort();
   var comStatsRC = comNamesRC.map(function(name) {
@@ -937,7 +938,7 @@ var todayDelta = todayC.length - yestC.length;
 var weekDelta  = weekC.length - lwC.length;
 var monthDelta = monthC.length - prevMonC.length;
 var tauxBrancheOv = total > 0 ? (contracts.filter(function(c){ return c.status && c.status.indexOf("Branché")===0; }).length / total * 100).toFixed(0) : "0";
-var annulesOv = contracts.filter(function(c){ return c.status === "Annulé" || c.status === "Résilié"; }).length;
+var annulesOv = contracts.filter(function(c){ return c.status === "Résilié"; }).length;
 
 return (
 <div>

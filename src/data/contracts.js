@@ -1087,14 +1087,12 @@ function carnetToContracts(rows) {
   }
 
   var statusMap = {
-    'inscription ok': 'En attente RDV',
-    'inscription ok /postprod': 'En attente RDV',
-    'vente valid\u00e9e': 'RDV pris',
-    'vente valid\u00e9e j+7': 'RDV pris J+7',
-    'connexion ok': 'Branch\u00e9',
-    'connexion ok vrf': 'Branch\u00e9 VRF',
-    'r\u00e9sili\u00e9': 'R\u00e9sili\u00e9',
-    'vente abandon\u00e9e': 'Annul\u00e9',
+    'connexion ok': 'Branché',
+    'connexion ok vrf': 'Branché',
+    'résilié': 'Résilié',
+    'vente validée j+7': 'RIB MANQUANT',
+    'vente abandonnée': 'RIB MANQUANT',
+    'inscription ok /postprod': 'Postprod',
   };
 
   return rows.map(function(r) {
@@ -1104,11 +1102,16 @@ function carnetToContracts(rows) {
     var heure = dt[1] ? dt[1].substring(0, 5) : '';
     var rawEtat = (r.etat_commande || '').trim().toLowerCase();
     var status = statusMap[rawEtat] || '';
-    if (!status && !rawEtat) {
-      var inscTime = new Date(r.date_inscription).getTime();
-      status = (Date.now() - inscTime > 2 * 60 * 60 * 1000) ? 'RIB MANQUANT' : 'Nouveau';
-    } else if (!status) {
-      status = r.etat_commande || '';
+    if (!status) {
+      if (!rawEtat || rawEtat === 'vente validée') {
+        var inscTime = new Date(r.date_inscription).getTime();
+        status = (Date.now() - inscTime > 2 * 60 * 60 * 1000) ? 'RIB MANQUANT' : 'Nouveau';
+      } else if (rawEtat === 'inscription ok') {
+        var rdvInfo = (r.info_rdv_sync || '').trim();
+        status = rdvInfo ? 'RDV pris' : 'En attente RDV';
+      } else {
+        status = r.etat_commande || '';
+      }
     }
     var box = cleanBox(r.box || '');
     var ville = (r.ville || '').trim();

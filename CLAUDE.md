@@ -89,12 +89,18 @@ src/
 
 ### Cycle de vie statut (contrats blancs du carnet)
 ```
-etat_commande vide + < 2h  →  "Nouveau"        (compté normalement)
-etat_commande vide + ≥ 2h  →  "RIB MANQUANT"   (caduque, exclu des stats)
-"inscription ok"            →  "En attente RDV"  (compté)
-"vente validée"             →  "RDV pris"        (compté)
-"connexion ok"              →  "Branché"          (compté)
-"vente abandonnée"          →  "Annulé"           (compté mais négatif)
+etat_commande vide + < 2h       →  "Nouveau"        (compté normalement)
+etat_commande vide + ≥ 2h       →  "RIB MANQUANT"   (caduque, exclu des stats)
+"vente validée" + < 2h           →  "Nouveau"        (compté normalement)
+"vente validée" + ≥ 2h           →  "RIB MANQUANT"   (caduque)
+"vente validée j+7"              →  "RIB MANQUANT"   (caduque)
+"vente abandonnée"               →  "RIB MANQUANT"   (caduque)
+"inscription ok" (sans rdv)      →  "En attente RDV" (compté)
+"inscription ok" + info_rdv_sync →  "RDV pris"       (compté)
+"inscription ok /postprod"       →  "Postprod"       (compté)
+"connexion ok"                   →  "Branché"        (compté)
+"connexion ok vrf"               →  "Branché"        (compté)
+"résilié"                        →  "Résilié"        (compté)
 ```
 
 ### Membre équipe

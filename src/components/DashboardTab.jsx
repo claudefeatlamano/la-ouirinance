@@ -3,19 +3,20 @@ import { Badge, Card, Btn, Sel, Modal, StatCard } from "./ui.jsx";
 import { statusColor, isCaduque } from "../helpers/status.js";
 import { resolveVTA, getPendingResolutions } from "../helpers/resolution.js";
 import { ROLE_COLORS } from "../constants/roles.js";
+import { localDateStr } from "../helpers/date.js";
 
 // DASHBOARD
 function DashboardTab({ team, contracts, saveContracts, dailyPlan, cars, lastSync, scraperStatus, objectives }) {
 // ── Dates & données ────────────────────────────────────────────────────────────
-var today    = new Date().toISOString().split("T")[0];
+var today    = localDateStr(new Date());
 var _dp = dailyPlan ? (dailyPlan[today] || {}) : {};
-var d3ago    = new Date(Date.now() - 3*86400000).toISOString().split("T")[0];
-var weekStart = (function(){ var d = new Date(); d.setDate(d.getDate() - (d.getDay()||7) + 1); return d.toISOString().split("T")[0]; })();
-var moStart  = new Date(new Date().getFullYear(), new Date().getMonth(), 1).toISOString().split("T")[0];
+var d3ago    = localDateStr(new Date(Date.now() - 3*86400000));
+var weekStart = (function(){ var d = new Date(); d.setDate(d.getDate() - (d.getDay()||7) + 1); return localDateStr(d); })();
+var moStart  = localDateStr(new Date(new Date().getFullYear(), new Date().getMonth(), 1));
 var todayC   = contracts.filter(function(c){ return c.date === today && !isCaduque(c); });
 var weekC    = contracts.filter(function(c){ return c.date >= weekStart && c.date <= today && !isCaduque(c); });
 var monthC   = contracts.filter(function(c){ return c.date >= moStart  && c.date <= today && !isCaduque(c); });
-var brMois   = monthC.filter(function(c){ return c.status === "Branché" || c.status === "Branché VRF"; });
+var brMois   = monthC.filter(function(c){ return c.status === "Branché"; });
 var tauxBr   = monthC.length > 0 ? Math.round(brMois.length / monthC.length * 100) : 0;
 var brColor  = tauxBr >= 60 ? "#34C759" : tauxBr >= 40 ? "#FF9F0A" : "#FF3B30";
 var wBy = {};
@@ -140,13 +141,13 @@ var activePlannedCars = (cars || []).filter(function(car){
 var last7 = [];
 for (var i7 = 6; i7 >= 0; i7--) {
   var d7 = new Date(Date.now() - i7 * 86400000);
-  var ds7 = d7.toISOString().split("T")[0];
+  var ds7 = localDateStr(d7);
   last7.push({ date: ds7, label: d7.toLocaleDateString("fr-FR", { weekday:"short" }).slice(0,3), count: contracts.filter(function(c){ return c.date === ds7; }).length });
 }
 var maxDay = Math.max.apply(null, last7.map(function(d){ return d.count; }).concat([1]));
 
 // ── Objectifs semaine ─────────────────────────────────────────────────────────
-function getWkKey(ds){ var d = new Date(ds+"T12:00:00"); d.setDate(d.getDate()-(d.getDay()||7)+1); return d.toISOString().split("T")[0]; }
+function getWkKey(ds){ var d = new Date(ds+"T12:00:00"); d.setDate(d.getDate()-(d.getDay()||7)+1); return localDateStr(d); }
 var weekObjectives = ((objectives||{})[getWkKey(today)])||{};
 var activeNM = team.filter(function(m){ return m.active && m.role !== "Manager"; });
 var objMembers = activeNM.filter(function(m){ return (weekObjectives[m.name]||0)>0; })
@@ -158,7 +159,7 @@ activeNM.forEach(function(m){
   var sorted = contracts.filter(function(c){ return c.commercial === m.name; }).sort(function(a,b){ return b.date.localeCompare(a.date); });
   if (sorted.length === 0 || sorted[0].date < d3ago) alertes.push({ col:"#FF3B30", bg:"#FEE2E2", icon:"🔴", text:m.name.split(" ")[0]+" — aucun contrat depuis +3j" });
 });
-var anMois = monthC.filter(function(c){ return c.status === "Annulé" || c.status === "Résilié"; });
+var anMois = monthC.filter(function(c){ return c.status === "Résilié"; });
 if (monthC.length >= 5 && anMois.length/monthC.length > 0.2) alertes.push({ col:"#FF9F0A", bg:"#FFF7E6", icon:"🟠", text:"Annulations : "+Math.round(anMois.length/monthC.length*100)+"% ce mois ("+anMois.length+" contrats)" });
 var totObj = activeNM.reduce(function(s,m){ return s+(weekObjectives[m.name]||0); },0);
 var totReal = activeNM.reduce(function(s,m){ return s+(wBy[m.name]||0); },0);

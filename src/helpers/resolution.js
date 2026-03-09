@@ -1,5 +1,6 @@
 import { VTA_GROUPS } from "../constants/vta.js";
 import { isCaduque } from "./status.js";
+import { localDateStr } from "./date.js";
 
 function resolveVTA(vtaCode, date, dailyPlan, team) {
   if (!vtaCode || !vtaCode.startsWith("vta-")) return null;
@@ -38,7 +39,7 @@ function resolveVTA(vtaCode, date, dailyPlan, team) {
 }
 
 function getPendingResolutions(contracts, team, dailyPlan, cars) {
-  var today = new Date().toISOString().split("T")[0];
+  var today = localDateStr(new Date());
   var todayPlan = (dailyPlan && dailyPlan[today]) || {};
 
   var memberCommunes = {};

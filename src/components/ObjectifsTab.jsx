@@ -2,11 +2,12 @@ import React, { useState, useMemo } from "react";
 import { Card, Btn, Inp, Badge, StatCard } from "./ui.jsx";
 import { statusColor, isCaduque } from "../helpers/status.js";
 import { ROLE_COLORS } from "../constants/roles.js";
+import { localDateStr } from "../helpers/date.js";
 
 function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
   function getWeekKey(date) {
     var d = new Date(date); d.setHours(0,0,0,0); d.setDate(d.getDate() - d.getDay() + 1);
-    return d.toISOString().split("T")[0];
+    return localDateStr(d);
   }
   function getWeekLabel(weekKey) {
     var start = new Date(weekKey + "T12:00:00");
@@ -16,15 +17,15 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
   }
   function getWeekDates(weekKey) {
     var start = new Date(weekKey + "T12:00:00"), dates = [];
-    for (var i = 0; i < 7; i++) { var d = new Date(start); d.setDate(d.getDate()+i); dates.push(d.toISOString().split("T")[0]); }
+    for (var i = 0; i < 7; i++) { var d = new Date(start); d.setDate(d.getDate()+i); dates.push(localDateStr(d)); }
     return dates;
   }
 
   var today = new Date();
-  var currentWeek = getWeekKey(today.toISOString().split("T")[0]);
+  var currentWeek = getWeekKey(localDateStr(today));
   var weeksFromContracts = Array.from(new Set(contracts.map(function(c){ return getWeekKey(c.date); })));
   var futureWeeks = [];
-  for (var i = 0; i <= 4; i++) { var d2 = new Date(today); d2.setDate(d2.getDate()+i*7); futureWeeks.push(getWeekKey(d2.toISOString().split("T")[0])); }
+  for (var i = 0; i <= 4; i++) { var d2 = new Date(today); d2.setDate(d2.getDate()+i*7); futureWeeks.push(getWeekKey(localDateStr(d2))); }
   var allWeeks = Array.from(new Set(weeksFromContracts.concat(futureWeeks))).sort(function(a,b){ return b.localeCompare(a); });
 
   var [selectedWeek, setSelectedWeek] = useState(currentWeek);

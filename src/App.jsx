@@ -13,6 +13,7 @@ import { ClocheTab } from "./components/ClocheTab.jsx";
 import { ObjectifsTab } from "./components/ObjectifsTab.jsx";
 import { ImportTab } from "./components/ImportTab.jsx";
 import { CarnetTab } from "./components/CarnetTab.jsx";
+import { localDateStr } from "./helpers/date.js";
 
 var TABS = [
 { id: "cloche", label: "🔔" },
@@ -51,7 +52,7 @@ try {
 unsubPlan = onSnapshot(doc(db, "agency", STORAGE_KEYS.dailyPlan), function(snap) {
   var raw = snap.exists() ? (snap.data().data || null) : null;
   if (raw && Object.keys(raw).length > 0 && !Object.keys(raw).some(function(k) { return /^\d{4}-\d{2}-\d{2}$/.test(k); })) {
-    var migrated = {}; migrated[new Date().toISOString().split("T")[0]] = raw;
+    var migrated = {}; migrated[localDateStr(new Date())] = raw;
     store.set(STORAGE_KEYS.dailyPlan, migrated);
     raw = migrated;
   }
@@ -172,7 +173,7 @@ var saveContracts = function(c) {
   store.set(STORAGE_KEYS.contracts, overrides);
 };
 var saveDailyPlan = function(todayPlan) {
-  var todayKey = new Date().toISOString().split("T")[0];
+  var todayKey = localDateStr(new Date());
   var full = Object.assign({}, dailyPlan || {});
   full[todayKey] = todayPlan;
   setDailyPlan(full);

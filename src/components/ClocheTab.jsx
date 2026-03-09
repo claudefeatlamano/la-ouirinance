@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Btn, Badge } from "./ui.jsx";
 import { statusColor, isCaduque } from "../helpers/status.js";
 import { ROLE_COLORS } from "../constants/roles.js";
+import { localDateStr } from "../helpers/date.js";
 
 function ClocheTab({ team, contracts }) {
   // Calculer les dates "veille" : J-1, et si lundi → vendredi + samedi
@@ -13,17 +14,17 @@ function ClocheTab({ team, contracts }) {
     // Lundi → vendredi + samedi
     var fri = new Date(today); fri.setDate(today.getDate() - 3);
     var sat = new Date(today); sat.setDate(today.getDate() - 2);
-    veilleDate.push(fri.toISOString().split("T")[0]);
-    veilleDate.push(sat.toISOString().split("T")[0]);
+    veilleDate.push(localDateStr(fri));
+    veilleDate.push(localDateStr(sat));
   } else if (dayOfWeek === 0) {
     // Dimanche → vendredi + samedi (preview du lundi matin)
     var fri = new Date(today); fri.setDate(today.getDate() - 2);
     var sat = new Date(today); sat.setDate(today.getDate() - 1);
-    veilleDate.push(fri.toISOString().split("T")[0]);
-    veilleDate.push(sat.toISOString().split("T")[0]);
+    veilleDate.push(localDateStr(fri));
+    veilleDate.push(localDateStr(sat));
   } else {
     var yesterday = new Date(today); yesterday.setDate(today.getDate() - 1);
-    veilleDate.push(yesterday.toISOString().split("T")[0]);
+    veilleDate.push(localDateStr(yesterday));
   }
 
   var dateLabel = veilleDate.length === 2
@@ -32,7 +33,7 @@ function ClocheTab({ team, contracts }) {
     : new Date(veilleDate[0] + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
 
   // Contrats avec RIB validé uniquement (blancs = status vide → exclus)
-  var VALID_FOR_CLOCHE = { "En attente RDV":1, "RDV pris":1, "RDV pris J+7":1, "Branché":1, "Branché VRF":1, "Valide":1 };
+  var VALID_FOR_CLOCHE = { "En attente RDV":1, "RDV pris":1, "Branché":1, "Valide":1, "Postprod":1 };
 
   // Compter les contrats par commercial sur les dates veille
   var counts = {};

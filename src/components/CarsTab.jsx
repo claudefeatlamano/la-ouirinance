@@ -3,10 +3,11 @@ import { Badge, Card, Btn, Sel, Inp, Modal } from "./ui.jsx";
 import { ROLES, ROLE_LABELS, ROLE_COLORS, OPERATORS, OP_COLORS } from "../constants/roles.js";
 import { VTA_GROUPS } from "../constants/vta.js";
 import { SectorAutocomplete, CommuneAutocomplete } from "./SectorAutocomplete.jsx";
+import { localDateStr } from "../helpers/date.js";
 
 function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups }) {
   var CAR_PALETTE = ["#0071E3","#34C759","#FF9F0A","#AF52DE","#FF2D55","#5AC8FA","#FF6B35","#00B4D8"];
-  var _todayKey = new Date().toISOString().split("T")[0];
+  var _todayKey = localDateStr(new Date());
   const [plan, setPlan] = useState((dailyPlan && dailyPlan[_todayKey]) || {});
   const [dragging, setDragging] = useState(null); // { memberId, fromCarId }
   const [dropTarget, setDropTarget] = useState(null); // carId or "pool"
