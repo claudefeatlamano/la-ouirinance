@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Badge, Card, Btn, Sel, Inp, Modal } from "./ui.jsx";
 import { ROLES, ROLE_LABELS, ROLE_COLORS, OPERATORS, OP_COLORS } from "../constants/roles.js";
 import { statusColor, isCaduque } from "../helpers/status.js";
+import { JACHERE, JACHERE_TALC } from "../constants/jachere.js";
 
 function TeamTab({ team, saveTeam, contracts, saveContracts, groups, saveGroups }) {
 const [mo, setMo] = useState(false);
