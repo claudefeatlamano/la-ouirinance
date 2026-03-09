@@ -10,73 +10,156 @@ git push origin main  # → GitHub Actions → scrape + build + deploy Pages (au
 
 ## Architecture
 
-- **Mono-fichier** : `src/App.jsx` (~4900 lignes). Ne pas splitter sans demande explicite.
+- **Multi-fichier** structuré par domaine :
+  - `src/App.jsx` — orchestrateur (state, Firestore sync, header, nav, routing tabs)
+  - `src/constants/` — données statiques (vta.js, jachere.js, roles.js)
+  - `src/data/` — store Firebase (store.js), team/cars (team.js), contrats (contracts.js), GPS (gps.js)
+  - `src/helpers/` — logique métier (resolution.js, status.js, carnet.js)
+  - `src/components/` — UI réutilisables (ui.jsx) + un fichier par onglet (*Tab.jsx) + autocompletes
 - `src/data.json` — données carnet scrappées par `scraper.py`, baked into build
 - `.github/workflows/scrape.yml` — scrape + build + deploy toutes les heures + sur push main
 - Pas de router : navigation via state `tab` (onglets) + sous-états `view`, `selectedCom`, etc.
 - Pas de Redux/Context : tout via `useState` dans les composants fonctions
+- **Persistance** : Firebase Firestore (collection `agency/`). Listeners temps réel onSnapshot pour `dailyPlan` et `objectives`.
 
-## Structure de App.jsx (lignes clés)
+## Flux de données
 
 ```
-L.1–7      STORAGE_KEYS, imports
-L.7–152    VTA_GROUPS, VTA_PERSON_MAP, helpers VTA
-L.152–226  JACHERE, JACHERE_TALC (secteurs → communes)
-L.227–1321 DEMO_TEAM, DEMO_CARS, makeDemoContracts, makeVTAContracts
-L.1322–1407 carnetToContracts() — mapping carnet brut → contrats app
-L.1408      DEMO_CONTRACTS (source de données principale)
-L.1524      export default function App() — composant racine
-L.1525–1534 States globaux : tab, team, cars, contracts, objectives, dailyPlan, groups
-L.1590      Poll Flask local (60s)
-L.1704      Barre de navigation (tabs)
-L.1733      DashboardTab
-L.1912      TeamTab — states internes L.1913+
-L.2445–2521 SectorAutocomplete, CommuneAutocomplete (composants standalone)
-L.2523      CarsTab — states internes L.2525+
-L.2920      ContractsTab — states internes L.2921+
-L.2934      Helpers partagés (comColor, topComs, isBrC, isRdC, isAnC…)
-L.3001–3033 Calculs dates partagés (todayStr, wkStartStr, moStartStr, todayC/weekC/monthC)
-L.3034      Vues détail : today / week / month / quality / commercial
-L.3509      view === "commercial" (Récap Commercial)
-L.3803      Vue overview ContractsTab (liste principale + filtres)
-L.4016–4045 MONTHS_ORDER, _ML_KEYS, MONTHS_LABELS, MONTH_KEY_MAP
-L.4047      MapTab
-L.4134      SecteursTab (3 niveaux navigation)
-L.4426      ClocheTab
-L.4532      ObjectifsTab
-L.4741      ImportTab
-L.4828      CarnetTab
+Carnet Proxad (live) → scraper.py (GitHub Actions, 1h) → src/data.json
+  → carnetToContracts() → DEMO_CONTRACTS (module-level)
+  → App state (contracts) → merge avec overrides Firestore (vtaResolved, commercial)
+  → Composants (DashboardTab, ContractsTab, etc.)
 ```
+
+## Structure fichiers
+
+```
+src/
+  App.jsx                          — Orchestrateur : state, Firestore, header, nav, tabs
+  data.json                        — Données carnet (scraper output)
+  main.jsx                         — Point d'entrée React
+  constants/
+    vta.js                         — VTA_GROUPS (code → commerciaux)
+    jachere.js                     — JACHERE, JACHERE_TALC (secteurs → communes)
+    roles.js                       — ROLES, ROLE_COLORS, OPERATORS, OP_COLORS, DEPT_ZONES
+  data/
+    store.js                       — Firebase config, db, store CRUD, STORAGE_KEYS
+    team.js                        — DEMO_TEAM, DEMO_CARS
+    contracts.js                   — makeDemoContracts, makeVTAContracts, carnetToContracts, DEMO_CONTRACTS
+    gps.js                         — GPS coordonnées communes
+  helpers/
+    resolution.js                  — resolveVTA(), getPendingResolutions()
+    status.js                      — statusColor(), isCaduque()
+    carnet.js                      — CARNET_BY_VILLE_MONTH, getTalcC, getC, MONTHLY, MONTHS_ORDER
+  components/
+    ui.jsx                         — Badge, Card, Btn, Sel, Inp, Modal, StatCard
+    DashboardTab.jsx               — KPIs, résolutions, voitures du jour
+    TeamTab.jsx                    — Gestion équipe, codes VST, prêts
+    CarsTab.jsx                    — Planning voitures, drag-drop, VTA manuelle
+    ContractsTab.jsx               — Vues today/week/month/quality/commercial
+    MapTab.jsx                     — Carte Leaflet, CommuneHeatmap
+    SecteursTab.jsx                — Secteur → commune → rue + heatmap
+    ClocheTab.jsx                  — Alertes veille (≥3 contrats)
+    ObjectifsTab.jsx               — Objectifs hebdo par commercial
+    ImportTab.jsx                  — Import Excel/CSV drag-drop
+    CarnetTab.jsx                  — Vue brute données carnet
+    SectorAutocomplete.jsx         — Autocompletes secteur/commune
+```
+
+## Structures de données clés
+
+### Contrat
+```js
+{
+  id: "f-892555" | "vta-892555",
+  commercial: "Djany Legrand",
+  date: "2026-03-05",           // YYYY-MM-DD
+  heure: "19:48",
+  ville: "Nesmy",
+  rue: "8 Rue Du Vieux Bourg",
+  operator: "Free",
+  type: "Fibre",
+  box: "ULTRA" | "ULTRA_LIGHT" | "POP",
+  status: "Nouveau" | "En attente RDV" | "RDV pris" | "RDV pris J+7" | "Branché" | "Branché VRF" | "Annulé" | "Résilié" | "RIB MANQUANT",
+  vstLogin: "vst-xxx",          // si contrat VST
+  vtaCode: "vta-xxx",           // si contrat VTA
+  vtaResolved: false,           // true une fois attribué au bon commercial
+}
+```
+
+### Cycle de vie statut (contrats blancs du carnet)
+```
+etat_commande vide + < 2h  →  "Nouveau"        (compté normalement)
+etat_commande vide + ≥ 2h  →  "RIB MANQUANT"   (caduque, exclu des stats)
+"inscription ok"            →  "En attente RDV"  (compté)
+"vente validée"             →  "RDV pris"        (compté)
+"connexion ok"              →  "Branché"          (compté)
+"vente abandonnée"          →  "Annulé"           (compté mais négatif)
+```
+
+### Membre équipe
+```js
+{
+  id: 1,
+  name: "Djany Legrand",
+  role: "Manager" | "Assistant Manager" | "Formateur" | "Confirme" | "Debutant",
+  operators: ["Free"],
+  permis: true, voiture: true, active: true,
+  vstCodes: ["vst-dclavereuil"],
+  lentCodes: [{ code: "vst-xxx", borrowerId: 5 }],
+}
+```
+
+### DailyPlan (historisé par date)
+```js
+{
+  "2026-03-09": {                    // clé = date ISO
+    carId: {
+      members: [1, 2, 3],           // IDs passagers
+      memberCommunes: { 1: "BETTON", 2: "LIFFRE" },
+      memberVtaCodes: { 1: "vta-zourhalm", 2: "vta-rgrasset" },
+      sector: "RENNES 35",
+      zoneType: "talc" | "stratygo",
+    }
+  },
+  "2026-03-08": { ... }             // jours précédents conservés
+}
+```
+
+### Objectifs
+```js
+{ "2026-03-03": { "Djany Legrand": 8, "Leo Merde": 6 } }  // clé = lundi de la semaine
+```
+
+## Domaine métier
+
+- **Commercial** = vendeur terrain chez revendeur Free Télécom (Stratygo ou Agence)
+- **Contrat** = abonnement internet souscrit (Free ou Bouygues)
+- **VST** (`vst-xxx`) = code vendeur pour les zones **Stratygo**
+- **VTA** (`vta-xxx`) = code vendeur pour les zones **TALC**
+- VST et VTA ont la **même utilité** (identifier un vendeur), seul le type de zone diffère
+- **Jachère** = secteur géographique (ensemble de communes avec potentiel de prises fibre)
+- **Stratygo** = zones classiques (Nantes, St Nazaire, Rennes, Fontenay, Roche/Yon, Sables)
+- **TALC** = zones VTA (Royan, La Rochelle, Bressuire, Niort)
+- **Prise** = foyer raccordable fibre = prospect potentiel
+- **Cloche** 🔔 = commercial avec ≥3 contrats la veille
+
+### Résolution VTA (priorités)
+1. **Code VTA assigné manuellement** dans le plan voiture (`memberVtaCodes`) → attribution directe
+2. **Présence dans le plan** + matching commune → attribution automatique
+3. **Ambiguïté** → résolution manuelle via dashboard
+
+### DailyPlan historisé
+Le plan voiture est stocké par date. Chaque jour conserve ses propres assignations VTA. Modifier le plan du lendemain n'affecte pas les contrats de la veille.
 
 ## Conventions de code
 
 - **`var`** (pas `const/let`) pour les variables locales dans le render — style existant
 - **Dates** : format `"YYYY-MM-DD"`, comparées lexicographiquement (`<` et `>`)
-- **Clés localStorage** avec suffixe version : `agency-team-v4` — bumper si structure change
-- **Fonctions inline** : `function(x){ return ... }` (pas arrow functions) — style existant
+- **Clés Firestore** avec suffixe version : `agency-team-v4` — bumper si structure change
+- **Fonctions inline** : `function(x){ return ... }` (pas arrow functions)
 - **Styles inline** : tout en `style={{ ... }}`, pas de CSS classes
-
-## Helpers statuts contrat (définis L.3511–3513, dans ContractsTab)
-
-```js
-isBrC(c)  // Branché ou Branché VRF
-isRdC(c)  // RDV pris ou RDV pris J+7
-isAnC(c)  // Annulé ou Résilié
-// "En attente RDV" = ni branché, ni rdv, ni annulé
-```
-
-## Valeurs box (PAS d'espaces)
-
-`"ULTRA"` | `"ULTRA_LIGHT"` | `"POP"`
-
-## Constantes clés (module-level, hors composants)
-
-- `VTA_GROUPS` L.7 : `{ "vta-xxx": ["Nom Prénom", ...] }` — code VTA → commerciaux
-- `JACHERE` L.152 / `JACHERE_TALC` L.173 : secteur → `{ communes: [...] }`
-- `STORAGE_KEYS` L.4 : toutes les clés localStorage
-- `MONTHS_ORDER` L.4018 : array `["mar25","avr25",…]` de mar 2025 à mois courant
-- `_ML_KEYS` L.4016 : `["jan","fev","mar","avr","mai","jun","jul","aou","sep","oct","nov","dec"]`
-- `DEMO_CONTRACTS` L.1408 : source unique de vérité pour les contrats (live carnet ou demo)
+- **Langue** : UI et variables en français, code technique en anglais
 
 ## ⚠️ ANTI-PATTERNS — NE JAMAIS FAIRE
 
@@ -85,7 +168,7 @@ isAnC(c)  // Annulé ou Résilié
 setSector(x);
 setZoneType(y);
 
-// ✅ Toujours un seul appel combiné
+// ✅ Toujours un seul appel combiné via updatePlan
 updatePlan({ ...plan, sector: x, zoneType: y });
 ```
 
@@ -105,19 +188,26 @@ if (!member.vstCodes) { ... }
 if (!member.vstCodes || member.vstCodes.length === 0) { ... }
 ```
 
-## Domaine métier (résumé)
+```js
+// ❌ dailyPlan est historisé par date — accéder par carId directement ne marche plus
+dailyPlan[car.id]
 
-- **Commercial** = vendeur terrain chez revendeur Free Télécom
-- **Contrat** = abonnement internet souscrit (Free ou Bouygues)
-- **VST** = login réseau Free (`vst-xxx`) → mappe vers nom commercial via carnetToContracts
-- **VTA** = territoire de travail terrain (`vta-xxx`) → mappe vers commercial via VTA_GROUPS
-- **Jachère** = secteur géographique (Stratygo = classique, TALC = territoire VTA spécifique)
-- **TALC** = mode terrain avec codes VTA assignés automatiquement par personne
+// ✅ Extraire le plan du jour d'abord
+var _dp = dailyPlan ? (dailyPlan[todayStr] || {}) : {};
+_dp[car.id]
+```
+
+```js
+// ❌ VTA n'est PAS un "code territoire" — c'est un code vendeur
+"VTA = territoire de travail"
+
+// ✅ VST et VTA sont tous les deux des codes vendeurs
+"VST = code vendeur zones Stratygo, VTA = code vendeur zones TALC"
+```
 
 ## Git workflow
 
-- Développer dans un worktree `.claude/worktrees/<branch>/src/App.jsx`
-- Merger dans `main` et push → déclenche déploiement automatique
+- Commiter directement sur `main` et push → déploiement automatique
 - Ne jamais `push --force` sur main
 
 ## Préférences

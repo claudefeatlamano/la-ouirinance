@@ -1,0 +1,43 @@
+var DEMO_TEAM = [
+{ id: 1, name: "Djany Legrand", role: "Manager", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-dclavereuil"], lentCodes: [] },
+{ id: 2, name: "Leo Merde", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-lmertz"], lentCodes: [] },
+{ id: 3, name: "Stephane Legrand", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-slegrand"], lentCodes: [] },
+{ id: 4, name: "Sandra Pereira", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-spereira"], lentCodes: [] },
+{ id: 5, name: "William Goujon", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-eluc"], lentCodes: [] },
+{ id: 6, name: "Yannis Aboulfatah", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-yaboulfatah"], lentCodes: [] },
+{ id: 7, name: "Lyna Belkessa", role: "Confirme", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-dbelkessa"], lentCodes: [] },
+{ id: 8, name: "Ali Atf", role: "Confirme", operators: ["Free"], permis: true, voiture: true, active: true, vstCodes: ["vst-aatf"], lentCodes: [] },
+{ id: 9, name: "Victor Moize", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-vmoize"], lentCodes: [] },
+{ id: 10, name: "Momed Ali", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-mali"], lentCodes: [] },
+{ id: 11, name: "Pablo Grasset", role: "Confirme", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-pgrasset"], lentCodes: [] },
+{ id: 12, name: "Hamid Atroune", role: "Debutant", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-adahmani"], lentCodes: [] },
+{ id: 13, name: "Cheick Ouedraogo", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-couedraogo"], lentCodes: [] },
+{ id: 14, name: "Mohamed Mehdi Larech", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-mlarech"], lentCodes: [] },
+{ id: 15, name: "Omar Mbengue", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-ombengue"], lentCodes: [] },
+{ id: 16, name: "Melodie Mendousse", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-mmendousse"], lentCodes: [] },
+{ id: 17, name: "Ronan Kombo", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-rkombo"], lentCodes: [] },
+{ id: 18, name: "Abdellah Cheikh", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-bouchrif"], lentCodes: [] },
+{ id: 19, name: "Paul Geriltault", role: "Debutant", operators: ["Free"], permis: true, voiture: false, active: true, vstCodes: ["vst-droode"], lentCodes: [] },
+{ id: 20, name: "Abdel Nouar", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-hnouar"], lentCodes: [] },
+{ id: 21, name: "Ouissem Ouirini", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-kelahmadi"], lentCodes: [] },
+{ id: 22, name: "Titouan Salaun", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-tsalaun"], lentCodes: [] },
+{ id: 23, name: "Nora Wahid", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-dpouilly"], lentCodes: [] },
+{ id: 24, name: "Eloise Meillerais", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-emeillerais"], lentCodes: [] },
+{ id: 25, name: "Come Audonnet", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-caudonnet"], lentCodes: [] },
+{ id: 26, name: "Ilhan Kocak", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-ikocak"], lentCodes: [] },
+{ id: 27, name: "Ines Ouirini", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-iouirini"], lentCodes: [] },
+{ id: 28, name: "Shana David", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-sdavid"], lentCodes: [] },
+{ id: 29, name: "Adam El Jazouli", role: "Confirme", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: [], lentCodes: [] },
+];
+
+var DEMO_CARS = [
+{ id: 1, name: "Voiture de Léo", seats: 5, owner: "Leo Merde", driverId: 2 },
+{ id: 2, name: "Voiture de Hamid", seats: 5, owner: "Hamid Atroune", driverId: 12 },
+{ id: 3, name: "Voiture d'Abdellah", seats: 5, owner: "Abdellah Cheikh", driverId: 18 },
+{ id: 4, name: "Voiture de Djany", seats: 5, owner: "Djany Legrand", driverId: 1 },
+{ id: 5, name: "Voiture de Stéphane", seats: 5, owner: "Stephane Legrand", driverId: 3 },
+{ id: 6, name: "Voiture de Sandra", seats: 5, owner: "Sandra Pereira", driverId: 4 },
+{ id: 7, name: "Voiture d'Ouissem", seats: 5, owner: "Ouissem Ouirini", driverId: 21 },
+];
+
+export { DEMO_TEAM, DEMO_CARS };
