@@ -100,7 +100,7 @@ function getPendingResolutions(contracts, team, dailyPlan, cars) {
   });
 
   var pending = [];
-  var todayC = contracts.filter(function(c) { return c.date === today; });
+  var todayC = contracts.filter(function(c) { return c.date === today && !isCaduque(c); });
 
   function communeMatch(memberId, ville) {
     if (!ville) return false;
@@ -1416,7 +1416,14 @@ function carnetToContracts(rows) {
     var dt = (r.date_inscription || '').split(' ');
     var date = dt[0] || '';
     var heure = dt[1] ? dt[1].substring(0, 5) : '';
-    var status = statusMap[(r.etat_commande || '').toLowerCase()] || r.etat_commande || '';
+    var rawEtat = (r.etat_commande || '').trim().toLowerCase();
+    var status = statusMap[rawEtat] || '';
+    if (!status && !rawEtat) {
+      var inscTime = new Date(r.date_inscription).getTime();
+      status = (Date.now() - inscTime > 2 * 60 * 60 * 1000) ? 'RIB MANQUANT' : 'Nouveau';
+    } else if (!status) {
+      status = r.etat_commande || '';
+    }
     var box = cleanBox(r.box || '');
     var ville = (r.ville || '').trim();
 
@@ -1435,7 +1442,7 @@ function carnetToContracts(rows) {
         operator: 'Free',
         type: 'Fibre',
         box: box,
-        status: status || 'Valide',
+        status: status,
       };
     } else {
       return {
@@ -1462,8 +1469,12 @@ function statusColor(status) {
 if (status === "Branché" || status === "Branché VRF" || status === "Branche") return "#32CD32";
 if (status === "RDV pris" || status === "RDV pris J+7" || status === "Valide") return "#808000";
 if (status === "Résilié" || status === "Annulé" || status === "Annule") return "#B22222";
+if (status === "RIB MANQUANT") return "#8B0000";
+if (status === "Nouveau") return "#6E6E73";
 return "#D97706"; // En attente RDV
 }
+
+function isCaduque(c) { return c.status === "RIB MANQUANT"; }
 
 // UI COMPONENTS
 function Badge({ children, color }) {
@@ -1820,9 +1831,9 @@ var _dp = dailyPlan ? (dailyPlan[today] || {}) : {};
 var d3ago    = new Date(Date.now() - 3*86400000).toISOString().split("T")[0];
 var weekStart = (function(){ var d = new Date(); d.setDate(d.getDate() - (d.getDay()||7) + 1); return d.toISOString().split("T")[0]; })();
 var moStart  = new Date(new Date().getFullYear(), new Date().getMonth(), 1).toISOString().split("T")[0];
-var todayC   = contracts.filter(function(c){ return c.date === today; });
-var weekC    = contracts.filter(function(c){ return c.date >= weekStart && c.date <= today; });
-var monthC   = contracts.filter(function(c){ return c.date >= moStart  && c.date <= today; });
+var todayC   = contracts.filter(function(c){ return c.date === today && !isCaduque(c); });
+var weekC    = contracts.filter(function(c){ return c.date >= weekStart && c.date <= today && !isCaduque(c); });
+var monthC   = contracts.filter(function(c){ return c.date >= moStart  && c.date <= today && !isCaduque(c); });
 var brMois   = monthC.filter(function(c){ return c.status === "Branché" || c.status === "Branché VRF"; });
 var tauxBr   = monthC.length > 0 ? Math.round(brMois.length / monthC.length * 100) : 0;
 var brColor  = tauxBr >= 60 ? "#34C759" : tauxBr >= 40 ? "#FF9F0A" : "#FF3B30";
@@ -3241,12 +3252,12 @@ var pmEnd = new Date(now.getFullYear(), now.getMonth(), 0);
 var pmStartStr = pmStart.toISOString().split("T")[0];
 var pmEndStr = pmEnd.toISOString().split("T")[0];
 
-var todayC   = contracts.filter(function(c){ return c.date === todayStr; });
-var yestC    = contracts.filter(function(c){ return c.date === yestStr; });
-var weekC    = contracts.filter(function(c){ return c.date >= wkStartStr && c.date <= todayStr; });
-var lwC      = contracts.filter(function(c){ return c.date >= lwStartStr && c.date <= lwSameEndStr; });
-var monthC   = contracts.filter(function(c){ return c.date >= moStartStr && c.date <= todayStr; });
-var prevMonC = contracts.filter(function(c){ return c.date >= pmStartStr && c.date <= pmEndStr; });
+var todayC   = contracts.filter(function(c){ return c.date === todayStr && !isCaduque(c); });
+var yestC    = contracts.filter(function(c){ return c.date === yestStr && !isCaduque(c); });
+var weekC    = contracts.filter(function(c){ return c.date >= wkStartStr && c.date <= todayStr && !isCaduque(c); });
+var lwC      = contracts.filter(function(c){ return c.date >= lwStartStr && c.date <= lwSameEndStr && !isCaduque(c); });
+var monthC   = contracts.filter(function(c){ return c.date >= moStartStr && c.date <= todayStr && !isCaduque(c); });
+var prevMonC = contracts.filter(function(c){ return c.date >= pmStartStr && c.date <= pmEndStr && !isCaduque(c); });
 
 function delta(a, b) {
   var d = a - b; if (d === 0) return null;
@@ -4910,7 +4921,7 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
   var weekIdx = allWeeks.indexOf(selectedWeek);
   var activeTeam = team.filter(function(m){ return m.active; });
   var weekDates = getWeekDates(selectedWeek);
-  var weekContracts = contracts.filter(function(c){ return weekDates.indexOf(c.date) >= 0; });
+  var weekContracts = contracts.filter(function(c){ return weekDates.indexOf(c.date) >= 0 && !isCaduque(c); });
   var weekObjectives = objectives[selectedWeek] || {};
   var isPast = selectedWeek < currentWeek;
   var isCurrent = selectedWeek === currentWeek;
