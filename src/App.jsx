@@ -39,6 +39,7 @@ var [loading, setLoading] = useState(true);
 var [scraperStatus, setScraperStatus] = useState(null);
 var [lastSync, setLastSync] = useState(null);
 var [groups, setGroups] = useState([]);
+var skipNextContractSnap = React.useRef(false);
 
 useEffect(function() {
 var unsubPlan, unsubObj, unsubContracts;
@@ -102,6 +103,7 @@ Object.keys(savedResolutions).forEach(function(id) {
 });
 setContracts(mergedContracts);
 unsubContracts = onSnapshot(doc(db, "agency", STORAGE_KEYS.contracts), function(snap) {
+  if (skipNextContractSnap.current) { skipNextContractSnap.current = false; return; }
   var overrides = snap.exists() ? (snap.data().data || {}) : {};
   var dIds = new Set(DEMO_CONTRACTS.map(function(c) { return c.id; }));
   var merged = DEMO_CONTRACTS.map(function(c) {
@@ -180,6 +182,7 @@ var saveTeam = function(t) { setTeam(t); store.set(STORAGE_KEYS.team, t); };
 var saveCars = function(c) { setCars(c); store.set(STORAGE_KEYS.cars, c); };
 var saveContracts = function(c) {
   setContracts(c);
+  skipNextContractSnap.current = true;
   store.get(STORAGE_KEYS.contracts).then(function(existing) {
     var overrides = existing || {};
     c.forEach(function(contract) {
