@@ -1,21 +1,25 @@
 import React, { useState, useMemo } from "react";
 import carnetData from "../data.json";
-import { Card, Inp, Badge } from "./ui.jsx";
-import { statusColor } from "../helpers/status.js";
 
 function CarnetTab() {
+  var [tab, setTab] = useState("vst");
   var [search, setSearch] = useState("");
   var rows = carnetData.rows || carnetData;
 
+  var vstRows = useMemo(function() { return rows.filter(function(r) { return r.login && r.login.indexOf("vst-") === 0; }); }, [rows]);
+  var vtaRows = useMemo(function() { return rows.filter(function(r) { return r.login && r.login.indexOf("vta-") === 0; }); }, [rows]);
+
+  var activeRows = tab === "vst" ? vstRows : vtaRows;
+
   var filtered = useMemo(function() {
-    if (!search.trim()) return rows;
+    if (!search.trim()) return activeRows;
     var q = search.toLowerCase();
-    return rows.filter(function(r) {
+    return activeRows.filter(function(r) {
       return Object.values(r).some(function(v) { return String(v).toLowerCase().includes(q); });
     });
-  }, [rows, search]);
+  }, [activeRows, search]);
 
-  var headers = rows.length > 0 ? Object.keys(rows[0]) : [];
+  var headers = activeRows.length > 0 ? Object.keys(activeRows[0]) : [];
 
   var ROW_COLORS = {
     "inscription ok": "gold",
@@ -28,18 +32,50 @@ function CarnetTab() {
     "vente abandonée": "SlateGrey",
   };
 
+  var tabStyle = function(t) {
+    var active = tab === t;
+    return {
+      padding: "8px 20px",
+      fontSize: 13,
+      fontWeight: 700,
+      border: "none",
+      cursor: "pointer",
+      borderRadius: "10px 10px 0 0",
+      background: active ? (t === "vst" ? "#1D1D1F" : "#FF3B30") : "#F5F5F7",
+      color: active ? "#fff" : "#AEAEB2",
+      fontFamily: "inherit",
+      transition: "background 0.15s, color 0.15s",
+    };
+  };
+
   return (
     <div>
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
-        <div style={{ fontSize: 20, fontWeight: 700 }}>Carnet de Commandes <span style={{ fontSize: 14, fontWeight: 400, color: "#6E6E73" }}>{filtered.length} / {rows.length}</span></div>
+      {/* Tabs VST / VTA */}
+      <div style={{ display: "flex", gap: 4, marginBottom: 0 }}>
+        <button onClick={function() { setTab("vst"); setSearch(""); }} style={tabStyle("vst")}>
+          Carnet VST <span style={{ fontSize: 11, fontWeight: 400, marginLeft: 4, opacity: 0.8 }}>{vstRows.length}</span>
+        </button>
+        <button onClick={function() { setTab("vta"); setSearch(""); }} style={tabStyle("vta")}>
+          Carnet VTA <span style={{ fontSize: 11, fontWeight: 400, marginLeft: 4, opacity: 0.8 }}>{vtaRows.length}</span>
+        </button>
+      </div>
+
+      {/* Header */}
+      <div style={{ background: tab === "vst" ? "#1D1D1F" : "#FF3B30", borderRadius: "0 12px 0 0", padding: "14px 18px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <div style={{ fontSize: 16, fontWeight: 700, color: "#fff" }}>
+          {tab === "vst" ? "Carnet VST (Stratygo)" : "Carnet VTA (TALC)"}
+          <span style={{ fontSize: 13, fontWeight: 400, marginLeft: 8, opacity: 0.7 }}>{filtered.length} / {activeRows.length}</span>
+        </div>
         <input
           value={search}
           onChange={function(e) { setSearch(e.target.value); }}
           placeholder="Rechercher..."
-          style={{ padding: "6px 12px", borderRadius: 8, border: "1px solid #D2D2D7", fontSize: 13, width: 220, outline: "none" }}
+          style={{ padding: "6px 12px", borderRadius: 8, border: "none", fontSize: 13, width: 220, outline: "none", background: "rgba(255,255,255,0.2)", color: "#fff", fontFamily: "inherit" }}
         />
       </div>
-      <div style={{ overflowX: "auto", borderRadius: 12, border: "1px solid #E5E5EA" }}>
+
+      {/* Table */}
+      <div style={{ overflowX: "auto", borderRadius: "0 0 12px 12px", border: "1px solid #E5E5EA", borderTop: "none" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
           <thead>
             <tr style={{ background: "#F5F5F7" }}>
