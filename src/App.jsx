@@ -188,7 +188,9 @@ var saveContracts = function(c) {
     c.forEach(function(contract) {
       var orig = DEMO_CONTRACTS.find(function(d) { return d.id === contract.id; });
       if (!orig || contract.commercial !== orig.commercial || contract.vtaResolved !== orig.vtaResolved) {
-        overrides[contract.id] = { commercial: contract.commercial, vtaResolved: contract.vtaResolved };
+        var entry = { commercial: contract.commercial };
+        if (contract.vtaResolved !== undefined) entry.vtaResolved = contract.vtaResolved;
+        overrides[contract.id] = entry;
       }
     });
     store.set(STORAGE_KEYS.contracts, overrides);
