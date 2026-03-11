@@ -39,6 +39,7 @@ var [loading, setLoading] = useState(true);
 var [scraperStatus, setScraperStatus] = useState(null);
 var [lastSync, setLastSync] = useState(null);
 var [groups, setGroups] = useState([]);
+var [proxadCreds, setProxadCreds] = useState(null);
 var skipNextContractSnap = React.useRef(false);
 
 useEffect(function() {
@@ -133,6 +134,7 @@ var renamedGroups = loadedGroups.map(function(g) {
 });
 store.set(STORAGE_KEYS.groups, renamedGroups);
 setGroups(renamedGroups);
+setProxadCreds(await store.get(STORAGE_KEYS.proxadCredentials) || null);
 setLoading(false);
 })();
 return function() { if (unsubPlan) unsubPlan(); if (unsubObj) unsubObj(); if (unsubContracts) unsubContracts(); };
@@ -207,6 +209,7 @@ var saveDailyPlan = function(todayPlan) {
 };
 var saveObjectives = function(o) { setObjectives(o); store.set(STORAGE_KEYS.objectives, o); };
 var saveGroups = function(g) { setGroups(g); store.set(STORAGE_KEYS.groups, g); };
+var saveProxadCreds = function(c) { setProxadCreds(c); store.set(STORAGE_KEYS.proxadCredentials, c); };
 
 if (loading) return <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", background: "#F5F5F7", fontFamily: "-apple-system, sans-serif" }}><p style={{ color: "#AEAEB2", fontSize: 13, fontWeight: 400 }}>Chargement…</p></div>;
 
@@ -273,7 +276,7 @@ return (
   <main style={{ padding: "28px 32px", maxWidth: 1100, margin: "0 auto" }} className="tab-content" key={tab}>
     {tab === "dashboard" && <DashboardTab team={team} contracts={contracts} saveContracts={saveContracts} dailyPlan={dailyPlan} cars={cars} lastSync={lastSync} scraperStatus={scraperStatus} objectives={objectives} />}
     {tab === "team" && <TeamTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} groups={groups} saveGroups={saveGroups} />}
-    {tab === "cars" && <CarsTab team={team} cars={cars} saveCars={saveCars} dailyPlan={dailyPlan} saveDailyPlan={saveDailyPlan} groups={groups} />}
+    {tab === "cars" && <CarsTab team={team} cars={cars} saveCars={saveCars} dailyPlan={dailyPlan} saveDailyPlan={saveDailyPlan} groups={groups} proxadCredentials={proxadCreds} saveProxadCreds={saveProxadCreds} />}
     {tab === "contracts" && <ContractsTab contracts={contracts} team={team} dailyPlan={dailyPlan} cars={cars} saveContracts={saveContracts} />}
     {tab === "map" && <MapTab />}
     {tab === "secteurs" && <SecteursTab />}

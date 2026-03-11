@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Badge, Card, Btn, Sel, Inp, Modal } from "./ui.jsx";
 import { ROLES, ROLE_LABELS, ROLE_COLORS, OPERATORS, OP_COLORS } from "../constants/roles.js";
 import { VTA_GROUPS } from "../constants/vta.js";
 import { CommuneAutocomplete } from "./SectorAutocomplete.jsx";
 import { localDateStr } from "../helpers/date.js";
+import { searchCommune, getProxadUsers, affectCommune, matchMemberToProxadUser } from "../data/proxad.js";
 
-function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups }) {
+function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxadCredentials, saveProxadCreds }) {
   var CAR_PALETTE = ["#0071E3","#34C759","#FF9F0A","#AF52DE","#FF2D55","#5AC8FA","#FF6B35","#00B4D8"];
   var _todayKey = localDateStr(new Date());
   const [plan, setPlan] = useState((dailyPlan && dailyPlan[_todayKey]) || {});
@@ -15,6 +16,10 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups }) {
   const [mo, setMo] = useState(false);
   const [ec, setEc] = useState(null);
   const [cf, setCf] = useState({ name: "", seats: 5, driverId: null });
+  const [unlockStates, setUnlockStates] = useState({});
+  const [showProxadConfig, setShowProxadConfig] = useState(false);
+  const [proxadForm, setProxadForm] = useState({ login: "", password: "" });
+  var proxadUsersRef = useRef(null);
 
   var at = team.filter(function(m) { return m.active; });
 
@@ -112,6 +117,46 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups }) {
       np[car.id] = { members: [], sector: old.sector || "", zoneType: old.zoneType || "stratygo", vtaCode: old.vtaCode || "" };
     });
     updatePlan(np);
+  }
+
+  function openProxadConfig() {
+    setProxadForm(proxadCredentials || { login: "", password: "" });
+    setShowProxadConfig(true);
+  }
+  function saveProxadConfig() {
+    if (!proxadForm.login.trim() || !proxadForm.password.trim()) return;
+    saveProxadCreds({ login: proxadForm.login.trim(), password: proxadForm.password.trim() });
+    proxadUsersRef.current = null;
+    setShowProxadConfig(false);
+  }
+
+  function handleUnlock(carId, memberId) {
+    var cp = plan[carId] || {};
+    var commune = (cp.memberCommunes && cp.memberCommunes[memberId]) || "";
+    if (!commune.trim() || !proxadCredentials) return;
+    var key = carId + "-" + memberId;
+    setUnlockStates(function(prev) { return Object.assign({}, prev, { [key]: "loading" }); });
+    var usersPromise = proxadUsersRef.current
+      ? Promise.resolve(proxadUsersRef.current)
+      : getProxadUsers(proxadCredentials).then(function(users) { proxadUsersRef.current = users; return users; });
+    usersPromise.then(function(users) {
+      return searchCommune(commune, proxadCredentials).then(function(communes) {
+        if (!communes || communes.length === 0) throw new Error("Commune introuvable: " + commune);
+        var communeId = communes[0].id;
+        var member = team.find(function(m) { return m.id === memberId; });
+        if (!member) throw new Error("Membre introuvable");
+        var match = matchMemberToProxadUser(member.name, users);
+        if (!match) throw new Error("Utilisateur Proxad introuvable pour " + member.name);
+        return affectCommune([communeId], [match.user_id], proxadCredentials);
+      });
+    }).then(function() {
+      setUnlockStates(function(prev) { return Object.assign({}, prev, { [key]: "success" }); });
+      setTimeout(function() { setUnlockStates(function(prev) { return Object.assign({}, prev, { [key]: "idle" }); }); }, 3000);
+    }).catch(function(err) {
+      console.error("Proxad unlock error:", err);
+      var msg = (err.message && err.message.indexOf("Failed to fetch") >= 0) ? "cors" : "error";
+      setUnlockStates(function(prev) { return Object.assign({}, prev, { [key]: msg }); });
+    });
   }
 
   // Reverse map: person name → VTA code
@@ -236,6 +281,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups }) {
         </div>
         <div style={{ display: "flex", gap: 8 }}>
           <Btn v="secondary" onClick={resetDay}>Réinitialiser la journée</Btn>
+          <Btn v={proxadCredentials ? "secondary" : "primary"} onClick={openProxadConfig}>{proxadCredentials ? "Proxad ✓" : "Proxad"}</Btn>
           <Btn onClick={function() { setEc(null); setCf({ name: "", seats: 5, driverId: null }); setMo(true); }}>+ Voiture</Btn>
         </div>
       </div>
@@ -300,7 +346,10 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups }) {
                     ? <>
                         <MemberTile m={driver} isDriver={true} accent={accent} isDrag={false} fromCarId={car.id} vtaCode={cp.zoneType === "talc" ? ((cp.memberVtaCodes && cp.memberVtaCodes[driver.id]) || VTA_PERSON_MAP[driver.name] || null) : null} />
                         {cp.zoneType === "talc" && <Sel value={(cp.memberVtaCodes && cp.memberVtaCodes[driver.id]) || ""} onChange={function(v) { setMemberVtaCode(car.id, driver.id, v); }} placeholder="Code VTA..." options={Object.keys(VTA_GROUPS).map(function(code) { return { value: code, label: code }; })} style={{ fontSize: 11, padding: "4px 8px", borderRadius: 8, width: 160 }} />}
-                        <CommuneAutocomplete value={(cp.memberCommunes && cp.memberCommunes[driver.id]) || ""} onChange={function(v) { setMemberCommune(car.id, driver.id, v); }} />
+                        <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+                          <CommuneAutocomplete value={(cp.memberCommunes && cp.memberCommunes[driver.id]) || ""} onChange={function(v) { setMemberCommune(car.id, driver.id, v); }} />
+                          {(function() { var uk = car.id + "-" + driver.id; var us = unlockStates[uk] || "idle"; var noC = !(cp.memberCommunes && cp.memberCommunes[driver.id]); var dis = noC || !proxadCredentials || us === "loading"; var lbl = us === "loading" ? "⏳" : us === "success" ? "✅" : us === "error" || us === "cors" ? "❌" : "🔓"; var bg = us === "success" ? "#E8F8ED" : us === "error" || us === "cors" ? "#FFEDEC" : us === "loading" ? "#FFF4E0" : dis ? "#F5F5F7" : "#E8F0FE"; var col = us === "success" ? "#34C759" : us === "error" || us === "cors" ? "#FF3B30" : us === "loading" ? "#9A5200" : dis ? "#AEAEB2" : "#0071E3"; var tip = us === "cors" ? "CORS bloqué" : us === "error" ? "Erreur Proxad" : us === "success" ? "Débloqué !" : !proxadCredentials ? "Configurer Proxad" : noC ? "Saisir une commune" : "Débloquer sur Proxad"; return <button onClick={function() { handleUnlock(car.id, driver.id); }} disabled={dis} title={tip} style={{ padding: "4px 8px", borderRadius: 8, border: "1px solid rgba(0,0,0,0.08)", background: bg, color: col, fontSize: 12, fontWeight: 600, cursor: dis ? "default" : "pointer", opacity: dis ? 0.5 : 1, transition: "all 0.2s", whiteSpace: "nowrap", flexShrink: 0 }}>{lbl}</button>; })()}
+                        </div>
                       </>
                     : <div style={{ width: 185, height: 70, border: "2px dashed " + accent + "44", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", color: accent + "88", fontSize: 12 }}>Aucun conducteur</div>
                   }
@@ -320,7 +369,10 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups }) {
                         <div key={m.id} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
                           <MemberTile m={m} onRemove={function() { removePassenger(car.id, m.id); }} isDriver={false} accent={accent} isDrag={true} fromCarId={car.id} vtaCode={cp.zoneType === "talc" ? ((cp.memberVtaCodes && cp.memberVtaCodes[m.id]) || VTA_PERSON_MAP[m.name] || null) : null} />
                           {cp.zoneType === "talc" && <Sel value={(cp.memberVtaCodes && cp.memberVtaCodes[m.id]) || ""} onChange={function(v) { setMemberVtaCode(car.id, m.id, v); }} placeholder="Code VTA..." options={Object.keys(VTA_GROUPS).map(function(code) { return { value: code, label: code }; })} style={{ fontSize: 11, padding: "4px 8px", borderRadius: 8, width: 160 }} />}
-                          <CommuneAutocomplete value={(cp.memberCommunes && cp.memberCommunes[m.id]) || ""} onChange={function(v) { setMemberCommune(car.id, m.id, v); }} />
+                          <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+                            <CommuneAutocomplete value={(cp.memberCommunes && cp.memberCommunes[m.id]) || ""} onChange={function(v) { setMemberCommune(car.id, m.id, v); }} />
+                            {(function() { var uk = car.id + "-" + m.id; var us = unlockStates[uk] || "idle"; var noC = !(cp.memberCommunes && cp.memberCommunes[m.id]); var dis = noC || !proxadCredentials || us === "loading"; var lbl = us === "loading" ? "⏳" : us === "success" ? "✅" : us === "error" || us === "cors" ? "❌" : "🔓"; var bg = us === "success" ? "#E8F8ED" : us === "error" || us === "cors" ? "#FFEDEC" : us === "loading" ? "#FFF4E0" : dis ? "#F5F5F7" : "#E8F0FE"; var col = us === "success" ? "#34C759" : us === "error" || us === "cors" ? "#FF3B30" : us === "loading" ? "#9A5200" : dis ? "#AEAEB2" : "#0071E3"; var tip = us === "cors" ? "CORS bloqué" : us === "error" ? "Erreur Proxad" : us === "success" ? "Débloqué !" : !proxadCredentials ? "Configurer Proxad" : noC ? "Saisir une commune" : "Débloquer sur Proxad"; return <button onClick={function() { handleUnlock(car.id, m.id); }} disabled={dis} title={tip} style={{ padding: "4px 8px", borderRadius: 8, border: "1px solid rgba(0,0,0,0.08)", background: bg, color: col, fontSize: 12, fontWeight: 600, cursor: dis ? "default" : "pointer", opacity: dis ? 0.5 : 1, transition: "all 0.2s", whiteSpace: "nowrap", flexShrink: 0 }}>{lbl}</button>; })()}
+                          </div>
                         </div>
                       );
                     })}
@@ -392,6 +444,17 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups }) {
           <div style={{ display: "flex", gap: 10 }}>
             <Btn onClick={saveCar} style={{ flex: 1 }}>{ec ? "Enregistrer" : "Ajouter"}</Btn>
             {ec && <Btn v="danger" onClick={function() { saveCars(cars.filter(function(c) { return c.id !== ec.id; })); setMo(false); setEc(null); }}>Supprimer</Btn>}
+          </div>
+        </div>
+      </Modal>
+      <Modal open={showProxadConfig} onClose={function() { setShowProxadConfig(false); }} title="Configurer Proxad">
+        <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+          <div style={{ fontSize: 12, color: "#6E6E73" }}>Identifiants pour vad.proxad.net (API déblocage communes)</div>
+          <Inp value={proxadForm.login} onChange={function(v) { setProxadForm(Object.assign({}, proxadForm, { login: v })); }} placeholder="Login (ex: vst-iouirini)" />
+          <Inp type="password" value={proxadForm.password} onChange={function(v) { setProxadForm(Object.assign({}, proxadForm, { password: v })); }} placeholder="Mot de passe" />
+          <div style={{ display: "flex", gap: 10 }}>
+            <Btn onClick={saveProxadConfig} style={{ flex: 1 }}>Enregistrer</Btn>
+            {proxadCredentials && <Btn v="danger" onClick={function() { saveProxadCreds(null); proxadUsersRef.current = null; setShowProxadConfig(false); }}>Supprimer</Btn>}
           </div>
         </div>
       </Modal>

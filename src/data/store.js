@@ -12,7 +12,7 @@ var firebaseConfig = {
 var fbApp = initializeApp(firebaseConfig);
 var db = getFirestore(fbApp);
 
-var STORAGE_KEYS = { team: "agency-team-v4", cars: "agency-cars-v4", contracts: "agency-contracts-v3", dailyPlan: "agency-daily-plan-v4", objectives: "agency-objectives-v3", groups: "agency-groups-v1" };
+var STORAGE_KEYS = { team: "agency-team-v4", cars: "agency-cars-v4", contracts: "agency-contracts-v3", dailyPlan: "agency-daily-plan-v4", objectives: "agency-objectives-v3", groups: "agency-groups-v1", proxadCredentials: "agency-proxad-creds-v1" };
 
 var store = {
 get: async function(key) { try { var snap = await getDoc(doc(db, "agency", key)); return snap.exists() ? snap.data().data : null; } catch(e) { return null; } },
