@@ -1,4 +1,4 @@
-var PROXAD_BASE = "https://vad.proxad.net/v1/server.pl/";
+var PROXAD_BASE = "https://proxad-proxy.olaskurt.workers.dev/";
 
 function proxadHeaders(credentials) {
   return {
