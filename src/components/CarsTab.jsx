@@ -145,7 +145,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
         var communeId = communes[0].id;
         var member = team.find(function(m) { return m.id === memberId; });
         if (!member) throw new Error("Membre introuvable");
-        var match = matchMemberToProxadUser(member.name, users);
+        var match = matchMemberToProxadUser(member, users);
         if (!match) throw new Error("Utilisateur Proxad introuvable pour " + member.name);
         return affectCommune([communeId], [match.user_id], proxadCredentials);
       });
