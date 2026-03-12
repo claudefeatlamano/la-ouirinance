@@ -185,10 +185,10 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
         draggable={isDrag}
         onDragStart={isDrag ? function(e) { e.dataTransfer.effectAllowed = "move"; setDragging({ memberId: m.id, fromCarId: fromCarId }); } : undefined}
         onDragEnd={function() { setDragging(null); setDropTarget(null); }}
-        style={{ background: "#fff", borderRadius: 14, padding: isDriver ? "14px 16px" : "10px 14px", boxShadow: "0 2px 8px rgba(0,0,0,0.09), 0 0 0 1px rgba(0,0,0,0.05)", display: "flex", alignItems: "center", gap: 10, position: "relative", borderLeft: "3px solid " + accent + (isDriver ? "" : "99"), minWidth: isDriver ? 185 : 160, opacity: dragging && dragging.memberId === m.id ? 0.4 : 1, cursor: isDrag ? "grab" : "default", transition: "opacity 0.15s", flexShrink: 0 }}>
+        style={{ background: "rgba(255,255,255,0.07)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", borderRadius: 14, padding: isDriver ? "14px 16px" : "10px 14px", boxShadow: "0 4px 16px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 10, position: "relative", borderLeft: "3px solid " + accent + (isDriver ? "" : "99"), minWidth: isDriver ? 185 : 160, opacity: dragging && dragging.memberId === m.id ? 0.4 : 1, cursor: isDrag ? "grab" : "default", transition: "opacity 0.15s", flexShrink: 0 }}>
         <Avatar name={m.name} role={m.role} size={isDriver ? 44 : 38} />
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontSize: isDriver ? 14 : 13, fontWeight: 600, color: "#1D1D1F", letterSpacing: -0.3, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{m.name}</div>
+          <div style={{ fontSize: isDriver ? 14 : 13, fontWeight: 600, color: "#f0f0f5", letterSpacing: -0.3, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{m.name}</div>
           <div style={{ display: "flex", gap: 4, marginTop: 3, flexWrap: "wrap" }}>
             <span style={{ fontSize: 10, fontWeight: 600, color: ROLE_COLORS[m.role], background: ROLE_COLORS[m.role] + "20", padding: "1px 6px", borderRadius: 99 }}>{ROLE_LABELS[m.role]}</span>
             {ops.map(function(op) { return <span key={op} style={{ fontSize: 10, fontWeight: 700, color: OP_COLORS[op], background: OP_COLORS[op] + "20", padding: "1px 6px", borderRadius: 99 }}>{op}</span>; })}
@@ -196,7 +196,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
             {vtaCode && <span style={{ fontSize: 10, fontWeight: 700, color: "#FF3B30", background: "#FF3B3012", padding: "1px 6px", borderRadius: 99, letterSpacing: 0.2 }}>{vtaCode}</span>}
           </div>
         </div>
-        {onRemove && <button onClick={onRemove} style={{ position: "absolute", top: 5, right: 5, background: "none", border: "none", cursor: "pointer", color: "#C7C7CC", fontSize: 16, lineHeight: 1, padding: 2 }}>×</button>}
+        {onRemove && <button onClick={onRemove} style={{ position: "absolute", top: 5, right: 5, background: "none", border: "none", cursor: "pointer", color: "rgba(255,255,255,0.25)", fontSize: 16, lineHeight: 1, padding: 2 }}>×</button>}
       </div>
     );
   }
@@ -220,29 +220,29 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
 
     return (
       <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.3)", zIndex: 1000, display: "flex", alignItems: "center", justifyContent: "center" }} onClick={onClose}>
-        <div style={{ background: "#fff", borderRadius: 20, padding: 24, width: 380, maxHeight: "72vh", display: "flex", flexDirection: "column", gap: 14, boxShadow: "0 20px 60px rgba(0,0,0,0.2)" }} onClick={function(e) { e.stopPropagation(); }}>
-          <div style={{ fontSize: 16, fontWeight: 700, color: "#1D1D1F" }}>Ajouter dans {car.name}</div>
-          <input autoFocus value={search} onChange={function(e) { setSearch(e.target.value); }} placeholder="Rechercher..." style={{ padding: "8px 12px", borderRadius: 10, border: "1px solid #E5E5EA", fontSize: 13, outline: "none", fontFamily: "inherit" }} />
+        <div style={{ background: "rgba(30,25,50,0.95)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", borderRadius: 20, padding: 24, width: 380, maxHeight: "72vh", display: "flex", flexDirection: "column", gap: 14, boxShadow: "0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.08)" }} onClick={function(e) { e.stopPropagation(); }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: "#f0f0f5" }}>Ajouter dans {car.name}</div>
+          <input autoFocus value={search} onChange={function(e) { setSearch(e.target.value); }} placeholder="Rechercher..." style={{ padding: "8px 12px", borderRadius: 10, border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.05)", fontSize: 13, outline: "none", fontFamily: "inherit", color: "#f0f0f5" }} />
           <div style={{ overflowY: "auto", display: "flex", flexDirection: "column", gap: 6 }}>
-            {filtered.length === 0 && <div style={{ color: "#AEAEB2", fontSize: 13, textAlign: "center", padding: 20 }}>Aucun membre disponible</div>}
+            {filtered.length === 0 && <div style={{ color: "rgba(255,255,255,0.35)", fontSize: 13, textAlign: "center", padding: 20 }}>Aucun membre disponible</div>}
             {filtered.map(function(m) {
               var s = score(m);
               var ops = Array.isArray(m.operators) ? m.operators : [m.operator].filter(Boolean);
               return (
                 <div key={m.id} onClick={function() { addPassenger(car.id, m.id); onClose(); }}
-                  style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 12, cursor: "pointer", background: s >= 2 ? "#F0FDF4" : s >= 1 ? "#EFF6FF" : "#F5F5F7", border: s >= 2 ? "1px solid #34C75928" : s >= 1 ? "1px solid #0071E328" : "1px solid transparent", transition: "filter 0.1s" }}
-                  onMouseEnter={function(e) { e.currentTarget.style.filter = "brightness(0.96)"; }}
+                  style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 12, cursor: "pointer", background: s >= 2 ? "rgba(52,199,89,0.08)" : s >= 1 ? "rgba(0,113,227,0.08)" : "rgba(255,255,255,0.05)", border: s >= 2 ? "1px solid rgba(52,199,89,0.15)" : s >= 1 ? "1px solid rgba(0,113,227,0.15)" : "1px solid transparent", transition: "filter 0.1s" }}
+                  onMouseEnter={function(e) { e.currentTarget.style.filter = "brightness(1.15)"; }}
                   onMouseLeave={function(e) { e.currentTarget.style.filter = ""; }}>
                   <Avatar name={m.name} role={m.role} size={36} />
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: 13, fontWeight: 600, color: "#1D1D1F" }}>{m.name}</div>
+                    <div style={{ fontSize: 13, fontWeight: 600, color: "#f0f0f5" }}>{m.name}</div>
                     <div style={{ display: "flex", gap: 4, marginTop: 2 }}>
                       <span style={{ fontSize: 10, fontWeight: 600, color: ROLE_COLORS[m.role] }}>{ROLE_LABELS[m.role]}</span>
                       {ops.map(function(op) { return <span key={op} style={{ fontSize: 10, color: OP_COLORS[op], fontWeight: 600 }}>{op}</span>; })}
                     </div>
                   </div>
-                  {s >= 2 && <span style={{ fontSize: 10, fontWeight: 700, color: "#34C759", background: "#F0FDF4", padding: "2px 7px", borderRadius: 99, flexShrink: 0 }}>Équipe</span>}
-                  {s === 1 && <span style={{ fontSize: 10, fontWeight: 700, color: "#0071E3", background: "#EFF6FF", padding: "2px 7px", borderRadius: 99, flexShrink: 0 }}>Opérateur</span>}
+                  {s >= 2 && <span style={{ fontSize: 10, fontWeight: 700, color: "#34C759", background: "rgba(52,199,89,0.08)", padding: "2px 7px", borderRadius: 99, flexShrink: 0 }}>Équipe</span>}
+                  {s === 1 && <span style={{ fontSize: 10, fontWeight: 700, color: "#0071E3", background: "rgba(0,113,227,0.08)", padding: "2px 7px", borderRadius: 99, flexShrink: 0 }}>Opérateur</span>}
                 </div>
               );
             })}
@@ -276,8 +276,8 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
         <div>
-          <h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "#1D1D1F" }}>Voitures</h2>
-          <p style={{ margin: "4px 0 0", fontSize: 12, color: "#6E6E73" }}>{unassigned.length} non assignés · {cars.length} voitures</p>
+          <h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "#f0f0f5" }}>Voitures</h2>
+          <p style={{ margin: "4px 0 0", fontSize: 12, color: "rgba(255,255,255,0.55)" }}>{unassigned.length} non assignés · {cars.length} voitures</p>
         </div>
         <div style={{ display: "flex", gap: 8 }}>
           <Btn v="secondary" onClick={resetDay}>Réinitialiser la journée</Btn>
@@ -305,7 +305,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
 
           return (
             <div key={car.id}
-              style={{ background: inactive ? "#F5F5F7" : isDrop ? accent + "07" : "#FAFAFA", borderRadius: 18, border: inactive ? "1px solid #E5E5EA" : isDrop ? "2px solid " + accent + "55" : "1px solid #E5E5EA", transition: "background 0.15s, border-color 0.15s", opacity: inactive ? 0.6 : 1 }}
+              style={{ background: inactive ? "rgba(255,255,255,0.02)" : isDrop ? accent + "07" : "rgba(255,255,255,0.03)", borderRadius: 18, border: inactive ? "1px solid rgba(255,255,255,0.06)" : isDrop ? "2px solid " + accent + "55" : "1px solid rgba(255,255,255,0.08)", transition: "background 0.15s, border-color 0.15s", opacity: inactive ? 0.6 : 1 }}
               onDragOver={inactive ? undefined : function(e) { e.preventDefault(); setDropTarget(car.id); }}
               onDragLeave={inactive ? undefined : function(e) { if (!e.currentTarget.contains(e.relatedTarget)) setDropTarget(null); }}
               onDrop={inactive ? undefined : function(e) {
@@ -319,22 +319,22 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
               }}>
 
               {/* Header */}
-              <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "11px 18px", borderBottom: "1px solid #F0F0F0", background: inactive ? "#EEEEEF" : accent + "08", flexWrap: "wrap", borderRadius: "17px 17px 0 0" }}>
-                <div style={{ width: 10, height: 10, borderRadius: 99, background: inactive ? "#AEAEB2" : accent, flexShrink: 0 }} />
-                <span style={{ fontSize: 14, fontWeight: 700, color: inactive ? "#AEAEB2" : "#1D1D1F", letterSpacing: -0.3, flex: 1 }}>{car.name}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "11px 18px", borderBottom: "1px solid rgba(255,255,255,0.06)", background: inactive ? "rgba(255,255,255,0.04)" : accent + "08", flexWrap: "wrap", borderRadius: "17px 17px 0 0" }}>
+                <div style={{ width: 10, height: 10, borderRadius: 99, background: inactive ? "rgba(255,255,255,0.35)" : accent, flexShrink: 0 }} />
+                <span style={{ fontSize: 14, fontWeight: 700, color: inactive ? "rgba(255,255,255,0.35)" : "#f0f0f5", letterSpacing: -0.3, flex: 1 }}>{car.name}</span>
                 {inactive
-                  ? <span style={{ fontSize: 11, fontWeight: 600, color: "#AEAEB2", background: "#E5E5EA", padding: "2px 8px", borderRadius: 99 }}>
+                  ? <span style={{ fontSize: 11, fontWeight: 600, color: "rgba(255,255,255,0.35)", background: "rgba(255,255,255,0.08)", padding: "2px 8px", borderRadius: 99 }}>
                       {driver ? driver.name.split(' ')[0] : "Conducteur"} est en voiture avec {driverRidingIn ? driverRidingIn.name.replace("Voiture de ", "").replace("Voiture d'", "") : "quelqu'un"}
                     </span>
                   : <>
-                      <span style={{ fontSize: 12, color: "#AEAEB2", fontWeight: 500 }}>{passengers.length + (driver ? 1 : 0)}/{car.seats}</span>
-                      <div style={{ display: "flex", borderRadius: 8, overflow: "hidden", border: "1px solid #E5E5EA" }}>
-                        <button onClick={function() { setZoneType(car.id, "stratygo"); }} style={{ padding: "3px 8px", fontSize: 10, fontWeight: 700, border: "none", cursor: "pointer", background: cp.zoneType !== "talc" ? "#1D1D1F" : "#F5F5F7", color: cp.zoneType !== "talc" ? "#fff" : "#AEAEB2", fontFamily: "inherit" }}>Stratygo</button>
-                        <button onClick={function() { setZoneType(car.id, "talc"); }} style={{ padding: "3px 8px", fontSize: 10, fontWeight: 700, border: "none", cursor: "pointer", background: cp.zoneType === "talc" ? "#FF3B30" : "#F5F5F7", color: cp.zoneType === "talc" ? "#fff" : "#AEAEB2", fontFamily: "inherit" }}>TALC</button>
+                      <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", fontWeight: 500 }}>{passengers.length + (driver ? 1 : 0)}/{car.seats}</span>
+                      <div style={{ display: "flex", borderRadius: 8, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
+                        <button onClick={function() { setZoneType(car.id, "stratygo"); }} style={{ padding: "3px 8px", fontSize: 10, fontWeight: 700, border: "none", cursor: "pointer", background: cp.zoneType !== "talc" ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.05)", color: cp.zoneType !== "talc" ? "#fff" : "rgba(255,255,255,0.35)", fontFamily: "inherit" }}>Stratygo</button>
+                        <button onClick={function() { setZoneType(car.id, "talc"); }} style={{ padding: "3px 8px", fontSize: 10, fontWeight: 700, border: "none", cursor: "pointer", background: cp.zoneType === "talc" ? "#FF3B30" : "rgba(255,255,255,0.05)", color: cp.zoneType === "talc" ? "#fff" : "rgba(255,255,255,0.35)", fontFamily: "inherit" }}>TALC</button>
                       </div>
                     </>
                 }
-                <button onClick={function() { setEc(car); setCf({ name: car.name, seats: car.seats, driverId: car.driverId || null }); setMo(true); }} style={{ background: "#F0F0F0", border: "none", cursor: "pointer", fontSize: 11, color: "#6E6E73", padding: "3px 8px", borderRadius: 6, fontFamily: "inherit" }}>Éditer</button>
+                <button onClick={function() { setEc(car); setCf({ name: car.name, seats: car.seats, driverId: car.driverId || null }); setMo(true); }} style={{ background: "rgba(255,255,255,0.08)", border: "none", cursor: "pointer", fontSize: 11, color: "rgba(255,255,255,0.55)", padding: "3px 8px", borderRadius: 6, fontFamily: "inherit" }}>Éditer</button>
               </div>
 
               {/* Body: horizontal layout — only if active */}
@@ -348,7 +348,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
                         {cp.zoneType === "talc" && <Sel value={(cp.memberVtaCodes && cp.memberVtaCodes[driver.id]) || ""} onChange={function(v) { setMemberVtaCode(car.id, driver.id, v); }} placeholder="Code VTA..." options={Object.keys(VTA_GROUPS).map(function(code) { return { value: code, label: code }; })} style={{ fontSize: 11, padding: "4px 8px", borderRadius: 8, width: 160 }} />}
                         <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
                           <CommuneAutocomplete value={(cp.memberCommunes && cp.memberCommunes[driver.id]) || ""} onChange={function(v) { setMemberCommune(car.id, driver.id, v); }} />
-                          {(function() { var uk = car.id + "-" + driver.id; var us = unlockStates[uk] || "idle"; var noC = !(cp.memberCommunes && cp.memberCommunes[driver.id]); var dis = noC || !proxadCredentials || us === "loading"; var lbl = us === "loading" ? "⏳" : us === "success" ? "✅" : us === "error" || us === "cors" ? "❌" : "🔓"; var bg = us === "success" ? "#E8F8ED" : us === "error" || us === "cors" ? "#FFEDEC" : us === "loading" ? "#FFF4E0" : dis ? "#F5F5F7" : "#E8F0FE"; var col = us === "success" ? "#34C759" : us === "error" || us === "cors" ? "#FF3B30" : us === "loading" ? "#9A5200" : dis ? "#AEAEB2" : "#0071E3"; var tip = us === "cors" ? "CORS bloqué" : us === "error" ? "Erreur Proxad" : us === "success" ? "Débloqué !" : !proxadCredentials ? "Configurer Proxad" : noC ? "Saisir une commune" : "Débloquer sur Proxad"; return <button onClick={function() { handleUnlock(car.id, driver.id); }} disabled={dis} title={tip} style={{ padding: "4px 8px", borderRadius: 8, border: "1px solid rgba(0,0,0,0.08)", background: bg, color: col, fontSize: 12, fontWeight: 600, cursor: dis ? "default" : "pointer", opacity: dis ? 0.5 : 1, transition: "all 0.2s", whiteSpace: "nowrap", flexShrink: 0 }}>{lbl}</button>; })()}
+                          {(function() { var uk = car.id + "-" + driver.id; var us = unlockStates[uk] || "idle"; var noC = !(cp.memberCommunes && cp.memberCommunes[driver.id]); var dis = noC || !proxadCredentials || us === "loading"; var lbl = us === "loading" ? "⏳" : us === "success" ? "✅" : us === "error" || us === "cors" ? "❌" : "🔓"; var bg = us === "success" ? "rgba(52,199,89,0.12)" : us === "error" || us === "cors" ? "rgba(255,59,48,0.12)" : us === "loading" ? "rgba(255,159,10,0.12)" : dis ? "rgba(255,255,255,0.05)" : "rgba(0,113,227,0.12)"; var col = us === "success" ? "#34C759" : us === "error" || us === "cors" ? "#FF3B30" : us === "loading" ? "#9A5200" : dis ? "rgba(255,255,255,0.35)" : "#0071E3"; var tip = us === "cors" ? "CORS bloqué" : us === "error" ? "Erreur Proxad" : us === "success" ? "Débloqué !" : !proxadCredentials ? "Configurer Proxad" : noC ? "Saisir une commune" : "Débloquer sur Proxad"; return <button onClick={function() { handleUnlock(car.id, driver.id); }} disabled={dis} title={tip} style={{ padding: "4px 8px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.08)", background: bg, color: col, fontSize: 12, fontWeight: 600, cursor: dis ? "default" : "pointer", opacity: dis ? 0.5 : 1, transition: "all 0.2s", whiteSpace: "nowrap", flexShrink: 0 }}>{lbl}</button>; })()}
                         </div>
                       </>
                     : <div style={{ width: 185, height: 70, border: "2px dashed " + accent + "44", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", color: accent + "88", fontSize: 12 }}>Aucun conducteur</div>
@@ -362,7 +362,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
 
                 {/* Passengers */}
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <span style={{ fontSize: 10, fontWeight: 700, color: "#AEAEB2", letterSpacing: 0.8, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Passagers ({passengers.length}/{maxPass})</span>
+                  <span style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 0.8, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Passagers ({passengers.length}/{maxPass})</span>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center" }}>
                     {passengers.map(function(m) {
                       return (
@@ -371,13 +371,13 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
                           {cp.zoneType === "talc" && <Sel value={(cp.memberVtaCodes && cp.memberVtaCodes[m.id]) || ""} onChange={function(v) { setMemberVtaCode(car.id, m.id, v); }} placeholder="Code VTA..." options={Object.keys(VTA_GROUPS).map(function(code) { return { value: code, label: code }; })} style={{ fontSize: 11, padding: "4px 8px", borderRadius: 8, width: 160 }} />}
                           <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
                             <CommuneAutocomplete value={(cp.memberCommunes && cp.memberCommunes[m.id]) || ""} onChange={function(v) { setMemberCommune(car.id, m.id, v); }} />
-                            {(function() { var uk = car.id + "-" + m.id; var us = unlockStates[uk] || "idle"; var noC = !(cp.memberCommunes && cp.memberCommunes[m.id]); var dis = noC || !proxadCredentials || us === "loading"; var lbl = us === "loading" ? "⏳" : us === "success" ? "✅" : us === "error" || us === "cors" ? "❌" : "🔓"; var bg = us === "success" ? "#E8F8ED" : us === "error" || us === "cors" ? "#FFEDEC" : us === "loading" ? "#FFF4E0" : dis ? "#F5F5F7" : "#E8F0FE"; var col = us === "success" ? "#34C759" : us === "error" || us === "cors" ? "#FF3B30" : us === "loading" ? "#9A5200" : dis ? "#AEAEB2" : "#0071E3"; var tip = us === "cors" ? "CORS bloqué" : us === "error" ? "Erreur Proxad" : us === "success" ? "Débloqué !" : !proxadCredentials ? "Configurer Proxad" : noC ? "Saisir une commune" : "Débloquer sur Proxad"; return <button onClick={function() { handleUnlock(car.id, m.id); }} disabled={dis} title={tip} style={{ padding: "4px 8px", borderRadius: 8, border: "1px solid rgba(0,0,0,0.08)", background: bg, color: col, fontSize: 12, fontWeight: 600, cursor: dis ? "default" : "pointer", opacity: dis ? 0.5 : 1, transition: "all 0.2s", whiteSpace: "nowrap", flexShrink: 0 }}>{lbl}</button>; })()}
+                            {(function() { var uk = car.id + "-" + m.id; var us = unlockStates[uk] || "idle"; var noC = !(cp.memberCommunes && cp.memberCommunes[m.id]); var dis = noC || !proxadCredentials || us === "loading"; var lbl = us === "loading" ? "⏳" : us === "success" ? "✅" : us === "error" || us === "cors" ? "❌" : "🔓"; var bg = us === "success" ? "rgba(52,199,89,0.12)" : us === "error" || us === "cors" ? "rgba(255,59,48,0.12)" : us === "loading" ? "rgba(255,159,10,0.12)" : dis ? "rgba(255,255,255,0.05)" : "rgba(0,113,227,0.12)"; var col = us === "success" ? "#34C759" : us === "error" || us === "cors" ? "#FF3B30" : us === "loading" ? "#9A5200" : dis ? "rgba(255,255,255,0.35)" : "#0071E3"; var tip = us === "cors" ? "CORS bloqué" : us === "error" ? "Erreur Proxad" : us === "success" ? "Débloqué !" : !proxadCredentials ? "Configurer Proxad" : noC ? "Saisir une commune" : "Débloquer sur Proxad"; return <button onClick={function() { handleUnlock(car.id, m.id); }} disabled={dis} title={tip} style={{ padding: "4px 8px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.08)", background: bg, color: col, fontSize: 12, fontWeight: 600, cursor: dis ? "default" : "pointer", opacity: dis ? 0.5 : 1, transition: "all 0.2s", whiteSpace: "nowrap", flexShrink: 0 }}>{lbl}</button>; })()}
                           </div>
                         </div>
                       );
                     })}
                     {passengers.length === 0 && !isDrop && (
-                      <span style={{ color: "#C7C7CC", fontSize: 12, padding: "6px 0" }}>Glissez des membres ici ou utilisez +</span>
+                      <span style={{ color: "rgba(255,255,255,0.25)", fontSize: 12, padding: "6px 0" }}>Glissez des membres ici ou utilisez +</span>
                     )}
                     {isDrop && dragging && (
                       <div style={{ width: 155, height: 60, border: "2px dashed " + accent, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", color: accent, fontSize: 12, fontWeight: 600 }}>Déposer ici</div>
@@ -392,12 +392,12 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
               {/* TALC: show summary of codes in car */}
               {!inactive && cp.zoneType === "talc" && (driver || passengers.length > 0) && (
                 <div style={{ padding: "0 18px 14px", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-                  <span style={{ fontSize: 11, color: "#AEAEB2", fontWeight: 600 }}>Codes VTA :</span>
+                  <span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", fontWeight: 600 }}>Codes VTA :</span>
                   {[driver, ...passengers].filter(Boolean).map(function(m) {
                     var manualCode = cp.memberVtaCodes && cp.memberVtaCodes[m.id];
                     var code = manualCode || VTA_PERSON_MAP[m.name];
                     if (!code) return null;
-                    return <span key={m.id} style={{ fontSize: 11, fontWeight: 700, color: manualCode ? "#0071E3" : "#FF3B30", background: manualCode ? "#0071E310" : "#FF3B3010", padding: "2px 8px", borderRadius: 99 }}>{code} <span style={{ fontWeight: 400, color: "#6E6E73" }}>({m.name.split(' ')[0]})</span></span>;
+                    return <span key={m.id} style={{ fontSize: 11, fontWeight: 700, color: manualCode ? "#0071E3" : "#FF3B30", background: manualCode ? "#0071E310" : "#FF3B3010", padding: "2px 8px", borderRadius: 99 }}>{code} <span style={{ fontWeight: 400, color: "rgba(255,255,255,0.55)" }}>({m.name.split(' ')[0]})</span></span>;
                   })}
                 </div>
               )}
@@ -407,7 +407,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
       </div>
 
       {/* Unassigned pool */}
-      <div style={{ marginTop: 24, background: dropTarget === "pool" ? "#F0F0F0" : "#FAFAFA", borderRadius: 18, border: "1px dashed #D2D2D7", overflow: "hidden", transition: "background 0.15s" }}
+      <div style={{ marginTop: 24, background: dropTarget === "pool" ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.03)", borderRadius: 18, border: "1px dashed rgba(255,255,255,0.15)", overflow: "hidden", transition: "background 0.15s" }}
         onDragOver={function(e) { e.preventDefault(); setDropTarget("pool"); }}
         onDragLeave={function(e) { if (!e.currentTarget.contains(e.relatedTarget)) setDropTarget(null); }}
         onDrop={function(e) {
@@ -416,13 +416,13 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
           moveToPool(dragging.memberId, dragging.fromCarId);
           setDragging(null);
         }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 18px", borderBottom: "1px solid #F0F0F0" }}>
-          <div style={{ width: 10, height: 10, borderRadius: 99, background: "#AEAEB2", flexShrink: 0 }} />
-          <span style={{ fontSize: 14, fontWeight: 700, color: "#AEAEB2", flex: 1 }}>Non assignés</span>
-          <span style={{ fontSize: 12, color: "#AEAEB2" }}>{unassigned.length} membre{unassigned.length !== 1 ? "s" : ""}</span>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 18px", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+          <div style={{ width: 10, height: 10, borderRadius: 99, background: "rgba(255,255,255,0.35)", flexShrink: 0 }} />
+          <span style={{ fontSize: 14, fontWeight: 700, color: "rgba(255,255,255,0.35)", flex: 1 }}>Non assignés</span>
+          <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>{unassigned.length} membre{unassigned.length !== 1 ? "s" : ""}</span>
         </div>
         <div style={{ padding: "16px 18px", display: "flex", flexWrap: "wrap", gap: 8 }}>
-          {unassigned.length === 0 && <span style={{ fontSize: 12, color: "#C7C7CC" }}>Tout le monde est assigné 🎉</span>}
+          {unassigned.length === 0 && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.25)" }}>Tout le monde est assigné 🎉</span>}
           {unassigned.map(function(m) {
             return <MemberTile key={m.id} m={m} isDriver={false} accent="#AEAEB2" isDrag={true} fromCarId={null} />;
           })}
@@ -435,7 +435,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
           <Inp value={cf.name} onChange={function(v) { setCf(Object.assign({}, cf, { name: v })); }} placeholder="Nom de la voiture" />
           <Inp type="number" value={cf.seats} onChange={function(v) { setCf(Object.assign({}, cf, { seats: Number(v) })); }} placeholder="Nombre de places" />
           <div>
-            <label style={{ fontSize: 12, fontWeight: 600, color: "#6E6E73", display: "block", marginBottom: 4 }}>Conducteur habituel</label>
+            <label style={{ fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.55)", display: "block", marginBottom: 4 }}>Conducteur habituel</label>
             <Sel value={cf.driverId || ""} onChange={function(v) { setCf(Object.assign({}, cf, { driverId: v ? Number(v) : null })); }}
               placeholder="Aucun conducteur"
               options={team.filter(function(m) { return m.active; }).map(function(m) { return { value: m.id, label: m.name + " (" + ROLE_LABELS[m.role] + ")" }; })}
@@ -449,7 +449,7 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
       </Modal>
       <Modal open={showProxadConfig} onClose={function() { setShowProxadConfig(false); }} title="Configurer Proxad">
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-          <div style={{ fontSize: 12, color: "#6E6E73" }}>Identifiants pour vad.proxad.net (API déblocage communes)</div>
+          <div style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>Identifiants pour vad.proxad.net (API déblocage communes)</div>
           <Inp value={proxadForm.login} onChange={function(v) { setProxadForm(Object.assign({}, proxadForm, { login: v })); }} placeholder="Login (ex: vst-iouirini)" />
           <Inp type="password" value={proxadForm.password} onChange={function(v) { setProxadForm(Object.assign({}, proxadForm, { password: v })); }} placeholder="Mot de passe" />
           <div style={{ display: "flex", gap: 10 }}>

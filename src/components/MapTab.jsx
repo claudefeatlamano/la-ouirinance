@@ -71,21 +71,21 @@ return function() { if (mapInstance.current) { mapInstance.current.remove(); map
 return (
 <div>
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16, flexWrap: "wrap", gap: 10 }}>
-<h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "#1D1D1F" }}>Carte des jacheres</h2>
+<h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "#f0f0f5" }}>Carte des jacheres</h2>
 <Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 150 }} />
 </div>
 <Card style={{ padding: 0, overflow: "hidden", marginBottom: 12, borderRadius: 14 }}>
 <div ref={mapRef} style={{ width: "100%", height: 560 }}>
-{!mapReady && <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 560, color: "#AEAEB2" }}>Chargement...</div>}
+{!mapReady && <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 560, color: "rgba(255,255,255,0.35)" }}>Chargement...</div>}
 </div>
 </Card>
 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#34C759" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>Bon taux</span></div>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF9F0A" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>Moyen</span></div>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF3B30" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>Faible</span></div>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#AEAEB2" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>0 contrats</span></div>
-<div style={{ marginLeft: 8, display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2.5px solid #FF9F0A" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>TALC</span></div>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2px solid #fff" }} /><span style={{ fontSize: 11, color: "#6E6E73" }}>Stratygo</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#34C759" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>Bon taux</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF9F0A" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>Moyen</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF3B30" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>Faible</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#AEAEB2" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>0 contrats</span></div>
+<div style={{ marginLeft: 8, display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2.5px solid #FF9F0A" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>TALC</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2px solid #fff" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>Stratygo</span></div>
 </div>
 </div>
 );
@@ -182,12 +182,12 @@ useEffect(function() {
 return (
 <Card style={{ padding: 20, marginBottom: 16 }}>
   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#1D1D1F" }}>Heatmap rues</h3>
-    <span style={{ fontSize: 12, color: "#AEAEB2" }}>{loading ? "Géocodage…" : geoData.length + " rue" + (geoData.length > 1 ? "s" : "") + " géocodée" + (geoData.length > 1 ? "s" : "")}</span>
+    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#f0f0f5" }}>Heatmap rues</h3>
+    <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>{loading ? "Géocodage…" : geoData.length + " rue" + (geoData.length > 1 ? "s" : "") + " géocodée" + (geoData.length > 1 ? "s" : "")}</span>
   </div>
   <div style={{ position: "relative" }}>
-    <div ref={mapRef} style={{ height: 300, borderRadius: 12, overflow: "hidden", background: "#F5F5F7" }} />
-    {loading && <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(245,245,247,0.85)", borderRadius: 12 }}><span style={{ fontSize: 13, color: "#AEAEB2" }}>Géocodage des rues…</span></div>}
+    <div ref={mapRef} style={{ height: 300, borderRadius: 12, overflow: "hidden", background: "rgba(255,255,255,0.05)" }} />
+    {loading && <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(15,11,30,0.85)", borderRadius: 12 }}><span style={{ fontSize: 13, color: "rgba(255,255,255,0.35)" }}>Géocodage des rues…</span></div>}
   </div>
   <div style={{ marginTop: 10, display: "flex", gap: 12, justifyContent: "center" }}>
     <span style={{ fontSize: 11, color: "#34C759", fontWeight: 700 }}>● peu prospectée</span>

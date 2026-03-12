@@ -33,18 +33,18 @@ function SectorAutocomplete({ value, onSelect }) {
         onFocus={function() { setOpen(true); }}
         onBlur={function() { setTimeout(function() { setOpen(false); }, 150); }}
         placeholder="Secteur..."
-        style={{ fontSize: 11, padding: "3px 8px", borderRadius: 8, border: "1px solid #E5E5EA", outline: "none", width: 100, color: "#1D1D1F", background: "#fff", fontFamily: "inherit" }}
+        style={{ fontSize: 11, padding: "3px 8px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.12)", outline: "none", width: 100, color: "#f0f0f5", background: "rgba(255,255,255,0.08)", fontFamily: "inherit" }}
       />
       {open && matches.length > 0 && (
-        <div style={{ position: "absolute", top: "calc(100% + 4px)", left: 0, background: "#fff", borderRadius: 10, boxShadow: "0 4px 20px rgba(0,0,0,0.15)", zIndex: 200, minWidth: 160, overflow: "hidden", border: "1px solid #E5E5EA" }}>
+        <div style={{ position: "absolute", top: "calc(100% + 4px)", left: 0, background: "rgba(30,25,50,0.95)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", borderRadius: 10, boxShadow: "0 8px 32px rgba(0,0,0,0.4)", zIndex: 200, minWidth: 160, overflow: "hidden", border: "1px solid rgba(255,255,255,0.12)" }}>
           {matches.slice(0, 6).map(function(s) {
             return (
               <div key={s.name} onMouseDown={function() { onSelect(s.name, s.talc ? "talc" : "stratygo"); setOpen(false); }}
-                style={{ padding: "8px 12px", fontSize: 12, fontWeight: 600, cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
-                onMouseEnter={function(e) { e.currentTarget.style.background = "#F5F5F7"; }}
+                style={{ padding: "8px 12px", fontSize: 12, fontWeight: 600, cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center", color: "#f0f0f5" }}
+                onMouseEnter={function(e) { e.currentTarget.style.background = "rgba(255,255,255,0.08)"; }}
                 onMouseLeave={function(e) { e.currentTarget.style.background = ""; }}>
                 <span>{s.name}</span>
-                <span style={{ fontSize: 10, fontWeight: 700, color: s.talc ? "#FF9F0A" : "#6E6E73", background: s.talc ? "#FF9F0A18" : "#6E6E7318", borderRadius: 20, padding: "2px 6px" }}>{s.talc ? "TALC" : "Stratygo"}</span>
+                <span style={{ fontSize: 10, fontWeight: 700, color: s.talc ? "#FF9F0A" : "rgba(255,255,255,0.55)", background: s.talc ? "rgba(255,159,10,0.15)" : "rgba(255,255,255,0.08)", borderRadius: 20, padding: "2px 6px" }}>{s.talc ? "TALC" : "Stratygo"}</span>
               </div>
             );
           })}
@@ -68,18 +68,18 @@ function CommuneAutocomplete({ value, onChange }) {
         onFocus={function() { setOpen(true); }}
         onBlur={function() { setTimeout(function() { setOpen(false); }, 150); }}
         placeholder="Commune..."
-        style={{ fontSize: 11, padding: "4px 8px", borderRadius: 8, border: "1px solid #E5E5EA", outline: "none", width: 130, color: "#1D1D1F", background: "#fff", fontFamily: "inherit", boxSizing: "border-box" }}
+        style={{ fontSize: 11, padding: "4px 8px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.12)", outline: "none", width: 130, color: "#f0f0f5", background: "rgba(255,255,255,0.08)", fontFamily: "inherit", boxSizing: "border-box" }}
       />
       {open && matches.length > 0 && (
-        <div style={{ position: "absolute", top: "calc(100% + 4px)", left: 0, background: "#fff", borderRadius: 10, boxShadow: "0 4px 20px rgba(0,0,0,0.15)", zIndex: 300, minWidth: 220, overflow: "hidden", border: "1px solid #E5E5EA" }}>
+        <div style={{ position: "absolute", top: "calc(100% + 4px)", left: 0, background: "rgba(30,25,50,0.95)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", borderRadius: 10, boxShadow: "0 8px 32px rgba(0,0,0,0.4)", zIndex: 300, minWidth: 220, overflow: "hidden", border: "1px solid rgba(255,255,255,0.12)" }}>
           {matches.slice(0, 7).map(function(c, i) {
             return (
               <div key={c.v + "-" + c.sector} onMouseDown={function() { onChange(c.v); setOpen(false); }}
-                style={{ padding: "7px 12px", fontSize: 12, fontWeight: 600, cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8, color: "#1D1D1F" }}
-                onMouseEnter={function(e) { e.currentTarget.style.background = "#F5F5F7"; }}
+                style={{ padding: "7px 12px", fontSize: 12, fontWeight: 600, cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8, color: "#f0f0f5" }}
+                onMouseEnter={function(e) { e.currentTarget.style.background = "rgba(255,255,255,0.08)"; }}
                 onMouseLeave={function(e) { e.currentTarget.style.background = ""; }}>
                 <span style={{ whiteSpace: "nowrap" }}>{c.v}</span>
-                <span style={{ fontSize: 9, color: "#AEAEB2", whiteSpace: "nowrap" }}>{c.sector}</span>
+                <span style={{ fontSize: 9, color: "rgba(255,255,255,0.35)", whiteSpace: "nowrap" }}>{c.sector}</span>
               </div>
             );
           })}

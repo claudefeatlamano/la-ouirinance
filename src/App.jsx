@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import { db, store, STORAGE_KEYS, doc, getDoc, onSnapshot } from "./data/store.js";
 import { DEMO_TEAM } from "./data/team.js";
 import { DEMO_CARS } from "./data/team.js";
@@ -16,12 +17,12 @@ import { CarnetTab } from "./components/CarnetTab.jsx";
 import { localDateStr } from "./helpers/date.js";
 
 var TABS = [
-{ id: "cloche", label: "🔔" },
+{ id: "cloche", label: "\u{1F514}" },
 { id: "dashboard", label: "Dashboard" },
 { id: "contracts", label: "Contrats" },
 { id: "objectifs", label: "Objectifs" },
 { id: "cars", label: "Voitures" },
-{ id: "team", label: "Équipe" },
+{ id: "team", label: "\u00C9quipe" },
 { id: "map", label: "Carte" },
 { id: "secteurs", label: "Secteurs" },
 { id: "import", label: "Import" },
@@ -128,7 +129,7 @@ loadedGroups = loadedGroups || [];
 var renamedGroups = loadedGroups.map(function(g) {
   if (g.memberIds.length > 0) {
     var leader = loadedTeam.find(function(m) { return m.id === g.memberIds[0]; });
-    if (leader) return Object.assign({}, g, { name: "Équipe de " + leader.name.split(' ')[0] });
+    if (leader) return Object.assign({}, g, { name: "\u00C9quipe de " + leader.name.split(' ')[0] });
   }
   return g;
 });
@@ -159,7 +160,7 @@ useEffect(function() {
           var existingIds = new Set(prev.map(function(c) { return c.id; }));
           var added = data.contracts.filter(function(c) { return !existingIds.has(c.id); });
           if (added.length === 0) return prev;
-          console.log("[Flask] " + added.length + " nouveaux contrats reçus.");
+          console.log("[Flask] " + added.length + " nouveaux contrats re\u00E7us.");
           var merged = prev.concat(added);
           store.get(STORAGE_KEYS.contracts).then(function(existing) {
             var overrides = existing || {};
@@ -211,79 +212,97 @@ var saveObjectives = function(o) { setObjectives(o); store.set(STORAGE_KEYS.obje
 var saveGroups = function(g) { setGroups(g); store.set(STORAGE_KEYS.groups, g); };
 var saveProxadCreds = function(c) { setProxadCreds(c); store.set(STORAGE_KEYS.proxadCredentials, c); };
 
-if (loading) return <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", background: "#F5F5F7", fontFamily: "-apple-system, sans-serif" }}><p style={{ color: "#AEAEB2", fontSize: 13, fontWeight: 400 }}>Chargement…</p></div>;
+if (loading) return (
+  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", background: "linear-gradient(-45deg, #0f0b1e, #1a1145, #0c2340)", fontFamily: "-apple-system, sans-serif" }}>
+    <motion.div
+      animate={{ scale: [1, 1.1, 1] }}
+      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+      <div style={{ width: 48, height: 48, borderRadius: 14, background: "linear-gradient(145deg, #0071E3, #34C759)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, fontWeight: 700, color: "#fff", boxShadow: "0 0 30px rgba(0,113,227,0.4)" }}>A</div>
+    </motion.div>
+  </div>
+);
+
+var tabContent = null;
+if (tab === "dashboard") tabContent = <DashboardTab team={team} contracts={contracts} saveContracts={saveContracts} dailyPlan={dailyPlan} cars={cars} lastSync={lastSync} scraperStatus={scraperStatus} objectives={objectives} />;
+else if (tab === "team") tabContent = <TeamTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} groups={groups} saveGroups={saveGroups} />;
+else if (tab === "cars") tabContent = <CarsTab team={team} cars={cars} saveCars={saveCars} dailyPlan={dailyPlan} saveDailyPlan={saveDailyPlan} groups={groups} proxadCredentials={proxadCreds} saveProxadCreds={saveProxadCreds} />;
+else if (tab === "contracts") tabContent = <ContractsTab contracts={contracts} team={team} dailyPlan={dailyPlan} cars={cars} saveContracts={saveContracts} />;
+else if (tab === "map") tabContent = <MapTab />;
+else if (tab === "secteurs") tabContent = <SecteursTab />;
+else if (tab === "objectifs") tabContent = <ObjectifsTab team={team} contracts={contracts} objectives={objectives} saveObjectives={saveObjectives} />;
+else if (tab === "cloche") tabContent = <ClocheTab team={team} contracts={contracts} />;
+else if (tab === "import") tabContent = <ImportTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} />;
+else if (tab === "carnet") tabContent = <CarnetTab />;
 
 return (
 
-<div style={{ fontFamily: "-apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, sans-serif", background: "#F5F5F7", minHeight: "100vh", color: "#1D1D1F" }}>
-<style>{`
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { -webkit-font-smoothing: antialiased; }
-  button { -webkit-tap-highlight-color: transparent; font-family: inherit; }
-  input, select { font-family: inherit; }
-  ::-webkit-scrollbar { width: 5px; height: 5px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 99px; }
-  ::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.22); }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-  .tab-content { animation: fadeIn 0.22s ease; }
-  @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-`}</style>
+<div style={{ fontFamily: "-apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, sans-serif", background: "linear-gradient(-45deg, #0f0b1e, #1a1145, #0c2340, #0f0b1e)", backgroundSize: "400% 400%", animation: "gradient-shift 15s ease infinite", minHeight: "100vh", color: "#f0f0f5" }}>
 
-  <header style={{ background: "rgba(255,255,255,0.85)", backdropFilter: "blur(20px) saturate(180%)", WebkitBackdropFilter: "blur(20px) saturate(180%)", borderBottom: "1px solid rgba(0,0,0,0.06)", padding: "0 32px", height: 52, display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 100 }}>
+  <header style={{ background: "rgba(15,11,30,0.7)", backdropFilter: "blur(40px) saturate(180%)", WebkitBackdropFilter: "blur(40px) saturate(180%)", borderBottom: "1px solid rgba(255,255,255,0.08)", padding: "0 32px", height: 52, display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 100 }}>
     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-      <div style={{ width: 28, height: 28, borderRadius: 8, background: "linear-gradient(145deg, #0071E3 0%, #34C759 100%)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: "#fff", letterSpacing: -0.5 }}>A</div>
-      <span style={{ fontWeight: 600, fontSize: 15, color: "#1D1D1F", letterSpacing: -0.3 }}>Agence</span>
+      <div style={{ width: 28, height: 28, borderRadius: 8, background: "linear-gradient(145deg, #0071E3 0%, #34C759 100%)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: "#fff", letterSpacing: -0.5, boxShadow: "0 0 12px rgba(0,113,227,0.3)" }}>A</div>
+      <span style={{ fontWeight: 600, fontSize: 15, color: "#f0f0f5", letterSpacing: -0.3 }}>Agence</span>
     </div>
     <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
       {scraperStatus !== null ? (
-        <span title={"Dernière sync : " + (lastSync ? new Date(lastSync).toLocaleTimeString("fr-FR") : "—")}
+        <span title={"Derni\u00E8re sync : " + (lastSync ? new Date(lastSync).toLocaleTimeString("fr-FR") : "\u2014")}
           style={{ fontSize: 11, fontWeight: 500, color: scraperStatus.ok ? "#34C759" : "#FF3B30",
-            background: scraperStatus.ok ? "#E8F8ED" : "#FFEDEC", borderRadius: 99, padding: "3px 10px",
-            display: "flex", alignItems: "center", gap: 4, cursor: "default" }}>
-          <span style={{ width: 6, height: 6, borderRadius: 99, background: scraperStatus.ok ? "#34C759" : "#FF3B30", display: "inline-block" }} />
-          {scraperStatus.syncing ? "Sync…" : scraperStatus.ok ? "Live" : "Erreur"}
+            background: scraperStatus.ok ? "rgba(52,199,89,0.15)" : "rgba(255,59,48,0.15)", borderRadius: 99, padding: "3px 10px",
+            display: "flex", alignItems: "center", gap: 4, cursor: "default", border: "1px solid " + (scraperStatus.ok ? "rgba(52,199,89,0.25)" : "rgba(255,59,48,0.25)") }}>
+          <span style={{ width: 6, height: 6, borderRadius: 99, background: scraperStatus.ok ? "#34C759" : "#FF3B30", display: "inline-block", boxShadow: "0 0 6px " + (scraperStatus.ok ? "rgba(52,199,89,0.5)" : "rgba(255,59,48,0.5)") }} />
+          {scraperStatus.syncing ? "Sync\u2026" : scraperStatus.ok ? "Live" : "Erreur"}
         </span>
       ) : (
-        <span title="Serveur Flask non démarré — voir README"
-          style={{ fontSize: 11, fontWeight: 500, color: "#AEAEB2", background: "#F5F5F7", borderRadius: 99, padding: "3px 10px",
-            display: "flex", alignItems: "center", gap: 4, cursor: "default" }}>
-          <span style={{ width: 6, height: 6, borderRadius: 99, background: "#AEAEB2", display: "inline-block" }} />
+        <span title="Serveur Flask non d\u00E9marr\u00E9 \u2014 voir README"
+          style={{ fontSize: 11, fontWeight: 500, color: "rgba(255,255,255,0.35)", background: "rgba(255,255,255,0.05)", borderRadius: 99, padding: "3px 10px",
+            display: "flex", alignItems: "center", gap: 4, cursor: "default", border: "1px solid rgba(255,255,255,0.08)" }}>
+          <span style={{ width: 6, height: 6, borderRadius: 99, background: "rgba(255,255,255,0.35)", display: "inline-block" }} />
           Offline
         </span>
       )}
-      <span style={{ fontSize: 12, fontWeight: 500, color: "#6E6E73", background: "#F5F5F7", borderRadius: 99, padding: "3px 10px" }}>{team.filter(function(m) { return m.active; }).length} actifs</span>
-      <span style={{ fontSize: 12, fontWeight: 500, color: "#6E6E73", background: "#F5F5F7", borderRadius: 99, padding: "3px 10px" }}>{cars.length} voitures</span>
+      <span style={{ fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.55)", background: "rgba(255,255,255,0.05)", borderRadius: 99, padding: "3px 10px", border: "1px solid rgba(255,255,255,0.08)" }}>{team.filter(function(m) { return m.active; }).length} actifs</span>
+      <span style={{ fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.55)", background: "rgba(255,255,255,0.05)", borderRadius: 99, padding: "3px 10px", border: "1px solid rgba(255,255,255,0.08)" }}>{cars.length} voitures</span>
     </div>
   </header>
 
-  <nav style={{ display: "flex", gap: 0, padding: "0 24px", background: "rgba(255,255,255,0.9)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", borderBottom: "1px solid rgba(0,0,0,0.06)", overflowX: "auto" }}>
+  <LayoutGroup>
+  <nav style={{ display: "flex", gap: 0, padding: "0 24px", background: "rgba(15,11,30,0.5)", backdropFilter: "blur(40px)", WebkitBackdropFilter: "blur(40px)", borderBottom: "1px solid rgba(255,255,255,0.08)", overflowX: "auto", position: "relative" }}>
     {TABS.map(function(t) {
       var active = tab === t.id;
       return (
         <button key={t.id} onClick={function() { setTab(t.id); }} style={{
           display: "flex", alignItems: "center", gap: 5, padding: "0 16px", height: 44,
           border: "none", background: "none", cursor: "pointer", fontSize: 13,
-          fontWeight: active ? 600 : 400, color: active ? "#0071E3" : "#6E6E73",
-          borderBottom: active ? "2px solid #0071E3" : "2px solid transparent",
-          whiteSpace: "nowrap", transition: "color 0.15s, border-color 0.15s",
-          letterSpacing: -0.1,
-        }}>{t.label}</button>
+          fontWeight: active ? 600 : 400, color: active ? "#0071E3" : "rgba(255,255,255,0.45)",
+          borderBottom: "2px solid transparent",
+          whiteSpace: "nowrap", transition: "color 0.15s",
+          letterSpacing: -0.1, position: "relative",
+        }}>
+          {t.label}
+          {active && (
+            <motion.div
+              layoutId="tab-indicator"
+              style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 2, background: "#0071E3", borderRadius: 1, boxShadow: "0 0 8px rgba(0,113,227,0.5)" }}
+              transition={{ type: "spring", stiffness: 400, damping: 30 }}
+            />
+          )}
+        </button>
       );
     })}
   </nav>
+  </LayoutGroup>
 
-  <main style={{ padding: "28px 32px", maxWidth: 1100, margin: "0 auto" }} className="tab-content" key={tab}>
-    {tab === "dashboard" && <DashboardTab team={team} contracts={contracts} saveContracts={saveContracts} dailyPlan={dailyPlan} cars={cars} lastSync={lastSync} scraperStatus={scraperStatus} objectives={objectives} />}
-    {tab === "team" && <TeamTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} groups={groups} saveGroups={saveGroups} />}
-    {tab === "cars" && <CarsTab team={team} cars={cars} saveCars={saveCars} dailyPlan={dailyPlan} saveDailyPlan={saveDailyPlan} groups={groups} proxadCredentials={proxadCreds} saveProxadCreds={saveProxadCreds} />}
-    {tab === "contracts" && <ContractsTab contracts={contracts} team={team} dailyPlan={dailyPlan} cars={cars} saveContracts={saveContracts} />}
-    {tab === "map" && <MapTab />}
-    {tab === "secteurs" && <SecteursTab />}
-    {tab === "objectifs" && <ObjectifsTab team={team} contracts={contracts} objectives={objectives} saveObjectives={saveObjectives} />}
-    {tab === "cloche" && <ClocheTab team={team} contracts={contracts} />}
-    {tab === "import" && <ImportTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} />}
-    {tab === "carnet" && <CarnetTab />}
+  <main style={{ padding: "28px 32px", maxWidth: 1100, margin: "0 auto" }}>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={tab}
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -8 }}
+        transition={{ duration: 0.25, ease: "easeOut" }}>
+        {tabContent}
+      </motion.div>
+    </AnimatePresence>
   </main>
 </div>
 );

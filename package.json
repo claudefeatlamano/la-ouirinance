@@ -2,10 +2,14 @@
   "name": "la-ouirinance",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "dependencies": {
+    "@tailwindcss/vite": "^4.2.1",
     "firebase": "^12.10.0",
+    "framer-motion": "^12.35.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.0",
