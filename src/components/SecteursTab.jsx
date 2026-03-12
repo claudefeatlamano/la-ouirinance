@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 import { Card, Btn, Inp, Badge, Sel, StatCard } from "./ui.jsx";
 import { JACHERE, JACHERE_TALC } from "../constants/jachere.js";
 import { DEPT_ZONES, OP_COLORS } from "../constants/roles.js";
-import { getC, getTalcC, MONTHS_ORDER, MONTHS_LABELS } from "../helpers/carnet.js";
+import { getC, getTalcC, MONTHS_ORDER, MONTHS_LABELS, normVille } from "../helpers/carnet.js";
 import { DEMO_CONTRACTS } from "../data/contracts.js";
 import { CommuneHeatmap } from "./MapTab.jsx";
 
@@ -15,6 +15,7 @@ const [communeView, setCommuneView] = useState(null); // { commune, dept, isTalc
 const [rueSearch, setRueSearch] = useState("");
 const [rueSort, setRueSort] = useState("top"); // "top" | "recent"
 const [showMap, setShowMap] = useState(false);
+const [communeSearch, setCommuneSearch] = useState("");
 
 var last6Months = MONTHS_ORDER.slice(-6);
 
@@ -47,7 +48,7 @@ var cvTotal6 = cvVals.reduce(function(s, v) { return s + v.count; }, 0);
 
 // Street data from live contracts
 var cvContracts = DEMO_CONTRACTS.filter(function(ct) {
-  return (ct.ville || "").toUpperCase().trim() === cv.v;
+  return normVille(ct.ville) === cv.v;
 });
 // Group by rue
 var rueMap = {};
@@ -212,7 +213,7 @@ return (bc / (b.p || 1)) - (ac / (a.p || 1));
 return (
 <div>
 <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
-<Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); }}>← Retour</Btn>
+<Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); setCommuneSearch(""); }}>← Retour</Btn>
 <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800 }}>{sel}</h2>
 {isTalc ? <Badge color="#FF9F0A">TALC</Badge> : <Badge color={OP_COLORS.Free}>Stratygo</Badge>}
 {!isTalc && DEPT_ZONES[jData.dept] && DEPT_ZONES[jData.dept].b && <Badge color={OP_COLORS.Bouygues}>Bouygues</Badge>}
@@ -233,7 +234,19 @@ return (
 <Btn s="sm" v={sortBy === "t" ? "primary" : "secondary"} onClick={function() { setSortBy("t"); }}>Taux</Btn>
 </div>
 </div>
-{sorted.map(function(c, i) {
+<div style={{ position: "relative", marginBottom: 16 }}>
+  <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", fontSize: 14, color: "#AEAEB2", pointerEvents: "none" }}>🔍</span>
+  <input
+    value={communeSearch}
+    onChange={function(e) { setCommuneSearch(e.target.value); }}
+    placeholder="Rechercher une commune..."
+    style={{ width: "100%", boxSizing: "border-box", paddingLeft: 36, paddingRight: 12, paddingTop: 10, paddingBottom: 10, fontSize: 14, border: "1.5px solid #E5E5EA", borderRadius: 10, outline: "none", fontFamily: "inherit", background: "#FAFAFA", color: "#1D1D1F" }}
+  />
+  {communeSearch && (
+    <button onClick={function() { setCommuneSearch(""); }} style={{ position: "absolute", right: 10, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "#AEAEB2", fontSize: 16, padding: 2 }}>×</button>
+  )}
+</div>
+{(function() { var cq = communeSearch.trim().toUpperCase(); var filtered = cq ? sorted.filter(function(c) { return c.v.indexOf(cq) >= 0; }) : sorted; return filtered; })().map(function(c, i) {
 var cc = isTalc ? getTalcC(c, jData.dept, month) : getC(c, jData.dept, month);
 var t = c.p ? (cc / c.p * 100) : 0;
 var col = t > 0.8 ? "#34C759" : t > 0.3 ? "#FF9F0A" : cc === 0 ? "rgba(0,0,0,0.08)" : "#FF3B30";

@@ -85,6 +85,7 @@ function CRow(c, i) {
       <div style={{ flex:1, minWidth:0 }}>
         <div style={{ display:"flex", alignItems:"center", gap:6, marginBottom:2 }}>
           <span style={{ fontSize:13, fontWeight:700, color:col }}>{c.commercial.split(" ")[0]}</span>
+          {c.operator && <span style={{ fontSize:9, fontWeight:700, color:OP_COLORS[c.operator] || "#6E6E73", background:(OP_COLORS[c.operator] || "#6E6E73") + "18", borderRadius:4, padding:"1px 5px" }}>{c.operator === "Bouygues" ? "BT" : c.operator === "Free" ? "Free" : c.operator}</span>}
           {c.vtaCode && !c.vtaResolved && <span style={{ fontSize:10, fontWeight:700, color:"#FF9F0A", background:"#FF9F0A18", borderRadius:4, padding:"1px 5px" }}>VTA?</span>}
           <span style={{ fontSize:11, color:"#AEAEB2" }}>{c.heure}</span>
         </div>

@@ -1,4 +1,9 @@
 import carnetData from "../data.json";
+import bouyguesData from "../data_bouygues.json";
+
+function normVille(s) {
+  return (s || "").toUpperCase().trim().replace(/\bST /g, "SAINT ").replace(/\bSTE /g, "SAINTE ");
+}
 
 // Carnet auto-feed counts for TALC sectors
 var CARNET_BY_VILLE_ALL = {};
@@ -14,6 +19,24 @@ var CARNET_BY_VILLE_MONTH = {};
     var p = d.split("-");
     if (p.length === 3) {
       var mk = ML[parseInt(p[1])-1] + p[0].slice(2);
+      if (!CARNET_BY_VILLE_MONTH[v]) CARNET_BY_VILLE_MONTH[v] = {};
+      CARNET_BY_VILLE_MONTH[v][mk] = (CARNET_BY_VILLE_MONTH[v][mk] || 0) + 1;
+    }
+  });
+})();
+
+// Count BT (Bouygues) contracts into the same ville maps
+(function() {
+  var ML = ["jan","fev","mar","avr","mai","jun","jul","aou","sep","oct","nov","dec"];
+  (bouyguesData.rows || []).forEach(function(row) {
+    var v = normVille(row.ville);
+    if (!v) return;
+    CARNET_BY_VILLE_ALL[v] = (CARNET_BY_VILLE_ALL[v] || 0) + 1;
+    // BT date format is DD/MM/YYYY HH:MM
+    var d = (row.date_inscription || "").split(" ")[0];
+    var p = d.split("/");
+    if (p.length === 3) {
+      var mk = ML[parseInt(p[1])-1] + p[2].slice(2);
       if (!CARNET_BY_VILLE_MONTH[v]) CARNET_BY_VILLE_MONTH[v] = {};
       CARNET_BY_VILLE_MONTH[v][mk] = (CARNET_BY_VILLE_MONTH[v][mk] || 0) + 1;
     }
@@ -70,4 +93,4 @@ function getTalcC(commune, dept, month) {
   return m ? (m[dataKey] || 0) : 0;
 }
 
-export { CARNET_BY_VILLE_ALL, CARNET_BY_VILLE_MONTH, getTalcC, getC, MONTHS_ORDER, MONTHS_LABELS, MONTH_KEY_MAP, MONTHLY, _ML_KEYS, _ML_FULL };
+export { CARNET_BY_VILLE_ALL, CARNET_BY_VILLE_MONTH, getTalcC, getC, MONTHS_ORDER, MONTHS_LABELS, MONTH_KEY_MAP, MONTHLY, _ML_KEYS, _ML_FULL, normVille };

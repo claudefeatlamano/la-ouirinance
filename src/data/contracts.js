@@ -1240,6 +1240,7 @@ function bouyguesCarnetToContracts(rows) {
       date: dt.date,
       heure: dt.heure,
       ville: (r.ville || '').trim(),
+      rue: (r.adresse || r.rue || '').trim(),
       cp: (r.cp || '').trim(),
       operator: 'Bouygues',
       type: 'Fibre',
