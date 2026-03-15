@@ -84,7 +84,8 @@ function resolveAllVTA() {
       var inGroup = group.filter(function(name) { return presentNames.indexOf(name) >= 0; });
       if (inGroup.length === 1) resolved = inGroup[0];
     }
-    return Object.assign({}, c, { commercial: resolved, vtaResolved: true });
+    var didResolve = resolved !== c.commercial;
+    return Object.assign({}, c, { commercial: resolved, vtaResolved: didResolve ? true : c.vtaResolved });
   });
   saveContracts(updated);
 }
@@ -1129,6 +1130,33 @@ return (
         </div>
       </Card>
     </motion.div>
+
+    {/* VTA à résoudre */}
+    {pendingVTA.length > 0 && (
+      <motion.div variants={staggerItem}>
+        <Card style={{ padding:16, textAlign:"center", cursor:"pointer", border:"2px solid rgba(255,159,10,0.18)" }} onClick={resolveAllVTA}>
+          <div style={{ fontSize:11, fontWeight:600, color:"#FF9F0A", textTransform:"uppercase", letterSpacing:0.5, marginBottom:6 }}>VTA à résoudre</div>
+          <div style={{ fontSize:32, fontWeight:800, letterSpacing:-1, color:"#FF9F0A" }}>{pendingVTA.length}</div>
+          <div style={{ fontSize:11, color:"#FF9F0A", marginTop:4 }}>Appuyer pour résoudre</div>
+        </Card>
+      </motion.div>
+    )}
+
+    {/* Réinit. VTA par date */}
+    {resolvedVTA.length > 0 && (
+      <motion.div variants={staggerItem}>
+        <Card style={{ padding:16, textAlign:"center" }}>
+          <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Réinit. VTA par date</div>
+          <div style={{ display:"flex", flexWrap:"wrap", gap:4, justifyContent:"center" }}>
+            {Array.from(new Set(resolvedVTA.map(function(c) { return c.date; }))).sort().reverse().slice(0, 5).map(function(d) {
+              var count = resolvedVTA.filter(function(c) { return c.date === d; }).length;
+              var label = new Date(d + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "short", day: "numeric" });
+              return <button key={d} onClick={function() { unresolveVTADate(d); }} style={{ fontSize:10, fontWeight:700, color:"#FF9F0A", background:"rgba(255,159,10,0.10)", border:"1px solid rgba(255,159,10,0.2)", borderRadius:8, padding:"4px 8px", cursor:"pointer", fontFamily:"inherit" }}>{label} ({count})</button>;
+            })}
+          </div>
+        </Card>
+      </motion.div>
+    )}
   </motion.div>
 
   {/* Date carousel */}
