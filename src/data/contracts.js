@@ -1189,7 +1189,7 @@ var BOUYGUES_VENDEUR_MAP = {
   'MENDOUSSE MELODIE':    'Melodie Mendousse',
   'MBENGUE PAPE OMAR':    'Omar Mbengue',
   'WAHID NORA':           'Nora Wahid',
-  'SHEHU PROSPER':        'Prosper Shehu',
+  'SHEHU PROSPER':        'Prosper',
 };
 
 function bouyguesCarnetToContracts(rows) {

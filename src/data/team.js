@@ -28,7 +28,7 @@ var DEMO_TEAM = [
 { id: 27, name: "Ines Ouirini", role: "Debutant", operators: ["Free", "Bouygues"], permis: false, voiture: false, active: true, vstCodes: ["vst-iouirini"], lentCodes: [] },
 { id: 28, name: "Shana David", role: "Debutant", operators: ["Free"], permis: false, voiture: false, active: true, vstCodes: ["vst-sdavid"], lentCodes: [] },
 { id: 29, name: "Adam El Jazouli", role: "Confirme", operators: ["Free", "Bouygues"], permis: false, voiture: false, active: true, vstCodes: [], lentCodes: [] },
-{ id: 30, name: "Prosper Shehu", role: "Debutant", operators: ["Bouygues"], permis: false, voiture: false, active: true, vstCodes: [], lentCodes: [] },
+{ id: 30, name: "Prosper", role: "Debutant", operators: ["Bouygues"], permis: false, voiture: false, active: true, vstCodes: [], lentCodes: [] },
 ];
 
 var DEMO_CARS = [
