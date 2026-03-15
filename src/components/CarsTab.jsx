@@ -200,19 +200,26 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
     (cp.members || []).forEach(function(id) { memberIds.push(id); });
     if (memberIds.length === 0) return;
 
-    var sorted = sug.communes.slice().sort(function(a, b) { return b.p - a.p; });
+    var big = sug.communes.filter(function(c) { return c.p >= 1000; }).sort(function(a, b) { return b.p - a.p; });
+    var small = sug.communes.filter(function(c) { return c.p < 1000; }).sort(function(a, b) { return b.p - a.p; });
+    var mixed = [];
+    var bi = 0, si = 0;
+    while (mixed.length < memberIds.length && (bi < big.length || si < small.length)) {
+      if (bi < big.length) mixed.push(big[bi++]);
+      if (mixed.length < memberIds.length && si < small.length) mixed.push(small[si++]);
+    }
 
     var u = JSON.parse(JSON.stringify(plan));
     if (!u[carId]) u[carId] = { members: cp.members || [], sector: "", zoneType: cp.zoneType || "stratygo", vtaCode: "" };
     if (!u[carId].memberCommunes) u[carId].memberCommunes = {};
 
-    for (var i = 0; i < memberIds.length && i < sorted.length; i++) {
-      u[carId].memberCommunes[memberIds[i]] = sorted[i].v;
+    for (var i = 0; i < memberIds.length && i < mixed.length; i++) {
+      u[carId].memberCommunes[memberIds[i]] = mixed[i].v;
     }
 
-    var allSameSector = sorted.length > 0 && sorted.every(function(c) { return c.sector === sorted[0].sector; });
-    if (allSameSector && sorted.length > 0) {
-      u[carId].sector = sorted[0].sector;
+    var allSameSector = mixed.length > 0 && mixed.every(function(c) { return c.sector === mixed[0].sector; });
+    if (allSameSector && mixed.length > 0) {
+      u[carId].sector = mixed[0].sector;
     }
 
     updatePlan(u);
@@ -594,6 +601,22 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
               {!inactive && (driver || passengers.length > 0) && (function() {
                 var sug = suggestions[car.id];
                 var seedCoords = sug && sug.communes && sug.communes.length > 0 ? sug.communes[0] : null;
+                var numPersonnes = 0;
+                var assignedSet = {};
+                if (sug && sug.communes && sug.communes.length > 0) {
+                  var _cp2 = plan[car.id] || { members: [], zoneType: "stratygo" };
+                  var _mids = [];
+                  if (car.driverId) _mids.push(car.driverId);
+                  (_cp2.members || []).forEach(function(id) { _mids.push(id); });
+                  numPersonnes = _mids.length;
+                  var _big = sug.communes.filter(function(c) { return c.p >= 1000; }).sort(function(a, b) { return b.p - a.p; });
+                  var _small = sug.communes.filter(function(c) { return c.p < 1000; }).sort(function(a, b) { return b.p - a.p; });
+                  var _bi = 0, _si = 0, _cnt = 0;
+                  while (_cnt < numPersonnes && (_bi < _big.length || _si < _small.length)) {
+                    if (_bi < _big.length) { assignedSet[_big[_bi].v + "|" + _big[_bi].dept] = true; _bi++; _cnt++; }
+                    if (_cnt < numPersonnes && _si < _small.length) { assignedSet[_small[_si].v + "|" + _small[_si].dept] = true; _si++; _cnt++; }
+                  }
+                }
                 return (
                   <div style={{ padding: "0 18px 14px" }}>
                     <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "12px 16px" }}>
@@ -603,18 +626,19 @@ function CarsTab({ team, cars, saveCars, dailyPlan, saveDailyPlan, groups, proxa
                         {sug && sug.communes && sug.communes.length > 0 && <Btn s="sm" onClick={function() { applySuggestion(car.id); }}>Appliquer ✓</Btn>}
                       </div>
                       {sug && sug.communes && sug.communes.length > 0 && (
-                        <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                        <div style={{ maxHeight: 200, overflowY: "auto", display: "flex", flexDirection: "column", gap: 6 }}>
                           {sug.communes.map(function(c, idx) {
                             var dist = idx === 0 ? 0 : Math.round(haversine(seedCoords.lat, seedCoords.lon, c.lat, c.lon));
+                            var isAssigned = assignedSet[c.v + "|" + c.dept];
                             return (
                               <div key={c.v + "|" + c.dept} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12 }}>
-                                <span style={{ color: "#FF9F0A", fontWeight: 700 }}>●</span>
-                                <span style={{ color: "#f0f0f5", fontWeight: 600, flex: 1 }}>{c.v} <span style={{ color: "rgba(255,255,255,0.45)", fontWeight: 400 }}>({c.monthsAgo} mois)</span> — <span style={{ color: "rgba(255,255,255,0.55)" }}>{c.p.toLocaleString("fr-FR")} prises</span></span>
+                                <span style={{ color: "#FF9F0A", fontWeight: 700 }}>{isAssigned ? "●" : "○"}</span>
+                                <span style={{ color: isAssigned ? "#f0f0f5" : "rgba(255,255,255,0.5)", fontWeight: isAssigned ? 600 : 400, flex: 1 }}>{c.v} <span style={{ color: "rgba(255,255,255,0.45)", fontWeight: 400 }}>({c.monthsAgo} mois)</span> — <span style={{ color: "rgba(255,255,255,0.55)" }}>{c.p.toLocaleString("fr-FR")} prises</span></span>
                                 <span style={{ color: "rgba(255,255,255,0.35)", fontSize: 11, fontWeight: 500, flexShrink: 0 }}>{dist} km</span>
                               </div>
                             );
                           })}
-                          <div style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>Rayon max : {sug.radius} km</div>
+                          <div style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>Rayon max : {sug.radius} km — {sug.communes.length} communes</div>
                         </div>
                       )}
                     </div>

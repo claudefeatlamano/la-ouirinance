@@ -140,7 +140,7 @@ function suggestCluster(dormantCommunes, numMembers, maxRadiusKm, skip) {
   candidates.sort(function(a, b) { return a.dist - b.dist; });
 
   var maxDist = 0;
-  for (var j = 0; j < candidates.length && cluster.length < numMembers; j++) {
+  for (var j = 0; j < candidates.length; j++) {
     var c = candidates[j];
     if (!used[c.commune.v + "|" + c.commune.dept]) {
       cluster.push(c.commune);
