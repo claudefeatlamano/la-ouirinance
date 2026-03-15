@@ -21,6 +21,14 @@ const [dormantFilter, setDormantFilter] = useState(0);
 
 var last6Months = MONTHS_ORDER.slice(-6);
 
+function getCTotal(c, dept, isTalc) {
+  var total = 0;
+  MONTHS_ORDER.forEach(function(mk) {
+    total += isTalc ? getTalcC(c, dept, mk) : getC(c, dept, mk);
+  });
+  return total;
+}
+
 var stats = Object.entries(JACHERE).map(function(entry) {
 var name = entry[0]; var data = entry[1];
 var tp = data.communes.reduce(function(s, c) { return s + c.p; }, 0);
@@ -212,8 +220,8 @@ var isTalc = selSource === "TALC";
 var jData = isTalc ? JACHERE_TALC[sel] : JACHERE[sel];
 var s = (isTalc ? statsTalc : stats).find(function(x) { return x.name === sel; });
 var sorted = jData.communes.slice().sort(function(a, b) {
-var ac = isTalc ? getTalcC(a, jData.dept, month) : getC(a, jData.dept, month);
-var bc = isTalc ? getTalcC(b, jData.dept, month) : getC(b, jData.dept, month);
+var ac = month ? (isTalc ? getTalcC(a, jData.dept, month) : getC(a, jData.dept, month)) : getCTotal(a, jData.dept, isTalc);
+var bc = month ? (isTalc ? getTalcC(b, jData.dept, month) : getC(b, jData.dept, month)) : getCTotal(b, jData.dept, isTalc);
 if (sortBy === "c") return bc - ac;
 if (sortBy === "p") return b.p - a.p;
 return (bc / (b.p || 1)) - (ac / (a.p || 1));
@@ -277,7 +285,7 @@ return (
   }
   return filtered;
 })().map(function(c, i) {
-var cc = isTalc ? getTalcC(c, jData.dept, month) : getC(c, jData.dept, month);
+var cc = month ? (isTalc ? getTalcC(c, jData.dept, month) : getC(c, jData.dept, month)) : getCTotal(c, jData.dept, isTalc);
 var t = c.p ? (cc / c.p * 100) : 0;
 var col = t > 0.8 ? "#34C759" : t > 0.3 ? "#FF9F0A" : cc === 0 ? "rgba(255,255,255,0.08)" : "#FF3B30";
 var lastMonthIdx = -1;
