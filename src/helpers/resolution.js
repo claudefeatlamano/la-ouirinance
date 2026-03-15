@@ -142,6 +142,15 @@ function getPendingResolutions(contracts, team, dailyPlan, cars) {
           pending.push({ type: 'auto', contract: contract, autoTo: manuallyAssigned[0], candidates: manuallyAssigned, reason: 'code VTA assigné' });
           return;
         }
+        if (manuallyAssigned.length > 1) {
+          var maVille = ville ? manuallyAssigned.filter(function(m) { return communeMatch(m.id, ville); }) : [];
+          if (maVille.length === 1) {
+            pending.push({ type: 'auto', contract: contract, autoTo: maVille[0], candidates: manuallyAssigned, reason: 'commune ' + ville });
+          } else {
+            pending.push({ type: 'manual', contract: contract, candidates: maVille.length > 1 ? maVille : manuallyAssigned, reason: maVille.length > 1 ? 'même commune' : 'commune inconnue' });
+          }
+          return;
+        }
 
         var group = VTA_GROUPS[contract.vtaCode];
         if (!group || group.length <= 1) return;
