@@ -31,6 +31,27 @@ Carnet Proxad (live) → scraper.py (GitHub Actions, 1h) → src/data.json
   → Composants (DashboardTab, ContractsTab, etc.)
 ```
 
+## Fichiers de données (dans .claudeignore)
+
+### src/data.json & src/data_bouygues.json
+Scrappés toutes les heures par GitHub Actions. Importés à build time.
+- data.json : `{ rows: [{ login, date_inscription, ville, adresse, id_abo, box, etat_commande, info_rdv_sync, ... }], scraped_at }`
+- data_bouygues.json : `{ rows: [{ num_contrat, vendeur, date_inscription, ville, adresse, cp, produit, etat_commande, login }] }`
+
+### src/data/gps.js
+`export { GPS }` — lookup `GPS["VILLE|DEPT"] = [lat, lng]` (~733 entrées)
+
+### src/constants/jachere.js
+`export { JACHERE, JACHERE_TALC }`
+- JACHERE (Stratygo) : `{ "SECTEUR DEPT": { dept, communes: [{ v, p, z, c }] } }` — 6 secteurs
+- JACHERE_TALC : `{ "SECTEUR DEPT": { dept, communes: [{ v, p, z }] } }` — 4 secteurs
+
+### src/data/demo-contracts.js
+`export { makeDemoContracts, makeVTAContracts }` — données de fallback, jamais utilisées en prod
+
+### src/helpers/monthly-data.js
+`export { MONTHLY }` — `MONTHLY["VILLE|DEPT"] = { "mois_code": nb_contrats }`
+
 ## Structure fichiers
 
 ```

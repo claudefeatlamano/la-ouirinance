@@ -1,0 +1,25 @@
+# Données scrappées (674KB + 238KB) — jamais besoin de les lire
+src/data.json
+src/data_bouygues.json
+
+# Données GPS pures (24KB) — juste un lookup table lat/lon
+src/data/gps.js
+
+# Données secteurs/communes (32KB) — juste des tableaux de communes
+src/constants/jachere.js
+
+# Démo-contrats fallback (1053 lignes de données pures)
+src/data/demo-contracts.js
+
+# Données MONTHLY (17KB sur une seule ligne)
+src/helpers/monthly-data.js
+
+# Artefacts
+dist/
+node_modules/
+*.pdf
+*.xlsx
+*.csv
+*.png
+package-lock.json
+.DS_Store
