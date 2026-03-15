@@ -6,6 +6,7 @@ import { DEPT_ZONES, OP_COLORS } from "../constants/roles.js";
 import { getC, getTalcC, MONTHS_ORDER, MONTHS_LABELS, normVille } from "../helpers/carnet.js";
 import { DEMO_CONTRACTS } from "../data/contracts.js";
 import { CommuneHeatmap } from "./MapTab.jsx";
+import { localDateStr } from "../helpers/date.js";
 
 function SecteursTab() {
 const [sel, setSel] = useState(null);
@@ -17,6 +18,17 @@ const [rueSearch, setRueSearch] = useState("");
 const [rueSort, setRueSort] = useState("top"); // "top" | "recent"
 const [showMap, setShowMap] = useState(false);
 const [communeSearch, setCommuneSearch] = useState("");
+const [dormantFilter, setDormantFilter] = useState(0);
+
+var lastProspection = useMemo(function() {
+  var map = {};
+  DEMO_CONTRACTS.forEach(function(ct) {
+    var v = normVille(ct.ville);
+    if (!v) return;
+    if (!map[v] || ct.date > map[v]) map[v] = ct.date;
+  });
+  return map;
+}, []);
 
 var last6Months = MONTHS_ORDER.slice(-6);
 
@@ -220,7 +232,7 @@ return (bc / (b.p || 1)) - (ac / (a.p || 1));
 return (
 <div>
 <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
-<Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); setCommuneSearch(""); }}>← Retour</Btn>
+<Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); setCommuneSearch(""); setDormantFilter(0); }}>← Retour</Btn>
 <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800 }}>{sel}</h2>
 {isTalc ? <Badge color="#FF9F0A">TALC</Badge> : <Badge color={OP_COLORS.Free}>Stratygo</Badge>}
 {!isTalc && DEPT_ZONES[jData.dept] && DEPT_ZONES[jData.dept].b && <Badge color={OP_COLORS.Bouygues}>Bouygues</Badge>}
@@ -241,6 +253,13 @@ return (
 <Btn s="sm" v={sortBy === "t" ? "primary" : "secondary"} onClick={function() { setSortBy("t"); }}>Taux</Btn>
 </div>
 </div>
+<div style={{ display: "flex", gap: 6, marginBottom: 16, flexWrap: "wrap", alignItems: "center" }}>
+<span style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", marginRight: 4 }}>Pas de prospection depuis :</span>
+{[0,1,2,3,4,5,6].map(function(m) {
+  var active = dormantFilter === m;
+  return <Btn key={m} s="sm" v={active ? "primary" : "secondary"} onClick={function() { setDormantFilter(m); }}>{m === 0 ? "Tous" : m + " mois"}</Btn>;
+})}
+</div>
 <div style={{ position: "relative", marginBottom: 16 }}>
   <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", fontSize: 14, color: "rgba(255,255,255,0.35)", pointerEvents: "none" }}>🔍</span>
   <input
@@ -253,10 +272,40 @@ return (
     <button onClick={function() { setCommuneSearch(""); }} style={{ position: "absolute", right: 10, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "rgba(255,255,255,0.35)", fontSize: 16, padding: 2 }}>×</button>
   )}
 </div>
-{(function() { var cq = communeSearch.trim().toUpperCase(); var filtered = cq ? sorted.filter(function(c) { return c.v.indexOf(cq) >= 0; }) : sorted; return filtered; })().map(function(c, i) {
+{(function() {
+  var cq = communeSearch.trim().toUpperCase();
+  var filtered = cq ? sorted.filter(function(c) { return c.v.indexOf(cq) >= 0; }) : sorted;
+  if (dormantFilter > 0) {
+    var cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - dormantFilter);
+    var cutoffStr = localDateStr(cutoff);
+    filtered = filtered.filter(function(c) {
+      return !lastProspection[c.v] || lastProspection[c.v] < cutoffStr;
+    });
+  }
+  return filtered;
+})().map(function(c, i) {
 var cc = isTalc ? getTalcC(c, jData.dept, month) : getC(c, jData.dept, month);
 var t = c.p ? (cc / c.p * 100) : 0;
 var col = t > 0.8 ? "#34C759" : t > 0.3 ? "#FF9F0A" : cc === 0 ? "rgba(255,255,255,0.08)" : "#FF3B30";
+var lpDate = lastProspection[c.v];
+var lpText = "";
+var lpColor = "rgba(255,255,255,0.35)";
+if (!lpDate) {
+  lpText = "Jamais prospectée";
+  lpColor = "#FF3B30";
+} else {
+  var lpDiff = Math.floor((new Date() - new Date(lpDate + "T12:00:00")) / 86400000);
+  if (lpDiff === 0) lpText = "Dernier contrat aujourd'hui";
+  else if (lpDiff === 1) lpText = "Dernier contrat hier";
+  else if (lpDiff < 7) lpText = "Dernier contrat il y a " + lpDiff + " j";
+  else if (lpDiff < 30) lpText = "Dernier contrat il y a " + Math.floor(lpDiff / 7) + " sem.";
+  else if (lpDiff < 365) lpText = "Dernier contrat il y a " + Math.floor(lpDiff / 30) + " mois";
+  else lpText = "Dernier contrat il y a " + Math.floor(lpDiff / 365) + " an" + (lpDiff >= 730 ? "s" : "");
+  if (lpDiff < 30) lpColor = "#34C759";
+  else if (lpDiff < 90) lpColor = "#FF9F0A";
+  else lpColor = "#FF3B30";
+}
 return (
 <motion.div
 key={c.v}
@@ -272,6 +321,7 @@ style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", b
 <span style={{ fontSize: 13, fontWeight: 600 }}>{c.v}</span>
 <Badge color={c.z === "H" ? "#FF3B30" : "#0071E3"}>{c.z === "H" ? "Haute" : "Std"}</Badge>
 </div>
+<div style={{ fontSize: 11, color: lpColor, marginTop: 2 }}>{lpText}</div>
 <div style={{ marginTop: 4, height: 5, borderRadius: 3, background: "rgba(255,255,255,0.10)", overflow: "hidden" }}>
 <div style={{ width: Math.min(t * 50, 100) + "%", height: "100%", borderRadius: 3, background: col }} />
 </div>
