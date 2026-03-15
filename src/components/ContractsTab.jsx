@@ -29,6 +29,15 @@ const [comTo, setComTo] = useState("");
 
 // ── shared helpers ──────────────────────────────────────────────────────────
 var pendingVTA = contracts.filter(function(c) { return c.vtaCode && !c.vtaResolved; });
+var resolvedVTA = contracts.filter(function(c) { return c.vtaCode && c.vtaResolved; });
+function unresolveVTADate(dateStr) {
+  var updated = contracts.map(function(c) {
+    if (!c.vtaCode || !c.vtaResolved || c.date !== dateStr) return c;
+    var group = VTA_GROUPS[c.vtaCode];
+    return Object.assign({}, c, { commercial: group ? group[0] : c.commercial, vtaResolved: false });
+  });
+  saveContracts(updated);
+}
 function resolveAllVTA() {
   var updated = contracts.map(function(c) {
     if (!c.vtaCode || c.vtaResolved) return c;
@@ -49,7 +58,25 @@ function resolveAllVTA() {
       }
     });
     if (manualMatch.length === 1) resolved = manualMatch[0];
-    else {
+    else if (manualMatch.length > 1) {
+      // Plusieurs assignés manuels : commune matching
+      var ville = (c.ville || '').trim().toLowerCase();
+      if (ville) {
+        var communeMatched = manualMatch.filter(function(name) {
+          var m = team.find(function(t) { return t.name === name; });
+          if (!m) return false;
+          var found = false;
+          Object.values(cPlan).forEach(function(entry) {
+            if (entry && entry.memberCommunes && entry.memberCommunes[m.id]) {
+              var mc = entry.memberCommunes[m.id].trim().toLowerCase();
+              if (mc === ville || mc.indexOf(ville) >= 0 || ville.indexOf(mc) >= 0) found = true;
+            }
+          });
+          return found;
+        });
+        if (communeMatched.length === 1) resolved = communeMatched[0];
+      }
+    } else {
       // Priorité 2 : présence dans le plan
       var presentIds = [];
       Object.values(cPlan).forEach(function(entry) { if (entry && entry.members) presentIds = presentIds.concat(entry.members); });
@@ -581,6 +608,20 @@ if (view === "quality") {
               <div style={{ fontSize:11, fontWeight:600, color:"#FF9F0A", textTransform:"uppercase", letterSpacing:0.5, marginBottom:6 }}>VTA à résoudre</div>
               <div style={{ fontSize:32, fontWeight:800, letterSpacing:-1, color:"#FF9F0A" }}>{pendingVTA.length}</div>
               <div style={{ fontSize:11, color:"#FF9F0A", marginTop:4 }}>Appuyer pour résoudre</div>
+            </Card>
+          </motion.div>
+        )}
+        {resolvedVTA.length > 0 && (
+          <motion.div variants={staggerItem} style={{ flex:1, minWidth:110 }}>
+            <Card style={{ padding:16, textAlign:"center" }}>
+              <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Réinit. VTA par date</div>
+              <div style={{ display:"flex", flexWrap:"wrap", gap:4, justifyContent:"center" }}>
+                {Array.from(new Set(resolvedVTA.map(function(c) { return c.date; }))).sort().reverse().slice(0, 5).map(function(d) {
+                  var count = resolvedVTA.filter(function(c) { return c.date === d; }).length;
+                  var label = new Date(d + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "short", day: "numeric" });
+                  return <button key={d} onClick={function() { unresolveVTADate(d); }} style={{ fontSize:10, fontWeight:700, color:"#FF9F0A", background:"rgba(255,159,10,0.10)", border:"1px solid rgba(255,159,10,0.2)", borderRadius:8, padding:"4px 8px", cursor:"pointer", fontFamily:"inherit" }}>{label} ({count})</button>;
+                })}
+              </div>
             </Card>
           </motion.div>
         )}
