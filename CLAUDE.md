@@ -243,3 +243,20 @@ _dp[car.id]
 - Push/déployer sans demander
 - Pas de fichiers README/doc sauf si demande explicite
 - Pas de commentaires dans le code sauf si demande explicite
+
+## Contrat architecture actif
+
+La centralisation v1 est active.
+
+- `src/data/agencyConfig.js` est la source centrale pour `agencyId`, `agencyName`, collection Firestore et `STORAGE_KEYS`.
+- Ne pas utiliser directement `doc(db, "agency", ...)`.
+- Ne pas recreer `STORAGE_KEYS` dans un autre fichier.
+- Toute nouvelle cle Firestore ou donnee specifique agence doit passer par `AGENCY_CONFIG`.
+- Le dashboard et le bot sont deux sous-projets du meme ecosysteme `La Ouirinance`.
+
+## Verification architecture
+
+```bash
+npm run test:agency-config
+npm run build
+```

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
-import { db, store, STORAGE_KEYS, doc, getDoc, onSnapshot } from "./data/store.js";
+import { db, store, AGENCY_CONFIG, STORAGE_KEYS, doc, getDoc, onSnapshot } from "./data/store.js";
 import { DEMO_TEAM } from "./data/team.js";
 import { DEMO_CARS } from "./data/team.js";
 import { DEMO_CONTRACTS } from "./data/contracts.js";
@@ -48,11 +48,11 @@ var unsubPlan, unsubObj, unsubContracts;
 (async function() {
 try {
   var dpLs = localStorage.getItem(STORAGE_KEYS.dailyPlan);
-  if (dpLs) { var dpSnap = await getDoc(doc(db, "agency", STORAGE_KEYS.dailyPlan)); if (!dpSnap.exists()) await store.set(STORAGE_KEYS.dailyPlan, JSON.parse(dpLs)); }
+  if (dpLs) { var dpSnap = await getDoc(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KEYS.dailyPlan)); if (!dpSnap.exists()) await store.set(STORAGE_KEYS.dailyPlan, JSON.parse(dpLs)); }
   var obLs = localStorage.getItem(STORAGE_KEYS.objectives);
-  if (obLs) { var obSnap = await getDoc(doc(db, "agency", STORAGE_KEYS.objectives)); if (!obSnap.exists()) await store.set(STORAGE_KEYS.objectives, JSON.parse(obLs)); }
+  if (obLs) { var obSnap = await getDoc(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KEYS.objectives)); if (!obSnap.exists()) await store.set(STORAGE_KEYS.objectives, JSON.parse(obLs)); }
 } catch(e) {}
-unsubPlan = onSnapshot(doc(db, "agency", STORAGE_KEYS.dailyPlan), function(snap) {
+unsubPlan = onSnapshot(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KEYS.dailyPlan), function(snap) {
   var raw = snap.exists() ? (snap.data().data || null) : null;
   if (raw && Object.keys(raw).length > 0 && !Object.keys(raw).some(function(k) { return /^\d{4}-\d{2}-\d{2}$/.test(k); })) {
     var migrated = {}; migrated[localDateStr(new Date())] = raw;
@@ -61,7 +61,7 @@ unsubPlan = onSnapshot(doc(db, "agency", STORAGE_KEYS.dailyPlan), function(snap)
   }
   setDailyPlan(raw);
 });
-unsubObj = onSnapshot(doc(db, "agency", STORAGE_KEYS.objectives), function(snap) {
+unsubObj = onSnapshot(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KEYS.objectives), function(snap) {
   setObjectives(snap.exists() ? (snap.data().data || {}) : {});
 });
 var oldKeys = ["agency-team-v1","agency-cars-v1","agency-contracts-v1","agency-daily-plan-v1","agency-objectives-v1","agency-team-v2","agency-cars-v2","agency-contracts-v2","agency-daily-plan-v2","agency-objectives-v2"];
@@ -105,7 +105,7 @@ Object.keys(savedResolutions).forEach(function(id) {
   }
 });
 setContracts(mergedContracts);
-unsubContracts = onSnapshot(doc(db, "agency", STORAGE_KEYS.contracts), function(snap) {
+unsubContracts = onSnapshot(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KEYS.contracts), function(snap) {
   if (skipNextContractSnap.current) { skipNextContractSnap.current = false; return; }
   var overrides = snap.exists() ? (snap.data().data || {}) : {};
   var dIds = new Set(DEMO_CONTRACTS.map(function(c) { return c.id; }));
