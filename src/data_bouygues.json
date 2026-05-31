@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-31T17:10:00.582711+00:00",
+  "scraped_at": "2026-05-31T18:59:11.216395+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -12479,7 +12479,7 @@
       "cp": "44160",
       "ville": "STE ANNE SUR BRIVET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0902904",
