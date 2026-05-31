@@ -1,6 +1,6 @@
 var ROLES = ["Manager", "Assistant Manager", "Formateur", "Confirme", "Debutant"];
 var ROLE_LABELS = { Manager: "Manager", "Assistant Manager": "Assist. Manager", Formateur: "Formateur", Confirme: "Confirme", Debutant: "Debutant" };
-var ROLE_COLORS = { Manager: "#FF9F0A", "Assistant Manager": "#D4740E", Formateur: "#0071E3", Confirme: "#34C759", Debutant: "#AEAEB2" };
+var ROLE_COLORS = { Manager: "#A59E8C", "Assistant Manager": "#8F8778", Formateur: "#4C5760", Confirme: "#93A8AC", Debutant: "#66635B" };
 var OPERATORS = ["Bouygues", "Free"];
 var OP_COLORS = { Bouygues: "#003DA5", Free: "#CD1E25" };
 

@@ -90,7 +90,7 @@ function resolveAllVTA() {
   saveContracts(updated);
 }
 
-var COM_PALETTE = ["#0071E3","#34C759","#FF9F0A","#AF52DE","#FF3B30","#5AC8FA","#FF2D55","#5856D6","#32ADE6","#FF6961"];
+var COM_PALETTE = ["var(--lo-primary)","var(--lo-accent)","var(--lo-taupe)","var(--lo-accent)","var(--lo-danger)","#5AC8FA","#FF2D55","#5856D6","#32ADE6","#FF6961"];
 var comColorCache = {};
 var comColorI = 0;
 var allComs = Array.from(new Set(contracts.map(function(c) { return c.commercial; }))).sort();
@@ -111,24 +111,24 @@ function CRow(c, i) {
   var initials = c.commercial.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase();
   var sCol = statusColor(c.status);
   return (
-    <motion.div key={c.id} variants={staggerItem} style={{ display:"flex", alignItems:"center", gap:12, padding:"11px 16px", borderTop: i > 0 ? "1px solid rgba(255,255,255,0.08)" : "none" }}>
+    <motion.div key={c.id} variants={staggerItem} style={{ display:"flex", alignItems:"center", gap:12, padding:"11px 16px", borderTop: i > 0 ? "1px solid rgba(76,87,96,0.10)" : "none" }}>
       <div style={{ width:34, height:34, borderRadius:99, background:col+"20", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}>
         <span style={{ fontSize:11, fontWeight:800, color:col }}>{initials}</span>
       </div>
       <div style={{ flex:1, minWidth:0 }}>
         <div style={{ display:"flex", alignItems:"center", gap:6, marginBottom:2 }}>
           <span style={{ fontSize:13, fontWeight:700, color:col }}>{c.commercial.split(" ")[0]}</span>
-          {c.operator && <span style={{ fontSize:9, fontWeight:700, color:OP_COLORS[c.operator] || "rgba(255,255,255,0.55)", background:(OP_COLORS[c.operator] || "rgba(255,255,255,0.55)") + "18", borderRadius:4, padding:"1px 5px" }}>{c.operator === "Bouygues" ? "BT" : c.operator === "Free" ? "Free" : c.operator}</span>}
-          {c.vtaCode && !c.vtaResolved && <span style={{ fontSize:10, fontWeight:700, color:"#FF9F0A", background:"rgba(255,159,10,0.10)", borderRadius:4, padding:"1px 5px" }}>VTA?</span>}
-          <span style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>{c.heure}</span>
+          {c.operator && <span style={{ fontSize:9, fontWeight:700, color:OP_COLORS[c.operator] || "var(--lo-muted)", background:(OP_COLORS[c.operator] || "var(--lo-muted)") + "18", borderRadius:4, padding:"1px 5px" }}>{c.operator === "Bouygues" ? "BT" : c.operator === "Free" ? "Free" : c.operator}</span>}
+          {c.vtaCode && !c.vtaResolved && <span style={{ fontSize:10, fontWeight:700, color:"var(--lo-taupe)", background:"rgba(165,158,140,0.16)", borderRadius:4, padding:"1px 5px" }}>VTA?</span>}
+          <span style={{ fontSize:11, color:"var(--lo-faint)" }}>{c.heure}</span>
         </div>
-        <div style={{ fontSize:13, fontWeight:600, color:"#f0f0f5", whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>
-          {c.ville}{c.rue ? <span style={{ fontWeight:400, color:"rgba(255,255,255,0.55)" }}> · {c.rue}</span> : ""}
+        <div style={{ fontSize:13, fontWeight:600, color:"var(--lo-ink)", whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>
+          {c.ville}{c.rue ? <span style={{ fontWeight:400, color:"var(--lo-muted)" }}> · {c.rue}</span> : ""}
         </div>
       </div>
       <div style={{ display:"flex", flexDirection:"column", alignItems:"flex-end", gap:4, flexShrink:0 }}>
         <Badge color={sCol}>{c.status}</Badge>
-        {c.box && <span style={{ fontSize:10, color:"rgba(255,255,255,0.35)" }}>{c.box}</span>}
+        {c.box && <span style={{ fontSize:10, color:"var(--lo-faint)" }}>{c.box}</span>}
       </div>
     </motion.div>
   );
@@ -168,7 +168,7 @@ var prevMonC = contracts.filter(function(c){ return c.date >= pmStartStr && c.da
 
 function delta(a, b) {
   var d = a - b; if (d === 0) return null;
-  return <span style={{ fontSize:12, fontWeight:700, color: d>0?"#34C759":"#FF3B30" }}>{d>0?"+":""}{d}</span>;
+  return <span style={{ fontSize:12, fontWeight:700, color: d>0?"var(--lo-accent)":"var(--lo-danger)" }}>{d>0?"+":""}{d}</span>;
 }
 
 // ── DETAIL VIEWS ─────────────────────────────────────────────────────────────
@@ -212,14 +212,14 @@ if (view === "today") {
     <div>
       <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:20 }}>
         <Btn v="ghost" onClick={function(){ setView(null); }}>← Retour</Btn>
-        <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"#f0f0f5" }}>Aujourd'hui</h2>
+        <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"var(--lo-ink)" }}>Aujourd'hui</h2>
         <div style={{ display:"flex", alignItems:"center", gap:8, marginLeft:"auto" }}>
           {delta(todayC.length, yestC.length)}
-          <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>vs hier ({yestC.length})</span>
+          <span style={{ fontSize:12, color:"var(--lo-faint)" }}>vs hier ({yestC.length})</span>
         </div>
       </div>
       {!dailyPlan || carsToShow.length === 0 ? (
-        <Card><div style={{ textAlign:"center", padding:40, color:"rgba(255,255,255,0.35)" }}>Plan voitures non configuré</div></Card>
+        <Card><div style={{ textAlign:"center", padding:40, color:"var(--lo-faint)" }}>Plan voitures non configuré</div></Card>
       ) : (
         <motion.div style={{ display:"flex", flexDirection:"column", gap:12 }} variants={staggerContainer} initial="initial" animate="animate">
           {carsToShow.map(function(car) {
@@ -230,14 +230,14 @@ if (view === "today") {
             return (
               <motion.div key={car.id} variants={staggerItem}>
                 <Card style={{ padding:0, overflow:"hidden", opacity: inactive ? 0.55 : 1 }}>
-                  <div style={{ padding:"12px 16px", background:"rgba(255,255,255,0.05)", display:"flex", alignItems:"center", gap:10 }}>
-                    <span style={{ fontSize:14, fontWeight:700, color:"#f0f0f5" }}>{car.name}</span>
+                  <div style={{ padding:"12px 16px", background:"rgba(76,87,96,0.07)", display:"flex", alignItems:"center", gap:10 }}>
+                    <span style={{ fontSize:14, fontWeight:700, color:"var(--lo-ink)" }}>{car.name}</span>
                     {inactive && (
-                      <span style={{ fontSize:11, color:"#FF9F0A", fontWeight:600 }}>
+                      <span style={{ fontSize:11, color:"var(--lo-taupe)", fontWeight:600 }}>
                         {ridingIn ? "en voiture avec " + ridingIn.name : "inactive"}
                       </span>
                     )}
-                    <div style={{ marginLeft:"auto", background: total > 0 ? "#0071E3" : "rgba(255,255,255,0.08)", color: total > 0 ? "#fff" : "rgba(255,255,255,0.35)", borderRadius:99, fontSize:13, fontWeight:800, padding:"2px 12px", minWidth:28, textAlign:"center" }}>{total}</div>
+                    <div style={{ marginLeft:"auto", background: total > 0 ? "var(--lo-primary)" : "rgba(76,87,96,0.10)", color: total > 0 ? "#fff" : "var(--lo-faint)", borderRadius:99, fontSize:13, fontWeight:800, padding:"2px 12px", minWidth:28, textAlign:"center" }}>{total}</div>
                   </div>
                   {members.map(function(m, i) {
                     var count = personCountT(m.name);
@@ -246,16 +246,16 @@ if (view === "today") {
                     var initials = m.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase();
                     var isDriver = car.driverId === m.id;
                     return (
-                      <div key={m.id} style={{ display:"flex", alignItems:"center", gap:12, padding:"10px 16px", borderTop: i > 0 ? "1px solid rgba(255,255,255,0.08)" : "none" }}>
+                      <div key={m.id} style={{ display:"flex", alignItems:"center", gap:12, padding:"10px 16px", borderTop: i > 0 ? "1px solid rgba(76,87,96,0.10)" : "none" }}>
                         <div style={{ width:36, height:36, borderRadius:99, background:col+"20", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, position:"relative" }}>
                           <span style={{ fontSize:11, fontWeight:800, color:col }}>{initials}</span>
-                          {isDriver && <div style={{ position:"absolute", bottom:-2, right:-2, width:12, height:12, borderRadius:99, background:"#FF9F0A", border:"2px solid rgba(255,255,255,0.07)", display:"flex", alignItems:"center", justifyContent:"center" }}><span style={{ fontSize:7, color:"#fff" }}>🚗</span></div>}
+                          {isDriver && <div style={{ position:"absolute", bottom:-2, right:-2, width:12, height:12, borderRadius:99, background:"var(--lo-taupe)", border:"2px solid rgba(255,253,247,0.78)", display:"flex", alignItems:"center", justifyContent:"center" }}><span style={{ fontSize:7, color:"#fff" }}>🚗</span></div>}
                         </div>
                         <div style={{ flex:1, minWidth:0 }}>
-                          <div style={{ fontSize:13, fontWeight:700, color:"#f0f0f5" }}>{m.name}</div>
-                          {commune && <div style={{ fontSize:12, color:"rgba(255,255,255,0.35)", marginTop:1 }}>{commune}</div>}
+                          <div style={{ fontSize:13, fontWeight:700, color:"var(--lo-ink)" }}>{m.name}</div>
+                          {commune && <div style={{ fontSize:12, color:"var(--lo-faint)", marginTop:1 }}>{commune}</div>}
                         </div>
-                        <div style={{ fontSize:22, fontWeight:800, color: count > 0 ? col : "rgba(255,255,255,0.20)", minWidth:28, textAlign:"right" }}>{count}</div>
+                        <div style={{ fontSize:22, fontWeight:800, color: count > 0 ? col : "rgba(76,87,96,0.24)", minWidth:28, textAlign:"right" }}>{count}</div>
                       </div>
                     );
                   })}
@@ -286,32 +286,32 @@ if (view === "week") {
     <div>
       <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:20 }}>
         <Btn v="ghost" onClick={function(){ setView(null); }}>← Retour</Btn>
-        <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"#f0f0f5" }}>Cette semaine</h2>
+        <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"var(--lo-ink)" }}>Cette semaine</h2>
         <div style={{ display:"flex", alignItems:"center", gap:8, marginLeft:"auto" }}>
           {delta(weekC.length, lwC.length)}
-          <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>vs sem. préc. ({lwC.length})</span>
+          <span style={{ fontSize:12, color:"var(--lo-faint)" }}>vs sem. préc. ({lwC.length})</span>
         </div>
       </div>
       <div style={{ display:"flex", gap:12, marginBottom:20, flexWrap:"wrap" }}>
-        <StatCard label="Contrats" value={weekC.length} color="#0071E3" />
+        <StatCard label="Contrats" value={weekC.length} color="var(--lo-primary)" />
         <StatCard label="Moy./jour" value={(weekC.length/(dFromMon+1||1)).toFixed(1)} color="#5856D6" />
-        <StatCard label="Meilleur jour" value={bestDay.count + " (" + bestDay.label + ")"} color="#34C759" />
+        <StatCard label="Meilleur jour" value={bestDay.count + " (" + bestDay.label + ")"} color="var(--lo-accent)" />
       </div>
       {/* Day bar chart */}
       <motion.div {...cardFadeIn}>
         <Card style={{ marginBottom:16, padding:20 }}>
-          <h3 style={{ margin:"0 0 16px", fontSize:14, fontWeight:700, color:"#f0f0f5" }}>Par jour</h3>
+          <h3 style={{ margin:"0 0 16px", fontSize:14, fontWeight:700, color:"var(--lo-ink)" }}>Par jour</h3>
           <div style={{ display:"flex", alignItems:"flex-end", gap:8, height:80 }}>
             {weekDays.map(function(d) {
               var h = Math.max(d.count/maxWd*60, d.count>0?6:2);
               var isToday = d.date === todayStr;
               return (
                 <div key={d.date} style={{ flex:1, display:"flex", flexDirection:"column", alignItems:"center", gap:4 }}>
-                  <div style={{ fontSize:12, fontWeight:800, color: d.count>0?"#f0f0f5":"rgba(255,255,255,0.08)" }}>{d.count||""}</div>
+                  <div style={{ fontSize:12, fontWeight:800, color: d.count>0?"var(--lo-ink)":"rgba(76,87,96,0.10)" }}>{d.count||""}</div>
                   <div style={{ width:"100%", height:60, display:"flex", alignItems:"flex-end" }}>
-                    <div style={{ width:"100%", height:h, borderRadius:"4px 4px 0 0", background: isToday?"#0071E3":"#34C759" }} />
+                    <div style={{ width:"100%", height:h, borderRadius:"4px 4px 0 0", background: isToday?"var(--lo-primary)":"var(--lo-accent)" }} />
                   </div>
-                  <div style={{ fontSize:10, color: isToday?"#0071E3":"rgba(255,255,255,0.35)", fontWeight: isToday?700:400, textTransform:"capitalize" }}>{d.label}</div>
+                  <div style={{ fontSize:10, color: isToday?"var(--lo-primary)":"var(--lo-faint)", fontWeight: isToday?700:400, textTransform:"capitalize" }}>{d.label}</div>
                 </div>
               );
             })}
@@ -322,19 +322,19 @@ if (view === "week") {
       {comRankW.length > 0 && (
         <motion.div {...cardFadeIn} transition={{ duration:0.35, delay:0.1 }}>
           <Card style={{ marginBottom:16, padding:20 }}>
-            <h3 style={{ margin:"0 0 14px", fontSize:14, fontWeight:700, color:"#f0f0f5" }}>Classement semaine</h3>
+            <h3 style={{ margin:"0 0 14px", fontSize:14, fontWeight:700, color:"var(--lo-ink)" }}>Classement semaine</h3>
             {comRankW.slice(0,5).map(function(entry, i) {
               var col = comColor(entry[0]);
               var pct = entry[1] / (comRankW[0][1]||1) * 100;
               return (
                 <div key={entry[0]} style={{ display:"flex", alignItems:"center", gap:10, marginBottom:10 }}>
-                  <div style={{ width:22, fontSize:12, fontWeight:700, color:"rgba(255,255,255,0.35)", textAlign:"center" }}>{i+1}</div>
+                  <div style={{ width:22, fontSize:12, fontWeight:700, color:"var(--lo-faint)", textAlign:"center" }}>{i+1}</div>
                   <div style={{ flex:1 }}>
                     <div style={{ display:"flex", justifyContent:"space-between", marginBottom:4 }}>
-                      <span style={{ fontSize:13, fontWeight:600, color:"#f0f0f5" }}>{entry[0]}</span>
+                      <span style={{ fontSize:13, fontWeight:600, color:"var(--lo-ink)" }}>{entry[0]}</span>
                       <span style={{ fontSize:13, fontWeight:800, color:col }}>{entry[1]}</span>
                     </div>
-                    <div style={{ height:5, borderRadius:3, background:"rgba(255,255,255,0.10)" }}>
+                    <div style={{ height:5, borderRadius:3, background:"rgba(76,87,96,0.10)" }}>
                       <div style={{ width:pct+"%", height:"100%", borderRadius:3, background:col }} />
                     </div>
                   </div>
@@ -345,7 +345,7 @@ if (view === "week") {
         </motion.div>
       )}
       {weekC.length === 0
-        ? <Card><div style={{ textAlign:"center", padding:40, color:"rgba(255,255,255,0.35)" }}>Aucun contrat cette semaine</div></Card>
+        ? <Card><div style={{ textAlign:"center", padding:40, color:"var(--lo-faint)" }}>Aucun contrat cette semaine</div></Card>
         : CList(weekC.slice().sort(function(a,b){ return (b.date+(b.heure||"")).localeCompare(a.date+(a.heure||"")); }))
       }
     </div>
@@ -369,38 +369,38 @@ if (view === "month") {
     <div>
       <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:20 }}>
         <Btn v="ghost" onClick={function(){ setView(null); }}>← Retour</Btn>
-        <h2 style={{ margin:0, fontSize:20, fontWeight:800, textTransform:"capitalize", color:"#f0f0f5" }}>{moName}</h2>
+        <h2 style={{ margin:0, fontSize:20, fontWeight:800, textTransform:"capitalize", color:"var(--lo-ink)" }}>{moName}</h2>
         <div style={{ display:"flex", alignItems:"center", gap:8, marginLeft:"auto" }}>
           {delta(monthC.length, prevMonC.length)}
-          <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>vs mois préc. ({prevMonC.length})</span>
+          <span style={{ fontSize:12, color:"var(--lo-faint)" }}>vs mois préc. ({prevMonC.length})</span>
         </div>
       </div>
       <div style={{ display:"flex", gap:12, marginBottom:20, flexWrap:"wrap" }}>
-        <StatCard label="Contrats" value={monthC.length} color="#0071E3" />
-        <StatCard label="Mois précédent" value={prevMonC.length} color="rgba(255,255,255,0.35)" />
-        <StatCard label="Actifs ce mois" value={new Set(monthC.map(function(c){return c.commercial;})).size} color="#AF52DE" />
+        <StatCard label="Contrats" value={monthC.length} color="var(--lo-primary)" />
+        <StatCard label="Mois précédent" value={prevMonC.length} color="var(--lo-faint)" />
+        <StatCard label="Actifs ce mois" value={new Set(monthC.map(function(c){return c.commercial;})).size} color="var(--lo-accent)" />
       </div>
       {/* Commercial ranking */}
       <motion.div {...cardFadeIn}>
         <Card style={{ marginBottom:16, padding:20 }}>
-          <h3 style={{ margin:"0 0 14px", fontSize:14, fontWeight:700, color:"#f0f0f5" }}>Classement du mois</h3>
-          {comRankM.length === 0 && <div style={{ color:"rgba(255,255,255,0.35)", fontSize:13 }}>Aucun contrat</div>}
+          <h3 style={{ margin:"0 0 14px", fontSize:14, fontWeight:700, color:"var(--lo-ink)" }}>Classement du mois</h3>
+          {comRankM.length === 0 && <div style={{ color:"var(--lo-faint)", fontSize:13 }}>Aucun contrat</div>}
           {comRankM.map(function(entry, i) {
             var col = comColor(entry[0]);
             var pct = entry[1] / (comRankM[0][1]||1) * 100;
             var medal = i===0?"🥇":i===1?"🥈":i===2?"🥉":null;
             return (
               <div key={entry[0]} style={{ display:"flex", alignItems:"center", gap:10, marginBottom:12 }}>
-                <div style={{ width:22, fontSize:13, textAlign:"center" }}>{medal || <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)", fontWeight:700 }}>{i+1}</span>}</div>
+                <div style={{ width:22, fontSize:13, textAlign:"center" }}>{medal || <span style={{ fontSize:12, color:"var(--lo-faint)", fontWeight:700 }}>{i+1}</span>}</div>
                 <div style={{ width:32, height:32, borderRadius:99, background:col+"20", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}>
                   <span style={{ fontSize:11, fontWeight:800, color:col }}>{entry[0].split(" ").map(function(w){return w[0];}).slice(0,2).join("").toUpperCase()}</span>
                 </div>
                 <div style={{ flex:1 }}>
                   <div style={{ display:"flex", justifyContent:"space-between", marginBottom:4 }}>
-                    <span style={{ fontSize:13, fontWeight:600, color:"#f0f0f5" }}>{entry[0]}</span>
+                    <span style={{ fontSize:13, fontWeight:600, color:"var(--lo-ink)" }}>{entry[0]}</span>
                     <span style={{ fontSize:14, fontWeight:800, color:col }}>{entry[1]}</span>
                   </div>
-                  <div style={{ height:6, borderRadius:3, background:"rgba(255,255,255,0.10)" }}>
+                  <div style={{ height:6, borderRadius:3, background:"rgba(76,87,96,0.10)" }}>
                     <div style={{ width:pct+"%", height:"100%", borderRadius:3, background:col }} />
                   </div>
                 </div>
@@ -415,14 +415,14 @@ if (view === "month") {
         return (
           <div key={wk} style={{ marginBottom:16 }}>
             <div style={{ display:"flex", justifyContent:"space-between", marginBottom:8, paddingLeft:4 }}>
-              <span style={{ fontSize:13, fontWeight:700, color:"#f0f0f5" }}>{wk}</span>
-              <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>{wItems.length} contrat{wItems.length>1?"s":""}</span>
+              <span style={{ fontSize:13, fontWeight:700, color:"var(--lo-ink)" }}>{wk}</span>
+              <span style={{ fontSize:12, color:"var(--lo-faint)" }}>{wItems.length} contrat{wItems.length>1?"s":""}</span>
             </div>
             {CList(wItems)}
           </div>
         );
       })}
-      {monthC.length === 0 && <Card><div style={{ textAlign:"center", padding:40, color:"rgba(255,255,255,0.35)" }}>Aucun contrat ce mois</div></Card>}
+      {monthC.length === 0 && <Card><div style={{ textAlign:"center", padding:40, color:"var(--lo-faint)" }}>Aucun contrat ce mois</div></Card>}
     </div>
   );
 }
@@ -443,16 +443,16 @@ if (view === "quality") {
     var active = qFrom === from && qTo === to;
     return (
       <button key={label} onClick={function(){ setQFrom(from); setQTo(to); }} style={{
-        padding:"5px 12px", borderRadius:20, border:"1px solid " + (active ? "#0071E3" : "rgba(255,255,255,0.08)"),
-        background: active ? "#0071E3" : "transparent", color: active ? "#fff" : "#f0f0f5",
+        padding:"5px 12px", borderRadius:20, border:"1px solid " + (active ? "var(--lo-primary)" : "rgba(76,87,96,0.10)"),
+        background: active ? "var(--lo-primary)" : "transparent", color: active ? "#fff" : "var(--lo-ink)",
         fontSize:12, fontWeight:600, cursor:"pointer", fontFamily:"inherit"
       }}>{label}</button>
     );
   };
 
   var dateInputStyle = {
-    padding:"5px 10px", borderRadius:8, border:"1px solid rgba(255,255,255,0.12)", fontSize:12,
-    fontFamily:"inherit", color:"#f0f0f5", background:"rgba(255,255,255,0.08)", cursor:"pointer"
+    padding:"5px 10px", borderRadius:8, border:"1px solid rgba(76,87,96,0.14)", fontSize:12,
+    fontFamily:"inherit", color:"var(--lo-ink)", background:"rgba(76,87,96,0.10)", cursor:"pointer"
   };
 
   var DateRangeBar = (
@@ -462,7 +462,7 @@ if (view === "quality") {
       {presetBtn("Ce mois", moStartStr, todayStr)}
       <div style={{ display:"flex", alignItems:"center", gap:6, marginLeft:"auto" }}>
         <input type="date" value={qFrom} onChange={function(e){ setQFrom(e.target.value); }} style={dateInputStyle} />
-        <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>→</span>
+        <span style={{ fontSize:12, color:"var(--lo-faint)" }}>→</span>
         <input type="date" value={qTo} onChange={function(e){ setQTo(e.target.value); }} style={dateInputStyle} />
       </div>
     </div>
@@ -497,7 +497,7 @@ if (view === "quality") {
   if (qCom) {
     var cs = comStatsQ.find(function(s){ return s.name === qCom; });
     if (!cs) { setQCom(null); return null; }
-    var qualColor = cs.tGlobal >= 60 ? "#34C759" : cs.tGlobal >= 35 ? "#FF9F0A" : "#FF3B30";
+    var qualColor = cs.tGlobal >= 60 ? "var(--lo-accent)" : cs.tGlobal >= 35 ? "var(--lo-taupe)" : "var(--lo-danger)";
     return (
       <div>
         <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:16 }}>
@@ -505,22 +505,22 @@ if (view === "quality") {
           <div style={{ width:36, height:36, borderRadius:99, background:comColor(cs.name)+"20", display:"flex", alignItems:"center", justifyContent:"center" }}>
             <span style={{ fontSize:12, fontWeight:800, color:comColor(cs.name) }}>{cs.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase()}</span>
           </div>
-          <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"#f0f0f5" }}>{cs.name}</h2>
+          <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"var(--lo-ink)" }}>{cs.name}</h2>
           <div style={{ marginLeft:"auto", fontSize:28, fontWeight:800, color:qualColor }}>{cs.tGlobal.toFixed(0)}%</div>
         </div>
         {DateRangeBar}
         <motion.div style={{ display:"flex", gap:10, marginBottom:16, flexWrap:"wrap" }} variants={staggerContainer} initial="initial" animate="animate">
           {[
-            { label:"Total", val:cs.total, col:"#f0f0f5" },
-            { label:"Branchés", val:cs.br, col:"#34C759" },
+            { label:"Total", val:cs.total, col:"var(--lo-ink)" },
+            { label:"Branchés", val:cs.br, col:"var(--lo-accent)" },
             { label:"RDV Pris", val:cs.rd, col:"#1A7A3F" },
-            { label:"En attente", val:cs.at, col:"#FF9F0A" },
-            { label:"Annulés", val:cs.an, col:"#FF3B30" },
+            { label:"En attente", val:cs.at, col:"var(--lo-taupe)" },
+            { label:"Annulés", val:cs.an, col:"var(--lo-danger)" },
           ].map(function(item) {
             return (
               <motion.div key={item.label} variants={staggerItem} style={{ flex:1, minWidth:80 }}>
                 <Card style={{ padding:14, textAlign:"center" }}>
-                  <div style={{ fontSize:10, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>{item.label}</div>
+                  <div style={{ fontSize:10, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>{item.label}</div>
                   <div style={{ fontSize:28, fontWeight:800, color:item.col }}>{item.val}</div>
                 </Card>
               </motion.div>
@@ -530,21 +530,21 @@ if (view === "quality") {
         <motion.div {...cardFadeIn} transition={{ duration:0.35, delay:0.15 }}>
           <Card style={{ marginBottom:16, padding:20 }}>
             {[
-              { label:"Taux branchement", sub:"qualité long terme", val:cs.tBr, col:"#34C759" },
+              { label:"Taux branchement", sub:"qualité long terme", val:cs.tBr, col:"var(--lo-accent)" },
               { label:"Taux RDV", sub:"qualité hebdomadaire", val:cs.tRd, col:"#1A7A3F" },
-              { label:"En attente RDV", sub:"pipeline en cours", val:cs.tAt, col:"#FF9F0A" },
-              { label:"Taux annulation", sub:"rétractations", val:cs.tAn, col:"#FF3B30" },
+              { label:"En attente RDV", sub:"pipeline en cours", val:cs.tAt, col:"var(--lo-taupe)" },
+              { label:"Taux annulation", sub:"rétractations", val:cs.tAn, col:"var(--lo-danger)" },
             ].map(function(item) {
               return (
                 <div key={item.label} style={{ marginBottom:16 }}>
                   <div style={{ display:"flex", justifyContent:"space-between", alignItems:"baseline", marginBottom:6 }}>
                     <div>
-                      <span style={{ fontSize:13, fontWeight:700, color:"#f0f0f5" }}>{item.label}</span>
-                      <span style={{ fontSize:11, color:"rgba(255,255,255,0.35)", marginLeft:6 }}>{item.sub}</span>
+                      <span style={{ fontSize:13, fontWeight:700, color:"var(--lo-ink)" }}>{item.label}</span>
+                      <span style={{ fontSize:11, color:"var(--lo-faint)", marginLeft:6 }}>{item.sub}</span>
                     </div>
                     <span style={{ fontSize:16, fontWeight:800, color:item.col }}>{item.val.toFixed(1)}%</span>
                   </div>
-                  <div style={{ height:8, borderRadius:4, background:"rgba(255,255,255,0.10)" }}>
+                  <div style={{ height:8, borderRadius:4, background:"rgba(76,87,96,0.10)" }}>
                     <div style={{ width:Math.min(item.val,100)+"%", height:"100%", borderRadius:4, background:item.col }} />
                   </div>
                 </div>
@@ -558,14 +558,14 @@ if (view === "quality") {
   }
 
   // ── Overview ────────────────────────────────────────────────────────────────
-  var globalQualCol = parseFloat(tauxGlobalQ) >= 60 ? "#34C759" : parseFloat(tauxGlobalQ) >= 35 ? "#FF9F0A" : "#FF3B30";
-  var annuleCol = parseFloat(tauxAnnuleQ) > 15 ? "#FF3B30" : parseFloat(tauxAnnuleQ) > 8 ? "#FF9F0A" : "#34C759";
+  var globalQualCol = parseFloat(tauxGlobalQ) >= 60 ? "var(--lo-accent)" : parseFloat(tauxGlobalQ) >= 35 ? "var(--lo-taupe)" : "var(--lo-danger)";
+  var annuleCol = parseFloat(tauxAnnuleQ) > 15 ? "var(--lo-danger)" : parseFloat(tauxAnnuleQ) > 8 ? "var(--lo-taupe)" : "var(--lo-accent)";
   return (
     <div>
       <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:16 }}>
         <Btn v="ghost" onClick={function(){ setView(null); }}>← Retour</Btn>
-        <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"#f0f0f5" }}>Qualité</h2>
-        <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)", marginLeft:4 }}>{qContracts.length} contrat{qContracts.length > 1 ? "s" : ""}</span>
+        <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"var(--lo-ink)" }}>Qualité</h2>
+        <span style={{ fontSize:12, color:"var(--lo-faint)", marginLeft:4 }}>{qContracts.length} contrat{qContracts.length > 1 ? "s" : ""}</span>
       </div>
       {DateRangeBar}
 
@@ -573,54 +573,54 @@ if (view === "quality") {
       <motion.div style={{ display:"flex", gap:12, marginBottom:24, flexWrap:"wrap" }} variants={staggerContainer} initial="initial" animate="animate">
         <motion.div variants={staggerItem} style={{ flex:2, minWidth:220 }}>
           <Card style={{ padding:20 }}>
-            <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Qualité globale agence</div>
+            <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Qualité globale agence</div>
             <div style={{ fontSize:48, fontWeight:800, letterSpacing:-2, color:globalQualCol, lineHeight:1, marginBottom:14 }}>{tauxGlobalQ}%</div>
             <div style={{ display:"flex", gap:16, flexWrap:"wrap" }}>
               <div>
-                <div style={{ fontSize:10, color:"rgba(255,255,255,0.35)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>Branchement</div>
-                <div style={{ fontSize:18, fontWeight:800, color:"#34C759" }}>{tauxBrancheQ}%</div>
-                <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>{branchesQ} contrats</div>
+                <div style={{ fontSize:10, color:"var(--lo-faint)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>Branchement</div>
+                <div style={{ fontSize:18, fontWeight:800, color:"var(--lo-accent)" }}>{tauxBrancheQ}%</div>
+                <div style={{ fontSize:11, color:"var(--lo-faint)" }}>{branchesQ} contrats</div>
               </div>
-              <div style={{ width:1, background:"rgba(255,255,255,0.06)" }} />
+              <div style={{ width:1, background:"rgba(76,87,96,0.08)" }} />
               <div>
-                <div style={{ fontSize:10, color:"rgba(255,255,255,0.35)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>RDV pris</div>
+                <div style={{ fontSize:10, color:"var(--lo-faint)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>RDV pris</div>
                 <div style={{ fontSize:18, fontWeight:800, color:"#1A7A3F" }}>{tauxRdvQ}%</div>
-                <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>{rdvQ} contrats</div>
+                <div style={{ fontSize:11, color:"var(--lo-faint)" }}>{rdvQ} contrats</div>
               </div>
-              <div style={{ width:1, background:"rgba(255,255,255,0.06)" }} />
+              <div style={{ width:1, background:"rgba(76,87,96,0.08)" }} />
               <div>
-                <div style={{ fontSize:10, color:"rgba(255,255,255,0.35)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>En attente</div>
-                <div style={{ fontSize:18, fontWeight:800, color:"#FF9F0A" }}>{tauxAttenteQ}%</div>
-                <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>{attenteQ} contrats</div>
+                <div style={{ fontSize:10, color:"var(--lo-faint)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3, marginBottom:2 }}>En attente</div>
+                <div style={{ fontSize:18, fontWeight:800, color:"var(--lo-taupe)" }}>{tauxAttenteQ}%</div>
+                <div style={{ fontSize:11, color:"var(--lo-faint)" }}>{attenteQ} contrats</div>
               </div>
             </div>
           </Card>
         </motion.div>
         <motion.div variants={staggerItem} style={{ flex:1, minWidth:120 }}>
           <Card style={{ padding:20, textAlign:"center", display:"flex", flexDirection:"column", justifyContent:"center", height:"100%" }}>
-            <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Taux annulation</div>
+            <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Taux annulation</div>
             <div style={{ fontSize:42, fontWeight:800, letterSpacing:-2, color:annuleCol, lineHeight:1 }}>{tauxAnnuleQ}%</div>
-            <div style={{ fontSize:12, color:"rgba(255,255,255,0.35)", marginTop:8 }}>{annulesQ} contrat{annulesQ > 1 ? "s" : ""}</div>
+            <div style={{ fontSize:12, color:"var(--lo-faint)", marginTop:8 }}>{annulesQ} contrat{annulesQ > 1 ? "s" : ""}</div>
           </Card>
         </motion.div>
         {pendingVTA.length > 0 && (
           <motion.div variants={staggerItem} style={{ flex:1, minWidth:110 }}>
             <Card style={{ padding:16, textAlign:"center", cursor:"pointer", border:"2px solid rgba(255,159,10,0.18)" }} onClick={resolveAllVTA}>
-              <div style={{ fontSize:11, fontWeight:600, color:"#FF9F0A", textTransform:"uppercase", letterSpacing:0.5, marginBottom:6 }}>VTA à résoudre</div>
-              <div style={{ fontSize:32, fontWeight:800, letterSpacing:-1, color:"#FF9F0A" }}>{pendingVTA.length}</div>
-              <div style={{ fontSize:11, color:"#FF9F0A", marginTop:4 }}>Appuyer pour résoudre</div>
+              <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-taupe)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:6 }}>VTA à résoudre</div>
+              <div style={{ fontSize:32, fontWeight:800, letterSpacing:-1, color:"var(--lo-taupe)" }}>{pendingVTA.length}</div>
+              <div style={{ fontSize:11, color:"var(--lo-taupe)", marginTop:4 }}>Appuyer pour résoudre</div>
             </Card>
           </motion.div>
         )}
         {resolvedVTA.length > 0 && (
           <motion.div variants={staggerItem} style={{ flex:1, minWidth:110 }}>
             <Card style={{ padding:16, textAlign:"center" }}>
-              <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Réinit. VTA par date</div>
+              <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Réinit. VTA par date</div>
               <div style={{ display:"flex", flexWrap:"wrap", gap:4, justifyContent:"center" }}>
                 {Array.from(new Set(resolvedVTA.map(function(c) { return c.date; }))).sort().reverse().slice(0, 5).map(function(d) {
                   var count = resolvedVTA.filter(function(c) { return c.date === d; }).length;
                   var label = new Date(d + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "short", day: "numeric" });
-                  return <button key={d} onClick={function() { unresolveVTADate(d); }} style={{ fontSize:10, fontWeight:700, color:"#FF9F0A", background:"rgba(255,159,10,0.10)", border:"1px solid rgba(255,159,10,0.2)", borderRadius:8, padding:"4px 8px", cursor:"pointer", fontFamily:"inherit" }}>{label} ({count})</button>;
+                  return <button key={d} onClick={function() { unresolveVTADate(d); }} style={{ fontSize:10, fontWeight:700, color:"var(--lo-taupe)", background:"rgba(165,158,140,0.16)", border:"1px solid rgba(255,159,10,0.2)", borderRadius:8, padding:"4px 8px", cursor:"pointer", fontFamily:"inherit" }}>{label} ({count})</button>;
                 })}
               </div>
             </Card>
@@ -629,12 +629,12 @@ if (view === "quality") {
       </motion.div>
 
       {/* Per-commercial quality */}
-      <div style={{ fontSize:13, fontWeight:700, color:"#f0f0f5", marginBottom:12 }}>Qualité par commercial</div>
+      <div style={{ fontSize:13, fontWeight:700, color:"var(--lo-ink)", marginBottom:12 }}>Qualité par commercial</div>
       <motion.div style={{ display:"flex", flexDirection:"column", gap:10 }} variants={staggerContainer} initial="initial" animate="animate">
         {comStatsQ.map(function(cs) {
           var col = comColor(cs.name);
           var initials = cs.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase();
-          var qCol = cs.tGlobal >= 60 ? "#34C759" : cs.tGlobal >= 35 ? "#FF9F0A" : "#FF3B30";
+          var qCol = cs.tGlobal >= 60 ? "var(--lo-accent)" : cs.tGlobal >= 35 ? "var(--lo-taupe)" : "var(--lo-danger)";
           return (
             <motion.div key={cs.name} variants={staggerItem}>
               <Card onClick={function(){ setQCom(cs.name); }} style={{ padding:"14px 16px", cursor:"pointer" }}>
@@ -643,28 +643,28 @@ if (view === "quality") {
                     <span style={{ fontSize:11, fontWeight:800, color:col }}>{initials}</span>
                   </div>
                   <div style={{ flex:1 }}>
-                    <div style={{ fontSize:14, fontWeight:700, color:"#f0f0f5" }}>{cs.name}</div>
-                    <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>{cs.total} contrat{cs.total > 1 ? "s" : ""}</div>
+                    <div style={{ fontSize:14, fontWeight:700, color:"var(--lo-ink)" }}>{cs.name}</div>
+                    <div style={{ fontSize:11, color:"var(--lo-faint)" }}>{cs.total} contrat{cs.total > 1 ? "s" : ""}</div>
                   </div>
                   <div style={{ textAlign:"right" }}>
                     <div style={{ fontSize:22, fontWeight:800, color:qCol, lineHeight:1 }}>{cs.tGlobal.toFixed(0)}%</div>
-                    <div style={{ fontSize:10, color:"rgba(255,255,255,0.35)", fontWeight:600, marginTop:2 }}>qualité</div>
+                    <div style={{ fontSize:10, color:"var(--lo-faint)", fontWeight:600, marginTop:2 }}>qualité</div>
                   </div>
                 </div>
                 <div style={{ display:"flex", gap:10 }}>
                   {[
-                    { label:"Branché", val:cs.tBr, count:cs.br, col:"#34C759" },
+                    { label:"Branché", val:cs.tBr, count:cs.br, col:"var(--lo-accent)" },
                     { label:"RDV", val:cs.tRd, count:cs.rd, col:"#1A7A3F" },
-                    { label:"Attente", val:cs.tAt, count:cs.at, col:"#FF9F0A" },
-                    { label:"Annulé", val:cs.tAn, count:cs.an, col:"#FF3B30" },
+                    { label:"Attente", val:cs.tAt, count:cs.at, col:"var(--lo-taupe)" },
+                    { label:"Annulé", val:cs.tAn, count:cs.an, col:"var(--lo-danger)" },
                   ].map(function(item) {
                     return (
                       <div key={item.label} style={{ flex:1 }}>
                         <div style={{ display:"flex", justifyContent:"space-between", marginBottom:4 }}>
-                          <span style={{ fontSize:10, color:"rgba(255,255,255,0.35)", fontWeight:600 }}>{item.label}</span>
+                          <span style={{ fontSize:10, color:"var(--lo-faint)", fontWeight:600 }}>{item.label}</span>
                           <span style={{ fontSize:10, fontWeight:700, color:item.col }}>{item.count} · {item.val.toFixed(0)}%</span>
                         </div>
-                        <div style={{ height:4, borderRadius:2, background:"rgba(255,255,255,0.10)" }}>
+                        <div style={{ height:4, borderRadius:2, background:"rgba(76,87,96,0.10)" }}>
                           <div style={{ width:Math.min(item.val,100)+"%", height:"100%", borderRadius:2, background:item.col }} />
                         </div>
                       </div>
@@ -758,7 +758,7 @@ if (view === "commercial") {
 
     var colD = comColor(csd.name);
     var initialsD = csd.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase();
-    var qualColD = csd.tGlobal >= 60 ? "#34C759" : csd.tGlobal >= 35 ? "#FF9F0A" : "#FF3B30";
+    var qualColD = csd.tGlobal >= 60 ? "var(--lo-accent)" : csd.tGlobal >= 35 ? "var(--lo-taupe)" : "var(--lo-danger)";
     var maxMo = Math.max.apply(null, csd.monthlyData.map(function(m){ return m.count; })) || 1;
     var tmMember = team.find(function(m){ return m.name === selectedCom; });
     var lastDateLabel = csd.lastDate ? (function() {
@@ -770,10 +770,10 @@ if (view === "commercial") {
       return "Il y a " + Math.round(diff/7) + " sem.";
     })() : "—";
 
-    var dateInputStyleD = { padding:"5px 10px", borderRadius:8, border:"1px solid rgba(255,255,255,0.12)", fontSize:12, fontFamily:"inherit", color:"#f0f0f5", background:"rgba(255,255,255,0.08)" };
+    var dateInputStyleD = { padding:"5px 10px", borderRadius:8, border:"1px solid rgba(76,87,96,0.14)", fontSize:12, fontFamily:"inherit", color:"var(--lo-ink)", background:"rgba(76,87,96,0.10)" };
     function presetBtnD(label, from, to) {
       var active = comFrom === from && comTo === to;
-      return <button key={label} onClick={function(){ setComFrom(from); setComTo(to); }} style={{ padding:"5px 12px", borderRadius:20, border:"1px solid "+(active?"#0071E3":"rgba(255,255,255,0.08)"), background:active?"#0071E3":"transparent", color:active?"#fff":"#f0f0f5", fontSize:12, fontWeight:600, cursor:"pointer", fontFamily:"inherit" }}>{label}</button>;
+      return <button key={label} onClick={function(){ setComFrom(from); setComTo(to); }} style={{ padding:"5px 12px", borderRadius:20, border:"1px solid "+(active?"var(--lo-primary)":"rgba(76,87,96,0.10)"), background:active?"var(--lo-primary)":"transparent", color:active?"#fff":"var(--lo-ink)", fontSize:12, fontWeight:600, cursor:"pointer", fontFamily:"inherit" }}>{label}</button>;
     }
 
     return (
@@ -784,12 +784,12 @@ if (view === "commercial") {
             <span style={{ fontSize:13, fontWeight:800, color:colD }}>{initialsD}</span>
           </div>
           <div>
-            <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"#f0f0f5" }}>{csd.name}</h2>
-            {tmMember && <div style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>{tmMember.role}</div>}
+            <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"var(--lo-ink)" }}>{csd.name}</h2>
+            {tmMember && <div style={{ fontSize:12, color:"var(--lo-faint)" }}>{tmMember.role}</div>}
           </div>
           <div style={{ marginLeft:"auto", textAlign:"right" }}>
             <div style={{ fontSize:28, fontWeight:800, color:qualColD, lineHeight:1 }}>{csd.tGlobal.toFixed(0)}%</div>
-            <div style={{ fontSize:10, color:"rgba(255,255,255,0.35)", fontWeight:600 }}>qualité</div>
+            <div style={{ fontSize:10, color:"var(--lo-faint)", fontWeight:600 }}>qualité</div>
           </div>
         </div>
 
@@ -800,24 +800,24 @@ if (view === "commercial") {
           {presetBtnD("Ce mois", moStartStr, todayStr)}
           <div style={{ display:"flex", alignItems:"center", gap:6, marginLeft:"auto" }}>
             <input type="date" value={comFrom} onChange={function(e){ setComFrom(e.target.value); }} style={dateInputStyleD} />
-            <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>→</span>
+            <span style={{ fontSize:12, color:"var(--lo-faint)" }}>→</span>
             <input type="date" value={comTo} onChange={function(e){ setComTo(e.target.value); }} style={dateInputStyleD} />
           </div>
         </div>
 
         {/* Volume */}
-        <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Volume</div>
+        <div style={{ fontSize:10, fontWeight:700, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Volume</div>
         <motion.div style={{ display:"flex", gap:10, marginBottom:20, flexWrap:"wrap" }} variants={staggerContainer} initial="initial" animate="animate">
           {[
-            { label:"Total", val:csd.total, col:"#0071E3" },
-            { label:"Cette sem.", val:csd.weekTotal, col:"#34C759" },
-            { label:"Ce mois", val:csd.monthTotal, col:"#AF52DE" },
-            { label:"Jours actifs", val:csd.activeDays, col:"#FF9F0A" },
+            { label:"Total", val:csd.total, col:"var(--lo-primary)" },
+            { label:"Cette sem.", val:csd.weekTotal, col:"var(--lo-accent)" },
+            { label:"Ce mois", val:csd.monthTotal, col:"var(--lo-accent)" },
+            { label:"Jours actifs", val:csd.activeDays, col:"var(--lo-taupe)" },
           ].map(function(item) {
             return (
               <motion.div key={item.label} variants={staggerItem} style={{ flex:1, minWidth:70 }}>
                 <Card style={{ padding:"12px 10px", textAlign:"center" }}>
-                  <div style={{ fontSize:9, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.4, marginBottom:4 }}>{item.label}</div>
+                  <div style={{ fontSize:9, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.4, marginBottom:4 }}>{item.label}</div>
                   <div style={{ fontSize:26, fontWeight:800, color:item.col, lineHeight:1 }}>{item.val}</div>
                 </Card>
               </motion.div>
@@ -825,35 +825,35 @@ if (view === "commercial") {
           })}
           <motion.div variants={staggerItem} style={{ flex:1, minWidth:70 }}>
             <Card style={{ padding:"12px 10px", textAlign:"center" }}>
-              <div style={{ fontSize:9, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.4, marginBottom:4 }}>Dernier</div>
-              <div style={{ fontSize:13, fontWeight:800, color:"#f0f0f5", lineHeight:1.3 }}>{lastDateLabel}</div>
+              <div style={{ fontSize:9, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.4, marginBottom:4 }}>Dernier</div>
+              <div style={{ fontSize:13, fontWeight:800, color:"var(--lo-ink)", lineHeight:1.3 }}>{lastDateLabel}</div>
             </Card>
           </motion.div>
         </motion.div>
 
         {/* Qualité */}
-        <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Qualité</div>
+        <div style={{ fontSize:10, fontWeight:700, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Qualité</div>
         <motion.div {...cardFadeIn} transition={{ duration:0.35, delay:0.1 }}>
           <Card style={{ marginBottom:20, padding:20 }}>
             {[
-              { label:"Taux branchement", sub:"long terme", val:csd.tBr, count:csd.br, col:"#34C759" },
+              { label:"Taux branchement", sub:"long terme", val:csd.tBr, count:csd.br, col:"var(--lo-accent)" },
               { label:"Taux RDV", sub:"hebdomadaire", val:csd.tRd, count:csd.rd, col:"#1A7A3F" },
-              { label:"En attente RDV", sub:"pipeline", val:csd.tAt, count:csd.at, col:"#FF9F0A" },
-              { label:"Taux annulation", sub:"rétractations", val:csd.tAn, count:csd.an, col:"#FF3B30" },
+              { label:"En attente RDV", sub:"pipeline", val:csd.tAt, count:csd.at, col:"var(--lo-taupe)" },
+              { label:"Taux annulation", sub:"rétractations", val:csd.tAn, count:csd.an, col:"var(--lo-danger)" },
             ].map(function(item) {
               return (
                 <div key={item.label} style={{ marginBottom:14 }}>
                   <div style={{ display:"flex", justifyContent:"space-between", alignItems:"baseline", marginBottom:5 }}>
                     <div>
-                      <span style={{ fontSize:13, fontWeight:600, color:"#f0f0f5" }}>{item.label}</span>
-                      <span style={{ fontSize:10, color:"rgba(255,255,255,0.35)", marginLeft:5 }}>{item.sub}</span>
+                      <span style={{ fontSize:13, fontWeight:600, color:"var(--lo-ink)" }}>{item.label}</span>
+                      <span style={{ fontSize:10, color:"var(--lo-faint)", marginLeft:5 }}>{item.sub}</span>
                     </div>
                     <div style={{ display:"flex", alignItems:"center", gap:8 }}>
-                      <span style={{ fontSize:10, color:"rgba(255,255,255,0.35)" }}>{item.count}</span>
+                      <span style={{ fontSize:10, color:"var(--lo-faint)" }}>{item.count}</span>
                       <span style={{ fontSize:16, fontWeight:800, color:item.col }}>{item.val.toFixed(1)}%</span>
                     </div>
                   </div>
-                  <div style={{ height:7, borderRadius:4, background:"rgba(255,255,255,0.10)" }}>
+                  <div style={{ height:7, borderRadius:4, background:"rgba(76,87,96,0.10)" }}>
                     <div style={{ width:Math.min(item.val,100)+"%", height:"100%", borderRadius:4, background:item.col }} />
                   </div>
                 </div>
@@ -863,7 +863,7 @@ if (view === "commercial") {
         </motion.div>
 
         {/* Tendance 6 mois */}
-        <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Tendance 6 mois</div>
+        <div style={{ fontSize:10, fontWeight:700, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Tendance 6 mois</div>
         <motion.div {...cardFadeIn} transition={{ duration:0.35, delay:0.15 }}>
           <Card style={{ marginBottom:20, padding:20 }}>
             <div style={{ display:"flex", alignItems:"flex-end", gap:6, height:110 }}>
@@ -872,9 +872,9 @@ if (view === "commercial") {
                 var barH = maxMo > 0 ? Math.max(4, Math.round(m.count / maxMo * 90)) : 4;
                 return (
                   <div key={m.mk} style={{ flex:1, display:"flex", flexDirection:"column", alignItems:"center", gap:4 }}>
-                    <div style={{ fontSize:11, fontWeight:700, color: isCurr ? colD : "rgba(255,255,255,0.55)" }}>{m.count > 0 ? m.count : ""}</div>
+                    <div style={{ fontSize:11, fontWeight:700, color: isCurr ? colD : "var(--lo-muted)" }}>{m.count > 0 ? m.count : ""}</div>
                     <div style={{ width:"100%", height:barH, borderRadius:4, background: isCurr ? colD : colD+"35" }} />
-                    <div style={{ fontSize:9, color: isCurr ? colD : "rgba(255,255,255,0.35)", fontWeight: isCurr ? 700 : 400, textAlign:"center" }}>{m.label}</div>
+                    <div style={{ fontSize:9, color: isCurr ? colD : "var(--lo-faint)", fontWeight: isCurr ? 700 : 400, textAlign:"center" }}>{m.label}</div>
                   </div>
                 );
               })}
@@ -884,10 +884,10 @@ if (view === "commercial") {
               var prev = csd.monthlyData[csd.monthlyData.length-2].count;
               var diff = curr - prev;
               return (
-                <div style={{ marginTop:12, paddingTop:12, borderTop:"1px solid rgba(255,255,255,0.05)", display:"flex", alignItems:"center", gap:8 }}>
-                  <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>vs mois précédent :</span>
-                  <span style={{ fontSize:14, fontWeight:800, color: diff > 0 ? "#34C759" : diff < 0 ? "#FF3B30" : "rgba(255,255,255,0.35)" }}>{diff > 0 ? "+" : ""}{diff}</span>
-                  {prev > 0 && <span style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>({((diff/prev)*100).toFixed(0)}%)</span>}
+                <div style={{ marginTop:12, paddingTop:12, borderTop:"1px solid rgba(76,87,96,0.07)", display:"flex", alignItems:"center", gap:8 }}>
+                  <span style={{ fontSize:12, color:"var(--lo-faint)" }}>vs mois précédent :</span>
+                  <span style={{ fontSize:14, fontWeight:800, color: diff > 0 ? "var(--lo-accent)" : diff < 0 ? "var(--lo-danger)" : "var(--lo-faint)" }}>{diff > 0 ? "+" : ""}{diff}</span>
+                  {prev > 0 && <span style={{ fontSize:11, color:"var(--lo-faint)" }}>({((diff/prev)*100).toFixed(0)}%)</span>}
                 </div>
               );
             })()}
@@ -896,19 +896,19 @@ if (view === "commercial") {
 
         {/* Top communes */}
         {csd.topVilles.length > 0 && <div>
-          <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Top communes</div>
+          <div style={{ fontSize:10, fontWeight:700, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Top communes</div>
           <Card style={{ marginBottom:20, padding:0, overflow:"hidden" }}>
             {csd.topVilles.map(function(entry, i) {
               var pct = entry[1] / csd.total * 100;
               return (
-                <div key={entry[0]} style={{ padding:"12px 16px", borderTop: i > 0 ? "1px solid rgba(255,255,255,0.05)" : "none", display:"flex", alignItems:"center", gap:12 }}>
-                  <div style={{ fontSize:12, fontWeight:700, color:"rgba(255,255,255,0.35)", minWidth:16 }}>{i+1}</div>
+                <div key={entry[0]} style={{ padding:"12px 16px", borderTop: i > 0 ? "1px solid rgba(76,87,96,0.07)" : "none", display:"flex", alignItems:"center", gap:12 }}>
+                  <div style={{ fontSize:12, fontWeight:700, color:"var(--lo-faint)", minWidth:16 }}>{i+1}</div>
                   <div style={{ flex:1 }}>
                     <div style={{ display:"flex", justifyContent:"space-between", marginBottom:4 }}>
-                      <span style={{ fontSize:13, fontWeight:600, color:"#f0f0f5" }}>{entry[0]}</span>
+                      <span style={{ fontSize:13, fontWeight:600, color:"var(--lo-ink)" }}>{entry[0]}</span>
                       <span style={{ fontSize:13, fontWeight:800, color:colD }}>{entry[1]}</span>
                     </div>
-                    <div style={{ height:5, borderRadius:2.5, background:"rgba(255,255,255,0.10)" }}>
+                    <div style={{ height:5, borderRadius:2.5, background:"rgba(76,87,96,0.10)" }}>
                       <div style={{ width:pct+"%", height:"100%", borderRadius:2.5, background:colD+"50" }} />
                     </div>
                   </div>
@@ -920,20 +920,20 @@ if (view === "commercial") {
 
         {/* Produits */}
         {Object.keys(csd.boxCount).length > 0 && <div>
-          <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Produits</div>
+          <div style={{ fontSize:10, fontWeight:700, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.8, marginBottom:10 }}>Produits</div>
           <motion.div style={{ display:"flex", gap:10, marginBottom:20 }} variants={staggerContainer} initial="initial" animate="animate">
             {[
-              { key:"ULTRA", label:"Ultra", col:"#0071E3" },
+              { key:"ULTRA", label:"Ultra", col:"var(--lo-primary)" },
               { key:"ULTRA_LIGHT", label:"Ultra Light", col:"#5AC8FA" },
-              { key:"POP", label:"Pop", col:"#FF9F0A" },
+              { key:"POP", label:"Pop", col:"var(--lo-taupe)" },
             ].filter(function(item){ return csd.boxCount[item.key] > 0; }).map(function(item) {
               var pct = (csd.boxCount[item.key] / csd.total * 100).toFixed(0);
               return (
                 <motion.div key={item.key} variants={staggerItem} style={{ flex:1 }}>
                   <Card style={{ padding:"14px 12px", textAlign:"center" }}>
-                    <div style={{ fontSize:9, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.4, marginBottom:4 }}>{item.label}</div>
+                    <div style={{ fontSize:9, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.4, marginBottom:4 }}>{item.label}</div>
                     <div style={{ fontSize:26, fontWeight:800, color:item.col, lineHeight:1, marginBottom:2 }}>{csd.boxCount[item.key]}</div>
-                    <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>{pct}%</div>
+                    <div style={{ fontSize:11, color:"var(--lo-faint)" }}>{pct}%</div>
                   </Card>
                 </motion.div>
               );
@@ -949,14 +949,14 @@ if (view === "commercial") {
     <div>
       <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:20 }}>
         <Btn v="ghost" onClick={function(){ setView(null); }}>← Retour</Btn>
-        <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"#f0f0f5" }}>Récap Commercial</h2>
-        <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)", marginLeft:4 }}>{comStatsRC.length} commerciaux</span>
+        <h2 style={{ margin:0, fontSize:20, fontWeight:800, color:"var(--lo-ink)" }}>Récap Commercial</h2>
+        <span style={{ fontSize:12, color:"var(--lo-faint)", marginLeft:4 }}>{comStatsRC.length} commerciaux</span>
       </div>
       <motion.div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(155px, 1fr))", gap:12 }} variants={staggerContainer} initial="initial" animate="animate">
         {comStatsRC.map(function(cs) {
           var col = comColor(cs.name);
           var initials = cs.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase();
-          var qualCol = cs.tGlobal >= 60 ? "#34C759" : cs.tGlobal >= 35 ? "#FF9F0A" : "#FF3B30";
+          var qualCol = cs.tGlobal >= 60 ? "var(--lo-accent)" : cs.tGlobal >= 35 ? "var(--lo-taupe)" : "var(--lo-danger)";
           var firstName = cs.name.split(" ")[0];
           var lastName = cs.name.split(" ").slice(1).join(" ");
           return (
@@ -965,16 +965,16 @@ if (view === "commercial") {
                 <div style={{ width:46, height:46, borderRadius:99, background:col+"20", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 10px" }}>
                   <span style={{ fontSize:14, fontWeight:800, color:col }}>{initials}</span>
                 </div>
-                <div style={{ fontSize:13, fontWeight:700, color:"#f0f0f5" }}>{firstName}</div>
-                <div style={{ fontSize:11, color:"rgba(255,255,255,0.55)", marginBottom:10 }}>{lastName}</div>
+                <div style={{ fontSize:13, fontWeight:700, color:"var(--lo-ink)" }}>{firstName}</div>
+                <div style={{ fontSize:11, color:"var(--lo-muted)", marginBottom:10 }}>{lastName}</div>
                 <div style={{ fontSize:26, fontWeight:800, color:col, lineHeight:1, marginBottom:2 }}>{cs.total}</div>
-                <div style={{ fontSize:10, color:"rgba(255,255,255,0.35)", marginBottom:10 }}>contrats</div>
+                <div style={{ fontSize:10, color:"var(--lo-faint)", marginBottom:10 }}>contrats</div>
                 <div style={{ display:"flex", justifyContent:"space-between", fontSize:11, marginBottom:3 }}>
-                  <span style={{ color:"rgba(255,255,255,0.35)" }}>Ce mois</span>
+                  <span style={{ color:"var(--lo-faint)" }}>Ce mois</span>
                   <span style={{ fontWeight:700, color:col }}>{cs.monthTotal}</span>
                 </div>
                 <div style={{ display:"flex", justifyContent:"space-between", fontSize:11 }}>
-                  <span style={{ color:"rgba(255,255,255,0.35)" }}>Qualité</span>
+                  <span style={{ color:"var(--lo-faint)" }}>Qualité</span>
                   <span style={{ fontWeight:700, color:qualCol }}>{cs.tGlobal.toFixed(0)}%</span>
                 </div>
               </Card>
@@ -1029,13 +1029,13 @@ return (
       <Card onClick={function(){ setView("today"); }} style={{ cursor:"pointer", padding:20, border:"2px solid transparent" }}>
         <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:12 }}>
           <div>
-            <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Aujourd'hui</div>
-            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"#0071E3", lineHeight:1 }}>{todayC.length}</div>
+            <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Aujourd'hui</div>
+            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"var(--lo-primary)", lineHeight:1 }}>{todayC.length}</div>
           </div>
           <div style={{ fontSize:22 }}>📅</div>
         </div>
         <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-          <span style={{ fontSize:12, fontWeight:700, color: todayDelta>0?"#34C759":todayDelta<0?"#FF3B30":"rgba(255,255,255,0.35)" }}>
+          <span style={{ fontSize:12, fontWeight:700, color: todayDelta>0?"var(--lo-accent)":todayDelta<0?"var(--lo-danger)":"var(--lo-faint)" }}>
             {todayDelta>0?"+":""}{todayDelta !== 0 ? todayDelta : "="} vs hier
           </span>
         </div>
@@ -1053,18 +1053,18 @@ return (
       <Card onClick={function(){ setView("week"); }} style={{ cursor:"pointer", padding:20, border:"2px solid transparent" }}>
         <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:12 }}>
           <div>
-            <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Cette semaine</div>
-            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"#34C759", lineHeight:1 }}>{weekC.length}</div>
+            <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Cette semaine</div>
+            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"var(--lo-accent)", lineHeight:1 }}>{weekC.length}</div>
           </div>
           <div style={{ fontSize:22 }}>📊</div>
         </div>
         <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-          <span style={{ fontSize:12, fontWeight:700, color: weekDelta>0?"#34C759":weekDelta<0?"#FF3B30":"rgba(255,255,255,0.35)" }}>
+          <span style={{ fontSize:12, fontWeight:700, color: weekDelta>0?"var(--lo-accent)":weekDelta<0?"var(--lo-danger)":"var(--lo-faint)" }}>
             {weekDelta>0?"+":""}{weekDelta !== 0 ? weekDelta : "="} vs sem. préc.
           </span>
         </div>
         <div style={{ marginTop:10 }}>
-          <div style={{ fontSize:12, color:"rgba(255,255,255,0.55)" }}>Moy. {(weekC.length/(dFromMon+1||1)).toFixed(1)}/jour · {(dFromMon+1)} jour{dFromMon>0?"s":""}</div>
+          <div style={{ fontSize:12, color:"var(--lo-muted)" }}>Moy. {(weekC.length/(dFromMon+1||1)).toFixed(1)}/jour · {(dFromMon+1)} jour{dFromMon>0?"s":""}</div>
         </div>
       </Card>
     </motion.div>
@@ -1074,13 +1074,13 @@ return (
       <Card onClick={function(){ setView("month"); }} style={{ cursor:"pointer", padding:20, border:"2px solid transparent" }}>
         <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:12 }}>
           <div>
-            <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Ce mois</div>
-            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"#AF52DE", lineHeight:1 }}>{monthC.length}</div>
+            <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Ce mois</div>
+            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"var(--lo-accent)", lineHeight:1 }}>{monthC.length}</div>
           </div>
           <div style={{ fontSize:22 }}>📆</div>
         </div>
         <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-          <span style={{ fontSize:12, fontWeight:700, color: monthDelta>0?"#34C759":monthDelta<0?"#FF3B30":"rgba(255,255,255,0.35)" }}>
+          <span style={{ fontSize:12, fontWeight:700, color: monthDelta>0?"var(--lo-accent)":monthDelta<0?"var(--lo-danger)":"var(--lo-faint)" }}>
             {monthDelta>0?"+":""}{monthDelta !== 0 ? monthDelta : "="} vs mois préc.
           </span>
         </div>
@@ -1098,15 +1098,15 @@ return (
       <Card onClick={function(){ setView("quality"); }} style={{ cursor:"pointer", padding:20, border:"2px solid " + (pendingVTA.length > 0 ? "rgba(255,159,10,0.18)" : "transparent") }}>
         <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:12 }}>
           <div>
-            <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Qualité</div>
-            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"#34C759", lineHeight:1 }}>{tauxBrancheOv}%</div>
+            <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Qualité</div>
+            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"var(--lo-accent)", lineHeight:1 }}>{tauxBrancheOv}%</div>
           </div>
           <div style={{ fontSize:22 }}>✅</div>
         </div>
-        <div style={{ fontSize:12, color:"rgba(255,255,255,0.55)", marginBottom:6 }}>Taux de branchement</div>
+        <div style={{ fontSize:12, color:"var(--lo-muted)", marginBottom:6 }}>Taux de branchement</div>
         <div style={{ display:"flex", gap:6 }}>
-          {annulesOv > 0 && <span style={{ fontSize:11, fontWeight:700, color:"#FF3B30", background:"rgba(255,59,48,0.15)", borderRadius:20, padding:"2px 8px" }}>{annulesOv} annulés</span>}
-          {pendingVTA.length > 0 && <span style={{ fontSize:11, fontWeight:700, color:"#FF9F0A", background:"rgba(255,159,10,0.10)", borderRadius:20, padding:"2px 8px" }}>{pendingVTA.length} VTA?</span>}
+          {annulesOv > 0 && <span style={{ fontSize:11, fontWeight:700, color:"var(--lo-danger)", background:"rgba(102,99,91,0.16)", borderRadius:20, padding:"2px 8px" }}>{annulesOv} annulés</span>}
+          {pendingVTA.length > 0 && <span style={{ fontSize:11, fontWeight:700, color:"var(--lo-taupe)", background:"rgba(165,158,140,0.16)", borderRadius:20, padding:"2px 8px" }}>{pendingVTA.length} VTA?</span>}
         </div>
       </Card>
     </motion.div>
@@ -1116,12 +1116,12 @@ return (
       <Card onClick={function(){ setView("commercial"); }} style={{ cursor:"pointer", padding:20, border:"2px solid transparent" }}>
         <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:12 }}>
           <div>
-            <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Commerciaux</div>
-            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"#FF9F0A", lineHeight:1 }}>{Array.from(new Set(contracts.map(function(c){ return c.commercial; }))).length}</div>
+            <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:4 }}>Commerciaux</div>
+            <div style={{ fontSize:36, fontWeight:800, letterSpacing:-1.5, color:"var(--lo-taupe)", lineHeight:1 }}>{Array.from(new Set(contracts.map(function(c){ return c.commercial; }))).length}</div>
           </div>
           <div style={{ fontSize:22 }}>👤</div>
         </div>
-        <div style={{ fontSize:12, color:"rgba(255,255,255,0.55)", marginBottom:6 }}>Récap par commercial</div>
+        <div style={{ fontSize:12, color:"var(--lo-muted)", marginBottom:6 }}>Récap par commercial</div>
         <div style={{ marginTop:4, display:"flex", gap:4, flexWrap:"wrap" }}>
           {topComs(monthC).slice(0,2).map(function(e){
             var col = comColor(e[0]);
@@ -1135,9 +1135,9 @@ return (
     {pendingVTA.length > 0 && (
       <motion.div variants={staggerItem}>
         <Card style={{ padding:16, textAlign:"center", cursor:"pointer", border:"2px solid rgba(255,159,10,0.18)" }} onClick={resolveAllVTA}>
-          <div style={{ fontSize:11, fontWeight:600, color:"#FF9F0A", textTransform:"uppercase", letterSpacing:0.5, marginBottom:6 }}>VTA à résoudre</div>
-          <div style={{ fontSize:32, fontWeight:800, letterSpacing:-1, color:"#FF9F0A" }}>{pendingVTA.length}</div>
-          <div style={{ fontSize:11, color:"#FF9F0A", marginTop:4 }}>Appuyer pour résoudre</div>
+          <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-taupe)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:6 }}>VTA à résoudre</div>
+          <div style={{ fontSize:32, fontWeight:800, letterSpacing:-1, color:"var(--lo-taupe)" }}>{pendingVTA.length}</div>
+          <div style={{ fontSize:11, color:"var(--lo-taupe)", marginTop:4 }}>Appuyer pour résoudre</div>
         </Card>
       </motion.div>
     )}
@@ -1146,12 +1146,12 @@ return (
     {resolvedVTA.length > 0 && (
       <motion.div variants={staggerItem}>
         <Card style={{ padding:16, textAlign:"center" }}>
-          <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Réinit. VTA par date</div>
+          <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:8 }}>Réinit. VTA par date</div>
           <div style={{ display:"flex", flexWrap:"wrap", gap:4, justifyContent:"center" }}>
             {Array.from(new Set(resolvedVTA.map(function(c) { return c.date; }))).sort().reverse().slice(0, 5).map(function(d) {
               var count = resolvedVTA.filter(function(c) { return c.date === d; }).length;
               var label = new Date(d + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "short", day: "numeric" });
-              return <button key={d} onClick={function() { unresolveVTADate(d); }} style={{ fontSize:10, fontWeight:700, color:"#FF9F0A", background:"rgba(255,159,10,0.10)", border:"1px solid rgba(255,159,10,0.2)", borderRadius:8, padding:"4px 8px", cursor:"pointer", fontFamily:"inherit" }}>{label} ({count})</button>;
+              return <button key={d} onClick={function() { unresolveVTADate(d); }} style={{ fontSize:10, fontWeight:700, color:"var(--lo-taupe)", background:"rgba(165,158,140,0.16)", border:"1px solid rgba(255,159,10,0.2)", borderRadius:8, padding:"4px 8px", cursor:"pointer", fontFamily:"inherit" }}>{label} ({count})</button>;
             })}
           </div>
         </Card>
@@ -1161,21 +1161,21 @@ return (
 
   {/* Date carousel */}
   <div style={{ display:"flex", gap:8, marginBottom:16, overflowX:"auto", paddingBottom:4 }}>
-    <Card onClick={function(){ setFD(""); }} style={{ minWidth:68, padding:"10px 12px", textAlign:"center", cursor:"pointer", flexShrink:0, border: !fD?"2px solid #0071E3":"2px solid transparent", background: !fD?"rgba(0,113,227,0.08)":"rgba(255,255,255,0.07)" }}>
-      <div style={{ fontSize:10, color: !fD?"#0071E3":"rgba(255,255,255,0.35)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3 }}>Tous</div>
-      <div style={{ fontSize:17, fontWeight:800, color: !fD?"#0071E3":"#f0f0f5", marginTop:2 }}>{total}</div>
+    <Card onClick={function(){ setFD(""); }} style={{ minWidth:68, padding:"10px 12px", textAlign:"center", cursor:"pointer", flexShrink:0, border: !fD?"2px solid var(--lo-primary)":"2px solid transparent", background: !fD?"rgba(76,87,96,0.10)":"rgba(255,253,247,0.78)" }}>
+      <div style={{ fontSize:10, color: !fD?"var(--lo-primary)":"var(--lo-faint)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3 }}>Tous</div>
+      <div style={{ fontSize:17, fontWeight:800, color: !fD?"var(--lo-primary)":"var(--lo-ink)", marginTop:2 }}>{total}</div>
     </Card>
     {dates.slice(0,10).map(function(d) {
       var dc = contracts.filter(function(c){ return c.date===d; }).length;
       var isTod = d === todayStr;
       var sel = fD===d;
       return (
-        <Card key={d} onClick={function(){ setFD(d); }} style={{ minWidth:68, padding:"10px 12px", textAlign:"center", cursor:"pointer", flexShrink:0, border: sel?"2px solid #0071E3":"2px solid transparent", background: sel?"rgba(0,113,227,0.08)":"rgba(255,255,255,0.07)" }}>
-          <div style={{ fontSize:10, color: sel?"#0071E3":"rgba(255,255,255,0.35)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3 }}>
+        <Card key={d} onClick={function(){ setFD(d); }} style={{ minWidth:68, padding:"10px 12px", textAlign:"center", cursor:"pointer", flexShrink:0, border: sel?"2px solid var(--lo-primary)":"2px solid transparent", background: sel?"rgba(76,87,96,0.10)":"rgba(255,253,247,0.78)" }}>
+          <div style={{ fontSize:10, color: sel?"var(--lo-primary)":"var(--lo-faint)", fontWeight:600, textTransform:"uppercase", letterSpacing:0.3 }}>
             {isTod?"Auj.":new Date(d+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"short"})}
           </div>
-          <div style={{ fontSize:17, fontWeight:800, color: sel?"#0071E3":"#f0f0f5", marginTop:2 }}>{dc}</div>
-          <div style={{ fontSize:10, color:"rgba(255,255,255,0.35)", marginTop:1 }}>{new Date(d+"T12:00:00").toLocaleDateString("fr-FR",{day:"numeric",month:"short"})}</div>
+          <div style={{ fontSize:17, fontWeight:800, color: sel?"var(--lo-primary)":"var(--lo-ink)", marginTop:2 }}>{dc}</div>
+          <div style={{ fontSize:10, color:"var(--lo-faint)", marginTop:1 }}>{new Date(d+"T12:00:00").toLocaleDateString("fr-FR",{day:"numeric",month:"short"})}</div>
         </Card>
       );
     })}
@@ -1188,21 +1188,21 @@ return (
       <Sel value={fO} onChange={setFO} placeholder="Opérateur" options={OPERATORS.map(function(o){ return { value:o, label:o }; })} style={{ minWidth:110 }} />
       <Sel value={fS} onChange={setFS} placeholder="Statut" options={statuses.map(function(s){ return { value:s, label:s }; })} style={{ minWidth:160 }} />
       {hasFilter && <Btn s="sm" v="ghost" onClick={function(){ setFD(""); setFC(""); setFO(""); setFS(""); }}>Réinitialiser</Btn>}
-      <span style={{ marginLeft:"auto", fontSize:13, fontWeight:600, color:"rgba(255,255,255,0.55)" }}>{filtered.length} contrat{filtered.length>1?"s":""}</span>
+      <span style={{ marginLeft:"auto", fontSize:13, fontWeight:600, color:"var(--lo-muted)" }}>{filtered.length} contrat{filtered.length>1?"s":""}</span>
     </div>
   </Card>
 
   {/* List */}
   {filtered.length === 0
-    ? <Card><div style={{ textAlign:"center", padding:40, color:"rgba(255,255,255,0.35)", fontSize:14 }}>Aucun contrat</div></Card>
+    ? <Card><div style={{ textAlign:"center", padding:40, color:"var(--lo-faint)", fontSize:14 }}>Aucun contrat</div></Card>
     : grouped.map(function(group) {
         var dateLabel = new Date(group.date+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
         var displayItems = showAll || fD ? group.items : group.items.slice(0,30);
         return (
           <div key={group.date} style={{ marginBottom:16 }}>
             <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:8, paddingLeft:4 }}>
-              <span style={{ fontSize:13, fontWeight:700, color:"#f0f0f5", textTransform:"capitalize" }}>{dateLabel}</span>
-              <span style={{ fontSize:12, color:"rgba(255,255,255,0.35)" }}>{group.items.length} contrat{group.items.length>1?"s":""}</span>
+              <span style={{ fontSize:13, fontWeight:700, color:"var(--lo-ink)", textTransform:"capitalize" }}>{dateLabel}</span>
+              <span style={{ fontSize:12, color:"var(--lo-faint)" }}>{group.items.length} contrat{group.items.length>1?"s":""}</span>
             </div>
             {CList(displayItems)}
             {!fD && !showAll && group.items.length > 30 && (

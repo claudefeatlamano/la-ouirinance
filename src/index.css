@@ -1,30 +1,58 @@
 @import "tailwindcss";
 
 @theme {
-  --color-glass-bg: rgba(255, 255, 255, 0.07);
-  --color-glass-bg-hover: rgba(255, 255, 255, 0.12);
-  --color-glass-border: rgba(255, 255, 255, 0.12);
-  --color-glass-border-hover: rgba(255, 255, 255, 0.22);
-  --color-glass-text: #f0f0f5;
-  --color-glass-text-secondary: rgba(255, 255, 255, 0.55);
-  --color-glass-text-muted: rgba(255, 255, 255, 0.35);
-  --color-accent-blue: #0071E3;
-  --color-accent-green: #34C759;
-  --color-accent-orange: #FF9F0A;
-  --color-accent-red: #FF3B30;
-  --color-accent-violet: #AF52DE;
-  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3);
-  --shadow-glass-hover: 0 12px 40px rgba(0, 0, 0, 0.4);
-  --shadow-glow-blue: 0 0 20px rgba(0, 113, 227, 0.3);
-  --shadow-glow-green: 0 0 20px rgba(52, 199, 89, 0.3);
-  --shadow-glow-orange: 0 0 20px rgba(255, 159, 10, 0.3);
-  --shadow-glow-red: 0 0 20px rgba(255, 59, 48, 0.3);
+  --color-glass-bg: rgba(255, 253, 247, 0.76);
+  --color-glass-bg-hover: rgba(255, 253, 247, 0.92);
+  --color-glass-border: rgba(76, 87, 96, 0.16);
+  --color-glass-border-hover: rgba(76, 87, 96, 0.28);
+  --color-glass-text: #2f363b;
+  --color-glass-text-secondary: #66635b;
+  --color-glass-text-muted: #8d887b;
+  --color-accent-blue: #4c5760;
+  --color-accent-green: #93a8ac;
+  --color-accent-orange: #a59e8c;
+  --color-accent-red: #66635b;
+  --color-accent-violet: #93a8ac;
+  --shadow-glass: 0 18px 48px rgba(76, 87, 96, 0.12);
+  --shadow-glass-hover: 0 22px 60px rgba(76, 87, 96, 0.16);
+  --shadow-glow-blue: 0 0 0 rgba(76, 87, 96, 0);
+  --shadow-glow-green: 0 0 0 rgba(147, 168, 172, 0);
+  --shadow-glow-orange: 0 0 0 rgba(165, 158, 140, 0);
+  --shadow-glow-red: 0 0 0 rgba(102, 99, 91, 0);
 
   --animate-gradient-shift: gradient-shift 15s ease infinite;
   --animate-fade-in: fade-in 0.3s ease;
   --animate-slide-up: slide-up 0.3s ease;
   --animate-glow-pulse: glow-pulse 2s ease-in-out infinite;
   --animate-shimmer: shimmer 2s linear infinite;
+}
+
+:root {
+  --lo-bg: #f3f0e6;
+  --lo-bg-2: #e8e1cf;
+  --lo-paper: #fffdf7;
+  --lo-paper-soft: rgba(255, 253, 247, 0.76);
+  --lo-card: rgba(255, 253, 247, 0.82);
+  --lo-card-solid: #fffdf7;
+  --lo-border: rgba(76, 87, 96, 0.16);
+  --lo-border-strong: rgba(76, 87, 96, 0.28);
+  --lo-ink: #2f363b;
+  --lo-text: #4c5760;
+  --lo-muted: #66635b;
+  --lo-faint: #8d887b;
+  --lo-line: rgba(76, 87, 96, 0.10);
+  --lo-primary: #4c5760;
+  --lo-primary-soft: rgba(76, 87, 96, 0.10);
+  --lo-accent: #93a8ac;
+  --lo-accent-soft: rgba(147, 168, 172, 0.18);
+  --lo-sand: #d7ceb2;
+  --lo-sand-soft: rgba(215, 206, 178, 0.42);
+  --lo-taupe: #a59e8c;
+  --lo-taupe-soft: rgba(165, 158, 140, 0.18);
+  --lo-danger: #66635b;
+  --lo-danger-soft: rgba(102, 99, 91, 0.14);
+  --lo-shadow: 0 18px 48px rgba(76, 87, 96, 0.12);
+  --lo-shadow-soft: 0 10px 28px rgba(76, 87, 96, 0.08);
 }
 
 @keyframes gradient-shift {
@@ -60,7 +88,9 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, sans-serif;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--lo-bg);
+  color: var(--lo-ink);
 }
 
 button {
@@ -82,12 +112,71 @@ input, select {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(76, 87, 96, 0.22);
   border-radius: 99px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.22);
+  background: rgba(76, 87, 96, 0.34);
+}
+
+.territory-shell {
+  min-height: 100vh;
+  color: var(--lo-ink);
+  background:
+    radial-gradient(circle at 18% 12%, rgba(147, 168, 172, 0.26), transparent 24%),
+    radial-gradient(circle at 80% 4%, rgba(215, 206, 178, 0.48), transparent 26%),
+    linear-gradient(135deg, var(--lo-bg) 0%, #faf8f0 48%, #e7dfcb 100%);
+  position: relative;
+}
+
+.territory-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(76, 87, 96, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(76, 87, 96, 0.055) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.72), rgba(0,0,0,0.08));
+}
+
+.territory-shell > * {
+  position: relative;
+}
+
+.territory-card {
+  background: var(--lo-card);
+  border: 1px solid var(--lo-border);
+  border-radius: 8px;
+  box-shadow: var(--lo-shadow-soft);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.territory-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 14px;
+}
+
+.territory-section-title h3 {
+  margin: 0;
+  color: var(--lo-ink);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.territory-kicker {
+  color: var(--lo-faint);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 /* ── Responsive ── */

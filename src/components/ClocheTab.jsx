@@ -48,14 +48,14 @@ function ClocheTab({ team, contracts }) {
   return (
     <div>
       <div style={{ marginBottom: 24 }}>
-        <h2 style={{ margin: "0 0 4px", fontSize: 22, fontWeight: 700, letterSpacing: -0.6, color: "#f0f0f5" }}>Cloche</h2>
-        <div style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textTransform: "capitalize" }}>{dateLabel}</div>
+        <h2 style={{ margin: "0 0 4px", fontSize: 22, fontWeight: 700, letterSpacing: -0.6, color: "var(--lo-ink)" }}>Cloche</h2>
+        <div style={{ fontSize: 13, color: "var(--lo-muted)", textTransform: "capitalize" }}>{dateLabel}</div>
       </div>
 
       <div style={{ display: "flex", gap: 12, marginBottom: 24, flexWrap: "wrap" }}>
-        <StatCard label="TOTAL CONTRATS" value={totalContrats} color="#f0f0f5" />
-        <StatCard label="CLOCHES" value={cloches} color="#FF9F0A" />
-        <StatCard label="MOY / COMMERCIAL" value={sorted.length > 0 ? (totalContrats / sorted.length).toFixed(1) : "0"} color="#0071E3" />
+        <StatCard label="TOTAL CONTRATS" value={totalContrats} color="var(--lo-ink)" />
+        <StatCard label="CLOCHES" value={cloches} color="var(--lo-taupe)" />
+        <StatCard label="MOY / COMMERCIAL" value={sorted.length > 0 ? (totalContrats / sorted.length).toFixed(1) : "0"} color="var(--lo-primary)" />
       </div>
 
       <Card>
@@ -64,8 +64,8 @@ function ClocheTab({ team, contracts }) {
             var name = entry[0];
             var count = entry[1];
             var hasCloche = count >= 3;
-            var bg = i % 2 === 0 ? "transparent" : "rgba(255,255,255,0.03)";
-            var countColor = count === 0 ? "rgba(255,255,255,0.20)" : hasCloche ? "#34C759" : "#f0f0f5";
+            var bg = i % 2 === 0 ? "transparent" : "rgba(76,87,96,0.05)";
+            var countColor = count === 0 ? "rgba(76,87,96,0.24)" : hasCloche ? "var(--lo-accent)" : "var(--lo-ink)";
 
             return (
               <motion.div
@@ -76,21 +76,21 @@ function ClocheTab({ team, contracts }) {
                 style={{
                   display: "flex", alignItems: "center", justifyContent: "space-between",
                   padding: "14px 18px", background: bg,
-                  borderTop: i === 0 ? "none" : "1px solid rgba(255,255,255,0.06)",
+                  borderTop: i === 0 ? "none" : "1px solid rgba(76,87,96,0.08)",
                   borderRadius: i === 0 ? "14px 14px 0 0" : i === sorted.length - 1 ? "0 0 14px 14px" : 0
                 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <div style={{
                     width: 36, height: 36, borderRadius: 10,
-                    background: hasCloche ? "rgba(52,199,89,0.15)" : "rgba(255,255,255,0.05)",
-                    border: "1px solid " + (hasCloche ? "rgba(52,199,89,0.25)" : "rgba(255,255,255,0.08)"),
+                    background: hasCloche ? "rgba(147,168,172,0.22)" : "rgba(76,87,96,0.07)",
+                    border: "1px solid " + (hasCloche ? "rgba(52,199,89,0.25)" : "rgba(76,87,96,0.10)"),
                     display: "flex", alignItems: "center", justifyContent: "center",
                     fontWeight: 700, fontSize: 13,
-                    color: hasCloche ? "#34C759" : "rgba(255,255,255,0.35)"
+                    color: hasCloche ? "var(--lo-accent)" : "var(--lo-faint)"
                   }}>
                     {name.split(" ").map(function(n) { return n[0]; }).join("").slice(0, 2).toUpperCase()}
                   </div>
-                  <span style={{ fontWeight: 500, fontSize: 14, color: "#f0f0f5", letterSpacing: -0.2 }}>{name}</span>
+                  <span style={{ fontWeight: 500, fontSize: 14, color: "var(--lo-ink)", letterSpacing: -0.2 }}>{name}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   {hasCloche && <motion.span animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 0.6, repeat: Infinity, repeatDelay: 2 }} style={{ fontSize: 18 }}>{"\u{1F514}"}</motion.span>}

@@ -39,7 +39,7 @@ var key = commune.v + "|" + jData.dept;
 var coords = GPS[key]; if (!coords) return;
 var c = getC(commune, jData.dept, month);
 var taux = commune.p > 0 ? (c / commune.p * 100) : 0;
-var color = c === 0 ? "#AEAEB2" : taux > 0.8 ? "#34C759" : taux > 0.3 ? "#FF9F0A" : "#FF3B30";
+var color = c === 0 ? "#AEAEB2" : taux > 0.8 ? "var(--lo-accent)" : taux > 0.3 ? "var(--lo-taupe)" : "var(--lo-danger)";
 var radius = Math.max(5, Math.min(22, Math.sqrt(c) * 2.5));
 L.circleMarker([coords[0], coords[1]], { radius: radius, fillColor: color, color: "#fff", weight: 2, opacity: 1, fillOpacity: 0.85 }).addTo(map).bindPopup(
 "<div style='font-family:-apple-system,sans-serif;min-width:180px'><b style='font-size:14px'>" + commune.v + "</b><br>" +
@@ -55,10 +55,10 @@ var key = commune.v + "|" + jData.dept;
 var coords = GPS[key]; if (!coords) return;
 var c = getTalcC(commune, jData.dept, month);
 var taux = commune.p > 0 ? (c / commune.p * 100) : 0;
-var color = c === 0 ? "#AEAEB2" : taux > 0.8 ? "#34C759" : taux > 0.3 ? "#FF9F0A" : "#FF3B30";
+var color = c === 0 ? "#AEAEB2" : taux > 0.8 ? "var(--lo-accent)" : taux > 0.3 ? "var(--lo-taupe)" : "var(--lo-danger)";
 var radius = Math.max(5, Math.min(22, Math.sqrt(c) * 2.5 + 4));
-L.circleMarker([coords[0], coords[1]], { radius: radius, fillColor: color, color: "#FF9F0A", weight: 3, opacity: 1, fillOpacity: 0.85 }).addTo(map).bindPopup(
-"<div style='font-family:-apple-system,sans-serif;min-width:180px'><b style='font-size:14px'>" + commune.v + "</b> <span style='font-size:10px;background:#FF9F0A;color:#fff;border-radius:4px;padding:1px 5px;font-weight:700'>TALC</span><br>" +
+L.circleMarker([coords[0], coords[1]], { radius: radius, fillColor: color, color: "var(--lo-taupe)", weight: 3, opacity: 1, fillOpacity: 0.85 }).addTo(map).bindPopup(
+"<div style='font-family:-apple-system,sans-serif;min-width:180px'><b style='font-size:14px'>" + commune.v + "</b> <span style='font-size:10px;background:var(--lo-taupe);color:#fff;border-radius:4px;padding:1px 5px;font-weight:700'>TALC</span><br>" +
 "<span style='font-size:11px;color:#6B7280'>" + jName + " | Zone " + commune.z + (commune.z === "H" ? " (+5€)" : " (-15€)") + "</span><hr style='margin:6px 0;border:none;border-top:1px solid #eee'>" +
 "Prises: <b>" + commune.p.toLocaleString("fr-FR") + "</b><br>Contrats: <b style='color:" + color + "'>" + c + "</b><br>Taux: <b style='color:" + color + "'>" + taux.toFixed(2) + "%</b></div>"
 );
@@ -71,21 +71,21 @@ return function() { if (mapInstance.current) { mapInstance.current.remove(); map
 return (
 <div>
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16, flexWrap: "wrap", gap: 10 }}>
-<h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "#f0f0f5" }}>Carte des jacheres</h2>
+<h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "var(--lo-ink)" }}>Carte des jacheres</h2>
 <Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 150 }} />
 </div>
 <Card style={{ padding: 0, overflow: "hidden", marginBottom: 12, borderRadius: 14 }}>
 <div ref={mapRef} style={{ width: "100%", height: 560 }}>
-{!mapReady && <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 560, color: "rgba(255,255,255,0.35)" }}>Chargement...</div>}
+{!mapReady && <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 560, color: "var(--lo-faint)" }}>Chargement...</div>}
 </div>
 </Card>
 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#34C759" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>Bon taux</span></div>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF9F0A" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>Moyen</span></div>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#FF3B30" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>Faible</span></div>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#AEAEB2" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>0 contrats</span></div>
-<div style={{ marginLeft: 8, display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2.5px solid #FF9F0A" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>TALC</span></div>
-<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2px solid #fff" }} /><span style={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>Stratygo</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "var(--lo-accent)" }} /><span style={{ fontSize: 11, color: "var(--lo-muted)" }}>Bon taux</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "var(--lo-taupe)" }} /><span style={{ fontSize: 11, color: "var(--lo-muted)" }}>Moyen</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "var(--lo-danger)" }} /><span style={{ fontSize: 11, color: "var(--lo-muted)" }}>Faible</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#AEAEB2" }} /><span style={{ fontSize: 11, color: "var(--lo-muted)" }}>0 contrats</span></div>
+<div style={{ marginLeft: 8, display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2.5px solid var(--lo-taupe)" }} /><span style={{ fontSize: 11, color: "var(--lo-muted)" }}>TALC</span></div>
+<div style={{ display: "flex", alignItems: "center", gap: 4 }}><div style={{ width: 12, height: 12, borderRadius: "50%", background: "#888", border: "2px solid #fff" }} /><span style={{ fontSize: 11, color: "var(--lo-muted)" }}>Stratygo</span></div>
 </div>
 </div>
 );
@@ -170,7 +170,7 @@ useEffect(function() {
   geoData.forEach(function(d) {
     var ratio = d.count / maxCount;
     var radius = Math.max(40, Math.min(140, ratio * 100 + 40));
-    var col = ratio > 0.66 ? "#FF3B30" : ratio > 0.33 ? "#FF9F0A" : "#34C759";
+    var col = ratio > 0.66 ? "var(--lo-danger)" : ratio > 0.33 ? "var(--lo-taupe)" : "var(--lo-accent)";
     L.circle([d.lat, d.lng], { radius: radius, fillColor: col, color: "transparent", weight: 0, fillOpacity: Math.max(0.25, ratio * 0.65) })
       .addTo(map)
       .bindPopup("<b style='font-family:-apple-system,sans-serif'>" + d.rue + "</b><br><span style='color:" + col + ";font-weight:700;font-family:-apple-system,sans-serif'>" + d.count + " contrat" + (d.count > 1 ? "s" : "") + "</span>");
@@ -182,17 +182,17 @@ useEffect(function() {
 return (
 <Card style={{ padding: 20, marginBottom: 16 }}>
   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#f0f0f5" }}>Heatmap rues</h3>
-    <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>{loading ? "Géocodage…" : geoData.length + " rue" + (geoData.length > 1 ? "s" : "") + " géocodée" + (geoData.length > 1 ? "s" : "")}</span>
+    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "var(--lo-ink)" }}>Heatmap rues</h3>
+    <span style={{ fontSize: 12, color: "var(--lo-faint)" }}>{loading ? "Géocodage…" : geoData.length + " rue" + (geoData.length > 1 ? "s" : "") + " géocodée" + (geoData.length > 1 ? "s" : "")}</span>
   </div>
   <div style={{ position: "relative" }}>
-    <div ref={mapRef} style={{ height: 300, borderRadius: 12, overflow: "hidden", background: "rgba(255,255,255,0.05)" }} />
-    {loading && <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(15,11,30,0.85)", borderRadius: 12 }}><span style={{ fontSize: 13, color: "rgba(255,255,255,0.35)" }}>Géocodage des rues…</span></div>}
+    <div ref={mapRef} style={{ height: 300, borderRadius: 12, overflow: "hidden", background: "rgba(76,87,96,0.07)" }} />
+    {loading && <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(255,253,247,0.86)", borderRadius: 12 }}><span style={{ fontSize: 13, color: "var(--lo-faint)" }}>Géocodage des rues…</span></div>}
   </div>
   <div style={{ marginTop: 10, display: "flex", gap: 12, justifyContent: "center" }}>
-    <span style={{ fontSize: 11, color: "#34C759", fontWeight: 700 }}>● peu prospectée</span>
-    <span style={{ fontSize: 11, color: "#FF9F0A", fontWeight: 700 }}>● moyenne</span>
-    <span style={{ fontSize: 11, color: "#FF3B30", fontWeight: 700 }}>● très prospectée</span>
+    <span style={{ fontSize: 11, color: "var(--lo-accent)", fontWeight: 700 }}>● peu prospectée</span>
+    <span style={{ fontSize: 11, color: "var(--lo-taupe)", fontWeight: 700 }}>● moyenne</span>
+    <span style={{ fontSize: 11, color: "var(--lo-danger)", fontWeight: 700 }}>● très prospectée</span>
   </div>
 </Card>
 );

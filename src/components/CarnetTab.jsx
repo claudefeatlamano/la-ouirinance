@@ -62,8 +62,8 @@ function CarnetTab() {
     return ROW_COLORS[status.toLowerCase()] || "#fff";
   }
 
-  var TAB_COLORS = { vst: "rgba(255,255,255,0.12)", vta: "rgba(255,59,48,0.25)", bouygues: "rgba(0,55,164,0.3)" };
-  var TAB_ACTIVE_BG = { vst: "rgba(255,255,255,0.15)", vta: "#FF3B30", bouygues: "#003DA5" };
+  var TAB_COLORS = { vst: "rgba(76,87,96,0.14)", vta: "rgba(255,59,48,0.25)", bouygues: "rgba(0,55,164,0.3)" };
+  var TAB_ACTIVE_BG = { vst: "rgba(76,87,96,0.14)", vta: "var(--lo-danger)", bouygues: "#003DA5" };
 
   var tabStyle = function(t) {
     var active = tab === t;
@@ -74,8 +74,8 @@ function CarnetTab() {
       border: "none",
       cursor: "pointer",
       borderRadius: "10px 10px 0 0",
-      background: active ? TAB_ACTIVE_BG[t] : "rgba(255,255,255,0.05)",
-      color: active ? "#fff" : "rgba(255,255,255,0.35)",
+      background: active ? TAB_ACTIVE_BG[t] : "rgba(76,87,96,0.07)",
+      color: active ? "#fff" : "var(--lo-faint)",
       fontFamily: "inherit",
       transition: "background 0.15s, color 0.15s",
     };
@@ -106,29 +106,29 @@ function CarnetTab() {
           value={search}
           onChange={function(e) { setSearch(e.target.value); }}
           placeholder="Rechercher..."
-          style={{ padding: "6px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", fontSize: 13, width: 220, outline: "none", background: "rgba(255,255,255,0.12)", color: "#fff", fontFamily: "inherit", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}
+          style={{ padding: "6px 12px", borderRadius: 8, border: "1px solid rgba(76,87,96,0.14)", fontSize: 13, width: 220, outline: "none", background: "rgba(76,87,96,0.14)", color: "#fff", fontFamily: "inherit", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}
         />
       </div>
 
-      <div style={{ overflowX: "auto", borderRadius: "0 0 12px 12px", border: "1px solid rgba(255,255,255,0.08)", borderTop: "none" }}>
+      <div style={{ overflowX: "auto", borderRadius: "0 0 12px 12px", border: "1px solid rgba(76,87,96,0.10)", borderTop: "none" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
           <thead>
-            <tr style={{ background: "rgba(255,255,255,0.05)" }}>
+            <tr style={{ background: "rgba(76,87,96,0.07)" }}>
               {headers.map(function(h) {
-                return <th key={h} style={{ padding: "8px 10px", textAlign: "left", fontWeight: 600, color: "rgba(255,255,255,0.55)", whiteSpace: "nowrap", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>{h}</th>;
+                return <th key={h} style={{ padding: "8px 10px", textAlign: "left", fontWeight: 600, color: "var(--lo-muted)", whiteSpace: "nowrap", borderBottom: "1px solid rgba(76,87,96,0.10)" }}>{h}</th>;
               })}
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 && (
-              <tr><td colSpan={headers.length} style={{ padding: 32, textAlign: "center", color: "rgba(255,255,255,0.35)" }}>Aucun r\u00E9sultat</td></tr>
+              <tr><td colSpan={headers.length} style={{ padding: 32, textAlign: "center", color: "var(--lo-faint)" }}>Aucun r\u00E9sultat</td></tr>
             )}
             {filtered.map(function(row, i) {
               var bg = getRowColor(row);
               return (
                 <tr key={i} style={{ background: bg }}>
                   {headers.map(function(h) {
-                    return <td key={h} style={{ padding: "6px 10px", borderBottom: "1px solid rgba(255,255,255,0.04)", whiteSpace: "nowrap", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", color: "#1D1D1F" }}>{row[h] || ""}</td>;
+                    return <td key={h} style={{ padding: "6px 10px", borderBottom: "1px solid rgba(76,87,96,0.06)", whiteSpace: "nowrap", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", color: "#1D1D1F" }}>{row[h] || ""}</td>;
                   })}
                 </tr>
               );

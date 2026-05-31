@@ -47,7 +47,7 @@ if (communeView) {
 var cv = communeView.commune;
 var cvDept = communeView.dept;
 var cvTalc = communeView.isTalc;
-var cvColor = cvTalc ? "#FF9F0A" : "#34C759";
+var cvColor = cvTalc ? "var(--lo-taupe)" : "var(--lo-accent)";
 
 // Bar chart: last 6 months
 var cvVals = last6Months.map(function(mk) {
@@ -79,7 +79,7 @@ var rueQuery = rueSearch.trim().toUpperCase();
 var rueFiltered = rueQuery ? rueList.filter(function(e) { return e[0].toUpperCase().indexOf(rueQuery) >= 0; }) : rueList;
 
 // Commercial color palette (reuse team colors)
-var comColors = ["#0071E3","#34C759","#FF9F0A","#FF3B30","#AF52DE","#5AC8FA","#FF2D55","#5856D6"];
+var comColors = ["var(--lo-primary)","var(--lo-accent)","var(--lo-taupe)","var(--lo-danger)","var(--lo-accent)","#5AC8FA","#FF2D55","#5856D6"];
 var comColorMap = {};
 var comColorIdx = 0;
 function getComColor(name) {
@@ -92,10 +92,10 @@ return (
 {/* Breadcrumb nav */}
 <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 20, flexWrap: "wrap" }}>
   <Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); setCommuneView(null); setRueSearch(""); setShowMap(false); setRueSort("top"); }}>← Secteurs</Btn>
-  <span style={{ color: "rgba(255,255,255,0.20)", fontSize: 14 }}>›</span>
+  <span style={{ color: "rgba(76,87,96,0.24)", fontSize: 14 }}>›</span>
   <Btn v="ghost" onClick={function() { setCommuneView(null); setRueSearch(""); setShowMap(false); setRueSort("top"); }}>{sel}</Btn>
-  <span style={{ color: "rgba(255,255,255,0.20)", fontSize: 14 }}>›</span>
-  <span style={{ fontSize: 14, fontWeight: 700, color: "#f0f0f5" }}>{cv.v}</span>
+  <span style={{ color: "rgba(76,87,96,0.24)", fontSize: 14 }}>›</span>
+  <span style={{ fontSize: 14, fontWeight: 700, color: "var(--lo-ink)" }}>{cv.v}</span>
 </div>
 
 {/* Header card */}
@@ -103,11 +103,11 @@ return (
   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
     <div>
       <h2 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: -0.6 }}>{cv.v}</h2>
-      <div style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", marginTop: 3 }}>{cv.p.toLocaleString("fr-FR")} prises · Dept {cvDept}</div>
+      <div style={{ fontSize: 13, color: "var(--lo-muted)", marginTop: 3 }}>{cv.p.toLocaleString("fr-FR")} prises · Dept {cvDept}</div>
     </div>
     <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
-      <Badge color={cvTalc ? "#FF9F0A" : "#6E6E73"}>{cvTalc ? "TALC" : "Stratygo"}</Badge>
-      <Badge color={cv.z === "H" ? "#FF3B30" : "#0071E3"}>{cv.z === "H" ? "Haute densité" : "Standard"}</Badge>
+      <Badge color={cvTalc ? "var(--lo-taupe)" : "#6E6E73"}>{cvTalc ? "TALC" : "Stratygo"}</Badge>
+      <Badge color={cv.z === "H" ? "var(--lo-danger)" : "var(--lo-primary)"}>{cv.z === "H" ? "Haute densité" : "Standard"}</Badge>
     </div>
   </div>
   {/* 6-month bar chart */}
@@ -115,22 +115,22 @@ return (
     {cvVals.map(function(v) {
       var h = Math.max(v.count / cvMax * 60, v.count > 0 ? 6 : 2);
       var isCur = month === v.mk;
-      var col = v.count === 0 ? "rgba(255,255,255,0.08)" : isCur ? "#0071E3" : cvColor;
+      var col = v.count === 0 ? "rgba(76,87,96,0.10)" : isCur ? "var(--lo-primary)" : cvColor;
       var lbl = v.label.split(" ");
       return (
         <div key={v.mk} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: 3 }}>
-          <div style={{ fontSize: 11, fontWeight: 800, color: v.count > 0 ? (isCur ? "#0071E3" : "#f0f0f5") : "rgba(255,255,255,0.08)" }}>{v.count || ""}</div>
+          <div style={{ fontSize: 11, fontWeight: 800, color: v.count > 0 ? (isCur ? "var(--lo-primary)" : "var(--lo-ink)") : "rgba(76,87,96,0.10)" }}>{v.count || ""}</div>
           <div style={{ width: "100%", height: 60, display: "flex", alignItems: "flex-end" }}>
             <div style={{ width: "100%", height: h, borderRadius: "4px 4px 0 0", background: col }} />
           </div>
-          <div style={{ fontSize: 9, color: isCur ? "#0071E3" : "rgba(255,255,255,0.35)", fontWeight: isCur ? 700 : 400, textAlign: "center", lineHeight: 1.2 }}>{lbl[0]}<br/>{lbl[1]}</div>
+          <div style={{ fontSize: 9, color: isCur ? "var(--lo-primary)" : "var(--lo-faint)", fontWeight: isCur ? 700 : 400, textAlign: "center", lineHeight: 1.2 }}>{lbl[0]}<br/>{lbl[1]}</div>
         </div>
       );
     })}
   </div>
-  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 12, paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-    <span style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>Total 6 derniers mois</span>
-    <span style={{ fontSize: 18, fontWeight: 800, color: cvTotal6 > 0 ? "#f0f0f5" : "rgba(255,255,255,0.20)" }}>{cvTotal6} contrat{cvTotal6 > 1 ? "s" : ""}</span>
+  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 12, paddingTop: 12, borderTop: "1px solid rgba(76,87,96,0.08)" }}>
+    <span style={{ fontSize: 12, color: "var(--lo-muted)" }}>Total 6 derniers mois</span>
+    <span style={{ fontSize: 18, fontWeight: 800, color: cvTotal6 > 0 ? "var(--lo-ink)" : "rgba(76,87,96,0.24)" }}>{cvTotal6} contrat{cvTotal6 > 1 ? "s" : ""}</span>
   </div>
 </Card>
 
@@ -139,28 +139,28 @@ return (
 {/* Street search */}
 <Card style={{ padding: 20 }}>
   <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
-    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#f0f0f5" }}>Rues</h3>
-    <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", flex: 1 }}>{cvContracts.length} contrat{cvContracts.length > 1 ? "s" : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
+    <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "var(--lo-ink)" }}>Rues</h3>
+    <span style={{ fontSize: 12, color: "var(--lo-faint)", flex: 1 }}>{cvContracts.length} contrat{cvContracts.length > 1 ? "s" : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
     {[["top","🏆 Top"], ["recent","🕐 Récentes"]].map(function(opt) {
       var active = rueSort === opt[0];
-      return <button key={opt[0]} onClick={function() { setRueSort(opt[0]); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: active ? "rgba(255,255,255,0.15)" : "transparent", color: active ? "#fff" : "rgba(255,255,255,0.55)", borderColor: active ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.08)", fontFamily: "inherit" }}>{opt[1]}</button>;
+      return <button key={opt[0]} onClick={function() { setRueSort(opt[0]); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: active ? "rgba(76,87,96,0.14)" : "transparent", color: active ? "#fff" : "var(--lo-muted)", borderColor: active ? "rgba(76,87,96,0.14)" : "rgba(76,87,96,0.10)", fontFamily: "inherit" }}>{opt[1]}</button>;
     })}
-    <button onClick={function() { setShowMap(function(v) { return !v; }); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: showMap ? "#0071E3" : "transparent", color: showMap ? "#fff" : "rgba(255,255,255,0.55)", borderColor: showMap ? "#0071E3" : "rgba(255,255,255,0.08)", fontFamily: "inherit" }}>🗺 Carte</button>
+    <button onClick={function() { setShowMap(function(v) { return !v; }); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: showMap ? "var(--lo-primary)" : "transparent", color: showMap ? "#fff" : "var(--lo-muted)", borderColor: showMap ? "var(--lo-primary)" : "rgba(76,87,96,0.10)", fontFamily: "inherit" }}>🗺 Carte</button>
   </div>
   <div style={{ position: "relative", marginBottom: 16 }}>
-    <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", fontSize: 14, color: "rgba(255,255,255,0.35)", pointerEvents: "none" }}>🔍</span>
+    <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", fontSize: 14, color: "var(--lo-faint)", pointerEvents: "none" }}>🔍</span>
     <input
       value={rueSearch}
       onChange={function(e) { setRueSearch(e.target.value); }}
       placeholder="Rechercher une rue..."
-      style={{ width: "100%", boxSizing: "border-box", paddingLeft: 36, paddingRight: 12, paddingTop: 10, paddingBottom: 10, fontSize: 14, border: "1.5px solid rgba(255,255,255,0.12)", borderRadius: 10, outline: "none", fontFamily: "inherit", background: "rgba(255,255,255,0.08)", color: "#f0f0f5" }}
+      style={{ width: "100%", boxSizing: "border-box", paddingLeft: 36, paddingRight: 12, paddingTop: 10, paddingBottom: 10, fontSize: 14, border: "1.5px solid rgba(76,87,96,0.14)", borderRadius: 10, outline: "none", fontFamily: "inherit", background: "rgba(76,87,96,0.10)", color: "var(--lo-ink)" }}
     />
     {rueSearch && (
-      <button onClick={function() { setRueSearch(""); }} style={{ position: "absolute", right: 10, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "rgba(255,255,255,0.35)", fontSize: 16, padding: 2 }}>×</button>
+      <button onClick={function() { setRueSearch(""); }} style={{ position: "absolute", right: 10, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "var(--lo-faint)", fontSize: 16, padding: 2 }}>×</button>
     )}
   </div>
   {rueFiltered.length === 0 ? (
-    <div style={{ textAlign: "center", padding: "24px 0", color: "rgba(255,255,255,0.35)", fontSize: 13 }}>Aucune rue trouvée</div>
+    <div style={{ textAlign: "center", padding: "24px 0", color: "var(--lo-faint)", fontSize: 13 }}>Aucune rue trouvée</div>
   ) : (
     <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
       {rueFiltered.map(function(entry, i) {
@@ -182,12 +182,12 @@ return (
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25, delay: i * 0.04 }}
-            style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", background: i % 2 ? "rgba(255,255,255,0.03)" : "transparent", borderRadius: 8 }}
+            style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", background: i % 2 ? "rgba(76,87,96,0.05)" : "transparent", borderRadius: 8 }}
           >
             <div style={{ flex: 1, minWidth: 0 }}>
               <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 6 }}>
-                <span style={{ fontSize: 13, fontWeight: 600, color: "#f0f0f5", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{rue}</span>
-                {relTime && <span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", whiteSpace: "nowrap", flexShrink: 0 }}>{relTime}</span>}
+                <span style={{ fontSize: 13, fontWeight: 600, color: "var(--lo-ink)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{rue}</span>
+                {relTime && <span style={{ fontSize: 11, color: "var(--lo-faint)", whiteSpace: "nowrap", flexShrink: 0 }}>{relTime}</span>}
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
                 {coms.map(function(ce) {
@@ -202,7 +202,7 @@ return (
             </div>
             <div style={{ textAlign: "right", flexShrink: 0 }}>
               <div style={{ fontSize: 18, fontWeight: 800, color: cvColor }}>{info.count}</div>
-              <div style={{ fontSize: 10, color: "rgba(255,255,255,0.35)" }}>contrat{info.count > 1 ? "s" : ""}</div>
+              <div style={{ fontSize: 10, color: "var(--lo-faint)" }}>contrat{info.count > 1 ? "s" : ""}</div>
             </div>
           </motion.div>
         );
@@ -231,19 +231,19 @@ return (
 <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
 <Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); setCommuneSearch(""); setDormantFilter(0); }}>← Retour</Btn>
 <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800 }}>{sel}</h2>
-{isTalc ? <Badge color="#FF9F0A">TALC</Badge> : <Badge color={OP_COLORS.Free}>Stratygo</Badge>}
+{isTalc ? <Badge color="var(--lo-taupe)">TALC</Badge> : <Badge color={OP_COLORS.Free}>Stratygo</Badge>}
 {!isTalc && DEPT_ZONES[jData.dept] && DEPT_ZONES[jData.dept].b && <Badge color={OP_COLORS.Bouygues}>Bouygues</Badge>}
 <div style={{ marginLeft: "auto" }}><Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 140 }} /></div>
 </div>
 <div style={{ display: "flex", gap: 16, marginBottom: 20, flexWrap: "wrap" }}>
-<StatCard label="Communes" value={jData.communes.length} color="#0071E3" />
-<StatCard label="Prises" value={s.tp.toLocaleString("fr-FR")} color="#f0f0f5" />
-<StatCard label="Contrats" value={s.tc} color="#34C759" />
-<StatCard label="Taux" value={s.taux.toFixed(2) + "%"} color={s.taux > 0.5 ? "#34C759" : "#FF9F0A"} />
+<StatCard label="Communes" value={jData.communes.length} color="var(--lo-primary)" />
+<StatCard label="Prises" value={s.tp.toLocaleString("fr-FR")} color="var(--lo-ink)" />
+<StatCard label="Contrats" value={s.tc} color="var(--lo-accent)" />
+<StatCard label="Taux" value={s.taux.toFixed(2) + "%"} color={s.taux > 0.5 ? "var(--lo-accent)" : "var(--lo-taupe)"} />
 </div>
 <Card>
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-<h3 style={{ margin: 0, fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "#f0f0f5" }}>Communes</h3>
+<h3 style={{ margin: 0, fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "var(--lo-ink)" }}>Communes</h3>
 <div style={{ display: "flex", gap: 6 }}>
 <Btn s="sm" v={sortBy === "c" ? "primary" : "secondary"} onClick={function() { setSortBy("c"); }}>Contrats</Btn>
 <Btn s="sm" v={sortBy === "p" ? "primary" : "secondary"} onClick={function() { setSortBy("p"); }}>Prises</Btn>
@@ -251,22 +251,22 @@ return (
 </div>
 </div>
 <div style={{ display: "flex", gap: 6, marginBottom: 16, flexWrap: "wrap", alignItems: "center" }}>
-<span style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", marginRight: 4 }}>Pas de prospection depuis :</span>
+<span style={{ fontSize: 12, color: "var(--lo-muted)", marginRight: 4 }}>Pas de prospection depuis :</span>
 {[0,1,2,3,4,5,6].map(function(m) {
   var active = dormantFilter === m;
   return <Btn key={m} s="sm" v={active ? "primary" : "secondary"} onClick={function() { setDormantFilter(m); }}>{m === 0 ? "Tous" : m + " mois"}</Btn>;
 })}
 </div>
 <div style={{ position: "relative", marginBottom: 16 }}>
-  <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", fontSize: 14, color: "rgba(255,255,255,0.35)", pointerEvents: "none" }}>🔍</span>
+  <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", fontSize: 14, color: "var(--lo-faint)", pointerEvents: "none" }}>🔍</span>
   <input
     value={communeSearch}
     onChange={function(e) { setCommuneSearch(e.target.value); }}
     placeholder="Rechercher une commune..."
-    style={{ width: "100%", boxSizing: "border-box", paddingLeft: 36, paddingRight: 12, paddingTop: 10, paddingBottom: 10, fontSize: 14, border: "1.5px solid rgba(255,255,255,0.12)", borderRadius: 10, outline: "none", fontFamily: "inherit", background: "rgba(255,255,255,0.08)", color: "#f0f0f5" }}
+    style={{ width: "100%", boxSizing: "border-box", paddingLeft: 36, paddingRight: 12, paddingTop: 10, paddingBottom: 10, fontSize: 14, border: "1.5px solid rgba(76,87,96,0.14)", borderRadius: 10, outline: "none", fontFamily: "inherit", background: "rgba(76,87,96,0.10)", color: "var(--lo-ink)" }}
   />
   {communeSearch && (
-    <button onClick={function() { setCommuneSearch(""); }} style={{ position: "absolute", right: 10, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "rgba(255,255,255,0.35)", fontSize: 16, padding: 2 }}>×</button>
+    <button onClick={function() { setCommuneSearch(""); }} style={{ position: "absolute", right: 10, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "var(--lo-faint)", fontSize: 16, padding: 2 }}>×</button>
   )}
 </div>
 {(function() {
@@ -287,23 +287,23 @@ return (
 })().map(function(c, i) {
 var cc = month ? (isTalc ? getTalcC(c, jData.dept, month) : getC(c, jData.dept, month)) : getCTotal(c, jData.dept, isTalc);
 var t = c.p ? (cc / c.p * 100) : 0;
-var col = t > 0.8 ? "#34C759" : t > 0.3 ? "#FF9F0A" : cc === 0 ? "rgba(255,255,255,0.08)" : "#FF3B30";
+var col = t > 0.8 ? "var(--lo-accent)" : t > 0.3 ? "var(--lo-taupe)" : cc === 0 ? "rgba(76,87,96,0.10)" : "var(--lo-danger)";
 var lastMonthIdx = -1;
 for (var mi = MONTHS_ORDER.length - 1; mi >= 0; mi--) {
   var cnt = isTalc ? getTalcC(c, jData.dept, MONTHS_ORDER[mi]) : getC(c, jData.dept, MONTHS_ORDER[mi]);
   if (cnt > 0) { lastMonthIdx = mi; break; }
 }
 var lpText = "";
-var lpColor = "rgba(255,255,255,0.35)";
+var lpColor = "var(--lo-faint)";
 if (lastMonthIdx < 0) {
   lpText = "Jamais prospectée";
-  lpColor = "#FF3B30";
+  lpColor = "var(--lo-danger)";
 } else {
   var monthsAgo = MONTHS_ORDER.length - 1 - lastMonthIdx;
-  if (monthsAgo === 0) { lpText = "Prospecté ce mois"; lpColor = "#34C759"; }
+  if (monthsAgo === 0) { lpText = "Prospecté ce mois"; lpColor = "var(--lo-accent)"; }
   else {
     lpText = "Dernier contrat il y a " + monthsAgo + " mois";
-    lpColor = monthsAgo <= 1 ? "#34C759" : monthsAgo <= 3 ? "#FF9F0A" : "#FF3B30";
+    lpColor = monthsAgo <= 1 ? "var(--lo-accent)" : monthsAgo <= 3 ? "var(--lo-taupe)" : "var(--lo-danger)";
   }
 }
 return (
@@ -313,22 +313,22 @@ initial={{ opacity: 0, y: 10 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.25, delay: i * 0.04 }}
 onClick={function() { setCommuneView({ commune: c, dept: jData.dept, isTalc: isTalc }); setRueSearch(""); }}
-style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", background: i % 2 ? "rgba(255,255,255,0.03)" : "transparent", borderRadius: 8, cursor: "pointer" }}
+style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", background: i % 2 ? "rgba(76,87,96,0.05)" : "transparent", borderRadius: 8, cursor: "pointer" }}
 >
-<div style={{ width: 24, textAlign: "center", fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.35)" }}>{i + 1}</div>
+<div style={{ width: 24, textAlign: "center", fontSize: 12, fontWeight: 700, color: "var(--lo-faint)" }}>{i + 1}</div>
 <div style={{ flex: 1 }}>
 <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
 <span style={{ fontSize: 13, fontWeight: 600 }}>{c.v}</span>
-<Badge color={c.z === "H" ? "#FF3B30" : "#0071E3"}>{c.z === "H" ? "Haute" : "Std"}</Badge>
+<Badge color={c.z === "H" ? "var(--lo-danger)" : "var(--lo-primary)"}>{c.z === "H" ? "Haute" : "Std"}</Badge>
 </div>
 <div style={{ fontSize: 11, color: lpColor, marginTop: 2 }}>{lpText}</div>
-<div style={{ marginTop: 4, height: 5, borderRadius: 3, background: "rgba(255,255,255,0.10)", overflow: "hidden" }}>
+<div style={{ marginTop: 4, height: 5, borderRadius: 3, background: "rgba(76,87,96,0.10)", overflow: "hidden" }}>
 <div style={{ width: Math.min(t * 50, 100) + "%", height: "100%", borderRadius: 3, background: col }} />
 </div>
 </div>
 <div style={{ textAlign: "right", minWidth: 70 }}>
-<div style={{ fontSize: 14, fontWeight: 800, color: cc ? "#f0f0f5" : "rgba(255,255,255,0.20)" }}>{cc}</div>
-<div style={{ fontSize: 10, color: "rgba(255,255,255,0.35)" }}>{c.p.toLocaleString("fr-FR")} pr.</div>
+<div style={{ fontSize: 14, fontWeight: 800, color: cc ? "var(--lo-ink)" : "rgba(76,87,96,0.24)" }}>{cc}</div>
+<div style={{ fontSize: 10, color: "var(--lo-faint)" }}>{c.p.toLocaleString("fr-FR")} pr.</div>
 </div>
 <div style={{ minWidth: 45, textAlign: "right" }}>
 <span style={{ fontSize: 12, fontWeight: 700, color: col }}>{t.toFixed(2)}%</span>
@@ -346,15 +346,15 @@ return (
 <div>
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
 <div>
-<h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "#f0f0f5" }}>Secteurs</h2>
-<p style={{ margin: "4px 0 0", fontSize: 13, color: "rgba(255,255,255,0.55)" }}>{stats.length} secteurs Stratygo · {statsTalc.length} secteurs TALC</p>
+<h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "var(--lo-ink)" }}>Secteurs</h2>
+<p style={{ margin: "4px 0 0", fontSize: 13, color: "var(--lo-muted)" }}>{stats.length} secteurs Stratygo · {statsTalc.length} secteurs TALC</p>
 </div>
 <Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 150 }} />
 </div>
 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
 {stats.concat(statsTalc).sort(function(a, b) { return b.tc - a.tc; }).map(function(j, i) {
 var isTalcCard = j.source === "TALC";
-var col = j.taux > 0.5 ? "#34C759" : j.taux > 0.2 ? "#FF9F0A" : "#FF3B30";
+var col = j.taux > 0.5 ? "var(--lo-accent)" : j.taux > 0.2 ? "var(--lo-taupe)" : "var(--lo-danger)";
 return (
 <motion.div
 key={j.name}
@@ -362,18 +362,18 @@ initial={{ opacity: 0, y: 16 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.3, delay: i * 0.04 }}
 >
-<Card onClick={function() { setSel(j.name); setSelSource(j.source); }} style={{ cursor: "pointer", padding: 18, border: "1px solid " + (isTalcCard ? "rgba(255,159,10,0.25)" : "rgba(255,255,255,0.12)") }}>
+<Card onClick={function() { setSel(j.name); setSelSource(j.source); }} style={{ cursor: "pointer", padding: 18, border: "1px solid " + (isTalcCard ? "rgba(255,159,10,0.25)" : "rgba(76,87,96,0.14)") }}>
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
 <div>
-<div style={{ fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "#f0f0f5" }}>{j.name}</div>
-<div style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 2 }}>{j.communes.length} com. · {j.tp.toLocaleString("fr-FR")} prises</div>
+<div style={{ fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "var(--lo-ink)" }}>{j.name}</div>
+<div style={{ fontSize: 12, color: "var(--lo-faint)", marginTop: 2 }}>{j.communes.length} com. · {j.tp.toLocaleString("fr-FR")} prises</div>
 </div>
 <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
-{isTalcCard ? <Badge color="#FF9F0A">TALC</Badge> : <Badge color="#6E6E73">Stratygo</Badge>}
+{isTalcCard ? <Badge color="var(--lo-taupe)">TALC</Badge> : <Badge color="#6E6E73">Stratygo</Badge>}
 <Badge color={col}>{j.taux.toFixed(2)}%</Badge>
 </div>
 </div>
-<div style={{ height: 8, borderRadius: 4, background: "rgba(255,255,255,0.10)", overflow: "hidden", marginBottom: 8 }}>
+<div style={{ height: 8, borderRadius: 4, background: "rgba(76,87,96,0.10)", overflow: "hidden", marginBottom: 8 }}>
 <div style={{ width: Math.min(j.taux * 50, 100) + "%", height: "100%", borderRadius: 4, background: col }} />
 </div>
 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>

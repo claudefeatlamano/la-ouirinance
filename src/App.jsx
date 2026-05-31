@@ -30,7 +30,7 @@ var TABS = [
 ];
 
 export default function App() {
-var [tab, setTab] = useState("cloche");
+var [tab, setTab] = useState("dashboard");
 var [team, setTeam] = useState([]);
 var [cars, setCars] = useState([]);
 var [contracts, setContracts] = useState([]);
@@ -213,11 +213,11 @@ var saveGroups = function(g) { setGroups(g); store.set(STORAGE_KEYS.groups, g); 
 var saveProxadCreds = function(c) { setProxadCreds(c); store.set(STORAGE_KEYS.proxadCredentials, c); };
 
 if (loading) return (
-  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", background: "linear-gradient(-45deg, #0f0b1e, #1a1145, #0c2340)", fontFamily: "-apple-system, sans-serif" }}>
+  <div className="territory-shell" style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
     <motion.div
       animate={{ scale: [1, 1.1, 1] }}
       transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
-      <div style={{ width: 48, height: 48, borderRadius: 14, background: "linear-gradient(145deg, #0071E3, #34C759)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, fontWeight: 700, color: "#fff", boxShadow: "0 0 30px rgba(0,113,227,0.4)" }}>A</div>
+      <div style={{ width: 48, height: 48, borderRadius: 10, background: "#4C5760", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, fontWeight: 900, color: "#fffdf7", boxShadow: "0 18px 48px rgba(76,87,96,0.18)" }}>LO</div>
     </motion.div>
   </div>
 );
@@ -236,53 +236,56 @@ else if (tab === "carnet") tabContent = <CarnetTab />;
 
 return (
 
-<div style={{ fontFamily: "-apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, sans-serif", background: "linear-gradient(-45deg, #0f0b1e, #1a1145, #0c2340, #0f0b1e)", backgroundSize: "400% 400%", animation: "gradient-shift 15s ease infinite", minHeight: "100vh", color: "#f0f0f5" }}>
+<div className="territory-shell" style={{ fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
 
-  <header className="app-header" style={{ background: "rgba(15,11,30,0.7)", backdropFilter: "blur(40px) saturate(180%)", WebkitBackdropFilter: "blur(40px) saturate(180%)", borderBottom: "1px solid rgba(255,255,255,0.08)", padding: "0 32px", height: 52, display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 100 }}>
+  <header className="app-header" style={{ background: "rgba(255,253,247,0.78)", backdropFilter: "blur(24px) saturate(140%)", WebkitBackdropFilter: "blur(24px) saturate(140%)", borderBottom: "1px solid rgba(76,87,96,0.14)", padding: "0 32px", height: 58, display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 100 }}>
     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-      <div style={{ width: 28, height: 28, borderRadius: 8, background: "linear-gradient(145deg, #0071E3 0%, #34C759 100%)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: "#fff", letterSpacing: -0.5, boxShadow: "0 0 12px rgba(0,113,227,0.3)" }}>A</div>
-      <span className="header-brand-text" style={{ fontWeight: 600, fontSize: 15, color: "#f0f0f5", letterSpacing: -0.3 }}>Agence</span>
+      <div style={{ width: 32, height: 32, borderRadius: 9, background: "#4C5760", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 900, color: "#fffdf7", letterSpacing: 0, boxShadow: "0 10px 24px rgba(76,87,96,0.16)" }}>LO</div>
+      <div>
+        <span className="header-brand-text" style={{ display: "block", fontWeight: 800, fontSize: 14, color: "#2f363b", letterSpacing: 0 }}>La Ouirinance</span>
+        <span className="header-brand-text" style={{ display: "block", fontWeight: 700, fontSize: 10, color: "#8d887b", letterSpacing: 0, textTransform: "uppercase" }}>Territory desk</span>
+      </div>
     </div>
     <div className="header-right" style={{ display: "flex", gap: 6, alignItems: "center" }}>
       {scraperStatus !== null ? (
         <span title={"Derni\u00E8re sync : " + (lastSync ? new Date(lastSync).toLocaleTimeString("fr-FR") : "\u2014")}
-          style={{ fontSize: 11, fontWeight: 500, color: scraperStatus.ok ? "#34C759" : "#FF3B30",
-            background: scraperStatus.ok ? "rgba(52,199,89,0.15)" : "rgba(255,59,48,0.15)", borderRadius: 99, padding: "3px 10px",
-            display: "flex", alignItems: "center", gap: 4, cursor: "default", border: "1px solid " + (scraperStatus.ok ? "rgba(52,199,89,0.25)" : "rgba(255,59,48,0.25)") }}>
-          <span style={{ width: 6, height: 6, borderRadius: 99, background: scraperStatus.ok ? "#34C759" : "#FF3B30", display: "inline-block", boxShadow: "0 0 6px " + (scraperStatus.ok ? "rgba(52,199,89,0.5)" : "rgba(255,59,48,0.5)") }} />
+          style={{ fontSize: 11, fontWeight: 800, color: scraperStatus.ok ? "#4C5760" : "#66635B",
+            background: scraperStatus.ok ? "rgba(147,168,172,0.20)" : "rgba(102,99,91,0.14)", borderRadius: 99, padding: "4px 10px",
+            display: "flex", alignItems: "center", gap: 5, cursor: "default", border: "1px solid " + (scraperStatus.ok ? "rgba(147,168,172,0.36)" : "rgba(102,99,91,0.24)") }}>
+          <span style={{ width: 6, height: 6, borderRadius: 99, background: scraperStatus.ok ? "#93A8AC" : "#66635B", display: "inline-block" }} />
           {scraperStatus.syncing ? "Sync\u2026" : scraperStatus.ok ? "Live" : "Erreur"}
         </span>
       ) : (
         <span title="Serveur Flask non d\u00E9marr\u00E9 \u2014 voir README"
-          style={{ fontSize: 11, fontWeight: 500, color: "rgba(255,255,255,0.35)", background: "rgba(255,255,255,0.05)", borderRadius: 99, padding: "3px 10px",
-            display: "flex", alignItems: "center", gap: 4, cursor: "default", border: "1px solid rgba(255,255,255,0.08)" }}>
-          <span style={{ width: 6, height: 6, borderRadius: 99, background: "rgba(255,255,255,0.35)", display: "inline-block" }} />
+          style={{ fontSize: 11, fontWeight: 800, color: "#8d887b", background: "rgba(255,253,247,0.70)", borderRadius: 99, padding: "4px 10px",
+            display: "flex", alignItems: "center", gap: 5, cursor: "default", border: "1px solid rgba(76,87,96,0.12)" }}>
+          <span style={{ width: 6, height: 6, borderRadius: 99, background: "#A59E8C", display: "inline-block" }} />
           Offline
         </span>
       )}
-      <span className="header-stat" style={{ fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.55)", background: "rgba(255,255,255,0.05)", borderRadius: 99, padding: "3px 10px", border: "1px solid rgba(255,255,255,0.08)" }}>{team.filter(function(m) { return m.active; }).length} actifs</span>
-      <span className="header-stat" style={{ fontSize: 12, fontWeight: 500, color: "rgba(255,255,255,0.55)", background: "rgba(255,255,255,0.05)", borderRadius: 99, padding: "3px 10px", border: "1px solid rgba(255,255,255,0.08)" }}>{cars.length} voitures</span>
+      <span className="header-stat" style={{ fontSize: 12, fontWeight: 800, color: "#4C5760", background: "rgba(255,253,247,0.70)", borderRadius: 99, padding: "4px 10px", border: "1px solid rgba(76,87,96,0.12)" }}>{team.filter(function(m) { return m.active; }).length} actifs</span>
+      <span className="header-stat" style={{ fontSize: 12, fontWeight: 800, color: "#4C5760", background: "rgba(255,253,247,0.70)", borderRadius: 99, padding: "4px 10px", border: "1px solid rgba(76,87,96,0.12)" }}>{cars.length} voitures</span>
     </div>
   </header>
 
   <LayoutGroup>
-  <nav className="app-nav" style={{ display: "flex", gap: 0, padding: "0 24px", background: "rgba(15,11,30,0.5)", backdropFilter: "blur(40px)", WebkitBackdropFilter: "blur(40px)", borderBottom: "1px solid rgba(255,255,255,0.08)", overflowX: "auto", position: "relative" }}>
+  <nav className="app-nav" style={{ display: "flex", gap: 6, padding: "8px 24px", background: "rgba(255,253,247,0.52)", backdropFilter: "blur(18px)", WebkitBackdropFilter: "blur(18px)", borderBottom: "1px solid rgba(76,87,96,0.10)", overflowX: "auto", position: "sticky", top: 58, zIndex: 90 }}>
     {TABS.map(function(t) {
       var active = tab === t.id;
       return (
         <button key={t.id} onClick={function() { setTab(t.id); }} style={{
-          display: "flex", alignItems: "center", gap: 5, padding: "0 16px", height: 44,
-          border: "none", background: "none", cursor: "pointer", fontSize: 13,
-          fontWeight: active ? 600 : 400, color: active ? "#0071E3" : "rgba(255,255,255,0.45)",
-          borderBottom: "2px solid transparent",
+          display: "flex", alignItems: "center", gap: 5, padding: "0 14px", height: 34,
+          border: "1px solid " + (active ? "rgba(76,87,96,0.28)" : "transparent"), background: active ? "rgba(255,253,247,0.86)" : "transparent", cursor: "pointer", fontSize: 13,
+          fontWeight: active ? 800 : 700, color: active ? "#2f363b" : "#66635B",
+          borderRadius: 99,
           whiteSpace: "nowrap", transition: "color 0.15s",
-          letterSpacing: -0.1, position: "relative",
+          letterSpacing: 0, position: "relative",
         }}>
           {t.label}
           {active && (
             <motion.div
               layoutId="tab-indicator"
-              style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 2, background: "#0071E3", borderRadius: 1, boxShadow: "0 0 8px rgba(0,113,227,0.5)" }}
+              style={{ position: "absolute", bottom: 5, left: 12, right: 12, height: 2, background: "#93A8AC", borderRadius: 1 }}
               transition={{ type: "spring", stiffness: 400, damping: 30 }}
             />
           )}
@@ -292,7 +295,7 @@ return (
   </nav>
   </LayoutGroup>
 
-  <main className="app-main" style={{ padding: "28px 32px", maxWidth: 1100, margin: "0 auto" }}>
+  <main className="app-main" style={{ padding: "32px 32px 44px", maxWidth: 1160, margin: "0 auto" }}>
     <AnimatePresence mode="wait">
       <motion.div
         key={tab}

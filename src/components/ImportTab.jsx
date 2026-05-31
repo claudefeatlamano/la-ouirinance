@@ -62,26 +62,26 @@ setImp(false);
 return (
 
 <div style={{ maxWidth: 700 }}>
-<h2 style={{ margin: "0 0 8px", fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "#f0f0f5" }}>Import</h2>
-<p style={{ margin: "0 0 24px", fontSize: 13, color: "rgba(255,255,255,0.55)" }}>Glissez vos fichiers Excel ou CSV.</p>
+<h2 style={{ margin: "0 0 8px", fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "var(--lo-ink)" }}>Import</h2>
+<p style={{ margin: "0 0 24px", fontSize: 13, color: "var(--lo-muted)" }}>Glissez vos fichiers Excel ou CSV.</p>
 <motion.div
   whileHover={{ scale: 1.01 }}
   onDragOver={function(e) { e.preventDefault(); setDrag(true); }}
   onDragLeave={function() { setDrag(false); }}
   onDrop={function(e) { e.preventDefault(); setDrag(false); if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]); }}
-  style={{ border: "2px dashed " + (drag ? "#0071E3" : "rgba(255,255,255,0.20)"), borderRadius: 16, padding: 48, textAlign: "center", background: drag ? "rgba(0,113,227,0.08)" : "rgba(255,255,255,0.05)", cursor: "pointer", marginBottom: 24, backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", transition: "all 0.2s" }}
+  style={{ border: "2px dashed " + (drag ? "var(--lo-primary)" : "rgba(76,87,96,0.24)"), borderRadius: 16, padding: 48, textAlign: "center", background: drag ? "rgba(76,87,96,0.10)" : "rgba(76,87,96,0.07)", cursor: "pointer", marginBottom: 24, backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", transition: "all 0.2s" }}
   onClick={function() { document.getElementById("fi").click(); }}
 >
-<div style={{ fontSize: 36, marginBottom: 8, color: "rgba(255,255,255,0.35)" }}>+</div>
-<div style={{ fontSize: 14, fontWeight: 600, color: "#f0f0f5" }}>Glissez ici</div>
-<div style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 4 }}>.xlsx, .csv</div>
+<div style={{ fontSize: 36, marginBottom: 8, color: "var(--lo-faint)" }}>+</div>
+<div style={{ fontSize: 14, fontWeight: 600, color: "var(--lo-ink)" }}>Glissez ici</div>
+<div style={{ fontSize: 12, color: "var(--lo-faint)", marginTop: 4 }}>.xlsx, .csv</div>
 <input id="fi" type="file" accept=".xlsx,.xls,.csv" onChange={function(e) { if (e.target.files[0]) handleFile(e.target.files[0]); }} style={{ display: "none" }} />
 </motion.div>
 {logs.length > 0 && (
-<Card style={{ background: "rgba(0,0,0,0.30)", border: "1px solid rgba(255,255,255,0.08)" }}>
+<Card style={{ background: "rgba(0,0,0,0.30)", border: "1px solid rgba(76,87,96,0.10)" }}>
 <div style={{ fontFamily: "monospace", fontSize: 12, lineHeight: 1.8 }}>
 {logs.map(function(l, i) {
-return <motion.div key={i} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.05 }} style={{ color: l.t === "error" ? "#FF6B6B" : l.t === "success" ? "#34D399" : "rgba(255,255,255,0.45)" }}>[{l.time}] {l.m}</motion.div>;
+return <motion.div key={i} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.05 }} style={{ color: l.t === "error" ? "#FF6B6B" : l.t === "success" ? "#34D399" : "var(--lo-faint)" }}>[{l.time}] {l.m}</motion.div>;
 })}
 </div>
 </Card>

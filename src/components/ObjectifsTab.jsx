@@ -51,7 +51,7 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
   var nbAvecObj  = activeTeam.filter(function(m){ return (weekObjectives[m.name]||0)>0; }).length;
 
   var pct = totalObjectif > 0 ? Math.min(100, Math.round(totalRealise/totalObjectif*100)) : 0;
-  var pctColor = pct>=100?"#34C759":pct>=70?"#FF9F0A":"#FF3B30";
+  var pctColor = pct>=100?"var(--lo-accent)":pct>=70?"var(--lo-taupe)":"var(--lo-danger)";
 
   function startEdit() {
     var d = {}; activeTeam.forEach(function(m){ d[m.name]=weekObjectives[m.name]||0; });
@@ -69,8 +69,8 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
   var sortedTeam = activeTeam.slice().sort(function(a,b){ return (realise[b.name]||0)-(realise[a.name]||0); });
 
   var navBtnStyle = function(disabled) { return {
-    width:34, height:34, borderRadius:99, border:"1px solid rgba(255,255,255,0.08)",
-    background: disabled?"rgba(255,255,255,0.05)":"rgba(255,255,255,0.07)", color: disabled?"rgba(255,255,255,0.20)":"#f0f0f5",
+    width:34, height:34, borderRadius:99, border:"1px solid rgba(76,87,96,0.10)",
+    background: disabled?"rgba(76,87,96,0.07)":"rgba(255,253,247,0.78)", color: disabled?"rgba(76,87,96,0.24)":"var(--lo-ink)",
     fontSize:16, cursor: disabled?"default":"pointer", display:"flex", alignItems:"center", justifyContent:"center",
     fontFamily:"inherit", flexShrink:0
   }; };
@@ -79,15 +79,15 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
     <div>
       {/* ── Header ── */}
       <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:20, flexWrap:"wrap" }}>
-        <h2 style={{ margin:0, fontSize:22, fontWeight:800, letterSpacing:-0.6, color:"#f0f0f5" }}>Objectifs</h2>
+        <h2 style={{ margin:0, fontSize:22, fontWeight:800, letterSpacing:-0.6, color:"var(--lo-ink)" }}>Objectifs</h2>
 
         {/* Week navigator */}
         <div style={{ display:"flex", alignItems:"center", gap:8, flex:1, justifyContent:"center" }}>
           <button style={navBtnStyle(weekIdx >= allWeeks.length-1)} onClick={function(){ navWeek(1); }}>←</button>
           <div style={{ textAlign:"center", minWidth:160 }}>
-            <div style={{ fontSize:13, fontWeight:700, color:"#f0f0f5" }}>{getWeekLabel(selectedWeek)}</div>
-            {isCurrent && <div style={{ fontSize:10, fontWeight:600, color:"#0071E3", textTransform:"uppercase", letterSpacing:0.5, marginTop:1 }}>En cours</div>}
-            {isPast   && <div style={{ fontSize:10, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginTop:1 }}>Passée</div>}
+            <div style={{ fontSize:13, fontWeight:700, color:"var(--lo-ink)" }}>{getWeekLabel(selectedWeek)}</div>
+            {isCurrent && <div style={{ fontSize:10, fontWeight:600, color:"var(--lo-primary)", textTransform:"uppercase", letterSpacing:0.5, marginTop:1 }}>En cours</div>}
+            {isPast   && <div style={{ fontSize:10, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginTop:1 }}>Passée</div>}
           </div>
           <button style={navBtnStyle(weekIdx <= 0)} onClick={function(){ navWeek(-1); }}>→</button>
         </div>
@@ -108,19 +108,19 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
         <Card style={{ marginBottom:20, padding:20 }}>
           <div style={{ display:"flex", alignItems:"flex-start", gap:20, marginBottom:14 }}>
             <div style={{ flex:1 }}>
-              <div style={{ fontSize:11, fontWeight:600, color:"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:6 }}>Équipe — objectif semaine</div>
+              <div style={{ fontSize:11, fontWeight:600, color:"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.5, marginBottom:6 }}>Équipe — objectif semaine</div>
               <div style={{ fontSize:38, fontWeight:800, letterSpacing:-1.5, color:pctColor, lineHeight:1 }}>{pct}%</div>
-              <div style={{ fontSize:13, color:"rgba(255,255,255,0.55)", marginTop:4 }}>{totalRealise} réalisés sur {totalObjectif} attendus</div>
+              <div style={{ fontSize:13, color:"var(--lo-muted)", marginTop:4 }}>{totalRealise} réalisés sur {totalObjectif} attendus</div>
             </div>
             <div style={{ display:"flex", flexDirection:"column", gap:8, alignItems:"flex-end" }}>
-              <div style={{ textAlign:"center", background: nbAtteints>0?"rgba(52,199,89,0.15)":"rgba(255,255,255,0.05)", borderRadius:12, padding:"8px 14px" }}>
-                <div style={{ fontSize:22, fontWeight:800, color: nbAtteints>0?"#34C759":"rgba(255,255,255,0.35)" }}>{nbAtteints}</div>
-                <div style={{ fontSize:10, fontWeight:600, color: nbAtteints>0?"#34C759":"rgba(255,255,255,0.35)", textTransform:"uppercase", letterSpacing:0.4 }}>Atteints</div>
+              <div style={{ textAlign:"center", background: nbAtteints>0?"rgba(147,168,172,0.22)":"rgba(76,87,96,0.07)", borderRadius:12, padding:"8px 14px" }}>
+                <div style={{ fontSize:22, fontWeight:800, color: nbAtteints>0?"var(--lo-accent)":"var(--lo-faint)" }}>{nbAtteints}</div>
+                <div style={{ fontSize:10, fontWeight:600, color: nbAtteints>0?"var(--lo-accent)":"var(--lo-faint)", textTransform:"uppercase", letterSpacing:0.4 }}>Atteints</div>
               </div>
-              <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>sur {nbAvecObj} objectifs</div>
+              <div style={{ fontSize:11, color:"var(--lo-faint)" }}>sur {nbAvecObj} objectifs</div>
             </div>
           </div>
-          <div style={{ background:"rgba(255,255,255,0.10)", borderRadius:999, height:8, overflow:"hidden" }}>
+          <div style={{ background:"rgba(76,87,96,0.10)", borderRadius:999, height:8, overflow:"hidden" }}>
             <motion.div initial={{ width:0 }} animate={{ width:pct+"%" }} transition={{ duration:0.6, ease:"easeOut" }} style={{ background:pctColor, height:"100%", borderRadius:999 }} />
           </div>
         </Card>
@@ -128,17 +128,17 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
 
       {/* ── Cards commerciaux ── */}
       {sortedTeam.length === 0 ? (
-        <Card><div style={{ textAlign:"center", padding:40, color:"rgba(255,255,255,0.35)" }}>Aucun commercial actif</div></Card>
+        <Card><div style={{ textAlign:"center", padding:40, color:"var(--lo-faint)" }}>Aucun commercial actif</div></Card>
       ) : (
         <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(200px, 1fr))", gap:12 }}>
           {sortedTeam.map(function(m, index) {
             var obj  = editMode ? (draft[m.name]||0) : (weekObjectives[m.name]||0);
             var done = realise[m.name]||0;
             var p    = obj>0 ? Math.min(100, Math.round(done/obj*100)) : 0;
-            var col  = obj===0?"rgba(255,255,255,0.35)":p>=100?"#34C759":p>=70?"#FF9F0A":"#FF3B30";
+            var col  = obj===0?"var(--lo-faint)":p>=100?"var(--lo-accent)":p>=70?"var(--lo-taupe)":"var(--lo-danger)";
             var atteint = obj>0 && done>=obj;
             var initials = m.name.split(" ").map(function(w){ return w[0]; }).slice(0,2).join("").toUpperCase();
-            var mCol = ROLE_COLORS[m.role] || "rgba(255,255,255,0.35)";
+            var mCol = ROLE_COLORS[m.role] || "var(--lo-faint)";
 
             return (
               <motion.div key={m.id} initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} transition={{ delay:index*0.04 }}>
@@ -149,25 +149,25 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
                       <span style={{ fontSize:12, fontWeight:800, color:mCol }}>{initials}</span>
                     </div>
                     <div style={{ minWidth:0 }}>
-                      <div style={{ fontSize:13, fontWeight:700, color:"#f0f0f5", whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{m.name.split(" ")[0]}</div>
-                      <div style={{ fontSize:11, color:"rgba(255,255,255,0.35)" }}>{m.role}</div>
+                      <div style={{ fontSize:13, fontWeight:700, color:"var(--lo-ink)", whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{m.name.split(" ")[0]}</div>
+                      <div style={{ fontSize:11, color:"var(--lo-faint)" }}>{m.role}</div>
                     </div>
                   </div>
 
                   {/* Réalisé / Objectif */}
                   <div style={{ display:"flex", alignItems:"baseline", justifyContent:"space-between" }}>
-                    <div style={{ fontSize:28, fontWeight:800, letterSpacing:-1, color: done>0?col:"rgba(255,255,255,0.20)" }}>{done}</div>
+                    <div style={{ fontSize:28, fontWeight:800, letterSpacing:-1, color: done>0?col:"rgba(76,87,96,0.24)" }}>{done}</div>
                     <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-                      <span style={{ fontSize:13, color:"rgba(255,255,255,0.35)" }}>/ </span>
+                      <span style={{ fontSize:13, color:"var(--lo-faint)" }}>/ </span>
                       {editMode ? (
                         <input
                           type="number" min="0" value={draft[m.name]||0}
                           onChange={function(e){ var v=parseInt(e.target.value)||0; setDraft(function(prev){ return Object.assign({},prev,{[m.name]:v}); }); }}
                           onClick={function(e){ e.target.select(); }}
-                          style={{ width:52, border:"1.5px solid #0071E3", borderRadius:8, padding:"3px 6px", textAlign:"center", fontWeight:700, fontSize:15, fontFamily:"inherit", color:"#f0f0f5", background:"rgba(255,255,255,0.08)" }}
+                          style={{ width:52, border:"1.5px solid var(--lo-primary)", borderRadius:8, padding:"3px 6px", textAlign:"center", fontWeight:700, fontSize:15, fontFamily:"inherit", color:"var(--lo-ink)", background:"rgba(76,87,96,0.10)" }}
                         />
                       ) : (
-                        <span style={{ fontSize:15, fontWeight:700, color: obj===0?"rgba(255,255,255,0.20)":"#f0f0f5" }}>{obj===0?"—":obj}</span>
+                        <span style={{ fontSize:15, fontWeight:700, color: obj===0?"rgba(76,87,96,0.24)":"var(--lo-ink)" }}>{obj===0?"—":obj}</span>
                       )}
                     </div>
                   </div>
@@ -175,26 +175,26 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
                   {/* Barre + % */}
                   {obj>0 ? (
                     <div>
-                      <div style={{ background:"rgba(255,255,255,0.10)", borderRadius:999, height:5, overflow:"hidden", marginBottom:4 }}>
+                      <div style={{ background:"rgba(76,87,96,0.10)", borderRadius:999, height:5, overflow:"hidden", marginBottom:4 }}>
                         <motion.div initial={{ width:0 }} animate={{ width:p+"%" }} transition={{ duration:0.6, ease:"easeOut" }} style={{ background:col, height:"100%", borderRadius:999 }} />
                       </div>
                       <div style={{ fontSize:11, fontWeight:700, color:col }}>{p}%</div>
                     </div>
                   ) : (
-                    <div style={{ height:5, background:"rgba(255,255,255,0.10)", borderRadius:999 }} />
+                    <div style={{ height:5, background:"rgba(76,87,96,0.10)", borderRadius:999 }} />
                   )}
 
                   {/* Badge statut */}
                   {!editMode && (
                     <div>
                       {obj===0 ? (
-                        <span style={{ fontSize:11, color:"rgba(255,255,255,0.20)" }}>Pas d'objectif</span>
+                        <span style={{ fontSize:11, color:"rgba(76,87,96,0.24)" }}>Pas d'objectif</span>
                       ) : atteint ? (
-                        <span style={{ background:"rgba(52,199,89,0.15)", color:"#34C759", borderRadius:99, padding:"3px 10px", fontSize:11, fontWeight:700 }}>✓ Atteint</span>
+                        <span style={{ background:"rgba(147,168,172,0.22)", color:"var(--lo-accent)", borderRadius:99, padding:"3px 10px", fontSize:11, fontWeight:700 }}>✓ Atteint</span>
                       ) : isPast ? (
-                        <span style={{ background:"rgba(255,59,48,0.15)", color:"#FF3B30", borderRadius:99, padding:"3px 10px", fontSize:11, fontWeight:700 }}>✗ Non atteint</span>
+                        <span style={{ background:"rgba(102,99,91,0.16)", color:"var(--lo-danger)", borderRadius:99, padding:"3px 10px", fontSize:11, fontWeight:700 }}>✗ Non atteint</span>
                       ) : (
-                        <span style={{ background:"rgba(255,255,255,0.08)", color:"rgba(255,255,255,0.55)", borderRadius:99, padding:"3px 10px", fontSize:11, fontWeight:700 }}>En cours</span>
+                        <span style={{ background:"rgba(76,87,96,0.10)", color:"var(--lo-muted)", borderRadius:99, padding:"3px 10px", fontSize:11, fontWeight:700 }}>En cours</span>
                       )}
                     </div>
                   )}
@@ -207,7 +207,7 @@ function ObjectifsTab({ team, contracts, objectives, saveObjectives }) {
 
       {/* Empty state */}
       {totalObjectif===0 && !editMode && (
-        <div style={{ textAlign:"center", color:"rgba(255,255,255,0.35)", marginTop:28, fontSize:13 }}>
+        <div style={{ textAlign:"center", color:"var(--lo-faint)", marginTop:28, fontSize:13 }}>
           Aucun objectif fixé pour cette semaine.
           <div style={{ marginTop:8 }}><Btn onClick={startEdit} v="primary" s="sm">Fixer les objectifs</Btn></div>
         </div>
