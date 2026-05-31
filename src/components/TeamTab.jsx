@@ -8,7 +8,7 @@ import { JACHERE, JACHERE_TALC } from "../constants/jachere.js";
 function TeamTab({ team, saveTeam, contracts, saveContracts, groups, saveGroups }) {
 var [mo, setMo] = useState(false);
 var [em, setEm] = useState(null);
-var [f, setF] = useState({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false, vstCodes: [], lentCodes: [] });
+var [f, setF] = useState({ name: "", role: "Debutant", whatsappNumber: "", operators: ["Free"], permis: false, voiture: false, vstCodes: [], lentCodes: [] });
 var [fl, setFl] = useState("");
 var [vue, setVue] = useState("liste");
 var [picker, setPicker] = useState(null);
@@ -18,8 +18,8 @@ var [fVstInput, setFVstInput] = useState("");
 var [fLentCode, setFLentCode] = useState("");
 var [fLentBorrower, setFLentBorrower] = useState("");
 
-function openAdd() { setEm(null); setF({ name: "", role: "Debutant", operators: ["Free"], permis: false, voiture: false, vstCodes: [], lentCodes: [] }); setFVstInput(""); setFLentCode(""); setFLentBorrower(""); setMo(true); }
-function openEdit(m) { setEm(m); setF({ name: m.name, role: m.role, operators: Array.isArray(m.operators) ? m.operators : [m.operator || "Free"], permis: m.permis, voiture: m.voiture, vstCodes: m.vstCodes ? m.vstCodes.slice() : [], lentCodes: m.lentCodes ? m.lentCodes.slice() : [] }); setFVstInput(""); setFLentCode(""); setFLentBorrower(""); setMo(true); }
+function openAdd() { setEm(null); setF({ name: "", role: "Debutant", whatsappNumber: "", operators: ["Free"], permis: false, voiture: false, vstCodes: [], lentCodes: [] }); setFVstInput(""); setFLentCode(""); setFLentBorrower(""); setMo(true); }
+function openEdit(m) { setEm(m); setF({ name: m.name, role: m.role, whatsappNumber: m.whatsappNumber || "", operators: Array.isArray(m.operators) ? m.operators : [m.operator || "Free"], permis: m.permis, voiture: m.voiture, vstCodes: m.vstCodes ? m.vstCodes.slice() : [], lentCodes: m.lentCodes ? m.lentCodes.slice() : [] }); setFVstInput(""); setFLentCode(""); setFLentBorrower(""); setMo(true); }
 function save() {
 if (!f.name.trim()) return;
 if (em) { saveTeam(team.map(function(m) { return m.id === em.id ? Object.assign({}, m, f) : m; })); }
@@ -445,6 +445,7 @@ return (
 <Modal open={mo} onClose={function() { setMo(false); }} title={em ? "Modifier" : "Ajouter"}>
 <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
 <div><label style={{ fontSize: 12, fontWeight: 600, color: "var(--lo-muted)", display: "block", marginBottom: 4 }}>Nom</label><Inp value={f.name} onChange={function(v) { setF(Object.assign({}, f, { name: v })); }} placeholder="Nom" /></div>
+<div><label style={{ fontSize: 12, fontWeight: 600, color: "var(--lo-muted)", display: "block", marginBottom: 4 }}>Numéro WhatsApp</label><Inp value={f.whatsappNumber} onChange={function(v) { setF(Object.assign({}, f, { whatsappNumber: v })); }} placeholder="33612345678 (format international, sans +)" /></div>
 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
 <div><label style={{ fontSize: 12, fontWeight: 600, color: "var(--lo-muted)", display: "block", marginBottom: 4 }}>Role</label><Sel value={f.role} onChange={function(v) { setF(Object.assign({}, f, { role: v })); }} options={ROLES} style={{ width: "100%" }} /></div>
 <div><label style={{ fontSize: 12, fontWeight: 600, color: "var(--lo-muted)", display: "block", marginBottom: 4 }}>Opérateurs</label><div style={{ display: "flex", gap: 12, marginTop: 4 }}>{OPERATORS.map(function(op) { var checked = (f.operators || []).indexOf(op) >= 0; return <label key={op} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13, cursor: "pointer" }}><input type="checkbox" checked={checked} onChange={function(e) { var ops = (f.operators || []).filter(function(x) { return x !== op; }); if (e.target.checked) ops = ops.concat(op); setF(Object.assign({}, f, { operators: ops })); }} /><Badge color={OP_COLORS[op]}>{op}</Badge></label>; })}</div></div>
