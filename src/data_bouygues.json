@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-01T04:23:56.142634+00:00",
+  "scraped_at": "2026-06-01T10:22:29.420002+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10487,7 +10487,7 @@
       "cp": "44240",
       "ville": "LA CHAPELLE-SUR-ERDRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0901619",
@@ -12071,7 +12071,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0899538",
@@ -13331,7 +13331,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0901482",
@@ -14172,6 +14172,18 @@
       "ville": "LES SABLES D OLONNE",
       "produit": "Bbox Ultym Gaming WI-FI 7 (FTTH) : Internet - TV - Téléphonie 60.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0908105",
+      "type": "Acquisition",
+      "date_inscription": "01/06/2026 12:16",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "BATY",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
