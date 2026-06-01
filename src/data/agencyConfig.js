@@ -15,6 +15,8 @@ var AGENCY_CONFIG = {
     groups: "agency-groups-v1",
     jacheres: "agency-jacheres-v1",
     proxadCredentials: "agency-proxad-creds-v1",
+    botFeedback: "bot-feedback-v1",
+    calibrated: "bot-calibrated-v1",
   },
 };
 
