@@ -3,7 +3,7 @@ import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import { db, store, AGENCY_CONFIG, STORAGE_KEYS, doc, getDoc, onSnapshot } from "./data/store.js";
 import { DEMO_TEAM } from "./data/team.js";
 import { DEMO_CARS } from "./data/team.js";
-import { DEMO_CONTRACTS } from "./data/contracts.js";
+import { DEMO_CONTRACTS, carnetToContracts, bouyguesCarnetToContracts } from "./data/contracts.js";
 import { DashboardTab } from "./components/DashboardTab.jsx";
 import { TeamTab } from "./components/TeamTab.jsx";
 import { CarsTab } from "./components/CarsTab.jsx";
@@ -39,12 +39,45 @@ var [objectives, setObjectives] = useState({});
 var [dailyPlan, setDailyPlan] = useState(null);
 var [loading, setLoading] = useState(true);
 var [scraperStatus, setScraperStatus] = useState(null);
+var [scrapeAction, setScrapeAction] = useState("idle");
 var [lastSync, setLastSync] = useState(null);
 var [groups, setGroups] = useState([]);
 var [proxadCreds, setProxadCreds] = useState(null);
 var [customSectors, setCustomSectors] = useState({ stratygo: {}, talc: {} });
 var skipNextContractSnap = React.useRef(false);
 var navRefs = React.useRef({});
+var scrapePollRef = React.useRef(null);
+var baseContractsRef = React.useRef(DEMO_CONTRACTS);
+
+function mergeContractsWithOverrides(baseContracts, savedResolutions) {
+  var overrides = savedResolutions || {};
+  var baseIds = new Set(baseContracts.map(function(c) { return c.id; }));
+  var merged = baseContracts.map(function(c) {
+    var saved = overrides[c.id];
+    if (!saved) return c;
+    var useCommercial = c.id.indexOf('byg-') === 0 ? c.commercial : (saved.commercial || c.commercial);
+    return Object.assign({}, c, { commercial: useCommercial, vtaResolved: saved.vtaResolved !== undefined ? saved.vtaResolved : c.vtaResolved });
+  });
+  Object.keys(overrides).forEach(function(id) {
+    if (!baseIds.has(id) && overrides[id].date && id.indexOf('byg-') !== 0) {
+      merged.push(Object.assign({ id: id }, overrides[id]));
+    }
+  });
+  return merged;
+}
+
+async function loadFreshBaseContracts() {
+  var freeUrl = AGENCY_CONFIG.feeds && AGENCY_CONFIG.feeds.freeContracts;
+  var bouyguesUrl = AGENCY_CONFIG.feeds && AGENCY_CONFIG.feeds.bouyguesContracts;
+  if (!freeUrl || !bouyguesUrl) return null;
+  var opts = { cache: "no-store", signal: AbortSignal.timeout(8000) };
+  var responses = await Promise.all([fetch(freeUrl, opts), fetch(bouyguesUrl, opts)]);
+  if (!responses[0].ok || !responses[1].ok) throw new Error("fresh_contracts_unavailable");
+  var data = await Promise.all(responses.map(function(r) { return r.json(); }));
+  var freeRows = data[0].rows || data[0] || [];
+  var bouyguesRows = data[1].rows || [];
+  return carnetToContracts(freeRows, data[0].scraped_at || null).concat(bouyguesCarnetToContracts(bouyguesRows));
+}
 
 useEffect(function() {
 var unsubPlan, unsubObj, unsubContracts;
@@ -95,35 +128,16 @@ setCars(carsData || DEMO_CARS);
 var savedResolutions = await store.get(STORAGE_KEYS.contracts);
 if (!savedResolutions) { try { var lsCo = localStorage.getItem(STORAGE_KEYS.contracts); if (lsCo) { savedResolutions = JSON.parse(lsCo); await store.set(STORAGE_KEYS.contracts, savedResolutions); } } catch(e) {} }
 savedResolutions = savedResolutions || {};
-var demoIds = new Set(DEMO_CONTRACTS.map(function(c) { return c.id; }));
-var mergedContracts = DEMO_CONTRACTS.map(function(c) {
-  var saved = savedResolutions[c.id];
-  if (!saved) return c;
-  var useCommercial = c.id.indexOf('byg-') === 0 ? c.commercial : (saved.commercial || c.commercial);
-  return Object.assign({}, c, { commercial: useCommercial, vtaResolved: saved.vtaResolved !== undefined ? saved.vtaResolved : c.vtaResolved });
-});
-Object.keys(savedResolutions).forEach(function(id) {
-  if (!demoIds.has(id) && savedResolutions[id].date && id.indexOf('byg-') !== 0) {
-    mergedContracts.push(Object.assign({ id: id }, savedResolutions[id]));
-  }
-});
-setContracts(mergedContracts);
+setContracts(mergeContractsWithOverrides(baseContractsRef.current, savedResolutions));
+loadFreshBaseContracts().then(function(freshBaseContracts) {
+  if (!freshBaseContracts || freshBaseContracts.length === 0) return;
+  baseContractsRef.current = freshBaseContracts;
+  setContracts(mergeContractsWithOverrides(freshBaseContracts, savedResolutions));
+}).catch(function() {});
 unsubContracts = onSnapshot(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KEYS.contracts), function(snap) {
   if (skipNextContractSnap.current) { skipNextContractSnap.current = false; return; }
   var overrides = snap.exists() ? (snap.data().data || {}) : {};
-  var dIds = new Set(DEMO_CONTRACTS.map(function(c) { return c.id; }));
-  var merged = DEMO_CONTRACTS.map(function(c) {
-    var saved = overrides[c.id];
-    if (!saved) return c;
-    var useCommercial = c.id.indexOf('byg-') === 0 ? c.commercial : (saved.commercial || c.commercial);
-    return Object.assign({}, c, { commercial: useCommercial, vtaResolved: saved.vtaResolved !== undefined ? saved.vtaResolved : c.vtaResolved });
-  });
-  Object.keys(overrides).forEach(function(id) {
-    if (!dIds.has(id) && overrides[id].date && id.indexOf('byg-') !== 0) {
-      merged.push(Object.assign({ id: id }, overrides[id]));
-    }
-  });
-  setContracts(merged);
+  setContracts(mergeContractsWithOverrides(baseContractsRef.current, overrides));
 });
 var loadedTeam = await store.get(STORAGE_KEYS.team) || DEMO_TEAM;
 var loadedGroups = await store.get(STORAGE_KEYS.groups);
@@ -163,17 +177,17 @@ useEffect(function() {
 
       if (data.contracts && data.contracts.length > 0) {
         setContracts(function(prev) {
-          var existingIds = new Set(prev.map(function(c) { return c.id; }));
-          var added = data.contracts.filter(function(c) { return !existingIds.has(c.id); });
-          if (added.length === 0) return prev;
-          console.log("[Flask] " + added.length + " nouveaux contrats re\u00E7us.");
-          var merged = prev.concat(added);
-          store.get(STORAGE_KEYS.contracts).then(function(existing) {
-            var overrides = existing || {};
-            merged.forEach(function(contract) {
-              var orig = DEMO_CONTRACTS.find(function(d) { return d.id === contract.id; });
-              if (!orig) overrides[contract.id] = { commercial: contract.commercial, vtaResolved: contract.vtaResolved, date: contract.date, heure: contract.heure, ville: contract.ville, rue: contract.rue, status: contract.status };
-            });
+      var existingIds = new Set(prev.map(function(c) { return c.id; }));
+      var added = data.contracts.filter(function(c) { return !existingIds.has(c.id); });
+      if (added.length === 0) return prev;
+      console.log("[Flask] " + added.length + " nouveaux contrats re\u00E7us.");
+      var merged = prev.concat(added);
+      store.get(STORAGE_KEYS.contracts).then(function(existing) {
+        var overrides = existing || {};
+        merged.forEach(function(contract) {
+          var orig = baseContractsRef.current.find(function(d) { return d.id === contract.id; });
+          if (!orig) overrides[contract.id] = { commercial: contract.commercial, vtaResolved: contract.vtaResolved, date: contract.date, heure: contract.heure, ville: contract.ville, rue: contract.rue, status: contract.status };
+        });
             store.set(STORAGE_KEYS.contracts, overrides);
           });
           return merged;
@@ -187,6 +201,12 @@ useEffect(function() {
   pollFlask();
   var interval = setInterval(pollFlask, 60000);
   return function() { clearInterval(interval); };
+}, []);
+
+useEffect(function() {
+  return function() {
+    if (scrapePollRef.current) clearInterval(scrapePollRef.current);
+  };
 }, []);
 
 useEffect(function() {
@@ -204,7 +224,7 @@ var saveContracts = function(c) {
   store.get(STORAGE_KEYS.contracts).then(function(existing) {
     var overrides = existing || {};
     c.forEach(function(contract) {
-      var orig = DEMO_CONTRACTS.find(function(d) { return d.id === contract.id; });
+      var orig = baseContractsRef.current.find(function(d) { return d.id === contract.id; });
       if (!orig || contract.commercial !== orig.commercial || contract.vtaResolved !== orig.vtaResolved) {
         var entry = { commercial: contract.commercial };
         if (contract.vtaResolved !== undefined) entry.vtaResolved = contract.vtaResolved;
@@ -225,6 +245,47 @@ var saveObjectives = function(o) { setObjectives(o); store.set(STORAGE_KEYS.obje
 var saveGroups = function(g) { setGroups(g); store.set(STORAGE_KEYS.groups, g); };
 var saveProxadCreds = function(c) { setProxadCreds(c); store.set(STORAGE_KEYS.proxadCredentials, c); };
 var saveCustomSectors = function(s) { var normalized = normalizeCustomSectors(s); setCustomSectors(normalized); store.set(STORAGE_KEYS.jacheres, normalized); };
+var pollScrapeStatus = async function(startedAt) {
+  try {
+    var response = await fetch("/api/scrape-status?since=" + encodeURIComponent(startedAt));
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    var data = await response.json();
+    var run = data.run;
+    if (!run) {
+      setScrapeAction("queued");
+      return;
+    }
+    if (run.status === "completed") {
+      setScrapeAction(run.conclusion === "success" ? "done" : "failed");
+      if (scrapePollRef.current) clearInterval(scrapePollRef.current);
+      scrapePollRef.current = null;
+      setTimeout(function() { setScrapeAction("idle"); }, 12000);
+      return;
+    }
+    setScrapeAction(run.status === "queued" ? "queued" : "running");
+  } catch(e) {
+    setScrapeAction("error");
+    if (scrapePollRef.current) clearInterval(scrapePollRef.current);
+    scrapePollRef.current = null;
+    setTimeout(function() { setScrapeAction("idle"); }, 7000);
+  }
+};
+var triggerScrape = async function() {
+  if (scrapeAction === "loading" || scrapeAction === "queued" || scrapeAction === "running") return;
+  var startedAt = new Date().toISOString();
+  setScrapeAction("loading");
+  try {
+    var response = await fetch("/api/scrape", { method: "POST" });
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    setScrapeAction("queued");
+    if (scrapePollRef.current) clearInterval(scrapePollRef.current);
+    await pollScrapeStatus(startedAt);
+    scrapePollRef.current = setInterval(function() { pollScrapeStatus(startedAt); }, 8000);
+  } catch(e) {
+    setScrapeAction("error");
+    setTimeout(function() { setScrapeAction("idle"); }, 7000);
+  }
+};
 
 if (loading) return (
   <div className="territory-shell" style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
@@ -261,6 +322,14 @@ return (
       </div>
     </div>
     <div className="header-right" style={{ display: "flex", gap: 6, alignItems: "center" }}>
+      <button
+        onClick={triggerScrape}
+        disabled={scrapeAction === "loading" || scrapeAction === "queued" || scrapeAction === "running"}
+        title={scrapeAction === "done" ? "Scraping termin\u00E9" : scrapeAction === "failed" ? "Scraping termin\u00E9 en erreur" : scrapeAction === "error" ? "Impossible de suivre la mise \u00E0 jour" : "Lancer une mise \u00E0 jour des contrats"}
+        style={{ height: 28, borderRadius: 99, padding: "0 12px", border: "1px solid " + (scrapeAction === "error" || scrapeAction === "failed" ? "rgba(102,99,91,0.26)" : "rgba(76,87,96,0.18)"), background: scrapeAction === "loading" || scrapeAction === "queued" || scrapeAction === "running" ? "rgba(147,168,172,0.22)" : scrapeAction === "done" ? "rgba(147,168,172,0.24)" : scrapeAction === "error" || scrapeAction === "failed" ? "rgba(102,99,91,0.14)" : "rgba(255,253,247,0.78)", color: scrapeAction === "error" || scrapeAction === "failed" ? "var(--lo-danger)" : "#4C5760", fontSize: 11, fontWeight: 900, fontFamily: "inherit", cursor: scrapeAction === "loading" || scrapeAction === "queued" || scrapeAction === "running" ? "default" : "pointer", display: "inline-flex", alignItems: "center", gap: 6, whiteSpace: "nowrap", opacity: scrapeAction === "loading" || scrapeAction === "queued" || scrapeAction === "running" ? 0.85 : 1 }}>
+        <span style={{ width: 6, height: 6, borderRadius: 99, background: scrapeAction === "error" || scrapeAction === "failed" ? "var(--lo-danger)" : scrapeAction === "done" ? "#93A8AC" : "#4C5760", display: "inline-block" }} />
+        {scrapeAction === "loading" ? "Mise \u00E0 jour\u2026" : scrapeAction === "queued" ? "En file" : scrapeAction === "running" ? "En cours" : scrapeAction === "done" ? "Termin\u00E9e" : scrapeAction === "failed" ? "\u00C9chec" : scrapeAction === "error" ? "Erreur" : "Mise \u00E0 jour"}
+      </button>
       {scraperStatus !== null ? (
         <span title={"Derni\u00E8re sync : " + (lastSync ? new Date(lastSync).toLocaleTimeString("fr-FR") : "\u2014")}
           style={{ fontSize: 11, fontWeight: 800, color: scraperStatus.ok ? "#4C5760" : "#66635B",

@@ -2,6 +2,10 @@ var AGENCY_CONFIG = {
   agencyId: "la-ouirinance",
   agencyName: "La Ouirinance",
   firestoreCollection: "agency",
+  feeds: {
+    freeContracts: "https://raw.githubusercontent.com/claudefeatlamano/la-ouirinance/main/src/data.json",
+    bouyguesContracts: "https://raw.githubusercontent.com/claudefeatlamano/la-ouirinance/main/src/data_bouygues.json",
+  },
   keys: {
     team: "agency-team-v4",
     cars: "agency-cars-v4",
