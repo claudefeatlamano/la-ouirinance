@@ -18,6 +18,7 @@ var AGENCY_CONFIG = {
     botFeedback: "bot-feedback-v1",
     calibrated: "bot-calibrated-v1",
     profiles: "bot-commercial-profiles-v1",
+    onboardingSubmissions: "onboarding-submissions-v1",
   },
 };
 
