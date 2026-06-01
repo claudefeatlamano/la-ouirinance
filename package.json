@@ -19,6 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:secteurs": "vite build --config vite.secteurs.config.js",
     "preview": "vite preview",
     "test:agency-config": "node tests/agency-config.test.mjs"
   }
