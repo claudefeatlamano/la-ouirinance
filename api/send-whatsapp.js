@@ -17,7 +17,9 @@ export default async function handler(req, res) {
     return;
   }
   try {
-    var url = base.replace(/\/+$/, "") + "/v1/push";
+    var origin = base.replace(/\/+$/, "");
+    if (!/^https?:\/\//i.test(origin)) origin = "https://" + origin; // tolère un BOT_BASE_URL sans schéma
+    var url = origin + "/v1/push";
     var r = await fetch(url, {
       method: "POST",
       headers: { "content-type": "application/json", "x-push-token": token },
