@@ -70,13 +70,20 @@ async function loadFreshBaseContracts() {
   var freeUrl = AGENCY_CONFIG.feeds && AGENCY_CONFIG.feeds.freeContracts;
   var bouyguesUrl = AGENCY_CONFIG.feeds && AGENCY_CONFIG.feeds.bouyguesContracts;
   if (!freeUrl || !bouyguesUrl) return null;
+  function bust(url) {
+    return url + (url.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now();
+  }
   var opts = { cache: "no-store", signal: AbortSignal.timeout(8000) };
-  var responses = await Promise.all([fetch(freeUrl, opts), fetch(bouyguesUrl, opts)]);
+  var responses = await Promise.all([fetch(bust(freeUrl), opts), fetch(bust(bouyguesUrl), opts)]);
   if (!responses[0].ok || !responses[1].ok) throw new Error("fresh_contracts_unavailable");
   var data = await Promise.all(responses.map(function(r) { return r.json(); }));
   var freeRows = data[0].rows || data[0] || [];
   var bouyguesRows = data[1].rows || [];
   return carnetToContracts(freeRows, data[0].scraped_at || null).concat(bouyguesCarnetToContracts(bouyguesRows));
+}
+
+function wait(ms) {
+  return new Promise(function(resolve) { setTimeout(resolve, ms); });
 }
 
 useEffect(function() {
@@ -245,6 +252,22 @@ var saveObjectives = function(o) { setObjectives(o); store.set(STORAGE_KEYS.obje
 var saveGroups = function(g) { setGroups(g); store.set(STORAGE_KEYS.groups, g); };
 var saveProxadCreds = function(c) { setProxadCreds(c); store.set(STORAGE_KEYS.proxadCredentials, c); };
 var saveCustomSectors = function(s) { var normalized = normalizeCustomSectors(s); setCustomSectors(normalized); store.set(STORAGE_KEYS.jacheres, normalized); };
+var refreshContractsFromFeeds = async function(attempts) {
+  var max = attempts || 4;
+  for (var i = 0; i < max; i++) {
+    try {
+      var freshBaseContracts = await loadFreshBaseContracts();
+      if (freshBaseContracts && freshBaseContracts.length > 0) {
+        baseContractsRef.current = freshBaseContracts;
+        var overrides = await store.get(STORAGE_KEYS.contracts);
+        setContracts(mergeContractsWithOverrides(freshBaseContracts, overrides || {}));
+        return true;
+      }
+    } catch(e) {}
+    if (i < max - 1) await wait(2500);
+  }
+  return false;
+};
 var pollScrapeStatus = async function(startedAt) {
   try {
     var response = await fetch("/api/scrape-status?since=" + encodeURIComponent(startedAt));
@@ -256,9 +279,14 @@ var pollScrapeStatus = async function(startedAt) {
       return;
     }
     if (run.status === "completed") {
-      setScrapeAction(run.conclusion === "success" ? "done" : "failed");
       if (scrapePollRef.current) clearInterval(scrapePollRef.current);
       scrapePollRef.current = null;
+      if (run.conclusion === "success") {
+        var refreshed = await refreshContractsFromFeeds(5);
+        setScrapeAction(refreshed ? "done" : "error");
+      } else {
+        setScrapeAction("failed");
+      }
       setTimeout(function() { setScrapeAction("idle"); }, 12000);
       return;
     }

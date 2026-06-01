@@ -60,7 +60,7 @@ export default async function handler(req, res) {
     var runs = Array.isArray(data.workflow_runs) ? data.workflow_runs : [];
     var run = runs.find(function(item) {
       return !minCreatedAt || new Date(item.created_at).getTime() >= minCreatedAt;
-    }) || runs[0] || null;
+    }) || (since ? null : runs[0] || null);
 
     return res.status(200).json({ ok: true, run: run ? toRun(run) : null });
   } catch (e) {
