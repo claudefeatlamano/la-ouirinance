@@ -17,6 +17,7 @@ var AGENCY_CONFIG = {
     proxadCredentials: "agency-proxad-creds-v1",
     botFeedback: "bot-feedback-v1",
     calibrated: "bot-calibrated-v1",
+    profiles: "bot-commercial-profiles-v1",
   },
 };
 

@@ -15,6 +15,7 @@ import { ObjectifsTab } from "./components/ObjectifsTab.jsx";
 import { ImportTab } from "./components/ImportTab.jsx";
 import { CarnetTab } from "./components/CarnetTab.jsx";
 import { QuestionsTab } from "./components/QuestionsTab.jsx";
+import { VendorCodesTab } from "./components/VendorCodesTab.jsx";
 import { localDateStr } from "./helpers/date.js";
 import { normalizeCustomSectors } from "./helpers/import-parser.js";
 
@@ -24,6 +25,7 @@ var TABS = [
 { id: "contracts", label: "Contrats" },
 { id: "objectifs", label: "Objectifs" },
 { id: "questions", label: "Questions" },
+{ id: "codes", label: "Codes vendeurs" },
 { id: "cars", label: "Voitures" },
 { id: "team", label: "\u00C9quipe" },
 { id: "map", label: "Carte" },
@@ -40,6 +42,7 @@ var [contracts, setContracts] = useState([]);
 var [objectives, setObjectives] = useState({});
 var [botFeedback, setBotFeedback] = useState([]);
 var [calibrated, setCalibrated] = useState([]);
+var [botProfiles, setBotProfiles] = useState({});
 var [dailyPlan, setDailyPlan] = useState(null);
 var [loading, setLoading] = useState(true);
 var [scraperStatus, setScraperStatus] = useState(null);
@@ -91,7 +94,7 @@ function wait(ms) {
 }
 
 useEffect(function() {
-var unsubPlan, unsubObj, unsubContracts, unsubFeedback, unsubCalibrated;
+var unsubPlan, unsubObj, unsubContracts, unsubFeedback, unsubCalibrated, unsubProfiles;
 (async function() {
 try {
   var dpLs = localStorage.getItem(STORAGE_KEYS.dailyPlan);
@@ -116,6 +119,9 @@ unsubFeedback = onSnapshot(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KE
 });
 unsubCalibrated = onSnapshot(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KEYS.calibrated), function(snap) {
   setCalibrated(snap.exists() ? (snap.data().data || []) : []);
+});
+unsubProfiles = onSnapshot(doc(db, AGENCY_CONFIG.firestoreCollection, STORAGE_KEYS.profiles), function(snap) {
+  setBotProfiles(snap.exists() ? (snap.data().data || {}) : {});
 });
 var oldKeys = ["agency-team-v1","agency-cars-v1","agency-contracts-v1","agency-daily-plan-v1","agency-objectives-v1","agency-team-v2","agency-cars-v2","agency-contracts-v2","agency-daily-plan-v2","agency-objectives-v2"];
 for (var k of oldKeys) { try { await store.delete(k); } catch(e) {} }
@@ -175,7 +181,7 @@ if (!loadedSectors) { try { var lsJ = localStorage.getItem(STORAGE_KEYS.jacheres
 setCustomSectors(normalizeCustomSectors(loadedSectors));
 setLoading(false);
 })();
-return function() { if (unsubPlan) unsubPlan(); if (unsubObj) unsubObj(); if (unsubContracts) unsubContracts(); if (unsubFeedback) unsubFeedback(); if (unsubCalibrated) unsubCalibrated(); };
+return function() { if (unsubPlan) unsubPlan(); if (unsubObj) unsubObj(); if (unsubContracts) unsubContracts(); if (unsubFeedback) unsubFeedback(); if (unsubCalibrated) unsubCalibrated(); if (unsubProfiles) unsubProfiles(); };
 }, []);
 
 useEffect(function() {
@@ -361,6 +367,7 @@ else if (tab === "cloche") tabContent = <ClocheTab team={team} contracts={contra
 else if (tab === "import") tabContent = <ImportTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} customSectors={customSectors} saveCustomSectors={saveCustomSectors} />;
 else if (tab === "carnet") tabContent = <CarnetTab />;
 else if (tab === "questions") tabContent = <QuestionsTab feedback={botFeedback} calibrated={calibrated} updateFeedbackEntry={updateFeedbackEntry} addCalibrated={addCalibrated} />;
+else if (tab === "codes") tabContent = <VendorCodesTab profiles={botProfiles} />;
 
 return (
 
