@@ -1,10 +1,16 @@
 # AGENTS.md - Dashboard La Ouirinance
 
+## Board agence (etat + reste a faire)
+
+Source de verite unique du projet agence (bot + dashboard) : `C:\Users\hnoua\Desktop\Cerveau\Large Memory\wiki\projects\Agence — Board.md`.
+Quand Hamid dit "je travaille sur le projet de l'agence" (ou /agence) : lis le board et sors-lui "Ou on en est" + "Reste a faire". Inscris-toi dans "En cours", et mets le board a jour apres chaque tache significative.
+
 ## Contexte obligatoire
 
 Avant de modifier ce repo, lire :
 
-1. `C:\Users\hnoua\Desktop\Cerveau\CURRENT.md`
+1. `C:\Users\hnoua\Desktop\Cerveau\Large Memory\wiki\projects\Agence — Board.md`
+2. `C:\Users\hnoua\Desktop\Cerveau\CURRENT.md`
 2. `C:\Users\hnoua\Desktop\Cerveau\Large Memory\wiki\projects\La Ouirinance.md`
 3. `C:\Users\hnoua\Desktop\Cerveau\Large Memory\wiki\projects\La Ouirinance - Multi-agence v1.md`
 4. `C:\Users\hnoua\Desktop\Cerveau\Large Memory\wiki\projects\Dashboard la-ouirinance.md`

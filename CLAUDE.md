@@ -1,5 +1,10 @@
 # La Ouirinance — CLAUDE.md
 
+## Board agence (état + reste à faire)
+
+Source de vérité unique du projet agence (bot + dashboard) : `C:\Users\hnoua\Desktop\Cerveau\Large Memory\wiki\projects\Agence — Board.md`.
+Quand Hamid dit "je travaille sur le projet de l'agence" (ou /agence) : lis le board et sors-lui "Où on en est" + "Reste à faire". Inscris-toi dans "En cours" (nom/terminal + tâche), et mets le board à jour après chaque tâche significative.
+
 ## Commandes
 
 ```bash
