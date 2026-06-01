@@ -1,12 +1,11 @@
-// Proxy serverless Vercel vers l'API Proxad (vad.proxad.net).
-// Sert sur la MEME origine que le dashboard (la-ouirinance.vercel.app) -> zero CORS.
-// Remplace l'ancien worker Cloudflare. Le client (src/data/proxad.js) appelle
-// /api/proxad/v1/... et on relaie vers https://vad.proxad.net/v1/server.pl/v1/...
+// Proxy serverless Vercel vers l'API Proxad (vad.proxad.net), meme origine que le
+// dashboard -> zero CORS. Remplace l'ancien worker Cloudflare.
+// Routage : vercel.json reecrit /api/proxad/<path> -> /api/proxad?path=<path>.
+// Ex: /api/proxad/v1/user -> relaye vers https://vad.proxad.net/v1/server.pl/v1/user
 const PROXAD = "https://vad.proxad.net/v1/server.pl";
 
 export default async function handler(req, res) {
-  const segs = req.query.path || [];
-  const path = Array.isArray(segs) ? segs.join("/") : String(segs);
+  const path = (req.query.path || "").toString();
   const target = PROXAD + "/" + path;
 
   const headers = { "Content-Type": "application/json" };
