@@ -14,8 +14,7 @@ import { ClocheTab } from "./components/ClocheTab.jsx";
 import { ObjectifsTab } from "./components/ObjectifsTab.jsx";
 import { ImportTab } from "./components/ImportTab.jsx";
 import { CarnetTab } from "./components/CarnetTab.jsx";
-import { QuestionsTab } from "./components/QuestionsTab.jsx";
-import { VendorCodesTab } from "./components/VendorCodesTab.jsx";
+import { BotTab } from "./components/BotTab.jsx";
 import { localDateStr } from "./helpers/date.js";
 import { normalizeCustomSectors } from "./helpers/import-parser.js";
 
@@ -24,8 +23,7 @@ var TABS = [
 { id: "dashboard", label: "Dashboard" },
 { id: "contracts", label: "Contrats" },
 { id: "objectifs", label: "Objectifs" },
-{ id: "questions", label: "Questions" },
-{ id: "codes", label: "Codes vendeurs" },
+{ id: "bot", label: "Bot" },
 { id: "cars", label: "Voitures" },
 { id: "team", label: "\u00C9quipe" },
 { id: "map", label: "Carte" },
@@ -370,8 +368,7 @@ else if (tab === "objectifs") tabContent = <ObjectifsTab team={team} contracts={
 else if (tab === "cloche") tabContent = <ClocheTab team={team} contracts={contracts} />;
 else if (tab === "import") tabContent = <ImportTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} customSectors={customSectors} saveCustomSectors={saveCustomSectors} />;
 else if (tab === "carnet") tabContent = <CarnetTab />;
-else if (tab === "questions") tabContent = <QuestionsTab feedback={botFeedback} calibrated={calibrated} updateFeedbackEntry={updateFeedbackEntry} addCalibrated={addCalibrated} />;
-else if (tab === "codes") tabContent = <VendorCodesTab profiles={botProfiles} submissions={onboardingSubs} />;
+else if (tab === "bot") tabContent = <BotTab team={team} feedback={botFeedback} calibrated={calibrated} updateFeedbackEntry={updateFeedbackEntry} addCalibrated={addCalibrated} profiles={botProfiles} submissions={onboardingSubs} />;
 
 return (
 
