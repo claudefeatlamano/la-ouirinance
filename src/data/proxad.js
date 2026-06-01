@@ -1,4 +1,6 @@
-var PROXAD_BASE = "https://proxad-proxy.olaskurt.workers.dev/";
+// Proxy serverless Vercel, meme origine que le dashboard -> aucun CORS.
+// (remplace l'ancien worker Cloudflare proxad-proxy.olaskurt.workers.dev)
+var PROXAD_BASE = "/api/proxad/";
 
 function proxadHeaders(credentials) {
   return {
