@@ -259,8 +259,20 @@ var saveDailyPlan = function(todayPlan) {
   store.set(STORAGE_KEYS.dailyPlan, full);
 };
 var saveObjectives = function(o) { setObjectives(o); store.set(STORAGE_KEYS.objectives, o); };
-var saveBotFeedback = function(v) { setBotFeedback(v); store.set(STORAGE_KEYS.botFeedback, v); };
-var saveCalibrated = function(v) { setCalibrated(v); store.set(STORAGE_KEYS.calibrated, v); };
+// Merge-on-write : re-lit la derniere version Firestore avant d'ecrire, pour ne pas
+// ecraser les entrees que le bot capture en continu dans le meme doc (lost update).
+var updateFeedbackEntry = async function(id, patch) {
+  var latest = (await store.get(STORAGE_KEYS.botFeedback)) || [];
+  var merged = latest.map(function(e) { return e.id === id ? Object.assign({}, e, patch) : e; });
+  setBotFeedback(merged);
+  await store.set(STORAGE_KEYS.botFeedback, merged);
+};
+var addCalibrated = async function(ref) {
+  var latest = (await store.get(STORAGE_KEYS.calibrated)) || [];
+  var merged = latest.concat([ref]);
+  setCalibrated(merged);
+  await store.set(STORAGE_KEYS.calibrated, merged);
+};
 var saveGroups = function(g) { setGroups(g); store.set(STORAGE_KEYS.groups, g); };
 var saveProxadCreds = function(c) { setProxadCreds(c); store.set(STORAGE_KEYS.proxadCredentials, c); };
 var saveCustomSectors = function(s) { var normalized = normalizeCustomSectors(s); setCustomSectors(normalized); store.set(STORAGE_KEYS.jacheres, normalized); };
@@ -348,7 +360,7 @@ else if (tab === "objectifs") tabContent = <ObjectifsTab team={team} contracts={
 else if (tab === "cloche") tabContent = <ClocheTab team={team} contracts={contracts} />;
 else if (tab === "import") tabContent = <ImportTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} customSectors={customSectors} saveCustomSectors={saveCustomSectors} />;
 else if (tab === "carnet") tabContent = <CarnetTab />;
-else if (tab === "questions") tabContent = <QuestionsTab feedback={botFeedback} calibrated={calibrated} saveFeedback={saveBotFeedback} saveCalibrated={saveCalibrated} />;
+else if (tab === "questions") tabContent = <QuestionsTab feedback={botFeedback} calibrated={calibrated} updateFeedbackEntry={updateFeedbackEntry} addCalibrated={addCalibrated} />;
 
 return (
 

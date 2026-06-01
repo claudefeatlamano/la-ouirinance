@@ -17,9 +17,11 @@ function sortFeedback(list) {
 
 export function QuestionsTab(props) {
   var feedback = props.feedback || [];
-  var calibrated = props.calibrated || [];
-  var saveFeedback = props.saveFeedback;
-  var saveCalibrated = props.saveCalibrated;
+  // updateFeedbackEntry(id, patch) et addCalibrated(ref) re-lisent la dernière
+  // version Firestore avant d'écrire (le bot écrit en continu dans le même doc :
+  // un overwrite depuis l'état React périmé effacerait ses captures récentes).
+  var updateFeedbackEntry = props.updateFeedbackEntry;
+  var addCalibrated = props.addCalibrated;
 
   var [drafts, setDrafts] = useState({});
   var [busy, setBusy] = useState({});
@@ -30,11 +32,14 @@ export function QuestionsTab(props) {
     setDrafts(function (d) { var n = Object.assign({}, d); n[id] = val; return n; });
   }
 
-  function markGood(entry) {
-    var next = feedback.map(function (e) {
-      return e.id === entry.id ? Object.assign({}, e, { status: "ok_tel_quel", updatedAt: new Date().toISOString() }) : e;
-    });
-    saveFeedback(next);
+  async function markGood(entry) {
+    if (busy[entry.id]) return;
+    setBusy(function (b) { var n = Object.assign({}, b); n[entry.id] = true; return n; });
+    try {
+      await updateFeedbackEntry(entry.id, { status: "ok_tel_quel", updatedAt: new Date().toISOString() });
+    } finally {
+      setBusy(function (b) { var n = Object.assign({}, b); n[entry.id] = false; return n; });
+    }
   }
 
   async function validate(entry) {
@@ -59,14 +64,8 @@ export function QuestionsTab(props) {
         formulation: distilled.formulation || "",
         tags: distilled.tags || [],
       };
-      saveCalibrated([...calibrated, newRef]);
-
-      var next = feedback.map(function (e) {
-        return e.id === entry.id
-          ? Object.assign({}, e, { status: "repondu", idealAnswerRaw: raw, calibratedRefId: refId, updatedAt: new Date().toISOString() })
-          : e;
-      });
-      saveFeedback(next);
+      await addCalibrated(newRef);
+      await updateFeedbackEntry(entry.id, { status: "repondu", idealAnswerRaw: raw, calibratedRefId: refId, updatedAt: new Date().toISOString() });
     } catch (e) {
       alert("Erreur : " + String(e));
     } finally {

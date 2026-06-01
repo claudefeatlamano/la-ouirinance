@@ -47,6 +47,7 @@ export default async function handler(req, res) {
         system: system,
         messages: [{ role: "user", content: userContent }],
       }),
+      signal: AbortSignal.timeout(20000),
     });
     if (!resp.ok) {
       var errText = await resp.text();
@@ -57,6 +58,10 @@ export default async function handler(req, res) {
     var text = (data.content && data.content[0] && data.content[0].text) || "";
     var jsonStart = text.indexOf("{");
     var jsonEnd = text.lastIndexOf("}");
+    if (jsonStart === -1 || jsonEnd <= jsonStart) {
+      res.status(502).json({ error: "distill_bad_json", detail: text.slice(0, 300) });
+      return;
+    }
     var parsed = JSON.parse(text.slice(jsonStart, jsonEnd + 1));
     res.status(200).json({
       principle: String(parsed.principle || ""),
