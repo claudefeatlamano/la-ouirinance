@@ -1,6 +1,13 @@
-import carnetData from "../data.json";
-import bouyguesData from "../data_bouygues.json";
+import contractsArchive from "../contracts-archive.json";
 import { MONTHLY } from "./monthly-data.js";
+
+// Archive permanente des contrats (memoire durable, maj par update_archive.py a
+// chaque scrape). Les comptes par commune/mois sont calcules sur TOUT l'historique
+// archive (et plus seulement la fenetre ~2 mois du carnet), pour que la couverture
+// terrain reste exacte a mesure que les contrats vieillissent.
+var _archiveRows = Object.values(contractsArchive);
+var _carnetFreeRows = _archiveRows.filter(function(r) { return r._op === "free"; });
+var _carnetBygRows = _archiveRows.filter(function(r) { return r._op === "bouygues"; });
 
 function normVille(s) {
   return (s || "").toUpperCase().trim().replace(/\bST /g, "SAINT ").replace(/\bSTE /g, "SAINTE ");
@@ -11,7 +18,7 @@ var CARNET_BY_VILLE_ALL = {};
 var CARNET_BY_VILLE_MONTH = {};
 (function() {
   var ML = ["jan","fev","mar","avr","mai","jun","jul","aou","sep","oct","nov","dec"];
-  (carnetData.rows || carnetData).forEach(function(row) {
+  _carnetFreeRows.forEach(function(row) {
     var v = (row.ville || "").toUpperCase().trim();
     if (!v) return;
     CARNET_BY_VILLE_ALL[v] = (CARNET_BY_VILLE_ALL[v] || 0) + 1;
@@ -29,7 +36,7 @@ var CARNET_BY_VILLE_MONTH = {};
 // Count BT (Bouygues) contracts into the same ville maps
 (function() {
   var ML = ["jan","fev","mar","avr","mai","jun","jul","aou","sep","oct","nov","dec"];
-  (bouyguesData.rows || []).forEach(function(row) {
+  _carnetBygRows.forEach(function(row) {
     var v = normVille(row.ville);
     if (!v) return;
     CARNET_BY_VILLE_ALL[v] = (CARNET_BY_VILLE_ALL[v] || 0) + 1;

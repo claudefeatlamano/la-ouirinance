@@ -39,14 +39,17 @@ jobs:
           BOUYGUES_PASS: ${{ secrets.BOUYGUES_PASS }}
         run: python scraper_bouygues.py
 
-      - name: Commit refreshed data
+      - name: Update permanent archive
+        run: python update_archive.py
+
+      - name: Commit refreshed data + archive
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data.json src/data_bouygues.json
+          git add src/data.json src/data_bouygues.json src/contracts-archive.json
           if git diff --cached --quiet; then
-            echo "No data changes to commit"
+            echo "No changes to commit"
           else
-            git commit -m "data: refresh carnet [skip ci]"
+            git commit -m "data: refresh carnet + archive [skip ci]"
             git push origin HEAD:main
           fi
