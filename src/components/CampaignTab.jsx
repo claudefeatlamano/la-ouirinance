@@ -19,7 +19,7 @@ function buildLink(num, name) {
 }
 
 function buildMessage(name, link) {
-  return "Salut " + firstName(name) + " 👋\nJe suis ton nouvel assistant personnel pour l'agence. Avant de commencer, faisons un point ensemble 👇\n" + link;
+  return "Salut " + firstName(name) + " 👋\nJe suis ta nouvelle assistante personnelle pour l'agence. Avant de commencer, faisons un point ensemble 👇\n" + link;
 }
 
 export function CampaignTab(props) {
