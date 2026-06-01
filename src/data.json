@@ -1,6 +1,26 @@
 {
-  "scraped_at": "2026-06-01T17:34:34.542478+00:00",
+  "scraped_at": "2026-06-01T20:56:31.061419+00:00",
   "rows": [
+    {
+      "id_abo": "918435",
+      "date_inscription": "2026-06-01 18:54:23",
+      "login": "vst-mali",
+      "vendeur": "momed ali",
+      "entreprise": "Stratygo",
+      "adresse": "35 RUE D IENA",
+      "cp": "85191",
+      "ville": "Roche sur yon",
+      "id_client": "FO37006777",
+      "ref_preins": "PFO4312364284",
+      "nom abonne": "GOURAUD",
+      "prenom abonne": "PAULETTE",
+      "tel_mobile": "0602219965",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "inscription ok"
+    },
     {
       "id_abo": "918423",
       "date_inscription": "2026-06-01 18:37:45",
@@ -10,7 +30,7 @@
       "adresse": "41 RUE D ULM",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37006652",
       "ref_preins": "PFO43123484XE",
       "nom abonne": "Raimbert",
       "prenom abonne": "Jacques",
@@ -19,7 +39,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918376",
@@ -30,7 +50,7 @@
       "adresse": "31 RUE D IENA",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37006233",
       "ref_preins": "PFO43123016RS",
       "nom abonne": "Senan",
       "prenom abonne": "Goudina",
@@ -39,7 +59,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918327",
@@ -50,7 +70,7 @@
       "adresse": "9 LOTISSEMENT DU RUISSEAU",
       "cp": "44161",
       "ville": "Saint gildas des bois",
-      "id_client": "",
+      "id_client": "FO37005833",
       "ref_preins": "PFO431226021M",
       "nom abonne": "Duchon",
       "prenom abonne": "Thierry",
@@ -59,7 +79,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918312",
@@ -70,7 +90,7 @@
       "adresse": "12 AVENUE LOUIS PASTEUR",
       "cp": "49244",
       "ville": "Mauges sur loire",
-      "id_client": "",
+      "id_client": "FO37005802",
       "ref_preins": "PFO43122464ED",
       "nom abonne": "Hardy",
       "prenom abonne": "Gerard",
@@ -79,7 +99,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918303",
@@ -110,7 +130,7 @@
       "adresse": "25 RUE D ULM",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37005708",
       "ref_preins": "PFO4312237799",
       "nom abonne": "Nguyen",
       "prenom abonne": "Van tho",
@@ -119,7 +139,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918233",
@@ -1518,8 +1538,8 @@
       "box": "POP",
       "mcafee": "",
       "envoi_colis": "2026-05-29",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-01",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "917039",
@@ -2998,7 +3018,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "2026-05-26",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-04",
       "etat_commande": "inscription ok"
     },
     {
@@ -21222,24 +21242,24 @@
       "etat_commande": "vente abandonée"
     },
     {
-      "id_abo": "900536",
-      "date_inscription": "2026-04-01 19:39:09",
-      "login": "vst-ombengue",
-      "vendeur": "omar mbengue",
-      "entreprise": "Stratygo",
-      "adresse": "13 PASSAGE DU VERGER",
-      "cp": "35177",
-      "ville": "Meziere",
-      "id_client": "FO36765796",
-      "ref_preins": "PFO42853916Y6",
-      "nom abonne": "Rué",
-      "prenom abonne": "Romain",
-      "tel_mobile": "0685553705",
+      "id_abo": "918459",
+      "date_inscription": "2026-06-01 19:36:27",
+      "login": "vta-zourhalm",
+      "entreprise": "TALC",
+      "adresse": "38 RUE DOMNOLET LAFARGE",
+      "cp": "87085",
+      "ville": "Limoges",
+      "id_client": "FO37007112",
+      "ref_preins": "PFO43123989TG",
+      "nom abonne": "Maugan",
+      "prenom abonne": "Amélie",
+      "tel_mobile": "0608550809",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "2026-04-07",
-      "info_rdv_sync": "RDV 2026-04-13",
-      "etat_commande": "vente abandonée"
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918384",
@@ -21249,7 +21269,7 @@
       "adresse": "8 RUE I ET FREDERIC JOLIOT CURIE",
       "cp": "87085",
       "ville": "Limoges",
-      "id_client": "",
+      "id_client": "FO37006260",
       "ref_preins": "PFO43123095JD",
       "nom abonne": "SHTEREV",
       "prenom abonne": "SLAVCHO",
@@ -21259,7 +21279,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918349",
@@ -21269,7 +21289,7 @@
       "adresse": "8 RUE I ET FREDERIC JOLIOT CURIE",
       "cp": "87085",
       "ville": "Limoges",
-      "id_client": "",
+      "id_client": "FO37006050",
       "ref_preins": "PFO431228291V",
       "nom abonne": "Kaba",
       "prenom abonne": "Mariama",
@@ -21279,7 +21299,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918346",
@@ -21289,7 +21309,7 @@
       "adresse": "41 RUE MONTGOLFIER",
       "cp": "87085",
       "ville": "Limoges",
-      "id_client": "",
+      "id_client": "FO37006028",
       "ref_preins": "PFO43122788MA",
       "nom abonne": "Brindel",
       "prenom abonne": "Solange",
@@ -21299,7 +21319,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918334",
@@ -21309,7 +21329,7 @@
       "adresse": "8 RUE I ET FREDERIC JOLIOT CURIE",
       "cp": "87085",
       "ville": "Limoges",
-      "id_client": "",
+      "id_client": "FO37005860",
       "ref_preins": "PFO431226835E",
       "nom abonne": "MASSONDI",
       "prenom abonne": "Nasma",
@@ -21319,7 +21339,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "918297",
@@ -21857,7 +21877,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-01",
       "info_rdv_sync": "RDV 2026-06-08",
       "etat_commande": "inscription ok"
     },
@@ -22197,7 +22217,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-01",
       "info_rdv_sync": "RDV 2026-06-12",
       "etat_commande": "inscription ok"
     },
