@@ -1,5 +1,6 @@
 var PROXAD = "https://vad.proxad.net/v1/server.pl";
 var ALLOWED_ORIGINS = [
+  "https://la-ouirinance.vercel.app",
   "https://claudefeatlamano.github.io",
   "http://localhost:5173",
   "http://localhost:4173"
@@ -7,7 +8,10 @@ var ALLOWED_ORIGINS = [
 
 function getAllowedOrigin(request) {
   var origin = request.headers.get("Origin") || "";
-  return ALLOWED_ORIGINS.indexOf(origin) >= 0 ? origin : ALLOWED_ORIGINS[0];
+  if (ALLOWED_ORIGINS.indexOf(origin) >= 0) return origin;
+  // Autorise tous les deploiements Vercel du projet (production + previews)
+  if (/^https:\/\/la-ouirinance[a-z0-9-]*\.vercel\.app$/.test(origin)) return origin;
+  return ALLOWED_ORIGINS[0];
 }
 
 export default {
