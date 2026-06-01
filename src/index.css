@@ -91,6 +91,7 @@ body {
   font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--lo-bg);
   color: var(--lo-ink);
+  overflow-x: hidden;
 }
 
 button {
@@ -184,6 +185,7 @@ input, select {
   .app-header {
     padding: 0 12px !important;
     height: 46px !important;
+    background: rgba(255,253,247,0.92) !important;
   }
   .header-right {
     gap: 4px !important;
@@ -193,15 +195,70 @@ input, select {
   }
   .app-nav {
     padding: 0 6px !important;
+    top: 46px !important;
+    background: rgba(255,253,247,0.90) !important;
     -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  .app-nav::-webkit-scrollbar {
+    display: none;
   }
   .app-nav button {
     padding: 0 10px !important;
     font-size: 12px !important;
-    height: 40px !important;
+    height: 44px !important;
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+  }
+  .app-nav-button-active {
+    background: rgba(255,253,247,0.98) !important;
   }
   .app-main {
     padding: 16px 10px !important;
+  }
+  .dashboard-mobile-root {
+    gap: 14px !important;
+  }
+  .dashboard-hero-card {
+    padding: 16px !important;
+  }
+  .dashboard-hero-head {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  .dashboard-hero-copy {
+    min-width: 0;
+  }
+  .dashboard-hero-title {
+    font-size: 24px !important;
+    line-height: 1.08 !important;
+  }
+  .dashboard-hero-subtitle {
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+  }
+  .dashboard-date-chip {
+    min-width: 0 !important;
+    width: 100% !important;
+    text-align: left !important;
+    padding: 9px 10px !important;
+  }
+  .dashboard-priority-card {
+    min-height: 0 !important;
+    padding: 16px !important;
+  }
+  .dashboard-ranking-row,
+  .dashboard-alert-row {
+    min-width: 0;
+  }
+  .dashboard-ranking-name,
+  .dashboard-alert-text {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .dashboard-alert-row {
+    align-items: flex-start !important;
   }
   .dash-stat-row {
     gap: 8px !important;
@@ -213,6 +270,118 @@ input, select {
   .dash-grid-2-1,
   .dash-grid-1-1 {
     grid-template-columns: 1fr !important;
+  }
+  .secteurs-overview-header {
+    align-items: stretch !important;
+    margin-bottom: 12px !important;
+  }
+  .secteurs-overview-header > div:first-child {
+    width: 100%;
+  }
+  .secteurs-overview-select,
+  .secteurs-detail-select {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .secteurs-overview-select select,
+  .secteurs-detail-select select {
+    width: 100%;
+    min-width: 0 !important;
+    height: 44px;
+  }
+  .secteurs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)) !important;
+    gap: 10px !important;
+  }
+  .secteurs-card {
+    padding: 10px 12px !important;
+  }
+  .secteurs-card-head {
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin-bottom: 6px !important;
+  }
+  .secteurs-card-title-block {
+    min-width: 0;
+  }
+  .secteurs-card-title {
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    overflow-wrap: anywhere;
+  }
+  .secteurs-card > div:nth-of-type(2) {
+    height: 5px !important;
+    margin-bottom: 6px !important;
+  }
+  .secteurs-card > div:nth-of-type(3) > span {
+    font-size: 19px !important;
+  }
+  .secteurs-detail-header {
+    flex-wrap: wrap;
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+  }
+  .secteurs-detail-title {
+    min-width: 0;
+    flex: 1 1 180px;
+    font-size: 18px !important;
+    overflow-wrap: anywhere;
+  }
+  .secteurs-stat-row {
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+  }
+  .secteurs-stat-row > * {
+    min-width: calc(50% - 4px) !important;
+    flex: 0 0 calc(50% - 4px) !important;
+  }
+  .secteurs-communes-card,
+  .secteurs-commune-card,
+  .secteurs-street-card {
+    padding: 14px !important;
+  }
+  .secteurs-communes-toolbar {
+    align-items: stretch !important;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .secteurs-sort-controls {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px !important;
+  }
+  .secteurs-sort-controls button,
+  .secteurs-dormant-filter button,
+  .secteurs-street-toolbar button {
+    min-height: 36px;
+    justify-content: center;
+  }
+  .secteurs-dormant-filter {
+    gap: 5px !important;
+  }
+  .secteurs-dormant-filter > span {
+    width: 100%;
+  }
+  .secteurs-commune-row {
+    gap: 8px !important;
+    padding: 10px 8px !important;
+  }
+  .secteurs-commune-main,
+  .secteurs-commune-name-row {
+    min-width: 0;
+  }
+  .secteurs-commune-name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .map-main-canvas,
+  .map-main-loading {
+    height: clamp(320px, 58vh, 560px) !important;
+  }
+  .map-commune-heatmap {
+    height: clamp(240px, 42vh, 300px) !important;
   }
   .car-body {
     flex-direction: column !important;
@@ -245,17 +414,17 @@ input, select {
     align-items: flex-end !important;
   }
   .modal-content {
-    width: 100vw !important;
+    width: 100% !important;
     max-width: 100vw !important;
     border-radius: 20px 20px 0 0 !important;
-    padding: 20px 16px !important;
+    padding: 20px max(16px, env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)) !important;
     max-height: 88vh !important;
   }
   .picker-modal-content {
-    width: 100vw !important;
+    width: 100% !important;
     max-width: 100vw !important;
     border-radius: 20px 20px 0 0 !important;
-    padding: 20px 16px !important;
+    padding: 20px max(16px, env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)) !important;
     max-height: 80vh !important;
   }
   .resolution-row {
@@ -281,5 +450,31 @@ input, select {
   }
   .app-main {
     padding: 12px 8px !important;
+  }
+  .dashboard-hero-title {
+    font-size: 22px !important;
+  }
+  .dashboard-priority-card > div:first-child > div:last-child {
+    font-size: 18px !important;
+  }
+  .secteurs-stat-row > * {
+    min-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .secteurs-commune-row {
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+  }
+  .secteurs-commune-main {
+    flex: 1 1 calc(100% - 36px) !important;
+  }
+  .secteurs-commune-count {
+    min-width: 0 !important;
+    margin-left: 32px;
+    text-align: left !important;
+  }
+  .secteurs-commune-rate {
+    min-width: 0 !important;
+    margin-left: auto;
   }
 }

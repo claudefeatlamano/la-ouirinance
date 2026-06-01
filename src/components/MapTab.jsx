@@ -1,14 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Card, Btn, Sel } from "./ui.jsx";
-import { JACHERE, JACHERE_TALC } from "../constants/jachere.js";
 import { GPS } from "../data/gps.js";
 import { getC, getTalcC, MONTHS_ORDER, MONTHS_LABELS } from "../helpers/carnet.js";
+import { getSectorCatalog } from "../helpers/sector-catalog.js";
 
-function MapTab() {
+function MapTab({ customSectors }) {
 var mapRef = useRef(null);
 var mapInstance = useRef(null);
 const [mapReady, setMapReady] = useState(false);
 const [month, setMonth] = useState("");
+var sectorCatalog = getSectorCatalog(customSectors);
+var jachere = sectorCatalog.jachere;
+var jachereTalc = sectorCatalog.jachereTalc;
 
 useEffect(function() {
 if (window.L) { setMapReady(true); return; }
@@ -32,7 +35,7 @@ mapInstance.current = map;
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "OSM", maxZoom: 16 }).addTo(map);
 setTimeout(function() {
 map.invalidateSize();
-Object.entries(JACHERE).forEach(function(entry) {
+Object.entries(jachere).forEach(function(entry) {
 var jName = entry[0]; var jData = entry[1];
 jData.communes.forEach(function(commune) {
 var key = commune.v + "|" + jData.dept;
@@ -48,7 +51,7 @@ L.circleMarker([coords[0], coords[1]], { radius: radius, fillColor: color, color
 );
 });
 });
-Object.entries(JACHERE_TALC).forEach(function(entry) {
+Object.entries(jachereTalc).forEach(function(entry) {
 var jName = entry[0]; var jData = entry[1];
 jData.communes.forEach(function(commune) {
 var key = commune.v + "|" + jData.dept;
@@ -66,7 +69,7 @@ L.circleMarker([coords[0], coords[1]], { radius: radius, fillColor: color, color
 });
 }, 400);
 return function() { if (mapInstance.current) { mapInstance.current.remove(); mapInstance.current = null; } };
-}, [mapReady, month]);
+}, [mapReady, month, customSectors]);
 
 return (
 <div>
@@ -75,8 +78,8 @@ return (
 <Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 150 }} />
 </div>
 <Card style={{ padding: 0, overflow: "hidden", marginBottom: 12, borderRadius: 14 }}>
-<div ref={mapRef} style={{ width: "100%", height: 560 }}>
-{!mapReady && <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 560, color: "var(--lo-faint)" }}>Chargement...</div>}
+<div className="map-main-canvas" ref={mapRef} style={{ width: "100%", height: 560 }}>
+{!mapReady && <div className="map-main-loading" style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 560, color: "var(--lo-faint)" }}>Chargement...</div>}
 </div>
 </Card>
 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
@@ -186,7 +189,7 @@ return (
     <span style={{ fontSize: 12, color: "var(--lo-faint)" }}>{loading ? "Géocodage…" : geoData.length + " rue" + (geoData.length > 1 ? "s" : "") + " géocodée" + (geoData.length > 1 ? "s" : "")}</span>
   </div>
   <div style={{ position: "relative" }}>
-    <div ref={mapRef} style={{ height: 300, borderRadius: 12, overflow: "hidden", background: "rgba(76,87,96,0.07)" }} />
+    <div className="map-commune-heatmap" ref={mapRef} style={{ height: 300, borderRadius: 12, overflow: "hidden", background: "rgba(76,87,96,0.07)" }} />
     {loading && <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(255,253,247,0.86)", borderRadius: 12 }}><span style={{ fontSize: 13, color: "var(--lo-faint)" }}>Géocodage des rues…</span></div>}
   </div>
   <div style={{ marginTop: 10, display: "flex", gap: 12, justifyContent: "center" }}>

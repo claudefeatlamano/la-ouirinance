@@ -1,28 +1,12 @@
 import React, { useState } from "react";
 import { Inp } from "./ui.jsx";
-import { JACHERE, JACHERE_TALC } from "../constants/jachere.js";
+import { getSectorCatalog } from "../helpers/sector-catalog.js";
 
-var ALL_SECTORS = Object.keys(JACHERE).map(function(n) { return { name: n, talc: false }; })
-  .concat(Object.keys(JACHERE_TALC).map(function(n) { return { name: n, talc: true }; }));
-
-var ALL_COMMUNES = [];
-Object.keys(JACHERE).forEach(function(sectorName) {
-  var s = JACHERE[sectorName];
-  s.communes.forEach(function(c) {
-    ALL_COMMUNES.push({ v: c.v, p: c.p, sector: sectorName });
-  });
-});
-Object.keys(JACHERE_TALC).forEach(function(sectorName) {
-  var s = JACHERE_TALC[sectorName];
-  s.communes.forEach(function(c) {
-    ALL_COMMUNES.push({ v: c.v, p: c.p, sector: sectorName });
-  });
-});
-
-function SectorAutocomplete({ value, onSelect }) {
+function SectorAutocomplete({ value, onSelect, customSectors }) {
   var [open, setOpen] = useState(false);
   var q = (value || "").trim().toUpperCase();
-  var matches = q.length >= 1 ? ALL_SECTORS.filter(function(s) {
+  var catalog = getSectorCatalog(customSectors);
+  var matches = q.length >= 1 ? catalog.sectors.filter(function(s) {
     return s.name.toUpperCase().indexOf(q) >= 0 && s.name.toUpperCase() !== q;
   }) : [];
   return (
@@ -54,10 +38,11 @@ function SectorAutocomplete({ value, onSelect }) {
   );
 }
 
-function CommuneAutocomplete({ value, onChange }) {
+function CommuneAutocomplete({ value, onChange, customSectors }) {
   var [open, setOpen] = useState(false);
   var q = (value || "").trim().toUpperCase();
-  var matches = ALL_COMMUNES.filter(function(c) {
+  var catalog = getSectorCatalog(customSectors);
+  var matches = catalog.communes.filter(function(c) {
     return q.length >= 1 && c.v.indexOf(q) >= 0 && c.v !== q;
   });
   return (

@@ -9,6 +9,7 @@ var AGENCY_CONFIG = {
     dailyPlan: "agency-daily-plan-v4",
     objectives: "agency-objectives-v3",
     groups: "agency-groups-v1",
+    jacheres: "agency-jacheres-v1",
     proxadCredentials: "agency-proxad-creds-v1",
   },
 };

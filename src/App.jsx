@@ -15,6 +15,7 @@ import { ObjectifsTab } from "./components/ObjectifsTab.jsx";
 import { ImportTab } from "./components/ImportTab.jsx";
 import { CarnetTab } from "./components/CarnetTab.jsx";
 import { localDateStr } from "./helpers/date.js";
+import { normalizeCustomSectors } from "./helpers/import-parser.js";
 
 var TABS = [
 { id: "cloche", label: "\u{1F514}" },
@@ -41,7 +42,9 @@ var [scraperStatus, setScraperStatus] = useState(null);
 var [lastSync, setLastSync] = useState(null);
 var [groups, setGroups] = useState([]);
 var [proxadCreds, setProxadCreds] = useState(null);
+var [customSectors, setCustomSectors] = useState({ stratygo: {}, talc: {} });
 var skipNextContractSnap = React.useRef(false);
+var navRefs = React.useRef({});
 
 useEffect(function() {
 var unsubPlan, unsubObj, unsubContracts;
@@ -136,6 +139,9 @@ var renamedGroups = loadedGroups.map(function(g) {
 store.set(STORAGE_KEYS.groups, renamedGroups);
 setGroups(renamedGroups);
 setProxadCreds(await store.get(STORAGE_KEYS.proxadCredentials) || null);
+var loadedSectors = await store.get(STORAGE_KEYS.jacheres);
+if (!loadedSectors) { try { var lsJ = localStorage.getItem(STORAGE_KEYS.jacheres); if (lsJ) { loadedSectors = JSON.parse(lsJ); await store.set(STORAGE_KEYS.jacheres, loadedSectors); } } catch(e) {} }
+setCustomSectors(normalizeCustomSectors(loadedSectors));
 setLoading(false);
 })();
 return function() { if (unsubPlan) unsubPlan(); if (unsubObj) unsubObj(); if (unsubContracts) unsubContracts(); };
@@ -183,6 +189,13 @@ useEffect(function() {
   return function() { clearInterval(interval); };
 }, []);
 
+useEffect(function() {
+  var activeButton = navRefs.current[tab];
+  if (activeButton && activeButton.scrollIntoView) {
+    activeButton.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+  }
+}, [tab]);
+
 var saveTeam = function(t) { setTeam(t); store.set(STORAGE_KEYS.team, t); };
 var saveCars = function(c) { setCars(c); store.set(STORAGE_KEYS.cars, c); };
 var saveContracts = function(c) {
@@ -211,6 +224,7 @@ var saveDailyPlan = function(todayPlan) {
 var saveObjectives = function(o) { setObjectives(o); store.set(STORAGE_KEYS.objectives, o); };
 var saveGroups = function(g) { setGroups(g); store.set(STORAGE_KEYS.groups, g); };
 var saveProxadCreds = function(c) { setProxadCreds(c); store.set(STORAGE_KEYS.proxadCredentials, c); };
+var saveCustomSectors = function(s) { var normalized = normalizeCustomSectors(s); setCustomSectors(normalized); store.set(STORAGE_KEYS.jacheres, normalized); };
 
 if (loading) return (
   <div className="territory-shell" style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
@@ -225,13 +239,13 @@ if (loading) return (
 var tabContent = null;
 if (tab === "dashboard") tabContent = <DashboardTab team={team} contracts={contracts} saveContracts={saveContracts} dailyPlan={dailyPlan} cars={cars} lastSync={lastSync} scraperStatus={scraperStatus} objectives={objectives} />;
 else if (tab === "team") tabContent = <TeamTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} groups={groups} saveGroups={saveGroups} />;
-else if (tab === "cars") tabContent = <CarsTab team={team} cars={cars} saveCars={saveCars} dailyPlan={dailyPlan} saveDailyPlan={saveDailyPlan} groups={groups} proxadCredentials={proxadCreds} saveProxadCreds={saveProxadCreds} contracts={contracts} />;
+else if (tab === "cars") tabContent = <CarsTab team={team} cars={cars} saveCars={saveCars} dailyPlan={dailyPlan} saveDailyPlan={saveDailyPlan} groups={groups} proxadCredentials={proxadCreds} saveProxadCreds={saveProxadCreds} contracts={contracts} customSectors={customSectors} />;
 else if (tab === "contracts") tabContent = <ContractsTab contracts={contracts} team={team} dailyPlan={dailyPlan} cars={cars} saveContracts={saveContracts} />;
-else if (tab === "map") tabContent = <MapTab />;
-else if (tab === "secteurs") tabContent = <SecteursTab />;
+else if (tab === "map") tabContent = <MapTab customSectors={customSectors} />;
+else if (tab === "secteurs") tabContent = <SecteursTab customSectors={customSectors} />;
 else if (tab === "objectifs") tabContent = <ObjectifsTab team={team} contracts={contracts} objectives={objectives} saveObjectives={saveObjectives} />;
 else if (tab === "cloche") tabContent = <ClocheTab team={team} contracts={contracts} />;
-else if (tab === "import") tabContent = <ImportTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} />;
+else if (tab === "import") tabContent = <ImportTab team={team} saveTeam={saveTeam} contracts={contracts} saveContracts={saveContracts} customSectors={customSectors} saveCustomSectors={saveCustomSectors} />;
 else if (tab === "carnet") tabContent = <CarnetTab />;
 
 return (
@@ -273,7 +287,7 @@ return (
     {TABS.map(function(t) {
       var active = tab === t.id;
       return (
-        <button key={t.id} onClick={function() { setTab(t.id); }} style={{
+        <button key={t.id} ref={function(node) { if (node) navRefs.current[t.id] = node; }} className={active ? "app-nav-button app-nav-button-active" : "app-nav-button"} onClick={function() { setTab(t.id); }} style={{
           display: "flex", alignItems: "center", gap: 5, padding: "0 14px", height: 34,
           border: "1px solid " + (active ? "rgba(76,87,96,0.28)" : "transparent"), background: active ? "rgba(255,253,247,0.86)" : "transparent", cursor: "pointer", fontSize: 13,
           fontWeight: active ? 800 : 700, color: active ? "#2f363b" : "#66635B",

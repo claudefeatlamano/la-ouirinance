@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Card, Btn, Badge } from "./ui.jsx";
-import { ROLES, OPERATORS } from "../constants/roles.js";
 import { motion } from "framer-motion";
+import { mergeImportedSectors, parseImportRows } from "../helpers/import-parser.js";
 
-function ImportTab({ team, saveTeam, contracts, saveContracts }) {
+function ImportTab({ team, saveTeam, contracts, saveContracts, customSectors, saveCustomSectors }) {
 const [drag, setDrag] = useState(false);
 const [logs, setLogs] = useState([]);
 const [imp, setImp] = useState(false);
@@ -22,34 +22,29 @@ var XLSX = await import("https://cdn.sheetjs.com/xlsx-0.20.0/package/xlsx.mjs");
 var data = await file.arrayBuffer();
 var wb = XLSX.read(data);
 var ws = wb.Sheets[wb.SheetNames[0]];
-var rows = XLSX.utils.sheet_to_json(ws);
+var rows = XLSX.utils.sheet_to_json(ws, { defval: "" });
 addLog(rows.length + " lignes");
 if (!rows.length) { addLog("Vide", "error"); setImp(false); return; }
-var cols = Object.keys(rows[0]).map(function(c) { return c.toLowerCase(); });
-var isTeam = cols.some(function(c) { return c.indexOf("role") >= 0 || c.indexOf("permis") >= 0; });
-var isContract = cols.some(function(c) { return c.indexOf("heure") >= 0 || c.indexOf("statut") >= 0; });
+var parsed = parseImportRows(rows, { fileName: file.name });
 
-
-  if (isTeam) {
+  if (parsed.type === "team") {
     addLog("Type: equipe", "success");
-    var nm = rows.map(function(r, i) {
-      var keys = Object.keys(r);
-      function g(ks) { for (var k of ks) { var found = keys.find(function(x) { return x.toLowerCase().indexOf(k) >= 0; }); if (found && r[found]) return String(r[found]).trim(); } return ""; }
-      var name = g(["nom", "name", "prenom", "commercial"]);
-      if (!name) return null;
-      var rl = ROLES.find(function(x) { return g(["role", "poste"]).toLowerCase().indexOf(x.toLowerCase()) >= 0; }) || "Debutant";
-      var op = OPERATORS.find(function(x) { return g(["operateur", "produit"]).toLowerCase().indexOf(x.toLowerCase()) >= 0; }) || "Bouygues";
-      return { id: Date.now() + i, name: name, role: rl, operators: [op], permis: ["oui", "yes", "1", "true", "x"].indexOf(g(["permis"]).toLowerCase()) >= 0, voiture: ["oui", "yes", "1", "true", "x"].indexOf(g(["voiture"]).toLowerCase()) >= 0, active: true };
-    }).filter(Boolean);
+    var nm = parsed.members;
     if (nm.length) { saveTeam(nm); addLog(nm.length + " importes!", "success"); } else { addLog("Aucun valide", "error"); }
-  } else if (isContract) {
+  } else if (parsed.type === "contracts") {
     addLog("Type: contrats", "success");
-    var nc = rows.map(function(r, i) {
-      var keys = Object.keys(r);
-      function g(ks) { for (var k of ks) { var found = keys.find(function(x) { return x.toLowerCase().indexOf(k) >= 0; }); if (found && r[found]) return String(r[found]).trim(); } return ""; }
-      return { id: "i-" + Date.now() + "-" + i, commercial: g(["commercial", "nom", "vendeur"]), date: g(["date"]), heure: g(["heure"]), ville: g(["ville"]), rue: g(["rue", "adresse"]), operator: OPERATORS.find(function(x) { return g(["operateur"]).toLowerCase().indexOf(x.toLowerCase()) >= 0; }) || "Free", type: "Fibre", status: g(["statut", "status"]) || "Valide" };
-    }).filter(function(c) { return c.commercial && c.date; });
+    var nc = parsed.contracts;
     if (nc.length) { saveContracts(contracts.concat(nc)); addLog(nc.length + " contrats!", "success"); } else { addLog("Aucun valide", "error"); }
+  } else if (parsed.type === "jachere") {
+    addLog("Type: jachere", "success");
+    if (parsed.sectors.length && saveCustomSectors) {
+      var nextSectors = mergeImportedSectors(customSectors, parsed);
+      saveCustomSectors(nextSectors);
+      var communeCount = parsed.sectors.reduce(function(total, sector) { return total + sector.communes.length; }, 0);
+      addLog(parsed.sectors.length + " jachere(s), " + communeCount + " commune(s) importees", "success");
+    } else {
+      addLog("Aucune jachere valide", "error");
+    }
   } else {
     addLog("Type non reconnu", "error");
   }

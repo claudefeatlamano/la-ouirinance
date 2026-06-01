@@ -180,17 +180,17 @@ if (attenteOld.length > 0) alertes.push({ col:"var(--lo-primary)", bg:"rgba(0,11
 var medals = ["🥇","🥈","🥉"];
 
 return (
-<div style={{ display:"flex", flexDirection:"column", gap:24 }}>
+<div className="dashboard-mobile-root" style={{ display:"flex", flexDirection:"column", gap:24 }}>
 <section style={{ display:"grid", gridTemplateColumns:"1.4fr 0.9fr", gap:16 }} className="dash-grid-2-1">
-  <div style={{ position:"relative", overflow:"hidden", border:"1px solid rgba(76,87,96,0.18)", borderRadius:10, background:"linear-gradient(135deg, rgba(255,253,247,0.90), rgba(215,206,178,0.46))", boxShadow:"var(--lo-shadow-soft)", padding:"22px 24px" }}>
+  <div className="dashboard-hero-card" style={{ position:"relative", overflow:"hidden", border:"1px solid rgba(76,87,96,0.18)", borderRadius:10, background:"linear-gradient(135deg, rgba(255,253,247,0.90), rgba(215,206,178,0.46))", boxShadow:"var(--lo-shadow-soft)", padding:"22px 24px" }}>
     <div style={{ position:"absolute", inset:0, pointerEvents:"none", backgroundImage:"linear-gradient(rgba(76,87,96,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(76,87,96,0.07) 1px, transparent 1px)", backgroundSize:"34px 34px", maskImage:"linear-gradient(120deg, black, transparent 72%)" }} />
-    <div style={{ position:"relative", display:"flex", alignItems:"flex-start", justifyContent:"space-between", gap:18 }}>
-      <div>
+    <div className="dashboard-hero-head" style={{ position:"relative", display:"flex", alignItems:"flex-start", justifyContent:"space-between", gap:18 }}>
+      <div className="dashboard-hero-copy">
         <div className="territory-kicker" style={{ marginBottom:8 }}>Briefing terrain</div>
-        <h2 style={{ margin:0, color:"var(--lo-ink)", fontSize:30, fontWeight:900, letterSpacing:0, lineHeight:1.05 }}>Table de dispatch</h2>
-        <p style={{ margin:"10px 0 0", color:"var(--lo-muted)", fontSize:13, fontWeight:700 }}>Contrats, voitures, objectifs et alertes agence pour la journee.</p>
+        <h2 className="dashboard-hero-title" style={{ margin:0, color:"var(--lo-ink)", fontSize:30, fontWeight:900, letterSpacing:0, lineHeight:1.05 }}>Table de dispatch</h2>
+        <p className="dashboard-hero-subtitle" style={{ margin:"10px 0 0", color:"var(--lo-muted)", fontSize:13, fontWeight:700 }}>Contrats, voitures, objectifs et alertes agence pour la journee.</p>
       </div>
-      <div style={{ minWidth:150, borderRadius:8, background:"rgba(76,87,96,0.08)", border:"1px solid rgba(76,87,96,0.12)", padding:"10px 12px", textAlign:"right" }}>
+      <div className="dashboard-date-chip" style={{ minWidth:150, borderRadius:8, background:"rgba(76,87,96,0.08)", border:"1px solid rgba(76,87,96,0.12)", padding:"10px 12px", textAlign:"right" }}>
         <div style={{ color:"var(--lo-faint)", fontSize:10, fontWeight:900, textTransform:"uppercase" }}>Aujourd'hui</div>
         <div style={{ color:"var(--lo-ink)", fontSize:14, fontWeight:900, textTransform:"capitalize", marginTop:4 }}>{new Date().toLocaleDateString("fr-FR", { weekday:"long", day:"numeric", month:"long" })}</div>
       </div>
@@ -202,7 +202,7 @@ return (
     </div>
   </div>
 
-  <Card style={{ display:"flex", flexDirection:"column", justifyContent:"space-between", background:"rgba(76,87,96,0.92)", color:"#fffdf7", border:"1px solid rgba(76,87,96,0.26)", minHeight:178 }}>
+  <Card className="dashboard-priority-card" style={{ display:"flex", flexDirection:"column", justifyContent:"space-between", background:"rgba(76,87,96,0.92)", color:"#fffdf7", border:"1px solid rgba(76,87,96,0.26)", minHeight:178 }}>
     <div>
       <div style={{ fontSize:11, fontWeight:900, textTransform:"uppercase", color:"rgba(255,253,247,0.62)", marginBottom:8 }}>Priorite manager</div>
       <div style={{ fontSize:22, fontWeight:900, lineHeight:1.12 }}>{alertes.length > 0 ? "Traiter les commerciaux sans contrat" : "Maintenir le rythme terrain"}</div>
@@ -295,9 +295,10 @@ return (
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: i * 0.04, duration: 0.3 }}
+          className="dashboard-ranking-row"
           style={{ display:"flex", alignItems:"center", gap:10, marginBottom:8 }}>
           <div style={{ width:22, textAlign:"center", fontSize:i<3?16:11, color:i>=3?"var(--lo-faint)":undefined }}>{i<3?medals[i]:i+1}</div>
-          <div style={{ flex:1, fontSize:13, fontWeight:500, color:"var(--lo-ink)" }}>{entry[0]}</div>
+          <div className="dashboard-ranking-name" style={{ flex:1, fontSize:13, fontWeight:500, color:"var(--lo-ink)" }}>{entry[0]}</div>
           <span style={{ fontSize:14, fontWeight:700, color:"var(--lo-ink)" }}>{entry[1]}</span>
         </motion.div>
       );
@@ -339,9 +340,10 @@ return (
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.04, duration: 0.3 }}
+            className="dashboard-alert-row"
             style={{ display:"flex", alignItems:"center", gap:10, padding:"8px 12px", background:a.bg, borderRadius:8 }}>
             <span style={{ fontSize:13 }}>{a.icon}</span>
-            <span style={{ fontSize:12, color:a.col, fontWeight:600 }}>{a.text}</span>
+            <span className="dashboard-alert-text" style={{ fontSize:12, color:a.col, fontWeight:600 }}>{a.text}</span>
           </motion.div>
         );
       })}

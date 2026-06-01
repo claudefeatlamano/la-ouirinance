@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, Btn, Inp, Badge, Sel, StatCard } from "./ui.jsx";
-import { JACHERE, JACHERE_TALC } from "../constants/jachere.js";
 import { DEPT_ZONES, OP_COLORS } from "../constants/roles.js";
 import { getC, getTalcC, MONTHS_ORDER, MONTHS_LABELS, normVille } from "../helpers/carnet.js";
 import { DEMO_CONTRACTS } from "../data/contracts.js";
 import { CommuneHeatmap } from "./MapTab.jsx";
+import { getSectorCatalog } from "../helpers/sector-catalog.js";
 
-function SecteursTab() {
+function SecteursTab({ customSectors }) {
 const [sel, setSel] = useState(null);
 const [selSource, setSelSource] = useState(null);
 const [sortBy, setSortBy] = useState("c");
@@ -20,6 +20,9 @@ const [communeSearch, setCommuneSearch] = useState("");
 const [dormantFilter, setDormantFilter] = useState(0);
 
 var last6Months = MONTHS_ORDER.slice(-6);
+var sectorCatalog = getSectorCatalog(customSectors);
+var jachere = sectorCatalog.jachere;
+var jachereTalc = sectorCatalog.jachereTalc;
 
 function getCTotal(c, dept, isTalc) {
   var total = 0;
@@ -29,13 +32,13 @@ function getCTotal(c, dept, isTalc) {
   return total;
 }
 
-var stats = Object.entries(JACHERE).map(function(entry) {
+var stats = Object.entries(jachere).map(function(entry) {
 var name = entry[0]; var data = entry[1];
 var tp = data.communes.reduce(function(s, c) { return s + c.p; }, 0);
 var tc = data.communes.reduce(function(s, c) { return s + getC(c, data.dept, month); }, 0);
 return { name: name, dept: data.dept, communes: data.communes, tp: tp, tc: tc, taux: tp ? (tc / tp * 100) : 0, source: "JACHERE" };
 });
-var statsTalc = Object.entries(JACHERE_TALC).map(function(entry) {
+var statsTalc = Object.entries(jachereTalc).map(function(entry) {
 var name = entry[0]; var data = entry[1];
 var tp = data.communes.reduce(function(s, c) { return s + c.p; }, 0);
 var tc = data.communes.reduce(function(s, c) { return s + getTalcC(c, data.dept, month); }, 0);
@@ -99,8 +102,8 @@ return (
 </div>
 
 {/* Header card */}
-<Card style={{ marginBottom: 16, padding: 20 }}>
-  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
+<Card className="secteurs-commune-card" style={{ marginBottom: 16, padding: 20 }}>
+  <div className="secteurs-commune-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
     <div>
       <h2 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: -0.6 }}>{cv.v}</h2>
       <div style={{ fontSize: 13, color: "var(--lo-muted)", marginTop: 3 }}>{cv.p.toLocaleString("fr-FR")} prises · Dept {cvDept}</div>
@@ -137,8 +140,8 @@ return (
 {showMap && <CommuneHeatmap communeName={cv.v} rueList={rueList} />}
 
 {/* Street search */}
-<Card style={{ padding: 20 }}>
-  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
+<Card className="secteurs-street-card" style={{ padding: 20 }}>
+  <div className="secteurs-street-toolbar" style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
     <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "var(--lo-ink)" }}>Rues</h3>
     <span style={{ fontSize: 12, color: "var(--lo-faint)", flex: 1 }}>{cvContracts.length} contrat{cvContracts.length > 1 ? "s" : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
     {[["top","🏆 Top"], ["recent","🕐 Récentes"]].map(function(opt) {
@@ -217,7 +220,7 @@ return (
 // === SECTOR DETAIL VIEW ===
 if (sel) {
 var isTalc = selSource === "TALC";
-var jData = isTalc ? JACHERE_TALC[sel] : JACHERE[sel];
+var jData = isTalc ? jachereTalc[sel] : jachere[sel];
 var s = (isTalc ? statsTalc : stats).find(function(x) { return x.name === sel; });
 var sorted = jData.communes.slice().sort(function(a, b) {
 var ac = month ? (isTalc ? getTalcC(a, jData.dept, month) : getC(a, jData.dept, month)) : getCTotal(a, jData.dept, isTalc);
@@ -228,29 +231,29 @@ return (bc / (b.p || 1)) - (ac / (a.p || 1));
 });
 return (
 <div>
-<div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
+<div className="secteurs-detail-header" style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
 <Btn v="ghost" onClick={function() { setSel(null); setSelSource(null); setCommuneSearch(""); setDormantFilter(0); }}>← Retour</Btn>
-<h2 style={{ margin: 0, fontSize: 20, fontWeight: 800 }}>{sel}</h2>
+<h2 className="secteurs-detail-title" style={{ margin: 0, fontSize: 20, fontWeight: 800 }}>{sel}</h2>
 {isTalc ? <Badge color="var(--lo-taupe)">TALC</Badge> : <Badge color={OP_COLORS.Free}>Stratygo</Badge>}
 {!isTalc && DEPT_ZONES[jData.dept] && DEPT_ZONES[jData.dept].b && <Badge color={OP_COLORS.Bouygues}>Bouygues</Badge>}
-<div style={{ marginLeft: "auto" }}><Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 140 }} /></div>
+<div className="secteurs-detail-select" style={{ marginLeft: "auto" }}><Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 140 }} /></div>
 </div>
-<div style={{ display: "flex", gap: 16, marginBottom: 20, flexWrap: "wrap" }}>
+<div className="secteurs-stat-row" style={{ display: "flex", gap: 16, marginBottom: 20, flexWrap: "wrap" }}>
 <StatCard label="Communes" value={jData.communes.length} color="var(--lo-primary)" />
 <StatCard label="Prises" value={s.tp.toLocaleString("fr-FR")} color="var(--lo-ink)" />
 <StatCard label="Contrats" value={s.tc} color="var(--lo-accent)" />
 <StatCard label="Taux" value={s.taux.toFixed(2) + "%"} color={s.taux > 0.5 ? "var(--lo-accent)" : "var(--lo-taupe)"} />
 </div>
-<Card>
-<div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+<Card className="secteurs-communes-card">
+<div className="secteurs-communes-toolbar" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
 <h3 style={{ margin: 0, fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "var(--lo-ink)" }}>Communes</h3>
-<div style={{ display: "flex", gap: 6 }}>
+<div className="secteurs-sort-controls" style={{ display: "flex", gap: 6 }}>
 <Btn s="sm" v={sortBy === "c" ? "primary" : "secondary"} onClick={function() { setSortBy("c"); }}>Contrats</Btn>
 <Btn s="sm" v={sortBy === "p" ? "primary" : "secondary"} onClick={function() { setSortBy("p"); }}>Prises</Btn>
 <Btn s="sm" v={sortBy === "t" ? "primary" : "secondary"} onClick={function() { setSortBy("t"); }}>Taux</Btn>
 </div>
 </div>
-<div style={{ display: "flex", gap: 6, marginBottom: 16, flexWrap: "wrap", alignItems: "center" }}>
+<div className="secteurs-dormant-filter" style={{ display: "flex", gap: 6, marginBottom: 16, flexWrap: "wrap", alignItems: "center" }}>
 <span style={{ fontSize: 12, color: "var(--lo-muted)", marginRight: 4 }}>Pas de prospection depuis :</span>
 {[0,1,2,3,4,5,6].map(function(m) {
   var active = dormantFilter === m;
@@ -313,12 +316,13 @@ initial={{ opacity: 0, y: 10 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.25, delay: i * 0.04 }}
 onClick={function() { setCommuneView({ commune: c, dept: jData.dept, isTalc: isTalc }); setRueSearch(""); }}
+className="secteurs-commune-row"
 style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", background: i % 2 ? "rgba(76,87,96,0.05)" : "transparent", borderRadius: 8, cursor: "pointer" }}
 >
 <div style={{ width: 24, textAlign: "center", fontSize: 12, fontWeight: 700, color: "var(--lo-faint)" }}>{i + 1}</div>
-<div style={{ flex: 1 }}>
-<div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-<span style={{ fontSize: 13, fontWeight: 600 }}>{c.v}</span>
+<div className="secteurs-commune-main" style={{ flex: 1 }}>
+<div className="secteurs-commune-name-row" style={{ display: "flex", alignItems: "center", gap: 6 }}>
+<span className="secteurs-commune-name" style={{ fontSize: 13, fontWeight: 600 }}>{c.v}</span>
 <Badge color={c.z === "H" ? "var(--lo-danger)" : "var(--lo-primary)"}>{c.z === "H" ? "Haute" : "Std"}</Badge>
 </div>
 <div style={{ fontSize: 11, color: lpColor, marginTop: 2 }}>{lpText}</div>
@@ -326,11 +330,11 @@ style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", b
 <div style={{ width: Math.min(t * 50, 100) + "%", height: "100%", borderRadius: 3, background: col }} />
 </div>
 </div>
-<div style={{ textAlign: "right", minWidth: 70 }}>
+<div className="secteurs-commune-count" style={{ textAlign: "right", minWidth: 70 }}>
 <div style={{ fontSize: 14, fontWeight: 800, color: cc ? "var(--lo-ink)" : "rgba(76,87,96,0.24)" }}>{cc}</div>
 <div style={{ fontSize: 10, color: "var(--lo-faint)" }}>{c.p.toLocaleString("fr-FR")} pr.</div>
 </div>
-<div style={{ minWidth: 45, textAlign: "right" }}>
+<div className="secteurs-commune-rate" style={{ minWidth: 45, textAlign: "right" }}>
 <span style={{ fontSize: 12, fontWeight: 700, color: col }}>{t.toFixed(2)}%</span>
 </div>
 </motion.div>
@@ -344,14 +348,14 @@ style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", b
 // === OVERVIEW ===
 return (
 <div>
-<div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
+<div className="secteurs-overview-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
 <div>
 <h2 style={{ margin: 0, fontSize: 17, fontWeight: 600, letterSpacing: -0.4, color: "var(--lo-ink)" }}>Secteurs</h2>
 <p style={{ margin: "4px 0 0", fontSize: 13, color: "var(--lo-muted)" }}>{stats.length} secteurs Stratygo · {statsTalc.length} secteurs TALC</p>
 </div>
-<Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 150 }} />
+<div className="secteurs-overview-select"><Sel value={month} onChange={setMonth} placeholder="Tous les mois" options={MONTHS_ORDER.map(function(m) { return { value: m, label: MONTHS_LABELS[m] }; })} style={{ minWidth: 150 }} /></div>
 </div>
-<div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
+<div className="secteurs-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
 {stats.concat(statsTalc).sort(function(a, b) { return b.tc - a.tc; }).map(function(j, i) {
 var isTalcCard = j.source === "TALC";
 var col = j.taux > 0.5 ? "var(--lo-accent)" : j.taux > 0.2 ? "var(--lo-taupe)" : "var(--lo-danger)";
@@ -362,10 +366,10 @@ initial={{ opacity: 0, y: 16 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.3, delay: i * 0.04 }}
 >
-<Card onClick={function() { setSel(j.name); setSelSource(j.source); }} style={{ cursor: "pointer", padding: 18, border: "1px solid " + (isTalcCard ? "rgba(255,159,10,0.25)" : "rgba(76,87,96,0.14)") }}>
-<div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
-<div>
-<div style={{ fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "var(--lo-ink)" }}>{j.name}</div>
+<Card className="secteurs-card" onClick={function() { setSel(j.name); setSelSource(j.source); }} style={{ cursor: "pointer", padding: 18, border: "1px solid " + (isTalcCard ? "rgba(255,159,10,0.25)" : "rgba(76,87,96,0.14)") }}>
+<div className="secteurs-card-head" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
+<div className="secteurs-card-title-block">
+<div className="secteurs-card-title" style={{ fontSize: 14, fontWeight: 600, letterSpacing: -0.3, color: "var(--lo-ink)" }}>{j.name}</div>
 <div style={{ fontSize: 12, color: "var(--lo-faint)", marginTop: 2 }}>{j.communes.length} com. · {j.tp.toLocaleString("fr-FR")} prises</div>
 </div>
 <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
