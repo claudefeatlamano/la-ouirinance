@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-02T04:17:34.862612+00:00",
+  "scraped_at": "2026-06-02T09:09:46.185165+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10427,7 +10427,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0903706",
@@ -10487,7 +10487,7 @@
       "cp": "44240",
       "ville": "LA CHAPELLE-SUR-ERDRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Doublon de Lead"
     },
     {
       "num_contrat": "C2E0901619",
@@ -10619,7 +10619,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0897403",
@@ -10679,7 +10679,7 @@
       "cp": "44320",
       "ville": "ST PERE EN RETZ",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO/KO SAISIE"
+      "etat_commande": "KO/Doublon de Lead"
     },
     {
       "num_contrat": "C2E0898648",
