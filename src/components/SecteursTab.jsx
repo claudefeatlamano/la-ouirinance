@@ -25,11 +25,7 @@ var jachere = sectorCatalog.jachere;
 var jachereTalc = sectorCatalog.jachereTalc;
 
 function getCTotal(c, dept, isTalc) {
-  var total = 0;
-  MONTHS_ORDER.forEach(function(mk) {
-    total += isTalc ? getTalcC(c, dept, mk) : getC(c, dept, mk);
-  });
-  return total;
+  return isTalc ? getTalcC(c, dept, "") : getC(c, dept, "");
 }
 
 var stats = Object.entries(jachere).map(function(entry) {

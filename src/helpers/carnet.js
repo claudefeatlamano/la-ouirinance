@@ -1,55 +1,18 @@
 import contractsArchive from "../contracts-archive.json";
 import { MONTHLY } from "./monthly-data.js";
+import { buildCarnetCounts, getArchiveCount, getLegacyMonthlyCount, normalizeSectorVille } from "./carnet-core.js";
 
-// Archive permanente des contrats (memoire durable, maj par update_archive.py a
-// chaque scrape). Les comptes par commune/mois sont calcules sur TOUT l'historique
-// archive (et plus seulement la fenetre ~2 mois du carnet), pour que la couverture
-// terrain reste exacte a mesure que les contrats vieillissent.
+// Archive permanente des contrats. Les mois dates (ex: jun26) viennent seulement
+// de l'archive; le fallback MONTHLY n'a pas d'annee et reste reserve aux totaux.
 var _archiveRows = Object.values(contractsArchive);
-var _carnetFreeRows = _archiveRows.filter(function(r) { return r._op === "free"; });
-var _carnetBygRows = _archiveRows.filter(function(r) { return r._op === "bouygues"; });
+var CARNET_COUNTS = buildCarnetCounts(_archiveRows);
 
 function normVille(s) {
-  return (s || "").toUpperCase().trim().replace(/\bST /g, "SAINT ").replace(/\bSTE /g, "SAINTE ");
+  return normalizeSectorVille(s);
 }
 
-// Carnet auto-feed counts for TALC sectors
-var CARNET_BY_VILLE_ALL = {};
-var CARNET_BY_VILLE_MONTH = {};
-(function() {
-  var ML = ["jan","fev","mar","avr","mai","jun","jul","aou","sep","oct","nov","dec"];
-  _carnetFreeRows.forEach(function(row) {
-    var v = (row.ville || "").toUpperCase().trim();
-    if (!v) return;
-    CARNET_BY_VILLE_ALL[v] = (CARNET_BY_VILLE_ALL[v] || 0) + 1;
-    // raw carnet field is date_inscription ("2026-02-05 19:48"), not date
-    var d = (row.date_inscription || row.date || "").split(" ")[0];
-    var p = d.split("-");
-    if (p.length === 3) {
-      var mk = ML[parseInt(p[1])-1] + p[0].slice(2);
-      if (!CARNET_BY_VILLE_MONTH[v]) CARNET_BY_VILLE_MONTH[v] = {};
-      CARNET_BY_VILLE_MONTH[v][mk] = (CARNET_BY_VILLE_MONTH[v][mk] || 0) + 1;
-    }
-  });
-})();
-
-// Count BT (Bouygues) contracts into the same ville maps
-(function() {
-  var ML = ["jan","fev","mar","avr","mai","jun","jul","aou","sep","oct","nov","dec"];
-  _carnetBygRows.forEach(function(row) {
-    var v = normVille(row.ville);
-    if (!v) return;
-    CARNET_BY_VILLE_ALL[v] = (CARNET_BY_VILLE_ALL[v] || 0) + 1;
-    // BT date format is DD/MM/YYYY HH:MM
-    var d = (row.date_inscription || "").split(" ")[0];
-    var p = d.split("/");
-    if (p.length === 3) {
-      var mk = ML[parseInt(p[1])-1] + p[2].slice(2);
-      if (!CARNET_BY_VILLE_MONTH[v]) CARNET_BY_VILLE_MONTH[v] = {};
-      CARNET_BY_VILLE_MONTH[v][mk] = (CARNET_BY_VILLE_MONTH[v][mk] || 0) + 1;
-    }
-  });
-})();
+var CARNET_BY_VILLE_ALL = CARNET_COUNTS.byVilleAll;
+var CARNET_BY_VILLE_MONTH = CARNET_COUNTS.byVilleMonth;
 
 var _ML_KEYS = ["jan","fev","mar","avr","mai","jun","jul","aou","sep","oct","nov","dec"];
 var _ML_FULL = ["Janv","Fev","Mars","Avr","Mai","Juin","Juil","Aout","Sept","Oct","Nov","Dec"];
@@ -72,32 +35,27 @@ var MONTH_KEY_MAP = MONTHS_ORDER.reduce(function(acc, mk) {
 }, {});
 
 function getC(commune, dept, month) {
-if (!month) {
-var carnetTotal = CARNET_BY_VILLE_ALL[commune.v] || 0;
-if (carnetTotal > 0) return carnetTotal;
-var mAll = MONTHLY[commune.v + "|" + dept];
-if (!mAll) return commune.c || 0;
-var total = 0;
-Object.keys(mAll).forEach(function(k) { total += mAll[k]; });
-return total;
-}
-// Carnet first (live, accurate) — fallback to Excel MONTHLY for old months not in carnet
-var carnetVal = (CARNET_BY_VILLE_MONTH[commune.v] && CARNET_BY_VILLE_MONTH[commune.v][month]) || 0;
-if (carnetVal > 0) return carnetVal;
-var dataKey = MONTH_KEY_MAP[month] || month;
-var m = MONTHLY[commune.v + "|" + dept];
-return m ? (m[dataKey] || 0) : 0;
+  var v = normVille(commune.v);
+  if (!month) {
+    var archiveTotal = getArchiveCount(CARNET_COUNTS, v, dept, "");
+    if (archiveTotal > 0) return archiveTotal;
+    var legacyTotal = getLegacyMonthlyCount(MONTHLY, v, dept, "");
+    if (legacyTotal > 0) return legacyTotal;
+    return commune.c || 0;
+  }
+  var archiveVal = getArchiveCount(CARNET_COUNTS, v, dept, month);
+  if (archiveVal > 0) return archiveVal;
+  return getLegacyMonthlyCount(MONTHLY, v, dept, month);
 }
 
 function getTalcC(commune, dept, month) {
-  var v = commune.v;
-  if (!month) return CARNET_BY_VILLE_ALL[v] || 0;
-  // Carnet first (live, accurate) — fallback to Excel MONTHLY for old months not in carnet
-  var carnetVal = (CARNET_BY_VILLE_MONTH[v] && CARNET_BY_VILLE_MONTH[v][month]) || 0;
-  if (carnetVal > 0) return carnetVal;
-  var dataKey = MONTH_KEY_MAP[month] || month;
-  var m = MONTHLY[v + "|" + dept];
-  return m ? (m[dataKey] || 0) : 0;
+  var v = normVille(commune.v);
+  if (!month) {
+    return getArchiveCount(CARNET_COUNTS, v, dept, "") || getLegacyMonthlyCount(MONTHLY, v, dept, "");
+  }
+  var archiveVal = getArchiveCount(CARNET_COUNTS, v, dept, month);
+  if (archiveVal > 0) return archiveVal;
+  return getLegacyMonthlyCount(MONTHLY, v, dept, month);
 }
 
 export { CARNET_BY_VILLE_ALL, CARNET_BY_VILLE_MONTH, getTalcC, getC, MONTHS_ORDER, MONTHS_LABELS, MONTH_KEY_MAP, MONTHLY, _ML_KEYS, _ML_FULL, normVille };

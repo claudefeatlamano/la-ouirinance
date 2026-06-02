@@ -21,6 +21,8 @@
     "build": "vite build",
     "build:secteurs": "vite build --config vite.secteurs.config.js",
     "preview": "vite preview",
-    "test:agency-config": "node tests/agency-config.test.mjs"
+    "test:agency-config": "node tests/agency-config.test.mjs",
+    "test:sectors": "node tests/carnet.test.mjs",
+    "test": "npm run test:agency-config && npm run test:sectors && node tests/sector-catalog.test.mjs && node tests/import-parser.test.mjs"
   }
 }
