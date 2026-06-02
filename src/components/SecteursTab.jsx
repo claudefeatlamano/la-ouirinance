@@ -120,7 +120,7 @@ return (
       <span style={{ fontSize: 12, color: "var(--lo-muted)" }}>6 derniers mois <strong style={{ color: cvTotal6 > 0 ? "var(--lo-ink)" : "rgba(76,87,96,0.24)" }}>{cvTotal6}</strong></span>
       {month && <span style={{ fontSize: 12, color: "var(--lo-muted)" }}>{MONTHS_LABELS[month]} <strong style={{ color: cvSelectedCount > 0 ? "var(--lo-primary)" : "rgba(76,87,96,0.24)" }}>{cvSelectedCount}</strong></span>}
     </div>
-    <span style={{ fontSize: 11, color: "var(--lo-faint)" }}>Tous contrats signés</span>
+    <span style={{ fontSize: 11, color: "var(--lo-faint)" }}>Tous contrats terrain</span>
   </div>
 </Card>
 
