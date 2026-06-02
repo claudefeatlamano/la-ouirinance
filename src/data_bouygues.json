@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-02T18:42:17.614710+00:00",
+  "scraped_at": "2026-06-02T21:50:26.840062+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -8903,7 +8903,7 @@
       "cp": "44320",
       "ville": "FROSSAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0896518",
