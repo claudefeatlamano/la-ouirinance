@@ -31,7 +31,9 @@ export default async function handler(req, res) {
       res.status(502).json({ error: "bot_error", status: r.status, detail: text });
       return;
     }
-    res.status(200).json({ ok: true });
+    var parsed;
+    try { parsed = JSON.parse(text); } catch (e) { parsed = { raw: text }; }
+    res.status(200).json(parsed);
   } catch (e) {
     res.status(500).json({ error: "send_failed", detail: String(e) });
   }
