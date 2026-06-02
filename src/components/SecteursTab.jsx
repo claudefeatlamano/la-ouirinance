@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Card, Btn, Inp, Badge, Sel, StatCard } from "./ui.jsx";
 import { DEPT_ZONES, OP_COLORS } from "../constants/roles.js";
 import { getC, getTalcC, MONTHS_ORDER, MONTHS_LABELS, normVille } from "../helpers/carnet.js";
+import { getArchiveMonthKey } from "../helpers/carnet-core.js";
+import { isCaduque } from "../helpers/status.js";
 import { DEMO_CONTRACTS } from "../data/contracts.js";
 import { CommuneHeatmap } from "./MapTab.jsx";
 import { getSectorCatalog } from "../helpers/sector-catalog.js";
@@ -57,7 +59,9 @@ var cvTotal6 = cvVals.reduce(function(s, v) { return s + v.count; }, 0);
 
 // Street data from live contracts
 var cvContracts = DEMO_CONTRACTS.filter(function(ct) {
-  return normVille(ct.ville) === cv.v;
+  if (normVille(ct.ville) !== cv.v) return false;
+  if (isCaduque(ct)) return false;
+  return !month || getArchiveMonthKey(ct) === month;
 });
 // Group by rue
 var rueMap = {};
@@ -139,7 +143,7 @@ return (
 <Card className="secteurs-street-card" style={{ padding: 20 }}>
   <div className="secteurs-street-toolbar" style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
     <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "var(--lo-ink)" }}>Rues</h3>
-    <span style={{ fontSize: 12, color: "var(--lo-faint)", flex: 1 }}>{cvContracts.length} contrat{cvContracts.length > 1 ? "s" : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
+    <span style={{ fontSize: 12, color: "var(--lo-faint)", flex: 1 }}>{cvContracts.length} contrat{cvContracts.length > 1 ? "s" : ""}{month ? " · " + MONTHS_LABELS[month] : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
     {[["top","🏆 Top"], ["recent","🕐 Récentes"]].map(function(opt) {
       var active = rueSort === opt[0];
       return <button key={opt[0]} onClick={function() { setRueSort(opt[0]); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: active ? "rgba(76,87,96,0.14)" : "transparent", color: active ? "#fff" : "var(--lo-muted)", borderColor: active ? "rgba(76,87,96,0.14)" : "rgba(76,87,96,0.10)", fontFamily: "inherit" }}>{opt[1]}</button>;
