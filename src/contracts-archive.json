@@ -15521,6 +15521,19 @@
 "vendeur": "LEGRAND DJANY",
 "ville": "NIORT"
 },
+"byg-C2E0909327": {
+"_op": "bouygues",
+"cp": "85500",
+"date_inscription": "02/06/2026 16:09",
+"etat_commande": "Saisie",
+"login": "c2.4869",
+"nom client": "GILLOTTE",
+"num_contrat": "C2E0909327",
+"produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+"type": "Acquisition",
+"vendeur": "LEGRAND STEPHANE",
+"ville": "LES HERBIERS"
+},
 "f-875541": {
 "_op": "free",
 "adresse": "4 RUE DE LA CADIVAIS",

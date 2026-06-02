@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-02T14:06:24.265059+00:00",
+  "scraped_at": "2026-06-02T14:50:30.044550+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14326,6 +14326,18 @@
       "nom client": "OBLIGY",
       "cp": "85140",
       "ville": "ESSARTS EN BOCAGE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0909327",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 16:09",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "GILLOTTE",
+      "cp": "85500",
+      "ville": "LES HERBIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
     }
