@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-02T09:09:46.185165+00:00",
+  "scraped_at": "2026-06-02T14:06:24.265059+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10463,7 +10463,7 @@
       "cp": "85130",
       "ville": "ST MARTIN DES TILLEULS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0905708",
@@ -14279,6 +14279,54 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0909177",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 14:57",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "GENDRONNEAU",
+      "cp": "85140",
+      "ville": "ESSARTS EN BOCAGE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909120",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 14:22",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "DIALLO",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909287",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 15:49",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "DALIGAULT",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909157",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 14:42",
+      "login": "c2.5253",
+      "vendeur": "WAHID NORA",
+      "nom client": "OBLIGY",
+      "cp": "85140",
+      "ville": "ESSARTS EN BOCAGE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
     }
   ]
