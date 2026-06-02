@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, Btn, Inp, Badge, Sel, StatCard } from "./ui.jsx";
 import { DEPT_ZONES, OP_COLORS } from "../constants/roles.js";
-import { getC, getTalcC, MONTHS_ORDER, MONTHS_LABELS, normVille } from "../helpers/carnet.js";
-import { getArchiveMonthKey } from "../helpers/carnet-core.js";
-import { isCaduque } from "../helpers/status.js";
-import { DEMO_CONTRACTS } from "../data/contracts.js";
+import { getC, getTalcC, getCommuneStreetStats, MONTHS_ORDER, MONTHS_LABELS } from "../helpers/carnet.js";
 import { CommuneHeatmap } from "./MapTab.jsx";
 import { getSectorCatalog } from "../helpers/sector-catalog.js";
 
@@ -16,7 +13,7 @@ const [sortBy, setSortBy] = useState("c");
 const [month, setMonth] = useState("");
 const [communeView, setCommuneView] = useState(null); // { commune, dept, isTalc }
 const [rueSearch, setRueSearch] = useState("");
-const [rueSort, setRueSort] = useState("top"); // "top" | "recent"
+const [rueSort, setRueSort] = useState("top"); // "top" | "recent" | "month"
 const [showMap, setShowMap] = useState(false);
 const [communeSearch, setCommuneSearch] = useState("");
 const [dormantFilter, setDormantFilter] = useState(0);
@@ -56,26 +53,12 @@ var cvVals = last6Months.map(function(mk) {
 });
 var cvMax = Math.max.apply(null, cvVals.map(function(v) { return v.count; })) || 1;
 var cvTotal6 = cvVals.reduce(function(s, v) { return s + v.count; }, 0);
+var cvTotalAll = cvTalc ? getTalcC(cv, cvDept, "") : getC(cv, cvDept, "");
+var cvSelectedCount = month ? (cvTalc ? getTalcC(cv, cvDept, month) : getC(cv, cvDept, month)) : 0;
 
-// Street data from live contracts
-var cvContracts = DEMO_CONTRACTS.filter(function(ct) {
-  if (normVille(ct.ville) !== cv.v) return false;
-  if (isCaduque(ct)) return false;
-  return !month || getArchiveMonthKey(ct) === month;
-});
-// Group by rue
-var rueMap = {};
-cvContracts.forEach(function(ct) {
-  var r = (ct.rue || "").trim();
-  if (!r) r = "(rue non renseignée)";
-  if (!rueMap[r]) rueMap[r] = { count: 0, commerciaux: {}, lastDate: "" };
-  rueMap[r].count++;
-  if (ct.date && ct.date > rueMap[r].lastDate) rueMap[r].lastDate = ct.date;
-  var com = ct.commercial || "?";
-  rueMap[r].commerciaux[com] = (rueMap[r].commerciaux[com] || 0) + 1;
-});
-var rueList = Object.entries(rueMap).sort(function(a, b) {
+var rueList = getCommuneStreetStats(cv, cvDept, month, last6Months).sort(function(a, b) {
   if (rueSort === "recent") return b[1].lastDate > a[1].lastDate ? 1 : b[1].lastDate < a[1].lastDate ? -1 : 0;
+  if (rueSort === "month" && month) return b[1].monthCount - a[1].monthCount || b[1].count - a[1].count;
   return b[1].count - a[1].count;
 });
 var rueQuery = rueSearch.trim().toUpperCase();
@@ -131,9 +114,13 @@ return (
       );
     })}
   </div>
-  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 12, paddingTop: 12, borderTop: "1px solid rgba(76,87,96,0.08)" }}>
-    <span style={{ fontSize: 12, color: "var(--lo-muted)" }}>Total 6 derniers mois</span>
-    <span style={{ fontSize: 18, fontWeight: 800, color: cvTotal6 > 0 ? "var(--lo-ink)" : "rgba(76,87,96,0.24)" }}>{cvTotal6} contrat{cvTotal6 > 1 ? "s" : ""}</span>
+  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, flexWrap: "wrap", marginTop: 12, paddingTop: 12, borderTop: "1px solid rgba(76,87,96,0.08)" }}>
+    <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+      <span style={{ fontSize: 12, color: "var(--lo-muted)" }}>Historique <strong style={{ color: "var(--lo-ink)" }}>{cvTotalAll}</strong></span>
+      <span style={{ fontSize: 12, color: "var(--lo-muted)" }}>6 derniers mois <strong style={{ color: cvTotal6 > 0 ? "var(--lo-ink)" : "rgba(76,87,96,0.24)" }}>{cvTotal6}</strong></span>
+      {month && <span style={{ fontSize: 12, color: "var(--lo-muted)" }}>{MONTHS_LABELS[month]} <strong style={{ color: cvSelectedCount > 0 ? "var(--lo-primary)" : "rgba(76,87,96,0.24)" }}>{cvSelectedCount}</strong></span>}
+    </div>
+    <span style={{ fontSize: 11, color: "var(--lo-faint)" }}>Tous contrats signés</span>
   </div>
 </Card>
 
@@ -143,12 +130,12 @@ return (
 <Card className="secteurs-street-card" style={{ padding: 20 }}>
   <div className="secteurs-street-toolbar" style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
     <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "var(--lo-ink)" }}>Rues</h3>
-    <span style={{ fontSize: 12, color: "var(--lo-faint)", flex: 1 }}>{cvContracts.length} contrat{cvContracts.length > 1 ? "s" : ""}{month ? " · " + MONTHS_LABELS[month] : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
-    {[["top","🏆 Top"], ["recent","🕐 Récentes"]].map(function(opt) {
+    <span style={{ fontSize: 12, color: "var(--lo-faint)", flex: 1 }}>{cvTotalAll} contrat{cvTotalAll > 1 ? "s" : ""} historique{month ? " · " + cvSelectedCount + " sur " + MONTHS_LABELS[month] : ""} · {rueList.length} rue{rueList.length > 1 ? "s" : ""}</span>
+    {[["top","Top"], ["recent","Récentes"]].concat(month ? [["month", MONTHS_LABELS[month].split(" ")[0]]] : []).map(function(opt) {
       var active = rueSort === opt[0];
       return <button key={opt[0]} onClick={function() { setRueSort(opt[0]); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: active ? "rgba(76,87,96,0.14)" : "transparent", color: active ? "#fff" : "var(--lo-muted)", borderColor: active ? "rgba(76,87,96,0.14)" : "rgba(76,87,96,0.10)", fontFamily: "inherit" }}>{opt[1]}</button>;
     })}
-    <button onClick={function() { setShowMap(function(v) { return !v; }); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: showMap ? "var(--lo-primary)" : "transparent", color: showMap ? "#fff" : "var(--lo-muted)", borderColor: showMap ? "var(--lo-primary)" : "rgba(76,87,96,0.10)", fontFamily: "inherit" }}>🗺 Carte</button>
+    <button onClick={function() { setShowMap(function(v) { return !v; }); }} style={{ fontSize: 11, fontWeight: 600, padding: "4px 10px", borderRadius: 20, border: "1.5px solid", cursor: "pointer", background: showMap ? "var(--lo-primary)" : "transparent", color: showMap ? "#fff" : "var(--lo-muted)", borderColor: showMap ? "var(--lo-primary)" : "rgba(76,87,96,0.10)", fontFamily: "inherit" }}>Carte</button>
   </div>
   <div style={{ position: "relative", marginBottom: 16 }}>
     <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", fontSize: 14, color: "var(--lo-faint)", pointerEvents: "none" }}>🔍</span>
@@ -205,7 +192,9 @@ return (
             </div>
             <div style={{ textAlign: "right", flexShrink: 0 }}>
               <div style={{ fontSize: 18, fontWeight: 800, color: cvColor }}>{info.count}</div>
-              <div style={{ fontSize: 10, color: "var(--lo-faint)" }}>contrat{info.count > 1 ? "s" : ""}</div>
+              <div style={{ fontSize: 10, color: "var(--lo-faint)" }}>total</div>
+              <div style={{ fontSize: 10, color: info.recentCount ? "var(--lo-ink)" : "var(--lo-faint)", fontWeight: info.recentCount ? 700 : 400 }}>{info.recentCount} rec.</div>
+              {month && <div style={{ fontSize: 10, color: info.monthCount ? "var(--lo-primary)" : "var(--lo-faint)", fontWeight: info.monthCount ? 800 : 400 }}>{info.monthCount} mois</div>}
             </div>
           </motion.div>
         );

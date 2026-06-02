@@ -29,6 +29,17 @@ function getArchiveMonthKey(row) {
   return "";
 }
 
+function getArchiveDateKey(row) {
+  var raw = (row.date_inscription || row.date || "").split(" ")[0];
+  if (!raw) return "";
+  if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) return raw;
+  if (/^\d{2}\/\d{2}\/\d{4}$/.test(raw)) {
+    var parts = raw.split("/");
+    return parts[2] + "-" + parts[1] + "-" + parts[0];
+  }
+  return "";
+}
+
 function getArchiveDept(row) {
   var dept = (row.departement || row.dept || "").toString().trim();
   if (dept) return dept;
@@ -76,7 +87,6 @@ function incrementMonth(map, key, month) {
 function buildCarnetCounts(rows) {
   var counts = makeEmptyCounts();
   (rows || []).forEach(function(row) {
-    if (!isCountableArchiveRow(row)) return;
     var ville = normalizeSectorVille(row.ville);
     if (!ville) return;
     var month = getArchiveMonthKey(row);
@@ -92,6 +102,47 @@ function buildCarnetCounts(rows) {
     }
   });
   return counts;
+}
+
+function archiveRowMatchesCommune(row, ville, dept) {
+  if (normalizeSectorVille(row.ville) !== normalizeSectorVille(ville)) return false;
+  var rowDept = getArchiveDept(row);
+  return !dept || !rowDept || rowDept === dept;
+}
+
+function normalizeStreet(row) {
+  return (row.adresse || row.rue || "").toString().trim().toUpperCase() || "(RUE NON RENSEIGNEE)";
+}
+
+function getArchiveCommercial(row) {
+  return (row.vendeur || row.commercial || row.login || "?").toString().trim() || "?";
+}
+
+function buildCommuneStreetStats(rows, ville, dept, selectedMonth, recentMonths) {
+  var recentSet = {};
+  (recentMonths || []).forEach(function(month) { recentSet[month] = true; });
+  var byStreet = {};
+  (rows || []).forEach(function(row) {
+    if (!archiveRowMatchesCommune(row, ville, dept)) return;
+    var street = normalizeStreet(row);
+    var month = getArchiveMonthKey(row);
+    var date = getArchiveDateKey(row);
+    if (!byStreet[street]) {
+      byStreet[street] = { count: 0, monthCount: 0, recentCount: 0, commerciaux: {}, operators: {}, lastDate: "" };
+    }
+    var info = byStreet[street];
+    info.count++;
+    if (selectedMonth && month === selectedMonth) info.monthCount++;
+    if (recentSet[month]) info.recentCount++;
+    if (date && date > info.lastDate) info.lastDate = date;
+    var commercial = getArchiveCommercial(row);
+    info.commerciaux[commercial] = (info.commerciaux[commercial] || 0) + 1;
+    var op = row._op || row.operator || "?";
+    info.operators[op] = (info.operators[op] || 0) + 1;
+  });
+  return Object.entries(byStreet).sort(function(a, b) {
+    return b[1].count - a[1].count || (b[1].lastDate > a[1].lastDate ? 1 : b[1].lastDate < a[1].lastDate ? -1 : 0);
+  });
 }
 
 function getArchiveCount(counts, ville, dept, month) {
@@ -120,6 +171,8 @@ function getLegacyMonthlyCount(monthly, ville, dept, month) {
 
 export {
   buildCarnetCounts,
+  buildCommuneStreetStats,
+  getArchiveDateKey,
   getArchiveCount,
   getArchiveDept,
   getArchiveMonthKey,

@@ -1,6 +1,6 @@
 import contractsArchive from "../contracts-archive.json";
 import { MONTHLY } from "./monthly-data.js";
-import { buildCarnetCounts, getArchiveCount, getLegacyMonthlyCount, normalizeSectorVille } from "./carnet-core.js";
+import { buildCarnetCounts, buildCommuneStreetStats, getArchiveCount, getLegacyMonthlyCount, normalizeSectorVille } from "./carnet-core.js";
 
 // Archive permanente des contrats. Les mois dates (ex: jun26) viennent seulement
 // de l'archive; le fallback MONTHLY n'a pas d'annee et reste reserve aux totaux.
@@ -58,4 +58,8 @@ function getTalcC(commune, dept, month) {
   return getLegacyMonthlyCount(MONTHLY, v, dept, month);
 }
 
-export { CARNET_BY_VILLE_ALL, CARNET_BY_VILLE_MONTH, getTalcC, getC, MONTHS_ORDER, MONTHS_LABELS, MONTH_KEY_MAP, MONTHLY, _ML_KEYS, _ML_FULL, normVille };
+function getCommuneStreetStats(commune, dept, selectedMonth, recentMonths) {
+  return buildCommuneStreetStats(_archiveRows, commune.v || commune, dept, selectedMonth || "", recentMonths || []);
+}
+
+export { CARNET_BY_VILLE_ALL, CARNET_BY_VILLE_MONTH, getTalcC, getC, getCommuneStreetStats, MONTHS_ORDER, MONTHS_LABELS, MONTH_KEY_MAP, MONTHLY, _ML_KEYS, _ML_FULL, normVille };

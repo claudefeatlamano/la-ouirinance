@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import {
   buildCarnetCounts,
+  buildCommuneStreetStats,
   getArchiveCount,
   getLegacyMonthlyCount,
   normalizeSectorVille,
@@ -43,7 +44,32 @@ var counts = buildCarnetCounts([
   },
 ]);
 
-assert.equal(getArchiveCount(counts, "SABLES D OLONNE", "85", "jun26"), 2);
+assert.equal(getArchiveCount(counts, "SABLES D OLONNE", "85", "jun26"), 3);
 assert.equal(getArchiveCount(counts, "SABLES D OLONNE", "44", "jun26"), 0);
+
+var streets = buildCommuneStreetStats([
+  {
+    _op: "free",
+    cp: "85194",
+    date_inscription: "2026-01-02 11:00:00",
+    ville: "Sables d olonne",
+    adresse: "1 RUE ANCIENNE",
+    vendeur: "ancien vendeur",
+  },
+  {
+    _op: "free",
+    cp: "85194",
+    date_inscription: "2026-06-02 11:00:00",
+    ville: "LES SABLES-D'OLONNE",
+    adresse: "2 RUE RECENTE",
+    vendeur: "vendeur recent",
+  },
+], "SABLES D OLONNE", "85", "jun26", ["mai26", "jun26"]);
+
+assert.equal(streets.length, 2);
+assert.equal(streets.find(function(entry) { return entry[0] === "1 RUE ANCIENNE"; })[1].count, 1);
+assert.equal(streets.find(function(entry) { return entry[0] === "1 RUE ANCIENNE"; })[1].monthCount, 0);
+assert.equal(streets.find(function(entry) { return entry[0] === "2 RUE RECENTE"; })[1].monthCount, 1);
+assert.equal(streets.find(function(entry) { return entry[0] === "2 RUE RECENTE"; })[1].recentCount, 1);
 
 console.log("carnet.test.mjs ok");
