@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-02T14:50:30.044550+00:00",
+  "scraped_at": "2026-06-02T17:32:49.709900+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9779,7 +9779,7 @@
       "cp": "86000",
       "ville": "POITIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0899356",
@@ -14327,7 +14327,7 @@
       "cp": "85140",
       "ville": "ESSARTS EN BOCAGE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0909327",
@@ -14340,6 +14340,54 @@
       "ville": "LES HERBIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0909610",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 19:10",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "SIMON",
+      "cp": "85140",
+      "ville": "ESSARTS EN BOCAGE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909431",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 17:07",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "DURAND",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909571",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 18:36",
+      "login": "c2.5663",
+      "vendeur": "SY ASSANE DIENG",
+      "nom client": "DEMIROK",
+      "cp": "44220",
+      "ville": "COUERON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0909599",
+      "type": "Acquisition",
+      "date_inscription": "02/06/2026 18:58",
+      "login": "c2.5663",
+      "vendeur": "SY ASSANE DIENG",
+      "nom client": "DOGAN",
+      "cp": "44220",
+      "ville": "COUERON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
