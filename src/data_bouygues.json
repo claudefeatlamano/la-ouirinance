@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-03T09:53:59.166749+00:00",
+  "scraped_at": "2026-06-03T14:44:56.457566+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9563,7 +9563,7 @@
       "cp": "44120",
       "ville": "VERTOU",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0904149",
@@ -10667,7 +10667,7 @@
       "cp": "44320",
       "ville": "ST PERE EN RETZ",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0898575",
@@ -11975,7 +11975,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "StandBy"
     },
     {
       "num_contrat": "C2E0903672",
@@ -14183,7 +14183,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0908521",
@@ -14399,6 +14399,54 @@
       "cp": "85420",
       "ville": "LE MAZEAU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909794",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 12:47",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "MORIN",
+      "cp": "85110",
+      "ville": "ST VINCENT STERLANGES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909997",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 14:48",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "BILLE",
+      "cp": "85110",
+      "ville": "ST VINCENT STERLANGES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0910108",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 15:57",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "MERCIER",
+      "cp": "85110",
+      "ville": "ST VINCENT STERLANGES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909898",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 13:44",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "GREFFARD",
+      "cp": "85140",
+      "ville": "ST MARTIN DES NOYERS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
     }
   ]
