@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-03T14:44:56.457566+00:00",
+  "scraped_at": "2026-06-03T18:47:27.668584+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10355,7 +10355,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0906393",
@@ -10367,7 +10367,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0906633",
@@ -11927,7 +11927,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0901882",
@@ -14448,6 +14448,90 @@
       "ville": "ST MARTIN DES NOYERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0910383",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 18:24",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "DIABY",
+      "cp": "87100",
+      "ville": "LIMOGES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0910430",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 18:44",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "LUNAIS",
+      "cp": "85180",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0910454",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 19:01",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "DUFOUR",
+      "cp": "85180",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0910474",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 19:18",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "SEIGNEUR",
+      "cp": "85180",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0910298",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 17:37",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "BERNELAS",
+      "cp": "85180",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0910384",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 18:25",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "SAUNIER",
+      "cp": "85110",
+      "ville": "ST VINCENT STERLANGES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0910320",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 17:47",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "VALEIX",
+      "cp": "44260",
+      "ville": "SAVENAY",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
