@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-03T04:26:47.889933+00:00",
+  "scraped_at": "2026-06-03T09:53:59.166749+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10379,7 +10379,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0907111",
@@ -14388,6 +14388,18 @@
       "ville": "COUERON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0909698",
+      "type": "Acquisition",
+      "date_inscription": "03/06/2026 11:25",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "LAURENT",
+      "cp": "85420",
+      "ville": "LE MAZEAU",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
