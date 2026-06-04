@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-04T04:22:03.724808+00:00",
+  "scraped_at": "2026-06-04T08:51:49.742448+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -11903,7 +11903,7 @@
       "cp": "44320",
       "ville": "ST VIAUD",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0905834",
@@ -11915,7 +11915,7 @@
       "cp": "44560",
       "ville": "PAIMBOEUF",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0906561",
@@ -11975,7 +11975,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/A rappeler"
     },
     {
       "num_contrat": "C2E0903672",
@@ -14471,7 +14471,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0910454",
