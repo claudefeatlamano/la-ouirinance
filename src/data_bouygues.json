@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-04T11:57:36.534976+00:00",
+  "scraped_at": "2026-06-04T15:35:12.510634+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -13739,7 +13739,7 @@
       "cp": "85100",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0894424",
@@ -14556,6 +14556,78 @@
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0910818",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 14:26",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "JOUBERT",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0911099",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 17:20",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "RAGOT",
+      "cp": "85180",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0910876",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 15:06",
+      "login": "c2.5253",
+      "vendeur": "WAHID NORA",
+      "nom client": "MANABRE",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0910946",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 15:46",
+      "login": "c2.5663",
+      "vendeur": "SY ASSANE DIENG",
+      "nom client": "MAILLOT",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0911037",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 16:37",
+      "login": "c2.5663",
+      "vendeur": "SY ASSANE DIENG",
+      "nom client": "GILBEAUD",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0911079",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 17:05",
+      "login": "c2.5663",
+      "vendeur": "SY ASSANE DIENG",
+      "nom client": "NIANE",
+      "cp": "44450",
+      "ville": "DIVATTE SUR LOIRE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
     }
   ]
 }
