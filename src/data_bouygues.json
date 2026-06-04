@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-04T15:35:12.510634+00:00",
+  "scraped_at": "2026-06-04T18:21:08.245597+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14628,6 +14628,54 @@
       "ville": "DIVATTE SUR LOIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0911304",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 19:42",
+      "login": "c2.3168",
+      "vendeur": "CHEIKH ABDELLAH",
+      "nom client": "JOUAULT",
+      "cp": "44700",
+      "ville": "ORVAULT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0911300",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 19:37",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "ROLFFS",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0911180",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 18:05",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "BOUSLIMANN",
+      "cp": "87000",
+      "ville": "LIMOGES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0911316",
+      "type": "Acquisition",
+      "date_inscription": "04/06/2026 19:46",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "RAMESH BABU",
+      "cp": "87000",
+      "ville": "LIMOGES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
