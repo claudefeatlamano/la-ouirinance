@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-05T15:56:30.961174+00:00",
+  "scraped_at": "2026-06-05T18:00:38.735004+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14772,6 +14772,42 @@
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0911918",
+      "type": "Acquisition",
+      "date_inscription": "05/06/2026 17:59",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "GODIN",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0912036",
+      "type": "Acquisition",
+      "date_inscription": "05/06/2026 19:43",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "GUICHARD",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0911968",
+      "type": "Acquisition",
+      "date_inscription": "05/06/2026 18:34",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "MASSOT",
+      "cp": "44570",
+      "ville": "TRIGNAC",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
