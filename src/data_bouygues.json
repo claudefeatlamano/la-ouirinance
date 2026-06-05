@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-05T05:20:34.084750+00:00",
+  "scraped_at": "2026-06-05T09:57:37.652978+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9179,7 +9179,7 @@
       "cp": "86000",
       "ville": "POITIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0894574",
@@ -10391,7 +10391,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0907197",
@@ -10403,7 +10403,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0903198",
@@ -11375,7 +11375,7 @@
       "cp": "85700",
       "ville": "SEVREMONT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0898214",
@@ -14231,7 +14231,7 @@
       "cp": "87100",
       "ville": "LIMOGES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0908346",
@@ -14603,7 +14603,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/A rappeler"
     },
     {
       "num_contrat": "C2E0911037",
@@ -14627,7 +14627,7 @@
       "cp": "44450",
       "ville": "DIVATTE SUR LOIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0911304",
