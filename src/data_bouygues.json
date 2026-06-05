@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-05T12:44:24.062901+00:00",
+  "scraped_at": "2026-06-05T15:56:30.961174+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9395,7 +9395,7 @@
       "cp": "85300",
       "ville": "CHALLANS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0907982",
@@ -14748,6 +14748,30 @@
       "ville": "TRIGNAC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0911781",
+      "type": "Acquisition",
+      "date_inscription": "05/06/2026 16:08",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "BENAITEAU",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0911678",
+      "type": "Acquisition",
+      "date_inscription": "05/06/2026 14:56",
+      "login": "c2.5663",
+      "vendeur": "SY ASSANE DIENG",
+      "nom client": "KAYAMARE",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
     }
   ]
 }
