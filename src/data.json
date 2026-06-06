@@ -1,6 +1,26 @@
 {
-  "scraped_at": "2026-06-06T10:07:21.058084+00:00",
+  "scraped_at": "2026-06-06T12:06:49.519284+00:00",
   "rows": [
+    {
+      "id_abo": "920480",
+      "date_inscription": "2026-06-06 12:31:34",
+      "login": "vst-abouhitem",
+      "entreprise": "Stratygo",
+      "adresse": "2 IMPASSE DE LA METAIRIE",
+      "cp": "85223",
+      "ville": "Sainte hermine",
+      "id_client": "",
+      "ref_preins": "PFO43149115VP",
+      "nom abonne": "Da silva",
+      "prenom abonne": "Filipe",
+      "tel_mobile": "0613847129",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "920422",
       "date_inscription": "2026-06-05 18:20:49",
@@ -698,7 +718,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-15",
       "etat_commande": "inscription ok"
     },
     {
@@ -738,7 +758,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-17",
       "etat_commande": "inscription ok"
     },
     {
@@ -778,7 +798,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-15",
       "etat_commande": "inscription ok"
     },
     {
@@ -818,7 +838,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-15",
       "etat_commande": "inscription ok"
     },
     {
@@ -918,7 +938,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-16",
       "etat_commande": "inscription ok"
     },
     {
@@ -1638,7 +1658,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -1858,7 +1878,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -3138,8 +3158,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
-      "info_rdv_sync": "RDV 2026-06-06",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-06",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "917414",
@@ -3698,8 +3718,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-29",
-      "info_rdv_sync": "RDV 2026-06-06",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-06",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "916837",
@@ -12818,8 +12838,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-21",
-      "info_rdv_sync": "RDV 2026-06-03",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-06",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "908549",
@@ -22738,7 +22758,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -24878,8 +24898,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-27",
-      "info_rdv_sync": "RDV 2026-06-06",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-06",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "915568",
@@ -32819,26 +32839,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-04-13",
       "info_rdv_sync": "SyncOK 2026-04-21",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "901358",
-      "date_inscription": "2026-04-06 12:42:20",
-      "login": "vta-zourhalm",
-      "entreprise": "TALC",
-      "adresse": "1 RUE JULES CHERET",
-      "cp": "17300",
-      "ville": "Rochelle",
-      "id_client": "FO36817385",
-      "ref_preins": "PFO42872201G3",
-      "nom abonne": "Pingannaud",
-      "prenom abonne": "Patricia",
-      "tel_mobile": "0617550375",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-04-16",
-      "info_rdv_sync": "SyncOK 2026-05-29",
       "etat_commande": "connexion ok VRF"
     }
   ]
