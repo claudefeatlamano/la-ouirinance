@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-06T04:55:36.474909+00:00",
+  "scraped_at": "2026-06-06T07:47:49.620490+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -12719,7 +12719,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0904644",
@@ -14087,7 +14087,7 @@
       "cp": "44160",
       "ville": "PONTCHATEAU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO/KO SAISIE"
+      "etat_commande": "KO/Adresse pas éligible FTTH"
     },
     {
       "num_contrat": "C2E0893231",
@@ -14735,7 +14735,7 @@
       "cp": "44570",
       "ville": "TRIGNAC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0911539",
@@ -14747,7 +14747,7 @@
       "cp": "44570",
       "ville": "TRIGNAC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0911781",
@@ -14771,7 +14771,7 @@
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0911918",
