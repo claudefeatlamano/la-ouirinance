@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-05T22:17:00.914541+00:00",
+  "scraped_at": "2026-06-06T00:09:59.952289+00:00",
   "rows": [
     {
       "id_abo": "920422",
@@ -7379,7 +7379,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente abandonée J+7"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "912852",
@@ -14259,7 +14259,7 @@
       "mcafee": "",
       "envoi_colis": "2026-04-30",
       "info_rdv_sync": "RDV 2026-05-06",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "907444",
@@ -15019,7 +15019,7 @@
       "mcafee": "",
       "envoi_colis": "2026-04-28",
       "info_rdv_sync": "RDV 2026-05-06",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "906951",
@@ -15759,7 +15759,7 @@
       "mcafee": "",
       "envoi_colis": "2026-04-28",
       "info_rdv_sync": "RDV 2026-05-06",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "906196",
@@ -19139,7 +19139,7 @@
       "mcafee": "",
       "envoi_colis": "2026-04-28",
       "info_rdv_sync": "RDV 2026-05-06",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "903790",
@@ -27459,7 +27459,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente abandonée J+7"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "912940",
@@ -30139,7 +30139,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-04-28",
       "info_rdv_sync": "RDV 2026-05-06",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "906355",
@@ -30239,7 +30239,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-04-28",
       "info_rdv_sync": "RDV 2026-05-06",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "906288",
