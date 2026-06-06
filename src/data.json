@@ -1,6 +1,26 @@
 {
-  "scraped_at": "2026-06-06T12:06:49.519284+00:00",
+  "scraped_at": "2026-06-06T14:43:43.414438+00:00",
   "rows": [
+    {
+      "id_abo": "920485",
+      "date_inscription": "2026-06-06 13:49:51",
+      "login": "vst-aatf",
+      "entreprise": "Stratygo",
+      "adresse": "23 RUE DES PRIMEVERES",
+      "cp": "85223",
+      "ville": "Sainte hermine",
+      "id_client": "",
+      "ref_preins": "PFO43149535C2",
+      "nom abonne": "Pubert",
+      "prenom abonne": "Dave",
+      "tel_mobile": "0677794237",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "920480",
       "date_inscription": "2026-06-06 12:31:34",
@@ -9,7 +29,7 @@
       "adresse": "2 IMPASSE DE LA METAIRIE",
       "cp": "85223",
       "ville": "Sainte hermine",
-      "id_client": "",
+      "id_client": "FO37029923",
       "ref_preins": "PFO43149115VP",
       "nom abonne": "Da silva",
       "prenom abonne": "Filipe",
@@ -19,7 +39,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "920422",
@@ -3678,8 +3698,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-28",
-      "info_rdv_sync": "RDV 2026-06-06",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-06",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "916845",
@@ -22598,7 +22618,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -22678,7 +22698,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-19",
       "etat_commande": "inscription ok"
     },
     {
