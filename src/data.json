@@ -1,6 +1,26 @@
 {
-  "scraped_at": "2026-06-07T18:06:10.369222+00:00",
+  "scraped_at": "2026-06-07T20:14:16.868860+00:00",
   "rows": [
+    {
+      "id_abo": "920506",
+      "date_inscription": "2026-06-07 19:22:46",
+      "login": "vst-droode",
+      "entreprise": "Stratygo",
+      "adresse": "3 RUE DU LT COLONEL DE MALLERAY",
+      "cp": "49099",
+      "ville": "Cholet",
+      "id_client": "",
+      "ref_preins": "PFO431534063Y",
+      "nom abonne": "Alawe-Kraoul",
+      "prenom abonne": "Léonce",
+      "tel_mobile": "0688283509",
+      "box": "POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "920485",
       "date_inscription": "2026-06-06 13:49:51",
@@ -21798,7 +21818,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-15",
       "etat_commande": "inscription ok"
     },
     {
@@ -22158,7 +22178,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-15",
       "etat_commande": "inscription ok"
     },
     {

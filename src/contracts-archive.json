@@ -16106,6 +16106,32 @@
 "vendeur": "SHEHU PROSPER",
 "ville": "NANTES"
 },
+"byg-C2E0912152": {
+"_op": "bouygues",
+"cp": "44980",
+"date_inscription": "07/06/2026 20:11",
+"etat_commande": "Saisie",
+"login": "c2.5022",
+"nom client": "KOMBO",
+"num_contrat": "C2E0912152",
+"produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+"type": "Acquisition",
+"vendeur": "BEREST FRANCK",
+"ville": "STE-LUCE-SUR-LOIRE"
+},
+"byg-C2E0912153": {
+"_op": "bouygues",
+"cp": "44800",
+"date_inscription": "07/06/2026 20:44",
+"etat_commande": "Saisie",
+"login": "c2.5022",
+"nom client": "MOUANGA MBEMBA",
+"num_contrat": "C2E0912153",
+"produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+"type": "Acquisition",
+"vendeur": "BEREST FRANCK",
+"ville": "ST HERBLAIN"
+},
 "f-875541": {
 "_op": "free",
 "adresse": "4 RUE DE LA CADIVAIS",
@@ -76408,7 +76434,7 @@
 "etat_commande": "inscription ok",
 "id_abo": "919803",
 "id_client": "FO37021482",
-"info_rdv_sync": "",
+"info_rdv_sync": "RDV 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
 "neuf A-AP": "",
@@ -77584,7 +77610,7 @@
 "etat_commande": "inscription ok",
 "id_abo": "920331",
 "id_client": "FO37026911",
-"info_rdv_sync": "",
+"info_rdv_sync": "RDV 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
 "neuf A-AP": "",
@@ -77761,5 +77787,26 @@
 "ref_preins": "PFO431502992S",
 "tel_mobile": "0783731756",
 "ville": "Saint amand sur sevre"
+},
+"f-920506": {
+"_op": "free",
+"adresse": "3 RUE DU LT COLONEL DE MALLERAY",
+"box": "POP",
+"cp": "49099",
+"date_inscription": "2026-06-07 19:22:46",
+"entreprise": "Stratygo",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "920506",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vst-droode",
+"mcafee": "",
+"neuf A-AP": "",
+"nom abonne": "Alawe-Kraoul",
+"prenom abonne": "Léonce",
+"ref_preins": "PFO431534063Y",
+"tel_mobile": "0688283509",
+"ville": "Cholet"
 }
 }
