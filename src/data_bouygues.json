@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-08T15:58:52.376723+00:00",
+  "scraped_at": "2026-06-08T18:31:04.360896+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14988,6 +14988,30 @@
       "ville": "ST JEAN D HERMINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0912839",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 18:05",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "RENAUD",
+      "cp": "85120",
+      "ville": "LA CHATAIGNERAIE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0912887",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 18:32",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "AUVINET",
+      "cp": "85120",
+      "ville": "LA CHATAIGNERAIE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
     }
   ]
 }
