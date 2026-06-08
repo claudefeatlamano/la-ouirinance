@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-08T05:53:13.014050+00:00",
+  "scraped_at": "2026-06-08T11:02:17.932598+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -12731,7 +12731,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0904661",
@@ -14243,7 +14243,7 @@
       "cp": "87100",
       "ville": "LIMOGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0908599",
@@ -14879,7 +14879,7 @@
       "cp": "44980",
       "ville": "STE-LUCE-SUR-LOIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0912153",
