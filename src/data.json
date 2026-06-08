@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-07T22:06:25.686315+00:00",
+  "scraped_at": "2026-06-08T00:11:56.446036+00:00",
   "rows": [
     {
       "id_abo": "920506",
@@ -6519,7 +6519,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente abandonée J+7"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "913436",
