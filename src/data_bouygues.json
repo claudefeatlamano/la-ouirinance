@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-08T11:02:17.932598+00:00",
+  "scraped_at": "2026-06-08T15:58:52.376723+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -11807,7 +11807,7 @@
       "cp": "85100",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0907958",
@@ -11855,7 +11855,7 @@
       "cp": "49600",
       "ville": "MONTREVAULT SUR EVRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0904882",
@@ -14207,7 +14207,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0908141",
@@ -14219,7 +14219,7 @@
       "cp": "87100",
       "ville": "LIMOGES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0908209",
@@ -14267,7 +14267,7 @@
       "cp": "49290",
       "ville": "MAUGES SUR LOIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0908808",
@@ -14890,6 +14890,102 @@
       "nom client": "MOUANGA MBEMBA",
       "cp": "44800",
       "ville": "ST HERBLAIN",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0912607",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 15:55",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "EDOUARD",
+      "cp": "85540",
+      "ville": "ST VINCENT SUR GRAON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0912747",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 17:15",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "MARIONNEAU",
+      "cp": "85540",
+      "ville": "ST VINCENT SUR GRAON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0912422",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 14:13",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "SALAM",
+      "cp": "85120",
+      "ville": "LA CHATAIGNERAIE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0912686",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 16:41",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "BOSSIS",
+      "cp": "85120",
+      "ville": "LA CHATAIGNERAIE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0912456",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 14:39",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "GOMES",
+      "cp": "85210",
+      "ville": "ST AUBIN LA PLAINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0912539",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 15:21",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "LEGAYE",
+      "cp": "85210",
+      "ville": "ST AUBIN LA PLAINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0912742",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 17:12",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "AULAGNE",
+      "cp": "85540",
+      "ville": "MOUTIERS LES MAUXFAITS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0912735",
+      "type": "Acquisition",
+      "date_inscription": "08/06/2026 17:10",
+      "login": "c2.5253",
+      "vendeur": "WAHID NORA",
+      "nom client": "METANDOU",
+      "cp": "85210",
+      "ville": "ST JEAN D HERMINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Saisie"
     }
