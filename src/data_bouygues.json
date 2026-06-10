@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-10T14:25:27.101970+00:00",
+  "scraped_at": "2026-06-10T18:03:26.128215+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14411,7 +14411,7 @@
       "cp": "85110",
       "ville": "ST VINCENT STERLANGES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0909997",
@@ -15204,6 +15204,54 @@
       "ville": "OREE D ANJOU",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0914553",
+      "type": "Acquisition",
+      "date_inscription": "10/06/2026 17:12",
+      "login": "c2.3168",
+      "vendeur": "CHEIKH ABDELLAH",
+      "nom client": "BRETECHE",
+      "cp": "44550",
+      "ville": "MONTOIR-DE-BRETAGNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0914659",
+      "type": "Acquisition",
+      "date_inscription": "10/06/2026 18:45",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "DENIAUD",
+      "cp": "49310",
+      "ville": "LYS HAUT LAYON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0914466",
+      "type": "Acquisition",
+      "date_inscription": "10/06/2026 16:30",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "CHAIGNEAU",
+      "cp": "85700",
+      "ville": "MONTOURNAIS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0914583",
+      "type": "Acquisition",
+      "date_inscription": "10/06/2026 17:34",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "VILLENEUVE",
+      "cp": "85700",
+      "ville": "MONTOURNAIS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
