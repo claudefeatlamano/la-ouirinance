@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-10T05:21:55.915722+00:00",
+  "scraped_at": "2026-06-10T10:08:06.159857+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9347,7 +9347,7 @@
       "cp": "44550",
       "ville": "MONTOIR-DE-BRETAGNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0887433",
@@ -9407,7 +9407,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0894552",
@@ -13019,7 +13019,7 @@
       "cp": "44140",
       "ville": "AIGREFEUILLE SUR MAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0888382",
@@ -14423,7 +14423,7 @@
       "cp": "85110",
       "ville": "ST VINCENT STERLANGES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0910108",
@@ -14987,7 +14987,7 @@
       "cp": "85210",
       "ville": "ST JEAN D HERMINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0912839",
@@ -15047,7 +15047,7 @@
       "cp": "86000",
       "ville": "POITIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Veut réfléchir"
     },
     {
       "num_contrat": "C2E0913521",
@@ -15131,7 +15131,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0913679",
