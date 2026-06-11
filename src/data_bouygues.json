@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-11T14:01:46.607318+00:00",
+  "scraped_at": "2026-06-11T18:17:24.634893+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14663,7 +14663,7 @@
       "cp": "87000",
       "ville": "LIMOGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0911316",
@@ -15276,6 +15276,42 @@
       "ville": "ISSY LES MOULINEAUX",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0915294",
+      "type": "Acquisition",
+      "date_inscription": "11/06/2026 16:57",
+      "login": "c2.2919",
+      "vendeur": "NOUAR LAKHDAR",
+      "nom client": "SAUVETRE",
+      "cp": "79100",
+      "ville": "THOUARS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0915508",
+      "type": "Acquisition",
+      "date_inscription": "11/06/2026 18:50",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "MAROTEL",
+      "cp": "49540",
+      "ville": "LYS HAUT LAYON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0915502",
+      "type": "Acquisition",
+      "date_inscription": "11/06/2026 18:46",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "BELLIART",
+      "cp": "85700",
+      "ville": "LA MEILLERAIE TILLAY",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
     }
   ]
 }
