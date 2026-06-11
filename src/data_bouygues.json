@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-11T04:16:15.069054+00:00",
+  "scraped_at": "2026-06-11T09:13:32.783352+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10727,7 +10727,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0896134",
@@ -11591,7 +11591,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0907534",
@@ -13019,7 +13019,7 @@
       "cp": "44140",
       "ville": "AIGREFEUILLE SUR MAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0888382",
@@ -14591,7 +14591,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0910946",
