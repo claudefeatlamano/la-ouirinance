@@ -1,6 +1,166 @@
 {
-  "scraped_at": "2026-06-11T09:13:25.158466+00:00",
+  "scraped_at": "2026-06-11T14:01:38.509349+00:00",
   "rows": [
+    {
+      "id_abo": "922205",
+      "date_inscription": "2026-06-11 14:23:59",
+      "login": "vst-efouvo",
+      "entreprise": "Stratygo",
+      "adresse": "13 RUE DE L ECOLE",
+      "cp": "49373",
+      "ville": "Lys haut layon",
+      "id_client": "",
+      "ref_preins": "PFO43174831E2",
+      "nom abonne": "Kollarik",
+      "prenom abonne": "Alain",
+      "tel_mobile": "0678205018",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "922194",
+      "date_inscription": "2026-06-11 14:12:36",
+      "login": "vst-lchraita",
+      "entreprise": "Stratygo",
+      "adresse": "2 RUE DU LYS",
+      "cp": "49211",
+      "ville": "Montilliers",
+      "id_client": "",
+      "ref_preins": "PFO431747640Y",
+      "nom abonne": "Lefebvre",
+      "prenom abonne": "Martine",
+      "tel_mobile": "0681337039",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "922178",
+      "date_inscription": "2026-06-11 13:57:46",
+      "login": "vst-vmoize",
+      "entreprise": "Stratygo",
+      "adresse": "59 RUE MICHEL ANGE",
+      "cp": "44184",
+      "ville": "Saint nazaire",
+      "id_client": "",
+      "ref_preins": "PFO43174645LL",
+      "nom abonne": "SEILLER",
+      "prenom abonne": "Virginie",
+      "tel_mobile": "0616488429",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "922174",
+      "date_inscription": "2026-06-11 13:54:42",
+      "login": "vst-abouhitem",
+      "entreprise": "Stratygo",
+      "adresse": "4 RUE DES AUDOUINS",
+      "cp": "49299",
+      "ville": "Saint leger sous cholet",
+      "id_client": "",
+      "ref_preins": "PFO43174665GF",
+      "nom abonne": "Jolivet",
+      "prenom abonne": "Christine",
+      "tel_mobile": "0671504258",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "922161",
+      "date_inscription": "2026-06-11 13:41:05",
+      "login": "vst-vmoize",
+      "entreprise": "Stratygo",
+      "adresse": "59 RUE MICHEL ANGE",
+      "cp": "44184",
+      "ville": "Saint nazaire",
+      "id_client": "",
+      "ref_preins": "PFO43174608BG",
+      "nom abonne": "SEILLER",
+      "prenom abonne": "Virginie",
+      "tel_mobile": "0616488429",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "922151",
+      "date_inscription": "2026-06-11 13:30:33",
+      "login": "vst-mali",
+      "entreprise": "Stratygo",
+      "adresse": "15 RUE DE L ADRET",
+      "cp": "85140",
+      "ville": "Meilleraie tillay",
+      "id_client": "",
+      "ref_preins": "PFO43174501FB",
+      "nom abonne": "PASQUIER",
+      "prenom abonne": "ROBERT / CATHERINE",
+      "tel_mobile": "0606782330",
+      "box": "POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "922102",
+      "date_inscription": "2026-06-11 12:33:25",
+      "login": "vst-nwahid",
+      "entreprise": "Stratygo",
+      "adresse": "13 RUE RENE DUGUAY TROUIN",
+      "cp": "49099",
+      "ville": "Cholet",
+      "id_client": "FO37052160",
+      "ref_preins": "PFO43174132X5",
+      "nom abonne": "Michaud",
+      "prenom abonne": "Monique",
+      "tel_mobile": "0686517004",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "inscription ok"
+    },
+    {
+      "id_abo": "922084",
+      "date_inscription": "2026-06-11 12:12:43",
+      "login": "vst-lderbal",
+      "entreprise": "Stratygo",
+      "adresse": "6 IMPASSE DES TUILIERS",
+      "cp": "49023",
+      "ville": "Beaupreau en mauges",
+      "id_client": "FO37052046",
+      "ref_preins": "PFO43174023H5",
+      "nom abonne": "Gaboriau",
+      "prenom abonne": "Annie-Claude",
+      "tel_mobile": "0615918864",
+      "box": "POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "inscription ok"
+    },
     {
       "id_abo": "922012",
       "date_inscription": "2026-06-10 19:15:10",
@@ -578,7 +738,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-24",
       "etat_commande": "inscription ok"
     },
     {
@@ -598,7 +758,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-18",
       "etat_commande": "inscription ok"
     },
     {
@@ -658,7 +818,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-20",
       "etat_commande": "inscription ok"
     },
     {
@@ -698,7 +858,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-22",
       "etat_commande": "inscription ok"
     },
     {
@@ -938,7 +1098,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-24",
       "etat_commande": "inscription ok"
     },
     {
@@ -1018,7 +1178,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-19",
       "etat_commande": "inscription ok"
     },
     {
@@ -1038,7 +1198,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-18",
       "etat_commande": "inscription ok"
     },
     {
@@ -1058,7 +1218,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-18",
       "etat_commande": "inscription ok"
     },
     {
@@ -3558,8 +3718,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-04",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "918423",
@@ -3898,8 +4058,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-04",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "918148",
@@ -4358,7 +4518,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-05",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-20",
       "etat_commande": "inscription ok"
     },
     {
@@ -4718,8 +4878,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "917622",
@@ -7038,8 +7198,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-26",
-      "info_rdv_sync": "RDV 2026-06-01",
-      "etat_commande": "inscription ok /postprod"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "915104",
@@ -7618,8 +7778,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-21",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "913684",
@@ -23118,8 +23278,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-05",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "919000",
@@ -23199,7 +23359,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "918968",
@@ -23238,8 +23398,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-05",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "918907",
@@ -23358,8 +23518,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-05",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "918667",
@@ -23458,8 +23618,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-05",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "918540",
@@ -23498,8 +23658,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-04",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "918459",
@@ -24018,8 +24178,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
-      "info_rdv_sync": "RDV 2026-06-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "917718",
@@ -27958,8 +28118,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-13",
-      "info_rdv_sync": "RDV 2026-05-19",
-      "etat_commande": "inscription ok /postprod"
+      "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "911123",

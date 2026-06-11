@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-11T09:13:32.783352+00:00",
+  "scraped_at": "2026-06-11T14:01:46.607318+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14543,7 +14543,7 @@
       "cp": "85340",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0910708",
@@ -14555,7 +14555,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0910818",
@@ -14675,7 +14675,7 @@
       "cp": "87000",
       "ville": "LIMOGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0911629",
@@ -15250,6 +15250,30 @@
       "nom client": "VILLENEUVE",
       "cp": "85700",
       "ville": "MONTOURNAIS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0914901",
+      "type": "Acquisition",
+      "date_inscription": "11/06/2026 13:13",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "HOUDIN",
+      "cp": "49600",
+      "ville": "BEAUPREAU EN MAUGES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0914964",
+      "type": "Acquisition",
+      "date_inscription": "11/06/2026 13:41",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "FAITA",
+      "cp": "92130",
+      "ville": "ISSY LES MOULINEAUX",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
