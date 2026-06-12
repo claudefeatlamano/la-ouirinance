@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-12T04:17:56.296110+00:00",
+  "scraped_at": "2026-06-12T09:00:23.294040+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -11591,7 +11591,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0907534",
@@ -14699,7 +14699,7 @@
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0911566",
@@ -15263,7 +15263,7 @@
       "cp": "49600",
       "ville": "BEAUPREAU EN MAUGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0914964",
@@ -15311,7 +15311,7 @@
       "cp": "85700",
       "ville": "LA MEILLERAIE TILLAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     }
   ]
 }
