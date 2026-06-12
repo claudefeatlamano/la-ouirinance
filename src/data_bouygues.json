@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-12T09:00:23.294040+00:00",
+  "scraped_at": "2026-06-12T12:27:52.312247+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14711,7 +14711,7 @@
       "cp": "87100",
       "ville": "LIMOGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0911427",
@@ -15312,6 +15312,30 @@
       "ville": "LA MEILLERAIE TILLAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "KO/Situation Client"
+    },
+    {
+      "num_contrat": "C2E0915738",
+      "type": "Acquisition",
+      "date_inscription": "12/06/2026 13:25",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "DESBOIS",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0915604",
+      "type": "Acquisition",
+      "date_inscription": "12/06/2026 11:30",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "BODIER",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
