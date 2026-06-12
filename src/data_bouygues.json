@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-12T12:27:52.312247+00:00",
+  "scraped_at": "2026-06-12T16:21:30.834409+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14615,7 +14615,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0911079",
@@ -14807,7 +14807,7 @@
       "cp": "44570",
       "ville": "TRIGNAC",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912084",
@@ -15336,6 +15336,30 @@
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0915822",
+      "type": "Acquisition",
+      "date_inscription": "12/06/2026 14:26",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "LANDREAUD",
+      "cp": "17100",
+      "ville": "BUSSAC-SUR-CHARENTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0915835",
+      "type": "Acquisition",
+      "date_inscription": "12/06/2026 14:35",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "MONTFRED",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
