@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-13T14:06:07.771221+00:00",
+  "scraped_at": "2026-06-13T16:16:00.311519+00:00",
   "rows": [
     {
       "id_abo": "922731",
@@ -418,7 +418,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-29",
       "etat_commande": "inscription ok"
     },
     {
@@ -438,7 +438,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-24",
       "etat_commande": "inscription ok"
     },
     {
@@ -498,7 +498,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-22",
       "etat_commande": "inscription ok"
     },
     {
@@ -2459,7 +2459,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-10",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "920601",
@@ -2759,7 +2759,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "920227",
@@ -4859,7 +4859,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "918129",
@@ -5319,7 +5319,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "917890",
@@ -5919,7 +5919,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-05-29",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "917122",
@@ -14019,7 +14019,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-05-11",
       "info_rdv_sync": "SyncOK 2026-05-20",
-      "etat_commande": "connexion ok VRF"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "909546",
@@ -22802,46 +22802,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "902954",
-      "date_inscription": "2026-04-13 17:44:19",
-      "login": "vst-mmendousse",
-      "entreprise": "Stratygo",
-      "adresse": "29 RUE DU CHAMP DE L ISLE",
-      "cp": "44068",
-      "ville": "Guenrouet",
-      "id_client": "FO36813493",
-      "ref_preins": "PFO429063723N",
-      "nom abonne": "Levesque",
-      "prenom abonne": "Luc",
-      "tel_mobile": "0636612394",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-04-16",
-      "info_rdv_sync": "SyncOK 2026-04-22",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "902928",
-      "date_inscription": "2026-04-13 16:52:17",
-      "login": "vst-lbetherydelabrosse",
-      "entreprise": "Stratygo",
-      "adresse": "1 RUE DE LA CLAIRE FONTAINE",
-      "cp": "44089",
-      "ville": "Malville",
-      "id_client": "FO36812997",
-      "ref_preins": "PFO42905827PU",
-      "nom abonne": "Massicot",
-      "prenom abonne": "Laurence",
-      "tel_mobile": "0672296767",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
       "id_abo": "922749",
       "date_inscription": "2026-06-12 16:38:39",
       "login": "vta-lwojciechowski",
@@ -24719,7 +24679,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "918134",
@@ -25459,7 +25419,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-05-27",
       "info_rdv_sync": "RDV 2026-06-09",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "916131",
@@ -26699,7 +26659,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-05-21",
       "info_rdv_sync": "SyncOK 2026-05-26",
-      "etat_commande": "connexion ok VRF"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "914850",
