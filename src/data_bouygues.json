@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-13T04:06:40.750940+00:00",
+  "scraped_at": "2026-06-13T08:22:56.471383+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -11795,7 +11795,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0906701",
