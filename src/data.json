@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-13T16:16:00.311519+00:00",
+  "scraped_at": "2026-06-13T18:10:42.042895+00:00",
   "rows": [
     {
       "id_abo": "922731",
@@ -6838,7 +6838,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-26",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-06-16",
       "etat_commande": "inscription ok"
     },
     {
@@ -22782,26 +22782,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "902968",
-      "date_inscription": "2026-04-13 18:28:20",
-      "login": "vst-lbetherydelabrosse",
-      "entreprise": "Stratygo",
-      "adresse": "6 CHEMIN DE LA MERLEBRISE",
-      "cp": "44089",
-      "ville": "Malville",
-      "id_client": "FO36813865",
-      "ref_preins": "PFO42906727U6",
-      "nom abonne": "GUILLARD",
-      "prenom abonne": "FABRICE",
-      "tel_mobile": "0634059099",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-04-16",
-      "info_rdv_sync": "SyncOK 2026-04-23",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "922749",
       "date_inscription": "2026-06-12 16:38:39",
       "login": "vta-lwojciechowski",
@@ -23638,8 +23618,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-08",
-      "info_rdv_sync": "RDV 2026-06-13",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-13",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "919920",
