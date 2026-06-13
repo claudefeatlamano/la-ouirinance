@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-13T08:22:56.471383+00:00",
+  "scraped_at": "2026-06-13T11:16:32.303848+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14795,7 +14795,7 @@
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0911968",
@@ -14819,7 +14819,7 @@
       "cp": "85210",
       "ville": "ST JEAN D HERMINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912082",
