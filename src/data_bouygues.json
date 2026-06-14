@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-14T05:52:21.050351+00:00",
+  "scraped_at": "2026-06-14T09:40:03.393559+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9743,7 +9743,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/RIB"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0887956",
@@ -11531,7 +11531,7 @@
       "cp": "85510",
       "ville": "LE BOUPERE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0900035",
@@ -11603,7 +11603,7 @@
       "cp": "85510",
       "ville": "LE BOUPERE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0895116",
@@ -11795,7 +11795,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0906701",
