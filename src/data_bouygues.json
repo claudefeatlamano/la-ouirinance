@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-15T06:28:46.731853+00:00",
+  "scraped_at": "2026-06-15T13:18:24.190876+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9083,7 +9083,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/RIB"
+      "etat_commande": "KO/RIB"
     },
     {
       "num_contrat": "C2E0887283",
@@ -9743,7 +9743,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0887956",
@@ -11531,7 +11531,7 @@
       "cp": "85510",
       "ville": "LE BOUPERE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0900035",
@@ -11603,7 +11603,7 @@
       "cp": "85510",
       "ville": "LE BOUPERE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0895116",
@@ -11819,7 +11819,7 @@
       "cp": "49600",
       "ville": "MONTREVAULT SUR EVRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0907971",
@@ -11843,7 +11843,7 @@
       "cp": "49600",
       "ville": "MONTREVAULT SUR EVRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0908011",
@@ -14051,7 +14051,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0908005",
@@ -14063,7 +14063,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0888649",
@@ -14183,7 +14183,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0908521",
@@ -14831,7 +14831,7 @@
       "cp": "85210",
       "ville": "ST JEAN D HERMINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912091",
@@ -14867,7 +14867,7 @@
       "cp": "79140",
       "ville": "COMBRAND",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912152",
@@ -14879,7 +14879,7 @@
       "cp": "44980",
       "ville": "STE-LUCE-SUR-LOIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912153",
@@ -14903,7 +14903,7 @@
       "cp": "85540",
       "ville": "ST VINCENT SUR GRAON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912747",
@@ -14951,7 +14951,7 @@
       "cp": "85210",
       "ville": "ST AUBIN LA PLAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912539",
@@ -14975,7 +14975,7 @@
       "cp": "85540",
       "ville": "MOUTIERS LES MAUXFAITS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912735",
@@ -15167,7 +15167,7 @@
       "cp": "85700",
       "ville": "ST MESMIN",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0914200",
@@ -15360,6 +15360,18 @@
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0916512",
+      "type": "Acquisition",
+      "date_inscription": "15/06/2026 12:44",
+      "login": "c2.5253",
+      "vendeur": "WAHID NORA",
+      "nom client": "DUBOIS",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
