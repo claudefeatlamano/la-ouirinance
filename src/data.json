@@ -1,6 +1,46 @@
 {
-  "scraped_at": "2026-06-15T18:40:47.080064+00:00",
+  "scraped_at": "2026-06-15T21:45:55.220402+00:00",
   "rows": [
+    {
+      "id_abo": "923415",
+      "date_inscription": "2026-06-15 19:34:14",
+      "login": "vst-abouhitem",
+      "entreprise": "Stratygo",
+      "adresse": "37 RUE DU PRESIDENT WILSON",
+      "cp": "49099",
+      "ville": "Cholet",
+      "id_client": "FO37069468",
+      "ref_preins": "PFO4319358515",
+      "nom abonne": "Barreau",
+      "prenom abonne": "Coline",
+      "tel_mobile": "0768724944",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "inscription ok"
+    },
+    {
+      "id_abo": "923396",
+      "date_inscription": "2026-06-15 19:03:23",
+      "login": "vst-spereira",
+      "entreprise": "Stratygo",
+      "adresse": "67 RUE ABBE PIERRE ARNAUD",
+      "cp": "85191",
+      "ville": "Roche sur yon",
+      "id_client": "FO37069348",
+      "ref_preins": "PFO43193411DD",
+      "nom abonne": "FEBRISSY",
+      "prenom abonne": "Floriane",
+      "tel_mobile": "0760227342",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "inscription ok"
+    },
     {
       "id_abo": "923374",
       "date_inscription": "2026-06-15 18:31:00",
@@ -9,7 +49,7 @@
       "adresse": "44 RUE DU BOURG BELARD",
       "cp": "85182",
       "ville": "Pouzauges",
-      "id_client": "",
+      "id_client": "FO37069097",
       "ref_preins": "PFO43193162EP",
       "nom abonne": "Hislen",
       "prenom abonne": "Sonia",
@@ -19,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "923372",
@@ -29,7 +69,7 @@
       "adresse": "8 RUE DES ROMAINS",
       "cp": "85182",
       "ville": "Pouzauges",
-      "id_client": "",
+      "id_client": "FO37069122",
       "ref_preins": "PFO431931600S",
       "nom abonne": "Dubreuil",
       "prenom abonne": "Danielle",
@@ -39,7 +79,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "923319",
@@ -49,7 +89,7 @@
       "adresse": "17 AVENUE LEON GAMBETTA",
       "cp": "49099",
       "ville": "Cholet",
-      "id_client": "",
+      "id_client": "FO37068585",
       "ref_preins": "PFO43192561IK",
       "nom abonne": "Duret",
       "prenom abonne": "Sandy",
@@ -59,7 +99,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "923259",
@@ -457,7 +497,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-15",
       "info_rdv_sync": "RDV 2026-06-24",
       "etat_commande": "inscription ok"
     },
@@ -477,7 +517,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-15",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -577,7 +617,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-15",
       "info_rdv_sync": "RDV 2026-06-22",
       "etat_commande": "inscription ok"
     },
@@ -619,7 +659,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "922398",
@@ -1177,7 +1217,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-15",
       "info_rdv_sync": "RDV 2026-06-23",
       "etat_commande": "inscription ok"
     },
@@ -1298,8 +1338,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-12",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-15",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "921977",
@@ -2277,7 +2317,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-15",
       "info_rdv_sync": "RDV 2026-06-23",
       "etat_commande": "inscription ok"
     },
@@ -2757,7 +2797,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-15",
       "info_rdv_sync": "RDV 2026-06-20",
       "etat_commande": "inscription ok"
     },
@@ -3437,7 +3477,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-15",
       "info_rdv_sync": "RDV 2026-06-19",
       "etat_commande": "inscription ok"
     },
@@ -21769,7 +21809,7 @@
       "adresse": "138 RUE DE LA BOULE",
       "cp": "17415",
       "ville": "Saintes",
-      "id_client": "",
+      "id_client": "FO37068728",
       "ref_preins": "PFO43192706K5",
       "nom abonne": "Fernandez",
       "prenom abonne": "Ludovic",
@@ -21779,7 +21819,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "923260",
@@ -22197,7 +22237,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-15",
       "info_rdv_sync": "RDV 2026-06-19",
       "etat_commande": "inscription ok"
     },
