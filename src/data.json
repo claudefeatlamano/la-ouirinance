@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-15T21:45:55.220402+00:00",
+  "scraped_at": "2026-06-15T23:48:03.351592+00:00",
   "rows": [
     {
       "id_abo": "923415",
@@ -2399,7 +2399,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "vente validée J+7"
     },
     {
       "id_abo": "920955",
@@ -2719,7 +2719,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "vente validée J+7"
     },
     {
       "id_abo": "920643",
@@ -5719,7 +5719,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-10",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917873",
@@ -5839,7 +5839,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-15",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917744",
@@ -5959,7 +5959,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-11",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917622",
@@ -5979,7 +5979,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917616",
@@ -6039,7 +6039,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-06",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917414",
@@ -6139,7 +6139,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917281",
@@ -6199,7 +6199,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-10",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917151",
@@ -6219,7 +6219,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917127",
@@ -6359,7 +6359,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-05",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917022",
@@ -6479,7 +6479,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-05",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "916975",
@@ -6539,7 +6539,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-05",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "916849",
@@ -6919,7 +6919,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-05",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "916653",
@@ -7019,7 +7019,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "916305",
@@ -7099,7 +7099,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée J+7"
+      "etat_commande": "vente abandonée J+7"
     },
     {
       "id_abo": "916294",
@@ -22279,7 +22279,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "vente validée J+7"
     },
     {
       "id_abo": "920894",
@@ -23999,7 +23999,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-05",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917891",
@@ -24139,7 +24139,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-03",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917724",
@@ -24159,7 +24159,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-11",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917718",
@@ -24179,7 +24179,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-11",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917699",
@@ -24199,7 +24199,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-05",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917640",
@@ -24219,7 +24219,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917486",
@@ -24259,7 +24259,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-05",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917403",
@@ -24279,7 +24279,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917396",
@@ -24379,7 +24379,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917288",
@@ -24439,7 +24439,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "917226",
@@ -24499,7 +24499,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "916163",
@@ -24619,7 +24619,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-12",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "916062",
@@ -25979,7 +25979,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-06",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "914736",
@@ -26239,7 +26239,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "SyncOK 2026-06-09",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "914634",
