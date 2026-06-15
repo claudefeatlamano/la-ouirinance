@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-15T13:18:24.190876+00:00",
+  "scraped_at": "2026-06-15T18:41:02.543611+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14759,7 +14759,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0911678",
@@ -14927,7 +14927,7 @@
       "cp": "85120",
       "ville": "LA CHATAIGNERAIE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0912686",
@@ -15371,6 +15371,66 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0917037",
+      "type": "Acquisition",
+      "date_inscription": "15/06/2026 17:12",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "RAIMBAULT",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0917290",
+      "type": "Acquisition",
+      "date_inscription": "15/06/2026 19:58",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "LORIER",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0917196",
+      "type": "Acquisition",
+      "date_inscription": "15/06/2026 18:45",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "LENAUD",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0917029",
+      "type": "Acquisition",
+      "date_inscription": "15/06/2026 17:08",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "FERRET",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0916857",
+      "type": "Acquisition",
+      "date_inscription": "15/06/2026 15:36",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "LANDAIS",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
