@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-16T10:11:23.235110+00:00",
+  "scraped_at": "2026-06-16T15:58:03.948769+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15095,7 +15095,7 @@
       "cp": "44390",
       "ville": "NORT SUR ERDRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0913320",
@@ -15455,7 +15455,127 @@
       "cp": "85660",
       "ville": "ST PHILBERT DE BOUAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0917398",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 12:21",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "LHOMMEDE",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0917869",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 16:35",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "BERNE",
+      "cp": "17600",
+      "ville": "SAUJON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0917897",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 16:47",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "JEAN",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0917816",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 16:06",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "FREYMANN",
+      "cp": "79370",
+      "ville": "CELLES-SUR-BELLE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0917889",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 16:44",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "FRIGUI",
+      "cp": "79370",
+      "ville": "CELLES-SUR-BELLE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0917949",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 17:13",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "BEAUCHAMP",
+      "cp": "79370",
+      "ville": "CELLES SUR BELLE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0917397",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 12:20",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "OLLIVE",
+      "cp": "85660",
+      "ville": "ST PHILBERT DE BOUAINE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0918036",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 17:53",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "EPAUD",
+      "cp": "85660",
+      "ville": "ST PHILBERT DE BOUAINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0918032",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 17:50",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "BORGEOT",
+      "cp": "17600",
+      "ville": "PISANY",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0917485",
+      "type": "Acquisition",
+      "date_inscription": "16/06/2026 13:12",
+      "login": "c2.5253",
+      "vendeur": "WAHID NORA",
+      "nom client": "BOUTARD GUILLOUX",
+      "cp": "85660",
+      "ville": "ST PHILBERT DE BOUAINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
