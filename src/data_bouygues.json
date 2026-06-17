@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-17T11:51:40.299923+00:00",
+  "scraped_at": "2026-06-17T15:41:11.634074+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15155,7 +15155,7 @@
       "cp": "85340",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0914158",
@@ -15191,7 +15191,7 @@
       "cp": "44390",
       "ville": "NORT SUR ERDRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0914258",
@@ -15251,7 +15251,7 @@
       "cp": "85700",
       "ville": "MONTOURNAIS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0914901",
@@ -15623,7 +15623,7 @@
       "cp": "87100",
       "ville": "LIMOGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0918323",
@@ -15660,6 +15660,42 @@
       "ville": "DONGES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0918827",
+      "type": "Acquisition",
+      "date_inscription": "17/06/2026 16:33",
+      "login": "c2.2863",
+      "vendeur": "OUIRINI INES",
+      "nom client": "MERCIER",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0918781",
+      "type": "Acquisition",
+      "date_inscription": "17/06/2026 16:09",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "FOUCHER",
+      "cp": "44480",
+      "ville": "DONGES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0918558",
+      "type": "Acquisition",
+      "date_inscription": "17/06/2026 14:24",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "MICHEL",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
