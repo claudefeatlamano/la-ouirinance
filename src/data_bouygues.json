@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-17T15:41:11.634074+00:00",
+  "scraped_at": "2026-06-17T18:23:13.554985+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15694,6 +15694,42 @@
       "nom client": "MICHEL",
       "cp": "17100",
       "ville": "SAINTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0918972",
+      "type": "Acquisition",
+      "date_inscription": "17/06/2026 17:53",
+      "login": "c2.2919",
+      "vendeur": "NOUAR LAKHDAR",
+      "nom client": "CANEL",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0919085",
+      "type": "Acquisition",
+      "date_inscription": "17/06/2026 19:31",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "QUATTER",
+      "cp": "79400",
+      "ville": "ST-MAIXENT-L'ECOLE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0919054",
+      "type": "Acquisition",
+      "date_inscription": "17/06/2026 19:00",
+      "login": "c2.5253",
+      "vendeur": "WAHID NORA",
+      "nom client": "TRICOIRE",
+      "cp": "49530",
+      "ville": "OREE D ANJOU",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
