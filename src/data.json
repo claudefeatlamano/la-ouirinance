@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-17T18:23:05.763266+00:00",
+  "scraped_at": "2026-06-17T21:10:24.770821+00:00",
   "rows": [
     {
       "id_abo": "924293",
@@ -9,7 +9,7 @@
       "adresse": "18 RUE DES CLOS GALANTS",
       "cp": "44052",
       "ville": "Donges",
-      "id_client": "",
+      "id_client": "FO37078433",
       "ref_preins": "PFO43203831BU",
       "nom abonne": "Lenoir",
       "prenom abonne": "Cindy",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924239",
@@ -29,7 +29,7 @@
       "adresse": "3 RUE DES CLOS GALANTS",
       "cp": "44052",
       "ville": "Donges",
-      "id_client": "",
+      "id_client": "FO37077977",
       "ref_preins": "PFO43203220Y6",
       "nom abonne": "Demange",
       "prenom abonne": "Monique",
@@ -39,7 +39,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924120",
@@ -457,7 +457,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-17",
       "info_rdv_sync": "RDV 2026-06-23",
       "etat_commande": "inscription ok"
     },
@@ -697,7 +697,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-17",
       "info_rdv_sync": "RDV 2026-06-25",
       "etat_commande": "inscription ok"
     },
@@ -21042,6 +21042,26 @@
       "etat_commande": "inscription ok"
     },
     {
+      "id_abo": "924373",
+      "date_inscription": "2026-06-17 19:25:56",
+      "login": "vta-bziegler",
+      "entreprise": "TALC",
+      "adresse": "73 AVENUE JULES DUFAURE",
+      "cp": "17415",
+      "ville": "Saintes",
+      "id_client": "FO37078976",
+      "ref_preins": "PFO43204459PP",
+      "nom abonne": "Hervaud",
+      "prenom abonne": "Nadine",
+      "tel_mobile": "0672222099",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "inscription ok"
+    },
+    {
       "id_abo": "924334",
       "date_inscription": "2026-06-17 18:38:41",
       "login": "vta-wperez",
@@ -21049,7 +21069,7 @@
       "adresse": "9 RUE DU PETIT MEDOC",
       "cp": "17415",
       "ville": "Saintes",
-      "id_client": "",
+      "id_client": "FO37078716",
       "ref_preins": "PFO43204191L3",
       "nom abonne": "Dorbane",
       "prenom abonne": "Mourad",
@@ -21059,7 +21079,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924329",
@@ -21089,7 +21109,7 @@
       "adresse": "4 COURS PIERRE HENRI SIMON",
       "cp": "17415",
       "ville": "Saintes",
-      "id_client": "",
+      "id_client": "FO37078650",
       "ref_preins": "PFO43204102VH",
       "nom abonne": "Ravet-drapeau",
       "prenom abonne": "Johsette",
@@ -21099,7 +21119,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924305",
@@ -21109,7 +21129,7 @@
       "adresse": "57 RUE DENFERT ROCHEREAU",
       "cp": "17415",
       "ville": "Saintes",
-      "id_client": "",
+      "id_client": "FO37078563",
       "ref_preins": "PFO432039696A",
       "nom abonne": "Rabotteau",
       "prenom abonne": "Sophie",
@@ -21119,7 +21139,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924278",
@@ -21129,7 +21149,7 @@
       "adresse": "1 RUE DU GENERAL SARRAIL",
       "cp": "79049",
       "ville": "Bressuire",
-      "id_client": "",
+      "id_client": "FO37078510",
       "ref_preins": "PFO43203857HG",
       "nom abonne": "MABELLY",
       "prenom abonne": "SÉBASTIEN",
@@ -21139,7 +21159,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924262",
@@ -21149,7 +21169,7 @@
       "adresse": "3 RUE LERICHE",
       "cp": "79270",
       "ville": "Saint maixent l ecole",
-      "id_client": "",
+      "id_client": "FO37078148",
       "ref_preins": "PFO432035215M",
       "nom abonne": "ASTRAUDO",
       "prenom abonne": "Marie Annick",
@@ -21159,7 +21179,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924257",
@@ -21169,7 +21189,7 @@
       "adresse": "1 RUE DU GENERAL SARRAIL",
       "cp": "79049",
       "ville": "Bressuire",
-      "id_client": "",
+      "id_client": "FO37078065",
       "ref_preins": "PFO43203418PN",
       "nom abonne": "Traore",
       "prenom abonne": "Oumar",
@@ -21179,7 +21199,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924237",
@@ -21209,7 +21229,7 @@
       "adresse": "15 RUE DU PETIT MEDOC",
       "cp": "17415",
       "ville": "Saintes",
-      "id_client": "",
+      "id_client": "FO37077891",
       "ref_preins": "PFO43203216TT",
       "nom abonne": "Mounier",
       "prenom abonne": "Gaétan",
@@ -21219,7 +21239,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "924223",
@@ -31499,26 +31519,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-04-21",
       "info_rdv_sync": "SyncOK 2026-05-02",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "904970",
-      "date_inscription": "2026-04-17 20:44:59",
-      "login": "vta-bziegler",
-      "entreprise": "TALC",
-      "adresse": "6 RUE NOMINOE",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36832887",
-      "ref_preins": "PFO42928120L8",
-      "nom abonne": "Gonzalez",
-      "prenom abonne": "Jacqueline",
-      "tel_mobile": "0688655010",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-04-20",
-      "info_rdv_sync": "SyncOK 2026-04-29",
       "etat_commande": "connexion ok VRF"
     }
   ]
