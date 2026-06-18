@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-18T09:17:20.105807+00:00",
+  "scraped_at": "2026-06-18T12:57:22.936065+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9539,7 +9539,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0893467",
@@ -15263,7 +15263,7 @@
       "cp": "49600",
       "ville": "BEAUPREAU EN MAUGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO/Situation Client"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0914964",
@@ -15287,7 +15287,7 @@
       "cp": "79100",
       "ville": "THOUARS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0915508",
@@ -15730,6 +15730,18 @@
       "nom client": "TRICOIRE",
       "cp": "49530",
       "ville": "OREE D ANJOU",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0919401",
+      "type": "Acquisition",
+      "date_inscription": "18/06/2026 13:45",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "ETIENNE",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
