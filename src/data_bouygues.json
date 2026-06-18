@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-18T12:57:22.936065+00:00",
+  "scraped_at": "2026-06-18T16:39:49.634503+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14651,7 +14651,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0911180",
@@ -15275,7 +15275,7 @@
       "cp": "92130",
       "ville": "ISSY LES MOULINEAUX",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0915294",
@@ -15299,7 +15299,7 @@
       "cp": "49540",
       "ville": "LYS HAUT LAYON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0915502",
@@ -15743,6 +15743,54 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0919890",
+      "type": "Acquisition",
+      "date_inscription": "18/06/2026 17:58",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "ROUHAUD",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0919598",
+      "type": "Acquisition",
+      "date_inscription": "18/06/2026 15:27",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "DAVIAU",
+      "cp": "41300",
+      "ville": "SELLES SAINT DENIS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0919604",
+      "type": "Acquisition",
+      "date_inscription": "18/06/2026 15:33",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "DAVIAU",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0919619",
+      "type": "Acquisition",
+      "date_inscription": "18/06/2026 15:38",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "MENEGON",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
