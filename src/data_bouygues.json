@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-19T12:09:41.456960+00:00",
+  "scraped_at": "2026-06-19T16:07:45.638512+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15803,7 +15803,31 @@
       "cp": "17600",
       "ville": "NANCRAS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0920696",
+      "type": "Acquisition",
+      "date_inscription": "19/06/2026 17:36",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "NORMAND",
+      "cp": "17250",
+      "ville": "PONT-L'ABBE-D'ARNOULT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0920655",
+      "type": "Acquisition",
+      "date_inscription": "19/06/2026 17:12",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "AUGIRON",
+      "cp": "17600",
+      "ville": "NANCRAS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
