@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-19T16:07:45.638512+00:00",
+  "scraped_at": "2026-06-19T18:58:04.555080+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15827,6 +15827,18 @@
       "cp": "17600",
       "ville": "NANCRAS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0920765",
+      "type": "Acquisition",
+      "date_inscription": "19/06/2026 18:31",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "HILAIRET",
+      "cp": "85450",
+      "ville": "PUYRAVAULT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
   ]
