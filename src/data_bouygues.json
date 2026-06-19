@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-19T01:45:00.546356+00:00",
+  "scraped_at": "2026-06-19T07:10:42.556750+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14339,7 +14339,7 @@
       "cp": "85500",
       "ville": "LES HERBIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0909610",
@@ -14375,7 +14375,7 @@
       "cp": "44220",
       "ville": "COUERON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0909599",
@@ -14447,7 +14447,7 @@
       "cp": "85140",
       "ville": "ST MARTIN DES NOYERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0910383",
@@ -15263,7 +15263,7 @@
       "cp": "49600",
       "ville": "BEAUPREAU EN MAUGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Active"
+      "etat_commande": "Active/Situation Client"
     },
     {
       "num_contrat": "C2E0914964",
@@ -15767,7 +15767,7 @@
       "cp": "41300",
       "ville": "SELLES SAINT DENIS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Incident Outil"
     },
     {
       "num_contrat": "C2E0919604",
