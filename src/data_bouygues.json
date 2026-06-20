@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-20T05:17:50.377157+00:00",
+  "scraped_at": "2026-06-20T09:21:11.050663+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14447,7 +14447,7 @@
       "cp": "85140",
       "ville": "ST MARTIN DES NOYERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0910383",
@@ -14579,7 +14579,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0910876",
@@ -14639,7 +14639,7 @@
       "cp": "44700",
       "ville": "ORVAULT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0911300",
@@ -15335,7 +15335,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0915822",
@@ -15719,7 +15719,7 @@
       "cp": "79400",
       "ville": "ST-MAIXENT-L'ECOLE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0919054",
