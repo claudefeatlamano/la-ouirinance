@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-21T10:32:12.858889+00:00",
+  "scraped_at": "2026-06-21T13:09:00.497563+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15840,6 +15840,18 @@
       "ville": "PUYRAVAULT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0920938",
+      "type": "Acquisition",
+      "date_inscription": "21/06/2026 13:03",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "LEGRAND",
+      "cp": "44300",
+      "ville": "NANTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
