@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-21T06:05:34.366309+00:00",
+  "scraped_at": "2026-06-21T10:32:12.858889+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14579,7 +14579,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0910876",
@@ -14639,7 +14639,7 @@
       "cp": "44700",
       "ville": "ORVAULT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0911300",
@@ -14723,7 +14723,7 @@
       "cp": "87100",
       "ville": "LIMOGES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0911468",
