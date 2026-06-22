@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-21T23:17:51.666177+00:00",
+  "scraped_at": "2026-06-22T04:47:08.510929+00:00",
   "rows": [
     {
       "id_abo": "925134",
@@ -12479,7 +12479,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-05-15",
       "info_rdv_sync": "RDV 2026-05-22",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "911987",
@@ -12899,7 +12899,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-05-15",
       "info_rdv_sync": "RDV 2026-05-22",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "911649",
@@ -27879,7 +27879,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-05-12",
       "info_rdv_sync": "RDV 2026-05-22",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "911204",
