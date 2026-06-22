@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-22T15:54:53.585034+00:00",
+  "scraped_at": "2026-06-22T17:11:47.379855+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15960,6 +15960,30 @@
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0921545",
+      "type": "Acquisition",
+      "date_inscription": "22/06/2026 17:50",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "QUERON",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0921553",
+      "type": "Acquisition",
+      "date_inscription": "22/06/2026 17:53",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "AUMERSIER",
+      "cp": "79100",
+      "ville": "THOUARS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
