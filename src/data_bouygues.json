@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-22T04:47:16.067558+00:00",
+  "scraped_at": "2026-06-22T10:41:46.351981+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10019,7 +10019,7 @@
       "cp": "87110",
       "ville": "SOLIGNAC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0891553",
@@ -14723,7 +14723,7 @@
       "cp": "87100",
       "ville": "LIMOGES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0911468",
@@ -15371,7 +15371,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917037",
@@ -15407,7 +15407,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917029",
@@ -15851,6 +15851,18 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0921094",
+      "type": "Acquisition",
+      "date_inscription": "22/06/2026 12:39",
+      "login": "c2.5663",
+      "vendeur": "SY ASSANE DIENG",
+      "nom client": "MATISSE",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Saisie"
     }
   ]
