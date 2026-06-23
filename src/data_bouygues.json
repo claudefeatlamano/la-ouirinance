@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-23T09:47:26.380090+00:00",
+  "scraped_at": "2026-06-23T12:35:34.499032+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15982,6 +15982,30 @@
       "nom client": "AUMERSIER",
       "cp": "79100",
       "ville": "THOUARS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0921752",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 12:16",
+      "login": "c2.3168",
+      "vendeur": "CHEIKH ABDELLAH",
+      "nom client": "GUIHO",
+      "cp": "44270",
+      "ville": "MACHECOUL ST MEME",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0921969",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 14:31",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "SEBILO",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
     }
