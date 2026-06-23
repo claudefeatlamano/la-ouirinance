@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-23T12:35:34.499032+00:00",
+  "scraped_at": "2026-06-23T15:51:47.416146+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15551,7 +15551,7 @@
       "cp": "85660",
       "ville": "ST PHILBERT DE BOUAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0918032",
@@ -15575,7 +15575,7 @@
       "cp": "85660",
       "ville": "ST PHILBERT DE BOUAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0918079",
@@ -15755,7 +15755,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0919598",
@@ -15851,7 +15851,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0921094",
@@ -16006,6 +16006,42 @@
       "nom client": "SEBILO",
       "cp": "44600",
       "ville": "ST-NAZAIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922093",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 16:01",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "ABDOU AHMED",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0922112",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 16:16",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "BELFOND",
+      "cp": "44300",
+      "ville": "NANTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922224",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 17:39",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "BONNET ALEXEIEFF",
+      "cp": "85400",
+      "ville": "LUCON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
     }
