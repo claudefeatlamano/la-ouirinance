@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-23T05:04:26.513619+00:00",
+  "scraped_at": "2026-06-23T09:47:26.380090+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10019,7 +10019,7 @@
       "cp": "87110",
       "ville": "SOLIGNAC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0891553",
@@ -14891,7 +14891,7 @@
       "cp": "44800",
       "ville": "ST HERBLAIN",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0912607",
@@ -15455,7 +15455,7 @@
       "cp": "85660",
       "ville": "ST PHILBERT DE BOUAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917398",
@@ -15479,7 +15479,7 @@
       "cp": "17600",
       "ville": "SAUJON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917897",
@@ -15539,7 +15539,7 @@
       "cp": "85660",
       "ville": "ST PHILBERT DE BOUAINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0918036",
