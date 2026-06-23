@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-23T15:51:47.416146+00:00",
+  "scraped_at": "2026-06-23T18:00:02.742512+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15491,7 +15491,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917816",
@@ -16044,6 +16044,54 @@
       "ville": "LUCON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922259",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 18:07",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "CARMAGNAC",
+      "cp": "44570",
+      "ville": "TRIGNAC",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0922328",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 19:29",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "COUTURET",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922302",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 18:50",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "BRIEUX",
+      "cp": "77310",
+      "ville": "ST FARGEAU PONTHIERRY",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922299",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 18:45",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "TUTIN",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
