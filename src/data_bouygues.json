@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-23T18:00:02.742512+00:00",
+  "scraped_at": "2026-06-23T20:19:00.320775+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16092,6 +16092,18 @@
       "ville": "NIORT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0922347",
+      "type": "Acquisition",
+      "date_inscription": "23/06/2026 19:57",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "ANQUETIL",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
