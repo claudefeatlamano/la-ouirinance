@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-24T12:21:27.554330+00:00",
+  "scraped_at": "2026-06-24T15:34:20.248940+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16031,7 +16031,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "StandBy"
     },
     {
       "num_contrat": "C2E0922224",
@@ -16115,7 +16115,7 @@
       "cp": "77310",
       "ville": "ST FARGEAU PONTHIERRY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0922591",
@@ -16128,6 +16128,42 @@
       "ville": "CHATEAUBRIANT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0922902",
+      "type": "Acquisition",
+      "date_inscription": "24/06/2026 16:49",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "HERMENIER",
+      "cp": "44110",
+      "ville": "CHATEAUBRIANT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922958",
+      "type": "Acquisition",
+      "date_inscription": "24/06/2026 17:29",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "THEMRI",
+      "cp": "44110",
+      "ville": "CHATEAUBRIANT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922785",
+      "type": "Acquisition",
+      "date_inscription": "24/06/2026 15:27",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "CHASSARD",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "StandBy"
     }
   ]
 }
