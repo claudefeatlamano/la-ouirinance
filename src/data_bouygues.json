@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-24T15:34:20.248940+00:00",
+  "scraped_at": "2026-06-24T17:58:13.728959+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15431,7 +15431,7 @@
       "cp": "17100",
       "ville": "SAINTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917359",
@@ -16151,7 +16151,7 @@
       "cp": "44110",
       "ville": "CHATEAUBRIANT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0922785",
@@ -16164,6 +16164,30 @@
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0922994",
+      "type": "Acquisition",
+      "date_inscription": "24/06/2026 17:57",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "BOUVENS",
+      "cp": "44110",
+      "ville": "CHATEAUBRIANT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0922998",
+      "type": "Acquisition",
+      "date_inscription": "24/06/2026 18:04",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "DJERROUMI",
+      "cp": "44110",
+      "ville": "CHATEAUBRIANT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
