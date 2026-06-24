@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-24T19:59:29.825725+00:00",
+  "scraped_at": "2026-06-24T21:39:55.177235+00:00",
   "rows": [
     {
       "id_abo": "926477",
@@ -1357,7 +1357,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1417,7 +1417,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1697,7 +1697,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "RDV 2026-06-30",
       "etat_commande": "inscription ok"
     },
@@ -2777,7 +2777,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "RDV 2026-07-03",
       "etat_commande": "inscription ok"
     },
@@ -3799,7 +3799,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-15",
       "info_rdv_sync": "RDV 2026-06-22",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "922205",
@@ -20417,7 +20417,7 @@
       "tel_mobile": "0610765067",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20477,7 +20477,7 @@
       "tel_mobile": "0695620093",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20657,7 +20657,7 @@
       "tel_mobile": "0678575347",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20677,7 +20677,7 @@
       "tel_mobile": "0746414615",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20737,7 +20737,7 @@
       "tel_mobile": "0695663352",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20797,7 +20797,7 @@
       "tel_mobile": "0645283017",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "RDV 2026-07-01",
       "etat_commande": "inscription ok"
     },
@@ -20857,7 +20857,7 @@
       "tel_mobile": "0760777882",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-24",
       "info_rdv_sync": "RDV 2026-07-01",
       "etat_commande": "inscription ok"
     },
@@ -23659,7 +23659,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-05",
       "info_rdv_sync": "SyncOK 2026-06-12",
-      "etat_commande": "connexion ok VRF"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "919506",
