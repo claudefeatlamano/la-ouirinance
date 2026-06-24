@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-24T09:36:32.947300+00:00",
+  "scraped_at": "2026-06-24T12:21:27.554330+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -11195,7 +11195,7 @@
       "cp": "49110",
       "ville": "BEAUPREAU EN MAUGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0905974",
@@ -16104,6 +16104,30 @@
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922528",
+      "type": "Acquisition",
+      "date_inscription": "24/06/2026 12:46",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "MARTIAL",
+      "cp": "77310",
+      "ville": "ST FARGEAU PONTHIERRY",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0922591",
+      "type": "Acquisition",
+      "date_inscription": "24/06/2026 13:24",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "JENNINGS",
+      "cp": "44110",
+      "ville": "CHATEAUBRIANT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
