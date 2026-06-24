@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-24T05:03:55.502156+00:00",
+  "scraped_at": "2026-06-24T09:36:32.947300+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10847,7 +10847,7 @@
       "cp": "44420",
       "ville": "PIRIAC SUR MER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0892410",
@@ -14891,7 +14891,7 @@
       "cp": "44800",
       "ville": "ST HERBLAIN",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0912607",
@@ -15623,7 +15623,7 @@
       "cp": "87100",
       "ville": "LIMOGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0918323",
@@ -15995,7 +15995,7 @@
       "cp": "44270",
       "ville": "MACHECOUL ST MEME",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0921969",
