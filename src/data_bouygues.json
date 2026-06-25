@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-25T03:54:34.978086+00:00",
+  "scraped_at": "2026-06-25T07:49:02.979038+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -10847,7 +10847,7 @@
       "cp": "44420",
       "ville": "PIRIAC SUR MER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0892410",
@@ -15119,7 +15119,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0913816",
@@ -16031,7 +16031,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Tierce personne"
     },
     {
       "num_contrat": "C2E0922224",
@@ -16115,7 +16115,7 @@
       "cp": "77310",
       "ville": "ST FARGEAU PONTHIERRY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Adresse pas éligible FTTH"
     },
     {
       "num_contrat": "C2E0922591",
@@ -16151,7 +16151,7 @@
       "cp": "44110",
       "ville": "CHATEAUBRIANT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0922785",
@@ -16163,7 +16163,7 @@
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0922994",
