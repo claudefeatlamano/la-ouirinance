@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-25T07:49:02.979038+00:00",
+  "scraped_at": "2026-06-25T10:45:45.750395+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15779,7 +15779,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0919619",
@@ -16188,6 +16188,18 @@
       "ville": "CHATEAUBRIANT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0923190",
+      "type": "Acquisition",
+      "date_inscription": "25/06/2026 12:01",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "WILLAUME",
+      "cp": "85340",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "StandBy"
     }
   ]
 }
