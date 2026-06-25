@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-25T16:28:13.016832+00:00",
+  "scraped_at": "2026-06-25T19:06:59.462577+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15515,7 +15515,7 @@
       "cp": "79370",
       "ville": "CELLES-SUR-BELLE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917949",
@@ -16272,6 +16272,18 @@
       "ville": "CHATEAUBRIANT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0923733",
+      "type": "Acquisition",
+      "date_inscription": "25/06/2026 18:36",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "LONGAA",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
     }
   ]
 }
