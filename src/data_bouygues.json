@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-25T10:45:45.750395+00:00",
+  "scraped_at": "2026-06-25T13:21:36.574549+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16043,7 +16043,7 @@
       "cp": "85400",
       "ville": "LUCON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0922259",
@@ -16200,6 +16200,54 @@
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0923271",
+      "type": "Acquisition",
+      "date_inscription": "25/06/2026 12:55",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "CAOKI",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0923319",
+      "type": "Acquisition",
+      "date_inscription": "25/06/2026 13:23",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "MAMEDOVA",
+      "cp": "85340",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0923340",
+      "type": "Acquisition",
+      "date_inscription": "25/06/2026 13:42",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "GAUTIER",
+      "cp": "85340",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0923377",
+      "type": "Acquisition",
+      "date_inscription": "25/06/2026 13:53",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "HOUGRON",
+      "cp": "44110",
+      "ville": "CHATEAUBRIANT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
