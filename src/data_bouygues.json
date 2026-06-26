@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-26T14:31:23.322897+00:00",
+  "scraped_at": "2026-06-26T17:02:14.145844+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15707,7 +15707,7 @@
       "cp": "17100",
       "ville": "SAINTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0919085",
@@ -15815,7 +15815,7 @@
       "cp": "17250",
       "ville": "PONT-L'ABBE-D'ARNOULT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0920655",
@@ -15839,7 +15839,7 @@
       "cp": "85450",
       "ville": "PUYRAVAULT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0920938",
@@ -16330,6 +16330,30 @@
       "nom client": "HAMON BECHU",
       "cp": "44320",
       "ville": "FROSSAY",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0924353",
+      "type": "Acquisition",
+      "date_inscription": "26/06/2026 17:14",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "NIRLO",
+      "cp": "85600",
+      "ville": "MONTAIGU VENDEE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0924333",
+      "type": "Acquisition",
+      "date_inscription": "26/06/2026 16:45",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "COUTANT",
+      "cp": "85100",
+      "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
