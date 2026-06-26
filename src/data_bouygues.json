@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-26T08:31:03.292647+00:00",
+  "scraped_at": "2026-06-26T11:46:04.509124+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16284,6 +16284,18 @@
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "KO/Situation Client"
+    },
+    {
+      "num_contrat": "C2E0923900",
+      "type": "Acquisition",
+      "date_inscription": "26/06/2026 12:27",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "DOUILLARD",
+      "cp": "85600",
+      "ville": "MONTAIGU VENDEE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
