@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-26T04:01:14.645974+00:00",
+  "scraped_at": "2026-06-26T08:31:03.292647+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15119,7 +15119,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0913816",
@@ -15203,7 +15203,7 @@
       "cp": "49530",
       "ville": "OREE D ANJOU",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0914553",
@@ -16199,7 +16199,7 @@
       "cp": "85340",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Tierce personne"
     },
     {
       "num_contrat": "C2E0923271",
@@ -16283,7 +16283,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     }
   ]
 }

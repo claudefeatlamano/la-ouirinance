@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-26T04:01:07.300756+00:00",
+  "scraped_at": "2026-06-26T08:30:51.015721+00:00",
   "rows": [
     {
       "id_abo": "926967",
@@ -937,7 +937,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1017,7 +1017,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1237,7 +1237,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1457,7 +1457,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1477,7 +1477,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1517,7 +1517,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-07-02",
       "etat_commande": "inscription ok"
     },
@@ -1557,7 +1557,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-07-06",
       "etat_commande": "inscription ok"
     },
@@ -1717,7 +1717,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-07-03",
       "etat_commande": "inscription ok"
     },
@@ -1977,7 +1977,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-07-01",
       "etat_commande": "inscription ok"
     },
@@ -2037,7 +2037,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-07-06",
       "etat_commande": "inscription ok"
     },
@@ -21217,7 +21217,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-07-18",
       "etat_commande": "inscription ok"
     },
@@ -21297,7 +21297,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-06-30",
       "etat_commande": "inscription ok"
     },
@@ -21517,7 +21517,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-06-30",
       "etat_commande": "inscription ok"
     },
@@ -21537,7 +21537,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-06-25",
       "info_rdv_sync": "RDV 2026-06-30",
       "etat_commande": "inscription ok"
     },
