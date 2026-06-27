@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-27T09:30:08.657723+00:00",
+  "scraped_at": "2026-06-27T11:36:50.409301+00:00",
   "rows": [
     {
       "id_abo": "927296",
@@ -21442,26 +21442,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "907202",
-      "date_inscription": "2026-04-27 13:05:09",
-      "login": "vst-bouchrif",
-      "vendeur": "bilel ouchrif",
-      "entreprise": "Stratygo",
-      "adresse": "2 RUE NUNGESSER ET COLI",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "FO36866432",
-      "ref_preins": "PFO42966288SA",
-      "nom abonne": "Papot",
-      "prenom abonne": "Jean-claude Michele",
-      "tel_mobile": "0608127027",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "envoi_colis": "2026-04-30",
-      "info_rdv_sync": "SyncOK 2026-05-07",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "925606",
       "date_inscription": "2026-06-22 19:47:56",
       "login": "vta-epiet",
@@ -23158,8 +23138,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-19",
-      "info_rdv_sync": "RDV 2026-06-27",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-27",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "923921",
