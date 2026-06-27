@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-27T03:44:57.648090+00:00",
+  "scraped_at": "2026-06-27T06:55:01.689416+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15143,7 +15143,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0913755",
@@ -15203,7 +15203,7 @@
       "cp": "49530",
       "ville": "OREE D ANJOU",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0914553",
