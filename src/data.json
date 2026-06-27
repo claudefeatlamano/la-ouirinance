@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-27T17:14:06.124864+00:00",
+  "scraped_at": "2026-06-27T19:25:01.397470+00:00",
   "rows": [
     {
       "id_abo": "927296",
@@ -1458,7 +1458,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-04",
       "etat_commande": "inscription ok"
     },
     {
@@ -20782,46 +20782,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "907539",
-      "date_inscription": "2026-04-27 19:44:43",
-      "login": "vst-ombengue",
-      "entreprise": "Stratygo",
-      "adresse": "16 RUE DE PARIS",
-      "cp": "85128",
-      "ville": "Lucon",
-      "id_client": "",
-      "ref_preins": "PFO42969528WG",
-      "nom abonne": "Pierre",
-      "prenom abonne": "Thierry",
-      "tel_mobile": "0677750682",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "907533",
-      "date_inscription": "2026-04-27 19:23:09",
-      "login": "vst-ikocak",
-      "entreprise": "Stratygo",
-      "adresse": "7 RUE DE L ISAU",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "FO36869268",
-      "ref_preins": "PFO42969432LU",
-      "nom abonne": "Castro pinto",
-      "prenom abonne": "Pedro",
-      "tel_mobile": "0646419495",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-04-29",
-      "info_rdv_sync": "SyncOK 2026-05-04",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "925606",
       "date_inscription": "2026-06-22 19:47:56",
       "login": "vta-epiet",
@@ -30380,26 +30340,6 @@
       "envoi_colis": "2026-05-05",
       "info_rdv_sync": "SyncOK 2026-05-12",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "907532",
-      "date_inscription": "2026-04-27 19:19:23",
-      "login": "vta-lwojciechowski",
-      "vendeur": "lucas wojciechowski",
-      "entreprise": "TALC",
-      "adresse": "4 RUE BEAUCHAMP",
-      "cp": "79191",
-      "ville": "Niort",
-      "id_client": "FO36869199",
-      "ref_preins": "PFO42969396RJ",
-      "nom abonne": "GABILLY",
-      "prenom abonne": "CHRISTEL",
-      "tel_mobile": "0698374289",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
     }
   ]
 }
