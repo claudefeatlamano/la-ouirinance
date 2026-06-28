@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-28T08:23:06.807786+00:00",
+  "scraped_at": "2026-06-28T11:09:52.241841+00:00",
   "rows": [
     {
       "id_abo": "927296",
@@ -218,7 +218,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-09",
       "etat_commande": "inscription ok"
     },
     {
@@ -20719,66 +20719,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-04-30",
       "info_rdv_sync": "SyncOK 2026-05-12",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "907646",
-      "date_inscription": "2026-04-28 13:01:54",
-      "login": "vst-pshehu",
-      "entreprise": "Stratygo",
-      "adresse": "25 RUE DU COTEAU",
-      "cp": "49218",
-      "ville": "Montrevault sur evre",
-      "id_client": "FO36871362",
-      "ref_preins": "PFO42971914YC",
-      "nom abonne": "Manon",
-      "prenom abonne": "Guérir",
-      "tel_mobile": "0662732561",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "907643",
-      "date_inscription": "2026-04-28 12:58:25",
-      "login": "vst-ombengue",
-      "entreprise": "Stratygo",
-      "adresse": "50 RUE EDGAR DEGAS",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "FO36871328",
-      "ref_preins": "PFO42971888J1",
-      "nom abonne": "Coutinho de Almeida",
-      "prenom abonne": "Lorenne",
-      "tel_mobile": "0651372947",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-04-30",
-      "info_rdv_sync": "SyncOK 2026-05-19",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "907612",
-      "date_inscription": "2026-04-28 12:27:11",
-      "login": "vst-ombengue",
-      "entreprise": "Stratygo",
-      "adresse": "50 RUE EDGAR DEGAS",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "FO36871152",
-      "ref_preins": "PFO429716782T",
-      "nom abonne": "Renard",
-      "prenom abonne": "Christope",
-      "tel_mobile": "0625833046",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-04-30",
-      "info_rdv_sync": "SyncOK 2026-05-07",
       "etat_commande": "connexion ok VRF"
     },
     {
