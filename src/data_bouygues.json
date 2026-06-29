@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-29T17:39:50.600067+00:00",
+  "scraped_at": "2026-06-29T20:02:33.297724+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15563,7 +15563,7 @@
       "cp": "17600",
       "ville": "PISANY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917485",

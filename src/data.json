@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-29T17:39:42.838137+00:00",
+  "scraped_at": "2026-06-29T20:02:25.343674+00:00",
   "rows": [
     {
       "id_abo": "927706",
@@ -10,7 +10,7 @@
       "adresse": "3 RUE DE LA VOIE",
       "cp": "85185",
       "ville": "Puyravault",
-      "id_client": "",
+      "id_client": "FO37122772",
       "ref_preins": "PFO43255611IE",
       "nom abonne": "Macikowski",
       "prenom abonne": "Adeline",
@@ -19,7 +19,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927671",
@@ -30,7 +30,7 @@
       "adresse": "27 RUE WOOTTON BASSETT",
       "cp": "44015",
       "ville": "BLAIN",
-      "id_client": "",
+      "id_client": "FO37122631",
       "ref_preins": "PFO43255353VH",
       "nom abonne": "ANGELO",
       "prenom abonne": "Antoine &Prisca",
@@ -39,7 +39,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927665",
@@ -50,7 +50,7 @@
       "adresse": "3 RUE ALCOUTIM",
       "cp": "44015",
       "ville": "BLAIN",
-      "id_client": "",
+      "id_client": "FO37122797",
       "ref_preins": "PFO43255179SZ",
       "nom abonne": "Daninthe",
       "prenom abonne": "Julien",
@@ -59,7 +59,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927663",
@@ -2498,7 +2498,7 @@
       "box": "POP",
       "mcafee": "",
       "envoi_colis": "2026-06-24",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-06",
       "etat_commande": "inscription ok"
     },
     {
@@ -4138,8 +4138,8 @@
       "box": "POP",
       "mcafee": "",
       "envoi_colis": "2026-06-18",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "923415",
@@ -19842,24 +19842,84 @@
       "etat_commande": "résilié"
     },
     {
-      "id_abo": "908560",
-      "date_inscription": "2026-04-29 20:04:42",
-      "login": "vst-aatf",
-      "vendeur": "ali atf",
-      "entreprise": "Stratygo",
-      "adresse": "46 RUE DU MOULIN BATARD",
-      "cp": "44049",
-      "ville": "Croisic",
-      "id_client": "FO36878625",
-      "ref_preins": "PFO42980406CA",
-      "nom abonne": "Le noan",
-      "prenom abonne": "Marie",
-      "tel_mobile": "0632464403",
+      "id_abo": "927769",
+      "date_inscription": "2026-06-29 20:32:26",
+      "login": "vta-zourhalm",
+      "entreprise": "TALC",
+      "adresse": "33 RUE ROGER SALENGRO",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO43256684HH",
+      "nom abonne": "Madi",
+      "prenom abonne": "Elmouhamadi",
+      "tel_mobile": "0608786720",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "2026-05-21",
-      "info_rdv_sync": "SyncOK 2026-06-06",
-      "etat_commande": "connexion ok VRF"
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "927768",
+      "date_inscription": "2026-06-29 20:08:16",
+      "login": "vta-adria",
+      "entreprise": "TALC",
+      "adresse": "6 RUE JEAN RICHEPIN",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO43256636J4",
+      "nom abonne": "Dourilin",
+      "prenom abonne": "Sandrine",
+      "tel_mobile": "0628181935",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "927767",
+      "date_inscription": "2026-06-29 20:04:46",
+      "login": "vta-zourhalm",
+      "entreprise": "TALC",
+      "adresse": "33 RUE ROGER SALENGRO",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO432565748R",
+      "nom abonne": "Cadieu",
+      "prenom abonne": "Loane",
+      "tel_mobile": "0617503458",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "927759",
+      "date_inscription": "2026-06-29 19:29:52",
+      "login": "vta-adria",
+      "entreprise": "TALC",
+      "adresse": "29 RUE DU DOURJACQ",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO432563754F",
+      "nom abonne": "Duval",
+      "prenom abonne": "Patrick",
+      "tel_mobile": "0681941709",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
     },
     {
       "id_abo": "927712",
@@ -19869,7 +19929,7 @@
       "adresse": "93 RUE DES 3 COIGNEAUX",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37122937",
       "ref_preins": "PFO43255777YM",
       "nom abonne": "Blagnon",
       "prenom abonne": "Elisa",
@@ -19879,7 +19939,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927710",
@@ -19889,7 +19949,7 @@
       "adresse": "5 RUE SAINT GELAIS",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37122830",
       "ref_preins": "PFO43255643OC",
       "nom abonne": "Coulibaly",
       "prenom abonne": "issiaka",
@@ -19899,7 +19959,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927707",
@@ -19909,7 +19969,7 @@
       "adresse": "27 RUE DU DOURJACQ",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37122839",
       "ref_preins": "PFO43255636EF",
       "nom abonne": "Delattre",
       "prenom abonne": "Anthony",
@@ -19919,7 +19979,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927704",
@@ -19929,7 +19989,7 @@
       "adresse": "62 RUE BASSE",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37122790",
       "ref_preins": "PFO43255603XO",
       "nom abonne": "Maryam",
       "prenom abonne": "Fadimatou",
@@ -19939,7 +19999,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927701",
@@ -19949,7 +20009,7 @@
       "adresse": "11 RUE LAURENT BONNEVAY",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37122770",
       "ref_preins": "PFO43255510V3",
       "nom abonne": "Leveau",
       "prenom abonne": "Jean pierre",
@@ -19959,7 +20019,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927684",
@@ -19969,7 +20029,7 @@
       "adresse": "9 RUE SAINT GELAIS",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37122514",
       "ref_preins": "PFO4325527233",
       "nom abonne": "ABDERASOL SALEH",
       "prenom abonne": "Hafiz",
@@ -19979,7 +20039,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927662",
@@ -19989,7 +20049,7 @@
       "adresse": "1 RUE AMIRAL D ORVILLIERS",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37122445",
       "ref_preins": "PFO43255116WE",
       "nom abonne": "Hirigaray",
       "prenom abonne": "Ludivine",
@@ -19999,7 +20059,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927645",
@@ -20009,7 +20069,7 @@
       "adresse": "21 RUE SAINT GELAIS",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37122202",
       "ref_preins": "PFO43254913P5",
       "nom abonne": "SERIGNE FALLOU",
       "prenom abonne": "BAR",
@@ -20019,7 +20079,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "927628",
@@ -20418,7 +20478,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-11",
       "etat_commande": "inscription ok"
     },
     {
@@ -20918,8 +20978,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "924958",
