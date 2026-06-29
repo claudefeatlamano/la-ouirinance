@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-29T04:15:05.628645+00:00",
+  "scraped_at": "2026-06-29T09:49:38.567203+00:00",
   "rows": [
     {
       "id_abo": "927296",
@@ -138,7 +138,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-07",
       "etat_commande": "inscription ok"
     },
     {
@@ -478,7 +478,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-07",
       "etat_commande": "inscription ok"
     },
     {
@@ -758,7 +758,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-06",
       "etat_commande": "inscription ok"
     },
     {
@@ -878,7 +878,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-07",
       "etat_commande": "inscription ok"
     },
     {
@@ -898,7 +898,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-06",
       "etat_commande": "inscription ok"
     },
     {
@@ -938,7 +938,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-08",
       "etat_commande": "inscription ok"
     },
     {
@@ -1098,7 +1098,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-07",
       "etat_commande": "inscription ok"
     },
     {
@@ -2338,7 +2338,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-07",
       "etat_commande": "inscription ok"
     },
     {
@@ -2678,8 +2678,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "925057",
@@ -2778,8 +2778,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "924939",
@@ -3278,8 +3278,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "924539",
@@ -3398,8 +3398,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "924293",
@@ -3658,8 +3658,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-23",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "923661",
@@ -20698,8 +20698,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-23",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "925112",
@@ -21518,8 +21518,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-19",
-      "info_rdv_sync": "RDV 2026-06-29",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "924096",
@@ -22398,8 +22398,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-17",
-      "info_rdv_sync": "RDV 2026-06-23",
-      "etat_commande": "inscription ok /postprod"
+      "info_rdv_sync": "SyncOK 2026-06-29",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "921925",
@@ -24378,7 +24378,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-02",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-15",
       "etat_commande": "inscription ok"
     },
     {
@@ -29479,26 +29479,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-05-05",
       "info_rdv_sync": "SyncOK 2026-05-13",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "908053",
-      "date_inscription": "2026-04-29 10:26:03",
-      "login": "vta-tferreira",
-      "entreprise": "TALC",
-      "adresse": "9 RUE DES ACACIAS",
-      "cp": "79299",
-      "ville": "Saint varent",
-      "id_client": "FO36874985",
-      "ref_preins": "PFO42976152R7",
-      "nom abonne": "MANIERE",
-      "prenom abonne": "Swann",
-      "tel_mobile": "0750683479",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-11",
-      "info_rdv_sync": "SyncOK 2026-05-20",
       "etat_commande": "connexion ok VRF"
     }
   ]

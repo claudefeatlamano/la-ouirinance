@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-29T04:15:23.284281+00:00",
+  "scraped_at": "2026-06-29T09:49:45.552663+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9323,7 +9323,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0885762",
@@ -10823,7 +10823,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0894129",
@@ -15971,7 +15971,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0921553",
