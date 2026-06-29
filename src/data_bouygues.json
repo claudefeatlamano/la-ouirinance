@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-29T14:07:05.674476+00:00",
+  "scraped_at": "2026-06-29T17:39:50.600067+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15851,7 +15851,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0921094",
@@ -15887,7 +15887,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0921199",
@@ -15959,7 +15959,7 @@
       "cp": "44100",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0921545",
@@ -16426,6 +16426,30 @@
       "nom client": "LEGAL",
       "cp": "44130",
       "ville": "BLAIN",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0925160",
+      "type": "Acquisition",
+      "date_inscription": "29/06/2026 17:17",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "LECRON",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0925171",
+      "type": "Acquisition",
+      "date_inscription": "29/06/2026 17:28",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "LE FUSTEC",
+      "cp": "29200",
+      "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
