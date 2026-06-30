@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-30T12:11:46.698104+00:00",
+  "scraped_at": "2026-06-30T15:30:56.401484+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15467,7 +15467,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0917869",
@@ -16499,6 +16499,42 @@
       "cp": "85430",
       "ville": "LA BOISSIERE DES LANDES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0925646",
+      "type": "Acquisition",
+      "date_inscription": "30/06/2026 14:50",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "GARON",
+      "cp": "85410",
+      "ville": "ST CYR DES GATS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0925680",
+      "type": "Acquisition",
+      "date_inscription": "30/06/2026 15:19",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "BOUARD",
+      "cp": "85430",
+      "ville": "LA BOISSIERE DES LANDES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0925784",
+      "type": "Acquisition",
+      "date_inscription": "30/06/2026 16:13",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "BELLANGER",
+      "cp": "85220",
+      "ville": "COEX",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
