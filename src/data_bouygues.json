@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-30T09:42:29.116290+00:00",
+  "scraped_at": "2026-06-30T12:11:46.698104+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16175,7 +16175,7 @@
       "cp": "44110",
       "ville": "CHATEAUBRIANT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0922998",
@@ -16450,6 +16450,54 @@
       "nom client": "LE FUSTEC",
       "cp": "29200",
       "ville": "BREST",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0925451",
+      "type": "Acquisition",
+      "date_inscription": "30/06/2026 12:51",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "BARRETEAU",
+      "cp": "85430",
+      "ville": "LA BOISSIERE DES LANDES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0925490",
+      "type": "Acquisition",
+      "date_inscription": "30/06/2026 13:18",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "POIRAUD",
+      "cp": "85430",
+      "ville": "LA BOISSIERE DES LANDES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0925405",
+      "type": "Acquisition",
+      "date_inscription": "30/06/2026 12:13",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "LE DEN",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0925545",
+      "type": "Acquisition",
+      "date_inscription": "30/06/2026 13:50",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "NEKKAA",
+      "cp": "85430",
+      "ville": "LA BOISSIERE DES LANDES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
