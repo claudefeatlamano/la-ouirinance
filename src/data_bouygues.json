@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-30T15:30:56.401484+00:00",
+  "scraped_at": "2026-06-30T17:58:50.774069+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16019,7 +16019,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0922112",
