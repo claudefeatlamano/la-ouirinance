@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-30T05:06:39.577989+00:00",
+  "scraped_at": "2026-06-30T09:42:29.116290+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16391,7 +16391,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Tierce personne"
     },
     {
       "num_contrat": "C2E0924613",
@@ -16439,7 +16439,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Info erronée"
     },
     {
       "num_contrat": "C2E0925171",
