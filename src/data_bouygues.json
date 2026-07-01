@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-01T15:44:37.815879+00:00",
+  "scraped_at": "2026-07-01T17:59:51.909917+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16583,6 +16583,54 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0926767",
+      "type": "Acquisition",
+      "date_inscription": "01/07/2026 18:01",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "MONTEIRO TEXEIRA",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0926786",
+      "type": "Acquisition",
+      "date_inscription": "01/07/2026 18:13",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "PEREIRA",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0926849",
+      "type": "Acquisition",
+      "date_inscription": "01/07/2026 19:34",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "MENDY",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0926749",
+      "type": "Acquisition",
+      "date_inscription": "01/07/2026 17:49",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "GILQUIN",
+      "cp": "85340",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
