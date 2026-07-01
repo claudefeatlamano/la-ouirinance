@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-01T09:54:16.789656+00:00",
+  "scraped_at": "2026-07-01T12:35:56.783172+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15923,7 +15923,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0921113",
@@ -16535,6 +16535,42 @@
       "cp": "85220",
       "ville": "COEX",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0926182",
+      "type": "Acquisition",
+      "date_inscription": "01/07/2026 12:27",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "QUEFFELLEC",
+      "cp": "85100",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0926247",
+      "type": "Acquisition",
+      "date_inscription": "01/07/2026 13:16",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "CONSTANTIN",
+      "cp": "85540",
+      "ville": "ST CYR EN TALMONDAIS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0926217",
+      "type": "Acquisition",
+      "date_inscription": "01/07/2026 12:59",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "MANTEZ",
+      "cp": "85340",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
   ]
