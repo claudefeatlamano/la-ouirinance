@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-02T05:00:03.866773+00:00",
+  "scraped_at": "2026-07-02T06:15:44.763954+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15443,7 +15443,7 @@
       "cp": "85660",
       "ville": "ST PHILBERT DE BOUAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0917364",
@@ -15503,7 +15503,7 @@
       "cp": "79370",
       "ville": "CELLES-SUR-BELLE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0917889",
@@ -15527,7 +15527,7 @@
       "cp": "79370",
       "ville": "CELLES SUR BELLE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0917397",
