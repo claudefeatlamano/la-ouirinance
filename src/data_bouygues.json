@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-02T08:19:35.759856+00:00",
+  "scraped_at": "2026-07-02T11:36:33.483231+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15899,7 +15899,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0921173",
@@ -16630,6 +16630,18 @@
       "nom client": "GILQUIN",
       "cp": "85340",
       "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0926966",
+      "type": "Acquisition",
+      "date_inscription": "02/07/2026 12:34",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "ESSEUL",
+      "cp": "85480",
+      "ville": "THORIGNY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
