@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-02T11:36:33.483231+00:00",
+  "scraped_at": "2026-07-02T14:08:33.274679+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16355,7 +16355,7 @@
       "cp": "85100",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0924662",
@@ -16643,6 +16643,18 @@
       "cp": "85480",
       "ville": "THORIGNY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0927164",
+      "type": "Acquisition",
+      "date_inscription": "02/07/2026 14:32",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "AUDUSSEAU",
+      "cp": "49360",
+      "ville": "LA PLAINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
   ]
