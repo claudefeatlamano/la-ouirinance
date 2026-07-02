@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-02T14:08:33.274679+00:00",
+  "scraped_at": "2026-07-02T16:52:34.173542+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16043,7 +16043,7 @@
       "cp": "85400",
       "ville": "LUCON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0922259",
@@ -16656,6 +16656,54 @@
       "ville": "LA PLAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0927473",
+      "type": "Acquisition",
+      "date_inscription": "02/07/2026 17:37",
+      "login": "c2.3168",
+      "vendeur": "CHEIKH ABDELLAH",
+      "nom client": "PRIAM",
+      "cp": "44240",
+      "ville": "LA CHAPELLE-SUR-ERDRE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0927361",
+      "type": "Acquisition",
+      "date_inscription": "02/07/2026 16:21",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "ROCHAT",
+      "cp": "49310",
+      "ville": "SAINT PAUL DU BOIS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0927607",
+      "type": "Acquisition",
+      "date_inscription": "02/07/2026 18:48",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "ATTOUMANI",
+      "cp": "49310",
+      "ville": "SAINT PAUL DU BOIS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0927519",
+      "type": "Acquisition",
+      "date_inscription": "02/07/2026 18:00",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "TEFFO",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
