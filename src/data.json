@@ -1,6 +1,26 @@
 {
-  "scraped_at": "2026-07-02T18:26:38.419601+00:00",
+  "scraped_at": "2026-07-02T20:20:51.135129+00:00",
   "rows": [
+    {
+      "id_abo": "929031",
+      "date_inscription": "2026-07-02 18:14:33",
+      "login": "vst-pgrasset",
+      "entreprise": "Stratygo",
+      "adresse": "7 SQUARE DE L OUCHE DU CAILLON",
+      "cp": "49070",
+      "ville": "Chanteloup les bois",
+      "id_client": "",
+      "ref_preins": "PFO43275132Q3",
+      "nom abonne": "Chabot",
+      "prenom abonne": "Romain",
+      "tel_mobile": "0665914316",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "929028",
       "date_inscription": "2026-07-02 18:06:52",
@@ -9,7 +29,7 @@
       "adresse": "10 PLACE HUBERT CASSIN",
       "cp": "49355",
       "ville": "Trementines",
-      "id_client": "",
+      "id_client": "FO37140351",
       "ref_preins": "PFO432748027W",
       "nom abonne": "Clochard",
       "prenom abonne": "Naomi",
@@ -19,7 +39,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928992",
@@ -29,7 +49,7 @@
       "adresse": "4 RUE DE L EAU VIVE",
       "cp": "49310",
       "ville": "Saint paul du bois",
-      "id_client": "",
+      "id_client": "FO37140038",
       "ref_preins": "PFO43274472RP",
       "nom abonne": "Dixneuf",
       "prenom abonne": "Adele",
@@ -39,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928991",
@@ -49,7 +69,7 @@
       "adresse": "4 IMPASSE DE LA JUSTICE",
       "cp": "49371",
       "ville": "Vezins",
-      "id_client": "",
+      "id_client": "FO37140067",
       "ref_preins": "PFO43274509N9",
       "nom abonne": "SABATINI",
       "prenom abonne": "ange",
@@ -59,7 +79,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928974",
@@ -69,7 +89,7 @@
       "adresse": "2 IMPASSE DES MEUNIERS",
       "cp": "85291",
       "ville": "Thorigny",
-      "id_client": "",
+      "id_client": "FO37139972",
       "ref_preins": "PFO43274344PE",
       "nom abonne": "Madeleine",
       "prenom abonne": "Vincent",
@@ -79,7 +99,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928951",
@@ -20102,6 +20122,86 @@
       "etat_commande": "connexion ok VRF"
     },
     {
+      "id_abo": "929076",
+      "date_inscription": "2026-07-02 20:19:18",
+      "login": "vta-bziegler",
+      "entreprise": "TALC",
+      "adresse": "1 RUE DU VERCORS",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO43275609FN",
+      "nom abonne": "Lachuer",
+      "prenom abonne": "Andrée",
+      "tel_mobile": "0666949675",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "929069",
+      "date_inscription": "2026-07-02 19:43:39",
+      "login": "vta-zourhalm",
+      "entreprise": "TALC",
+      "adresse": "94 RUE PAUL MASSON",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO43275500J5",
+      "nom abonne": "Da silva",
+      "prenom abonne": "Mélanie",
+      "tel_mobile": "0673674680",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "929059",
+      "date_inscription": "2026-07-02 19:04:01",
+      "login": "vta-zourhalm",
+      "entreprise": "TALC",
+      "adresse": "2 RUE SISLEY",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO432752712D",
+      "nom abonne": "Meyer",
+      "prenom abonne": "Marie claire",
+      "tel_mobile": "0616457962",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "929053",
+      "date_inscription": "2026-07-02 18:45:50",
+      "login": "vta-epiet",
+      "entreprise": "TALC",
+      "adresse": "5 CITE PIERRE BENOIT",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO43275096T9",
+      "nom abonne": "Le Gall",
+      "prenom abonne": "Muriel",
+      "tel_mobile": "0624659349",
+      "box": "POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
       "id_abo": "929026",
       "date_inscription": "2026-07-02 18:01:09",
       "login": "vta-zourhalm",
@@ -20109,7 +20209,7 @@
       "adresse": "26 RUE BAILLY",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37140402",
       "ref_preins": "PFO43274847LK",
       "nom abonne": "Beljuli",
       "prenom abonne": "Ferdez",
@@ -20119,7 +20219,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928986",
@@ -20129,7 +20229,7 @@
       "adresse": "8 RUE ISABEY",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37139969",
       "ref_preins": "PFO43274400LQ",
       "nom abonne": "Djoumoi",
       "prenom abonne": "Bidjarati",
@@ -20139,7 +20239,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928983",
@@ -20149,7 +20249,7 @@
       "adresse": "5 CITE PIERRE BENOIT",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37140030",
       "ref_preins": "PFO43274408RW",
       "nom abonne": "Meudec",
       "prenom abonne": "Jean-François",
@@ -20159,7 +20259,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928954",
@@ -20169,7 +20269,7 @@
       "adresse": "40 RUE ALBERT LOUPPE",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37139681",
       "ref_preins": "PFO43273956J7",
       "nom abonne": "Delafosse",
       "prenom abonne": "Alain",
@@ -20179,7 +20279,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928923",
@@ -20578,7 +20678,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-09",
       "etat_commande": "inscription ok"
     },
     {
