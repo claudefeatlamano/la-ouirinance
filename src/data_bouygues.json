@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-02T06:15:44.763954+00:00",
+  "scraped_at": "2026-07-02T08:19:35.759856+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15395,7 +15395,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0917196",
@@ -16595,7 +16595,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0926786",
