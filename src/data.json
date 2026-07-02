@@ -1,6 +1,86 @@
 {
-  "scraped_at": "2026-07-02T16:52:20.800506+00:00",
+  "scraped_at": "2026-07-02T18:26:38.419601+00:00",
   "rows": [
+    {
+      "id_abo": "929028",
+      "date_inscription": "2026-07-02 18:06:52",
+      "login": "vst-abouhitem",
+      "entreprise": "Stratygo",
+      "adresse": "10 PLACE HUBERT CASSIN",
+      "cp": "49355",
+      "ville": "Trementines",
+      "id_client": "",
+      "ref_preins": "PFO432748027W",
+      "nom abonne": "Clochard",
+      "prenom abonne": "Naomi",
+      "tel_mobile": "0745638175",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "928992",
+      "date_inscription": "2026-07-02 17:25:35",
+      "login": "vst-caudonnet",
+      "entreprise": "Stratygo",
+      "adresse": "4 RUE DE L EAU VIVE",
+      "cp": "49310",
+      "ville": "Saint paul du bois",
+      "id_client": "",
+      "ref_preins": "PFO43274472RP",
+      "nom abonne": "Dixneuf",
+      "prenom abonne": "Adele",
+      "tel_mobile": "0771258267",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "928991",
+      "date_inscription": "2026-07-02 17:25:13",
+      "login": "vst-lchraita",
+      "entreprise": "Stratygo",
+      "adresse": "4 IMPASSE DE LA JUSTICE",
+      "cp": "49371",
+      "ville": "Vezins",
+      "id_client": "",
+      "ref_preins": "PFO43274509N9",
+      "nom abonne": "SABATINI",
+      "prenom abonne": "ange",
+      "tel_mobile": "0651190300",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "928974",
+      "date_inscription": "2026-07-02 17:01:05",
+      "login": "vst-mali",
+      "entreprise": "Stratygo",
+      "adresse": "2 IMPASSE DES MEUNIERS",
+      "cp": "85291",
+      "ville": "Thorigny",
+      "id_client": "",
+      "ref_preins": "PFO43274344PE",
+      "nom abonne": "Madeleine",
+      "prenom abonne": "Vincent",
+      "tel_mobile": "0632654942",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "928951",
       "date_inscription": "2026-07-02 16:27:13",
@@ -9,7 +89,7 @@
       "adresse": "4 CHEMIN DE FOLIETTE",
       "cp": "49070",
       "ville": "Chanteloup les bois",
-      "id_client": "",
+      "id_client": "FO37139632",
       "ref_preins": "PFO43273983EP",
       "nom abonne": "Baron",
       "prenom abonne": "Elisabeth",
@@ -19,7 +99,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928922",
@@ -29,7 +109,7 @@
       "adresse": "3 IMPASSE DES MEUNIERS",
       "cp": "85291",
       "ville": "Thorigny",
-      "id_client": "",
+      "id_client": "FO37139347",
       "ref_preins": "PFO43273640GB",
       "nom abonne": "BERGER",
       "prenom abonne": "JULIEN",
@@ -39,7 +119,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928921",
@@ -49,7 +129,7 @@
       "adresse": "2 PASSAGE BON SECOURS",
       "cp": "49092",
       "ville": "Chemille en anjou",
-      "id_client": "",
+      "id_client": "FO37139268",
       "ref_preins": "PFO43273608FI",
       "nom abonne": "Godineau",
       "prenom abonne": "Émilie",
@@ -59,7 +139,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928906",
@@ -69,7 +149,7 @@
       "adresse": "2 RUE JEAN D ORMESSON",
       "cp": "49355",
       "ville": "Trementines",
-      "id_client": "",
+      "id_client": "FO37139172",
       "ref_preins": "PFO43273490XR",
       "nom abonne": "Godineau",
       "prenom abonne": "Paul",
@@ -79,7 +159,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928882",
@@ -89,7 +169,7 @@
       "adresse": "10 RUE DES LILAS",
       "cp": "85093",
       "ville": "Fougere",
-      "id_client": "",
+      "id_client": "FO37139026",
       "ref_preins": "PFO43273356JL",
       "nom abonne": "Massiau",
       "prenom abonne": "Gérard",
@@ -99,7 +179,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928876",
@@ -109,7 +189,7 @@
       "adresse": "12 SQUARE DES CHARMES",
       "cp": "49240",
       "ville": "Plaine",
-      "id_client": "",
+      "id_client": "FO37138986",
       "ref_preins": "PFO43273273DM",
       "nom abonne": "Lhermite",
       "prenom abonne": "Aurelie",
@@ -119,7 +199,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928866",
@@ -129,7 +209,7 @@
       "adresse": "30 RUE DU PASTY DU BOIS",
       "cp": "49231",
       "ville": "Nuaille",
-      "id_client": "",
+      "id_client": "FO37138847",
       "ref_preins": "PFO43273183SD",
       "nom abonne": "BEGHIN",
       "prenom abonne": "Brigitte",
@@ -139,7 +219,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928853",
@@ -149,7 +229,7 @@
       "adresse": "12 IMPASSE DU VERGER",
       "cp": "49355",
       "ville": "Trementines",
-      "id_client": "",
+      "id_client": "FO37138730",
       "ref_preins": "PFO43273046I6",
       "nom abonne": "Tessier",
       "prenom abonne": "Remi",
@@ -159,7 +239,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "928832",
@@ -20020,6 +20100,66 @@
       "envoi_colis": "2026-05-07",
       "info_rdv_sync": "SyncOK 2026-06-15",
       "etat_commande": "connexion ok VRF"
+    },
+    {
+      "id_abo": "929026",
+      "date_inscription": "2026-07-02 18:01:09",
+      "login": "vta-zourhalm",
+      "entreprise": "TALC",
+      "adresse": "26 RUE BAILLY",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO43274847LK",
+      "nom abonne": "Beljuli",
+      "prenom abonne": "Ferdez",
+      "tel_mobile": "0604185435",
+      "box": "POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "928986",
+      "date_inscription": "2026-07-02 17:20:43",
+      "login": "vta-yhabbouba",
+      "entreprise": "TALC",
+      "adresse": "8 RUE ISABEY",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO43274400LQ",
+      "nom abonne": "Djoumoi",
+      "prenom abonne": "Bidjarati",
+      "tel_mobile": "0767306638",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "928983",
+      "date_inscription": "2026-07-02 17:16:43",
+      "login": "vta-epiet",
+      "entreprise": "TALC",
+      "adresse": "5 CITE PIERRE BENOIT",
+      "cp": "29019",
+      "ville": "Brest",
+      "id_client": "",
+      "ref_preins": "PFO43274408RW",
+      "nom abonne": "Meudec",
+      "prenom abonne": "Jean-François",
+      "tel_mobile": "0660163476",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
     },
     {
       "id_abo": "928954",
