@@ -1,6 +1,46 @@
 {
-  "scraped_at": "2026-07-03T18:14:49.657148+00:00",
+  "scraped_at": "2026-07-03T20:16:44.159177+00:00",
   "rows": [
+    {
+      "id_abo": "929331",
+      "date_inscription": "2026-07-03 19:21:39",
+      "login": "vst-aatf",
+      "vendeur": "ali atf",
+      "entreprise": "Stratygo",
+      "adresse": "37 RUE DU DOCTEUR LAENNEC",
+      "cp": "49099",
+      "ville": "Cholet",
+      "id_client": "",
+      "ref_preins": "PFO43281149EF",
+      "nom abonne": "Poiroux",
+      "prenom abonne": "Dorian",
+      "tel_mobile": "0771795463",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "929321",
+      "date_inscription": "2026-07-03 19:06:54",
+      "login": "vst-tdiaby",
+      "vendeur": "toura diaby",
+      "entreprise": "Stratygo",
+      "adresse": "12 RUE ALEXIS CARREL",
+      "cp": "49099",
+      "ville": "Cholet",
+      "id_client": "",
+      "ref_preins": "PFO43281087VE",
+      "nom abonne": "Routeau",
+      "prenom abonne": "Philippe",
+      "tel_mobile": "0616539848",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "929316",
       "date_inscription": "2026-07-03 18:36:31",
@@ -10,7 +50,7 @@
       "adresse": "6 RUE DE BRETAGNE",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37145777",
       "ref_preins": "PFO43280895EZ",
       "nom abonne": "Pajaud",
       "prenom abonne": "Marie-José",
@@ -19,7 +59,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929309",
@@ -30,7 +70,7 @@
       "adresse": "12 RUE ALEXIS CARREL",
       "cp": "49099",
       "ville": "Cholet",
-      "id_client": "",
+      "id_client": "FO37145717",
       "ref_preins": "PFO43280813OZ",
       "nom abonne": "Blanchard",
       "prenom abonne": "Viviane",
@@ -39,7 +79,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929308",
@@ -50,7 +90,7 @@
       "adresse": "19 IMPASSE GUSTAVE COURBET",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37145690",
       "ref_preins": "PFO43280785FQ",
       "nom abonne": "Boughallouda",
       "prenom abonne": "Kheira",
@@ -59,7 +99,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929304",
@@ -70,7 +110,7 @@
       "adresse": "28 RUE SAINT SERVAN",
       "cp": "49099",
       "ville": "Cholet",
-      "id_client": "",
+      "id_client": "FO37145624",
       "ref_preins": "PFO43280707BC",
       "nom abonne": "Rullier",
       "prenom abonne": "Magali",
@@ -79,7 +119,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929287",
@@ -90,7 +130,7 @@
       "adresse": "19 IMPASSE GUSTAVE COURBET",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37145343",
       "ref_preins": "PFO432803383Q",
       "nom abonne": "Vango",
       "prenom abonne": "Fabrice",
@@ -99,7 +139,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929283",
@@ -110,7 +150,7 @@
       "adresse": "6 RUE RENE COUZINET",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37145377",
       "ref_preins": "PFO43280392ZB",
       "nom abonne": "Khechab",
       "prenom abonne": "Khadija",
@@ -119,7 +159,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929272",
@@ -858,7 +898,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -20602,6 +20642,46 @@
       "etat_commande": "connexion ok VRF"
     },
     {
+      "id_abo": "929336",
+      "date_inscription": "2026-07-03 19:42:11",
+      "login": "vta-lwojciechowski",
+      "entreprise": "TALC",
+      "adresse": "7 RUE CAMILLE SAINT SAENS",
+      "cp": "17415",
+      "ville": "Saintes",
+      "id_client": "",
+      "ref_preins": "PFO43281242OT",
+      "nom abonne": "Neveu",
+      "prenom abonne": "Michel",
+      "tel_mobile": "0619029604",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "929320",
+      "date_inscription": "2026-07-03 19:05:20",
+      "login": "vta-lwojciechowski",
+      "entreprise": "TALC",
+      "adresse": "6 RUE JEAN BAPTISTE LULLY",
+      "cp": "17415",
+      "ville": "Saintes",
+      "id_client": "",
+      "ref_preins": "PFO43281083GH",
+      "nom abonne": "Terrassier",
+      "prenom abonne": "Delphine",
+      "tel_mobile": "0613456978",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
       "id_abo": "929266",
       "date_inscription": "2026-07-03 16:24:50",
       "login": "vta-zourhalm",
@@ -21058,7 +21138,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
     {
