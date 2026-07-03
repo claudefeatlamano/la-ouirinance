@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-03T14:12:54.921883+00:00",
+  "scraped_at": "2026-07-03T16:27:30.421407+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16808,6 +16808,42 @@
       "login": "c2.5022",
       "vendeur": "BEREST FRANCK",
       "nom client": "TOSUN",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0928197",
+      "type": "Acquisition",
+      "date_inscription": "03/07/2026 18:14",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "MACÉ",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0928079",
+      "type": "Acquisition",
+      "date_inscription": "03/07/2026 16:23",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "ASSANSON",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0928150",
+      "type": "Acquisition",
+      "date_inscription": "03/07/2026 17:29",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "DELCROS",
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
