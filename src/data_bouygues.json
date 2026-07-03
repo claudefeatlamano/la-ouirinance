@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-03T08:11:52.588273+00:00",
+  "scraped_at": "2026-07-03T11:34:53.945984+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16343,7 +16343,7 @@
       "cp": "85600",
       "ville": "MONTAIGU VENDEE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0924333",
@@ -16667,7 +16667,7 @@
       "cp": "44240",
       "ville": "LA CHAPELLE-SUR-ERDRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0927361",
@@ -16764,6 +16764,42 @@
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0927822",
+      "type": "Acquisition",
+      "date_inscription": "03/07/2026 13:29",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "DERRIEN",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0927817",
+      "type": "Acquisition",
+      "date_inscription": "03/07/2026 13:20",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "PAQUEREAU",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0927779",
+      "type": "Acquisition",
+      "date_inscription": "03/07/2026 13:04",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "AMINATA",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
     }
   ]
 }
