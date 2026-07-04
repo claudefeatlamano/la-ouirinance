@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-04T12:08:51.895114+00:00",
+  "scraped_at": "2026-07-04T14:39:56.214100+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16859,6 +16859,30 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0928325",
+      "type": "Acquisition",
+      "date_inscription": "04/07/2026 15:41",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "THOMAS",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0928321",
+      "type": "Acquisition",
+      "date_inscription": "04/07/2026 15:26",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "PIRAUD",
+      "cp": "44850",
+      "ville": "LIGNE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
