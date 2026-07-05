@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-05T08:08:54.758937+00:00",
+  "scraped_at": "2026-07-05T11:06:11.536881+00:00",
   "rows": [
     {
       "id_abo": "929355",
@@ -358,7 +358,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-17",
       "etat_commande": "inscription ok"
     },
     {
@@ -398,7 +398,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-17",
       "etat_commande": "inscription ok"
     },
     {
@@ -518,7 +518,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -20062,26 +20062,6 @@
       "etat_commande": "inscription ok"
     },
     {
-      "id_abo": "909746",
-      "date_inscription": "2026-05-05 13:00:09",
-      "login": "vst-ikocak",
-      "entreprise": "Stratygo",
-      "adresse": "20 ALLEE DES ORCHIDEES",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "",
-      "ref_preins": "PFO43004296RA",
-      "nom abonne": "Duplessis",
-      "prenom abonne": "Herve",
-      "tel_mobile": "0768069631",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
       "id_abo": "929336",
       "date_inscription": "2026-07-03 19:42:11",
       "login": "vta-lwojciechowski",
@@ -20258,7 +20238,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-15",
       "etat_commande": "inscription ok"
     },
     {
@@ -20358,7 +20338,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -30540,26 +30520,6 @@
       "envoi_colis": "2026-05-07",
       "info_rdv_sync": "SyncOK 2026-05-18",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "909744",
-      "date_inscription": "2026-05-05 12:58:01",
-      "login": "vta-bziegler",
-      "vendeur": "bradley ziegler",
-      "entreprise": "TALC",
-      "adresse": "15 RUE DE LA PETITE GUIMBARDE",
-      "cp": "79049",
-      "ville": "Bressuire",
-      "id_client": "FO36900797",
-      "ref_preins": "PFO43004258YP",
-      "nom abonne": "Vendeix",
-      "prenom abonne": "Ahossibla",
-      "tel_mobile": "0674049393",
-      "box": "POP",
-      "mcafee": "",
-      "envoi_colis": "2026-05-07",
-      "info_rdv_sync": "RDV 2026-05-16",
-      "etat_commande": "vente abandonée"
     }
   ]
 }
