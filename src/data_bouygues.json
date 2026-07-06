@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-06T03:52:40.952633+00:00",
+  "scraped_at": "2026-07-06T08:24:19.466579+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16187,7 +16187,7 @@
       "cp": "44110",
       "ville": "CHATEAUBRIANT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0923190",
@@ -16367,7 +16367,7 @@
       "cp": "44130",
       "ville": "BLAIN",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0924928",
@@ -16427,7 +16427,7 @@
       "cp": "44130",
       "ville": "BLAIN",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0925160",
