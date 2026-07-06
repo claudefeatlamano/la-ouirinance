@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-06T16:23:00.106057+00:00",
+  "scraped_at": "2026-07-06T18:57:32.171661+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16954,6 +16954,30 @@
       "nom client": "BLAIRET",
       "cp": "85700",
       "ville": "SEVREMONT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0929073",
+      "type": "Acquisition",
+      "date_inscription": "06/07/2026 18:58",
+      "login": "c2.2919",
+      "vendeur": "NOUAR LAKHDAR",
+      "nom client": "LAURENT",
+      "cp": "85700",
+      "ville": "SEVREMONT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0929078",
+      "type": "Acquisition",
+      "date_inscription": "06/07/2026 19:00",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "GOURICHON",
+      "cp": "49120",
+      "ville": "CHEMILLE EN ANJOU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Saisie"
     }
