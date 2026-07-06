@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-06T18:57:24.564289+00:00",
+  "scraped_at": "2026-07-06T20:55:14.536387+00:00",
   "rows": [
     {
       "id_abo": "929780",
@@ -9,7 +9,7 @@
       "adresse": "7 RESIDENCE DE L AYRAULT",
       "cp": "49092",
       "ville": "Chemille en anjou",
-      "id_client": "",
+      "id_client": "FO37157481",
       "ref_preins": "PFO4329412529",
       "nom abonne": "Bidet",
       "prenom abonne": "Anthony",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929778",
@@ -49,7 +49,7 @@
       "adresse": "5 RUE DU PUY BELIN",
       "cp": "85090",
       "ville": "Sevremont",
-      "id_client": "",
+      "id_client": "FO37157522",
       "ref_preins": "PFO43294089GS",
       "nom abonne": "Dos santos",
       "prenom abonne": "Melody",
@@ -59,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929768",
@@ -69,7 +69,7 @@
       "adresse": "1 ALLEE DES PINSONS",
       "cp": "49099",
       "ville": "Cholet",
-      "id_client": "",
+      "id_client": "FO37157331",
       "ref_preins": "PFO43293918UD",
       "nom abonne": "Elketroussi",
       "prenom abonne": "Ouassila",
@@ -79,7 +79,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929755",
@@ -1257,7 +1257,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
@@ -1397,7 +1397,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
@@ -1978,8 +1978,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-02",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-06",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "928354",
@@ -2017,7 +2017,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
@@ -2037,7 +2037,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "RDV 2026-07-16",
       "etat_commande": "inscription ok"
     },
@@ -19549,7 +19549,7 @@
       "adresse": "2 PLACE DU LAVOIR",
       "cp": "79079",
       "ville": "Mauleon",
-      "id_client": "",
+      "id_client": "FO37157573",
       "ref_preins": "PFO43294221WL",
       "nom abonne": "Hérault",
       "prenom abonne": "Marie-paule",
@@ -19559,7 +19559,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929785",
@@ -19569,7 +19569,7 @@
       "adresse": "7 IMPASSE DE LA VERSENNE",
       "cp": "79049",
       "ville": "Bressuire",
-      "id_client": "",
+      "id_client": "FO37157543",
       "ref_preins": "PFO43294179DX",
       "nom abonne": "Said",
       "prenom abonne": "Assiaty",
@@ -19579,7 +19579,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "929451",
@@ -19757,7 +19757,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
@@ -19997,7 +19997,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20077,7 +20077,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
@@ -20097,7 +20097,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
@@ -21677,7 +21677,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-06",
       "info_rdv_sync": "RDV 2026-07-11",
       "etat_commande": "inscription ok"
     },
