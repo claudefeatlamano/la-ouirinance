@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-06T08:24:19.466579+00:00",
+  "scraped_at": "2026-07-06T12:51:40.397147+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16379,7 +16379,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0924661",
@@ -16415,7 +16415,7 @@
       "cp": "44130",
       "ville": "BLAIN",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0924864",
@@ -16511,7 +16511,7 @@
       "cp": "85410",
       "ville": "ST CYR DES GATS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0925680",
@@ -16571,7 +16571,7 @@
       "cp": "85340",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0926477",
@@ -16882,6 +16882,30 @@
       "nom client": "PIRAUD",
       "cp": "44850",
       "ville": "LIGNE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0928550",
+      "type": "Acquisition",
+      "date_inscription": "06/07/2026 13:35",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "DE SA",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0928629",
+      "type": "Acquisition",
+      "date_inscription": "06/07/2026 14:18",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "FOLIARD-LE GAL",
+      "cp": "85120",
+      "ville": "VOUVANT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
