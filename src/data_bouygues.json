@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-07T08:25:41.546629+00:00",
+  "scraped_at": "2026-07-07T11:53:30.623246+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16583,7 +16583,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0926767",
@@ -16979,6 +16979,42 @@
       "cp": "49120",
       "ville": "CHEMILLE EN ANJOU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0929331",
+      "type": "Acquisition",
+      "date_inscription": "07/07/2026 13:10",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "CHAMLONG",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0929321",
+      "type": "Acquisition",
+      "date_inscription": "07/07/2026 13:10",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "AUBRY",
+      "cp": "44522",
+      "ville": "MESANGER",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0929391",
+      "type": "Acquisition",
+      "date_inscription": "07/07/2026 13:43",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "EPAULARD",
+      "cp": "44522",
+      "ville": "MESANGER",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
     }
   ]
