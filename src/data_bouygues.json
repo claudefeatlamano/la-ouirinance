@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-07T11:53:30.623246+00:00",
+  "scraped_at": "2026-07-07T14:42:49.838948+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16223,7 +16223,7 @@
       "cp": "85340",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0923340",
@@ -17003,7 +17003,7 @@
       "cp": "44522",
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0929391",
@@ -17012,6 +17012,42 @@
       "login": "c2.4869",
       "vendeur": "LEGRAND STEPHANE",
       "nom client": "EPAULARD",
+      "cp": "44522",
+      "ville": "MESANGER",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0929665",
+      "type": "Acquisition",
+      "date_inscription": "07/07/2026 16:20",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "BAZIREAU",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0929442",
+      "type": "Acquisition",
+      "date_inscription": "07/07/2026 14:08",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "CORMERAIS",
+      "cp": "44522",
+      "ville": "MESANGER",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0929471",
+      "type": "Acquisition",
+      "date_inscription": "07/07/2026 14:25",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "CORMERAIS",
       "cp": "44522",
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
