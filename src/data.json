@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-07T19:59:41.035242+00:00",
+  "scraped_at": "2026-07-07T21:36:52.350593+00:00",
   "rows": [
     {
       "id_abo": "930154",
@@ -1557,7 +1557,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-07",
       "info_rdv_sync": "RDV 2026-07-15",
       "etat_commande": "inscription ok"
     },
@@ -18989,7 +18989,7 @@
       "adresse": "15 RUE MAURICE CHEVALIER",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37162614",
       "ref_preins": "PFO4330004211",
       "nom abonne": "LIAIGRE",
       "prenom abonne": "DIDIER",
@@ -18999,7 +18999,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930152",
@@ -19177,7 +19177,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-07",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -19197,7 +19197,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-07",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -19417,7 +19417,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-07",
       "info_rdv_sync": "RDV 2026-07-15",
       "etat_commande": "inscription ok"
     },
@@ -21519,7 +21519,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-23",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "924746",
