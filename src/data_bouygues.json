@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-07T14:42:49.838948+00:00",
+  "scraped_at": "2026-07-07T17:19:09.578596+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16463,7 +16463,7 @@
       "cp": "85430",
       "ville": "LA BOISSIERE DES LANDES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0925490",
@@ -16475,7 +16475,7 @@
       "cp": "85430",
       "ville": "LA BOISSIERE DES LANDES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0925405",
