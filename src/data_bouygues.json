@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-08T11:48:06.114309+00:00",
+  "scraped_at": "2026-07-08T14:20:51.381201+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16547,7 +16547,7 @@
       "cp": "85100",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0926247",
@@ -16619,7 +16619,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0926749",
@@ -16631,7 +16631,7 @@
       "cp": "85340",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0926966",
@@ -17062,6 +17062,30 @@
       "nom client": "CANTET",
       "cp": "49280",
       "ville": "ST-CHRISTOPHE-DU-BOIS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0930273",
+      "type": "Acquisition",
+      "date_inscription": "08/07/2026 15:10",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "MALLET",
+      "cp": "85590",
+      "ville": "LES EPESSES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0930354",
+      "type": "Acquisition",
+      "date_inscription": "08/07/2026 16:04",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "VONGPHOUMY",
+      "cp": "85500",
+      "ville": "LES HERBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
