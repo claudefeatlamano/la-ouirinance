@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-08T14:20:51.381201+00:00",
+  "scraped_at": "2026-07-08T16:41:57.868975+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17087,6 +17087,30 @@
       "cp": "85500",
       "ville": "LES HERBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0930523",
+      "type": "Acquisition",
+      "date_inscription": "08/07/2026 17:45",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "HEBERT",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0930542",
+      "type": "Acquisition",
+      "date_inscription": "08/07/2026 18:02",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "DJESSY",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
   ]
