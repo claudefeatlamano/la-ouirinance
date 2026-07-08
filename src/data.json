@@ -1,6 +1,46 @@
 {
-  "scraped_at": "2026-07-08T09:26:03.678173+00:00",
+  "scraped_at": "2026-07-08T11:47:53.998685+00:00",
   "rows": [
+    {
+      "id_abo": "930276",
+      "date_inscription": "2026-07-08 12:32:59",
+      "login": "vst-caudonnet",
+      "entreprise": "Stratygo",
+      "adresse": "1 RUE DES SABOTIERS",
+      "cp": "49099",
+      "ville": "Cholet",
+      "id_client": "",
+      "ref_preins": "PFO433027093V",
+      "nom abonne": "Daire",
+      "prenom abonne": "Jean claude",
+      "tel_mobile": "0660300821",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "930256",
+      "date_inscription": "2026-07-08 12:07:17",
+      "login": "vst-pgrasset",
+      "entreprise": "Stratygo",
+      "adresse": "3 SQUARE MONTGEOFFROY",
+      "cp": "49099",
+      "ville": "Cholet",
+      "id_client": "",
+      "ref_preins": "PFO4330254058",
+      "nom abonne": "Viau",
+      "prenom abonne": "Marcel",
+      "tel_mobile": "0783731393",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "930154",
       "date_inscription": "2026-07-07 17:54:42",
@@ -258,7 +298,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-17",
       "etat_commande": "inscription ok"
     },
     {
@@ -798,7 +838,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-21",
       "etat_commande": "inscription ok"
     },
     {
@@ -1918,7 +1958,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-17",
       "etat_commande": "inscription ok"
     },
     {
@@ -2878,7 +2918,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-30",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -11942,26 +11982,6 @@
       "etat_commande": "inscription ok /postprod"
     },
     {
-      "id_abo": "918149",
-      "date_inscription": "2026-06-01 14:34:32",
-      "login": "vst-bouchrif",
-      "entreprise": "Stratygo",
-      "adresse": "39 RUE D ULM",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37005358",
-      "ref_preins": "PFO43121713LX",
-      "nom abonne": "Lefort",
-      "prenom abonne": "Joel",
-      "tel_mobile": "0638414615",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-04",
-      "info_rdv_sync": "SyncOK 2026-06-11",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "918148",
       "date_inscription": "2026-06-01 14:34:32",
       "login": "vst-vmoize",
@@ -11979,6 +11999,26 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-04",
       "info_rdv_sync": "SyncOK 2026-06-15",
+      "etat_commande": "connexion ok VRF"
+    },
+    {
+      "id_abo": "918149",
+      "date_inscription": "2026-06-01 14:34:32",
+      "login": "vst-bouchrif",
+      "entreprise": "Stratygo",
+      "adresse": "39 RUE D ULM",
+      "cp": "85191",
+      "ville": "Roche sur yon",
+      "id_client": "FO37005358",
+      "ref_preins": "PFO43121713LX",
+      "nom abonne": "Lefort",
+      "prenom abonne": "Joel",
+      "tel_mobile": "0638414615",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "2026-06-04",
+      "info_rdv_sync": "SyncOK 2026-06-11",
       "etat_commande": "connexion ok VRF"
     },
     {
@@ -18942,46 +18982,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "911344",
-      "date_inscription": "2026-05-08 13:34:30",
-      "login": "vst-rkombo",
-      "entreprise": "Stratygo",
-      "adresse": "1 RUE DES TANNEURS",
-      "cp": "85072",
-      "ville": "Copechagniere",
-      "id_client": "",
-      "ref_preins": "PFO43021393NZ",
-      "nom abonne": "Inizan",
-      "prenom abonne": "Cecile",
-      "tel_mobile": "0678824181",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "911330",
-      "date_inscription": "2026-05-08 12:49:22",
-      "login": "vst-aatf",
-      "entreprise": "Stratygo",
-      "adresse": "19 AVENUE DE LA RICHARDIERE",
-      "cp": "49099",
-      "ville": "Cholet",
-      "id_client": "FO36915731",
-      "ref_preins": "PFO43021183Z4",
-      "nom abonne": "Griffon",
-      "prenom abonne": "Kevin",
-      "tel_mobile": "0771688833",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-13",
-      "info_rdv_sync": "SyncOK 2026-05-25",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "930178",
       "date_inscription": "2026-07-07 18:51:31",
       "login": "vta-zourhalm",
@@ -19178,7 +19178,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-07",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-15",
       "etat_commande": "inscription ok"
     },
     {
@@ -20758,8 +20758,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-30",
-      "info_rdv_sync": "RDV 2026-07-08",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-08",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "925571",

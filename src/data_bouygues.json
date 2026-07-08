@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-08T09:26:36.549738+00:00",
+  "scraped_at": "2026-07-08T11:48:06.114309+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16559,7 +16559,7 @@
       "cp": "85540",
       "ville": "ST CYR EN TALMONDAIS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0926217",
@@ -17052,6 +17052,18 @@
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0930062",
+      "type": "Acquisition",
+      "date_inscription": "08/07/2026 13:03",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "CANTET",
+      "cp": "49280",
+      "ville": "ST-CHRISTOPHE-DU-BOIS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
