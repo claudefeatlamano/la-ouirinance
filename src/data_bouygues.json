@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-08T06:00:41.530903+00:00",
+  "scraped_at": "2026-07-08T09:26:36.549738+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15947,7 +15947,7 @@
       "cp": "44117",
       "ville": "ST-ANDRE-DES-EAUX",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0921129",
@@ -15983,7 +15983,7 @@
       "cp": "79100",
       "ville": "THOUARS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0921752",
@@ -16607,7 +16607,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0926849",
@@ -17027,7 +17027,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0929442",
@@ -17039,7 +17039,7 @@
       "cp": "44522",
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0929471",
