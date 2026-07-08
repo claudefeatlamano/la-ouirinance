@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-08T16:41:57.868975+00:00",
+  "scraped_at": "2026-07-08T20:23:08.406412+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17112,6 +17112,18 @@
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0930660",
+      "type": "Acquisition",
+      "date_inscription": "08/07/2026 20:13",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "KOUAKOU",
+      "cp": "44000",
+      "ville": "NANTES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
