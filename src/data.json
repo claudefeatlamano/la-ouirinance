@@ -1,6 +1,186 @@
 {
-  "scraped_at": "2026-07-09T15:58:50.861036+00:00",
+  "scraped_at": "2026-07-09T18:05:16.431770+00:00",
   "rows": [
+    {
+      "id_abo": "931045",
+      "date_inscription": "2026-07-09 18:29:42",
+      "login": "vst-mmendousse",
+      "entreprise": "Stratygo",
+      "adresse": "5 SQUARE DE CHEVERNY",
+      "cp": "49099",
+      "ville": "Cholet",
+      "id_client": "",
+      "ref_preins": "PFO433111626O",
+      "nom abonne": "Gaillard",
+      "prenom abonne": "Pascal",
+      "tel_mobile": "0682954588",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "931044",
+      "date_inscription": "2026-07-09 18:28:10",
+      "login": "vst-abouhitem",
+      "entreprise": "Stratygo",
+      "adresse": "0 RUE ANNE FRANCK",
+      "cp": "85019",
+      "ville": "Bellevigny",
+      "id_client": "",
+      "ref_preins": "PFO43311151UG",
+      "nom abonne": "Roy",
+      "prenom abonne": "Leony",
+      "tel_mobile": "0607145644",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "931042",
+      "date_inscription": "2026-07-09 18:25:06",
+      "login": "vst-mali",
+      "entreprise": "Stratygo",
+      "adresse": "8 SQUARE GASTON CHAISSAC",
+      "cp": "85047",
+      "ville": "Challans",
+      "id_client": "",
+      "ref_preins": "PFO43311188XB",
+      "nom abonne": "BOUCHEREAU",
+      "prenom abonne": "JENNY",
+      "tel_mobile": "0681208572",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "931021",
+      "date_inscription": "2026-07-09 17:49:17",
+      "login": "vst-efouvo",
+      "entreprise": "Stratygo",
+      "adresse": "38 RUE DES TILLEULS",
+      "cp": "85208",
+      "ville": "Saint denis la chevasse",
+      "id_client": "",
+      "ref_preins": "PFO4331084963",
+      "nom abonne": "Delattre",
+      "prenom abonne": "Stéphane",
+      "tel_mobile": "0669396757",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "931015",
+      "date_inscription": "2026-07-09 17:35:31",
+      "login": "vst-lderbal",
+      "entreprise": "Stratygo",
+      "adresse": "13 RUE DES MARRONNIERS",
+      "cp": "85194",
+      "ville": "Sables d olonne",
+      "id_client": "",
+      "ref_preins": "PFO43310821Q2",
+      "nom abonne": "Ravon",
+      "prenom abonne": "Michel",
+      "tel_mobile": "0630704179",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "931006",
+      "date_inscription": "2026-07-09 17:25:09",
+      "login": "vst-esimiandbuissonnet",
+      "entreprise": "Stratygo",
+      "adresse": "1 AVENUE BIOCHAUD",
+      "cp": "85047",
+      "ville": "Challans",
+      "id_client": "",
+      "ref_preins": "PFO43310698X0",
+      "nom abonne": "Reau",
+      "prenom abonne": "Pierrette",
+      "tel_mobile": "0616803838",
+      "box": "POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "931002",
+      "date_inscription": "2026-07-09 17:18:41",
+      "login": "vst-tdiaby",
+      "entreprise": "Stratygo",
+      "adresse": "21 RUE DES CAPUCINES",
+      "cp": "85194",
+      "ville": "Sables d olonne",
+      "id_client": "",
+      "ref_preins": "PFO43310743Q3",
+      "nom abonne": "Charneau",
+      "prenom abonne": "Germain",
+      "tel_mobile": "0626587046",
+      "box": "ULTRA_LIGHT_NO_PLAYER",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "930982",
+      "date_inscription": "2026-07-09 16:54:33",
+      "login": "vst-mali",
+      "entreprise": "Stratygo",
+      "adresse": "23 RUE DE SAINT JEAN DE MONTS",
+      "cp": "85047",
+      "ville": "Challans",
+      "id_client": "",
+      "ref_preins": "PFO433105152T",
+      "nom abonne": "Grondin",
+      "prenom abonne": "Murielle",
+      "tel_mobile": "0614290583",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "930974",
+      "date_inscription": "2026-07-09 16:45:56",
+      "login": "vst-vmoize",
+      "entreprise": "Stratygo",
+      "adresse": "24 RUE DES VIGNES",
+      "cp": "49244",
+      "ville": "Mauges sur loire",
+      "id_client": "",
+      "ref_preins": "PFO43310371J8",
+      "nom abonne": "MENARD",
+      "prenom abonne": "Patrice",
+      "tel_mobile": "0631554650",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "930969",
       "date_inscription": "2026-07-09 16:31:23",
@@ -29,7 +209,7 @@
       "adresse": "11 RUE ROSA PARKS",
       "cp": "85019",
       "ville": "Bellevigny",
-      "id_client": "",
+      "id_client": "FO37171403",
       "ref_preins": "PFO43310104NI",
       "nom abonne": "Roulon",
       "prenom abonne": "Lise",
@@ -39,7 +219,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930956",
@@ -49,7 +229,7 @@
       "adresse": "77 AVENUE CHARLES DE GAULLE",
       "cp": "85194",
       "ville": "Sables d olonne",
-      "id_client": "",
+      "id_client": "FO37171397",
       "ref_preins": "PFO43310165V1",
       "nom abonne": "Kirie",
       "prenom abonne": "Nicolas",
@@ -59,7 +239,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930952",
@@ -69,7 +249,7 @@
       "adresse": "9 RUE DES LAURIERS",
       "cp": "49244",
       "ville": "Mauges sur loire",
-      "id_client": "",
+      "id_client": "FO37171387",
       "ref_preins": "PFO43310127JC",
       "nom abonne": "GRASSET",
       "prenom abonne": "Michele",
@@ -79,7 +259,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930924",
@@ -89,7 +269,7 @@
       "adresse": "9 RUE DE TOUVOIS",
       "cp": "49099",
       "ville": "Cholet",
-      "id_client": "",
+      "id_client": "FO37171171",
       "ref_preins": "PFO43309795MI",
       "nom abonne": "DA SILVA",
       "prenom abonne": "Maria gorety",
@@ -99,7 +279,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930923",
@@ -109,7 +289,7 @@
       "adresse": "8 RUE NATIONALE",
       "cp": "49244",
       "ville": "Mauges sur loire",
-      "id_client": "",
+      "id_client": "FO37171071",
       "ref_preins": "PFO43309790O0",
       "nom abonne": "Delhumeau",
       "prenom abonne": "Bertrand",
@@ -119,7 +299,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930913",
@@ -129,7 +309,7 @@
       "adresse": "6 PLACE DES MURIERS",
       "cp": "49244",
       "ville": "Mauges sur loire",
-      "id_client": "",
+      "id_client": "FO37171075",
       "ref_preins": "PFO43309768SA",
       "nom abonne": "Lumet",
       "prenom abonne": "Renee",
@@ -139,7 +319,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930892",
@@ -149,7 +329,7 @@
       "adresse": "38 AVENUE BIOCHAUD",
       "cp": "85047",
       "ville": "Challans",
-      "id_client": "",
+      "id_client": "FO37170863",
       "ref_preins": "PFO43309558ZV",
       "nom abonne": "Redares",
       "prenom abonne": "Marion",
@@ -159,7 +339,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930884",
@@ -169,7 +349,7 @@
       "adresse": "10 RUE NATIONALE",
       "cp": "49244",
       "ville": "Mauges sur loire",
-      "id_client": "",
+      "id_client": "FO37170850",
       "ref_preins": "PFO43309511C1",
       "nom abonne": "Touches",
       "prenom abonne": "Nicole",
@@ -179,7 +359,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "930868",
@@ -1098,7 +1278,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-16",
       "etat_commande": "inscription ok"
     },
     {
@@ -1178,7 +1358,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-18",
       "etat_commande": "inscription ok"
     },
     {
@@ -6759,7 +6939,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-24",
       "info_rdv_sync": "RDV 2026-06-30",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "924936",
@@ -12902,26 +13082,6 @@
       "etat_commande": "inscription ok /postprod"
     },
     {
-      "id_abo": "918148",
-      "date_inscription": "2026-06-01 14:34:32",
-      "login": "vst-vmoize",
-      "entreprise": "Stratygo",
-      "adresse": "12 LOTISSEMENT DES SPORTS",
-      "cp": "44161",
-      "ville": "Saint gildas des bois",
-      "id_client": "FO37004435",
-      "ref_preins": "PFO43121083OZ",
-      "nom abonne": "LAPLANCHE",
-      "prenom abonne": "Daniel",
-      "tel_mobile": "0682498168",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-04",
-      "info_rdv_sync": "SyncOK 2026-06-15",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "918149",
       "date_inscription": "2026-06-01 14:34:32",
       "login": "vst-bouchrif",
@@ -12939,6 +13099,26 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-04",
       "info_rdv_sync": "SyncOK 2026-06-11",
+      "etat_commande": "connexion ok VRF"
+    },
+    {
+      "id_abo": "918148",
+      "date_inscription": "2026-06-01 14:34:32",
+      "login": "vst-vmoize",
+      "entreprise": "Stratygo",
+      "adresse": "12 LOTISSEMENT DES SPORTS",
+      "cp": "44161",
+      "ville": "Saint gildas des bois",
+      "id_client": "FO37004435",
+      "ref_preins": "PFO43121083OZ",
+      "nom abonne": "LAPLANCHE",
+      "prenom abonne": "Daniel",
+      "tel_mobile": "0682498168",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "2026-06-04",
+      "info_rdv_sync": "SyncOK 2026-06-15",
       "etat_commande": "connexion ok VRF"
     },
     {

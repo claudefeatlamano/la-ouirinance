@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-09T15:58:58.248894+00:00",
+  "scraped_at": "2026-07-09T18:05:45.355848+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16655,7 +16655,7 @@
       "cp": "49360",
       "ville": "LA PLAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927473",
@@ -17256,6 +17256,18 @@
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0931395",
+      "type": "Acquisition",
+      "date_inscription": "09/07/2026 18:13",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "HERNOUT",
+      "cp": "85340",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
