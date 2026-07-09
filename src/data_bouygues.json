@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-09T08:42:16.084454+00:00",
+  "scraped_at": "2026-07-09T12:07:39.750070+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16679,7 +16679,7 @@
       "cp": "49310",
       "ville": "SAINT PAUL DU BOIS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927607",
@@ -16691,7 +16691,7 @@
       "cp": "49310",
       "ville": "SAINT PAUL DU BOIS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927519",
@@ -17124,6 +17124,66 @@
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0930934",
+      "type": "Acquisition",
+      "date_inscription": "09/07/2026 13:42",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "SOURISSEAU",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0930973",
+      "type": "Acquisition",
+      "date_inscription": "09/07/2026 13:57",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "GAUTIER",
+      "cp": "85300",
+      "ville": "CHALLANS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0930775",
+      "type": "Acquisition",
+      "date_inscription": "09/07/2026 12:19",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "GRANGE",
+      "cp": "85300",
+      "ville": "CHALLANS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0930687",
+      "type": "Acquisition",
+      "date_inscription": "09/07/2026 10:55",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "LUCAS",
+      "cp": "44400",
+      "ville": "REZE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0930819",
+      "type": "Acquisition",
+      "date_inscription": "09/07/2026 12:48",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "MEDDOUR",
+      "cp": "85300",
+      "ville": "CHALLANS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
