@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-08T22:09:52.918473+00:00",
+  "scraped_at": "2026-07-09T00:13:42.825232+00:00",
   "rows": [
     {
       "id_abo": "930670",
@@ -7679,7 +7679,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente abandonée J+7"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "923155",
@@ -7739,7 +7739,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente abandonée J+7"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "923085",
@@ -13239,7 +13239,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-03",
       "info_rdv_sync": "RDV 2026-06-08",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "917816",
@@ -14279,7 +14279,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-01",
       "info_rdv_sync": "RDV 2026-06-08",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "916725",
@@ -23239,7 +23239,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente abandonée J+7"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "923246",
@@ -23319,7 +23319,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente abandonée J+7"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "922925",
