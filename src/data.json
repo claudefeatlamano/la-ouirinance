@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-09T20:48:40.815495+00:00",
+  "scraped_at": "2026-07-09T22:24:34.069225+00:00",
   "rows": [
     {
       "id_abo": "931074",
@@ -3099,7 +3099,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "vente validée J+7"
     },
     {
       "id_abo": "928764",
@@ -4799,7 +4799,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-29",
       "info_rdv_sync": "RDV 2026-07-04",
-      "etat_commande": "inscription ok"
+      "etat_commande": "inscription ok /postprod"
     },
     {
       "id_abo": "926855",
@@ -4919,7 +4919,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-29",
       "info_rdv_sync": "RDV 2026-07-04",
-      "etat_commande": "inscription ok"
+      "etat_commande": "inscription ok /postprod"
     },
     {
       "id_abo": "926775",
@@ -5519,7 +5519,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "926338",
@@ -5819,7 +5819,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "926235",
@@ -6039,7 +6039,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "926074",
@@ -6059,7 +6059,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-07-02",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "926061",
@@ -6099,7 +6099,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-07-02",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "926041",
@@ -6299,7 +6299,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-07-03",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "925872",
@@ -6559,7 +6559,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-07-01",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "925690",
@@ -6619,7 +6619,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-07-06",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "925561",
@@ -10159,7 +10159,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-11",
       "info_rdv_sync": "RDV 2026-07-04",
-      "etat_commande": "inscription ok"
+      "etat_commande": "inscription ok /postprod"
     },
     {
       "id_abo": "921327",
@@ -20719,7 +20719,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "vente validée J+7"
     },
     {
       "id_abo": "928639",
@@ -21939,7 +21939,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "925463",
@@ -22159,7 +22159,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "925307",
@@ -22179,7 +22179,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-25",
       "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "connexion ok"
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "925299",
@@ -23519,7 +23519,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée J+7"
+      "etat_commande": "vente abandonée J+7"
     },
     {
       "id_abo": "923808",
@@ -23659,7 +23659,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée J+7"
+      "etat_commande": "vente abandonée J+7"
     },
     {
       "id_abo": "923609",
@@ -23719,7 +23719,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée J+7"
+      "etat_commande": "vente abandonée J+7"
     },
     {
       "id_abo": "923487",
@@ -23739,7 +23739,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée J+7"
+      "etat_commande": "vente abandonée J+7"
     },
     {
       "id_abo": "923325",
