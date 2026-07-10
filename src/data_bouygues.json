@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-10T11:54:33.466744+00:00",
+  "scraped_at": "2026-07-10T14:33:43.722790+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17292,6 +17292,18 @@
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0931902",
+      "type": "Acquisition",
+      "date_inscription": "10/07/2026 16:17",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "DUGAST",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
