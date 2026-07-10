@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-10T08:25:11.463499+00:00",
+  "scraped_at": "2026-07-10T11:54:33.466744+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16643,7 +16643,7 @@
       "cp": "85480",
       "ville": "THORIGNY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927164",
@@ -16823,7 +16823,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0928079",
@@ -17268,6 +17268,30 @@
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0931644",
+      "type": "Acquisition",
+      "date_inscription": "10/07/2026 13:09",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "LEBRETON",
+      "cp": "44160",
+      "ville": "PONTCHATEAU",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0931574",
+      "type": "Acquisition",
+      "date_inscription": "10/07/2026 12:30",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "TRAORé",
+      "cp": "85180",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
     }
   ]
 }
