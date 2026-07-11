@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-11T09:39:58.763094+00:00",
+  "scraped_at": "2026-07-11T11:07:36.611464+00:00",
   "rows": [
     {
       "id_abo": "931404",
@@ -558,7 +558,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-23",
       "etat_commande": "inscription ok"
     },
     {
@@ -578,7 +578,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-20",
       "etat_commande": "inscription ok"
     },
     {
@@ -20280,66 +20280,6 @@
       "envoi_colis": "2026-05-15",
       "info_rdv_sync": "SyncOK 2026-05-25",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "911568",
-      "date_inscription": "2026-05-11 12:51:48",
-      "login": "vst-sredor",
-      "entreprise": "Stratygo",
-      "adresse": "5 RUE RAYMOND BERR",
-      "cp": "44116",
-      "ville": "Paimboeuf",
-      "id_client": "FO36924276",
-      "ref_preins": "PFO430305652D",
-      "nom abonne": "bertin",
-      "prenom abonne": "tanguy",
-      "tel_mobile": "0688925494",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-13",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "911551",
-      "date_inscription": "2026-05-11 12:32:45",
-      "login": "vst-pgrasset",
-      "entreprise": "Stratygo",
-      "adresse": "117 RUE DE LA VENDEE",
-      "cp": "49099",
-      "ville": "Cholet",
-      "id_client": "FO36924078",
-      "ref_preins": "PFO430303812A",
-      "nom abonne": "Houdayer",
-      "prenom abonne": "julien",
-      "tel_mobile": "0771697111",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "911532",
-      "date_inscription": "2026-05-11 12:14:05",
-      "login": "vst-eluc",
-      "entreprise": "Stratygo",
-      "adresse": "10 RUE DU TONNELIER",
-      "cp": "85084",
-      "ville": "Essarts en bocage",
-      "id_client": "FO36924010",
-      "ref_preins": "PFO43030258EB",
-      "nom abonne": "Roussel",
-      "prenom abonne": "Delphine",
-      "tel_mobile": "0607956157",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
     },
     {
       "id_abo": "930627",
