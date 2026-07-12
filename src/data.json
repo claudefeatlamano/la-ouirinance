@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-12T18:00:19.766812+00:00",
+  "scraped_at": "2026-07-12T20:06:21.058475+00:00",
   "rows": [
     {
       "id_abo": "931404",
@@ -1118,7 +1118,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-21",
       "etat_commande": "inscription ok"
     },
     {
@@ -1218,7 +1218,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-22",
       "etat_commande": "inscription ok"
     },
     {
@@ -19000,46 +19000,6 @@
       "envoi_colis": "2026-05-18",
       "info_rdv_sync": "SyncOK 2026-05-20",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "912561",
-      "date_inscription": "2026-05-12 20:24:22",
-      "login": "vst-rkombo",
-      "entreprise": "Stratygo",
-      "adresse": "11 IMPASSE DU SERPOLET",
-      "cp": "85089",
-      "ville": "Ferriere",
-      "id_client": "FO36932982",
-      "ref_preins": "PFO4304040434",
-      "nom abonne": "Mahamat",
-      "prenom abonne": "Abakar",
-      "tel_mobile": "0765129964",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "912557",
-      "date_inscription": "2026-05-12 20:11:28",
-      "login": "vst-lbetherydelabrosse",
-      "entreprise": "Stratygo",
-      "adresse": "3 IMPASSE DU CENTRE",
-      "cp": "85089",
-      "ville": "Ferriere",
-      "id_client": "FO36932920",
-      "ref_preins": "PFO430403407M",
-      "nom abonne": "Langlais",
-      "prenom abonne": "Jessica",
-      "tel_mobile": "0622861856",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-18",
-      "info_rdv_sync": "SyncOK 2026-05-23",
-      "etat_commande": "résilié"
     },
     {
       "id_abo": "930627",
