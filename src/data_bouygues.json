@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-12T03:44:40.441942+00:00",
+  "scraped_at": "2026-07-12T06:35:51.892353+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16271,7 +16271,7 @@
       "cp": "44110",
       "ville": "CHATEAUBRIANT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0923733",
