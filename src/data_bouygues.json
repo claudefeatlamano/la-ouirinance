@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T06:56:39.659773+00:00",
+  "scraped_at": "2026-07-13T10:32:08.804163+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9599,7 +9599,7 @@
       "cp": "44640",
       "ville": "LE PELLERIN",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0900874",
@@ -16727,7 +16727,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927628",
@@ -16931,7 +16931,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0928710",
@@ -16943,7 +16943,7 @@
       "cp": "85710",
       "ville": "LA GARNACHE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0929037",
@@ -17374,6 +17374,18 @@
       "nom client": "WATIER",
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932185",
+      "type": "Acquisition",
+      "date_inscription": "13/07/2026 11:08",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "DANTON",
+      "cp": "85660",
+      "ville": "ST PHILBERT DE BOUAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
