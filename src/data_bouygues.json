@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T10:32:08.804163+00:00",
+  "scraped_at": "2026-07-13T13:26:06.621012+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15791,7 +15791,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0920325",
@@ -16667,7 +16667,7 @@
       "cp": "44240",
       "ville": "LA CHAPELLE-SUR-ERDRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927361",
@@ -16775,7 +16775,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927817",
@@ -16895,7 +16895,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0928629",
@@ -17386,6 +17386,30 @@
       "nom client": "DANTON",
       "cp": "85660",
       "ville": "ST PHILBERT DE BOUAINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932296",
+      "type": "Acquisition",
+      "date_inscription": "13/07/2026 12:55",
+      "login": "c2.3168",
+      "vendeur": "CHEIKH ABDELLAH",
+      "nom client": "SENOUCI",
+      "cp": "75016",
+      "ville": "PARIS 16",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932408",
+      "type": "Acquisition",
+      "date_inscription": "13/07/2026 14:19",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "RONDONNET",
+      "cp": "85420",
+      "ville": "RIVES D AUTISE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
