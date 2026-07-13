@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T13:26:06.621012+00:00",
+  "scraped_at": "2026-07-13T16:36:52.430255+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15863,7 +15863,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0921254",
@@ -17003,7 +17003,7 @@
       "cp": "44522",
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0929391",
@@ -17410,6 +17410,42 @@
       "nom client": "RONDONNET",
       "cp": "85420",
       "ville": "RIVES D AUTISE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932705",
+      "type": "Acquisition",
+      "date_inscription": "13/07/2026 17:51",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "SUCH",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932560",
+      "type": "Acquisition",
+      "date_inscription": "13/07/2026 16:01",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "QUEBAUD",
+      "cp": "85620",
+      "ville": "ROCHESERVIERE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932655",
+      "type": "Acquisition",
+      "date_inscription": "13/07/2026 17:11",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "JALIS",
+      "cp": "79000",
+      "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
