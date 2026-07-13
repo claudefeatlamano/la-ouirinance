@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T20:17:38.597727+00:00",
+  "scraped_at": "2026-07-13T21:59:17.009498+00:00",
   "rows": [
     {
       "id_abo": "931801",
@@ -9,7 +9,7 @@
       "adresse": "28 RUE DU COMMERCE",
       "cp": "85262",
       "ville": "Saint philbert de bouaine",
-      "id_client": "",
+      "id_client": "FO37187078",
       "ref_preins": "PFO43328206RX",
       "nom abonne": "Chiffoleau-lucas",
       "prenom abonne": "Celine",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "931780",
@@ -29,7 +29,7 @@
       "adresse": "8 RUE DE LATTRE DE TASSIGNY",
       "cp": "85303",
       "ville": "Vix",
-      "id_client": "",
+      "id_client": "FO37186891",
       "ref_preins": "PFO43328007YH",
       "nom abonne": "malnuit",
       "prenom abonne": "Thibault",
@@ -39,7 +39,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "931778",
@@ -49,7 +49,7 @@
       "adresse": "21 CITE DU MOULIN CERVIN",
       "cp": "85190",
       "ville": "Rocheserviere",
-      "id_client": "",
+      "id_client": "FO37186878",
       "ref_preins": "PFO4332798390",
       "nom abonne": "Allard",
       "prenom abonne": "Elodie",
@@ -59,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "931774",
@@ -897,7 +897,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -957,7 +957,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-23",
       "etat_commande": "inscription ok"
     },
@@ -1377,7 +1377,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1417,7 +1417,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1617,7 +1617,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-22",
       "etat_commande": "inscription ok"
     },
@@ -1877,7 +1877,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-20",
       "etat_commande": "inscription ok"
     },
@@ -2077,7 +2077,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-24",
       "etat_commande": "inscription ok"
     },
@@ -18970,7 +18970,7 @@
       "adresse": "13 RUE DU FAISAN",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37186889",
       "ref_preins": "PFO433279918T",
       "nom abonne": "Mathon",
       "prenom abonne": "Christelle",
@@ -18979,7 +18979,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "931739",
@@ -19257,7 +19257,7 @@
       "tel_mobile": "0689221603",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-21",
       "etat_commande": "inscription ok"
     },
@@ -19277,7 +19277,7 @@
       "tel_mobile": "0671396898",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-20",
       "etat_commande": "inscription ok"
     },
@@ -19377,7 +19377,7 @@
       "tel_mobile": "0689734417",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-20",
       "etat_commande": "inscription ok"
     },
@@ -19457,7 +19457,7 @@
       "tel_mobile": "0604027632",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-23",
       "etat_commande": "inscription ok"
     },
