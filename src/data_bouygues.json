@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-14T12:16:24.820737+00:00",
+  "scraped_at": "2026-07-14T14:54:55.889480+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17460,6 +17460,54 @@
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0932934",
+      "type": "Acquisition",
+      "date_inscription": "14/07/2026 16:04",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "HAMADA",
+      "cp": "79100",
+      "ville": "THOUARS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932911",
+      "type": "Acquisition",
+      "date_inscription": "14/07/2026 14:48",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "TAHIATA",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932935",
+      "type": "Acquisition",
+      "date_inscription": "14/07/2026 16:09",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "SUCH",
+      "cp": "17000",
+      "ville": "LA ROCHELLE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932908",
+      "type": "Acquisition",
+      "date_inscription": "14/07/2026 14:46",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "DUGAS",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
