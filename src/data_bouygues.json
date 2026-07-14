@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-14T16:18:00.342498+00:00",
+  "scraped_at": "2026-07-14T18:06:51.008244+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17506,6 +17506,30 @@
       "nom client": "DUGAS",
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0932998",
+      "type": "Acquisition",
+      "date_inscription": "14/07/2026 18:49",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "BAUDRIER",
+      "cp": "79100",
+      "ville": "THOUARS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0933007",
+      "type": "Acquisition",
+      "date_inscription": "14/07/2026 19:09",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "CLERTE",
+      "cp": "85190",
+      "ville": "AIZENAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
