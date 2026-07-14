@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T23:04:41.970815+00:00",
+  "scraped_at": "2026-07-14T02:43:56.948525+00:00",
   "rows": [
     {
       "id_abo": "931801",
@@ -24199,7 +24199,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-08",
       "info_rdv_sync": "RDV 2026-06-13",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "919723",
