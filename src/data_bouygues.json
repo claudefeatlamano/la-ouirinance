@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-15T14:53:49.979637+00:00",
+  "scraped_at": "2026-07-15T16:25:10.287398+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17543,7 +17543,7 @@
       "cp": "85120",
       "ville": "ANTIGNY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0933504",
@@ -17566,6 +17566,66 @@
       "nom client": "PEREIRA ALVES",
       "cp": "79000",
       "ville": "NIORT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0933645",
+      "type": "Acquisition",
+      "date_inscription": "15/07/2026 17:56",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "ROELENS",
+      "cp": "85120",
+      "ville": "ANTIGNY",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0933569",
+      "type": "Acquisition",
+      "date_inscription": "15/07/2026 17:03",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "DENIS",
+      "cp": "79300",
+      "ville": "BRESSUIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0933626",
+      "type": "Acquisition",
+      "date_inscription": "15/07/2026 17:45",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "ABDALLAH",
+      "cp": "79300",
+      "ville": "BRESSUIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0933579",
+      "type": "Acquisition",
+      "date_inscription": "15/07/2026 17:13",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "PHELIPEAU",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0933570",
+      "type": "Acquisition",
+      "date_inscription": "15/07/2026 17:05",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "BOURASSEAU",
+      "cp": "85120",
+      "ville": "ST MAURICE DES NOUES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
