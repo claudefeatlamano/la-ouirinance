@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-15T16:25:10.287398+00:00",
+  "scraped_at": "2026-07-15T18:10:38.046646+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16907,7 +16907,7 @@
       "cp": "85120",
       "ville": "VOUVANT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0928846",
@@ -17626,6 +17626,18 @@
       "nom client": "BOURASSEAU",
       "cp": "85120",
       "ville": "ST MAURICE DES NOUES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0933708",
+      "type": "Acquisition",
+      "date_inscription": "15/07/2026 18:45",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "VIOLLEAU",
+      "cp": "79300",
+      "ville": "BRESSUIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
