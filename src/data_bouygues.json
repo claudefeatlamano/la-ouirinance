@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-15T10:53:03.004618+00:00",
+  "scraped_at": "2026-07-15T12:17:46.489528+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16715,7 +16715,7 @@
       "cp": "49340",
       "ville": "VEZINS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927657",
