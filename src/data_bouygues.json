@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-15T05:34:57.352490+00:00",
+  "scraped_at": "2026-07-15T08:18:49.555364+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9647,7 +9647,7 @@
       "cp": "44620",
       "ville": "LA MONTAGNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Impayé"
     },
     {
       "num_contrat": "C2E0888643",
@@ -12047,7 +12047,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0901391",
