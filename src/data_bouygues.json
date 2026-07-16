@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-16T04:10:11.990866+00:00",
+  "scraped_at": "2026-07-16T07:23:39.920660+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9599,7 +9599,7 @@
       "cp": "44640",
       "ville": "LE PELLERIN",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO/Impayé"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0900874",
@@ -9647,7 +9647,7 @@
       "cp": "44620",
       "ville": "LA MONTAGNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO/Impayé"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0888643",
@@ -12047,7 +12047,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0901391",
@@ -17459,7 +17459,7 @@
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0932934",
