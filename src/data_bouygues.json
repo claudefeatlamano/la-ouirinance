@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-16T15:04:18.530154+00:00",
+  "scraped_at": "2026-07-16T17:20:35.366148+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17075,7 +17075,7 @@
       "cp": "85590",
       "ville": "LES EPESSES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0930354",
