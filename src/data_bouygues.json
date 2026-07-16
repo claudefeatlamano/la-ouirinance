@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-16T07:23:39.920660+00:00",
+  "scraped_at": "2026-07-16T10:11:47.135546+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17087,7 +17087,7 @@
       "cp": "85500",
       "ville": "LES HERBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0930523",
@@ -17303,7 +17303,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0931938",
