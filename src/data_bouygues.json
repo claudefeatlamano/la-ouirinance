@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-16T12:21:23.980497+00:00",
+  "scraped_at": "2026-07-16T15:04:18.530154+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16967,7 +16967,7 @@
       "cp": "85700",
       "ville": "SEVREMONT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0929078",
@@ -17676,6 +17676,30 @@
       "ville": "LA CHAPELLE PALLUAU",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0934212",
+      "type": "Acquisition",
+      "date_inscription": "16/07/2026 16:27",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "WALCH",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0934074",
+      "type": "Acquisition",
+      "date_inscription": "16/07/2026 14:56",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "ROY",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
