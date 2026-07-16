@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-15T22:03:51.621738+00:00",
+  "scraped_at": "2026-07-16T00:00:45.994920+00:00",
   "rows": [
     {
       "id_abo": "932297",
@@ -12879,7 +12879,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-08",
       "info_rdv_sync": "RDV 2026-06-15",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "920251",
@@ -21419,7 +21419,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente abandonée J+7"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "925376",
@@ -23819,7 +23819,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-08",
       "info_rdv_sync": "RDV 2026-06-15",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "920329",
@@ -23859,7 +23859,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-08",
       "info_rdv_sync": "RDV 2026-06-15",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "920173",
@@ -24019,7 +24019,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-08",
       "info_rdv_sync": "RDV 2026-06-15",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "920036",
@@ -27819,7 +27819,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-03",
       "info_rdv_sync": "RDV 2026-06-15",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "vente abandonée"
     },
     {
       "id_abo": "914456",
