@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-16T19:16:01.156891+00:00",
+  "scraped_at": "2026-07-16T21:03:25.319909+00:00",
   "rows": [
     {
       "id_abo": "932747",
@@ -9,7 +9,7 @@
       "adresse": "10 RESIDENCES LES MARRONNIERS",
       "cp": "85055",
       "ville": "Chapelle palluau",
-      "id_client": "",
+      "id_client": "FO37199449",
       "ref_preins": "PFO433424520X",
       "nom abonne": "BACHELET",
       "prenom abonne": "JULIEN",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "932741",
@@ -29,7 +29,7 @@
       "adresse": "8 RUE DE SAINTE MARIE",
       "cp": "85210",
       "ville": "Saint etienne du bois",
-      "id_client": "",
+      "id_client": "FO37199341",
       "ref_preins": "PFO43342402FB",
       "nom abonne": "Tournant",
       "prenom abonne": "Didier",
@@ -39,7 +39,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "932725",
@@ -49,7 +49,7 @@
       "adresse": "4 IMPASSE GASTON LEROUX",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37199239",
       "ref_preins": "PFO43342252IS",
       "nom abonne": "Breteau",
       "prenom abonne": "Emmanuelle",
@@ -59,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "932723",
@@ -938,7 +938,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-25",
       "etat_commande": "inscription ok"
     },
     {
@@ -958,7 +958,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-28",
       "etat_commande": "inscription ok"
     },
     {
@@ -1357,7 +1357,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-16",
       "info_rdv_sync": "RDV 2026-07-24",
       "etat_commande": "inscription ok"
     },
@@ -1857,7 +1857,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-16",
       "info_rdv_sync": "RDV 2026-07-24",
       "etat_commande": "inscription ok"
     },
@@ -2317,7 +2317,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-16",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -19250,7 +19250,7 @@
       "adresse": "17 ROUTE DE POITIERS",
       "cp": "79049",
       "ville": "Bressuire",
-      "id_client": "",
+      "id_client": "FO37199434",
       "ref_preins": "PFO433425149G",
       "nom abonne": "Guilloteau",
       "prenom abonne": "Corentin",
@@ -19259,7 +19259,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "932729",
@@ -19270,7 +19270,7 @@
       "adresse": "19 BOULEVARD DU CALVAIRE",
       "cp": "79049",
       "ville": "Bressuire",
-      "id_client": "",
+      "id_client": "FO37199278",
       "ref_preins": "PFO43342273ZS",
       "nom abonne": "Demar",
       "prenom abonne": "Laurence",
@@ -19279,7 +19279,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "932674",
@@ -21359,7 +21359,7 @@
       "mcafee": "",
       "envoi_colis": "2026-07-01",
       "info_rdv_sync": "SyncOK 2026-07-08",
-      "etat_commande": "connexion ok VRF"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "927768",
@@ -22039,7 +22039,7 @@
       "mcafee": "",
       "envoi_colis": "2026-06-30",
       "info_rdv_sync": "RDV 2026-07-07",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "925457",

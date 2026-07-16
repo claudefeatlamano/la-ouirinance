@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-16T19:16:16.624901+00:00",
+  "scraped_at": "2026-07-16T21:03:36.289260+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16787,7 +16787,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0927779",
