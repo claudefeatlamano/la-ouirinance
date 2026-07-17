@@ -1,6 +1,86 @@
 {
-  "scraped_at": "2026-07-17T12:11:18.530394+00:00",
+  "scraped_at": "2026-07-17T14:44:33.963438+00:00",
   "rows": [
+    {
+      "id_abo": "932899",
+      "date_inscription": "2026-07-17 14:08:17",
+      "login": "vst-lderbal",
+      "entreprise": "Stratygo",
+      "adresse": "55 RUE ANDRE SOULARD",
+      "cp": "85191",
+      "ville": "Roche sur yon",
+      "id_client": "",
+      "ref_preins": "PFO43345412AB",
+      "nom abonne": "Goalabre",
+      "prenom abonne": "Sophie",
+      "tel_mobile": "0682228526",
+      "box": "POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "932859",
+      "date_inscription": "2026-07-17 13:18:15",
+      "login": "vst-mali",
+      "entreprise": "Stratygo",
+      "adresse": "35 RUE D ENTRECASTEAUX",
+      "cp": "85191",
+      "ville": "Roche sur yon",
+      "id_client": "",
+      "ref_preins": "PFO43345104CI",
+      "nom abonne": "Chakim",
+      "prenom abonne": "Ratiba salhira",
+      "tel_mobile": "0695672162",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "932832",
+      "date_inscription": "2026-07-17 12:50:16",
+      "login": "vst-vmoize",
+      "entreprise": "Stratygo",
+      "adresse": "7 RUE DU PRE GUILLARD",
+      "cp": "44128",
+      "ville": "PLESSE",
+      "id_client": "",
+      "ref_preins": "PFO43344876BD",
+      "nom abonne": "PAGEOT",
+      "prenom abonne": "Delphine",
+      "tel_mobile": "0650076956",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "932829",
+      "date_inscription": "2026-07-17 12:49:16",
+      "login": "vst-tdiaby",
+      "entreprise": "Stratygo",
+      "adresse": "12 IMPASSE DE LA SOURCE",
+      "cp": "85081",
+      "ville": "Dompierre sur yon",
+      "id_client": "",
+      "ref_preins": "PFO43344931NE",
+      "nom abonne": "Pineau",
+      "prenom abonne": "Laetitia",
+      "tel_mobile": "0785968436",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "932809",
       "date_inscription": "2026-07-17 12:06:59",
@@ -9,7 +89,7 @@
       "adresse": "17 RUE LILY ET NADIA BOULANGER",
       "cp": "85191",
       "ville": "Roche sur yon",
-      "id_client": "",
+      "id_client": "FO37201167",
       "ref_preins": "PFO433445438G",
       "nom abonne": "Niclot",
       "prenom abonne": "Franck",
@@ -19,7 +99,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "932747",
@@ -658,7 +738,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-24",
       "etat_commande": "inscription ok"
     },
     {
@@ -778,7 +858,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-27",
       "etat_commande": "inscription ok"
     },
     {
@@ -1337,7 +1417,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-17",
       "info_rdv_sync": "RDV 2026-07-23",
       "etat_commande": "inscription ok"
     },
@@ -2538,7 +2618,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-13",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-22",
       "etat_commande": "inscription ok"
     },
     {
@@ -3857,7 +3937,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-17",
       "info_rdv_sync": "RDV 2026-07-23",
       "etat_commande": "inscription ok"
     },
@@ -3957,7 +4037,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-17",
       "info_rdv_sync": "RDV 2026-07-23",
       "etat_commande": "inscription ok"
     },
@@ -15522,26 +15602,6 @@
       "etat_commande": "vente abandonée"
     },
     {
-      "id_abo": "918149",
-      "date_inscription": "2026-06-01 14:34:32",
-      "login": "vst-bouchrif",
-      "entreprise": "Stratygo",
-      "adresse": "39 RUE D ULM",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37005358",
-      "ref_preins": "PFO43121713LX",
-      "nom abonne": "Lefort",
-      "prenom abonne": "Joel",
-      "tel_mobile": "0638414615",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-04",
-      "info_rdv_sync": "SyncOK 2026-06-11",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "918148",
       "date_inscription": "2026-06-01 14:34:32",
       "login": "vst-vmoize",
@@ -15559,6 +15619,26 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-04",
       "info_rdv_sync": "SyncOK 2026-06-15",
+      "etat_commande": "connexion ok VRF"
+    },
+    {
+      "id_abo": "918149",
+      "date_inscription": "2026-06-01 14:34:32",
+      "login": "vst-bouchrif",
+      "entreprise": "Stratygo",
+      "adresse": "39 RUE D ULM",
+      "cp": "85191",
+      "ville": "Roche sur yon",
+      "id_client": "FO37005358",
+      "ref_preins": "PFO43121713LX",
+      "nom abonne": "Lefort",
+      "prenom abonne": "Joel",
+      "tel_mobile": "0638414615",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "2026-06-04",
+      "info_rdv_sync": "SyncOK 2026-06-11",
       "etat_commande": "connexion ok VRF"
     },
     {
@@ -19777,7 +19857,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-17",
       "info_rdv_sync": "RDV 2026-07-24",
       "etat_commande": "inscription ok"
     },
