@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-17T10:00:36.010897+00:00",
+  "scraped_at": "2026-07-17T12:11:35.348885+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17700,6 +17700,30 @@
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0934503",
+      "type": "Acquisition",
+      "date_inscription": "17/07/2026 12:24",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "SALIOU",
+      "cp": "44300",
+      "ville": "NANTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0934530",
+      "type": "Acquisition",
+      "date_inscription": "17/07/2026 12:44",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "SIMON",
+      "cp": "44300",
+      "ville": "NANTES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
     }
   ]
 }
