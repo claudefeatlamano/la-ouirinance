@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-17T07:19:25.039321+00:00",
+  "scraped_at": "2026-07-17T10:00:36.010897+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17183,7 +17183,7 @@
       "cp": "85300",
       "ville": "CHALLANS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0931292",
@@ -17675,7 +17675,7 @@
       "cp": "85670",
       "ville": "LA CHAPELLE PALLUAU",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0934212",
