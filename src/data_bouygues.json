@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-17T14:44:42.365963+00:00",
+  "scraped_at": "2026-07-17T16:16:59.889525+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17159,7 +17159,7 @@
       "cp": "85300",
       "ville": "CHALLANS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0930687",
@@ -17759,7 +17759,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "KO"
     }
   ]
 }
