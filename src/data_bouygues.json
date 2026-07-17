@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-17T16:16:59.889525+00:00",
+  "scraped_at": "2026-07-17T18:07:28.486279+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17760,6 +17760,18 @@
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0935030",
+      "type": "Acquisition",
+      "date_inscription": "17/07/2026 19:22",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "BORN",
+      "cp": "85000",
+      "ville": "LA ROCHE-SUR-YON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
