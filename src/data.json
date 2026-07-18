@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-18T07:56:14.806117+00:00",
+  "scraped_at": "2026-07-18T09:38:51.609979+00:00",
   "rows": [
     {
       "id_abo": "933107",
@@ -458,7 +458,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-25",
       "etat_commande": "inscription ok"
     },
     {
@@ -558,7 +558,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-25",
       "etat_commande": "inscription ok"
     },
     {
@@ -4198,8 +4198,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-10",
-      "info_rdv_sync": "RDV 2026-07-18",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-18",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "929750",
@@ -19978,7 +19978,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-27",
       "etat_commande": "inscription ok"
     },
     {
@@ -20918,8 +20918,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-07",
-      "info_rdv_sync": "RDV 2026-07-18",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-18",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "929266",
@@ -29998,46 +29998,6 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-05-21",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "913776",
-      "date_inscription": "2026-05-18 11:11:49",
-      "login": "vta-zourhalm",
-      "entreprise": "TALC",
-      "adresse": "15 RUE GENERAL GOURAUD",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36951795",
-      "ref_preins": "PFO43061407Q6",
-      "nom abonne": "Kanoute",
-      "prenom abonne": "Djita",
-      "tel_mobile": "0695192906",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-26",
-      "info_rdv_sync": "SyncOK 2026-06-02",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "913774",
-      "date_inscription": "2026-05-18 10:54:00",
-      "login": "vta-zourhalm",
-      "entreprise": "TALC",
-      "adresse": "18 RUE FRANCIS GARNIER",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36951630",
-      "ref_preins": "PFO43061261BU",
-      "nom abonne": "Simon",
-      "prenom abonne": "Sebastien",
-      "tel_mobile": "0643944746",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     }
