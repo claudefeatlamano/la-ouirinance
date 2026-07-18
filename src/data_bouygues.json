@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-18T11:06:15.207108+00:00",
+  "scraped_at": "2026-07-18T13:21:59.380735+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17351,7 +17351,7 @@
       "cp": "44160",
       "ville": "PONTCHATEAU",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0932038",
@@ -17771,7 +17771,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     }
   ]
 }
