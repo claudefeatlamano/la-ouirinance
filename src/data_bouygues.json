@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-18T05:29:27.309328+00:00",
+  "scraped_at": "2026-07-18T07:56:22.746694+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17711,7 +17711,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0934530",
@@ -17723,7 +17723,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0934819",
@@ -17759,7 +17759,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0935030",
