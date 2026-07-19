@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-19T06:32:25.708122+00:00",
+  "scraped_at": "2026-07-19T09:05:57.236023+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -11975,7 +11975,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/A rappeler"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0903672",
