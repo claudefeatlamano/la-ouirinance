@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-20T18:53:49.880702+00:00",
+  "scraped_at": "2026-07-20T20:22:53.754399+00:00",
   "rows": [
     {
       "id_abo": "933536",
@@ -9,7 +9,7 @@
       "adresse": "3 RUE DES LILAS",
       "cp": "85148",
       "ville": "Montreuil",
-      "id_client": "",
+      "id_client": "FO37213863",
       "ref_preins": "PFO43359251ZR",
       "nom abonne": "Guillon",
       "prenom abonne": "Celine",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933535",
@@ -29,7 +29,7 @@
       "adresse": "17 CITE DES 5 FOURS",
       "cp": "85051",
       "ville": "Chantonnay",
-      "id_client": "",
+      "id_client": "FO37213859",
       "ref_preins": "PFO43359218MA",
       "nom abonne": "Auvinet",
       "prenom abonne": "Nadine",
@@ -39,7 +39,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933530",
@@ -49,7 +49,7 @@
       "adresse": "33 RUE DE CUNAULT",
       "cp": "49099",
       "ville": "Cholet",
-      "id_client": "",
+      "id_client": "FO37213759",
       "ref_preins": "PFO43359115SE",
       "nom abonne": "Gatineau",
       "prenom abonne": "Virginie",
@@ -59,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933527",
@@ -1337,7 +1337,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-20",
       "info_rdv_sync": "RDV 2026-07-25",
       "etat_commande": "inscription ok"
     },
@@ -1477,7 +1477,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-20",
       "info_rdv_sync": "RDV 2026-07-24",
       "etat_commande": "inscription ok"
     },
@@ -1557,7 +1557,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-20",
       "info_rdv_sync": "RDV 2026-07-27",
       "etat_commande": "inscription ok"
     },
@@ -3137,7 +3137,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-20",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -4397,7 +4397,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-20",
       "info_rdv_sync": "RDV 2026-07-27",
       "etat_commande": "inscription ok"
     },
