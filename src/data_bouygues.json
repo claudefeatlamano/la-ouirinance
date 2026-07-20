@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-20T11:47:38.687904+00:00",
+  "scraped_at": "2026-07-20T14:11:54.386765+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17783,7 +17783,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0935353",
@@ -17795,6 +17795,18 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0935483",
+      "type": "Acquisition",
+      "date_inscription": "20/07/2026 14:33",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "DUCASSOU",
+      "cp": "85200",
+      "ville": "MONTREUIL",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
