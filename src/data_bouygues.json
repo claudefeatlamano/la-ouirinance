@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-20T14:11:54.386765+00:00",
+  "scraped_at": "2026-07-20T16:25:37.125566+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17507,7 +17507,7 @@
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0932998",
@@ -17806,6 +17806,42 @@
       "nom client": "DUCASSOU",
       "cp": "85200",
       "ville": "MONTREUIL",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0935800",
+      "type": "Acquisition",
+      "date_inscription": "20/07/2026 17:35",
+      "login": "c2.4919",
+      "vendeur": "LEGRAND DJANY",
+      "nom client": "BERTOTTO",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0935819",
+      "type": "Acquisition",
+      "date_inscription": "20/07/2026 17:50",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "SIMON",
+      "cp": "44300",
+      "ville": "NANTES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0935735",
+      "type": "Acquisition",
+      "date_inscription": "20/07/2026 16:55",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "GAUVRIT",
+      "cp": "85110",
+      "ville": "CHANTONNAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
