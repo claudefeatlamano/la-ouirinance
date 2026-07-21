@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-21T13:58:41.427279+00:00",
+  "scraped_at": "2026-07-21T15:48:22.272216+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17435,7 +17435,7 @@
       "cp": "85620",
       "ville": "ROCHESERVIERE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0932655",
@@ -17531,7 +17531,7 @@
       "cp": "85190",
       "ville": "AIZENAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0933542",
@@ -17831,7 +17831,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0935735",
@@ -17880,6 +17880,30 @@
       "ville": "AIFFRES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0936586",
+      "type": "Acquisition",
+      "date_inscription": "21/07/2026 17:28",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "PADRONA",
+      "cp": "85420",
+      "ville": "MAILLEZAIS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0936600",
+      "type": "Acquisition",
+      "date_inscription": "21/07/2026 17:39",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "GAUTIER",
+      "cp": "79230",
+      "ville": "AIFFRES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
