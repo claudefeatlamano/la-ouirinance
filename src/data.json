@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-21T19:27:34.387352+00:00",
+  "scraped_at": "2026-07-21T21:12:55.679438+00:00",
   "rows": [
     {
       "id_abo": "933949",
@@ -9,7 +9,7 @@
       "adresse": "6 RUE DES 18 OTAGES",
       "cp": "85006",
       "ville": "Apremont",
-      "id_client": "",
+      "id_client": "FO37218923",
       "ref_preins": "PFO4336511615",
       "nom abonne": "Sandaye",
       "prenom abonne": "Cindy",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933946",
@@ -29,7 +29,7 @@
       "adresse": "15 RUE DU VIVIER",
       "cp": "85038",
       "ville": "Brouzils",
-      "id_client": "",
+      "id_client": "FO37218876",
       "ref_preins": "PFO43365037GZ",
       "nom abonne": "LAMY",
       "prenom abonne": "Sarah",
@@ -39,7 +39,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933943",
@@ -49,7 +49,7 @@
       "adresse": "10 RUE LEON LUCAS",
       "cp": "85133",
       "ville": "Maillezais",
-      "id_client": "",
+      "id_client": "FO37218830",
       "ref_preins": "PFO43365038B2",
       "nom abonne": "Fruitier",
       "prenom abonne": "Marianne",
@@ -59,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933938",
@@ -69,7 +69,7 @@
       "adresse": "50 RUE DES GRANDES MAROTIERES",
       "cp": "85006",
       "ville": "Apremont",
-      "id_client": "",
+      "id_client": "FO37218839",
       "ref_preins": "PFO43364995R2",
       "nom abonne": "Baranger",
       "prenom abonne": "Martine",
@@ -79,7 +79,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933935",
@@ -89,7 +89,7 @@
       "adresse": "5 IMPASSE DE LA SABLIERE",
       "cp": "85265",
       "ville": "Saint pierre le vieux",
-      "id_client": "",
+      "id_client": "FO37218758",
       "ref_preins": "PFO43364953PN",
       "nom abonne": "Valade",
       "prenom abonne": "Axelle",
@@ -99,7 +99,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933930",
@@ -109,7 +109,7 @@
       "adresse": "17 CITE MONPLAISIR",
       "cp": "85133",
       "ville": "Maillezais",
-      "id_client": "",
+      "id_client": "FO37218714",
       "ref_preins": "PFO433649147G",
       "nom abonne": "Grasset",
       "prenom abonne": "Emanuelle",
@@ -119,7 +119,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933923",
@@ -129,7 +129,7 @@
       "adresse": "40 RUE DE LA GARE",
       "cp": "85108",
       "ville": "Herbergement",
-      "id_client": "",
+      "id_client": "FO37218697",
       "ref_preins": "PFO43364883D7",
       "nom abonne": "Menard",
       "prenom abonne": "Sophie",
@@ -139,7 +139,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "933916",
@@ -1177,7 +1177,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "RDV 2026-07-29",
       "etat_commande": "inscription ok"
     },
@@ -1237,7 +1237,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1317,7 +1317,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1417,7 +1417,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "RDV 2026-07-29",
       "etat_commande": "inscription ok"
     },
@@ -1457,7 +1457,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "RDV 2026-07-31",
       "etat_commande": "inscription ok"
     },
@@ -1717,7 +1717,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "RDV 2026-07-27",
       "etat_commande": "inscription ok"
     },
@@ -1997,7 +1997,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "RDV 2026-07-28",
       "etat_commande": "inscription ok"
     },
@@ -3437,7 +3437,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "RDV 2026-07-27",
       "etat_commande": "inscription ok"
     },
@@ -3737,7 +3737,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20277,7 +20277,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-21",
       "info_rdv_sync": "RDV 2026-07-29",
       "etat_commande": "inscription ok"
     },
