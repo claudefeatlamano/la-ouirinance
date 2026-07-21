@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-21T09:28:47.741348+00:00",
+  "scraped_at": "2026-07-21T11:48:31.491383+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17387,7 +17387,7 @@
       "cp": "85660",
       "ville": "ST PHILBERT DE BOUAINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0932296",
@@ -17447,7 +17447,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0932886",
@@ -17519,7 +17519,7 @@
       "cp": "79100",
       "ville": "THOUARS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0933007",

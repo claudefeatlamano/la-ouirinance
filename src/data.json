@@ -1,6 +1,26 @@
 {
-  "scraped_at": "2026-07-21T09:28:38.520051+00:00",
+  "scraped_at": "2026-07-21T11:48:22.838124+00:00",
   "rows": [
+    {
+      "id_abo": "933587",
+      "date_inscription": "2026-07-21 12:20:22",
+      "login": "vst-pgrasset",
+      "entreprise": "Stratygo",
+      "adresse": "6 RUE DU PETIT VERGER",
+      "cp": "85006",
+      "ville": "Apremont",
+      "id_client": "",
+      "ref_preins": "PFO43361794GS",
+      "nom abonne": "Jacob",
+      "prenom abonne": "Frédéric",
+      "tel_mobile": "0627879517",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "933536",
       "date_inscription": "2026-07-20 19:13:56",
@@ -698,7 +718,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-29",
       "etat_commande": "inscription ok"
     },
     {
@@ -1278,7 +1298,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-28",
       "etat_commande": "inscription ok"
     },
     {
@@ -1538,8 +1558,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-16",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-21",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "932191",
@@ -1858,8 +1878,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-16",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-21",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "931942",
@@ -2818,8 +2838,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-15",
-      "info_rdv_sync": "RDV 2026-07-21",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-21",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "931336",
@@ -3638,7 +3658,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-17",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-28",
       "etat_commande": "inscription ok"
     },
     {
@@ -3738,7 +3758,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-01",
       "etat_commande": "inscription ok"
     },
     {
@@ -3818,8 +3838,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-13",
-      "info_rdv_sync": "RDV 2026-07-21",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-21",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "930635",
@@ -19202,66 +19222,6 @@
       "etat_commande": "résilié"
     },
     {
-      "id_abo": "915466",
-      "date_inscription": "2026-05-21 13:46:06",
-      "login": "vst-tdiaby",
-      "entreprise": "Stratygo",
-      "adresse": "8 RUE DES HIBISCUS",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "",
-      "ref_preins": "PFO430792722K",
-      "nom abonne": "Del aguila",
-      "prenom abonne": "Manon",
-      "tel_mobile": "0679906594",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "915457",
-      "date_inscription": "2026-05-21 13:38:36",
-      "login": "vst-mlarech",
-      "entreprise": "Stratygo",
-      "adresse": "21 RUE DES BOULEAUX",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "FO36967356",
-      "ref_preins": "PFO43079211OJ",
-      "nom abonne": "Brisset",
-      "prenom abonne": "Annie",
-      "tel_mobile": "0630131657",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "915440",
-      "date_inscription": "2026-05-21 13:17:32",
-      "login": "vst-aatf",
-      "entreprise": "Stratygo",
-      "adresse": "14 RUE DU BOSSARD",
-      "cp": "85058",
-      "ville": "Chasnais",
-      "id_client": "FO36967324",
-      "ref_preins": "PFO43079154R5",
-      "nom abonne": "Beranellec",
-      "prenom abonne": "Domique",
-      "tel_mobile": "0688832486",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-26",
-      "info_rdv_sync": "RDV 2026-05-30",
-      "etat_commande": "vente abandonée"
-    },
-    {
       "id_abo": "933500",
       "date_inscription": "2026-07-20 18:04:01",
       "login": "vta-epiet",
@@ -19818,7 +19778,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-28",
       "etat_commande": "inscription ok"
     },
     {
@@ -19978,7 +19938,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-16",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-24",
       "etat_commande": "inscription ok"
     },
     {
@@ -27720,126 +27680,6 @@
       "envoi_colis": "",
       "info_rdv_sync": "",
       "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "915459",
-      "date_inscription": "2026-05-21 13:39:43",
-      "login": "vta-zourhalm",
-      "entreprise": "TALC",
-      "adresse": "9 AVENUE DE TARENTE",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36967381",
-      "ref_preins": "PFO430792490K",
-      "nom abonne": "RABIN",
-      "prenom abonne": "MAGALI",
-      "tel_mobile": "0630770229",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "915430",
-      "date_inscription": "2026-05-21 13:03:58",
-      "login": "vta-tferreira",
-      "entreprise": "TALC",
-      "adresse": "7 RUE DES PERVENCHES",
-      "cp": "79249",
-      "ville": "Saint gelais",
-      "id_client": "",
-      "ref_preins": "PFO43079031EL",
-      "nom abonne": "Desmasures",
-      "prenom abonne": "Jean pierre",
-      "tel_mobile": "0671126167",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "915421",
-      "date_inscription": "2026-05-21 12:56:46",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "3 RUE DE FOUGERES",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36967141",
-      "ref_preins": "PFO43078961Q3",
-      "nom abonne": "Arthur",
-      "prenom abonne": "Jean",
-      "tel_mobile": "0687664886",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-26",
-      "info_rdv_sync": "SyncOK 2026-05-28",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "915393",
-      "date_inscription": "2026-05-21 12:20:22",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "3 RUE DE FOUGERES",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36967775",
-      "ref_preins": "PFO43078727VY",
-      "nom abonne": "Zimmerle",
-      "prenom abonne": "Jaqueline",
-      "tel_mobile": "0661187621",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-26",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "915380",
-      "date_inscription": "2026-05-21 11:56:46",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "3 RUE DE FOUGERES",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "",
-      "ref_preins": "PFO43078605CA",
-      "nom abonne": "Zimmerle",
-      "prenom abonne": "Jaqueline",
-      "tel_mobile": "0661187621",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "915374",
-      "date_inscription": "2026-05-21 11:45:30",
-      "login": "vta-zourhalm",
-      "entreprise": "TALC",
-      "adresse": "6 RUE DU MARECHAL VALEE",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36966694",
-      "ref_preins": "PFO43078441WZ",
-      "nom abonne": "Baslé",
-      "prenom abonne": "Jean pierre",
-      "tel_mobile": "0616010223",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-05-22",
-      "info_rdv_sync": "SyncOK 2026-05-26",
-      "etat_commande": "connexion ok VRF"
     }
   ]
 }
