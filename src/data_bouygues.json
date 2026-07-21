@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-21T06:31:43.840642+00:00",
+  "scraped_at": "2026-07-21T09:28:47.741348+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -12515,7 +12515,7 @@
       "cp": "44440",
       "ville": "RIAILLE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0890629",
@@ -16871,7 +16871,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0928321",
@@ -17483,7 +17483,7 @@
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0932935",
@@ -17855,7 +17855,7 @@
       "cp": "44000",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     }
   ]
 }
