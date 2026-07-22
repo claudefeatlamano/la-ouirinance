@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-22T04:18:44.643887+00:00",
+  "scraped_at": "2026-07-22T07:35:56.698401+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9167,7 +9167,7 @@
       "cp": "86000",
       "ville": "POITIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Veut réfléchir"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0904917",
@@ -12515,7 +12515,7 @@
       "cp": "44440",
       "ville": "RIAILLE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0890629",
@@ -16979,7 +16979,7 @@
       "cp": "49120",
       "ville": "CHEMILLE EN ANJOU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0929331",
