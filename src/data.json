@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-22T19:25:03.853090+00:00",
+  "scraped_at": "2026-07-22T21:16:35.286825+00:00",
   "rows": [
     {
       "id_abo": "934317",
@@ -9,7 +9,7 @@
       "adresse": "5 RUE DE CHENONCEAUX",
       "cp": "49099",
       "ville": "Cholet",
-      "id_client": "",
+      "id_client": "FO37223596",
       "ref_preins": "PFO43370695AQ",
       "nom abonne": "MURZEAU",
       "prenom abonne": "Monique",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "934316",
@@ -49,7 +49,7 @@
       "adresse": "66 BOULEVARD DU DOCTEUR RENE LAENNEC",
       "cp": "44184",
       "ville": "Saint nazaire",
-      "id_client": "",
+      "id_client": "FO37223585",
       "ref_preins": "PFO43370617TE",
       "nom abonne": "Genin",
       "prenom abonne": "Jeannine",
@@ -59,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "934306",
@@ -69,7 +69,7 @@
       "adresse": "1 RUE DE GUINEFOLLE",
       "cp": "85092",
       "ville": "Fontenay le comte",
-      "id_client": "",
+      "id_client": "FO37223515",
       "ref_preins": "PFO43370582H0",
       "nom abonne": "Petit",
       "prenom abonne": "Alisson",
@@ -79,7 +79,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "934305",
@@ -89,7 +89,7 @@
       "adresse": "16 RUE DES PIASSES",
       "cp": "85176",
       "ville": "Pissotte",
-      "id_client": "",
+      "id_client": "FO37223583",
       "ref_preins": "PFO433705998A",
       "nom abonne": "Cousin",
       "prenom abonne": "Agnes",
@@ -99,7 +99,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "934304",
@@ -129,7 +129,7 @@
       "adresse": "12 RUE P AUGUSTIN DE BEAUMARCHAIS",
       "cp": "44184",
       "ville": "Saint nazaire",
-      "id_client": "",
+      "id_client": "FO37223501",
       "ref_preins": "PFO43370556TJ",
       "nom abonne": "ABESSOLO",
       "prenom abonne": "MARIE CHRISTINE",
@@ -139,7 +139,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "934242",
@@ -857,7 +857,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-22",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1038,7 +1038,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-28",
       "etat_commande": "inscription ok"
     },
     {
@@ -1058,7 +1058,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-31",
       "etat_commande": "inscription ok"
     },
     {
@@ -1158,7 +1158,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-30",
       "etat_commande": "inscription ok"
     },
     {
@@ -1397,7 +1397,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-22",
       "info_rdv_sync": "RDV 2026-07-29",
       "etat_commande": "inscription ok"
     },
@@ -1857,7 +1857,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-22",
       "info_rdv_sync": "RDV 2026-07-27",
       "etat_commande": "inscription ok"
     },
@@ -4577,7 +4577,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-22",
       "info_rdv_sync": "RDV 2026-07-30",
       "etat_commande": "inscription ok"
     },
@@ -6217,7 +6217,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-22",
       "info_rdv_sync": "RDV 2026-07-27",
       "etat_commande": "inscription ok"
     },
@@ -12539,7 +12539,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-17",
       "info_rdv_sync": "SyncOK 2026-06-25",
-      "etat_commande": "connexion ok VRF"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "923242",
@@ -19957,7 +19957,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-22",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20037,7 +20037,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-22",
       "info_rdv_sync": "RDV 2026-07-29",
       "etat_commande": "inscription ok"
     },
