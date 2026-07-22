@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-22T17:23:16.659503+00:00",
+  "scraped_at": "2026-07-22T19:25:12.361894+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18084,6 +18084,30 @@
       "ville": "ST JULIEN DE CONCELLES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0937526",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 20:19",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "MAURAS",
+      "cp": "44450",
+      "ville": "ST JULIEN DE CONCELLES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0937529",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 20:41",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "FOUQUERE",
+      "cp": "44450",
+      "ville": "ST JULIEN DE CONCELLES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
