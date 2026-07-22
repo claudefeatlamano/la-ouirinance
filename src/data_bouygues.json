@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-22T15:06:22.657517+00:00",
+  "scraped_at": "2026-07-22T17:23:16.659503+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18011,7 +18011,7 @@
       "cp": "44450",
       "ville": "ST JULIEN DE CONCELLES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0937079",
@@ -18023,6 +18023,66 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0937400",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 18:01",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "GANDEMER",
+      "cp": "85200",
+      "ville": "FONTENAY LE COMTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0937333",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 17:07",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "STYMANS",
+      "cp": "85370",
+      "ville": "LE LANGON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0937409",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 18:03",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "MAIRE",
+      "cp": "79400",
+      "ville": "ST-MAIXENT-L'ECOLE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0937372",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 17:38",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "DEGEORGES",
+      "cp": "44450",
+      "ville": "ST JULIEN DE CONCELLES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0937377",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 17:43",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "DEGEORGES",
+      "cp": "44450",
+      "ville": "ST JULIEN DE CONCELLES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
   ]
