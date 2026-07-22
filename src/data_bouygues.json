@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-22T07:35:56.698401+00:00",
+  "scraped_at": "2026-07-22T10:27:57.355897+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17471,7 +17471,7 @@
       "cp": "79100",
       "ville": "THOUARS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0932911",
@@ -17567,7 +17567,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0933645",
@@ -17627,7 +17627,7 @@
       "cp": "85120",
       "ville": "ST MAURICE DES NOUES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0933708",
@@ -17904,6 +17904,30 @@
       "ville": "AIFFRES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0936807",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 11:48",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "KNOCKAERT",
+      "cp": "44450",
+      "ville": "ST JULIEN DE CONCELLES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0936826",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 12:20",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "BELETEAU",
+      "cp": "44450",
+      "ville": "ST JULIEN DE CONCELLES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }

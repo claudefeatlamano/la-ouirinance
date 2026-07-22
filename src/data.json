@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-22T07:35:47.394717+00:00",
+  "scraped_at": "2026-07-22T10:27:48.905717+00:00",
   "rows": [
     {
       "id_abo": "933949",
@@ -2638,7 +2638,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-16",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-29",
       "etat_commande": "inscription ok"
     },
     {
@@ -2978,7 +2978,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-16",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-01",
       "etat_commande": "inscription ok"
     },
     {
@@ -4078,8 +4078,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-13",
-      "info_rdv_sync": "RDV 2026-07-22",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-22",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "931006",
@@ -4158,8 +4158,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-15",
-      "info_rdv_sync": "RDV 2026-07-22",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-22",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "930969",
@@ -4238,8 +4238,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-13",
-      "info_rdv_sync": "RDV 2026-07-22",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-22",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "930924",
@@ -19938,7 +19938,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-07-29",
       "etat_commande": "inscription ok"
     },
     {
@@ -27800,46 +27800,6 @@
       "envoi_colis": "2026-05-26",
       "info_rdv_sync": "SyncOK 2026-06-02",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "915877",
-      "date_inscription": "2026-05-22 12:22:40",
-      "login": "vta-zourhalm",
-      "entreprise": "TALC",
-      "adresse": "26 RUE DU BERRY",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36971104",
-      "ref_preins": "PFO43083455LJ",
-      "nom abonne": "Madi",
-      "prenom abonne": "Naima",
-      "tel_mobile": "0750703501",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "915866",
-      "date_inscription": "2026-05-22 12:10:30",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "7 RUE DU DAUPHINE",
-      "cp": "29019",
-      "ville": "Brest",
-      "id_client": "FO36970964",
-      "ref_preins": "PFO430833398Y",
-      "nom abonne": "Le bris",
-      "prenom abonne": "Lola",
-      "tel_mobile": "0623573292",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
     }
   ]
 }
