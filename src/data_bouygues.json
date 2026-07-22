@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-22T12:26:30.770701+00:00",
+  "scraped_at": "2026-07-22T15:06:22.657517+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17363,7 +17363,7 @@
       "cp": "44160",
       "ville": "PONTCHATEAU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0931932",
@@ -17975,6 +17975,54 @@
       "cp": "85200",
       "ville": "PISSOTTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0937169",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 15:48",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "HERVE",
+      "cp": "85200",
+      "ville": "PISSOTTE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0937188",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 15:52",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "THEBAULT",
+      "cp": "44450",
+      "ville": "ST JULIEN DE CONCELLES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0937302",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 16:48",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "YVIQUEL",
+      "cp": "44450",
+      "ville": "ST JULIEN DE CONCELLES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0937079",
+      "type": "Acquisition",
+      "date_inscription": "22/07/2026 14:55",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "RUELLAN",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
