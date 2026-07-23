@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-23T06:32:16.127703+00:00",
+  "scraped_at": "2026-07-23T09:26:03.455481+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -9167,7 +9167,7 @@
       "cp": "86000",
       "ville": "POITIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0904917",
@@ -16979,7 +16979,7 @@
       "cp": "49120",
       "ville": "CHEMILLE EN ANJOU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0929331",
@@ -17651,7 +17651,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0933977",
@@ -17687,7 +17687,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0934074",
