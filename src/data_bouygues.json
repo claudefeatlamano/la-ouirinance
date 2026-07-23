@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-23T03:13:27.862153+00:00",
+  "scraped_at": "2026-07-23T06:32:16.127703+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17015,7 +17015,7 @@
       "cp": "44522",
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0929665",
@@ -17051,7 +17051,7 @@
       "cp": "44522",
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0930062",
