@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-23T18:14:59.363162+00:00",
+  "scraped_at": "2026-07-23T20:15:42.401879+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18240,6 +18240,30 @@
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938311",
+      "type": "Acquisition",
+      "date_inscription": "23/07/2026 20:55",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "MARTIAL",
+      "cp": "77310",
+      "ville": "ST FARGEAU PONTHIERRY",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0938305",
+      "type": "Acquisition",
+      "date_inscription": "23/07/2026 20:15",
+      "login": "c2.5885",
+      "vendeur": "ABOULFATAH YANNIS",
+      "nom client": "RICARD",
+      "cp": "85180",
+      "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
