@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-23T09:26:03.455481+00:00",
+  "scraped_at": "2026-07-23T11:51:52.850409+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18108,6 +18108,18 @@
       "ville": "ST JULIEN DE CONCELLES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0937674",
+      "type": "Acquisition",
+      "date_inscription": "23/07/2026 12:56",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "GRIMAULT",
+      "cp": "49270",
+      "ville": "MONTREVAULT SUR EVRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
     }
   ]
 }
