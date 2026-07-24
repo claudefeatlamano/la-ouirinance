@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-24T18:20:37.953199+00:00",
+  "scraped_at": "2026-07-24T20:21:54.136034+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18492,6 +18492,18 @@
       "ville": "LES HERBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938907",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 20:37",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "RABAUD",
+      "cp": "44230",
+      "ville": "ST-SEBASTIEN-SUR-LOIRE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
