@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-24T04:16:58.115452+00:00",
+  "scraped_at": "2026-07-24T07:33:46.667662+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17015,7 +17015,7 @@
       "cp": "44522",
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0929665",
@@ -17051,7 +17051,7 @@
       "cp": "44522",
       "ville": "MESANGER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0930062",
@@ -17495,7 +17495,7 @@
       "cp": "17000",
       "ville": "LA ROCHELLE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0932908",
@@ -18119,7 +18119,7 @@
       "cp": "49270",
       "ville": "MONTREVAULT SUR EVRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0937939",
@@ -18179,7 +18179,7 @@
       "cp": "85500",
       "ville": "MESNARD LA BAROTIERE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0937903",
@@ -18263,7 +18263,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     }
   ]
 }
