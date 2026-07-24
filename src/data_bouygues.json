@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-24T12:21:09.680557+00:00",
+  "scraped_at": "2026-07-24T14:57:52.486550+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18251,7 +18251,7 @@
       "cp": "77310",
       "ville": "ST FARGEAU PONTHIERRY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "StandBy"
     },
     {
       "num_contrat": "C2E0938305",
@@ -18299,6 +18299,90 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938742",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 16:29",
+      "login": "c2.2919",
+      "vendeur": "NOUAR LAKHDAR",
+      "nom client": "COURTOIS",
+      "cp": "44720",
+      "ville": "ST-JOACHIM",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0938551",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 14:28",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "AIRAUD",
+      "cp": "85110",
+      "ville": "CHANTONNAY",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938735",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 16:25",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "GENET",
+      "cp": "85500",
+      "ville": "LES HERBIERS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938595",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 14:57",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "DROUET",
+      "cp": "85500",
+      "ville": "LES HERBIERS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938703",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 16:08",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "DOUILLARD",
+      "cp": "72100",
+      "ville": "LE MANS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938732",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 16:24",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "CINDY",
+      "cp": "72100",
+      "ville": "LE MANS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0938640",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 15:22",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "LIONI",
+      "cp": "85110",
+      "ville": "CHANTONNAY",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
   ]
