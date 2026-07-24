@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-24T10:21:23.273218+00:00",
+  "scraped_at": "2026-07-24T12:20:54.254099+00:00",
   "rows": [
     {
       "id_abo": "934717",
@@ -3918,8 +3918,8 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "2026-07-20",
-      "info_rdv_sync": "RDV 2026-07-24",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-24",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "931853",
@@ -18022,26 +18022,6 @@
       "etat_commande": "vente abandonée"
     },
     {
-      "id_abo": "918149",
-      "date_inscription": "2026-06-01 14:34:32",
-      "login": "vst-bouchrif",
-      "vendeur": "bilel ouchrif",
-      "entreprise": "Stratygo",
-      "adresse": "39 RUE D ULM",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37005358",
-      "ref_preins": "PFO43121713LX",
-      "nom abonne": "Lefort",
-      "prenom abonne": "Joel",
-      "tel_mobile": "0638414615",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "envoi_colis": "2026-06-04",
-      "info_rdv_sync": "SyncOK 2026-06-11",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "918148",
       "date_inscription": "2026-06-01 14:34:32",
       "login": "vst-vmoize",
@@ -18059,6 +18039,26 @@
       "mcafee": "",
       "envoi_colis": "2026-06-04",
       "info_rdv_sync": "SyncOK 2026-06-15",
+      "etat_commande": "connexion ok VRF"
+    },
+    {
+      "id_abo": "918149",
+      "date_inscription": "2026-06-01 14:34:32",
+      "login": "vst-bouchrif",
+      "vendeur": "bilel ouchrif",
+      "entreprise": "Stratygo",
+      "adresse": "39 RUE D ULM",
+      "cp": "85191",
+      "ville": "Roche sur yon",
+      "id_client": "FO37005358",
+      "ref_preins": "PFO43121713LX",
+      "nom abonne": "Lefort",
+      "prenom abonne": "Joel",
+      "tel_mobile": "0638414615",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "envoi_colis": "2026-06-04",
+      "info_rdv_sync": "SyncOK 2026-06-11",
       "etat_commande": "connexion ok VRF"
     },
     {
@@ -19922,26 +19922,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "916305",
-      "date_inscription": "2026-05-24 13:58:26",
-      "login": "vst-efouvo",
-      "vendeur": "emmanuel fouvo",
-      "entreprise": "Stratygo",
-      "adresse": "5 AVENUE GEORGES BIZET",
-      "cp": "49099",
-      "ville": "Cholet",
-      "id_client": "FO36976816",
-      "ref_preins": "PFO43089944Q9",
-      "nom abonne": "Brault",
-      "prenom abonne": "Frederique",
-      "tel_mobile": "0676655886",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
       "id_abo": "934709",
       "date_inscription": "2026-07-23 19:11:07",
       "login": "vta-fboutouba",
@@ -21518,8 +21498,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-16",
-      "info_rdv_sync": "RDV 2026-07-24",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-24",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "931587",
@@ -22118,8 +22098,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-06",
-      "info_rdv_sync": "RDV 2026-07-13",
-      "etat_commande": "inscription ok /postprod"
+      "info_rdv_sync": "SyncOK 2026-07-24",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "929101",

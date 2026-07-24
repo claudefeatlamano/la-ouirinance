@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-24T10:21:31.337356+00:00",
+  "scraped_at": "2026-07-24T12:21:09.680557+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17735,7 +17735,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0934766",
@@ -17747,7 +17747,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0934660",
@@ -18262,6 +18262,42 @@
       "nom client": "RICARD",
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938449",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 13:18",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "HEURIPEAU",
+      "cp": "72100",
+      "ville": "LE MANS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938401",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 12:38",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "JUILLET",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0938508",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 13:52",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "BOBINEAU",
+      "cp": "85110",
+      "ville": "CHANTONNAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
