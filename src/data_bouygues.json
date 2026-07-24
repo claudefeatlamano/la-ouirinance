@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-24T16:49:07.067317+00:00",
+  "scraped_at": "2026-07-24T18:20:37.953199+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18455,7 +18455,7 @@
       "cp": "13410",
       "ville": "LAMBESC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0938822",
@@ -18466,6 +18466,30 @@
       "nom client": "DELAPLANCHE",
       "cp": "72100",
       "ville": "LE MANS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938877",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 19:06",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "MOGé",
+      "cp": "72000",
+      "ville": "LE MANS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0938870",
+      "type": "Acquisition",
+      "date_inscription": "24/07/2026 19:00",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "TUQUET",
+      "cp": "85500",
+      "ville": "LES HERBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
