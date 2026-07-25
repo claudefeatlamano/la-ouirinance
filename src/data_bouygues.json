@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-25T04:13:10.959851+00:00",
+  "scraped_at": "2026-07-25T07:20:01.882412+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17267,7 +17267,7 @@
       "cp": "85340",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0931644",
@@ -18251,7 +18251,7 @@
       "cp": "77310",
       "ville": "ST FARGEAU PONTHIERRY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0938305",
@@ -18419,7 +18419,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0938791",
