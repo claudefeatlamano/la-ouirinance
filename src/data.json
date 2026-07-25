@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-25T09:51:02.970568+00:00",
+  "scraped_at": "2026-07-25T11:12:58.517291+00:00",
   "rows": [
     {
       "id_abo": "935047",
@@ -538,7 +538,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-05",
       "etat_commande": "inscription ok"
     },
     {
@@ -3018,8 +3018,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-20",
-      "info_rdv_sync": "RDV 2026-07-25",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-25",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "932682",
@@ -3378,8 +3378,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-20",
-      "info_rdv_sync": "RDV 2026-07-25",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-07-25",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "932403",
