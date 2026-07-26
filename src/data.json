@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-26T09:15:40.423541+00:00",
+  "scraped_at": "2026-07-26T11:21:27.642051+00:00",
   "rows": [
     {
       "id_abo": "935047",
@@ -20260,26 +20260,6 @@
       "envoi_colis": "",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "916523",
-      "date_inscription": "2026-05-26 12:56:21",
-      "login": "vst-pshehu",
-      "entreprise": "Stratygo",
-      "adresse": "4 LES NOUES",
-      "cp": "85146",
-      "ville": "Montaigu vendee",
-      "id_client": "FO36981746",
-      "ref_preins": "PFO43095544O5",
-      "nom abonne": "Sauvetre",
-      "prenom abonne": "Isabelle",
-      "tel_mobile": "0647796161",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-01",
-      "info_rdv_sync": "SyncOK 2026-06-08",
-      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "934709",
