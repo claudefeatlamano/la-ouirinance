@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-27T16:59:58.805410+00:00",
+  "scraped_at": "2026-07-27T18:42:08.060385+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18575,6 +18575,30 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939638",
+      "type": "Acquisition",
+      "date_inscription": "27/07/2026 19:16",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "DUBOIS",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939639",
+      "type": "Acquisition",
+      "date_inscription": "27/07/2026 19:17",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "JEGO",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
   ]
