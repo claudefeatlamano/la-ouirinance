@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-27T11:27:09.357988+00:00",
+  "scraped_at": "2026-07-27T14:41:36.523014+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17843,7 +17843,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0935941",
@@ -17867,7 +17867,7 @@
       "cp": "85420",
       "ville": "MAILLEZAIS",
       "produit": "Bbox Ultym Wi-Fi 7 (FTTH) : Internet - TV via appli b.tv - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0936297",
@@ -18035,7 +18035,7 @@
       "cp": "85200",
       "ville": "FONTENAY LE COMTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0937333",
@@ -18527,7 +18527,55 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939357",
+      "type": "Acquisition",
+      "date_inscription": "27/07/2026 15:08",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "BOULET",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939243",
+      "type": "Acquisition",
+      "date_inscription": "27/07/2026 14:02",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "LEGLAY",
+      "cp": "85430",
+      "ville": "NIEUL LE DOLENT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939213",
+      "type": "Acquisition",
+      "date_inscription": "27/07/2026 13:49",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "MORUCCI",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939311",
+      "type": "Acquisition",
+      "date_inscription": "27/07/2026 14:45",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "CHAUSSADAS",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
