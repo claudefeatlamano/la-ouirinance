@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-28T12:55:45.808848+00:00",
+  "scraped_at": "2026-07-28T15:22:50.966131+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18672,6 +18672,30 @@
       "ville": "LANDERNEAU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0940157",
+      "type": "Acquisition",
+      "date_inscription": "28/07/2026 16:45",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "BARRE",
+      "cp": "17600",
+      "ville": "SAUJON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0940057",
+      "type": "Acquisition",
+      "date_inscription": "28/07/2026 15:50",
+      "login": "c2.5224",
+      "vendeur": "MENDOUSSE MELODIE",
+      "nom client": "BOURREAU",
+      "cp": "49300",
+      "ville": "CHOLET",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
