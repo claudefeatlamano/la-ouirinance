@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-28T10:38:24.739849+00:00",
+  "scraped_at": "2026-07-28T12:55:45.808848+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17855,7 +17855,7 @@
       "cp": "44000",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0936313",
@@ -18610,6 +18610,66 @@
       "nom client": "AUGE",
       "cp": "17600",
       "ville": "SAUJON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939842",
+      "type": "Acquisition",
+      "date_inscription": "28/07/2026 13:12",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "BESAGNI",
+      "cp": "17600",
+      "ville": "SAUJON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939804",
+      "type": "Acquisition",
+      "date_inscription": "28/07/2026 12:46",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "CHARPENTIER",
+      "cp": "17600",
+      "ville": "SAUJON",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939839",
+      "type": "Acquisition",
+      "date_inscription": "28/07/2026 13:09",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "MASSE",
+      "cp": "44300",
+      "ville": "NANTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939923",
+      "type": "Acquisition",
+      "date_inscription": "28/07/2026 14:03",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "GRELLIER",
+      "cp": "44300",
+      "ville": "NANTES",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939911",
+      "type": "Acquisition",
+      "date_inscription": "28/07/2026 13:58",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "LARVOR",
+      "cp": "29800",
+      "ville": "LANDERNEAU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
