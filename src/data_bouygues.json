@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-28T07:40:32.910830+00:00",
+  "scraped_at": "2026-07-28T10:38:24.739849+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16919,7 +16919,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0928889",
@@ -17711,7 +17711,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0934530",
@@ -17831,7 +17831,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0935735",
@@ -18143,7 +18143,7 @@
       "cp": "85500",
       "ville": "MESNARD LA BAROTIERE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0937817",
@@ -18251,7 +18251,7 @@
       "cp": "77310",
       "ville": "ST FARGEAU PONTHIERRY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "StandBy"
     },
     {
       "num_contrat": "C2E0938305",
@@ -18419,7 +18419,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0938791",
@@ -18599,6 +18599,18 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0939745",
+      "type": "Acquisition",
+      "date_inscription": "28/07/2026 11:58",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "AUGE",
+      "cp": "17600",
+      "ville": "SAUJON",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
