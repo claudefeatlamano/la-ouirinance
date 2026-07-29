@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-29T11:27:49.889956+00:00",
+  "scraped_at": "2026-07-29T14:16:39.602745+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17987,7 +17987,7 @@
       "cp": "85200",
       "ville": "PISSOTTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0937188",
@@ -18695,7 +18695,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0940277",
@@ -18780,6 +18780,42 @@
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0940809",
+      "type": "Acquisition",
+      "date_inscription": "29/07/2026 15:44",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "LAURENT",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0940814",
+      "type": "Acquisition",
+      "date_inscription": "29/07/2026 15:54",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "LAURENT",
+      "cp": "17100",
+      "ville": "SAINTES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0940839",
+      "type": "Acquisition",
+      "date_inscription": "29/07/2026 16:09",
+      "login": "c2.4869",
+      "vendeur": "LEGRAND STEPHANE",
+      "nom client": "HOAREAU",
+      "cp": "29200",
+      "ville": "BREST",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
