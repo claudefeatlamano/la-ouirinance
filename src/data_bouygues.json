@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-29T05:55:14.521931+00:00",
+  "scraped_at": "2026-07-29T08:44:41.970672+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -16919,7 +16919,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Injoignable"
     },
     {
       "num_contrat": "C2E0928889",
@@ -17711,7 +17711,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0934530",
@@ -17927,7 +17927,7 @@
       "cp": "44450",
       "ville": "ST JULIEN DE CONCELLES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0936879",
@@ -17939,7 +17939,7 @@
       "cp": "85370",
       "ville": "LE LANGON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0936942",
@@ -18251,7 +18251,7 @@
       "cp": "77310",
       "ville": "ST FARGEAU PONTHIERRY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Eligibilité Prévisionnelle"
     },
     {
       "num_contrat": "C2E0938305",
@@ -18419,7 +18419,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0938791",
@@ -18695,7 +18695,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "StandBy"
     },
     {
       "num_contrat": "C2E0940277",
@@ -18767,7 +18767,7 @@
       "cp": "31200",
       "ville": "TOULOUSE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "StandBy"
     },
     {
       "num_contrat": "C2E0940380",
