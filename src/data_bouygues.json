@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-29T08:44:41.970672+00:00",
+  "scraped_at": "2026-07-29T11:27:49.889956+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18011,7 +18011,7 @@
       "cp": "44450",
       "ville": "ST JULIEN DE CONCELLES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0937079",
@@ -18491,7 +18491,7 @@
       "cp": "85500",
       "ville": "LES HERBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938907",
@@ -18731,7 +18731,7 @@
       "cp": "29490",
       "ville": "GUIPAVAS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0940333",
