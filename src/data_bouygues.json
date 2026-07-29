@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-29T18:09:01.647521+00:00",
+  "scraped_at": "2026-07-29T20:13:28.116426+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18874,6 +18874,18 @@
       "nom client": "KERDRAON",
       "cp": "29200",
       "ville": "BREST",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0941095",
+      "type": "Acquisition",
+      "date_inscription": "29/07/2026 20:07",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "GUIVARCH",
+      "cp": "29820",
+      "ville": "BOHARS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Saisie"
     }
