@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-30T07:35:25.944718+00:00",
+  "scraped_at": "2026-07-30T10:27:09.991401+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -17975,7 +17975,7 @@
       "cp": "85200",
       "ville": "PISSOTTE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0937169",
@@ -18239,7 +18239,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938311",
@@ -18251,7 +18251,7 @@
       "cp": "77310",
       "ville": "ST FARGEAU PONTHIERRY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Eligibilité Prévisionnelle"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0938305",
