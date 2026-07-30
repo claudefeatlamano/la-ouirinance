@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-30T04:07:34.498608+00:00",
+  "scraped_at": "2026-07-30T07:35:25.944718+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18167,7 +18167,7 @@
       "cp": "49270",
       "ville": "MONTREVAULT SUR EVRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0937897",
@@ -18731,7 +18731,7 @@
       "cp": "29490",
       "ville": "GUIPAVAS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0940333",
@@ -18767,7 +18767,7 @@
       "cp": "31200",
       "ville": "TOULOUSE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0940380",
@@ -18803,7 +18803,7 @@
       "cp": "17100",
       "ville": "SAINTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0940839",
@@ -18851,7 +18851,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "StandBy"
     },
     {
       "num_contrat": "C2E0941082",
@@ -18863,7 +18863,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/RIB"
     },
     {
       "num_contrat": "C2E0941026",
