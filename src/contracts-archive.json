@@ -19399,7 +19399,7 @@
 "_op": "bouygues",
 "cp": "44450",
 "date_inscription": "22/07/2026 11:48",
-"etat_commande": "Vente validée",
+"etat_commande": "Active",
 "login": "c2.4988",
 "nom client": "KNOCKAERT",
 "num_contrat": "C2E0936807",
@@ -20512,6 +20512,32 @@
 "type": "Acquisition",
 "vendeur": "CHEIKH ABDELLAH",
 "ville": "CHALLANS"
+},
+"byg-C2E0941614": {
+"_op": "bouygues",
+"cp": "29200",
+"date_inscription": "30/07/2026 17:26",
+"etat_commande": "Vente validée",
+"login": "c2.4919",
+"nom client": "GONZALEZ",
+"num_contrat": "C2E0941614",
+"produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+"type": "Acquisition",
+"vendeur": "LEGRAND DJANY",
+"ville": "BREST"
+},
+"byg-C2E0941701": {
+"_op": "bouygues",
+"cp": "29200",
+"date_inscription": "30/07/2026 18:40",
+"etat_commande": "Vente validée",
+"login": "c2.4919",
+"nom client": "LE GOFF",
+"num_contrat": "C2E0941701",
+"produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+"type": "Acquisition",
+"vendeur": "LEGRAND DJANY",
+"ville": "BREST"
 },
 "f-875541": {
 "_op": "free",
@@ -78088,11 +78114,11 @@
 "info_rdv_sync": "SyncOK 2026-06-24",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Demir",
 "prenom abonne": "Djengis",
 "ref_preins": "PFO43120475HZ",
 "tel_mobile": "0658718666",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-918043": {
@@ -78130,11 +78156,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vanholle",
 "prenom abonne": "Ophely",
 "ref_preins": "PFO431203731N",
 "tel_mobile": "0778760046",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-918048": {
@@ -78214,11 +78240,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Labidoire",
 "prenom abonne": "Danielle",
 "ref_preins": "PFO43120666GO",
 "tel_mobile": "0641835774",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-918123": {
@@ -78298,11 +78324,11 @@
 "info_rdv_sync": "RDV 2026-06-10",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mechine",
 "prenom abonne": "Isabelle",
 "ref_preins": "PFO43120988OI",
 "tel_mobile": "0787880622",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-918147": {
@@ -78424,11 +78450,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Jeneste",
 "prenom abonne": "Céline",
 "ref_preins": "PFO431215315A",
 "tel_mobile": "0686828103",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-918184": {
@@ -78529,11 +78555,11 @@
 "info_rdv_sync": "SyncOK 2026-06-09",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Pereira",
 "prenom abonne": "Rosa",
 "ref_preins": "PFO43121591OZ",
 "tel_mobile": "0680634917",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-918212": {
@@ -78592,11 +78618,11 @@
 "info_rdv_sync": "SyncOK 2026-06-05",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "DRAME",
 "prenom abonne": "Lamine",
 "ref_preins": "PFO43121764EB",
 "tel_mobile": "0753832660",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-918221": {
@@ -78655,11 +78681,11 @@
 "info_rdv_sync": "SyncOK 2026-06-09",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sepina",
 "prenom abonne": "Jessica",
 "ref_preins": "PFO431222552O",
 "tel_mobile": "0656714506",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-918299": {
@@ -78760,11 +78786,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MASSONDI",
 "prenom abonne": "Nasma",
 "ref_preins": "PFO431226835E",
 "tel_mobile": "0766495482",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-918346": {
@@ -78781,11 +78807,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Brindel",
 "prenom abonne": "Solange",
 "ref_preins": "PFO43122788MA",
 "tel_mobile": "0668775633",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-918349": {
@@ -78802,11 +78828,11 @@
 "info_rdv_sync": "SyncOK 2026-06-09",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kaba",
 "prenom abonne": "Mariama",
 "ref_preins": "PFO431228291V",
 "tel_mobile": "0753357181",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-918376": {
@@ -78844,11 +78870,11 @@
 "info_rdv_sync": "SyncOK 2026-06-10",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "SHTEREV",
 "prenom abonne": "SLAVCHO",
 "ref_preins": "PFO43123095JD",
 "tel_mobile": "0780632141",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-918423": {
@@ -78907,11 +78933,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Maugan",
 "prenom abonne": "Amélie",
 "ref_preins": "PFO43123989TG",
 "tel_mobile": "0608550809",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-918506": {
@@ -78928,11 +78954,11 @@
 "info_rdv_sync": "SyncOK 2026-06-11",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "ROUDEAU",
 "prenom abonne": "Marie Paule",
 "ref_preins": "PFO43126228E2",
 "tel_mobile": "0638623100",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-918540": {
@@ -78949,11 +78975,11 @@
 "info_rdv_sync": "SyncOK 2026-06-12",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Billac",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO43126619P4",
 "tel_mobile": "0608451869",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-918543": {
@@ -78970,11 +78996,11 @@
 "info_rdv_sync": "SyncOK 2026-06-11",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sylla",
 "prenom abonne": "Fatoumata",
 "ref_preins": "PFO43126612N1",
 "tel_mobile": "0656834544",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-918559": {
@@ -78991,11 +79017,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Brisson",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO43126778OD",
 "tel_mobile": "0629628015",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-918577": {
@@ -79012,11 +79038,11 @@
 "info_rdv_sync": "RDV 2026-06-11",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "PEYRIERAS",
 "prenom abonne": "Georgette",
 "ref_preins": "PFO431269919Z",
 "tel_mobile": "0647053422",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-918583": {
@@ -79033,11 +79059,11 @@
 "info_rdv_sync": "SyncOK 2026-06-17",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Matthew",
 "prenom abonne": "Rodrina",
 "ref_preins": "PFO43126954A4",
 "tel_mobile": "0659234128",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-918626": {
@@ -79096,11 +79122,11 @@
 "info_rdv_sync": "SyncOK 2026-06-11",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sirik",
 "prenom abonne": "Zera",
 "ref_preins": "PFO431273261G",
 "tel_mobile": "0768297394",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-918749": {
@@ -79180,11 +79206,11 @@
 "info_rdv_sync": "SyncOK 2026-06-11",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Parrat",
 "prenom abonne": "Alexandra",
 "ref_preins": "PFO43128339J5",
 "tel_mobile": "0683625430",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-918801": {
@@ -79243,11 +79269,11 @@
 "info_rdv_sync": "RDV 2026-06-16",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Guyot",
 "prenom abonne": "Annick",
 "ref_preins": "PFO431287244D",
 "tel_mobile": "0614113769",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-918845": {
@@ -79264,11 +79290,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mbama",
 "prenom abonne": "Noudjoum",
 "ref_preins": "PFO43128761L1",
 "tel_mobile": "0775010931",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-918861": {
@@ -79348,11 +79374,11 @@
 "info_rdv_sync": "RDV 2026-06-11",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Dupuis",
 "prenom abonne": "René",
 "ref_preins": "PFO43129206A5",
 "tel_mobile": "0656864685",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-918873": {
@@ -79369,11 +79395,11 @@
 "info_rdv_sync": "SyncOK 2026-06-22",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chatenet",
 "prenom abonne": "Aurore",
 "ref_preins": "PFO43129039LQ",
 "tel_mobile": "0617524969",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-918907": {
@@ -79390,11 +79416,11 @@
 "info_rdv_sync": "SyncOK 2026-06-19",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "GUILLAUME",
 "prenom abonne": "MICHEL",
 "ref_preins": "PFO43129363BM",
 "tel_mobile": "0699129512",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-918914": {
@@ -79411,11 +79437,11 @@
 "info_rdv_sync": "SyncOK 2026-06-11",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Borges",
 "prenom abonne": "Raphaël",
 "ref_preins": "PFO43129402YM",
 "tel_mobile": "0698636992",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-918924": {
@@ -79474,11 +79500,11 @@
 "info_rdv_sync": "SyncOK 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lajoie",
 "prenom abonne": "Philippe",
 "ref_preins": "PFO431298070O",
 "tel_mobile": "0617165493",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-918975": {
@@ -79495,11 +79521,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Leleu",
 "prenom abonne": "Martial",
 "ref_preins": "PFO43129949JO",
 "tel_mobile": "0644969931",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-918976": {
@@ -79537,11 +79563,11 @@
 "info_rdv_sync": "SyncOK 2026-06-11",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ali",
 "prenom abonne": "Anziza",
 "ref_preins": "PFO43129999FW",
 "tel_mobile": "0766084148",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-918985": {
@@ -79579,11 +79605,11 @@
 "info_rdv_sync": "SyncOK 2026-06-11",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lajoie",
 "prenom abonne": "Olga",
 "ref_preins": "PFO43129988VO",
 "tel_mobile": "0616126994",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919000": {
@@ -79600,11 +79626,11 @@
 "info_rdv_sync": "SyncOK 2026-06-22",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chaput",
 "prenom abonne": "Sebastien",
 "ref_preins": "PFO43130243NR",
 "tel_mobile": "0665428585",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-919111": {
@@ -79621,11 +79647,11 @@
 "info_rdv_sync": "SyncOK 2026-06-11",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sampije",
 "prenom abonne": "Iris",
 "ref_preins": "PFO43132950EU",
 "tel_mobile": "0611781984",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919113": {
@@ -79642,11 +79668,11 @@
 "info_rdv_sync": "SyncOK 2026-06-24",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sorel",
 "prenom abonne": "Corinne",
 "ref_preins": "PFO43133034O0",
 "tel_mobile": "0643247595",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-919114": {
@@ -79789,11 +79815,11 @@
 "info_rdv_sync": "SyncOK 2026-06-12",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Fofana",
 "prenom abonne": "Kadiatou",
 "ref_preins": "PFO431334088M",
 "tel_mobile": "0656762996",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919210": {
@@ -79810,11 +79836,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MARCHEIX",
 "prenom abonne": "Gerard",
 "ref_preins": "PFO43133679LJ",
 "tel_mobile": "0604085944",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-919217": {
@@ -80062,11 +80088,11 @@
 "info_rdv_sync": "RDV 2026-06-20",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Daoud",
 "prenom abonne": "Assane",
 "ref_preins": "PFO43135297X1",
 "tel_mobile": "0686436439",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919372": {
@@ -80083,11 +80109,11 @@
 "info_rdv_sync": "SyncOK 2026-06-19",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lassalle",
 "prenom abonne": "Guillaume",
 "ref_preins": "PFO43135127YN",
 "tel_mobile": "0663004038",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-919378": {
@@ -80209,11 +80235,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Toihir",
 "prenom abonne": "Thaouriya",
 "ref_preins": "PFO43135832UK",
 "tel_mobile": "0656899510",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-919449": {
@@ -80272,11 +80298,11 @@
 "info_rdv_sync": "SyncOK 2026-06-12",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "KAFFE",
 "prenom abonne": "Ramona",
 "ref_preins": "PFO43135955MH",
 "tel_mobile": "0767510988",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-919477": {
@@ -80293,11 +80319,11 @@
 "info_rdv_sync": "SyncOK 2026-06-18",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Rocherolle",
 "prenom abonne": "Chantal",
 "ref_preins": "PFO43136112E6",
 "tel_mobile": "0687901848",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-919486": {
@@ -80356,11 +80382,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "DAOUD",
 "prenom abonne": "Anzilati",
 "ref_preins": "PFO43136273NL",
 "tel_mobile": "0766376733",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-919509": {
@@ -80377,11 +80403,11 @@
 "info_rdv_sync": "SyncOK 2026-06-12",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Madi",
 "prenom abonne": "Amina",
 "ref_preins": "PFO43136299GI",
 "tel_mobile": "0618152500",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919512": {
@@ -80398,11 +80424,11 @@
 "info_rdv_sync": "SyncOK 2026-06-12",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Said",
 "prenom abonne": "Chakila",
 "ref_preins": "PFO43136362UC",
 "tel_mobile": "0617404179",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919521": {
@@ -80440,11 +80466,11 @@
 "info_rdv_sync": "SyncOK 2026-07-29",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ruzindana",
 "prenom abonne": "Julius",
 "ref_preins": "PFO431365733T",
 "tel_mobile": "0745681392",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-919619": {
@@ -80461,11 +80487,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chaillot lalardie",
 "prenom abonne": "Geraldine",
 "ref_preins": "PFO43137014O2",
 "tel_mobile": "0677751370",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-919656": {
@@ -80503,11 +80529,11 @@
 "info_rdv_sync": "SyncOK 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hermant",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO43138706LD",
 "tel_mobile": "0661250715",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919663": {
@@ -80650,11 +80676,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Martin",
 "prenom abonne": "Virginie",
 "ref_preins": "PFO4313910891",
 "tel_mobile": "0633370121",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919736": {
@@ -80692,11 +80718,11 @@
 "info_rdv_sync": "RDV 2026-06-13",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Virginie",
 "prenom abonne": "Martin",
 "ref_preins": "PFO43139178IT",
 "tel_mobile": "0780374632",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919754": {
@@ -80734,11 +80760,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "ATTOUMANI",
 "prenom abonne": "Laini",
 "ref_preins": "PFO431393611G",
 "tel_mobile": "0766737327",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-919763": {
@@ -80776,11 +80802,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Seiller",
 "prenom abonne": "Corinne",
 "ref_preins": "PFO43139623QV",
 "tel_mobile": "0687080039",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-919795": {
@@ -80818,11 +80844,11 @@
 "info_rdv_sync": "RDV 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kada",
 "prenom abonne": "Mohamed chrystelle",
 "ref_preins": "PFO43139723DW",
 "tel_mobile": "0621247525",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919807": {
@@ -80881,11 +80907,11 @@
 "info_rdv_sync": "SyncOK 2026-06-19",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "DIEYI NDANGU",
 "prenom abonne": "Emee",
 "ref_preins": "PFO43139777V1",
 "tel_mobile": "0764374809",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-919811": {
@@ -80902,11 +80928,11 @@
 "info_rdv_sync": "SyncOK 2026-06-18",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Seiller",
 "prenom abonne": "Corinne",
 "ref_preins": "PFO43139769G4",
 "tel_mobile": "0687080039",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-919825": {
@@ -81028,11 +81054,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Canard",
 "prenom abonne": "Lucien",
 "ref_preins": "PFO43140418BV",
 "tel_mobile": "0681221135",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-919883": {
@@ -81133,11 +81159,11 @@
 "info_rdv_sync": "SyncOK 2026-06-15",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "AHAMADI",
 "prenom abonne": "Maeva",
 "ref_preins": "PFO43140752NN",
 "tel_mobile": "0695031206",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-919949": {
@@ -81175,11 +81201,11 @@
 "info_rdv_sync": "SyncOK 2026-06-13",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Shishkova",
 "prenom abonne": "Sevdalie",
 "ref_preins": "PFO43141007M3",
 "tel_mobile": "0617702745",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-919960": {
@@ -81301,11 +81327,11 @@
 "info_rdv_sync": "SyncOK 2026-06-17",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Okafor",
 "prenom abonne": "Paul",
 "ref_preins": "PFO43141857EY",
 "tel_mobile": "0751053960",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-920034": {
@@ -81343,11 +81369,11 @@
 "info_rdv_sync": "SyncOK 2026-06-17",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Albin",
 "prenom abonne": "Marion",
 "ref_preins": "PFO43141774Z6",
 "tel_mobile": "0667749078",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-920052": {
@@ -81364,11 +81390,11 @@
 "info_rdv_sync": "RDV 2026-06-15",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "DABY",
 "prenom abonne": "Sankoumba",
 "ref_preins": "PFO43141969QM",
 "tel_mobile": "0780694504",
+"vendeur": "tania ferreira",
 "ville": "Limoges"
 },
 "f-920059": {
@@ -81385,11 +81411,11 @@
 "info_rdv_sync": "SyncOK 2026-06-17",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Faure",
 "prenom abonne": "Annie",
 "ref_preins": "PFO43142064Z6",
 "tel_mobile": "0673902280",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-920067": {
@@ -81406,11 +81432,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Onillon",
 "prenom abonne": "Nicole",
 "ref_preins": "PFO43142191WQ",
 "tel_mobile": "0687034125",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-920075": {
@@ -81448,11 +81474,11 @@
 "info_rdv_sync": "SyncOK 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bazile",
 "prenom abonne": "Jocelyne",
 "ref_preins": "PFO43143046D7",
 "tel_mobile": "0745849614",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-920094": {
@@ -81511,11 +81537,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Soulhol",
 "prenom abonne": "Nicolas",
 "ref_preins": "PFO43144106E2",
 "tel_mobile": "0625257642",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-920129": {
@@ -81532,11 +81558,11 @@
 "info_rdv_sync": "SyncOK 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ruf",
 "prenom abonne": "Monique",
 "ref_preins": "PFO431441954W",
 "tel_mobile": "0683772989",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-920130": {
@@ -81658,11 +81684,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Leroux",
 "prenom abonne": "Elodie",
 "ref_preins": "PFO43144527QM",
 "tel_mobile": "0659356560",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-920173": {
@@ -81679,11 +81705,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Meillat",
 "prenom abonne": "Stéphanie",
 "ref_preins": "PFO43144624ZJ",
 "tel_mobile": "0783943447",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-920175": {
@@ -81952,11 +81978,11 @@
 "info_rdv_sync": "RDV 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Delcroix",
 "prenom abonne": "Nathalie",
 "ref_preins": "PFO43145749U7",
 "tel_mobile": "0636416672",
+"vendeur": "yanis habbouba",
 "ville": "Limoges"
 },
 "f-920329": {
@@ -81973,11 +81999,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ratsimba",
 "prenom abonne": "Pascale",
 "ref_preins": "PFO431458000B",
 "tel_mobile": "0624722020",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-920331": {
@@ -81994,11 +82020,11 @@
 "info_rdv_sync": "RDV 2026-06-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mourlon",
 "prenom abonne": "Christelle",
 "ref_preins": "PFO431458506T",
 "tel_mobile": "0636416672",
+"vendeur": "yanis habbouba",
 "ville": "Saint leonard de noblat"
 },
 "f-920332": {
@@ -82057,11 +82083,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Locquet",
 "prenom abonne": "Ginette",
 "ref_preins": "PFO431464460V",
 "tel_mobile": "0662763194",
+"vendeur": "zakaria ourhalm",
 "ville": "Limoges"
 },
 "f-920407": {
@@ -82162,11 +82188,11 @@
 "info_rdv_sync": "",
 "login": "vta-bdjaballah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lespagnol",
 "prenom abonne": "Coralie",
 "ref_preins": "PFO431502992S",
 "tel_mobile": "0783731756",
+"vendeur": "bticem djaballah",
 "ville": "Saint amand sur sevre"
 },
 "f-920506": {
@@ -82267,11 +82293,11 @@
 "info_rdv_sync": "RDV 2026-06-17",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bersoult",
 "prenom abonne": "Chantal",
 "ref_preins": "PFO43156213E4",
 "tel_mobile": "0667142875",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-920624": {
@@ -82330,11 +82356,11 @@
 "info_rdv_sync": "SyncOK 2026-06-17",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "KHECHUMYAN",
 "prenom abonne": "VIRAP / SUSANNA",
 "ref_preins": "PFO43156298EN",
 "tel_mobile": "0780669072",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-920643": {
@@ -82414,11 +82440,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "SAHAKYAN",
 "prenom abonne": "LUKASH",
 "ref_preins": "PFO43156545H3",
 "tel_mobile": "0618990299",
+"vendeur": "zakaria ourhalm",
 "ville": "Creche"
 },
 "f-920686": {
@@ -82456,11 +82482,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Névés",
 "prenom abonne": "Alisson",
 "ref_preins": "PFO431567384J",
 "tel_mobile": "0640936332",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-920706": {
@@ -82519,11 +82545,11 @@
 "info_rdv_sync": "SyncOK 2026-07-22",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Deletang",
 "prenom abonne": "Jean-michel",
 "ref_preins": "PFO431571521T",
 "tel_mobile": "0633383121",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-920742": {
@@ -82561,11 +82587,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BRECHET",
 "prenom abonne": "CORINNE",
 "ref_preins": "PFO43157187KU",
 "tel_mobile": "0620940095",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-920802": {
@@ -82645,11 +82671,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "CHABIRAND",
 "prenom abonne": "VANESSA",
 "ref_preins": "PFO43158072S9",
 "tel_mobile": "0761081965",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-920870": {
@@ -82729,11 +82755,11 @@
 "info_rdv_sync": "SyncOK 2026-06-22",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Favre",
 "prenom abonne": "Michelle",
 "ref_preins": "PFO4315850675",
 "tel_mobile": "0781302226",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-920888": {
@@ -82792,11 +82818,11 @@
 "info_rdv_sync": "RDV 2026-06-17",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "JANOUIN",
 "prenom abonne": "DIDIER",
 "ref_preins": "PFO431587266X",
 "tel_mobile": "0775298244",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-920906": {
@@ -82834,11 +82860,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Fourre",
 "prenom abonne": "James",
 "ref_preins": "PFO43158923YD",
 "tel_mobile": "0670310802",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-920927": {
@@ -82855,11 +82881,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Fourre",
 "prenom abonne": "James",
 "ref_preins": "PFO431590160W",
 "tel_mobile": "0670310802",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-920935": {
@@ -82876,11 +82902,11 @@
 "info_rdv_sync": "RDV 2026-06-19",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "bakel",
 "prenom abonne": "Samia",
 "ref_preins": "PFO431591032R",
 "tel_mobile": "0670062239",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-920955": {
@@ -83275,11 +83301,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Piazzon",
 "prenom abonne": "Rugero",
 "ref_preins": "PFO43164653VX",
 "tel_mobile": "0686077480",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-921388": {
@@ -83632,11 +83658,11 @@
 "info_rdv_sync": "SyncOK 2026-06-20",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Cochard",
 "prenom abonne": "Katia",
 "ref_preins": "PFO43168493QF",
 "tel_mobile": "0604195864",
+"vendeur": "zakaria ourhalm",
 "ville": "Val en vignes"
 },
 "f-921651": {
@@ -83695,11 +83721,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "PINEAU",
 "prenom abonne": "Bernadette",
 "ref_preins": "PFO43168822HO",
 "tel_mobile": "0644901393",
+"vendeur": "matteo rendy",
 "ville": "Argentonnay"
 },
 "f-921683": {
@@ -83800,11 +83826,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "LAMOLY",
 "prenom abonne": "Mégane",
 "ref_preins": "PFO43169762I0",
 "tel_mobile": "0634285440",
+"vendeur": "matteo rendy",
 "ville": "Argentonnay"
 },
 "f-921786": {
@@ -83821,11 +83847,11 @@
 "info_rdv_sync": "SyncOK 2026-06-16",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Michinot",
 "prenom abonne": "Jennifer",
 "ref_preins": "PFO43169814MW",
 "tel_mobile": "0651901895",
+"vendeur": "emeryck piet",
 "ville": "Loretz d argenton"
 },
 "f-921800": {
@@ -83842,11 +83868,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sauvetre",
 "prenom abonne": "Huguette",
 "ref_preins": "PFO4316999711",
 "tel_mobile": "0612166984",
+"vendeur": "zakaria ourhalm",
 "ville": "Val en vignes"
 },
 "f-921847": {
@@ -83926,11 +83952,11 @@
 "info_rdv_sync": "RDV 2026-06-23",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mahaudeau",
 "prenom abonne": "Jean",
 "ref_preins": "PFO4317047732",
 "tel_mobile": "0604172605",
+"vendeur": "emeryck piet",
 "ville": "Loretz d argenton"
 },
 "f-921873": {
@@ -84073,11 +84099,11 @@
 "info_rdv_sync": "SyncOK 2026-06-20",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Rabin",
 "prenom abonne": "Lucas",
 "ref_preins": "PFO43171074DO",
 "tel_mobile": "0767015255",
+"vendeur": "wilfried perez",
 "ville": "Loretz d argenton"
 },
 "f-921937": {
@@ -84577,11 +84603,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sauvant",
 "prenom abonne": "Franck",
 "ref_preins": "PFO43175315V4",
 "tel_mobile": "0664157029",
+"vendeur": "bradley ziegler",
 "ville": "Limoges"
 },
 "f-922263": {
@@ -85165,11 +85191,11 @@
 "info_rdv_sync": "SyncOK 2026-06-22",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bainaud",
 "prenom abonne": "Thierry",
 "ref_preins": "PFO43179778EJ",
 "tel_mobile": "0609989833",
+"vendeur": "lucas wojciechowski",
 "ville": "Saint cesaire"
 },
 "f-922635": {
@@ -85228,11 +85254,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Groo",
 "prenom abonne": "Ingrid",
 "ref_preins": "PFO43180229RY",
 "tel_mobile": "0673148891",
+"vendeur": "matteo rendy",
 "ville": "Chapelle des pots"
 },
 "f-922656": {
@@ -85270,11 +85296,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sartre",
 "prenom abonne": "Henry",
 "ref_preins": "PFO431801627T",
 "tel_mobile": "0614846503",
+"vendeur": "tania ferreira",
 "ville": "Bussac sur charente"
 },
 "f-922666": {
@@ -85291,11 +85317,11 @@
 "info_rdv_sync": "SyncOK 2026-06-22",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lefebvre",
 "prenom abonne": "Philippe",
 "ref_preins": "PFO4318027088",
 "tel_mobile": "0651371272",
+"vendeur": "lucas wojciechowski",
 "ville": "Saint cesaire"
 },
 "f-922701": {
@@ -85375,11 +85401,11 @@
 "info_rdv_sync": "SyncOK 2026-06-20",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lucas",
 "prenom abonne": "Christine",
 "ref_preins": "PFO43181121T5",
 "tel_mobile": "0676426681",
+"vendeur": "lucas wojciechowski",
 "ville": "Saint cesaire"
 },
 "f-922925": {
@@ -85396,11 +85422,11 @@
 "info_rdv_sync": "SyncOK 2026-06-26",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Caillaud",
 "prenom abonne": "Maurice",
 "ref_preins": "PFO43189049YZ",
 "tel_mobile": "0785352232",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-922953": {
@@ -85417,11 +85443,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Cognet",
 "prenom abonne": "Nadia",
 "ref_preins": "PFO43189636BK",
 "tel_mobile": "0665108111",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-922955": {
@@ -85459,11 +85485,11 @@
 "info_rdv_sync": "SyncOK 2026-06-25",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Faizi",
 "prenom abonne": "Amanullah",
 "ref_preins": "PFO43190294SJ",
 "tel_mobile": "0748396757",
+"vendeur": "tania ferreira",
 "ville": "Saintes"
 },
 "f-923071": {
@@ -85543,11 +85569,11 @@
 "info_rdv_sync": "SyncOK 2026-06-26",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Marcelly",
 "prenom abonne": "Linda",
 "ref_preins": "PFO431906154B",
 "tel_mobile": "0644103509",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-923148": {
@@ -85690,11 +85716,11 @@
 "info_rdv_sync": "SyncOK 2026-06-24",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chambaud",
 "prenom abonne": "Michel",
 "ref_preins": "PFO43191989TF",
 "tel_mobile": "0686132109",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-923259": {
@@ -85732,11 +85758,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Saint-julien",
 "prenom abonne": "Damien",
 "ref_preins": "PFO43192074ML",
 "tel_mobile": "0669610748",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-923319": {
@@ -85774,11 +85800,11 @@
 "info_rdv_sync": "SyncOK 2026-06-23",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Fernandez",
 "prenom abonne": "Ludovic",
 "ref_preins": "PFO43192706K5",
 "tel_mobile": "0623402236",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-923372": {
@@ -85879,11 +85905,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Villiers",
 "prenom abonne": "Arlette",
 "ref_preins": "PFO43195824EB",
 "tel_mobile": "0680032293",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-923505": {
@@ -85942,11 +85968,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Thebault-larchier",
 "prenom abonne": "Michel",
 "ref_preins": "PFO43196263C0",
 "tel_mobile": "0662138520",
+"vendeur": "emeryck piet",
 "ville": "Celles sur belle"
 },
 "f-923564": {
@@ -85984,11 +86010,11 @@
 "info_rdv_sync": "SyncOK 2026-06-25",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Thebault-larchier",
 "prenom abonne": "Michel",
 "ref_preins": "PFO43196362QL",
 "tel_mobile": "0662138520",
+"vendeur": "emeryck piet",
 "ville": "Celles sur belle"
 },
 "f-923575": {
@@ -86047,11 +86073,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-aballuteaud",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Giroire",
 "prenom abonne": "Isabelle",
 "ref_preins": "PFO43196710XI",
 "tel_mobile": "0610107390",
+"vendeur": "anais balluteaud",
 "ville": "Celles sur belle"
 },
 "f-923612": {
@@ -86089,11 +86115,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bourbon",
 "prenom abonne": "Marion",
 "ref_preins": "PFO43196787H8",
 "tel_mobile": "0679202990",
+"vendeur": "bradley ziegler",
 "ville": "Saujon"
 },
 "f-923625": {
@@ -86110,11 +86136,11 @@
 "info_rdv_sync": "SyncOK 2026-06-25",
 "login": "vta-aballuteaud",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "GRESSIER",
 "prenom abonne": "Gerard",
 "ref_preins": "PFO43196852UM",
 "tel_mobile": "0688683682",
+"vendeur": "anais balluteaud",
 "ville": "Celles sur belle"
 },
 "f-923660": {
@@ -86173,11 +86199,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Simon",
 "prenom abonne": "Stéphanie",
 "ref_preins": "PFO43197364I7",
 "tel_mobile": "0603905214",
+"vendeur": "wilfried perez",
 "ville": "Saujon"
 },
 "f-923706": {
@@ -86194,11 +86220,11 @@
 "info_rdv_sync": "SyncOK 2026-06-27",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chausse",
 "prenom abonne": "Bernard",
 "ref_preins": "PFO431980498G",
 "tel_mobile": "0615294663",
+"vendeur": "bradley ziegler",
 "ville": "Saujon"
 },
 "f-923709": {
@@ -86236,11 +86262,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gelineau",
 "prenom abonne": "Monique",
 "ref_preins": "PFO43197720JB",
 "tel_mobile": "0675493039",
+"vendeur": "fayez boutouba",
 "ville": "Saujon"
 },
 "f-923748": {
@@ -86299,11 +86325,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Elloualidi",
 "prenom abonne": "Anick",
 "ref_preins": "PFO43198141E6",
 "tel_mobile": "0766421779",
+"vendeur": "emeryck piet",
 "ville": "Celles sur belle"
 },
 "f-923800": {
@@ -86362,11 +86388,11 @@
 "info_rdv_sync": "SyncOK 2026-07-27",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Daniel",
 "prenom abonne": "Fragoli",
 "ref_preins": "PFO43198503M0",
 "tel_mobile": "0632371318",
+"vendeur": "wilfried perez",
 "ville": "Saujon"
 },
 "f-923848": {
@@ -86425,11 +86451,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Escolano",
 "prenom abonne": "Mael",
 "ref_preins": "PFO43198564CI",
 "tel_mobile": "0695554388",
+"vendeur": "fayez boutouba",
 "ville": "Saujon"
 },
 "f-923868": {
@@ -86446,11 +86472,11 @@
 "info_rdv_sync": "RDV 2026-06-26",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Auvray",
 "prenom abonne": "Églantine",
 "ref_preins": "PFO431986274M",
 "tel_mobile": "0686798056",
+"vendeur": "fayez boutouba",
 "ville": "Saujon"
 },
 "f-923881": {
@@ -86488,11 +86514,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Maguier",
 "prenom abonne": "Guy",
 "ref_preins": "PFO43198946YS",
 "tel_mobile": "0687213371",
+"vendeur": "tania ferreira",
 "ville": "Saujon"
 },
 "f-923902": {
@@ -86509,11 +86535,11 @@
 "info_rdv_sync": "SyncOK 2026-06-26",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Palain",
 "prenom abonne": "Christophe",
 "ref_preins": "PFO43199003I2",
 "tel_mobile": "0688682596",
+"vendeur": "wilfried perez",
 "ville": "Saujon"
 },
 "f-923921": {
@@ -86530,11 +86556,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Garnier",
 "prenom abonne": "Carole",
 "ref_preins": "PFO43199172BI",
 "tel_mobile": "0641500792",
+"vendeur": "tania ferreira",
 "ville": "Saujon"
 },
 "f-923922": {
@@ -86551,11 +86577,11 @@
 "info_rdv_sync": "SyncOK 2026-06-27",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Peaudecerf",
 "prenom abonne": "Stéphane / Katia",
 "ref_preins": "PFO43199228DL",
 "tel_mobile": "0683713088",
+"vendeur": "tania ferreira",
 "ville": "Pisany"
 },
 "f-923935": {
@@ -86572,11 +86598,11 @@
 "info_rdv_sync": "SyncOK 2026-06-26",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vandercoilden",
 "prenom abonne": "Rene",
 "ref_preins": "PFO43199386MR",
 "tel_mobile": "0660353080",
+"vendeur": "fayez boutouba",
 "ville": "Saujon"
 },
 "f-923948": {
@@ -86593,11 +86619,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bartkowski",
 "prenom abonne": "Christian",
 "ref_preins": "PFO432007634E",
 "tel_mobile": "0680967560",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-923949": {
@@ -86614,11 +86640,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Penichout",
 "prenom abonne": "Jannie",
 "ref_preins": "PFO43200784LP",
 "tel_mobile": "0613435928",
+"vendeur": "tania ferreira",
 "ville": "Saintes"
 },
 "f-923962": {
@@ -86635,11 +86661,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Baudry",
 "prenom abonne": "Monique",
 "ref_preins": "PFO43201060Y5",
 "tel_mobile": "0615411298",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-923967": {
@@ -86656,11 +86682,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mavouna",
 "prenom abonne": "Zaharia",
 "ref_preins": "PFO43201179OJ",
 "tel_mobile": "0681291780",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-923980": {
@@ -86677,11 +86703,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Robin",
 "prenom abonne": "Véronique",
 "ref_preins": "PFO43201265VE",
 "tel_mobile": "0629904681",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-923985": {
@@ -86698,11 +86724,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Moreau",
 "prenom abonne": "Ludovicw",
 "ref_preins": "PFO43201289PU",
 "tel_mobile": "0663118512",
+"vendeur": "tania ferreira",
 "ville": "Saintes"
 },
 "f-923990": {
@@ -86719,11 +86745,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BLANGIS FREZEAU",
 "prenom abonne": "OLIVIER",
 "ref_preins": "PFO43201363AE",
 "tel_mobile": "0604054220",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-924007": {
@@ -86740,11 +86766,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "OBLANGIS",
 "prenom abonne": "OLIVIER",
 "ref_preins": "PFO43201436X6",
 "tel_mobile": "0604054220",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-924008": {
@@ -86761,11 +86787,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sunarti",
 "prenom abonne": "Sri",
 "ref_preins": "PFO432014949S",
 "tel_mobile": "0606415600",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-924025": {
@@ -86782,11 +86808,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mezigheche",
 "prenom abonne": "Sandra",
 "ref_preins": "PFO43201604W1",
 "tel_mobile": "0634985482",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-924035": {
@@ -86803,11 +86829,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Heidelberger",
 "prenom abonne": "Amelie",
 "ref_preins": "PFO43201681UL",
 "tel_mobile": "0633566039",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-924046": {
@@ -86866,11 +86892,11 @@
 "info_rdv_sync": "RDV 2026-07-07",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Baloge",
 "prenom abonne": "Muriel",
 "ref_preins": "PFO432018763L",
 "tel_mobile": "0624991337",
+"vendeur": "emeryck piet",
 "ville": "Saivres"
 },
 "f-924096": {
@@ -86886,12 +86912,12 @@
 "id_client": "FO37076830",
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
-"mcafee": "MCAFEE(2)",
-"neuf A-AP": "",
+"mcafee": "MCAFEE",
 "nom abonne": "Broussaudier",
 "prenom abonne": "Nadege",
 "ref_preins": "PFO43201983ET",
 "tel_mobile": "0659080718",
+"vendeur": "zakaria ourhalm",
 "ville": "Saintes"
 },
 "f-924114": {
@@ -86908,11 +86934,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Coudreau",
 "prenom abonne": "Eliane",
 "ref_preins": "PFO43202255YF",
 "tel_mobile": "0766112008",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-924117": {
@@ -86929,11 +86955,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Marsaud",
 "prenom abonne": "Karine",
 "ref_preins": "PFO43202184QS",
 "tel_mobile": "0783928162",
+"vendeur": "zakaria ourhalm",
 "ville": "Saintes"
 },
 "f-924120": {
@@ -86971,11 +86997,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BARANGER",
 "prenom abonne": "MARIE JOSEPH",
 "ref_preins": "PFO432024735J",
 "tel_mobile": "0682125528",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-924160": {
@@ -86992,11 +87018,11 @@
 "info_rdv_sync": "SyncOK 2026-06-26",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Treich",
 "prenom abonne": "Marie-pierre",
 "ref_preins": "PFO43202551C5",
 "tel_mobile": "0778646917",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-924195": {
@@ -87013,11 +87039,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vias",
 "prenom abonne": "Bernard",
 "ref_preins": "PFO43202993RK",
 "tel_mobile": "0681465732",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-924208": {
@@ -87034,11 +87060,11 @@
 "info_rdv_sync": "RDV 2026-06-26",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Breitel",
 "prenom abonne": "Stephanie",
 "ref_preins": "PFO43202875YZ",
 "tel_mobile": "0781588334",
+"vendeur": "yanis habbouba",
 "ville": "Saint maixent l ecole"
 },
 "f-924210": {
@@ -87054,12 +87080,12 @@
 "id_client": "FO37077701",
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
-"mcafee": "MCAFEE(2)",
-"neuf A-AP": "",
+"mcafee": "MCAFEE",
 "nom abonne": "Egueyiht",
 "prenom abonne": "Kennedy",
 "ref_preins": "PFO43202936P5",
 "tel_mobile": "0651637208",
+"vendeur": "zakaria ourhalm",
 "ville": "Saintes"
 },
 "f-924214": {
@@ -87076,11 +87102,11 @@
 "info_rdv_sync": "SyncOK 2026-06-26",
 "login": "vta-aballuteaud",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Copin",
 "prenom abonne": "Adelina",
 "ref_preins": "PFO432029183Q",
 "tel_mobile": "0773013579",
+"vendeur": "anais balluteaud",
 "ville": "Saint maixent l ecole"
 },
 "f-924223": {
@@ -87097,11 +87123,11 @@
 "info_rdv_sync": "SyncOK 2026-06-27",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Rousseau",
 "prenom abonne": "Pénélope",
 "ref_preins": "PFO43203054IY",
 "tel_mobile": "0675402716",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-924234": {
@@ -87118,11 +87144,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mounier",
 "prenom abonne": "Gaétan",
 "ref_preins": "PFO43203216TT",
 "tel_mobile": "0608555902",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-924237": {
@@ -87139,11 +87165,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Leclerc",
 "prenom abonne": "Jordan",
 "ref_preins": "PFO43203189HJ",
 "tel_mobile": "0675133670",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-924239": {
@@ -87181,11 +87207,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Traore",
 "prenom abonne": "Oumar",
 "ref_preins": "PFO43203418PN",
 "tel_mobile": "0609766834",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-924262": {
@@ -87202,11 +87228,11 @@
 "info_rdv_sync": "",
 "login": "vta-aballuteaud",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "ASTRAUDO",
 "prenom abonne": "Marie Annick",
 "ref_preins": "PFO432035215M",
 "tel_mobile": "0620722631",
+"vendeur": "anais balluteaud",
 "ville": "Saint maixent l ecole"
 },
 "f-924278": {
@@ -87223,11 +87249,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MABELLY",
 "prenom abonne": "SÉBASTIEN",
 "ref_preins": "PFO43203857HG",
 "tel_mobile": "0780654036",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-924293": {
@@ -87265,11 +87291,11 @@
 "info_rdv_sync": "",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Rabotteau",
 "prenom abonne": "Sophie",
 "ref_preins": "PFO432039696A",
 "tel_mobile": "0680904329",
+"vendeur": "anissa dria",
 "ville": "Saintes"
 },
 "f-924323": {
@@ -87286,11 +87312,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ravet-drapeau",
 "prenom abonne": "Johsette",
 "ref_preins": "PFO43204102VH",
 "tel_mobile": "0777881830",
+"vendeur": "zakaria ourhalm",
 "ville": "Saintes"
 },
 "f-924329": {
@@ -87307,11 +87333,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lamani",
 "prenom abonne": "Lahoucine",
 "ref_preins": "PFO4320414792",
 "tel_mobile": "0777166494",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-924334": {
@@ -87328,11 +87354,11 @@
 "info_rdv_sync": "SyncOK 2026-07-02",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Dorbane",
 "prenom abonne": "Mourad",
 "ref_preins": "PFO43204191L3",
 "tel_mobile": "0641399303",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-924373": {
@@ -87349,11 +87375,11 @@
 "info_rdv_sync": "SyncOK 2026-06-26",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hervaud",
 "prenom abonne": "Nadine",
 "ref_preins": "PFO43204459PP",
 "tel_mobile": "0672222099",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-924457": {
@@ -87412,11 +87438,11 @@
 "info_rdv_sync": "SyncOK 2026-07-03",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Boissel",
 "prenom abonne": "Agnès",
 "ref_preins": "PFO432067210X",
 "tel_mobile": "0607519025",
+"vendeur": "anissa dria",
 "ville": "Saintes"
 },
 "f-924504": {
@@ -87475,11 +87501,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Michaud",
 "prenom abonne": "Didier",
 "ref_preins": "PFO4320689815",
 "tel_mobile": "0683924410",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-924518": {
@@ -87496,11 +87522,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Michaud",
 "prenom abonne": "Didier",
 "ref_preins": "PFO43206958QD",
 "tel_mobile": "0683924410",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-924519": {
@@ -87517,11 +87543,11 @@
 "info_rdv_sync": "RDV 2026-06-30",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Cendre",
 "prenom abonne": "Beatrice",
 "ref_preins": "PFO43206991OR",
 "tel_mobile": "0783272706",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-924527": {
@@ -87601,11 +87627,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Pascale",
 "prenom abonne": "Marie-pierre",
 "ref_preins": "PFO43207270LN",
 "tel_mobile": "0606466908",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-924561": {
@@ -87664,11 +87690,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Roussalino",
 "prenom abonne": "Gina",
 "ref_preins": "PFO43207484YJ",
 "tel_mobile": "0604457449",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-924602": {
@@ -87769,11 +87795,11 @@
 "info_rdv_sync": "SyncOK 2026-06-27",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Genty",
 "prenom abonne": "Damien",
 "ref_preins": "PFO432079409L",
 "tel_mobile": "0613472312",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-924634": {
@@ -87958,11 +87984,11 @@
 "info_rdv_sync": "SyncOK 2026-06-27",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Huguet",
 "prenom abonne": "Isabelle",
 "ref_preins": "PFO43208734FP",
 "tel_mobile": "0637934588",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-924741": {
@@ -88021,11 +88047,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Maameri",
 "prenom abonne": "Saliha",
 "ref_preins": "PFO43209031XP",
 "tel_mobile": "0629531909",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-924764": {
@@ -88063,11 +88089,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Jousseaume",
 "prenom abonne": "Kalie",
 "ref_preins": "PFO43209244PN",
 "tel_mobile": "0671340620",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-924769": {
@@ -88147,11 +88173,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Giraud",
 "prenom abonne": "Frédéric",
 "ref_preins": "PFO4320946941",
 "tel_mobile": "0782113604",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-924816": {
@@ -88168,11 +88194,11 @@
 "info_rdv_sync": "RDV 2026-06-29",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Henno",
 "prenom abonne": "Loic",
 "ref_preins": "PFO43210753PS",
 "tel_mobile": "0610474722",
+"vendeur": "bradley ziegler",
 "ville": "Nancras"
 },
 "f-924845": {
@@ -88189,11 +88215,11 @@
 "info_rdv_sync": "SyncOK 2026-06-27",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Portier",
 "prenom abonne": "Stephanie",
 "ref_preins": "PFO432110767Y",
 "tel_mobile": "0675331102",
+"vendeur": "bradley ziegler",
 "ville": "Nancras"
 },
 "f-924866": {
@@ -88210,11 +88236,11 @@
 "info_rdv_sync": "SyncOK 2026-07-01",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Caron",
 "prenom abonne": "Valerie",
 "ref_preins": "PFO43211285PX",
 "tel_mobile": "0663958726",
+"vendeur": "sana mamah",
 "ville": "Pont l abbe d arnoult"
 },
 "f-924887": {
@@ -88231,11 +88257,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ramaugé",
 "prenom abonne": "Ninon",
 "ref_preins": "PFO43211472RI",
 "tel_mobile": "0788586732",
+"vendeur": "fayez boutouba",
 "ville": "Pont l abbe d arnoult"
 },
 "f-924896": {
@@ -88336,11 +88362,11 @@
 "info_rdv_sync": "SyncOK 2026-07-28",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Demery",
 "prenom abonne": "Herve",
 "ref_preins": "PFO43212054LV",
 "tel_mobile": "0622151041",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-924982": {
@@ -88378,11 +88404,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gadron",
 "prenom abonne": "Sylvie",
 "ref_preins": "PFO43212276FU",
 "tel_mobile": "0686189668",
+"vendeur": "bradley ziegler",
 "ville": "Nancras"
 },
 "f-924992": {
@@ -88420,11 +88446,11 @@
 "info_rdv_sync": "SyncOK 2026-07-20",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bicchi",
 "prenom abonne": "Michel",
 "ref_preins": "PFO43212447DS",
 "tel_mobile": "0620647116",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-925015": {
@@ -88483,11 +88509,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mithonneau",
 "prenom abonne": "Joelle",
 "ref_preins": "PFO43212843BV",
 "tel_mobile": "0675724691",
+"vendeur": "fayez boutouba",
 "ville": "Pont l abbe d arnoult"
 },
 "f-925052": {
@@ -88504,11 +88530,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Dussac",
 "prenom abonne": "Yoann",
 "ref_preins": "PFO43213022W1",
 "tel_mobile": "0684762850",
+"vendeur": "fayez boutouba",
 "ville": "Pont l abbe d arnoult"
 },
 "f-925057": {
@@ -88630,11 +88656,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Merle",
 "prenom abonne": "Françoise",
 "ref_preins": "PFO4321334981",
 "tel_mobile": "0612848565",
+"vendeur": "sana mamah",
 "ville": "Pont l abbe d arnoult"
 },
 "f-925100": {
@@ -88693,11 +88719,11 @@
 "info_rdv_sync": "SyncOK 2026-06-26",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gartner",
 "prenom abonne": "Bernard",
 "ref_preins": "PFO43213543Z8",
 "tel_mobile": "0780580658",
+"vendeur": "wilfried perez",
 "ville": "Saintes"
 },
 "f-925117": {
@@ -88714,11 +88740,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Duconseil",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO43213600SG",
 "tel_mobile": "0630314160",
+"vendeur": "fayez boutouba",
 "ville": "Pont l abbe d arnoult"
 },
 "f-925130": {
@@ -88756,11 +88782,11 @@
 "info_rdv_sync": "SyncOK 2026-07-11",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Juglas",
 "prenom abonne": "Johnny",
 "ref_preins": "PFO43213834C6",
 "tel_mobile": "0761212298",
+"vendeur": "bradley ziegler",
 "ville": "Nancras"
 },
 "f-925134": {
@@ -88798,11 +88824,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Madi",
 "prenom abonne": "Abdallah",
 "ref_preins": "PFO43220592JB",
 "tel_mobile": "0784771784",
+"vendeur": "tania ferreira",
 "ville": "Bressuire"
 },
 "f-925216": {
@@ -88840,11 +88866,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Guillet",
 "prenom abonne": "Madeleine",
 "ref_preins": "PFO43221045T1",
 "tel_mobile": "0674940285",
+"vendeur": "bradley ziegler",
 "ville": "Thouars"
 },
 "f-925258": {
@@ -88882,11 +88908,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mohamed",
 "prenom abonne": "Ramla",
 "ref_preins": "PFO4322108336",
 "tel_mobile": "0773294324",
+"vendeur": "fayez boutouba",
 "ville": "Bressuire"
 },
 "f-925279": {
@@ -88924,11 +88950,11 @@
 "info_rdv_sync": "SyncOK 2026-07-01",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Noulette",
 "prenom abonne": "Gladys",
 "ref_preins": "PFO43221574AH",
 "tel_mobile": "0760777882",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-925307": {
@@ -88945,11 +88971,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Herault",
 "prenom abonne": "Paul",
 "ref_preins": "PFO43221716S7",
 "tel_mobile": "0683908328",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-925315": {
@@ -88966,11 +88992,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Embert",
 "prenom abonne": "Alain",
 "ref_preins": "PFO43221781HQ",
 "tel_mobile": "0782408353",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-925316": {
@@ -88987,11 +89013,11 @@
 "info_rdv_sync": "RDV 2026-07-01",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Heriveau",
 "prenom abonne": "Rémi",
 "ref_preins": "PFO43221702T7",
 "tel_mobile": "0645283017",
+"vendeur": "anissa dria",
 "ville": "Thouars"
 },
 "f-925324": {
@@ -89008,11 +89034,11 @@
 "info_rdv_sync": "SyncOK 2026-07-10",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Carfantan",
 "prenom abonne": "Adie",
 "ref_preins": "PFO43221762JY",
 "tel_mobile": "0618374447",
+"vendeur": "tania ferreira",
 "ville": "Bressuire"
 },
 "f-925346": {
@@ -89029,11 +89055,11 @@
 "info_rdv_sync": "SyncOK 2026-07-04",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chalvignac",
 "prenom abonne": "Martine",
 "ref_preins": "PFO4322207752",
 "tel_mobile": "0777046087",
+"vendeur": "wilfried perez",
 "ville": "Thouars"
 },
 "f-925376": {
@@ -89050,11 +89076,11 @@
 "info_rdv_sync": "SyncOK 2026-07-01",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "OUSSAGHIRI",
 "prenom abonne": "Marie-Gabrielle",
 "ref_preins": "PFO43222287P6",
 "tel_mobile": "0695663352",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-925392": {
@@ -89071,11 +89097,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Girault",
 "prenom abonne": "Michel",
 "ref_preins": "PFO43222387Z7",
 "tel_mobile": "0781580898",
+"vendeur": "fayez boutouba",
 "ville": "Bressuire"
 },
 "f-925417": {
@@ -89092,11 +89118,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Michel",
 "prenom abonne": "Girault",
 "ref_preins": "PFO43222528OY",
 "tel_mobile": "0766785160",
+"vendeur": "fayez boutouba",
 "ville": "Bressuire"
 },
 "f-925444": {
@@ -89113,11 +89139,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Durassier",
 "prenom abonne": "Sophie",
 "ref_preins": "PFO43222843WO",
 "tel_mobile": "0746414615",
+"vendeur": "bradley ziegler",
 "ville": "Thouars"
 },
 "f-925457": {
@@ -89134,11 +89160,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Amiel",
 "prenom abonne": "Ambre",
 "ref_preins": "PFO43222929UY",
 "tel_mobile": "0678575347",
+"vendeur": "bradley ziegler",
 "ville": "Thouars"
 },
 "f-925462": {
@@ -89155,11 +89181,11 @@
 "info_rdv_sync": "RDV 2026-07-07",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MARCHE",
 "prenom abonne": "LOUISETTE",
 "ref_preins": "PFO43223058XI",
 "tel_mobile": "0746055027",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-925463": {
@@ -89176,11 +89202,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bouarif",
 "prenom abonne": "Karima",
 "ref_preins": "PFO432229567J",
 "tel_mobile": "0677959090",
+"vendeur": "sana mamah",
 "ville": "Bressuire"
 },
 "f-925465": {
@@ -89197,11 +89223,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kuper",
 "prenom abonne": "Irena",
 "ref_preins": "PFO432229916Q",
 "tel_mobile": "0769056765",
+"vendeur": "bradley ziegler",
 "ville": "Niort"
 },
 "f-925474": {
@@ -89218,11 +89244,11 @@
 "info_rdv_sync": "RDV 2026-07-11",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ivele",
 "prenom abonne": "Ismael",
 "ref_preins": "PFO43223136ZX",
 "tel_mobile": "0773074349",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-925503": {
@@ -89239,11 +89265,11 @@
 "info_rdv_sync": "SyncOK 2026-07-01",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kamaria madi",
 "prenom abonne": "Hachmia",
 "ref_preins": "PFO432233846O",
 "tel_mobile": "0648832586",
+"vendeur": "wilfried perez",
 "ville": "Thouars"
 },
 "f-925507": {
@@ -89260,11 +89286,11 @@
 "info_rdv_sync": "SyncOK 2026-07-02",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Merceron",
 "prenom abonne": "Nadia",
 "ref_preins": "PFO43223425XN",
 "tel_mobile": "0780417431",
+"vendeur": "bradley ziegler",
 "ville": "Thouars"
 },
 "f-925543": {
@@ -89302,11 +89328,11 @@
 "info_rdv_sync": "SyncOK 2026-07-18",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "RIVET",
 "prenom abonne": "mireille",
 "ref_preins": "PFO43223783R5",
 "tel_mobile": "0622642542",
+"vendeur": "tania ferreira",
 "ville": "Bressuire"
 },
 "f-925561": {
@@ -89344,11 +89370,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Jourdan",
 "prenom abonne": "Claude",
 "ref_preins": "PFO43223933N8",
 "tel_mobile": "0647383941",
+"vendeur": "wilfried perez",
 "ville": "Thouars"
 },
 "f-925571": {
@@ -89365,11 +89391,11 @@
 "info_rdv_sync": "SyncOK 2026-06-29",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BROCHETON",
 "prenom abonne": "Gabriel",
 "ref_preins": "PFO4322410128",
 "tel_mobile": "0695620093",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-925572": {
@@ -89386,11 +89412,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gonnerd",
 "prenom abonne": "Alexandra",
 "ref_preins": "PFO43224019C7",
 "tel_mobile": "0667327861",
+"vendeur": "anissa dria",
 "ville": "Thouars"
 },
 "f-925574": {
@@ -89407,11 +89433,11 @@
 "info_rdv_sync": "SyncOK 2026-07-02",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Taveira Rodrigues",
 "prenom abonne": "Paola",
 "ref_preins": "PFO43224102HU",
 "tel_mobile": "0650199398",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-925586": {
@@ -89428,11 +89454,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lamberton",
 "prenom abonne": "Frédéric",
 "ref_preins": "PFO43224225IL",
 "tel_mobile": "0610765067",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-925606": {
@@ -89449,11 +89475,11 @@
 "info_rdv_sync": "SyncOK 2026-06-30",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "hussain",
 "prenom abonne": "Mohamad",
 "ref_preins": "PFO43224446QS",
 "tel_mobile": "0773802730",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-925672": {
@@ -92074,11 +92100,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le Jeune",
 "prenom abonne": "Thérèse",
 "ref_preins": "PFO432526981U",
 "tel_mobile": "0622753957",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-927434": {
@@ -92137,11 +92163,11 @@
 "info_rdv_sync": "SyncOK 2026-07-07",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le roux",
 "prenom abonne": "Riwan",
 "ref_preins": "PFO43252878HL",
 "tel_mobile": "0780536433",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-927485": {
@@ -92200,11 +92226,11 @@
 "info_rdv_sync": "SyncOK 2026-07-06",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Salvi",
 "prenom abonne": "Laetitia",
 "ref_preins": "PFO43253416MM",
 "tel_mobile": "0784661749",
+"vendeur": "lucas wojciechowski",
 "ville": "Niort"
 },
 "f-927505": {
@@ -92221,11 +92247,11 @@
 "info_rdv_sync": "SyncOK 2026-07-07",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Crenn",
 "prenom abonne": "Morgane",
 "ref_preins": "PFO43253449O8",
 "tel_mobile": "0632965560",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-927514": {
@@ -92263,11 +92289,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "CHRISTOPHE",
 "prenom abonne": "KATHLEEN",
 "ref_preins": "PFO432537768A",
 "tel_mobile": "0656721599",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-927565": {
@@ -92284,11 +92310,11 @@
 "info_rdv_sync": "SyncOK 2026-07-07",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "VALÈRE",
 "prenom abonne": "Karine",
 "ref_preins": "PFO43254033VH",
 "tel_mobile": "0618430978",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-927568": {
@@ -92305,11 +92331,11 @@
 "info_rdv_sync": "SyncOK 2026-07-10",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sanchez",
 "prenom abonne": "Guy",
 "ref_preins": "PFO43254042KD",
 "tel_mobile": "0785181454",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-927576": {
@@ -92326,11 +92352,11 @@
 "info_rdv_sync": "SyncOK 2026-07-06",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Diallo",
 "prenom abonne": "Alseny",
 "ref_preins": "PFO432542842M",
 "tel_mobile": "0609923455",
+"vendeur": "lucas wojciechowski",
 "ville": "Niort"
 },
 "f-927578": {
@@ -92410,11 +92436,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Meyer",
 "prenom abonne": "David",
 "ref_preins": "PFO43254452UK",
 "tel_mobile": "0635972708",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-927628": {
@@ -92431,11 +92457,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Tetuaearo",
 "prenom abonne": "Lanie",
 "ref_preins": "PFO43254704RJ",
 "tel_mobile": "0611287059",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-927640": {
@@ -92473,11 +92499,11 @@
 "info_rdv_sync": "RDV 2026-07-17",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "SERIGNE FALLOU",
 "prenom abonne": "BAR",
 "ref_preins": "PFO43254913P5",
 "tel_mobile": "0698887900",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-927662": {
@@ -92494,11 +92520,11 @@
 "info_rdv_sync": "SyncOK 2026-07-07",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hirigaray",
 "prenom abonne": "Ludivine",
 "ref_preins": "PFO43255116WE",
 "tel_mobile": "0631484707",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-927663": {
@@ -92578,11 +92604,11 @@
 "info_rdv_sync": "RDV 2026-07-17",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "ABDERASOL SALEH",
 "prenom abonne": "Hafiz",
 "ref_preins": "PFO4325527233",
 "tel_mobile": "0745027108",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-927701": {
@@ -92599,11 +92625,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Leveau",
 "prenom abonne": "Jean pierre",
 "ref_preins": "PFO43255510V3",
 "tel_mobile": "0775847214",
+"vendeur": "lucas wojciechowski",
 "ville": "Niort"
 },
 "f-927704": {
@@ -92620,11 +92646,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Maryam",
 "prenom abonne": "Fadimatou",
 "ref_preins": "PFO43255603XO",
 "tel_mobile": "0758809718",
+"vendeur": "lucas wojciechowski",
 "ville": "Niort"
 },
 "f-927706": {
@@ -92662,11 +92688,11 @@
 "info_rdv_sync": "SyncOK 2026-07-04",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Delattre",
 "prenom abonne": "Anthony",
 "ref_preins": "PFO43255636EF",
 "tel_mobile": "0648702626",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-927710": {
@@ -92683,11 +92709,11 @@
 "info_rdv_sync": "RDV 2026-07-30",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Coulibaly",
 "prenom abonne": "issiaka",
 "ref_preins": "PFO43255643OC",
 "tel_mobile": "0610074505",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-927712": {
@@ -92704,11 +92730,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Blagnon",
 "prenom abonne": "Elisa",
 "ref_preins": "PFO43255777YM",
 "tel_mobile": "0760788163",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-927759": {
@@ -92725,11 +92751,11 @@
 "info_rdv_sync": "SyncOK 2026-07-16",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Duval",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO432563754F",
 "tel_mobile": "0681941709",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-927767": {
@@ -92746,11 +92772,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Cadieu",
 "prenom abonne": "Loane",
 "ref_preins": "PFO432565748R",
 "tel_mobile": "0617503458",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-927768": {
@@ -92767,11 +92793,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Dourilin",
 "prenom abonne": "Sandrine",
 "ref_preins": "PFO43256636J4",
 "tel_mobile": "0628181935",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-927769": {
@@ -92788,11 +92814,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Madi",
 "prenom abonne": "Elmouhamadi",
 "ref_preins": "PFO43256684HH",
 "tel_mobile": "0608786720",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-927783": {
@@ -92809,11 +92835,11 @@
 "info_rdv_sync": "SyncOK 2026-07-06",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ramnoux",
 "prenom abonne": "Axel",
 "ref_preins": "PFO43258168FY",
 "tel_mobile": "0684083577",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-927815": {
@@ -92851,11 +92877,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Abasse",
 "prenom abonne": "Asslamati",
 "ref_preins": "PFO43258853NG",
 "tel_mobile": "0783859105",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-927843": {
@@ -92872,11 +92898,11 @@
 "info_rdv_sync": "SyncOK 2026-07-03",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bleunven",
 "prenom abonne": "Jean paul",
 "ref_preins": "PFO43258857DW",
 "tel_mobile": "0662581800",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-927846": {
@@ -92893,11 +92919,11 @@
 "info_rdv_sync": "SyncOK 2026-07-11",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Fontaine",
 "prenom abonne": "Laurence",
 "ref_preins": "PFO43258996XG",
 "tel_mobile": "0760033830",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-927875": {
@@ -92914,11 +92940,11 @@
 "info_rdv_sync": "SyncOK 2026-07-16",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Langlais",
 "prenom abonne": "Marie-Laure",
 "ref_preins": "PFO43259126SE",
 "tel_mobile": "0761584109",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-927876": {
@@ -93019,11 +93045,11 @@
 "info_rdv_sync": "SyncOK 2026-07-03",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Claudet",
 "prenom abonne": "Stephanie",
 "ref_preins": "PFO43259515XW",
 "tel_mobile": "0648675625",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-927928": {
@@ -93040,11 +93066,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kerdraon",
 "prenom abonne": "Joël",
 "ref_preins": "PFO43259679OJ",
 "tel_mobile": "0660744997",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-927938": {
@@ -93166,11 +93192,11 @@
 "info_rdv_sync": "RDV 2026-08-06",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sollier",
 "prenom abonne": "Loic",
 "ref_preins": "PFO43260314Y0",
 "tel_mobile": "0672873564",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-928012": {
@@ -93229,11 +93255,11 @@
 "info_rdv_sync": "SyncOK 2026-07-16",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Siou",
 "prenom abonne": "Bruno",
 "ref_preins": "PFO43260491AW",
 "tel_mobile": "0658065254",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-928029": {
@@ -93355,11 +93381,11 @@
 "info_rdv_sync": "SyncOK 2026-07-22",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Caersimon",
 "prenom abonne": "Odette",
 "ref_preins": "PFO43260921BA",
 "tel_mobile": "0602281279",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-928068": {
@@ -93481,11 +93507,11 @@
 "info_rdv_sync": "SyncOK 2026-07-07",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Latour",
 "prenom abonne": "Guillaume",
 "ref_preins": "PFO43261556V8",
 "tel_mobile": "0695671196",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-928168": {
@@ -93523,11 +93549,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Dutreilh",
 "prenom abonne": "Nicolas",
 "ref_preins": "PFO43261856YH",
 "tel_mobile": "0664948370",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-928189": {
@@ -93544,11 +93570,11 @@
 "info_rdv_sync": "SyncOK 2026-07-06",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Tranchard",
 "prenom abonne": "Sylva",
 "ref_preins": "PFO43261835KV",
 "tel_mobile": "0612719254",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-928200": {
@@ -93586,11 +93612,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Poinsignon",
 "prenom abonne": "Philippine",
 "ref_preins": "PFO43262361A8",
 "tel_mobile": "0651010463",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-928283": {
@@ -93607,11 +93633,11 @@
 "info_rdv_sync": "SyncOK 2026-07-06",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Odorico",
 "prenom abonne": "Nicolas",
 "ref_preins": "PFO43265310JP",
 "tel_mobile": "0652928527",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-928287": {
@@ -93628,11 +93654,11 @@
 "info_rdv_sync": "SyncOK 2026-07-16",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ivanauskas",
 "prenom abonne": "Yuriy",
 "ref_preins": "PFO43265400SV",
 "tel_mobile": "0602363417",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-928303": {
@@ -93754,11 +93780,11 @@
 "info_rdv_sync": "SyncOK 2026-07-11",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Seznec",
 "prenom abonne": "Nadège",
 "ref_preins": "PFO43266211D6",
 "tel_mobile": "0658514532",
+"vendeur": "yanis habbouba",
 "ville": "Brest"
 },
 "f-928390": {
@@ -93775,11 +93801,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Pedro custodio",
 "prenom abonne": "Maria de lurdes",
 "ref_preins": "PFO43266306ZG",
 "tel_mobile": "0749675074",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-928407": {
@@ -93838,11 +93864,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Erhard",
 "prenom abonne": "Mike",
 "ref_preins": "PFO43266800S0",
 "tel_mobile": "0665922079",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-928498": {
@@ -93922,11 +93948,11 @@
 "info_rdv_sync": "SyncOK 2026-07-15",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le roux",
 "prenom abonne": "Michele Alain",
 "ref_preins": "PFO43268147AG",
 "tel_mobile": "0749058790",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-928552": {
@@ -93964,11 +93990,11 @@
 "info_rdv_sync": "SyncOK 2026-07-10",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Siche",
 "prenom abonne": "Patrice",
 "ref_preins": "PFO43268220U5",
 "tel_mobile": "0662281097",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-928563": {
@@ -93985,11 +94011,11 @@
 "info_rdv_sync": "RDV 2026-07-17",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Demaiziere",
 "prenom abonne": "Nicolas",
 "ref_preins": "PFO432682919Z",
 "tel_mobile": "0628350349",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-928566": {
@@ -94006,11 +94032,11 @@
 "info_rdv_sync": "SyncOK 2026-07-10",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Doré",
 "prenom abonne": "William",
 "ref_preins": "PFO43268371DB",
 "tel_mobile": "0695657465",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-928579": {
@@ -94027,11 +94053,11 @@
 "info_rdv_sync": "SyncOK 2026-07-11",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Favé",
 "prenom abonne": "Camille",
 "ref_preins": "PFO43268444R8",
 "tel_mobile": "0612213876",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-928587": {
@@ -94069,11 +94095,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Riand",
 "prenom abonne": "Samael",
 "ref_preins": "PFO4326873773",
 "tel_mobile": "0632681556",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-928622": {
@@ -94090,11 +94116,11 @@
 "info_rdv_sync": "SyncOK 2026-07-21",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hericourt",
 "prenom abonne": "Mathieu",
 "ref_preins": "PFO43268879AK",
 "tel_mobile": "0676021414",
+"vendeur": "yanis habbouba",
 "ville": "Brest"
 },
 "f-928633": {
@@ -94111,11 +94137,11 @@
 "info_rdv_sync": "SyncOK 2026-07-11",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lovatt / Julien",
 "prenom abonne": "Alyssa / Louka",
 "ref_preins": "PFO43268989VM",
 "tel_mobile": "0780616729",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-928639": {
@@ -94132,11 +94158,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bouraya",
 "prenom abonne": "Aldjia",
 "ref_preins": "PFO4326912338",
 "tel_mobile": "0781423312",
+"vendeur": "yanis habbouba",
 "ville": "Brest"
 },
 "f-928723": {
@@ -94174,11 +94200,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Braun",
 "prenom abonne": "Raymonde",
 "ref_preins": "PFO432719851U",
 "tel_mobile": "0760157975",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-928726": {
@@ -94300,11 +94326,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Muzelec",
 "prenom abonne": "Laurene",
 "ref_preins": "PFO43272726S0",
 "tel_mobile": "0633383997",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-928832": {
@@ -94384,11 +94410,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lotrous",
 "prenom abonne": "Marcel",
 "ref_preins": "PFO4327326017",
 "tel_mobile": "0624384863",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-928876": {
@@ -94447,11 +94473,11 @@
 "info_rdv_sync": "SyncOK 2026-07-06",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chiron",
 "prenom abonne": "Isabelle",
 "ref_preins": "PFO43273373P3",
 "tel_mobile": "0648702905",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-928906": {
@@ -94531,11 +94557,11 @@
 "info_rdv_sync": "RDV 2026-07-13",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bodenes-Leon",
 "prenom abonne": "Noemie",
 "ref_preins": "PFO43273656T1",
 "tel_mobile": "0783360411",
+"vendeur": "yanis habbouba",
 "ville": "Brest"
 },
 "f-928951": {
@@ -94573,11 +94599,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Delafosse",
 "prenom abonne": "Alain",
 "ref_preins": "PFO43273956J7",
 "tel_mobile": "0622895921",
+"vendeur": "anissa dria",
 "ville": "Brest"
 },
 "f-928974": {
@@ -94615,11 +94641,11 @@
 "info_rdv_sync": "SyncOK 2026-07-16",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Meudec",
 "prenom abonne": "Jean-François",
 "ref_preins": "PFO43274408RW",
 "tel_mobile": "0660163476",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-928986": {
@@ -94636,11 +94662,11 @@
 "info_rdv_sync": "SyncOK 2026-07-16",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Djoumoi",
 "prenom abonne": "Bidjarati",
 "ref_preins": "PFO43274400LQ",
 "tel_mobile": "0767306638",
+"vendeur": "yanis habbouba",
 "ville": "Brest"
 },
 "f-928991": {
@@ -94699,11 +94725,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Beljuli",
 "prenom abonne": "Ferdez",
 "ref_preins": "PFO43274847LK",
 "tel_mobile": "0604185435",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-929028": {
@@ -94762,11 +94788,11 @@
 "info_rdv_sync": "SyncOK 2026-07-08",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le Gall",
 "prenom abonne": "Muriel",
 "ref_preins": "PFO43275096T9",
 "tel_mobile": "0624659349",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-929059": {
@@ -94783,11 +94809,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Meyer",
 "prenom abonne": "Marie claire",
 "ref_preins": "PFO432752712D",
 "tel_mobile": "0616457962",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-929069": {
@@ -94804,11 +94830,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Da silva",
 "prenom abonne": "Mélanie",
 "ref_preins": "PFO43275500J5",
 "tel_mobile": "0673674680",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-929076": {
@@ -94825,11 +94851,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lachuer",
 "prenom abonne": "Andrée",
 "ref_preins": "PFO43275609FN",
 "tel_mobile": "0666949675",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-929092": {
@@ -94846,11 +94872,11 @@
 "info_rdv_sync": "SyncOK 2026-07-15",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kiteau",
 "prenom abonne": "William",
 "ref_preins": "PFO43277415KL",
 "tel_mobile": "0775846857",
+"vendeur": "yanis habbouba",
 "ville": "Brest"
 },
 "f-929100": {
@@ -94888,11 +94914,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "L'hostis",
 "prenom abonne": "Isabelle",
 "ref_preins": "PFO43277675U6",
 "tel_mobile": "0612927960",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-929108": {
@@ -94930,11 +94956,11 @@
 "info_rdv_sync": "SyncOK 2026-07-24",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mela",
 "prenom abonne": "Boucoeurs",
 "ref_preins": "PFO43278064LR",
 "tel_mobile": "0743552298",
+"vendeur": "yanis habbouba",
 "ville": "Brest"
 },
 "f-929126": {
@@ -95014,11 +95040,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le Meur",
 "prenom abonne": "Christine",
 "ref_preins": "PFO4327840112",
 "tel_mobile": "0687260599",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-929140": {
@@ -95035,11 +95061,11 @@
 "info_rdv_sync": "RDV 2026-07-15",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le bihan",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO43278431DN",
 "tel_mobile": "0776158072",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-929144": {
@@ -95140,11 +95166,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Aubert",
 "prenom abonne": "Paulette",
 "ref_preins": "PFO432789287H",
 "tel_mobile": "0676538536",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-929199": {
@@ -95224,11 +95250,11 @@
 "info_rdv_sync": "RDV 2026-08-10",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Graziano",
 "prenom abonne": "Marie louise",
 "ref_preins": "PFO43279261VJ",
 "tel_mobile": "0611682172",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-929235": {
@@ -95266,11 +95292,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hamadi",
 "prenom abonne": "Darday",
 "ref_preins": "PFO43279442KZ",
 "tel_mobile": "0761753610",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-929240": {
@@ -95329,11 +95355,11 @@
 "info_rdv_sync": "SyncOK 2026-07-09",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vilar",
 "prenom abonne": "Jean-philippe",
 "ref_preins": "PFO43279830M2",
 "tel_mobile": "0698953666",
+"vendeur": "emeryck piet",
 "ville": "Brest"
 },
 "f-929264": {
@@ -95350,11 +95376,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Tercherel",
 "prenom abonne": "Josette",
 "ref_preins": "PFO4327988242",
 "tel_mobile": "0603873059",
+"vendeur": "bradley ziegler",
 "ville": "Brest"
 },
 "f-929266": {
@@ -95371,11 +95397,11 @@
 "info_rdv_sync": "SyncOK 2026-07-18",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vadamale",
 "prenom abonne": "Kency",
 "ref_preins": "PFO432799592X",
 "tel_mobile": "0602655093",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-929269": {
@@ -95581,11 +95607,11 @@
 "info_rdv_sync": "SyncOK 2026-07-18",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Terrassier",
 "prenom abonne": "Delphine",
 "ref_preins": "PFO43281083GH",
 "tel_mobile": "0613456978",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-929321": {
@@ -95644,11 +95670,11 @@
 "info_rdv_sync": "SyncOK 2026-07-15",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Neveu",
 "prenom abonne": "Michel",
 "ref_preins": "PFO43281242OT",
 "tel_mobile": "0619029604",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-929339": {
@@ -95938,11 +95964,11 @@
 "info_rdv_sync": "SyncOK 2026-07-15",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Cecilie",
 "prenom abonne": "Therese",
 "ref_preins": "PFO43290258GQ",
 "tel_mobile": "0651112322",
+"vendeur": "fayez boutouba",
 "ville": "Bressuire"
 },
 "f-929462": {
@@ -96652,11 +96678,11 @@
 "info_rdv_sync": "SyncOK 2026-07-13",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Said",
 "prenom abonne": "Assiaty",
 "ref_preins": "PFO43294179DX",
 "tel_mobile": "0780617670",
+"vendeur": "fayez boutouba",
 "ville": "Bressuire"
 },
 "f-929787": {
@@ -96673,11 +96699,11 @@
 "info_rdv_sync": "RDV 2026-07-23",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hérault",
 "prenom abonne": "Marie-paule",
 "ref_preins": "PFO43294221WL",
 "tel_mobile": "0670811982",
+"vendeur": "bradley ziegler",
 "ville": "Mauleon"
 },
 "f-929791": {
@@ -96736,11 +96762,11 @@
 "info_rdv_sync": "RDV 2026-07-23",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "ERDENEBILEG",
 "prenom abonne": "Munkhtuya",
 "ref_preins": "PFO432972116K",
 "tel_mobile": "0604027632",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-929977": {
@@ -96757,11 +96783,11 @@
 "info_rdv_sync": "SyncOK 2026-07-15",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "GAY",
 "prenom abonne": "Alexis",
 "ref_preins": "PFO43297447C6",
 "tel_mobile": "0768808234",
+"vendeur": "matteo rendy",
 "ville": "Niort"
 },
 "f-930011": {
@@ -96820,11 +96846,11 @@
 "info_rdv_sync": "SyncOK 2026-07-27",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Berthonnaud",
 "prenom abonne": "Stéphane",
 "ref_preins": "PFO43297867IN",
 "tel_mobile": "0618341775",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-930054": {
@@ -96862,11 +96888,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ombwe Thema",
 "prenom abonne": "Pauline",
 "ref_preins": "PFO43298751IU",
 "tel_mobile": "0628072083",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-930152": {
@@ -96883,11 +96909,11 @@
 "info_rdv_sync": "RDV 2026-07-20",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lucas",
 "prenom abonne": "Jocelyne",
 "ref_preins": "PFO43299599E3",
 "tel_mobile": "0689734417",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-930154": {
@@ -96925,11 +96951,11 @@
 "info_rdv_sync": "SyncOK 2026-07-20",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "LIAIGRE",
 "prenom abonne": "DIDIER",
 "ref_preins": "PFO4330004211",
 "tel_mobile": "0627005956",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-930256": {
@@ -97030,11 +97056,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lemaire",
 "prenom abonne": "Gwenael",
 "ref_preins": "PFO43303057SM",
 "tel_mobile": "0686394611",
+"vendeur": "yanis habbouba",
 "ville": "Frontenay rohan rohan"
 },
 "f-930366": {
@@ -97135,11 +97161,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Antelme",
 "prenom abonne": "Roland",
 "ref_preins": "PFO43303230OP",
 "tel_mobile": "0679409028",
+"vendeur": "yanis habbouba",
 "ville": "Frontenay rohan rohan"
 },
 "f-930423": {
@@ -97219,11 +97245,11 @@
 "info_rdv_sync": "SyncOK 2026-07-17",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Legardinier",
 "prenom abonne": "Valérie",
 "ref_preins": "PFO43303824T7",
 "tel_mobile": "0755869195",
+"vendeur": "yanis habbouba",
 "ville": "Frontenay rohan rohan"
 },
 "f-930449": {
@@ -97240,11 +97266,11 @@
 "info_rdv_sync": "SyncOK 2026-07-20",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Pinault",
 "prenom abonne": "Catherine",
 "ref_preins": "PFO4330393355",
 "tel_mobile": "0671396898",
+"vendeur": "yanis habbouba",
 "ville": "Frontenay rohan rohan"
 },
 "f-930462": {
@@ -97282,11 +97308,11 @@
 "info_rdv_sync": "RDV 2026-07-21",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mancaud",
 "prenom abonne": "Jean-paul",
 "ref_preins": "PFO43304081P7",
 "tel_mobile": "0689221603",
+"vendeur": "zakaria ourhalm",
 "ville": "Saint symphorien"
 },
 "f-930473": {
@@ -97345,11 +97371,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Faucher",
 "prenom abonne": "Wilfried",
 "ref_preins": "PFO43304305JU",
 "tel_mobile": "0638190555",
+"vendeur": "yanis habbouba",
 "ville": "Frontenay rohan rohan"
 },
 "f-930519": {
@@ -97408,11 +97434,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Menanteau",
 "prenom abonne": "Beatrice",
 "ref_preins": "PFO43304783T6",
 "tel_mobile": "0684743179",
+"vendeur": "yanis habbouba",
 "ville": "Frontenay rohan rohan"
 },
 "f-930551": {
@@ -97555,11 +97581,11 @@
 "info_rdv_sync": "RDV 2026-07-20",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Myriam",
 "prenom abonne": "Terrat",
 "ref_preins": "PFO433052653C",
 "tel_mobile": "0611825238",
+"vendeur": "yanis habbouba",
 "ville": "Frontenay rohan rohan"
 },
 "f-930586": {
@@ -97702,11 +97728,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bergeron",
 "prenom abonne": "Bruno",
 "ref_preins": "PFO43305619TD",
 "tel_mobile": "0770761655",
+"vendeur": "yanis habbouba",
 "ville": "Frontenay rohan rohan"
 },
 "f-930635": {
@@ -98962,11 +98988,11 @@
 "info_rdv_sync": "SyncOK 2026-07-17",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BEAUDONNET",
 "prenom abonne": "ANNIE",
 "ref_preins": "PFO43325456UZ",
 "tel_mobile": "0678809754",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-931608": {
@@ -99067,11 +99093,11 @@
 "info_rdv_sync": "SyncOK 2026-07-24",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gourseaud",
 "prenom abonne": "Pierre",
 "ref_preins": "PFO43326086V3",
 "tel_mobile": "0633336900",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-931651": {
@@ -99172,11 +99198,11 @@
 "info_rdv_sync": "SyncOK 2026-07-29",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vilaça",
 "prenom abonne": "Thibault",
 "ref_preins": "PFO43326275Z3",
 "tel_mobile": "0763550371",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-931679": {
@@ -99193,11 +99219,11 @@
 "info_rdv_sync": "SyncOK 2026-07-29",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Monin",
 "prenom abonne": "Jean michel",
 "ref_preins": "PFO43326545NB",
 "tel_mobile": "0686872820",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-931700": {
@@ -99214,11 +99240,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Soullet",
 "prenom abonne": "Bernard",
 "ref_preins": "PFO43326958VR",
 "tel_mobile": "0652943571",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-931707": {
@@ -99235,11 +99261,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Tryssesoone",
 "prenom abonne": "Marie",
 "ref_preins": "PFO433269779D",
 "tel_mobile": "0603614348",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-931712": {
@@ -99256,11 +99282,11 @@
 "info_rdv_sync": "SyncOK 2026-07-27",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sauze",
 "prenom abonne": "Madeline",
 "ref_preins": "PFO43326942JF",
 "tel_mobile": "0623590157",
+"vendeur": "sana mamah",
 "ville": "Niort"
 },
 "f-931713": {
@@ -99298,11 +99324,11 @@
 "info_rdv_sync": "SyncOK 2026-07-24",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "TRYSSESOONE",
 "prenom abonne": "MARIE",
 "ref_preins": "PFO43327099AS",
 "tel_mobile": "0603614348",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-931733": {
@@ -99340,11 +99366,11 @@
 "info_rdv_sync": "SyncOK 2026-07-24",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MAINGUET",
 "prenom abonne": "CHARLES",
 "ref_preins": "PFO433274425Q",
 "tel_mobile": "0689515409",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-931747": {
@@ -99508,11 +99534,11 @@
 "info_rdv_sync": "SyncOK 2026-07-28",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mathon",
 "prenom abonne": "Christelle",
 "ref_preins": "PFO433279918T",
 "tel_mobile": "0608332558",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-931792": {
@@ -99529,11 +99555,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Rochereul",
 "prenom abonne": "Cedric",
 "ref_preins": "PFO433280748G",
 "tel_mobile": "0622679449",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-931801": {
@@ -99634,11 +99660,11 @@
 "info_rdv_sync": "SyncOK 2026-07-23",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "NEBAS",
 "prenom abonne": "Valerie",
 "ref_preins": "PFO43329880X2",
 "tel_mobile": "0671396952",
+"vendeur": "tania ferreira",
 "ville": "Mauze sur le mignon"
 },
 "f-931863": {
@@ -99760,11 +99786,11 @@
 "info_rdv_sync": "SyncOK 2026-07-23",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "LASHKHIA",
 "prenom abonne": "Giorgi",
 "ref_preins": "PFO43330348Z4",
 "tel_mobile": "0621838455",
+"vendeur": "matteo rendy",
 "ville": "Niort"
 },
 "f-931892": {
@@ -99802,11 +99828,11 @@
 "info_rdv_sync": "SyncOK 2026-07-20",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Reveiller",
 "prenom abonne": "Florian",
 "ref_preins": "PFO433304767T",
 "tel_mobile": "0656807025",
+"vendeur": "anissa dria",
 "ville": "Thouars"
 },
 "f-931899": {
@@ -99844,11 +99870,11 @@
 "info_rdv_sync": "SyncOK 2026-07-28",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MEDEAU",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO43330523O8",
 "tel_mobile": "0611016984",
+"vendeur": "tania ferreira",
 "ville": "Niort"
 },
 "f-931902": {
@@ -99928,11 +99954,11 @@
 "info_rdv_sync": "RDV 2026-08-18",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Rougnon-glasson",
 "prenom abonne": "Matias",
 "ref_preins": "PFO4333061596",
 "tel_mobile": "0783373035",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-931910": {
@@ -99949,11 +99975,11 @@
 "info_rdv_sync": "SyncOK 2026-07-23",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "SOUMAHORO",
 "prenom abonne": "Miri",
 "ref_preins": "PFO43330663HW",
 "tel_mobile": "0761770451",
+"vendeur": "tania ferreira",
 "ville": "Niort"
 },
 "f-931912": {
@@ -100054,11 +100080,11 @@
 "info_rdv_sync": "RDV 2026-07-31",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lagarrigue",
 "prenom abonne": "Veronique",
 "ref_preins": "PFO43330839HY",
 "tel_mobile": "0659099715",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-931923": {
@@ -100075,11 +100101,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Robert",
 "prenom abonne": "Simon",
 "ref_preins": "PFO433308618Q",
 "tel_mobile": "0628304621",
+"vendeur": "yanis habbouba",
 "ville": "Thouars"
 },
 "f-931930": {
@@ -100180,11 +100206,11 @@
 "info_rdv_sync": "RDV 2026-08-19",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mohamedi",
 "prenom abonne": "Samia",
 "ref_preins": "PFO43331124XJ",
 "tel_mobile": "0650823740",
+"vendeur": "bradley ziegler",
 "ville": "Thouars"
 },
 "f-931942": {
@@ -100243,11 +100269,11 @@
 "info_rdv_sync": "SyncOK 2026-07-24",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "VEZIEN",
 "prenom abonne": "Frédéric",
 "ref_preins": "PFO433334666Y",
 "tel_mobile": "0663234059",
+"vendeur": "matteo rendy",
 "ville": "Niort"
 },
 "f-932008": {
@@ -100327,11 +100353,11 @@
 "info_rdv_sync": "SyncOK 2026-07-24",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Delomme",
 "prenom abonne": "Manuel",
 "ref_preins": "PFO43333803FZ",
 "tel_mobile": "0650082755",
+"vendeur": "matteo rendy",
 "ville": "Niort"
 },
 "f-932049": {
@@ -100516,11 +100542,11 @@
 "info_rdv_sync": "SyncOK 2026-07-29",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bonvoisin",
 "prenom abonne": "Linda",
 "ref_preins": "PFO4333480638",
 "tel_mobile": "0619134890",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-932140": {
@@ -100579,11 +100605,11 @@
 "info_rdv_sync": "RDV 2026-08-03",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Alain",
 "prenom abonne": "Bernard",
 "ref_preins": "PFO433354267F",
 "tel_mobile": "0762796957",
+"vendeur": "anissa dria",
 "ville": "Niort"
 },
 "f-932173": {
@@ -100600,11 +100626,11 @@
 "info_rdv_sync": "SyncOK 2026-07-21",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Suire",
 "prenom abonne": "Marie-ange",
 "ref_preins": "PFO43335062BJ",
 "tel_mobile": "0611178757",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-932176": {
@@ -100684,11 +100710,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BRIS",
 "prenom abonne": "Elodie",
 "ref_preins": "PFO43335421QT",
 "tel_mobile": "0623047544",
+"vendeur": "matteo rendy",
 "ville": "Niort"
 },
 "f-932236": {
@@ -100957,11 +100983,11 @@
 "info_rdv_sync": "SyncOK 2026-07-27",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Souchet",
 "prenom abonne": "Jeanne",
 "ref_preins": "PFO43340001BX",
 "tel_mobile": "0780037201",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-932478": {
@@ -101041,11 +101067,11 @@
 "info_rdv_sync": "SyncOK 2026-07-27",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Rousseau",
 "prenom abonne": "Michel",
 "ref_preins": "PFO43340885UU",
 "tel_mobile": "0641723805",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-932586": {
@@ -101251,11 +101277,11 @@
 "info_rdv_sync": "SyncOK 2026-07-28",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mmadi",
 "prenom abonne": "Rafouanti",
 "ref_preins": "PFO433416232C",
 "tel_mobile": "0769234274",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-932668": {
@@ -101293,11 +101319,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Berland",
 "prenom abonne": "Olivier",
 "ref_preins": "PFO43341888SL",
 "tel_mobile": "0663640083",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-932671": {
@@ -101335,11 +101361,11 @@
 "info_rdv_sync": "SyncOK 2026-07-29",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gendron",
 "prenom abonne": "Gabriel",
 "ref_preins": "PFO43341866ET",
 "tel_mobile": "0674013117",
+"vendeur": "bradley ziegler",
 "ville": "Bressuire"
 },
 "f-932682": {
@@ -101482,11 +101508,11 @@
 "info_rdv_sync": "SyncOK 2026-07-28",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Demar",
 "prenom abonne": "Laurence",
 "ref_preins": "PFO43342273ZS",
 "tel_mobile": "0624816673",
+"vendeur": "yanis habbouba",
 "ville": "Bressuire"
 },
 "f-932741": {
@@ -101545,11 +101571,11 @@
 "info_rdv_sync": "SyncOK 2026-07-22",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Guilloteau",
 "prenom abonne": "Corentin",
 "ref_preins": "PFO433425149G",
 "tel_mobile": "0671429807",
+"vendeur": "zakaria ourhalm",
 "ville": "Bressuire"
 },
 "f-932809": {
@@ -101671,11 +101697,11 @@
 "info_rdv_sync": "SyncOK 2026-07-23",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Queraud",
 "prenom abonne": "Christian",
 "ref_preins": "PFO43345650X9",
 "tel_mobile": "0688075229",
+"vendeur": "sana mamah",
 "ville": "Niort"
 },
 "f-932924": {
@@ -101713,11 +101739,11 @@
 "info_rdv_sync": "",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Dacosta",
 "prenom abonne": "Amélie",
 "ref_preins": "PFO43345867PL",
 "tel_mobile": "0601136378",
+"vendeur": "anissa dria",
 "ville": "Niort"
 },
 "f-932933": {
@@ -101755,11 +101781,11 @@
 "info_rdv_sync": "SyncOK 2026-07-25",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MIRBEAU",
 "prenom abonne": "Amaury",
 "ref_preins": "PFO43345975V7",
 "tel_mobile": "0622785018",
+"vendeur": "tania ferreira",
 "ville": "Niort"
 },
 "f-932943": {
@@ -101797,11 +101823,11 @@
 "info_rdv_sync": "SyncOK 2026-07-28",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hajjami",
 "prenom abonne": "Ayoub",
 "ref_preins": "PFO43346111B8",
 "tel_mobile": "0644704049",
+"vendeur": "fayez boutouba",
 "ville": "Niort"
 },
 "f-932970": {
@@ -101818,11 +101844,11 @@
 "info_rdv_sync": "SyncOK 2026-07-27",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "De Almeida",
 "prenom abonne": "Sonia",
 "ref_preins": "PFO43346303ZL",
 "tel_mobile": "0619526205",
+"vendeur": "anissa dria",
 "ville": "Niort"
 },
 "f-932986": {
@@ -101860,11 +101886,11 @@
 "info_rdv_sync": "SyncOK 2026-07-27",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "De Almeida",
 "prenom abonne": "Jose",
 "ref_preins": "PFO43346552OS",
 "tel_mobile": "0661497973",
+"vendeur": "anissa dria",
 "ville": "Niort"
 },
 "f-933018": {
@@ -101944,11 +101970,11 @@
 "info_rdv_sync": "SyncOK 2026-07-29",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Caillebault",
 "prenom abonne": "Loetitia",
 "ref_preins": "PFO43346949DL",
 "tel_mobile": "0625111694",
+"vendeur": "sana mamah",
 "ville": "Niort"
 },
 "f-933058": {
@@ -102091,11 +102117,11 @@
 "info_rdv_sync": "SyncOK 2026-07-28",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Piolot",
 "prenom abonne": "Romain",
 "ref_preins": "PFO43347591TD",
 "tel_mobile": "0645801868",
+"vendeur": "anissa dria",
 "ville": "Niort"
 },
 "f-933095": {
@@ -102175,11 +102201,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Zedira",
 "prenom abonne": "Meyssa",
 "ref_preins": "PFO433477709D",
 "tel_mobile": "0771158201",
+"vendeur": "tania ferreira",
 "ville": "Niort"
 },
 "f-933119": {
@@ -102196,11 +102222,11 @@
 "info_rdv_sync": "SyncOK 2026-07-27",
 "login": "vta-adria",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vallet",
 "prenom abonne": "Jérémie",
 "ref_preins": "PFO43347845FO",
 "tel_mobile": "0666745789",
+"vendeur": "anissa dria",
 "ville": "Niort"
 },
 "f-933169": {
@@ -102217,11 +102243,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Fragnoli",
 "prenom abonne": "Daniel",
 "ref_preins": "PFO43355322CG",
 "tel_mobile": "0743252590",
+"vendeur": "wilfried perez",
 "ville": "Saujon"
 },
 "f-933194": {
@@ -102280,11 +102306,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Jacopit",
 "prenom abonne": "Jean paul",
 "ref_preins": "PFO43355631RC",
 "tel_mobile": "0687548359",
+"vendeur": "lucas wojciechowski",
 "ville": "Niort"
 },
 "f-933209": {
@@ -102343,11 +102369,11 @@
 "info_rdv_sync": "RDV 2026-07-30",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Majalut",
 "prenom abonne": "Jean-Noel",
 "ref_preins": "PFO43355880XE",
 "tel_mobile": "0626487674",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-933239": {
@@ -102364,11 +102390,11 @@
 "info_rdv_sync": "RDV 2026-07-31",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BOYER",
 "prenom abonne": "GERALD",
 "ref_preins": "PFO43356064IU",
 "tel_mobile": "0621545461",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-933294": {
@@ -102385,11 +102411,11 @@
 "info_rdv_sync": "SyncOK 2026-07-29",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sudre",
 "prenom abonne": "Romain",
 "ref_preins": "PFO43356480JB",
 "tel_mobile": "0641184364",
+"vendeur": "lucas wojciechowski",
 "ville": "Niort"
 },
 "f-933299": {
@@ -102427,11 +102453,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Buron",
 "prenom abonne": "Axel",
 "ref_preins": "PFO43356601OL",
 "tel_mobile": "0651059409",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-933307": {
@@ -102490,11 +102516,11 @@
 "info_rdv_sync": "RDV 2026-08-07",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Harbon",
 "prenom abonne": "Laurine",
 "ref_preins": "PFO43357240I5",
 "tel_mobile": "0606464483",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-933362": {
@@ -102553,11 +102579,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Nicol",
 "prenom abonne": "Olivier",
 "ref_preins": "PFO43357538SR",
 "tel_mobile": "0666666170",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-933392": {
@@ -102574,11 +102600,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bessus",
 "prenom abonne": "Annette",
 "ref_preins": "PFO43357634US",
 "tel_mobile": "0623924915",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-933397": {
@@ -102637,11 +102663,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Nicol",
 "prenom abonne": "Plivier",
 "ref_preins": "PFO43357686LH",
 "tel_mobile": "0666666170",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-933416": {
@@ -102658,11 +102684,11 @@
 "info_rdv_sync": "RDV 2026-08-05",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "RIVET",
 "prenom abonne": "Amélie",
 "ref_preins": "PFO43357802Q1",
 "tel_mobile": "0601861938",
+"vendeur": "zakaria ourhalm",
 "ville": "Niort"
 },
 "f-933430": {
@@ -102700,11 +102726,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chabot",
 "prenom abonne": "Laurie",
 "ref_preins": "PFO43358047ZT",
 "tel_mobile": "0772126258",
+"vendeur": "wilfried perez",
 "ville": "Niort"
 },
 "f-933450": {
@@ -102763,11 +102789,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mohammed",
 "prenom abonne": "Borhan",
 "ref_preins": "PFO433588118E",
 "tel_mobile": "0628968211",
+"vendeur": "emeryck piet",
 "ville": "Niort"
 },
 "f-933502": {
@@ -103015,11 +103041,11 @@
 "info_rdv_sync": "SyncOK 2026-07-30",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Couillaud",
 "prenom abonne": "Corine",
 "ref_preins": "PFO43362345BI",
 "tel_mobile": "0669138809",
+"vendeur": "yanis habbouba",
 "ville": "Vouille"
 },
 "f-933688": {
@@ -103246,11 +103272,11 @@
 "info_rdv_sync": "SyncOK 2026-07-30",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chevreau",
 "prenom abonne": "Nadia",
 "ref_preins": "PFO433629779O",
 "tel_mobile": "0631362067",
+"vendeur": "yanis habbouba",
 "ville": "Aiffres"
 },
 "f-933765": {
@@ -103330,11 +103356,11 @@
 "info_rdv_sync": "SyncOK 2026-07-30",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hivert",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO43363538CB",
 "tel_mobile": "0668244367",
+"vendeur": "yanis habbouba",
 "ville": "Aiffres"
 },
 "f-933827": {
@@ -103498,11 +103524,11 @@
 "info_rdv_sync": "RDV 2026-07-31",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Roullet",
 "prenom abonne": "Florent",
 "ref_preins": "PFO43364513BZ",
 "tel_mobile": "0676443121",
+"vendeur": "yanis habbouba",
 "ville": "Vouille"
 },
 "f-933901": {
@@ -103519,11 +103545,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Triquet",
 "prenom abonne": "Frédérique",
 "ref_preins": "PFO43364526AU",
 "tel_mobile": "0626635792",
+"vendeur": "sana mamah",
 "ville": "Vouille"
 },
 "f-933905": {
@@ -103765,10 +103791,10 @@
 "date_inscription": "2026-07-21 19:31:54",
 "entreprise": "Stratygo",
 "envoi_colis": "2026-07-23",
-"etat_commande": "inscription ok",
+"etat_commande": "connexion ok",
 "id_abo": "933949",
 "id_client": "FO37218923",
-"info_rdv_sync": "RDV 2026-07-30",
+"info_rdv_sync": "SyncOK 2026-07-30",
 "login": "vst-pgrasset",
 "mcafee": "",
 "neuf A-AP": "",
@@ -103834,11 +103860,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Giroud",
 "prenom abonne": "Evelyne",
 "ref_preins": "PFO433678489Y",
 "tel_mobile": "0677070155",
+"vendeur": "tania ferreira",
 "ville": "Saint martin de saint maixent"
 },
 "f-934034": {
@@ -104107,11 +104133,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Raboin",
 "prenom abonne": "Xavier",
 "ref_preins": "PFO43369407ZX",
 "tel_mobile": "0780576463",
+"vendeur": "tania ferreira",
 "ville": "Saint maixent l ecole"
 },
 "f-934200": {
@@ -104170,11 +104196,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Giroire",
 "prenom abonne": "Francois",
 "ref_preins": "PFO43369679UY",
 "tel_mobile": "0609711258",
+"vendeur": "tania ferreira",
 "ville": "Saint martin de saint maixent"
 },
 "f-934220": {
@@ -104191,11 +104217,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vincent",
 "prenom abonne": "Cyril",
 "ref_preins": "PFO43369702FF",
 "tel_mobile": "0698108905",
+"vendeur": "emeryck piet",
 "ville": "Nanteuil"
 },
 "f-934242": {
@@ -104233,11 +104259,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vasset",
 "prenom abonne": "Sandrine",
 "ref_preins": "PFO43370263PB",
 "tel_mobile": "0698607596",
+"vendeur": "tania ferreira",
 "ville": "Saint maixent l ecole"
 },
 "f-934283": {
@@ -104254,11 +104280,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Thiery",
 "prenom abonne": "Enzo",
 "ref_preins": "PFO43370434IP",
 "tel_mobile": "0604014466",
+"vendeur": "wilfried perez",
 "ville": "Saint maixent l ecole"
 },
 "f-934299": {
@@ -104506,11 +104532,11 @@
 "info_rdv_sync": "RDV 2026-07-31",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chemin",
 "prenom abonne": "Corinne",
 "ref_preins": "PFO43372878RW",
 "tel_mobile": "0664897118",
+"vendeur": "fayez boutouba",
 "ville": "Thouars"
 },
 "f-934419": {
@@ -104527,11 +104553,11 @@
 "info_rdv_sync": "RDV 2026-08-05",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gourdon",
 "prenom abonne": "Bruno",
 "ref_preins": "PFO433730834N",
 "tel_mobile": "0622520670",
+"vendeur": "lucas wojciechowski",
 "ville": "Louzy"
 },
 "f-934420": {
@@ -104548,11 +104574,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Dylan",
 "prenom abonne": "Peltier",
 "ref_preins": "PFO43373066ZU",
 "tel_mobile": "0762892067",
+"vendeur": "zakaria ourhalm",
 "ville": "Thouars"
 },
 "f-934431": {
@@ -104569,11 +104595,11 @@
 "info_rdv_sync": "RDV 2026-07-31",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Page",
 "prenom abonne": "Claude",
 "ref_preins": "PFO43373194FY",
 "tel_mobile": "0780133425",
+"vendeur": "fayez boutouba",
 "ville": "Thouars"
 },
 "f-934447": {
@@ -104611,11 +104637,11 @@
 "info_rdv_sync": "RDV 2026-08-05",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Roy",
 "prenom abonne": "Maryse",
 "ref_preins": "PFO433734089Y",
 "tel_mobile": "0602345377",
+"vendeur": "lucas wojciechowski",
 "ville": "Louzy"
 },
 "f-934465": {
@@ -104653,11 +104679,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mandois",
 "prenom abonne": "Christine",
 "ref_preins": "PFO43373453G5",
 "tel_mobile": "0761071353",
+"vendeur": "fayez boutouba",
 "ville": "Thouars"
 },
 "f-934477": {
@@ -104779,11 +104805,11 @@
 "info_rdv_sync": "RDV 2026-08-06",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Duchatel",
 "prenom abonne": "Marcelle",
 "ref_preins": "PFO43373756BF",
 "tel_mobile": "0659939377",
+"vendeur": "fayez boutouba",
 "ville": "Thouars"
 },
 "f-934515": {
@@ -104863,11 +104889,11 @@
 "info_rdv_sync": "RDV 2026-08-04",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chateau",
 "prenom abonne": "Alain",
 "ref_preins": "PFO433741615W",
 "tel_mobile": "0777887245",
+"vendeur": "fayez boutouba",
 "ville": "Thouars"
 },
 "f-934571": {
@@ -104884,11 +104910,11 @@
 "info_rdv_sync": "RDV 2026-08-04",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Masson",
 "prenom abonne": "Cyril",
 "ref_preins": "PFO433742451R",
 "tel_mobile": "0780226023",
+"vendeur": "lucas wojciechowski",
 "ville": "Louzy"
 },
 "f-934589": {
@@ -104989,11 +105015,11 @@
 "info_rdv_sync": "RDV 2026-08-06",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Genevois",
 "prenom abonne": "Sylvie",
 "ref_preins": "PFO43375241UF",
 "tel_mobile": "0641301453",
+"vendeur": "fayez boutouba",
 "ville": "Thouars"
 },
 "f-934675": {
@@ -105073,11 +105099,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Krystel",
 "prenom abonne": "Sabathe",
 "ref_preins": "PFO43375558AU",
 "tel_mobile": "0780060452",
+"vendeur": "fayez boutouba",
 "ville": "Thouars"
 },
 "f-934694": {
@@ -105115,11 +105141,11 @@
 "info_rdv_sync": "RDV 2026-08-04",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lucazeau",
 "prenom abonne": "Monique",
 "ref_preins": "PFO43375661L6",
 "tel_mobile": "0677834023",
+"vendeur": "lucas wojciechowski",
 "ville": "Louzy"
 },
 "f-934709": {
@@ -105136,11 +105162,11 @@
 "info_rdv_sync": "RDV 2026-08-06",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sabathe",
 "prenom abonne": "Jennyfer",
 "ref_preins": "PFO43375695M1",
 "tel_mobile": "0604454110",
+"vendeur": "fayez boutouba",
 "ville": "Luche thouarsais"
 },
 "f-934710": {
@@ -105577,11 +105603,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Perhirin",
 "prenom abonne": "Anne-marie",
 "ref_preins": "PFO43387711QU",
 "tel_mobile": "0630190819",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935099": {
@@ -105598,11 +105624,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Cross",
 "prenom abonne": "Thelma",
 "ref_preins": "PFO4338792500",
 "tel_mobile": "0664035156",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-935117": {
@@ -105619,11 +105645,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "CAGNA",
 "prenom abonne": "JEAN LUC / MARIELINE",
 "ref_preins": "PFO433881602E",
 "tel_mobile": "0665777263",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935130": {
@@ -105640,11 +105666,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Leost",
 "prenom abonne": "yves",
 "ref_preins": "PFO4338827509",
 "tel_mobile": "0688108966",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-935135": {
@@ -105682,11 +105708,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Nguini Ngamfomo",
 "prenom abonne": "Philomène",
 "ref_preins": "PFO433884056M",
 "tel_mobile": "0602217155",
+"vendeur": "emeryck piet",
 "ville": "Saintes"
 },
 "f-935143": {
@@ -105703,11 +105729,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "LICHOU",
 "prenom abonne": "Thibault",
 "ref_preins": "PFO43388329E2",
 "tel_mobile": "0787612125",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-935145": {
@@ -105724,11 +105750,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Halope",
 "prenom abonne": "Jonathan",
 "ref_preins": "PFO4338833842",
 "tel_mobile": "0624944625",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-935148": {
@@ -105745,11 +105771,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Merceur",
 "prenom abonne": "Alain",
 "ref_preins": "PFO433883792X",
 "tel_mobile": "0650015958",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-935150": {
@@ -105766,11 +105792,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Santer",
 "prenom abonne": "Josiane",
 "ref_preins": "PFO4338840624",
 "tel_mobile": "0625149066",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-935152": {
@@ -105787,11 +105813,11 @@
 "info_rdv_sync": "RDV 2026-08-04",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Emeric",
 "prenom abonne": "Bernard",
 "ref_preins": "PFO43388399H3",
 "tel_mobile": "0606783368",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935161": {
@@ -105850,11 +105876,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MARTIN",
 "prenom abonne": "NATHALIE",
 "ref_preins": "PFO43388687OG",
 "tel_mobile": "0623517786",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935188": {
@@ -105871,11 +105897,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le roux",
 "prenom abonne": "Erwan",
 "ref_preins": "PFO43388760P9",
 "tel_mobile": "0683827552",
+"vendeur": "sana mamah",
 "ville": "Brest"
 },
 "f-935193": {
@@ -105892,11 +105918,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Cossart",
 "prenom abonne": "Maeva",
 "ref_preins": "PFO4338880363",
 "tel_mobile": "0698562346",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-935202": {
@@ -105913,11 +105939,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Simon",
 "prenom abonne": "Alexandra",
 "ref_preins": "PFO433888621Y",
 "tel_mobile": "0662232204",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-935221": {
@@ -105955,11 +105981,11 @@
 "info_rdv_sync": "RDV 2026-08-05",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Da Silva Costa",
 "prenom abonne": "Christophe",
 "ref_preins": "PFO43389144UM",
 "tel_mobile": "0636058746",
+"vendeur": "yanis habbouba",
 "ville": "Saintes"
 },
 "f-935237": {
@@ -105976,11 +106002,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vendée",
 "prenom abonne": "Arnaud",
 "ref_preins": "PFO43389146S4",
 "tel_mobile": "0621173111",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-935247": {
@@ -106018,11 +106044,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "HUBER",
 "prenom abonne": "MONIQUE",
 "ref_preins": "PFO43389349SL",
 "tel_mobile": "0628203651",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935270": {
@@ -106060,11 +106086,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bertheau",
 "prenom abonne": "Daniel",
 "ref_preins": "PFO43389499I0",
 "tel_mobile": "0662295169",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-935291": {
@@ -106102,11 +106128,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Helary",
 "prenom abonne": "Benoit",
 "ref_preins": "PFO433898496C",
 "tel_mobile": "0624871750",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-935299": {
@@ -106123,11 +106149,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MAGRO",
 "prenom abonne": "Pablo",
 "ref_preins": "PFO43389914Q4",
 "tel_mobile": "0613862047",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-935315": {
@@ -106165,11 +106191,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "GUILLIN",
 "prenom abonne": "LOICK",
 "ref_preins": "PFO43390223SE",
 "tel_mobile": "0664088025",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935337": {
@@ -106186,11 +106212,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Shuliak",
 "prenom abonne": "Yevhen",
 "ref_preins": "PFO43390268BO",
 "tel_mobile": "0620613653",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-935367": {
@@ -106207,11 +106233,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "OVELACQ",
 "prenom abonne": "Salomé",
 "ref_preins": "PFO43390543I4",
 "tel_mobile": "0769624111",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-935373": {
@@ -106228,11 +106254,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Capitaine",
 "prenom abonne": "Sylviane",
 "ref_preins": "PFO43390584J1",
 "tel_mobile": "0638830868",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-935375": {
@@ -106270,11 +106296,11 @@
 "info_rdv_sync": "RDV 2026-08-05",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Clauzel",
 "prenom abonne": "Cindy",
 "ref_preins": "PFO43390690HE",
 "tel_mobile": "0659380375",
+"vendeur": "yanis habbouba",
 "ville": "Saintes"
 },
 "f-935403": {
@@ -106291,11 +106317,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "DREO",
 "prenom abonne": "SOLANGE",
 "ref_preins": "PFO43390958L4",
 "tel_mobile": "0631546280",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935405": {
@@ -106333,11 +106359,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kerreneur",
 "prenom abonne": "Edwina",
 "ref_preins": "PFO43390996HR",
 "tel_mobile": "0658470184",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-935418": {
@@ -106354,11 +106380,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "AUFFRET",
 "prenom abonne": "Sébastien",
 "ref_preins": "PFO43391055N3",
 "tel_mobile": "0669545873",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-935432": {
@@ -106396,11 +106422,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Put",
 "prenom abonne": "Emeline",
 "ref_preins": "PFO43391280AD",
 "tel_mobile": "0754841008",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-935436": {
@@ -106417,11 +106443,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lheureux",
 "prenom abonne": "Samantha",
 "ref_preins": "PFO43391345HS",
 "tel_mobile": "0781697708",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-935442": {
@@ -106459,11 +106485,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Petit",
 "prenom abonne": "Ludovic",
 "ref_preins": "PFO433915742J",
 "tel_mobile": "0679725214",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-935451": {
@@ -106480,11 +106506,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Dubois",
 "prenom abonne": "Pauline",
 "ref_preins": "PFO43391570TH",
 "tel_mobile": "0659104952",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-935457": {
@@ -106522,11 +106548,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sukhishvili",
 "prenom abonne": "Nikolozi",
 "ref_preins": "PFO43391677XV",
 "tel_mobile": "0602206262",
+"vendeur": "sana mamah",
 "ville": "Brest"
 },
 "f-935465": {
@@ -106564,11 +106590,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bilhant",
 "prenom abonne": "Luc",
 "ref_preins": "PFO433918016D",
 "tel_mobile": "0603124736",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-935474": {
@@ -106606,11 +106632,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Aissat",
 "prenom abonne": "Karim",
 "ref_preins": "PFO43391999FA",
 "tel_mobile": "0638792005",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935489": {
@@ -106627,11 +106653,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "AUTRET",
 "prenom abonne": "DANIEL",
 "ref_preins": "PFO43392031SX",
 "tel_mobile": "0681224678",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-935490": {
@@ -106648,11 +106674,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BOURGOIN",
 "prenom abonne": "Jean-baptiste",
 "ref_preins": "PFO43392018E5",
 "tel_mobile": "0625553457",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-935493": {
@@ -106711,11 +106737,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Chigot",
 "prenom abonne": "Roland",
 "ref_preins": "PFO433922255A",
 "tel_mobile": "0699365832",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-935543": {
@@ -106732,11 +106758,11 @@
 "info_rdv_sync": "RDV 2026-08-04",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Buisson",
 "prenom abonne": "Jean-luc",
 "ref_preins": "PFO43394100R1",
 "tel_mobile": "0614811196",
+"vendeur": "emeryck piet",
 "ville": "Saujon"
 },
 "f-935548": {
@@ -106753,11 +106779,11 @@
 "info_rdv_sync": "RDV 2026-08-06",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Micheneau",
 "prenom abonne": "Marise",
 "ref_preins": "PFO43394110V5",
 "tel_mobile": "0675289088",
+"vendeur": "bradley ziegler",
 "ville": "Saujon"
 },
 "f-935549": {
@@ -106774,11 +106800,11 @@
 "info_rdv_sync": "RDV 2026-08-10",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MARHADOUR",
 "prenom abonne": "BENOIT",
 "ref_preins": "PFO43394107EX",
 "tel_mobile": "0632612367",
+"vendeur": "zakaria ourhalm",
 "ville": "Guipavas"
 },
 "f-935569": {
@@ -106795,11 +106821,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "QUERE",
 "prenom abonne": "Patricia",
 "ref_preins": "PFO43394280RS",
 "tel_mobile": "0659426116",
+"vendeur": "tania ferreira",
 "ville": "Landerneau"
 },
 "f-935578": {
@@ -106816,11 +106842,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "LECLERE",
 "prenom abonne": "ALEXIS",
 "ref_preins": "PFO43394525AX",
 "tel_mobile": "0784458036",
+"vendeur": "zakaria ourhalm",
 "ville": "Guipavas"
 },
 "f-935590": {
@@ -106837,11 +106863,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Abautret",
 "prenom abonne": "Laurence",
 "ref_preins": "PFO43394589PL",
 "tel_mobile": "0687081758",
+"vendeur": "zakaria ourhalm",
 "ville": "Guipavas"
 },
 "f-935624": {
@@ -106858,11 +106884,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Humbert",
 "prenom abonne": "Lois",
 "ref_preins": "PFO43394869BP",
 "tel_mobile": "0649676259",
+"vendeur": "lucas wojciechowski",
 "ville": "Saujon"
 },
 "f-935634": {
@@ -106879,11 +106905,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Goulard",
 "prenom abonne": "Yveline",
 "ref_preins": "PFO43394992DQ",
 "tel_mobile": "0698579440",
+"vendeur": "wilfried perez",
 "ville": "Guipavas"
 },
 "f-935652": {
@@ -106921,11 +106947,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Roue",
 "prenom abonne": "Denise",
 "ref_preins": "PFO43395137MK",
 "tel_mobile": "0660054728",
+"vendeur": "zakaria ourhalm",
 "ville": "Guipavas"
 },
 "f-935659": {
@@ -106942,11 +106968,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "GOURMELON",
 "prenom abonne": "BERNARD",
 "ref_preins": "PFO433952199R",
 "tel_mobile": "0662180810",
+"vendeur": "zakaria ourhalm",
 "ville": "Guipavas"
 },
 "f-935683": {
@@ -106963,11 +106989,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BRIANT SALAUN",
 "prenom abonne": "Justine",
 "ref_preins": "PFO43395395AU",
 "tel_mobile": "0618858207",
+"vendeur": "tania ferreira",
 "ville": "Landerneau"
 },
 "f-935690": {
@@ -107005,11 +107031,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "ASTORGUES",
 "prenom abonne": "RENE",
 "ref_preins": "PFO43395560Q8",
 "tel_mobile": "0629982327",
+"vendeur": "zakaria ourhalm",
 "ville": "Guipavas"
 },
 "f-935708": {
@@ -107026,11 +107052,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Tirilly",
 "prenom abonne": "Pierre",
 "ref_preins": "PFO433956076N",
 "tel_mobile": "0680532888",
+"vendeur": "sana mamah",
 "ville": "Landerneau"
 },
 "f-935772": {
@@ -107047,11 +107073,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "LE GALL",
 "prenom abonne": "Gwenaëlle",
 "ref_preins": "PFO43396125R4",
 "tel_mobile": "0660704203",
+"vendeur": "tania ferreira",
 "ville": "Landerneau"
 },
 "f-935789": {
@@ -107068,11 +107094,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Persyn",
 "prenom abonne": "Laurent",
 "ref_preins": "PFO43396294R1",
 "tel_mobile": "0619849256",
+"vendeur": "matteo rendy",
 "ville": "Guipavas"
 },
 "f-935792": {
@@ -107089,11 +107115,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gourvénec",
 "prenom abonne": "Philippe",
 "ref_preins": "PFO43396319OH",
 "tel_mobile": "0674587142",
+"vendeur": "sana mamah",
 "ville": "Landerneau"
 },
 "f-935797": {
@@ -107110,11 +107136,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BOUCHARE",
 "prenom abonne": "STEPHANIE",
 "ref_preins": "PFO433964345F",
 "tel_mobile": "0695133949",
+"vendeur": "zakaria ourhalm",
 "ville": "Guipavas"
 },
 "f-935816": {
@@ -107131,11 +107157,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Picoulet",
 "prenom abonne": "Roger",
 "ref_preins": "PFO433966316I",
 "tel_mobile": "0663767788",
+"vendeur": "bradley ziegler",
 "ville": "Saujon"
 },
 "f-935833": {
@@ -107173,11 +107199,11 @@
 "info_rdv_sync": "RDV 2026-08-06",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Servel",
 "prenom abonne": "Flavie",
 "ref_preins": "PFO43396905LE",
 "tel_mobile": "0662795174",
+"vendeur": "matteo rendy",
 "ville": "Guipavas"
 },
 "f-935854": {
@@ -107215,11 +107241,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "PREMEL CABIC",
 "prenom abonne": "VINCENT",
 "ref_preins": "PFO43397148PP",
 "tel_mobile": "0683615587",
+"vendeur": "zakaria ourhalm",
 "ville": "Guipavas"
 },
 "f-935866": {
@@ -107236,11 +107262,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Monteiro",
 "prenom abonne": "Ricardo",
 "ref_preins": "PFO43397245D6",
 "tel_mobile": "0630578166",
+"vendeur": "emeryck piet",
 "ville": "Saujon"
 },
 "f-935879": {
@@ -107257,11 +107283,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Percier",
 "prenom abonne": "Léa",
 "ref_preins": "PFO433973275A",
 "tel_mobile": "0630070198",
+"vendeur": "matteo rendy",
 "ville": "Guipavas"
 },
 "f-935886": {
@@ -107278,11 +107304,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "NOLLET",
 "prenom abonne": "Sarah",
 "ref_preins": "PFO43397335TO",
 "tel_mobile": "0679831244",
+"vendeur": "matteo rendy",
 "ville": "Landerneau"
 },
 "f-935890": {
@@ -107299,11 +107325,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Menard",
 "prenom abonne": "Laurent",
 "ref_preins": "PFO43397369KT",
 "tel_mobile": "0783680802",
+"vendeur": "wilfried perez",
 "ville": "Guipavas"
 },
 "f-935917": {
@@ -107320,11 +107346,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Favre-Jaud",
 "prenom abonne": "Nolane",
 "ref_preins": "PFO43397588C7",
 "tel_mobile": "0679132738",
+"vendeur": "lucas wojciechowski",
 "ville": "Saujon"
 },
 "f-935922": {
@@ -107341,11 +107367,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vion",
 "prenom abonne": "Esteban",
 "ref_preins": "PFO43397693W0",
 "tel_mobile": "0633780348",
+"vendeur": "wilfried perez",
 "ville": "Guipavas"
 },
 "f-935928": {
@@ -107362,11 +107388,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Boty",
 "prenom abonne": "Orlane",
 "ref_preins": "PFO43397689JU",
 "tel_mobile": "0754853235",
+"vendeur": "tania ferreira",
 "ville": "Landerneau"
 },
 "f-935958": {
@@ -107380,14 +107406,14 @@
 "etat_commande": "inscription ok",
 "id_abo": "935958",
 "id_client": "FO37247798",
-"info_rdv_sync": "",
+"info_rdv_sync": "RDV 2026-08-06",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Trouessard",
 "prenom abonne": "Stéphane",
 "ref_preins": "PFO43399045H8",
 "tel_mobile": "0673433459",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-935971": {
@@ -107404,11 +107430,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Raby",
 "prenom abonne": "Franky",
 "ref_preins": "PFO43399251OF",
 "tel_mobile": "0678408643",
+"vendeur": "sana mamah",
 "ville": "Brest"
 },
 "f-935981": {
@@ -107425,11 +107451,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Portejoie",
 "prenom abonne": "Nelly",
 "ref_preins": "PFO43399368HT",
 "tel_mobile": "0650897452",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-935988": {
@@ -107446,11 +107472,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bretal",
 "prenom abonne": "Arnaud/vanessa",
 "ref_preins": "PFO43399540S9",
 "tel_mobile": "0620773201",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936007": {
@@ -107467,11 +107493,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bouvier",
 "prenom abonne": "Gilles",
 "ref_preins": "PFO43399636A3",
 "tel_mobile": "0607402720",
+"vendeur": "yanis habbouba",
 "ville": "Saintes"
 },
 "f-936010": {
@@ -107488,11 +107514,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "FAOUZI",
 "prenom abonne": "ABDEL KARIM",
 "ref_preins": "PFO43399705TS",
 "tel_mobile": "0748554196",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936016": {
@@ -107509,11 +107535,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gaboriaud",
 "prenom abonne": "Sandrine",
 "ref_preins": "PFO43399696IF",
 "tel_mobile": "0684740251",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-936028": {
@@ -107530,11 +107556,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Bouvier",
 "prenom abonne": "Gilles",
 "ref_preins": "PFO43399780VL",
 "tel_mobile": "0607402720",
+"vendeur": "yanis habbouba",
 "ville": "Saintes"
 },
 "f-936041": {
@@ -107551,11 +107577,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "DRIANCOURT",
 "prenom abonne": "ERIC",
 "ref_preins": "PFO43399962VY",
 "tel_mobile": "0604015088",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936055": {
@@ -107572,11 +107598,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Baillet",
 "prenom abonne": "Didier",
 "ref_preins": "PFO434000250U",
 "tel_mobile": "0604439344",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-936066": {
@@ -107593,11 +107619,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Trochut",
 "prenom abonne": "Mireille",
 "ref_preins": "PFO43400177YK",
 "tel_mobile": "0650225264",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-936067": {
@@ -107614,11 +107640,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "JOANNY",
 "prenom abonne": "SYLVIANE",
 "ref_preins": "PFO43400220VG",
 "tel_mobile": "0618399918",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936081": {
@@ -107635,11 +107661,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mohammed",
 "prenom abonne": "Bhoulaya",
 "ref_preins": "PFO43400248CB",
 "tel_mobile": "0615565676",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936091": {
@@ -107656,11 +107682,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Madani",
 "prenom abonne": "Faira",
 "ref_preins": "PFO43400318ZO",
 "tel_mobile": "0753643018",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-936094": {
@@ -107719,11 +107745,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "JAMAA",
 "prenom abonne": "Mohamed ali",
 "ref_preins": "PFO43400518XN",
 "tel_mobile": "0602293580",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936110": {
@@ -107740,11 +107766,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Vernon",
 "prenom abonne": "Jaqueline",
 "ref_preins": "PFO434006263F",
 "tel_mobile": "0620719058",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-936125": {
@@ -107761,11 +107787,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gilette",
 "prenom abonne": "Oceane",
 "ref_preins": "PFO43400770YX",
 "tel_mobile": "0769334755",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-936128": {
@@ -107782,11 +107808,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Metivier",
 "prenom abonne": "Jacqueline",
 "ref_preins": "PFO43400794BT",
 "tel_mobile": "0631260894",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-936131": {
@@ -107803,11 +107829,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MALLERON",
 "prenom abonne": "KARINE",
 "ref_preins": "PFO43400818XA",
 "tel_mobile": "0660219772",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936132": {
@@ -107824,11 +107850,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kyungu Kibale",
 "prenom abonne": "Nadia",
 "ref_preins": "PFO43400890PF",
 "tel_mobile": "0656761675",
+"vendeur": "yanis habbouba",
 "ville": "Saintes"
 },
 "f-936139": {
@@ -107845,11 +107871,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le gall",
 "prenom abonne": "Marcel",
 "ref_preins": "PFO4340091992",
 "tel_mobile": "0658047973",
+"vendeur": "sana mamah",
 "ville": "Brest"
 },
 "f-936141": {
@@ -107866,11 +107892,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "MARTIN",
 "prenom abonne": "Violaine",
 "ref_preins": "PFO43400887HY",
 "tel_mobile": "0664941284",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936142": {
@@ -107887,11 +107913,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "SQUIBAN",
 "prenom abonne": "Sophie",
 "ref_preins": "PFO43400911C4",
 "tel_mobile": "0666694211",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936149": {
@@ -107908,11 +107934,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lalouni",
 "prenom abonne": "Henriette",
 "ref_preins": "PFO43400985Q0",
 "tel_mobile": "0787464933",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-936150": {
@@ -107950,11 +107976,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Jarret",
 "prenom abonne": "Patricia",
 "ref_preins": "PFO43400987X0",
 "tel_mobile": "0640762542",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-936170": {
@@ -107971,11 +107997,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Galliou",
 "prenom abonne": "Monique",
 "ref_preins": "PFO43401197G1",
 "tel_mobile": "0610145727",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936174": {
@@ -107992,11 +108018,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lina",
 "prenom abonne": "Marcelline",
 "ref_preins": "PFO43401302HP",
 "tel_mobile": "0764701739",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-936179": {
@@ -108013,11 +108039,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ridjali",
 "prenom abonne": "Salima",
 "ref_preins": "PFO43401315MM",
 "tel_mobile": "0783609219",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936182": {
@@ -108055,11 +108081,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "DEMAIRE",
 "prenom abonne": "Gisele",
 "ref_preins": "PFO43401443O6",
 "tel_mobile": "0632608908",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936186": {
@@ -108076,11 +108102,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Lecanu",
 "prenom abonne": "Jacques",
 "ref_preins": "PFO434014119S",
 "tel_mobile": "0677360352",
+"vendeur": "lucas wojciechowski",
 "ville": "Brest"
 },
 "f-936191": {
@@ -108097,11 +108123,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gendron",
 "prenom abonne": "Valentin",
 "ref_preins": "PFO43401464K1",
 "tel_mobile": "0784913460",
+"vendeur": "bradley ziegler",
 "ville": "Bressuire"
 },
 "f-936199": {
@@ -108139,11 +108165,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "SIELLEUR",
 "prenom abonne": "PATRIQUE",
 "ref_preins": "PFO43401679ZW",
 "tel_mobile": "0614295679",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936205": {
@@ -108160,11 +108186,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Clairat",
 "prenom abonne": "Stéphanie",
 "ref_preins": "PFO43401684B9",
 "tel_mobile": "0687337039",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-936209": {
@@ -108181,11 +108207,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Carré",
 "prenom abonne": "Annaelle",
 "ref_preins": "PFO43401748F9",
 "tel_mobile": "0617391594",
+"vendeur": "lucas wojciechowski",
 "ville": "Brest"
 },
 "f-936211": {
@@ -108244,11 +108270,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Petit",
 "prenom abonne": "Line",
 "ref_preins": "PFO43402271RO",
 "tel_mobile": "0624670611",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-936296": {
@@ -108265,11 +108291,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "HERRY",
 "prenom abonne": "Mikael",
 "ref_preins": "PFO434025874C",
 "tel_mobile": "0662565473",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936300": {
@@ -108286,11 +108312,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Marec",
 "prenom abonne": "Gisele",
 "ref_preins": "PFO43402666BM",
 "tel_mobile": "0680440770",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-936302": {
@@ -108307,11 +108333,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "DULTHEO",
 "prenom abonne": "MICKAEL",
 "ref_preins": "PFO43402659Q3",
 "tel_mobile": "0780705210",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936306": {
@@ -108328,11 +108354,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Duvernoy",
 "prenom abonne": "Marina",
 "ref_preins": "PFO43402642IV",
 "tel_mobile": "0633201164",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-936308": {
@@ -108349,11 +108375,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Colin",
 "prenom abonne": "Martine",
 "ref_preins": "PFO43402700L9",
 "tel_mobile": "0602211184",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936323": {
@@ -108370,11 +108396,11 @@
 "info_rdv_sync": "",
 "login": "vta-yhabbouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Celine",
 "prenom abonne": "Faraquetdyn",
 "ref_preins": "PFO434029181F",
 "tel_mobile": "0780204609",
+"vendeur": "yanis habbouba",
 "ville": "Saintes"
 },
 "f-936324": {
@@ -108391,11 +108417,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Gesret",
 "prenom abonne": "Patricia",
 "ref_preins": "PFO43402907IC",
 "tel_mobile": "0624670271",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936328": {
@@ -108412,11 +108438,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "HASCOET",
 "prenom abonne": "PASCALE",
 "ref_preins": "PFO43402975TZ",
 "tel_mobile": "0762973137",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936334": {
@@ -108433,11 +108459,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Olivier",
 "prenom abonne": "Adelina",
 "ref_preins": "PFO43403080VG",
 "tel_mobile": "0634197572",
+"vendeur": "bradley ziegler",
 "ville": "Saintes"
 },
 "f-936335": {
@@ -108454,11 +108480,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "QUINTIN",
 "prenom abonne": "Laurence",
 "ref_preins": "PFO43403031L1",
 "tel_mobile": "0616163137",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936337": {
@@ -108496,11 +108522,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Troussereau",
 "prenom abonne": "Céline",
 "ref_preins": "PFO43403049M0",
 "tel_mobile": "0613055136",
+"vendeur": "lucas wojciechowski",
 "ville": "Saintes"
 },
 "f-936344": {
@@ -108517,11 +108543,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Sara",
 "prenom abonne": "Assanhoun",
 "ref_preins": "PFO43403176TG",
 "tel_mobile": "0780113747",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936345": {
@@ -108538,11 +108564,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Manac'h",
 "prenom abonne": "Sylvie",
 "ref_preins": "PFO43403123A9",
 "tel_mobile": "0659322320",
+"vendeur": "sana mamah",
 "ville": "Brest"
 },
 "f-936348": {
@@ -108559,11 +108585,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BERHAULT",
 "prenom abonne": "THOMAS",
 "ref_preins": "PFO434032830Y",
 "tel_mobile": "0647077415",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936349": {
@@ -108580,11 +108606,11 @@
 "info_rdv_sync": "",
 "login": "vta-fboutouba",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Jean",
 "prenom abonne": "Camille",
 "ref_preins": "PFO43403243CE",
 "tel_mobile": "0635232998",
+"vendeur": "fayez boutouba",
 "ville": "Saintes"
 },
 "f-936352": {
@@ -108601,11 +108627,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "FONTAINE",
 "prenom abonne": "Sabine",
 "ref_preins": "PFO434032947D",
 "tel_mobile": "0610352916",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936358": {
@@ -108622,11 +108648,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Colin",
 "prenom abonne": "Laeticia",
 "ref_preins": "PFO43403381O3",
 "tel_mobile": "0652546068",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936359": {
@@ -108643,11 +108669,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Colin",
 "prenom abonne": "Laeticia",
 "ref_preins": "PFO43403392CP",
 "tel_mobile": "0652546068",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936360": {
@@ -108664,11 +108690,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Abdelaziz",
 "prenom abonne": "Yunes",
 "ref_preins": "PFO434034338O",
 "tel_mobile": "0668554095",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936388": {
@@ -108685,11 +108711,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Briand",
 "prenom abonne": "Chantal",
 "ref_preins": "PFO434049059U",
 "tel_mobile": "0625238915",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936394": {
@@ -108706,11 +108732,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "BEHAL",
 "prenom abonne": "DAVID",
 "ref_preins": "PFO434049548X",
 "tel_mobile": "0627097043",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936406": {
@@ -108727,11 +108753,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Cendron",
 "prenom abonne": "Matheo",
 "ref_preins": "PFO4340512686",
 "tel_mobile": "0789202395",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-936415": {
@@ -108748,11 +108774,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Pavie",
 "prenom abonne": "Melanie",
 "ref_preins": "PFO43405158IC",
 "tel_mobile": "0613050415",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-936419": {
@@ -108769,11 +108795,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Robin",
 "prenom abonne": "Jerome",
 "ref_preins": "PFO43405179HB",
 "tel_mobile": "0629111373",
+"vendeur": "bradley ziegler",
 "ville": "Saint porchaire"
 },
 "f-936421": {
@@ -108790,11 +108816,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Ganachaud",
 "prenom abonne": "Luc",
 "ref_preins": "PFO4340520712",
 "tel_mobile": "0752673695",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936448": {
@@ -108811,11 +108837,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Tuhiti",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO4340544528",
 "tel_mobile": "0769920638",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936449": {
@@ -108832,11 +108858,11 @@
 "info_rdv_sync": "",
 "login": "vta-epiet",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Eloy",
 "prenom abonne": "claudine",
 "ref_preins": "PFO43405518I4",
 "tel_mobile": "0746219464",
+"vendeur": "emeryck piet",
 "ville": "Saint porchaire"
 },
 "f-936456": {
@@ -108853,11 +108879,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Le Mao",
 "prenom abonne": "Herve",
 "ref_preins": "PFO43405528QY",
 "tel_mobile": "0780034613",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-936465": {
@@ -108874,11 +108900,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Abdallah RIZIK",
 "prenom abonne": "Hasnaou",
 "ref_preins": "PFO43405659LZ",
 "tel_mobile": "0769810249",
+"vendeur": "tania ferreira",
 "ville": "Brest"
 },
 "f-936468": {
@@ -108895,11 +108921,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Aubrais",
 "prenom abonne": "Catherine",
 "ref_preins": "PFO43405570GY",
 "tel_mobile": "0786394594",
+"vendeur": "lucas wojciechowski",
 "ville": "Beurlay"
 },
 "f-936473": {
@@ -108916,11 +108942,11 @@
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "VONK",
 "prenom abonne": "TIFANY",
 "ref_preins": "PFO43405638R5",
 "tel_mobile": "0616804599",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936476": {
@@ -108937,11 +108963,11 @@
 "info_rdv_sync": "",
 "login": "vta-smamah",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Landrein",
 "prenom abonne": "Patrick",
 "ref_preins": "PFO43405648G5",
 "tel_mobile": "0609046412",
+"vendeur": "sana mamah",
 "ville": "Brest"
 },
 "f-936479": {
@@ -108979,11 +109005,11 @@
 "info_rdv_sync": "",
 "login": "vta-wperez",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Meriadec",
 "prenom abonne": "Katell",
 "ref_preins": "PFO43405816VY",
 "tel_mobile": "0677488601",
+"vendeur": "wilfried perez",
 "ville": "Brest"
 },
 "f-936495": {
@@ -109000,11 +109026,11 @@
 "info_rdv_sync": "",
 "login": "vta-tferreira",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "FONTAINE",
 "prenom abonne": "Monique",
 "ref_preins": "PFO43405854ET",
 "tel_mobile": "0617438274",
+"vendeur": "tania ferreira",
 "ville": "Plabennec"
 },
 "f-936500": {
@@ -109021,11 +109047,11 @@
 "info_rdv_sync": "",
 "login": "vta-mrendy",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Hain",
 "prenom abonne": "Marie",
 "ref_preins": "PFO43405838OT",
 "tel_mobile": "0684992673",
+"vendeur": "matteo rendy",
 "ville": "Brest"
 },
 "f-936505": {
@@ -109042,11 +109068,11 @@
 "info_rdv_sync": "",
 "login": "vta-lwojciechowski",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Etenna",
 "prenom abonne": "Gabriel",
 "ref_preins": "PFO4340587100",
 "tel_mobile": "0668487294",
+"vendeur": "lucas wojciechowski",
 "ville": "Brest"
 },
 "f-936532": {
@@ -109063,11 +109089,11 @@
 "info_rdv_sync": "",
 "login": "vta-bziegler",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Moreau",
 "prenom abonne": "Yvan",
 "ref_preins": "PFO43406032KE",
 "tel_mobile": "0646046486",
+"vendeur": "bradley ziegler",
 "ville": "Saint porchaire"
 },
 "f-936544": {
@@ -109078,17 +109104,17 @@
 "date_inscription": "2026-07-30 14:42:58",
 "entreprise": "TALC",
 "envoi_colis": "",
-"etat_commande": "vente validée",
+"etat_commande": "inscription ok",
 "id_abo": "936544",
-"id_client": "",
+"id_client": "FO37253931",
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "GADONNEIX",
 "prenom abonne": "SONIA",
 "ref_preins": "PFO43406284ZJ",
 "tel_mobile": "0674495593",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936556": {
@@ -109099,17 +109125,17 @@
 "date_inscription": "2026-07-30 14:51:23",
 "entreprise": "TALC",
 "envoi_colis": "",
-"etat_commande": "vente validée",
+"etat_commande": "inscription ok",
 "id_abo": "936556",
-"id_client": "",
+"id_client": "FO37253820",
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Mihoubi",
 "prenom abonne": "Soraya",
 "ref_preins": "PFO43406188MW",
 "tel_mobile": "0615075539",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936569": {
@@ -109120,9 +109146,9 @@
 "date_inscription": "2026-07-30 15:10:39",
 "entreprise": "Stratygo",
 "envoi_colis": "",
-"etat_commande": "vente validée",
+"etat_commande": "inscription ok",
 "id_abo": "936569",
-"id_client": "",
+"id_client": "FO37254012",
 "info_rdv_sync": "",
 "login": "vst-rkombo",
 "mcafee": "",
@@ -109141,17 +109167,17 @@
 "date_inscription": "2026-07-30 15:43:29",
 "entreprise": "TALC",
 "envoi_colis": "",
-"etat_commande": "vente validée",
+"etat_commande": "inscription ok",
 "id_abo": "936590",
-"id_client": "",
+"id_client": "FO37254179",
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Christine",
 "prenom abonne": "Boujema",
 "ref_preins": "PFO43406579KE",
 "tel_mobile": "0667561925",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936598": {
@@ -109162,17 +109188,17 @@
 "date_inscription": "2026-07-30 15:55:43",
 "entreprise": "TALC",
 "envoi_colis": "",
-"etat_commande": "vente validée",
+"etat_commande": "inscription ok",
 "id_abo": "936598",
-"id_client": "",
+"id_client": "FO37254283",
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Kanté",
 "prenom abonne": "Kelety",
 "ref_preins": "PFO43406697D5",
 "tel_mobile": "0758871815",
+"vendeur": "zakaria ourhalm",
 "ville": "Brest"
 },
 "f-936619": {
@@ -109183,9 +109209,9 @@
 "date_inscription": "2026-07-30 16:20:31",
 "entreprise": "Stratygo",
 "envoi_colis": "",
-"etat_commande": "vente validée",
+"etat_commande": "inscription ok",
 "id_abo": "936619",
-"id_client": "",
+"id_client": "FO37254410",
 "info_rdv_sync": "",
 "login": "vst-mmendousse",
 "mcafee": "",
@@ -109204,17 +109230,227 @@
 "date_inscription": "2026-07-30 16:30:37",
 "entreprise": "TALC",
 "envoi_colis": "",
-"etat_commande": "vente validée",
+"etat_commande": "inscription ok",
 "id_abo": "936626",
-"id_client": "",
+"id_client": "FO37254508",
 "info_rdv_sync": "",
 "login": "vta-zourhalm",
 "mcafee": "",
-"neuf A-AP": "",
 "nom abonne": "Barre",
 "prenom abonne": "Elisabeth",
 "ref_preins": "PFO43407003EC",
 "tel_mobile": "0672131251",
+"vendeur": "zakaria ourhalm",
+"ville": "Brest"
+},
+"f-936638": {
+"_op": "free",
+"adresse": "10 RUE DE LA CROIX",
+"box": "POP",
+"cp": "11140",
+"date_inscription": "2026-07-30 16:51:19",
+"entreprise": "Stratygo",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936638",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vst-iouirini",
+"mcafee": "",
+"neuf A-AP": "",
+"nom abonne": "Dasi",
+"prenom abonne": "Franck",
+"ref_preins": "PFO43407165C3",
+"tel_mobile": "0783354959",
+"ville": "Ferrals les corbieres"
+},
+"f-936651": {
+"_op": "free",
+"adresse": "4 RUE DU CLONE DU LOUP",
+"box": "ULTRA_PLAYER_POP",
+"cp": "17284",
+"date_inscription": "2026-07-30 17:06:47",
+"entreprise": "TALC",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936651",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vta-fboutouba",
+"mcafee": "",
+"nom abonne": "Lafon",
+"prenom abonne": "Stephane",
+"ref_preins": "PFO43407291FP",
+"tel_mobile": "0686537789",
+"vendeur": "fayez boutouba",
+"ville": "Pont l abbe d arnoult"
+},
+"f-936658": {
+"_op": "free",
+"adresse": "4 RUE DU GRAND LOGIS",
+"box": "POP",
+"cp": "85282",
+"date_inscription": "2026-07-30 17:14:50",
+"entreprise": "Stratygo",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936658",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vst-rkombo",
+"mcafee": "",
+"neuf A-AP": "",
+"nom abonne": "Di ciacco",
+"prenom abonne": "Serge",
+"ref_preins": "PFO4340743028",
+"tel_mobile": "0615135402",
+"ville": "Sigournais"
+},
+"f-936661": {
+"_op": "free",
+"adresse": "70 RUE DE LYON",
+"box": "ULTRA_PLAYER_POP",
+"cp": "29019",
+"date_inscription": "2026-07-30 17:19:06",
+"entreprise": "TALC",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936661",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vta-wperez",
+"mcafee": "",
+"nom abonne": "Corbin",
+"prenom abonne": "Claude",
+"ref_preins": "PFO434074791B",
+"tel_mobile": "0665637260",
+"vendeur": "wilfried perez",
+"ville": "Brest"
+},
+"f-936668": {
+"_op": "free",
+"adresse": "5 RUE PIERRE DE DREUX",
+"box": "ULTRA_LIGHT_PLAYER_POP",
+"cp": "29019",
+"date_inscription": "2026-07-30 17:27:04",
+"entreprise": "TALC",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936668",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vta-mrendy",
+"mcafee": "",
+"nom abonne": "Lagrene",
+"prenom abonne": "Anita",
+"ref_preins": "PFO43407433WX",
+"tel_mobile": "0780422176",
+"vendeur": "matteo rendy",
+"ville": "Brest"
+},
+"f-936673": {
+"_op": "free",
+"adresse": "9 RUE CALMETTE",
+"box": "ULTRA_LIGHT_PLAYER_POP",
+"cp": "17387",
+"date_inscription": "2026-07-30 17:33:23",
+"entreprise": "TALC",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936673",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vta-bziegler",
+"mcafee": "",
+"nom abonne": "Gaudin",
+"prenom abonne": "Carine",
+"ref_preins": "PFO43407739DH",
+"tel_mobile": "0666880776",
+"vendeur": "bradley ziegler",
+"ville": "Saint porchaire"
+},
+"f-936678": {
+"_op": "free",
+"adresse": "11 RUE DU GENERAL DE GAULLE",
+"box": "ULTRA_PLAYER_POP",
+"cp": "17045",
+"date_inscription": "2026-07-30 17:39:06",
+"entreprise": "TALC",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936678",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vta-lwojciechowski",
+"mcafee": "",
+"nom abonne": "Vanbever",
+"prenom abonne": "Didier",
+"ref_preins": "PFO434075495E",
+"tel_mobile": "0665316082",
+"vendeur": "lucas wojciechowski",
+"ville": "Beurlay"
+},
+"f-936706": {
+"_op": "free",
+"adresse": "5 RUE PIERRE DE DREUX",
+"box": "POP",
+"cp": "29019",
+"date_inscription": "2026-07-30 18:09:58",
+"entreprise": "TALC",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936706",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vta-mrendy",
+"mcafee": "",
+"nom abonne": "Soumaila",
+"prenom abonne": "Naida",
+"ref_preins": "PFO43407784P9",
+"tel_mobile": "0650245613",
+"vendeur": "matteo rendy",
+"ville": "Brest"
+},
+"f-936711": {
+"_op": "free",
+"adresse": "70 RUE DE LYON",
+"box": "ULTRA_PLAYER_POP",
+"cp": "29019",
+"date_inscription": "2026-07-30 18:18:01",
+"entreprise": "TALC",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936711",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vta-wperez",
+"mcafee": "",
+"nom abonne": "Nasreddine",
+"prenom abonne": "Abderrahman",
+"ref_preins": "PFO43407865FJ",
+"tel_mobile": "0683735400",
+"vendeur": "wilfried perez",
+"ville": "Brest"
+},
+"f-936716": {
+"_op": "free",
+"adresse": "8 RUE JULES LULLIEN",
+"box": "POP",
+"cp": "29019",
+"date_inscription": "2026-07-30 18:29:15",
+"entreprise": "TALC",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "936716",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vta-smamah",
+"mcafee": "",
+"nom abonne": "Andresa",
+"prenom abonne": "Yannick",
+"ref_preins": "PFO434079464D",
+"tel_mobile": "0778446602",
+"vendeur": "sana mamah",
 "ville": "Brest"
 }
 }
