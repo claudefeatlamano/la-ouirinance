@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-30T10:27:09.991401+00:00",
+  "scraped_at": "2026-07-30T12:46:51.001645+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18155,7 +18155,7 @@
       "cp": "79100",
       "ville": "THOUARS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0937830",
@@ -18299,7 +18299,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938742",
@@ -18887,6 +18887,30 @@
       "cp": "29820",
       "ville": "BOHARS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0941204",
+      "type": "Acquisition",
+      "date_inscription": "30/07/2026 12:31",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "RIVIERE",
+      "cp": "17250",
+      "ville": "BEURLAY",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0941364",
+      "type": "Acquisition",
+      "date_inscription": "30/07/2026 14:28",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "ANTHEAUME",
+      "cp": "85710",
+      "ville": "CHATEAUNEUF",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
     }
   ]
