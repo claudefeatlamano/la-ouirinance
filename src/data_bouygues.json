@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-31T03:18:05.249710+00:00",
+  "scraped_at": "2026-07-31T06:46:20.033080+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18251,7 +18251,7 @@
       "cp": "77310",
       "ville": "ST FARGEAU PONTHIERRY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Adresse pas éligible FTTH"
     },
     {
       "num_contrat": "C2E0938305",
@@ -18851,7 +18851,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0941082",
