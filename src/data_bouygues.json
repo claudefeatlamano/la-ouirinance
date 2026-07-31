@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-31T09:47:04.334509+00:00",
+  "scraped_at": "2026-07-31T12:02:18.188902+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18263,7 +18263,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938449",
@@ -18971,7 +18971,7 @@
       "cp": "17250",
       "ville": "BEURLAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     }
   ]
 }
