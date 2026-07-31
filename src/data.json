@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-31T19:37:45.682816+00:00",
+  "scraped_at": "2026-07-31T21:07:54.701583+00:00",
   "rows": [
     {
       "id_abo": "937076",
@@ -9,7 +9,7 @@
       "adresse": "39 RUE DE CARDURAND",
       "cp": "44184",
       "ville": "Saint nazaire",
-      "id_client": "",
+      "id_client": "FO37259823",
       "ref_preins": "PFO43413335K6",
       "nom abonne": "Foigny",
       "prenom abonne": "Maëllys",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "937029",
@@ -257,7 +257,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -5419,7 +5419,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-07-15",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "931620",
@@ -19010,7 +19010,7 @@
       "adresse": "2 RUE AMIRAL COURBET",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37259842",
       "ref_preins": "PFO43413353BY",
       "nom abonne": "Le roux",
       "prenom abonne": "Erwan",
@@ -19019,7 +19019,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "937063",
@@ -19030,7 +19030,7 @@
       "adresse": "8 RUE DE L ILE DE SEIN",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37259723",
       "ref_preins": "PFO43413215ZP",
       "nom abonne": "Philippe",
       "prenom abonne": "Croute",
@@ -19039,7 +19039,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "937061",
@@ -19050,7 +19050,7 @@
       "adresse": "2 RUE ALAIN LE GRAND",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37259805",
       "ref_preins": "PFO434132465S",
       "nom abonne": "LECANU",
       "prenom abonne": "EMILE",
@@ -19059,7 +19059,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "937050",
@@ -19130,7 +19130,7 @@
       "adresse": "5 RUE DE DOUARNENEZ",
       "cp": "29019",
       "ville": "Brest",
-      "id_client": "",
+      "id_client": "FO37259908",
       "ref_preins": "PFO43412954PG",
       "nom abonne": "Oualah",
       "prenom abonne": "Sara",
@@ -19139,7 +19139,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "936987",
@@ -19977,7 +19977,7 @@
       "tel_mobile": "0686537789",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -19997,7 +19997,7 @@
       "tel_mobile": "0672131251",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20017,7 +20017,7 @@
       "tel_mobile": "0758871815",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20037,7 +20037,7 @@
       "tel_mobile": "0667561925",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20077,7 +20077,7 @@
       "tel_mobile": "0674495593",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20137,7 +20137,7 @@
       "tel_mobile": "0684992673",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20157,7 +20157,7 @@
       "tel_mobile": "0617438274",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20177,7 +20177,7 @@
       "tel_mobile": "0677488601",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20197,7 +20197,7 @@
       "tel_mobile": "0609046412",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20217,7 +20217,7 @@
       "tel_mobile": "0616804599",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20257,7 +20257,7 @@
       "tel_mobile": "0769810249",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20277,7 +20277,7 @@
       "tel_mobile": "0780034613",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20297,7 +20297,7 @@
       "tel_mobile": "0746219464",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20337,7 +20337,7 @@
       "tel_mobile": "0752673695",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20357,7 +20357,7 @@
       "tel_mobile": "0629111373",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20377,7 +20377,7 @@
       "tel_mobile": "0613050415",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20397,7 +20397,7 @@
       "tel_mobile": "0789202395",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20417,7 +20417,7 @@
       "tel_mobile": "0627097043",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20437,7 +20437,7 @@
       "tel_mobile": "0625238915",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20517,7 +20517,7 @@
       "tel_mobile": "0610352916",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20537,7 +20537,7 @@
       "tel_mobile": "0635232998",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "RDV 2026-08-08",
       "etat_commande": "inscription ok"
     },
@@ -20557,7 +20557,7 @@
       "tel_mobile": "0647077415",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20577,7 +20577,7 @@
       "tel_mobile": "0659322320",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20617,7 +20617,7 @@
       "tel_mobile": "0613055136",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20657,7 +20657,7 @@
       "tel_mobile": "0634197572",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20677,7 +20677,7 @@
       "tel_mobile": "0762973137",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20698,7 +20698,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-08",
       "etat_commande": "inscription ok"
     },
     {
@@ -20717,7 +20717,7 @@
       "tel_mobile": "0780204609",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "RDV 2026-08-07",
       "etat_commande": "inscription ok"
     },
@@ -20777,7 +20777,7 @@
       "tel_mobile": "0780705210",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "RDV 2026-08-07",
       "etat_commande": "inscription ok"
     },
@@ -20797,7 +20797,7 @@
       "tel_mobile": "0680440770",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20817,7 +20817,7 @@
       "tel_mobile": "0662565473",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -20897,7 +20897,7 @@
       "tel_mobile": "0614295679",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "RDV 2026-08-07",
       "etat_commande": "inscription ok"
     },
@@ -21237,7 +21237,7 @@
       "tel_mobile": "0602293580",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "RDV 2026-08-12",
       "etat_commande": "inscription ok"
     },
@@ -21417,7 +21417,7 @@
       "tel_mobile": "0748554196",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "RDV 2026-08-07",
       "etat_commande": "inscription ok"
     },
@@ -21657,7 +21657,7 @@
       "tel_mobile": "0630578166",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -21737,7 +21737,7 @@
       "tel_mobile": "0695133949",
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-07-31",
       "info_rdv_sync": "RDV 2026-08-06",
       "etat_commande": "inscription ok"
     },
