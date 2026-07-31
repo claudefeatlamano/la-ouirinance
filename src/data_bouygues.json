@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-31T06:46:20.033080+00:00",
+  "scraped_at": "2026-07-31T09:47:04.334509+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18323,7 +18323,7 @@
       "cp": "85110",
       "ville": "CHANTONNAY",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938735",
@@ -18479,7 +18479,7 @@
       "cp": "72000",
       "ville": "LE MANS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938870",
@@ -18551,7 +18551,7 @@
       "cp": "85430",
       "ville": "NIEUL LE DOLENT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0939213",
