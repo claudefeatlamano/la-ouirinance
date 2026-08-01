@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-01T09:07:33.431569+00:00",
+  "scraped_at": "2026-08-01T11:18:23.945719+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19018,6 +19018,18 @@
       "nom client": "MIGNON",
       "cp": "29200",
       "ville": "BREST",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0942326",
+      "type": "Acquisition",
+      "date_inscription": "01/08/2026 12:12",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "CRESPELLIER",
+      "cp": "72460",
+      "ville": "SAVIGNE L EVEQUE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
