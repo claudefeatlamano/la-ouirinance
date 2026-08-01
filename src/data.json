@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-01T17:02:44.130830+00:00",
+  "scraped_at": "2026-08-01T19:12:17.665439+00:00",
   "rows": [
     {
       "id_abo": "937115",
@@ -19158,7 +19158,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-08",
       "etat_commande": "inscription ok"
     },
     {
@@ -19598,7 +19598,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-10",
       "etat_commande": "inscription ok"
     },
     {
@@ -29440,26 +29440,6 @@
       "envoi_colis": "2026-06-04",
       "info_rdv_sync": "SyncOK 2026-06-11",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "918459",
-      "date_inscription": "2026-06-01 19:36:27",
-      "login": "vta-zourhalm",
-      "entreprise": "TALC",
-      "adresse": "38 RUE DOMNOLET LAFARGE",
-      "cp": "87085",
-      "ville": "Limoges",
-      "id_client": "FO37007112",
-      "ref_preins": "PFO43123989TG",
-      "nom abonne": "Maugan",
-      "prenom abonne": "Amélie",
-      "tel_mobile": "0608550809",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-03",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
     }
   ]
 }
