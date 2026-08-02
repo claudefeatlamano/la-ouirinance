@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-02T06:35:00.139969+00:00",
+  "scraped_at": "2026-08-02T09:10:16.756378+00:00",
   "rows": [
     {
       "id_abo": "937115",
@@ -5478,7 +5478,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-14",
       "etat_commande": "inscription ok"
     },
     {
@@ -18738,7 +18738,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-13",
       "etat_commande": "inscription ok"
     },
     {
