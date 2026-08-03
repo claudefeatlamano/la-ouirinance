@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-03T11:27:34.549105+00:00",
+  "scraped_at": "2026-08-03T14:45:12.057174+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18851,7 +18851,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0941082",
@@ -19032,6 +19032,18 @@
       "ville": "SAVIGNE L EVEQUE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0942626",
+      "type": "Acquisition",
+      "date_inscription": "03/08/2026 15:25",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "PASCO",
+      "cp": "49450",
+      "ville": "SEVREMOINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
