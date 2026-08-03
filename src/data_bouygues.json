@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-03T07:30:55.052572+00:00",
+  "scraped_at": "2026-08-03T11:27:34.549105+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14471,7 +14471,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0910454",
@@ -18539,7 +18539,7 @@
       "cp": "17100",
       "ville": "SAINTES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0939243",
