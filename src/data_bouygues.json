@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-03T14:45:12.057174+00:00",
+  "scraped_at": "2026-08-03T17:10:40.352086+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19044,6 +19044,30 @@
       "ville": "SEVREMOINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0942796",
+      "type": "Acquisition",
+      "date_inscription": "03/08/2026 17:53",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "LEBOT",
+      "cp": "49230",
+      "ville": "SEVREMOINE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0942819",
+      "type": "Acquisition",
+      "date_inscription": "03/08/2026 18:25",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "PEROT",
+      "cp": "49230",
+      "ville": "SEVREMOINE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "StandBy"
     }
   ]
 }
