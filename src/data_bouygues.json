@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-03T19:41:31.611089+00:00",
+  "scraped_at": "2026-08-03T21:06:10.218337+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19080,6 +19080,18 @@
       "ville": "SEVREMOINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0942858",
+      "type": "Acquisition",
+      "date_inscription": "03/08/2026 21:48",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "PEREIRA",
+      "cp": "44620",
+      "ville": "LA MONTAGNE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
