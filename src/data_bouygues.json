@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-04T08:41:20.142381+00:00",
+  "scraped_at": "2026-08-04T11:26:20.225156+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18407,7 +18407,7 @@
       "cp": "72000",
       "ville": "LE MANS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938834",
@@ -18527,7 +18527,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0939357",
@@ -18683,7 +18683,7 @@
       "cp": "17600",
       "ville": "SAUJON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0940057",
@@ -18767,7 +18767,7 @@
       "cp": "31200",
       "ville": "TOULOUSE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0940380",
