@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-04T11:26:20.225156+00:00",
+  "scraped_at": "2026-08-04T14:22:06.055548+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18347,7 +18347,7 @@
       "cp": "85500",
       "ville": "LES HERBIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938703",
@@ -18863,7 +18863,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/RIB"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0941026",
@@ -19043,7 +19043,7 @@
       "cp": "49450",
       "ville": "SEVREMOINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0942796",
@@ -19091,6 +19091,42 @@
       "cp": "44620",
       "ville": "LA MONTAGNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0943154",
+      "type": "Acquisition",
+      "date_inscription": "04/08/2026 15:52",
+      "login": "c2.2875",
+      "vendeur": "OUIRINI OUISSEM",
+      "nom client": "RUELLAN",
+      "cp": "44600",
+      "ville": "ST-NAZAIRE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0943095",
+      "type": "Acquisition",
+      "date_inscription": "04/08/2026 15:04",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "GELOT",
+      "cp": "79250",
+      "ville": "NUEIL-LES-AUBIERS",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0943053",
+      "type": "Acquisition",
+      "date_inscription": "04/08/2026 14:25",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "CAFFART",
+      "cp": "49360",
+      "ville": "MAULEVRIER",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
       "etat_commande": "Vente validée"
     }
   ]
