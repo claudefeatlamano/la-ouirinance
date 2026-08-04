@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-04T16:53:44.838283+00:00",
+  "scraped_at": "2026-08-04T18:39:51.055782+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19140,6 +19140,30 @@
       "ville": "SEVREMOINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0943323",
+      "type": "Acquisition",
+      "date_inscription": "04/08/2026 20:08",
+      "login": "c2.3171",
+      "vendeur": "MERTZ LEO",
+      "nom client": "BARREAU",
+      "cp": "49710",
+      "ville": "SEVREMOINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Saisie"
+    },
+    {
+      "num_contrat": "C2E0943319",
+      "type": "Acquisition",
+      "date_inscription": "04/08/2026 19:27",
+      "login": "c2.5192",
+      "vendeur": "SHEHU PROSPER",
+      "nom client": "ABDOULHAMID MOHAMED",
+      "cp": "79250",
+      "ville": "NUEIL-LES-AUBIERS",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }

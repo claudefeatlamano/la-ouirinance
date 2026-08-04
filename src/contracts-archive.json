@@ -20734,6 +20734,32 @@
 "vendeur": "BEREST FRANCK",
 "ville": "SEVREMOINE"
 },
+"byg-C2E0943319": {
+"_op": "bouygues",
+"cp": "79250",
+"date_inscription": "04/08/2026 19:27",
+"etat_commande": "Saisie",
+"login": "c2.5192",
+"nom client": "ABDOULHAMID MOHAMED",
+"num_contrat": "C2E0943319",
+"produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+"type": "Acquisition",
+"vendeur": "SHEHU PROSPER",
+"ville": "NUEIL-LES-AUBIERS"
+},
+"byg-C2E0943323": {
+"_op": "bouygues",
+"cp": "49710",
+"date_inscription": "04/08/2026 20:08",
+"etat_commande": "Saisie",
+"login": "c2.3171",
+"nom client": "BARREAU",
+"num_contrat": "C2E0943323",
+"produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+"type": "Acquisition",
+"vendeur": "MERTZ LEO",
+"ville": "SEVREMOINE"
+},
 "f-875541": {
 "_op": "free",
 "adresse": "4 RUE DE LA CADIVAIS",
