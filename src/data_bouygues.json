@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-04T05:50:08.261924+00:00",
+  "scraped_at": "2026-08-04T08:41:20.142381+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14471,7 +14471,7 @@
       "cp": "85180",
       "ville": "LES SABLES-D'OLONNE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0910454",
@@ -14603,7 +14603,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/A rappeler"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0911037",
@@ -18515,7 +18515,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0939154",
@@ -18623,7 +18623,7 @@
       "cp": "17600",
       "ville": "SAUJON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0939804",
@@ -18635,7 +18635,7 @@
       "cp": "17600",
       "ville": "SAUJON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0939839",
@@ -18851,7 +18851,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Injoignable"
     },
     {
       "num_contrat": "C2E0941082",
@@ -19067,7 +19067,7 @@
       "cp": "49230",
       "ville": "SEVREMOINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0942852",
@@ -19091,7 +19091,7 @@
       "cp": "44620",
       "ville": "LA MONTAGNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     }
   ]
 }
