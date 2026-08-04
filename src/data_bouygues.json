@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-04T14:22:06.055548+00:00",
+  "scraped_at": "2026-08-04T16:53:44.838283+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18611,7 +18611,7 @@
       "cp": "17600",
       "ville": "SAUJON",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0939842",
@@ -18779,7 +18779,7 @@
       "cp": "44300",
       "ville": "NANTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0940809",
@@ -19103,7 +19103,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0943095",
@@ -19115,7 +19115,7 @@
       "cp": "79250",
       "ville": "NUEIL-LES-AUBIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0943053",
@@ -19127,6 +19127,18 @@
       "cp": "49360",
       "ville": "MAULEVRIER",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0943238",
+      "type": "Acquisition",
+      "date_inscription": "04/08/2026 17:08",
+      "login": "c2.5022",
+      "vendeur": "BEREST FRANCK",
+      "nom client": "BAIL",
+      "cp": "49710",
+      "ville": "SEVREMOINE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
