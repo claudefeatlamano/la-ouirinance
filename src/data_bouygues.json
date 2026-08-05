@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-05T12:55:23.725398+00:00",
+  "scraped_at": "2026-08-05T15:15:43.316012+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18719,7 +18719,7 @@
       "cp": "29490",
       "ville": "GUIPAVAS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0940304",
@@ -18755,7 +18755,7 @@
       "cp": "29800",
       "ville": "LANDERNEAU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0940386",
@@ -18815,7 +18815,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0940976",
@@ -19187,6 +19187,42 @@
       "cp": "49450",
       "ville": "BEAUPREAU EN MAUGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0943631",
+      "type": "Acquisition",
+      "date_inscription": "05/08/2026 16:46",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "MOULIN",
+      "cp": "49450",
+      "ville": "BEAUPREAU EN MAUGES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "StandBy"
+    },
+    {
+      "num_contrat": "C2E0943606",
+      "type": "Acquisition",
+      "date_inscription": "05/08/2026 16:28",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "BROSSEAU",
+      "cp": "49710",
+      "ville": "SEVREMOINE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0943521",
+      "type": "Acquisition",
+      "date_inscription": "05/08/2026 14:58",
+      "login": "c2.5885",
+      "vendeur": "ABOULFATAH YANNIS",
+      "nom client": "BELLIOT",
+      "cp": "49660",
+      "ville": "SEVREMOINE",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
     }
   ]
