@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-05T04:12:28.677708+00:00",
+  "scraped_at": "2026-08-05T07:41:28.642811+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14603,7 +14603,7 @@
       "cp": "85000",
       "ville": "LA ROCHE-SUR-YON",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0911037",
@@ -18767,7 +18767,7 @@
       "cp": "31200",
       "ville": "TOULOUSE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0940380",
@@ -18863,7 +18863,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Injoignable"
     },
     {
       "num_contrat": "C2E0941026",
@@ -19103,7 +19103,7 @@
       "cp": "44600",
       "ville": "ST-NAZAIRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0943095",
@@ -19115,7 +19115,7 @@
       "cp": "79250",
       "ville": "NUEIL-LES-AUBIERS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0943053",
