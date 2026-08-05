@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-05T07:41:28.642811+00:00",
+  "scraped_at": "2026-08-05T10:38:22.417195+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14747,7 +14747,7 @@
       "cp": "44570",
       "ville": "TRIGNAC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0911781",
@@ -18587,7 +18587,7 @@
       "cp": "17100",
       "ville": "SAINTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0939639",
@@ -18671,7 +18671,7 @@
       "cp": "29800",
       "ville": "LANDERNEAU",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0940157",
@@ -18695,7 +18695,7 @@
       "cp": "49300",
       "ville": "CHOLET",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0940277",
@@ -19163,7 +19163,7 @@
       "cp": "79250",
       "ville": "NUEIL-LES-AUBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     }
   ]
 }

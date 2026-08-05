@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-05T07:41:20.239807+00:00",
+  "scraped_at": "2026-08-05T10:38:14.246286+00:00",
   "rows": [
     {
       "id_abo": "937830",
@@ -1178,7 +1178,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-11",
       "etat_commande": "inscription ok"
     },
     {
@@ -2078,7 +2078,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-29",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-06",
       "etat_commande": "inscription ok"
     },
     {
@@ -2158,7 +2158,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-29",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-07",
       "etat_commande": "inscription ok"
     },
     {
@@ -2738,8 +2738,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-28",
-      "info_rdv_sync": "RDV 2026-08-05",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-05",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "934638",
@@ -4658,8 +4658,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-22",
-      "info_rdv_sync": "RDV 2026-08-05",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-05",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "933107",
@@ -18162,86 +18162,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "920146",
-      "date_inscription": "2026-06-05 12:31:12",
-      "login": "vst-esimiandbuissonnet",
-      "entreprise": "Stratygo",
-      "adresse": "1 ALLEE FRANCOISE DOLTO",
-      "cp": "44210",
-      "ville": "Trignac",
-      "id_client": "FO37025598",
-      "ref_preins": "PFO43144327WW",
-      "nom abonne": "Boudin",
-      "prenom abonne": "Emmanuelle",
-      "tel_mobile": "0768138285",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-09",
-      "info_rdv_sync": "SyncOK 2026-06-15",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "920130",
-      "date_inscription": "2026-06-05 12:18:05",
-      "login": "vst-lchraita",
-      "entreprise": "Stratygo",
-      "adresse": "2 RUE DU VERDET",
-      "cp": "49260",
-      "ville": "Romagne",
-      "id_client": "FO37025488",
-      "ref_preins": "PFO431442426U",
-      "nom abonne": "Fonteneau",
-      "prenom abonne": "Catherine",
-      "tel_mobile": "0648245663",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-10",
-      "info_rdv_sync": "RDV 2026-06-30",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "920096",
-      "date_inscription": "2026-06-05 11:33:31",
-      "login": "vst-esimiandbuissonnet",
-      "entreprise": "Stratygo",
-      "adresse": "16 ALLEE FRANCOISE DOLTO",
-      "cp": "44210",
-      "ville": "Trignac",
-      "id_client": "FO37025174",
-      "ref_preins": "PFO43143906CH",
-      "nom abonne": "Chapron",
-      "prenom abonne": "Cassandra",
-      "tel_mobile": "0785963198",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-08",
-      "info_rdv_sync": "SyncOK 2026-06-22",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "920094",
-      "date_inscription": "2026-06-05 11:33:04",
-      "login": "vst-mmendousse",
-      "entreprise": "Stratygo",
-      "adresse": "1 ALLEE LEONARD DE VINCI",
-      "cp": "44210",
-      "ville": "Trignac",
-      "id_client": "FO37025180",
-      "ref_preins": "PFO431438933Z",
-      "nom abonne": "Texier",
-      "prenom abonne": "Isabelle",
-      "tel_mobile": "0666176681",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
       "id_abo": "937809",
       "date_inscription": "2026-08-04 18:33:40",
       "login": "vta-lwojciechowski",
@@ -20738,7 +20658,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-30",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-07",
       "etat_commande": "inscription ok"
     },
     {
@@ -28460,46 +28380,6 @@
       "envoi_colis": "",
       "info_rdv_sync": "",
       "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "920129",
-      "date_inscription": "2026-06-05 12:16:21",
-      "login": "vta-yhabbouba",
-      "entreprise": "TALC",
-      "adresse": "18 RUE OLIVIER DE SERRES",
-      "cp": "87085",
-      "ville": "Limoges",
-      "id_client": "FO37025447",
-      "ref_preins": "PFO431441954W",
-      "nom abonne": "Ruf",
-      "prenom abonne": "Monique",
-      "tel_mobile": "0683772989",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-08",
-      "info_rdv_sync": "SyncOK 2026-06-15",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "920117",
-      "date_inscription": "2026-06-05 12:00:47",
-      "login": "vta-bziegler",
-      "entreprise": "TALC",
-      "adresse": "22 RUE EUGENE LE ROY",
-      "cp": "87085",
-      "ville": "Limoges",
-      "id_client": "FO37025374",
-      "ref_preins": "PFO43144106E2",
-      "nom abonne": "Soulhol",
-      "prenom abonne": "Nicolas",
-      "tel_mobile": "0625257642",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
     }
   ]
 }
