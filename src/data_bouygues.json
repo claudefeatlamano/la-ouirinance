@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-05T10:38:22.417195+00:00",
+  "scraped_at": "2026-08-05T12:55:23.725398+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19067,7 +19067,7 @@
       "cp": "49230",
       "ville": "SEVREMOINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0942852",
@@ -19151,7 +19151,7 @@
       "cp": "49710",
       "ville": "SEVREMOINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "Vente validée"
     },
     {
       "num_contrat": "C2E0943319",
@@ -19164,6 +19164,30 @@
       "ville": "NUEIL-LES-AUBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0943501",
+      "type": "Acquisition",
+      "date_inscription": "05/08/2026 14:37",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "POUPLARD",
+      "cp": "49450",
+      "ville": "BEAUPREAU EN MAUGES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0943415",
+      "type": "Acquisition",
+      "date_inscription": "05/08/2026 13:03",
+      "login": "c2.5211",
+      "vendeur": "MOIZE VICTOR",
+      "nom client": "EMERIAU",
+      "cp": "49450",
+      "ville": "BEAUPREAU EN MAUGES",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
     }
   ]
 }
