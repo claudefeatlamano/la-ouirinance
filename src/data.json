@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-05T19:38:41.569757+00:00",
+  "scraped_at": "2026-08-05T21:13:18.681435+00:00",
   "rows": [
     {
       "id_abo": "938183",
@@ -9,7 +9,7 @@
       "adresse": "21 RUE DE LA CITE",
       "cp": "49023",
       "ville": "Beaupreau en mauges",
-      "id_client": "",
+      "id_client": "FO37284108",
       "ref_preins": "PFO434400169Y",
       "nom abonne": "Couilleau",
       "prenom abonne": "Marie-claide",
@@ -19,7 +19,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938176",
@@ -29,7 +29,7 @@
       "adresse": "24 RUE DE LA THEBAUDIERE",
       "cp": "49023",
       "ville": "Beaupreau en mauges",
-      "id_client": "",
+      "id_client": "FO37284015",
       "ref_preins": "PFO43439874LG",
       "nom abonne": "Tedeschi",
       "prenom abonne": "Annie",
@@ -39,7 +39,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938172",
@@ -49,7 +49,7 @@
       "adresse": "20 RUE DU 11 NOVEMBRE",
       "cp": "85059",
       "ville": "Chataigneraie",
-      "id_client": "",
+      "id_client": "FO37283869",
       "ref_preins": "PFO43439744SQ",
       "nom abonne": "Poupeau",
       "prenom abonne": "Titouane",
@@ -59,7 +59,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938160",
@@ -1137,7 +1137,7 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-08-05",
       "info_rdv_sync": "",
       "etat_commande": "inscription ok"
     },
@@ -1777,7 +1777,7 @@
       "box": "POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-08-05",
       "info_rdv_sync": "RDV 2026-08-17",
       "etat_commande": "inscription ok"
     },
@@ -1837,7 +1837,7 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "neuf A-AP": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-08-05",
       "info_rdv_sync": "RDV 2026-08-11",
       "etat_commande": "inscription ok"
     },
@@ -18369,7 +18369,7 @@
       "adresse": "3 RUE CAMILLE FLAMMARION",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37283937",
       "ref_preins": "PFO4343980978",
       "nom abonne": "PLOQUIN GUILLEUX",
       "prenom abonne": "LISE",
@@ -18379,7 +18379,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938170",
@@ -18389,7 +18389,7 @@
       "adresse": "14 RUE MICHEL CHASLES",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37283921",
       "ref_preins": "PFO43439721BT",
       "nom abonne": "N'da",
       "prenom abonne": "Valérie",
@@ -18399,7 +18399,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938158",
@@ -21218,8 +21218,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-30",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-05",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "935971",
