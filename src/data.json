@@ -1,6 +1,66 @@
 {
-  "scraped_at": "2026-08-05T17:41:35.004693+00:00",
+  "scraped_at": "2026-08-05T19:38:41.569757+00:00",
   "rows": [
+    {
+      "id_abo": "938183",
+      "date_inscription": "2026-08-05 19:56:19",
+      "login": "vst-gsoumah",
+      "entreprise": "Stratygo",
+      "adresse": "21 RUE DE LA CITE",
+      "cp": "49023",
+      "ville": "Beaupreau en mauges",
+      "id_client": "",
+      "ref_preins": "PFO434400169Y",
+      "nom abonne": "Couilleau",
+      "prenom abonne": "Marie-claide",
+      "tel_mobile": "0771155367",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "938176",
+      "date_inscription": "2026-08-05 19:24:47",
+      "login": "vst-efouvo",
+      "entreprise": "Stratygo",
+      "adresse": "24 RUE DE LA THEBAUDIERE",
+      "cp": "49023",
+      "ville": "Beaupreau en mauges",
+      "id_client": "",
+      "ref_preins": "PFO43439874LG",
+      "nom abonne": "Tedeschi",
+      "prenom abonne": "Annie",
+      "tel_mobile": "0675116830",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "938172",
+      "date_inscription": "2026-08-05 19:09:45",
+      "login": "vst-rkombo",
+      "entreprise": "Stratygo",
+      "adresse": "20 RUE DU 11 NOVEMBRE",
+      "cp": "85059",
+      "ville": "Chataigneraie",
+      "id_client": "",
+      "ref_preins": "PFO43439744SQ",
+      "nom abonne": "Poupeau",
+      "prenom abonne": "Titouane",
+      "tel_mobile": "0610295822",
+      "box": "ULTRA_LIGHT_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "938160",
       "date_inscription": "2026-08-05 18:37:27",
@@ -9,7 +69,7 @@
       "adresse": "76 RUE DES 3 PROVINCES",
       "cp": "49301",
       "ville": "Sevremoine",
-      "id_client": "",
+      "id_client": "FO37283714",
       "ref_preins": "PFO43439543NA",
       "nom abonne": "Mouille",
       "prenom abonne": "Monique",
@@ -19,7 +79,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938133",
@@ -29,7 +89,7 @@
       "adresse": "21 RUE DES MONNERIES",
       "cp": "49023",
       "ville": "Beaupreau en mauges",
-      "id_client": "",
+      "id_client": "FO37283206",
       "ref_preins": "PFO43438907EV",
       "nom abonne": "Delage",
       "prenom abonne": "Stéphanie",
@@ -39,7 +99,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938130",
@@ -69,7 +129,7 @@
       "adresse": "48 RUE DES 3 PROVINCES",
       "cp": "49301",
       "ville": "Sevremoine",
-      "id_client": "",
+      "id_client": "FO37283133",
       "ref_preins": "PFO43438821L0",
       "nom abonne": "Vinet",
       "prenom abonne": "Jean pierre",
@@ -79,7 +139,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938116",
@@ -89,7 +149,7 @@
       "adresse": "40 RUE DU PRE DE LA MARE",
       "cp": "49023",
       "ville": "Beaupreau en mauges",
-      "id_client": "",
+      "id_client": "FO37283005",
       "ref_preins": "PFO43438679LD",
       "nom abonne": "Robineau",
       "prenom abonne": "Maxime",
@@ -99,7 +159,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938115",
@@ -109,7 +169,7 @@
       "adresse": "6 RUE DES JACOBINS",
       "cp": "85059",
       "ville": "Chataigneraie",
-      "id_client": "",
+      "id_client": "FO37283001",
       "ref_preins": "PFO434387206C",
       "nom abonne": "Durand",
       "prenom abonne": "Agnes",
@@ -119,7 +179,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938107",
@@ -129,7 +189,7 @@
       "adresse": "29 RUE DES FONTENELLES",
       "cp": "49301",
       "ville": "Sevremoine",
-      "id_client": "",
+      "id_client": "FO37282993",
       "ref_preins": "PFO434386731C",
       "nom abonne": "Millera",
       "prenom abonne": "Mathias",
@@ -139,7 +199,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938091",
@@ -9398,7 +9458,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-12",
       "etat_commande": "inscription ok"
     },
     {
@@ -18302,6 +18362,46 @@
       "etat_commande": "inscription ok"
     },
     {
+      "id_abo": "938174",
+      "date_inscription": "2026-08-05 19:12:22",
+      "login": "vta-wperez",
+      "entreprise": "TALC",
+      "adresse": "3 RUE CAMILLE FLAMMARION",
+      "cp": "79191",
+      "ville": "Niort",
+      "id_client": "",
+      "ref_preins": "PFO4343980978",
+      "nom abonne": "PLOQUIN GUILLEUX",
+      "prenom abonne": "LISE",
+      "tel_mobile": "0614928595",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
+      "id_abo": "938170",
+      "date_inscription": "2026-08-05 19:07:18",
+      "login": "vta-tferreira",
+      "entreprise": "TALC",
+      "adresse": "14 RUE MICHEL CHASLES",
+      "cp": "79191",
+      "ville": "Niort",
+      "id_client": "",
+      "ref_preins": "PFO43439721BT",
+      "nom abonne": "N'da",
+      "prenom abonne": "Valérie",
+      "tel_mobile": "0622528857",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
+    {
       "id_abo": "938158",
       "date_inscription": "2026-08-05 18:31:59",
       "login": "vta-wperez",
@@ -18309,7 +18409,7 @@
       "adresse": "3 RUE CAMILLE FLAMMARION",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37283692",
       "ref_preins": "PFO43439508V4",
       "nom abonne": "MBOYOU OYOU",
       "prenom abonne": "ALPHONSINE",
@@ -18319,7 +18419,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938146",
@@ -18329,7 +18429,7 @@
       "adresse": "1 SQUARE MADAME DE MAINTENON",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37283447",
       "ref_preins": "PFO43439219OW",
       "nom abonne": "Vende",
       "prenom abonne": "Natacha",
@@ -18339,7 +18439,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938139",
@@ -18349,7 +18449,7 @@
       "adresse": "10 SQUARE GALILEE",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37283397",
       "ref_preins": "PFO43439063NC",
       "nom abonne": "Colonnette",
       "prenom abonne": "Céline",
@@ -18359,7 +18459,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938122",
@@ -18369,7 +18469,7 @@
       "adresse": "28 RUE HENRI SELLIER",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37283063",
       "ref_preins": "PFO4343875645",
       "nom abonne": "PROMENEUR",
       "prenom abonne": "KIRSTY",
@@ -18379,7 +18479,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938113",
@@ -18389,7 +18489,7 @@
       "adresse": "16 RUE MICHEL CHASLES",
       "cp": "79191",
       "ville": "Niort",
-      "id_client": "",
+      "id_client": "FO37282951",
       "ref_preins": "PFO434386404T",
       "nom abonne": "Lenestour",
       "prenom abonne": "Anastasia",
@@ -18399,7 +18499,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938093",
@@ -18698,8 +18798,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-03",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-05",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "937050",
@@ -20778,8 +20878,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-30",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-05",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "936131",
