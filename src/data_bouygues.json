@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-06T08:41:06.675337+00:00",
+  "scraped_at": "2026-08-06T11:25:47.398078+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18911,7 +18911,7 @@
       "cp": "85710",
       "ville": "CHATEAUNEUF",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0941562",
@@ -18923,7 +18923,7 @@
       "cp": "85300",
       "ville": "CHALLANS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0941537",
