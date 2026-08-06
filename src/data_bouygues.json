@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-06T05:51:49.776004+00:00",
+  "scraped_at": "2026-08-06T08:41:06.675337+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -14747,7 +14747,7 @@
       "cp": "44570",
       "ville": "TRIGNAC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO STANDBY"
     },
     {
       "num_contrat": "C2E0911781",
@@ -18959,7 +18959,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0941747",
@@ -19067,7 +19067,7 @@
       "cp": "49230",
       "ville": "SEVREMOINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0942852",
@@ -19163,7 +19163,7 @@
       "cp": "79250",
       "ville": "NUEIL-LES-AUBIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Injoignable"
     },
     {
       "num_contrat": "C2E0943501",
@@ -19199,7 +19199,7 @@
       "cp": "49450",
       "ville": "BEAUPREAU EN MAUGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "StandBy/Impayé"
     },
     {
       "num_contrat": "C2E0943606",
