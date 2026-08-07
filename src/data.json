@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-07T07:19:47.615775+00:00",
+  "scraped_at": "2026-08-07T09:01:56.614159+00:00",
   "rows": [
     {
       "id_abo": "938359",
@@ -1738,7 +1738,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-14",
       "etat_commande": "inscription ok"
     },
     {
@@ -2429,7 +2429,7 @@
       "adresse": "23 RUE DU CLOS MARTIN",
       "cp": "44103",
       "ville": "Montoir de bretagne",
-      "id_client": "",
+      "id_client": "FO37289598",
       "ref_preins": "PFO43411355KV",
       "nom abonne": "MORICEAU",
       "prenom abonne": "Cathrine",
@@ -2439,7 +2439,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "936878",
@@ -2978,8 +2978,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-29",
-      "info_rdv_sync": "RDV 2026-08-07",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-07",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "935405",
@@ -3058,8 +3058,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-29",
-      "info_rdv_sync": "RDV 2026-08-07",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-07",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "935270",
@@ -5678,8 +5678,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-21",
-      "info_rdv_sync": "RDV 2026-08-07",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-07",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "933067",
@@ -18958,7 +18958,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-17",
       "etat_commande": "inscription ok"
     },
     {
@@ -19098,7 +19098,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-09-01",
       "etat_commande": "inscription ok"
     },
     {
@@ -20878,8 +20878,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-31",
-      "info_rdv_sync": "RDV 2026-08-07",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-07",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "936300",
@@ -20898,7 +20898,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-31",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-12",
       "etat_commande": "inscription ok"
     },
     {
@@ -21878,7 +21878,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-30",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-13",
       "etat_commande": "inscription ok"
     },
     {
@@ -28178,8 +28178,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-06-18",
-      "info_rdv_sync": "RDV 2026-06-26",
-      "etat_commande": "vente abandonée"
+      "info_rdv_sync": "SyncOK 2026-08-07",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "923852",
