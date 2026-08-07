@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-06T14:18:53.202756+00:00",
+  "scraped_at": "2026-08-07T00:41:29.906930+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18887,7 +18887,7 @@
       "cp": "29820",
       "ville": "BOHARS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0941204",
@@ -18935,7 +18935,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0941614",
@@ -19224,6 +19224,66 @@
       "ville": "SEVREMOINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0944064",
+      "type": "Acquisition",
+      "date_inscription": "06/08/2026 17:40",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "PETITEAU",
+      "cp": "85190",
+      "ville": "VENANSAULT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0944014",
+      "type": "Acquisition",
+      "date_inscription": "06/08/2026 16:43",
+      "login": "c2.3324",
+      "vendeur": "ATF ALI",
+      "nom client": "OUDINET",
+      "cp": "79000",
+      "ville": "NIORT",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0944072",
+      "type": "Acquisition",
+      "date_inscription": "06/08/2026 18:05",
+      "login": "c2.4988",
+      "vendeur": "ATROUNE HAMID",
+      "nom client": "FROUIN",
+      "cp": "49360",
+      "ville": "LES CERQUEUX",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "KO"
+    },
+    {
+      "num_contrat": "C2E0944010",
+      "type": "Acquisition",
+      "date_inscription": "06/08/2026 16:37",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "DUPONT",
+      "cp": "85280",
+      "ville": "LA FERRIERE",
+      "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+      "etat_commande": "Vente validée"
+    },
+    {
+      "num_contrat": "C2E0944063",
+      "type": "Acquisition",
+      "date_inscription": "06/08/2026 17:39",
+      "login": "c2.5207",
+      "vendeur": "PEREIRA SANDRA",
+      "nom client": "PETELET",
+      "cp": "85190",
+      "ville": "VENANSAULT",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "KO"
     }
   ]
 }
