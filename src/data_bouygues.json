@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-07T13:09:44.704637+00:00",
+  "scraped_at": "2026-08-07T14:54:56.954511+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19019,7 +19019,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0942326",
