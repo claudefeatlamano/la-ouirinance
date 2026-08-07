@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-07T15:58:23.246767+00:00",
+  "scraped_at": "2026-08-07T19:01:01.890419+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19284,6 +19284,18 @@
       "ville": "VENANSAULT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
       "etat_commande": "KO/Situation Client"
+    },
+    {
+      "num_contrat": "C2E0944424",
+      "type": "Acquisition",
+      "date_inscription": "07/08/2026 19:34",
+      "login": "c2.3168",
+      "vendeur": "CHEIKH ABDELLAH",
+      "nom client": "OUISSE",
+      "cp": "44260",
+      "ville": "LA CHAPELLE LAUNAY",
+      "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
+      "etat_commande": "Saisie"
     }
   ]
 }
