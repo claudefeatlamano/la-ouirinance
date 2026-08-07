@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-07T10:54:57.286661+00:00",
+  "scraped_at": "2026-08-07T11:48:33.248493+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18983,7 +18983,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0942077",
