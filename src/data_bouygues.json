@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-07T05:42:08.739454+00:00",
+  "scraped_at": "2026-08-07T07:19:54.881307+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18971,7 +18971,7 @@
       "cp": "17250",
       "ville": "BEURLAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0942153",
@@ -19259,7 +19259,7 @@
       "cp": "49360",
       "ville": "LES CERQUEUX",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     },
     {
       "num_contrat": "C2E0944010",
@@ -19283,7 +19283,7 @@
       "cp": "85190",
       "ville": "VENANSAULT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/Situation Client"
     }
   ]
 }
