@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-08T09:40:16.925695+00:00",
+  "scraped_at": "2026-08-08T10:36:10.463126+00:00",
   "rows": [
     {
       "id_abo": "938505",
@@ -18620,46 +18620,6 @@
       "envoi_colis": "2026-06-10",
       "info_rdv_sync": "",
       "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "920590",
-      "date_inscription": "2026-06-08 12:35:05",
-      "login": "vst-pgrasset",
-      "entreprise": "Stratygo",
-      "adresse": "1 ALLEE SAINT CLOUD",
-      "cp": "85047",
-      "ville": "Challans",
-      "id_client": "FO37036113",
-      "ref_preins": "PFO431559992E",
-      "nom abonne": "Deprez",
-      "prenom abonne": "Christelle",
-      "tel_mobile": "0625423655",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "920576",
-      "date_inscription": "2026-06-08 12:18:43",
-      "login": "vst-efouvo",
-      "entreprise": "Stratygo",
-      "adresse": "7 CHEMIN DU FIEF GALAY",
-      "cp": "85047",
-      "ville": "Challans",
-      "id_client": "FO37035875",
-      "ref_preins": "PFO43155758JH",
-      "nom abonne": "Logeais",
-      "prenom abonne": "Bernard",
-      "tel_mobile": "0769288299",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-11",
-      "info_rdv_sync": "SyncOK 2026-06-17",
-      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "938326",
