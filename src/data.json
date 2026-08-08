@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-08T16:36:37.791619+00:00",
+  "scraped_at": "2026-08-08T17:32:58.455299+00:00",
   "rows": [
     {
       "id_abo": "938505",
@@ -3758,8 +3758,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-03",
-      "info_rdv_sync": "RDV 2026-08-08",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-08",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "934533",
@@ -18160,46 +18160,6 @@
       "envoi_colis": "2026-06-15",
       "info_rdv_sync": "SyncOK 2026-06-23",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "920994",
-      "date_inscription": "2026-06-08 18:43:13",
-      "login": "vst-nwahid",
-      "entreprise": "Stratygo",
-      "adresse": "10 RUE DES ENFANTS D IZIEU",
-      "cp": "31113",
-      "ville": "Castanet tolosan",
-      "id_client": "FO37040143",
-      "ref_preins": "PFO43159616LZ",
-      "nom abonne": "Mahel",
-      "prenom abonne": "Aïcha",
-      "tel_mobile": "0767115737",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-16",
-      "info_rdv_sync": "SyncOK 2026-06-18",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "920993",
-      "date_inscription": "2026-06-08 18:42:59",
-      "login": "vst-droode",
-      "entreprise": "Stratygo",
-      "adresse": "4 RUE DU CHAPEAU ROUGE",
-      "cp": "85059",
-      "ville": "Chataigneraie",
-      "id_client": "FO37039184",
-      "ref_preins": "PFO43159467SH",
-      "nom abonne": "Gelinot",
-      "prenom abonne": "Sébastien",
-      "tel_mobile": "0662180280",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
     },
     {
       "id_abo": "938326",
