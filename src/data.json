@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-08T10:36:10.463126+00:00",
+  "scraped_at": "2026-08-08T11:30:56.892038+00:00",
   "rows": [
     {
       "id_abo": "938505",
@@ -258,7 +258,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-17",
       "etat_commande": "inscription ok"
     },
     {
@@ -3358,8 +3358,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-28",
-      "info_rdv_sync": "RDV 2026-08-08",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-08",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "934923",
@@ -4278,8 +4278,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-03",
-      "info_rdv_sync": "RDV 2026-08-08",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-08",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "934115",
@@ -4398,8 +4398,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-27",
-      "info_rdv_sync": "RDV 2026-08-04",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-08",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "934050",
@@ -5218,8 +5218,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-22",
-      "info_rdv_sync": "RDV 2026-08-08",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-08",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "933535",
@@ -18542,86 +18542,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "920648",
-      "date_inscription": "2026-06-08 13:29:37",
-      "login": "vst-esimiandbuissonnet",
-      "entreprise": "Stratygo",
-      "adresse": "5 IMPASSE BONSEJOUR",
-      "cp": "85059",
-      "ville": "Chataigneraie",
-      "id_client": "",
-      "ref_preins": "PFO431564105J",
-      "nom abonne": "Bossis",
-      "prenom abonne": "Tony",
-      "tel_mobile": "0636103474",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "920643",
-      "date_inscription": "2026-06-08 13:25:20",
-      "login": "vst-aatf",
-      "entreprise": "Stratygo",
-      "adresse": "27 RUE HENRY LORY",
-      "cp": "85047",
-      "ville": "Challans",
-      "id_client": "FO37036431",
-      "ref_preins": "PFO43156368HE",
-      "nom abonne": "Chantrenne lionnard",
-      "prenom abonne": "Corinne alain",
-      "tel_mobile": "0615085478",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-11",
-      "info_rdv_sync": "SyncOK 2026-06-18",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "920629",
-      "date_inscription": "2026-06-08 13:16:28",
-      "login": "vst-spereira",
-      "entreprise": "Stratygo",
-      "adresse": "22 RUE HENRY LORY",
-      "cp": "85047",
-      "ville": "Challans",
-      "id_client": "FO37036295",
-      "ref_preins": "PFO43156277MB",
-      "nom abonne": "ROBIN",
-      "prenom abonne": "James",
-      "tel_mobile": "0644917742",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "920624",
-      "date_inscription": "2026-06-08 13:11:37",
-      "login": "vst-efouvo",
-      "entreprise": "Stratygo",
-      "adresse": "4 IMPASSE DE L EPEAUTRE",
-      "cp": "85047",
-      "ville": "Challans",
-      "id_client": "FO37036338",
-      "ref_preins": "PFO43156237S2",
-      "nom abonne": "Queutelot",
-      "prenom abonne": "Pierre",
-      "tel_mobile": "0634300548",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-10",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -18678,7 +18598,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-17",
       "etat_commande": "inscription ok"
     },
     {
@@ -20018,8 +19938,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-04",
-      "info_rdv_sync": "RDV 2026-08-12",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-08",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "936651",
@@ -29000,46 +28920,6 @@
       "envoi_colis": "2026-06-11",
       "info_rdv_sync": "SyncOK 2026-06-16",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "920630",
-      "date_inscription": "2026-06-08 13:17:31",
-      "login": "vta-zourhalm",
-      "entreprise": "TALC",
-      "adresse": "6 COUR DES HOSPITALIERES",
-      "cp": "79191",
-      "ville": "Niort",
-      "id_client": "FO37036360",
-      "ref_preins": "PFO43156298EN",
-      "nom abonne": "KHECHUMYAN",
-      "prenom abonne": "VIRAP / SUSANNA",
-      "tel_mobile": "0780669072",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-11",
-      "info_rdv_sync": "SyncOK 2026-06-17",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "920615",
-      "date_inscription": "2026-06-08 12:58:49",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "28 RUE ALFRED DE VIGNY",
-      "cp": "79191",
-      "ville": "Niort",
-      "id_client": "FO37036290",
-      "ref_preins": "PFO43156213E4",
-      "nom abonne": "Bersoult",
-      "prenom abonne": "Chantal",
-      "tel_mobile": "0667142875",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-10",
-      "info_rdv_sync": "RDV 2026-06-17",
-      "etat_commande": "vente abandonée"
     }
   ]
 }
