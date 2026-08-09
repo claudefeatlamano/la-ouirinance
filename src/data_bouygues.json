@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-09T05:08:30.086552+00:00",
+  "scraped_at": "2026-08-09T07:00:32.336105+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18203,7 +18203,7 @@
       "cp": "49110",
       "ville": "MONTREVAULT SUR EVRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0938210",
@@ -18215,7 +18215,7 @@
       "cp": "49270",
       "ville": "MONTREVAULT SUR EVRE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0938220",
