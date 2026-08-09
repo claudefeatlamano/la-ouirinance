@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-09T16:38:23.178148+00:00",
+  "scraped_at": "2026-08-09T17:33:25.690068+00:00",
   "rows": [
     {
       "id_abo": "938505",
@@ -17659,26 +17659,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-12",
       "info_rdv_sync": "SyncOK 2026-06-19",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "921530",
-      "date_inscription": "2026-06-09 18:59:48",
-      "login": "vst-caudonnet",
-      "entreprise": "Stratygo",
-      "adresse": "3 RUE SOEUR EMMANUELLE",
-      "cp": "85194",
-      "ville": "Sables d olonne",
-      "id_client": "FO37044723",
-      "ref_preins": "PFO4316571213",
-      "nom abonne": "Houmad",
-      "prenom abonne": "Carole",
-      "tel_mobile": "0770450176",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-11",
-      "info_rdv_sync": "SyncOK 2026-06-24",
       "etat_commande": "connexion ok VRF"
     },
     {
