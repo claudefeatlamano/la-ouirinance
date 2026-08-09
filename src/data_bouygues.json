@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-09T07:00:32.336105+00:00",
+  "scraped_at": "2026-08-09T08:46:22.560099+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15035,7 +15035,7 @@
       "cp": "44400",
       "ville": "REZE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0913488",
@@ -15047,7 +15047,7 @@
       "cp": "86000",
       "ville": "POITIERS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Veut réfléchir"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0913521",
@@ -18287,7 +18287,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0938508",
@@ -18311,7 +18311,7 @@
       "cp": "44720",
       "ville": "ST-JOACHIM",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0938551",
@@ -18371,7 +18371,7 @@
       "cp": "72100",
       "ville": "LE MANS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0938640",
@@ -18443,7 +18443,7 @@
       "cp": "13410",
       "ville": "LAMBESC",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0938853",
@@ -18503,7 +18503,7 @@
       "cp": "44230",
       "ville": "ST-SEBASTIEN-SUR-LOIRE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0939046",
