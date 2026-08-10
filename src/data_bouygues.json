@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-10T08:40:31.304461+00:00",
+  "scraped_at": "2026-08-10T10:18:55.656841+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19199,7 +19199,7 @@
       "cp": "49450",
       "ville": "BEAUPREAU EN MAUGES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0943606",
