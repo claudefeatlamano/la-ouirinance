@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-10T11:49:39.047093+00:00",
+  "scraped_at": "2026-08-10T13:14:53.808657+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18275,7 +18275,7 @@
       "cp": "72100",
       "ville": "LE MANS",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938401",
@@ -18467,7 +18467,7 @@
       "cp": "72100",
       "ville": "LE MANS",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0938877",
@@ -19055,7 +19055,7 @@
       "cp": "49230",
       "ville": "SEVREMOINE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0942819",
