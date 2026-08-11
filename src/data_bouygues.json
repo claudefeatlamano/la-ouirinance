@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-11T07:12:05.389019+00:00",
+  "scraped_at": "2026-08-11T09:00:32.063739+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19091,7 +19091,7 @@
       "cp": "44620",
       "ville": "LA MONTAGNE",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0943154",
