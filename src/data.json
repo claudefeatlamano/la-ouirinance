@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-11T10:07:15.760940+00:00",
+  "scraped_at": "2026-08-11T11:45:28.013070+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -1318,7 +1318,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-18",
       "etat_commande": "inscription ok"
     },
     {
@@ -1518,7 +1518,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-05",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-18",
       "etat_commande": "inscription ok"
     },
     {
@@ -4598,8 +4598,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-28",
-      "info_rdv_sync": "RDV 2026-08-08",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "933930",
@@ -5178,8 +5178,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-23",
-      "info_rdv_sync": "RDV 2026-07-30",
-      "etat_commande": "inscription ok /postprod"
+      "info_rdv_sync": "SyncOK 2026-08-11",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "933645",
@@ -17142,86 +17142,6 @@
       "etat_commande": "vente abandonée"
     },
     {
-      "id_abo": "922161",
-      "date_inscription": "2026-06-11 13:41:05",
-      "login": "vst-vmoize",
-      "entreprise": "Stratygo",
-      "adresse": "59 RUE MICHEL ANGE",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "",
-      "ref_preins": "PFO43174608BG",
-      "nom abonne": "SEILLER",
-      "prenom abonne": "Virginie",
-      "tel_mobile": "0616488429",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "922151",
-      "date_inscription": "2026-06-11 13:30:33",
-      "login": "vst-mali",
-      "entreprise": "Stratygo",
-      "adresse": "15 RUE DE L ADRET",
-      "cp": "85140",
-      "ville": "Meilleraie tillay",
-      "id_client": "FO37052490",
-      "ref_preins": "PFO43174501FB",
-      "nom abonne": "PASQUIER",
-      "prenom abonne": "ROBERT / CATHERINE",
-      "tel_mobile": "0606782330",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-15",
-      "info_rdv_sync": "RDV 2026-06-22",
-      "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "922102",
-      "date_inscription": "2026-06-11 12:33:25",
-      "login": "vst-nwahid",
-      "entreprise": "Stratygo",
-      "adresse": "13 RUE RENE DUGUAY TROUIN",
-      "cp": "49099",
-      "ville": "Cholet",
-      "id_client": "FO37052160",
-      "ref_preins": "PFO43174132X5",
-      "nom abonne": "Michaud",
-      "prenom abonne": "Monique",
-      "tel_mobile": "0686517004",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-15",
-      "info_rdv_sync": "RDV 2026-06-23",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "922084",
-      "date_inscription": "2026-06-11 12:12:43",
-      "login": "vst-lderbal",
-      "entreprise": "Stratygo",
-      "adresse": "6 IMPASSE DES TUILIERS",
-      "cp": "49023",
-      "ville": "Beaupreau en mauges",
-      "id_client": "FO37052046",
-      "ref_preins": "PFO43174023H5",
-      "nom abonne": "Gaboriau",
-      "prenom abonne": "Annie-Claude",
-      "tel_mobile": "0615918864",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-18",
-      "info_rdv_sync": "SyncOK 2026-06-29",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -19738,8 +19658,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-04",
-      "info_rdv_sync": "RDV 2026-08-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "936141",
@@ -21358,8 +21278,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-29",
-      "info_rdv_sync": "RDV 2026-08-11",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-11",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "935143",
