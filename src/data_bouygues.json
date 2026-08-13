@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-13T10:09:51.435949+00:00",
+  "scraped_at": "2026-08-13T11:49:32.622918+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19211,7 +19211,7 @@
       "cp": "49710",
       "ville": "SEVREMOINE",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0943521",
