@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15T11:22:05.098823+00:00",
+  "scraped_at": "2026-08-15T12:41:31.904557+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -16242,46 +16242,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "923100",
-      "date_inscription": "2026-06-15 13:44:34",
-      "login": "vst-rkombo",
-      "entreprise": "Stratygo",
-      "adresse": "3 RUE SIRIUS",
-      "cp": "85182",
-      "ville": "Pouzauges",
-      "id_client": "",
-      "ref_preins": "PFO43190619VG",
-      "nom abonne": "Raineteau",
-      "prenom abonne": "Pascale",
-      "tel_mobile": "0675004287",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "923085",
-      "date_inscription": "2026-06-15 13:33:17",
-      "login": "vst-mali",
-      "entreprise": "Stratygo",
-      "adresse": "9 RUE DES PYRAMIDES",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37066735",
-      "ref_preins": "PFO4319045904",
-      "nom abonne": "LACHAIZE",
-      "prenom abonne": "ANDRÉ / PARVISE",
-      "tel_mobile": "0626356867",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-17",
-      "info_rdv_sync": "SyncOK 2026-06-25",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -26099,26 +26059,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-16",
       "info_rdv_sync": "SyncOK 2026-06-24",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "923110",
-      "date_inscription": "2026-06-15 14:02:48",
-      "login": "vta-bziegler",
-      "entreprise": "TALC",
-      "adresse": "2 PLACE DU 19 MARS 1962",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "FO37066873",
-      "ref_preins": "PFO431906154B",
-      "nom abonne": "Marcelly",
-      "prenom abonne": "Linda",
-      "tel_mobile": "0644103509",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-18",
-      "info_rdv_sync": "SyncOK 2026-06-26",
       "etat_commande": "connexion ok VRF"
     }
   ]
