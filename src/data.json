@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15T10:25:11.451168+00:00",
+  "scraped_at": "2026-08-15T11:22:05.098823+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -78,7 +78,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-10",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-26",
       "etat_commande": "inscription ok"
     },
     {
@@ -16282,26 +16282,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "923071",
-      "date_inscription": "2026-06-15 13:20:50",
-      "login": "vst-pshehu",
-      "entreprise": "Stratygo",
-      "adresse": "38 RUE DE L OISILLONNETTE",
-      "cp": "49099",
-      "ville": "Cholet",
-      "id_client": "FO37066605",
-      "ref_preins": "PFO43190304N0",
-      "nom abonne": "Bidet",
-      "prenom abonne": "Anne-noelle",
-      "tel_mobile": "0629474930",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -19698,8 +19678,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-29",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-15",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "935578",
@@ -26139,26 +26119,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-18",
       "info_rdv_sync": "SyncOK 2026-06-26",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "923066",
-      "date_inscription": "2026-06-15 13:19:05",
-      "login": "vta-tferreira",
-      "entreprise": "TALC",
-      "adresse": "6 RUE D AUNIS",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "FO37066566",
-      "ref_preins": "PFO43190294SJ",
-      "nom abonne": "Faizi",
-      "prenom abonne": "Amanullah",
-      "tel_mobile": "0748396757",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-19",
-      "info_rdv_sync": "SyncOK 2026-06-25",
       "etat_commande": "connexion ok VRF"
     }
   ]
