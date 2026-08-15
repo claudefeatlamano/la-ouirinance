@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15T09:28:12.357630+00:00",
+  "scraped_at": "2026-08-15T10:25:11.451168+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -16302,26 +16302,6 @@
       "etat_commande": "résilié"
     },
     {
-      "id_abo": "922955",
-      "date_inscription": "2026-06-15 11:57:19",
-      "login": "vst-pshehu",
-      "entreprise": "Stratygo",
-      "adresse": "6 RUE DE L OISILLONNETTE",
-      "cp": "49099",
-      "ville": "Cholet",
-      "id_client": "FO37065996",
-      "ref_preins": "PFO43189635YE",
-      "nom abonne": "Cassueti",
-      "prenom abonne": "Anne-sophie",
-      "tel_mobile": "0744437614",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-16",
-      "info_rdv_sync": "SyncOK 2026-06-25",
-      "etat_commande": "résilié"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -26180,26 +26160,6 @@
       "envoi_colis": "2026-06-19",
       "info_rdv_sync": "SyncOK 2026-06-25",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "922953",
-      "date_inscription": "2026-06-15 11:55:44",
-      "login": "vta-bziegler",
-      "entreprise": "TALC",
-      "adresse": "14 RUE DE LA FENETRE",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "",
-      "ref_preins": "PFO43189636BK",
-      "nom abonne": "Cognet",
-      "prenom abonne": "Nadia",
-      "tel_mobile": "0665108111",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
     }
   ]
 }
