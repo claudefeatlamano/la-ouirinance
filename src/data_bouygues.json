@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15T05:27:34.277549+00:00",
+  "scraped_at": "2026-08-15T06:42:02.761123+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -18791,7 +18791,7 @@
       "cp": "17100",
       "ville": "SAINTES",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0940814",
@@ -18839,7 +18839,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0941089",
@@ -18875,7 +18875,7 @@
       "cp": "29200",
       "ville": "BREST",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "KO"
+      "etat_commande": "KO/KO SAISIE"
     },
     {
       "num_contrat": "C2E0941095",
