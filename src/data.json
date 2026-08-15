@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15T13:32:11.139795+00:00",
+  "scraped_at": "2026-08-15T14:25:08.264054+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -16122,46 +16122,6 @@
       "etat_commande": "résilié"
     },
     {
-      "id_abo": "923242",
-      "date_inscription": "2026-06-15 16:15:07",
-      "login": "vst-caudonnet",
-      "entreprise": "Stratygo",
-      "adresse": "19 RUE GRIGNION DE MONTFORT",
-      "cp": "49099",
-      "ville": "Cholet",
-      "id_client": "FO37068051",
-      "ref_preins": "PFO431919722V",
-      "nom abonne": "Buffard",
-      "prenom abonne": "Aurélia",
-      "tel_mobile": "0787759577",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-16",
-      "info_rdv_sync": "SyncOK 2026-06-25",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "923207",
-      "date_inscription": "2026-06-15 15:42:46",
-      "login": "vst-nwahid",
-      "entreprise": "Stratygo",
-      "adresse": "0 RESIDENCE LE GRAND PAVOIS",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37067891",
-      "ref_preins": "PFO43191687XS",
-      "nom abonne": "Bordron",
-      "prenom abonne": "Yannick",
-      "tel_mobile": "0681925131",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -25960,26 +25920,6 @@
       "envoi_colis": "",
       "info_rdv_sync": "",
       "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "923246",
-      "date_inscription": "2026-06-15 16:17:21",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "5 RUE DU CHENE VERT",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "FO37068087",
-      "ref_preins": "PFO43191989TF",
-      "nom abonne": "Chambaud",
-      "prenom abonne": "Michel",
-      "tel_mobile": "0686132109",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-16",
-      "info_rdv_sync": "SyncOK 2026-06-24",
-      "etat_commande": "connexion ok VRF"
     }
   ]
 }
