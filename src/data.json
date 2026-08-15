@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15T14:25:08.264054+00:00",
+  "scraped_at": "2026-08-15T15:23:10.754576+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -299,7 +299,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-08-07",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "938250",
@@ -779,7 +779,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-08-07",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "937989",
@@ -1839,7 +1839,7 @@
       "neuf A-AP": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "937382",
@@ -1878,7 +1878,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-04",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-28",
       "etat_commande": "inscription ok"
     },
     {
@@ -16102,26 +16102,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "923259",
-      "date_inscription": "2026-06-15 16:28:15",
-      "login": "vst-mali",
-      "entreprise": "Stratygo",
-      "adresse": "17 RUE DES PYRAMIDES",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37068138",
-      "ref_preins": "PFO43192061HQ",
-      "nom abonne": "BIRONNEAU",
-      "prenom abonne": "ALCIDE",
-      "tel_mobile": "0617838002",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-17",
-      "info_rdv_sync": "SyncOK 2026-06-25",
-      "etat_commande": "résilié"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -17599,7 +17579,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "936556",
@@ -18198,7 +18178,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-19",
       "etat_commande": "inscription ok"
     },
     {
@@ -18518,7 +18498,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-30",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-19",
       "etat_commande": "inscription ok"
     },
     {
@@ -19539,7 +19519,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-07-30",
       "info_rdv_sync": "SyncOK 2026-08-12",
-      "etat_commande": "connexion ok VRF"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "935569",
@@ -24739,7 +24719,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-22",
       "info_rdv_sync": "SyncOK 2026-06-27",
-      "etat_commande": "connexion ok VRF"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "924623",
@@ -25900,26 +25880,6 @@
       "envoi_colis": "2026-06-17",
       "info_rdv_sync": "SyncOK 2026-06-23",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "923260",
-      "date_inscription": "2026-06-15 16:29:19",
-      "login": "vta-bziegler",
-      "entreprise": "TALC",
-      "adresse": "135 RUE DE LA BOULE",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "",
-      "ref_preins": "PFO43192074ML",
-      "nom abonne": "Saint-julien",
-      "prenom abonne": "Damien",
-      "tel_mobile": "0669610748",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "vente abandonée"
     }
   ]
 }
