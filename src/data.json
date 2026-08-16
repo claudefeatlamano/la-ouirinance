@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-16T12:43:23.192872+00:00",
+  "scraped_at": "2026-08-16T13:33:10.933534+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -15839,46 +15839,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-23",
       "info_rdv_sync": "SyncOK 2026-06-29",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "923661",
-      "date_inscription": "2026-06-16 15:14:17",
-      "login": "vst-caudonnet",
-      "entreprise": "Stratygo",
-      "adresse": "1 RUE DES BRETONNAIS",
-      "cp": "49027",
-      "ville": "Begrolles en mauges",
-      "id_client": "FO37072575",
-      "ref_preins": "PFO43197114QZ",
-      "nom abonne": "Morille",
-      "prenom abonne": "David",
-      "tel_mobile": "0607152717",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-17",
-      "info_rdv_sync": "SyncOK 2026-06-29",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "923660",
-      "date_inscription": "2026-06-16 15:12:21",
-      "login": "vst-mali",
-      "entreprise": "Stratygo",
-      "adresse": "40 RUE DES PYRAMIDES",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37072609",
-      "ref_preins": "PFO43197102PK",
-      "nom abonne": "AUBRET",
-      "prenom abonne": "SERGE",
-      "tel_mobile": "0614045572",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-19",
-      "info_rdv_sync": "SyncOK 2026-06-26",
       "etat_commande": "connexion ok VRF"
     },
     {
