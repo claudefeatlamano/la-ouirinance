@@ -16955,7 +16955,7 @@
 "_op": "bouygues",
 "cp": "44480",
 "date_inscription": "17/06/2026 13:08",
-"etat_commande": "StandBy/Impayé",
+"etat_commande": "KO",
 "login": "c2.5211",
 "nom client": "MAURAT",
 "num_contrat": "C2E0918395",

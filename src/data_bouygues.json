@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-17T07:00:56.604140+00:00",
+  "scraped_at": "2026-08-17T08:46:15.403486+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -15659,7 +15659,7 @@
       "cp": "44480",
       "ville": "DONGES",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "StandBy/Impayé"
+      "etat_commande": "KO"
     },
     {
       "num_contrat": "C2E0918827",
