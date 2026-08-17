@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-17T12:48:59.016229+00:00",
+  "scraped_at": "2026-08-17T13:40:44.404124+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -158,8 +158,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-07",
-      "info_rdv_sync": "RDV 2026-08-21",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-17",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "938313",
@@ -1818,7 +1818,7 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-24",
       "etat_commande": "inscription ok"
     },
     {
@@ -15622,26 +15622,6 @@
       "etat_commande": "résilié"
     },
     {
-      "id_abo": "924120",
-      "date_inscription": "2026-06-17 14:51:08",
-      "login": "vst-esimiandbuissonnet",
-      "entreprise": "Stratygo",
-      "adresse": "27 RUE VICE AMIRAL HALGAN",
-      "cp": "44052",
-      "ville": "Donges",
-      "id_client": "FO37077024",
-      "ref_preins": "PFO43202222PB",
-      "nom abonne": "Mahdaoui",
-      "prenom abonne": "Larbi",
-      "tel_mobile": "0660096639",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-19",
-      "info_rdv_sync": "SyncOK 2026-06-23",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -15898,7 +15878,7 @@
       "box": "POP",
       "mcafee": "",
       "envoi_colis": "",
-      "info_rdv_sync": "",
+      "info_rdv_sync": "RDV 2026-08-24",
       "etat_commande": "inscription ok"
     },
     {
@@ -16258,8 +16238,8 @@
       "box": "POP",
       "mcafee": "MCAFEE",
       "envoi_colis": "2026-08-04",
-      "info_rdv_sync": "RDV 2026-08-17",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-17",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "936966",
@@ -18978,8 +18958,8 @@
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "2026-07-29",
-      "info_rdv_sync": "RDV 2026-08-17",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-17",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "935634",
@@ -24700,46 +24680,6 @@
       "envoi_colis": "2026-06-22",
       "info_rdv_sync": "SyncOK 2026-06-30",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924160",
-      "date_inscription": "2026-06-17 15:24:35",
-      "login": "vta-fboutouba",
-      "vendeur": "fayez boutouba",
-      "entreprise": "TALC",
-      "adresse": "1 AVENUE DE BELLEVUE",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "FO37077328",
-      "ref_preins": "PFO43202551C5",
-      "nom abonne": "Treich",
-      "prenom abonne": "Marie-pierre",
-      "tel_mobile": "0778646917",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "envoi_colis": "2026-06-19",
-      "info_rdv_sync": "SyncOK 2026-06-26",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924145",
-      "date_inscription": "2026-06-17 15:18:37",
-      "login": "vta-zourhalm",
-      "vendeur": "zakaria ourhalm",
-      "entreprise": "TALC",
-      "adresse": "24 RUE DU GENERAL SARRAIL",
-      "cp": "79049",
-      "ville": "Bressuire",
-      "id_client": "FO37077322",
-      "ref_preins": "PFO432024735J",
-      "nom abonne": "BARANGER",
-      "prenom abonne": "MARIE JOSEPH",
-      "tel_mobile": "0682125528",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
     }
   ]
 }
