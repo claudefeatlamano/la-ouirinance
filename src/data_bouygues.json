@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-17T15:27:15.676667+00:00",
+  "scraped_at": "2026-08-17T16:30:38.930785+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19247,7 +19247,7 @@
       "cp": "79000",
       "ville": "NIORT",
       "produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
-      "etat_commande": "Vente validée"
+      "etat_commande": "Active"
     },
     {
       "num_contrat": "C2E0944072",
