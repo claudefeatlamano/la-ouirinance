@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-18T18:40:46.397040+00:00",
+  "scraped_at": "2026-08-18T19:29:11.856232+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -218,8 +218,8 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "2026-08-10",
-      "info_rdv_sync": "RDV 2026-08-18",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-18",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "938292",
