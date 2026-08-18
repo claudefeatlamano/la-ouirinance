@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-18T16:34:12.676730+00:00",
+  "scraped_at": "2026-08-18T17:28:52.761578+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -1498,8 +1498,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-07",
-      "info_rdv_sync": "RDV 2026-08-18",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-18",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "937474",
@@ -15042,86 +15042,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "924780",
-      "date_inscription": "2026-06-18 19:08:47",
-      "login": "vst-mali",
-      "entreprise": "Stratygo",
-      "adresse": "17 RUE MARIA VERONE",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "FO37083180",
-      "ref_preins": "PFO432093551H",
-      "nom abonne": "TAVERNET",
-      "prenom abonne": "SEVERINE",
-      "tel_mobile": "0658111683",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-23",
-      "info_rdv_sync": "SyncOK 2026-07-02",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924773",
-      "date_inscription": "2026-06-18 18:58:14",
-      "login": "vst-aatf",
-      "entreprise": "Stratygo",
-      "adresse": "13 AVENUE DES ROMARINS",
-      "cp": "44055",
-      "ville": "Baule escoublac",
-      "id_client": "FO37083116",
-      "ref_preins": "PFO4320924879",
-      "nom abonne": "Thomas",
-      "prenom abonne": "Sonja",
-      "tel_mobile": "0666191698",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
-    },
-    {
-      "id_abo": "924769",
-      "date_inscription": "2026-06-18 18:53:58",
-      "login": "vst-pshehu",
-      "entreprise": "Stratygo",
-      "adresse": "5 RUE DES AJONCS",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "FO37083100",
-      "ref_preins": "PFO432092456C",
-      "nom abonne": "Vieira",
-      "prenom abonne": "Palmira",
-      "tel_mobile": "0764184794",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-29",
-      "info_rdv_sync": "RDV 2026-07-06",
-      "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "924764",
-      "date_inscription": "2026-06-18 18:47:11",
-      "login": "vst-aatf",
-      "entreprise": "Stratygo",
-      "adresse": "11 AVENUE DES ROMARINS",
-      "cp": "44055",
-      "ville": "Baule escoublac",
-      "id_client": "FO37083111",
-      "ref_preins": "PFO432091786N",
-      "nom abonne": "Le gall",
-      "prenom abonne": "David",
-      "tel_mobile": "0604003733",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-07-01",
-      "info_rdv_sync": "SyncOK 2026-07-09",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -23680,26 +23600,6 @@
       "envoi_colis": "2026-06-22",
       "info_rdv_sync": "SyncOK 2026-06-30",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924767",
-      "date_inscription": "2026-06-18 18:52:43",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "1 RUE DU COTEAU",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "FO37083109",
-      "ref_preins": "PFO43209244PN",
-      "nom abonne": "Jousseaume",
-      "prenom abonne": "Kalie",
-      "tel_mobile": "0671340620",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-23",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
     }
   ]
 }
