@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-18T19:29:11.856232+00:00",
+  "scraped_at": "2026-08-18T20:26:47.523811+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -1817,7 +1817,7 @@
       "tel_mobile": "0661552850",
       "box": "POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-08-18",
       "info_rdv_sync": "RDV 2026-08-24",
       "etat_commande": "inscription ok"
     },
@@ -16159,7 +16159,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-08-03",
       "info_rdv_sync": "SyncOK 2026-08-09",
-      "etat_commande": "connexion ok VRF"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "936753",
@@ -16479,7 +16479,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-07-31",
       "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "936598",
