@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-18T06:47:50.247955+00:00",
+  "scraped_at": "2026-08-18T07:39:30.149950+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -57,7 +57,7 @@
       "tel_mobile": "0682598218",
       "box": "ULTRA_LIGHT_PLAYER_POP",
       "mcafee": "",
-      "envoi_colis": "",
+      "envoi_colis": "2026-08-17",
       "info_rdv_sync": "RDV 2026-09-02",
       "etat_commande": "inscription ok"
     },
