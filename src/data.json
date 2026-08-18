@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-18T12:51:06.063177+00:00",
+  "scraped_at": "2026-08-18T13:43:41.497520+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -2418,8 +2418,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-03",
-      "info_rdv_sync": "RDV 2026-08-18",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-18",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "936919",
@@ -15362,46 +15362,6 @@
       "etat_commande": "inscription ok"
     },
     {
-      "id_abo": "924608",
-      "date_inscription": "2026-06-18 15:34:05",
-      "login": "vst-yaboulfatah",
-      "entreprise": "Stratygo",
-      "adresse": "7 AVENUE DE BERENICE",
-      "cp": "44055",
-      "ville": "Baule escoublac",
-      "id_client": "FO37081825",
-      "ref_preins": "PFO43207767M8",
-      "nom abonne": "Gersant",
-      "prenom abonne": "Alain",
-      "tel_mobile": "0673469901",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "SyncOK 2026-06-29",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924602",
-      "date_inscription": "2026-06-18 15:24:37",
-      "login": "vst-lderbal",
-      "entreprise": "Stratygo",
-      "adresse": "27 ALLEE BARBARA",
-      "cp": "44184",
-      "ville": "Saint nazaire",
-      "id_client": "FO37081784",
-      "ref_preins": "PFO432077084J",
-      "nom abonne": "Mennesson",
-      "prenom abonne": "Colette",
-      "tel_mobile": "0601720503",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-19",
-      "info_rdv_sync": "SyncOK 2026-06-23",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -17058,8 +17018,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-07-31",
-      "info_rdv_sync": "RDV 2026-08-14",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-18",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "936468",
@@ -24040,26 +24000,6 @@
       "envoi_colis": "2026-06-22",
       "info_rdv_sync": "SyncOK 2026-06-27",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924575",
-      "date_inscription": "2026-06-18 14:54:14",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "1 RUE DES AIRES",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "FO37081604",
-      "ref_preins": "PFO43207484YJ",
-      "nom abonne": "Roussalino",
-      "prenom abonne": "Gina",
-      "tel_mobile": "0604457449",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "",
-      "etat_commande": "inscription ok"
     }
   ]
 }
