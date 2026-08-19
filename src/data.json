@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-19T16:34:01.186479+00:00",
+  "scraped_at": "2026-08-19T17:28:17.030960+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -14702,46 +14702,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "925134",
-      "date_inscription": "2026-06-19 19:22:05",
-      "login": "vst-lchraita",
-      "entreprise": "Stratygo",
-      "adresse": "14 RUE ROSA LUXEMBURG",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37087219",
-      "ref_preins": "PFO432139677B",
-      "nom abonne": "COUMAILLEAU",
-      "prenom abonne": "Daniel Roselyne",
-      "tel_mobile": "0628642444",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-24",
-      "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "925130",
-      "date_inscription": "2026-06-19 18:50:38",
-      "login": "vst-pgrasset",
-      "entreprise": "Stratygo",
-      "adresse": "26 RUE VIEILLE CURE",
-      "cp": "44208",
-      "ville": "TREFFIEUX",
-      "id_client": "FO37087131",
-      "ref_preins": "PFO43213810IK",
-      "nom abonne": "Besnier Verkyndt",
-      "prenom abonne": "Pascale Patrick",
-      "tel_mobile": "0631309905",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-23",
-      "info_rdv_sync": "SyncOK 2026-07-02",
-      "etat_commande": "résilié"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -16818,8 +16778,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-17",
-      "info_rdv_sync": "RDV 2026-08-19",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-19",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "936334",
@@ -23019,26 +22979,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-24",
       "info_rdv_sync": "SyncOK 2026-07-09",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "925132",
-      "date_inscription": "2026-06-19 18:55:51",
-      "login": "vta-bziegler",
-      "entreprise": "TALC",
-      "adresse": "1 RUE DE L AUNIS",
-      "cp": "17255",
-      "ville": "Nancras",
-      "id_client": "FO37087104",
-      "ref_preins": "PFO43213834C6",
-      "nom abonne": "Juglas",
-      "prenom abonne": "Johnny",
-      "tel_mobile": "0761212298",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-07-06",
-      "info_rdv_sync": "SyncOK 2026-07-11",
       "etat_commande": "connexion ok VRF"
     }
   ]
