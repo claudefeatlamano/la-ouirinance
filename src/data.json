@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-19T12:51:48.613229+00:00",
+  "scraped_at": "2026-08-19T13:45:59.014063+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -4378,8 +4378,8 @@
       "box": "POP",
       "mcafee": "",
       "envoi_colis": "2026-07-28",
-      "info_rdv_sync": "RDV 2026-08-19",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-19",
+      "etat_commande": "connexion ok VRF"
     },
     {
       "id_abo": "934095",
@@ -14902,66 +14902,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "925015",
-      "date_inscription": "2026-06-19 15:36:59",
-      "login": "vst-lderbal",
-      "vendeur": "laredj derbal",
-      "entreprise": "Stratygo",
-      "adresse": "19 RUE DE LUSANGER",
-      "cp": "44197",
-      "ville": "SION LES MINES",
-      "id_client": "FO37085961",
-      "ref_preins": "PFO43212529IB",
-      "nom abonne": "Dudouet",
-      "prenom abonne": "Laetitia",
-      "tel_mobile": "0647970934",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "envoi_colis": "2026-06-23",
-      "info_rdv_sync": "SyncOK 2026-07-01",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924992",
-      "date_inscription": "2026-06-19 15:13:51",
-      "login": "vst-pgrasset",
-      "vendeur": "pablo grasset",
-      "entreprise": "Stratygo",
-      "adresse": "13 RUE VIEILLE CURE",
-      "cp": "44208",
-      "ville": "TREFFIEUX",
-      "id_client": "FO37085795",
-      "ref_preins": "PFO43212327FN",
-      "nom abonne": "Marlin",
-      "prenom abonne": "Philippe",
-      "tel_mobile": "0771020015",
-      "box": "POP",
-      "mcafee": "",
-      "envoi_colis": "",
-      "info_rdv_sync": "",
-      "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "924982",
-      "date_inscription": "2026-06-19 15:05:27",
-      "login": "vst-abouhitem",
-      "vendeur": "anis bouhitem",
-      "entreprise": "Stratygo",
-      "adresse": "13 AVENUE DU PARC LASSALLE",
-      "cp": "44055",
-      "ville": "Baule escoublac",
-      "id_client": "FO37085731",
-      "ref_preins": "PFO432122535F",
-      "nom abonne": "Collin",
-      "prenom abonne": "Stéphane",
-      "tel_mobile": "0660561011",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "SyncOK 2026-06-29",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -23360,46 +23300,6 @@
       "envoi_colis": "",
       "info_rdv_sync": "",
       "etat_commande": "vente abandonée"
-    },
-    {
-      "id_abo": "925003",
-      "date_inscription": "2026-06-19 15:23:12",
-      "login": "vta-wperez",
-      "entreprise": "TALC",
-      "adresse": "3 RUE DES RABANNIERES",
-      "cp": "17415",
-      "ville": "Saintes",
-      "id_client": "FO37085900",
-      "ref_preins": "PFO43212447DS",
-      "nom abonne": "Bicchi",
-      "prenom abonne": "Michel",
-      "tel_mobile": "0620647116",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-23",
-      "info_rdv_sync": "SyncOK 2026-07-20",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924987",
-      "date_inscription": "2026-06-19 15:09:54",
-      "login": "vta-bziegler",
-      "entreprise": "TALC",
-      "adresse": "2 RUE BLANCHE",
-      "cp": "17255",
-      "ville": "Nancras",
-      "id_client": "FO37085774",
-      "ref_preins": "PFO43212276FU",
-      "nom abonne": "Gadron",
-      "prenom abonne": "Sylvie",
-      "tel_mobile": "0686189668",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "SyncOK 2026-06-29",
-      "etat_commande": "résilié"
     }
   ]
 }
