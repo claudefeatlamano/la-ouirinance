@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-19T10:30:59.172946+00:00",
+  "scraped_at": "2026-08-19T11:27:12.976272+00:00",
   "rows": [
     {
       "id_abo": "938608",
@@ -1038,8 +1038,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-06",
-      "info_rdv_sync": "RDV 2026-08-19",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-19",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "937799",
@@ -1198,8 +1198,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-10",
-      "info_rdv_sync": "RDV 2026-08-19",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-19",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "937737",
@@ -15022,26 +15022,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "924896",
-      "date_inscription": "2026-06-19 13:09:38",
-      "login": "vst-pshehu",
-      "entreprise": "Stratygo",
-      "adresse": "7 RUE TROUSSEAU",
-      "cp": "85191",
-      "ville": "Roche sur yon",
-      "id_client": "FO37085122",
-      "ref_preins": "PFO43211566RV",
-      "nom abonne": "Graton",
-      "prenom abonne": "Christine",
-      "tel_mobile": "0666458653",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-23",
-      "info_rdv_sync": "SyncOK 2026-06-29",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -15218,8 +15198,8 @@
       "mcafee": "",
       "neuf A-AP": "",
       "envoi_colis": "2026-08-07",
-      "info_rdv_sync": "RDV 2026-08-19",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-19",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "938113",
@@ -23499,26 +23479,6 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-06-22",
       "info_rdv_sync": "SyncOK 2026-07-28",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "924887",
-      "date_inscription": "2026-06-19 12:59:21",
-      "login": "vta-fboutouba",
-      "entreprise": "TALC",
-      "adresse": "56 RUE DU VIEUX PONT",
-      "cp": "17284",
-      "ville": "Pont l abbe d arnoult",
-      "id_client": "FO37085019",
-      "ref_preins": "PFO43211472RI",
-      "nom abonne": "Ramaugé",
-      "prenom abonne": "Ninon",
-      "tel_mobile": "0788586732",
-      "box": "ULTRA_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-22",
-      "info_rdv_sync": "SyncOK 2026-06-30",
       "etat_commande": "connexion ok VRF"
     }
   ]
