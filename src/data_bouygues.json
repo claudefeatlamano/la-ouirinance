@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-21T11:28:51.673927+00:00",
+  "scraped_at": "2026-08-21T12:52:58.919816+00:00",
   "rows": [
     {
       "num_contrat": "C2E0848539",
@@ -19295,7 +19295,7 @@
       "cp": "44260",
       "ville": "LA CHAPELLE LAUNAY",
       "produit": "Bbox Must Wi-Fi 7 (FTTH) : Internet - TV - Téléphonie 43.99",
-      "etat_commande": "Saisie"
+      "etat_commande": "KO"
     }
   ]
 }
