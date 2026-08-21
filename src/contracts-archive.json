@@ -20903,6 +20903,19 @@
 "vendeur": "CHEIKH ABDELLAH",
 "ville": "LA CHAPELLE LAUNAY"
 },
+"byg-C2E0947710": {
+"_op": "bouygues",
+"cp": "44000",
+"date_inscription": "21/08/2026 16:38",
+"etat_commande": "Saisie",
+"login": "c2.3324",
+"nom client": "PINEAU",
+"num_contrat": "C2E0947710",
+"produit": "Bbox Ultym WI-FI 7 (FTTH) : Internet - TV - Téléphonie 52.99",
+"type": "Acquisition",
+"vendeur": "ATF ALI",
+"ville": "NANTES"
+},
 "f-875541": {
 "_op": "free",
 "adresse": "4 RUE DE LA CADIVAIS",
@@ -97939,7 +97952,7 @@
 "date_inscription": "2026-07-08 17:34:17",
 "entreprise": "TALC",
 "envoi_colis": "2026-07-13",
-"etat_commande": "vente abandonée",
+"etat_commande": "résilié",
 "id_abo": "930580",
 "id_client": "FO37167180",
 "info_rdv_sync": "RDV 2026-07-20",
@@ -111022,7 +111035,7 @@
 "date_inscription": "2026-08-03 13:49:01",
 "entreprise": "Stratygo",
 "envoi_colis": "2026-08-05",
-"etat_commande": "inscription ok /postprod",
+"etat_commande": "résilié",
 "id_abo": "937270",
 "id_client": "FO37269823",
 "info_rdv_sync": "RDV 2026-08-11",
@@ -112072,7 +112085,7 @@
 "date_inscription": "2026-08-04 15:40:19",
 "entreprise": "TALC",
 "envoi_colis": "2026-08-05",
-"etat_commande": "inscription ok",
+"etat_commande": "résilié",
 "id_abo": "937679",
 "id_client": "FO37276857",
 "info_rdv_sync": "RDV 2026-08-17",
@@ -113806,5 +113819,26 @@
 "ref_preins": "PFO434596346K",
 "tel_mobile": "0767551840",
 "ville": "Saint leger sous cholet"
+},
+"f-939891": {
+"_op": "free",
+"adresse": "1 RUE DE LA TANNERIE",
+"box": "ULTRA_PLAYER_POP",
+"cp": "85038",
+"date_inscription": "2026-08-21 16:41:03",
+"entreprise": "Stratygo",
+"envoi_colis": "",
+"etat_commande": "vente validée",
+"id_abo": "939891",
+"id_client": "",
+"info_rdv_sync": "",
+"login": "vst-aatf",
+"mcafee": "",
+"neuf A-AP": "",
+"nom abonne": "Maille augusto",
+"prenom abonne": "Lisa",
+"ref_preins": "PFO43517678VS",
+"tel_mobile": "0630886573",
+"ville": "Brouzils"
 }
 }

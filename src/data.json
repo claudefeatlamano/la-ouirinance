@@ -1,6 +1,26 @@
 {
-  "scraped_at": "2026-08-21T14:37:27.838280+00:00",
+  "scraped_at": "2026-08-21T15:35:40.809549+00:00",
   "rows": [
+    {
+      "id_abo": "939891",
+      "date_inscription": "2026-08-21 16:41:03",
+      "login": "vst-aatf",
+      "entreprise": "Stratygo",
+      "adresse": "1 RUE DE LA TANNERIE",
+      "cp": "85038",
+      "ville": "Brouzils",
+      "id_client": "",
+      "ref_preins": "PFO43517678VS",
+      "nom abonne": "Maille augusto",
+      "prenom abonne": "Lisa",
+      "tel_mobile": "0630886573",
+      "box": "ULTRA_PLAYER_POP",
+      "mcafee": "",
+      "neuf A-AP": "",
+      "envoi_colis": "",
+      "info_rdv_sync": "",
+      "etat_commande": "vente validée"
+    },
     {
       "id_abo": "938608",
       "date_inscription": "2026-08-10 14:55:41",
@@ -2219,7 +2239,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-08-05",
       "info_rdv_sync": "RDV 2026-08-11",
-      "etat_commande": "inscription ok /postprod"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "937263",
@@ -15099,7 +15119,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-08-05",
       "info_rdv_sync": "RDV 2026-08-17",
-      "etat_commande": "inscription ok"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "937667",
@@ -20599,7 +20619,7 @@
       "neuf A-AP": "",
       "envoi_colis": "2026-07-13",
       "info_rdv_sync": "RDV 2026-07-20",
-      "etat_commande": "vente abandonée"
+      "etat_commande": "résilié"
     },
     {
       "id_abo": "930538",
