@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-21T16:37:04.704910+00:00",
+  "scraped_at": "2026-08-21T17:30:52.714072+00:00",
   "rows": [
     {
       "id_abo": "939891",
@@ -10,7 +10,7 @@
       "adresse": "1 RUE DE LA TANNERIE",
       "cp": "85038",
       "ville": "Brouzils",
-      "id_client": "",
+      "id_client": "FO37353415",
       "ref_preins": "PFO43517678VS",
       "nom abonne": "Maille augusto",
       "prenom abonne": "Lisa",
@@ -19,7 +19,7 @@
       "mcafee": "",
       "envoi_colis": "",
       "info_rdv_sync": "",
-      "etat_commande": "vente validée"
+      "etat_commande": "inscription ok"
     },
     {
       "id_abo": "938608",
@@ -1138,8 +1138,8 @@
       "box": "ULTRA_PLAYER_POP",
       "mcafee": "",
       "envoi_colis": "2026-08-12",
-      "info_rdv_sync": "RDV 2026-08-21",
-      "etat_commande": "inscription ok"
+      "info_rdv_sync": "SyncOK 2026-08-21",
+      "etat_commande": "connexion ok"
     },
     {
       "id_abo": "937789",
