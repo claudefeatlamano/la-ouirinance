@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-22T10:25:57.130007+00:00",
+  "scraped_at": "2026-08-22T11:22:42.535489+00:00",
   "rows": [
     {
       "id_abo": "939891",
@@ -14682,26 +14682,6 @@
       "etat_commande": "connexion ok VRF"
     },
     {
-      "id_abo": "925258",
-      "date_inscription": "2026-06-22 12:36:25",
-      "login": "vst-yaboulfatah",
-      "entreprise": "Stratygo",
-      "adresse": "4 RUE SAINT VINCENT DE PAUL",
-      "cp": "49099",
-      "ville": "Cholet",
-      "id_client": "FO37093555",
-      "ref_preins": "PFO432211656E",
-      "nom abonne": "Vaulry",
-      "prenom abonne": "Gerald",
-      "tel_mobile": "0644033222",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-24",
-      "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "connexion ok VRF"
-    },
-    {
       "id_abo": "938326",
       "date_inscription": "2026-08-06 17:14:06",
       "login": "vta-fboutouba",
@@ -22920,26 +22900,6 @@
       "envoi_colis": "2026-06-24",
       "info_rdv_sync": "SyncOK 2026-07-01",
       "etat_commande": "connexion ok VRF"
-    },
-    {
-      "id_abo": "925261",
-      "date_inscription": "2026-06-22 12:37:41",
-      "login": "vta-fboutouba",
-      "entreprise": "TALC",
-      "adresse": "11 IMPASSE DE LA VERSENNE",
-      "cp": "79049",
-      "ville": "Bressuire",
-      "id_client": "FO37093484",
-      "ref_preins": "PFO4322108336",
-      "nom abonne": "Mohamed",
-      "prenom abonne": "Ramla",
-      "tel_mobile": "0773294324",
-      "box": "ULTRA_LIGHT_PLAYER_POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-24",
-      "info_rdv_sync": "SyncOK 2026-06-29",
-      "etat_commande": "résilié"
     }
   ]
 }
