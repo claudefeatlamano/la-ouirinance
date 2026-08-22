@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-22T17:22:31.324729+00:00",
+  "scraped_at": "2026-08-22T18:33:59.414738+00:00",
   "rows": [
     {
       "id_abo": "939891",
@@ -22360,26 +22360,6 @@
       "envoi_colis": "2026-06-30",
       "info_rdv_sync": "",
       "etat_commande": "résilié"
-    },
-    {
-      "id_abo": "925606",
-      "date_inscription": "2026-06-22 19:47:56",
-      "login": "vta-epiet",
-      "entreprise": "TALC",
-      "adresse": "12 RUE GUY GUILLOTEAU",
-      "cp": "79191",
-      "ville": "Niort",
-      "id_client": "FO37096383",
-      "ref_preins": "PFO43224446QS",
-      "nom abonne": "hussain",
-      "prenom abonne": "Mohamad",
-      "tel_mobile": "0773802730",
-      "box": "POP",
-      "mcafee": "",
-      "neuf A-AP": "",
-      "envoi_colis": "2026-06-24",
-      "info_rdv_sync": "SyncOK 2026-06-30",
-      "etat_commande": "connexion ok VRF"
     }
   ]
 }
